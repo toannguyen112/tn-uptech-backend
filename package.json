@@ -10,7 +10,11 @@
     "build": "tsc",
     "start": "node dist/app.js",
     "test": "jest",
-    "seeder": "ts-node src/assets/import/index.ts"
+    "seeder": "ts-node src/assets/import/index.ts",
+    "migration":"sequelize-cli db:migrate",
+    "un_migration":"sequelize-cli db:migrate:undo",
+    "seed":"sequelize-cli db:seed:all"
+
   },
   "dependencies": {
     "@faker-js/faker": "^7.3.0",
