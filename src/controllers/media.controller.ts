@@ -1,10 +1,27 @@
 import { Request, Response } from "express";
 import File from "../models/file.model";
+import { ApiFeatures } from "../utils/ApiFeatures";
 
 export default class MediaController {
   async index(req: Request, res: Response) {
     try {
-      const data = await File.findAll({});
+
+      const query = { ...req.query };
+
+      const objQuery = new ApiFeatures(query)
+        .limitFields()
+        .paginate()
+        .getObjQuery();
+
+      const { count }: any = await File.findAndCountAll(objQuery);
+
+      const data = {
+        page: Number(query?.page) * 1,
+        pageSize: Number(query?.page_size) * 1,
+        pageCount: Math.ceil(count / Number(query?.page_size) * 1),
+        totalItems: count || 0,
+      };
+
       return res.status(200).json({ message: "OK", data });
     } catch (error) {
       res.status(500).send(error);
