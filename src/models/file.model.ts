@@ -62,7 +62,7 @@ export default class File extends Model<File> {
     if (!data) return await File.create(file);
     if (data) return data;
   }
-  public static transform(item: any) { return { ...item } }
+  public static transform(item: any) { return item }
 }
 
 function getPath(path: string, instance: any): string {

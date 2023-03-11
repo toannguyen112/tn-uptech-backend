@@ -4,6 +4,27 @@ import compression from "compression";
 import fs from "fs";
 import bodyParser from "body-parser";
 
+const i18next = require('i18next');
+const i18nextMiddleware = require('i18next-express-middleware');
+const Backend = require('i18next-node-fs-backend');
+
+i18next
+  .use(Backend)
+  .use(i18nextMiddleware.LanguageDetector)
+  .init({
+    backend: {
+      loadPath: __dirname + '/locales/{{lng}}/{{ns}}.json',
+    },
+    detection: {
+      order: ['querystring', 'cookie'],
+      caches: ['cookie']
+    },
+    fallbackLng: 'en',
+    preload: ['en', 'ru']
+  });
+
+
+
 let app = express();
 let routes: any[] = [];
 let routeFiles: string[] = [];
@@ -19,6 +40,7 @@ export default class ExpressService {
         routes.push(route[routeName]);
       }
 
+      app.use(i18nextMiddleware.handle(i18next));
       app.use(cors());
       app.use(compression());
       app.use(express.static("storage"));
