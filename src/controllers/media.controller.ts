@@ -4,28 +4,25 @@ import { ApiFeatures } from "../utils/ApiFeatures";
 
 export default class MediaController {
   async index(req: Request, res: Response) {
-    try {
 
-      const query = { ...req.query };
+    const query = { ...req.query };
 
-      const objQuery = new ApiFeatures(query)
-        .limitFields()
-        .paginate()
-        .getObjQuery();
+    const objQuery = new ApiFeatures(query)
+      .limitFields()
+      .paginate()
+      .getObjQuery();
 
-      const { count }: any = await File.findAndCountAll(objQuery);
+    const { count, rows }: any = await File.findAndCountAll(objQuery);
 
-      const data = {
-        page: Number(query?.page) * 1,
-        pageSize: Number(query?.page_size) * 1,
-        pageCount: Math.ceil(count / Number(query?.page_size) * 1),
-        totalItems: count || 0,
-      };
+    const result = {
+      page: Number(query?.page) * 1,
+      pageSize: Number(query?.page_size) * 1,
+      pageCount: Math.ceil(count / Number(query?.page_size) * 1),
+      totalItems: count || 0,
+      data: rows.map((item: any) => File.transform(item)),
+    };
 
-      return res.status(200).json({ message: "OK", data });
-    } catch (error) {
-      res.status(500).send(error);
-    }
+    return res.status(200).json({ message: "OK", data: result });
   }
 
   async show(req: Request, res: Response) {
