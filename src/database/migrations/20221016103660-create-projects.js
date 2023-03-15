@@ -23,7 +23,7 @@ module.exports = {
       },
 
       description: {
-        type: Sequelize.STRING,
+        type: Sequelize.TEXT('long'),
         allowNull: true,
       },
 
@@ -38,7 +38,7 @@ module.exports = {
       },
 
       content: {
-        type: Sequelize.STRING,
+        type: Sequelize.TEXT('long'),
         allowNull: true,
       },
 

@@ -15,6 +15,11 @@ module.exports = {
         type: Sequelize.STRING,
       },
 
+      type: {
+        allowNull: true,
+        type: Sequelize.STRING,
+      },
+
       file_id: {
         type: Sequelize.INTEGER,
         references: {

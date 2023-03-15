@@ -16,6 +16,9 @@ export default class Category extends Model {
   name: string;
 
   @Column
+  type: string;
+
+  @Column
   slug: string;
 
   @ForeignKey(() => File)

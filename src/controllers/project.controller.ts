@@ -5,64 +5,46 @@ import { ApiFeatures } from "../utils/ApiFeatures";
 export default class ProjectController {
 
   async index(req: Request, res: Response) {
-
     const query = { ...req.query };
-
-    const queryObject = {
-      status: req.query.status,
-    };
-
     const conditions = {};
-    const excludedFields = ["page", "page_size", "sort_field", "sort_order", "fields"];
-    excludedFields.forEach((field) => delete queryObject[field]);
-    const arrQueryObject = Object.entries(queryObject).map((item) => {
-      return {
-        key: item[0],
-        value: item[1],
-      };
-    });
-
-    for (let index = 0; index < arrQueryObject.length; index++) {
-      switch (arrQueryObject[index].key) {
-        case "status":
-          const status = typeof arrQueryObject[index].value === "string" ? [arrQueryObject[index].value] : arrQueryObject[index].value;
-          if (Array.isArray(status)) {
-            conditions["status"] = {
-              [Op.in]: status,
-            };
-          }
-          break;
-
-        default:
-          break;
-      }
-    }
-
     const objQuery = new ApiFeatures(query)
       .filter(conditions)
-      .limitFields()
       .paginate()
       .paranoid()
       .getObjQuery();
 
     const { count, rows }: any = await Project.findAndCountAll(objQuery);
 
+    const data = rows.map((item: Project) => item.transform(item));
+
     const result = {
       page: Number(query?.page) * 1,
       pageSize: Number(query?.page_size) * 1,
       pageCount: Math.ceil(count / Number(query?.page_size) * 1),
       totalItems: count || 0,
-      data: rows,
+      data,
     };
 
-    return res.status(200)
-      .json({ message: "success", data: result });
+    return res.status(200).json({ message: "success", data: result });
   }
 
   async create(req: Request, res: Response) {
     try {
-      const data = await Project.create(req.body);
-      return res.status(200).json(data);
+      const data = await Project.create({ ...req.body });
+      return res.status(200).json({ message: "success", data });
+    } catch (error) {
+      res.status(500).send(error);
+    }
+  }
+
+  async show(req: Request, res: Response) {
+    try {
+      const data = await Project.findOne({
+        where: { id: req.params.id }
+      });
+
+      const projectDetail = data.transform(data);
+      return res.status(200).json({ message: "success", data: projectDetail });
     } catch (error) {
       res.status(500).send(error);
     }
@@ -70,12 +52,32 @@ export default class ProjectController {
 
   async update(req: Request, res: Response) {
     try {
-      const { id, body } = req.params;
-      const data = await Project.update(
-        { body }, { where: { id } }
-      );
+      const { id } = req.params;
+      const reqBody = req.body;
 
-      return res.status(200).json({ message: "OK", data });
+      const body = {
+        "id": reqBody.id,
+        "name": reqBody.name,
+        "status": reqBody.status,
+        "description": reqBody.description,
+        "isFeatured": reqBody.isFeatured,
+        "content": reqBody.content,
+      }
+
+      const data = await Project.update(body, { where: { id } });
+
+      return res.status(200).json({ message: "success", data });
+    } catch (error) {
+      res.status(500).send(error);
+    }
+  }
+
+  async deleteMultipleIds(req: Request, res: Response) {
+    try {
+      const { ids } = req.body;
+      await Project.destroy({ where: { id: ids } }).then((result) => {
+        return res.status(200).json({ message: "success", data: result });
+      });
     } catch (error) {
       res.status(500).send(error);
     }
@@ -87,7 +89,7 @@ export default class ProjectController {
       await Project.destroy({ where: { id } });
 
       const data = await Project.findAll({});
-      return res.status(200).json({ message: "OK", data: data });
+      return res.status(200).json({ message: "success", data: data });
     } catch (error) {
       res.status(500).send(error);
     }

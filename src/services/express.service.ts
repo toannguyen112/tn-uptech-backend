@@ -23,13 +23,12 @@ i18next
     preload: ['en', 'ru']
   });
 
-
-
 let app = express();
 let routes: any[] = [];
 let routeFiles: string[] = [];
 
-routeFiles = fs.readdirSync(__dirname + "/../routes/").filter((file) => file.endsWith(".js") || file.endsWith(".ts"));
+routeFiles = fs.readdirSync(__dirname + "/../routes/")
+  .filter((file) => file.endsWith(".js") || file.endsWith(".ts"));
 export default class ExpressService {
   static async init() {
     try {
@@ -40,7 +39,7 @@ export default class ExpressService {
         routes.push(route[routeName]);
       }
 
-      app.use(i18nextMiddleware.handle(i18next));
+      // app.use(i18nextMiddleware.handle(i18next));
       app.use(cors());
       app.use(compression());
       app.use(express.static("storage"));

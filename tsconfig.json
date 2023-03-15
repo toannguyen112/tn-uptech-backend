@@ -99,6 +99,6 @@
     // "skipDefaultLibCheck": true,                      /* Skip type checking .d.ts files that are included with TypeScript. */
     "skipLibCheck": true /* Skip type checking all .d.ts files. */
   },
-  "include": ["src/**/*.ts", ".sequelizerc", "src/config/database.js"],
+  "include": ["src/**/*.ts", ".sequelizerc", "src/config/database.js", "src/database/migrations/20220728061824-create-admins.js"],
   "exclude": ["node_modules"]
 }

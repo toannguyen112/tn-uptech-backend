@@ -1,6 +1,7 @@
 const jwt = require("jsonwebtoken");
 import bcrypt from "bcrypt";
-
+import dayjs from "dayjs";
+import sanitizeHtml from 'sanitize-html';
 export default class Helper {
   static randomString(length: number): string {
     var result: string = "";
@@ -16,12 +17,20 @@ export default class Helper {
     return `${process.env.STATIC_URL}${path}`;
   }
 
+  public static formatDayJs(date: any, format: string = "DD/MM/YYYY"): any {
+    return dayjs(date).format(format);
+  }
+
   static applyMixins(derivedCtor: any, baseCtors: any[]) {
     baseCtors.forEach((baseCtor) => {
       Object.getOwnPropertyNames(baseCtor.prototype).forEach((name) => {
         Object.defineProperty(derivedCtor.prototype, name, Object.getOwnPropertyDescriptor(baseCtor.prototype, name));
       });
     });
+  }
+
+  static transformRichText(data: string) {
+    return `<div>${data}</div>`;
   }
 
   static renderSlug(slug: string) {

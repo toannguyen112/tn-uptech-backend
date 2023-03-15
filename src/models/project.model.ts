@@ -1,4 +1,5 @@
 import { Table, Model, Column, PrimaryKey } from "sequelize-typescript";
+import Helper from "../utils/Helper";
 
 @Table({
   tableName: "projects",
@@ -25,13 +26,18 @@ export default class Project extends Model {
 
   @Column
   content: string;
-  /**
-   * transform
-   */
+
   public transform(item: any) {
     return {
-      ...item
+      "id": item.id,
+      "name": item.name,
+      "thumbnail": "https://picsum.photos/200/300",
+      "status": item.status,
+      "description": item.description,
+      "isFeatured": item.isFeatured,
+      "content": Helper.transformRichText(item.content),
+      "createdAt": Helper.formatDayJs(item.createdAt),
+      "updatedAt": Helper.formatDayJs(item.updatedAt),
     }
   }
-
 }
