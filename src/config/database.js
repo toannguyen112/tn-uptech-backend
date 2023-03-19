@@ -3,9 +3,9 @@ dotenv.config();
 const { DB_USER, DB_PASS, DB_HOST, DB_NAME } = process.env;
 
 module.exports = {
-  database: DB_NAME,
+  database: "i5oklw12f233xcl4",
   dialect: "mysql",
-  username: DB_USER,
-  password: DB_PASS,
-  host: DB_HOST,
+  username: "d8qsslqasqbis50u",
+  password: "fn0h7jbwc8og3crh",
+  host: "z5zm8hebixwywy9d.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
 };

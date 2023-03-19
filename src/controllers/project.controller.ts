@@ -29,6 +29,9 @@ export default class ProjectController {
   }
 
   async create(req: Request, res: Response) {
+
+    console.log(req.body);
+
     try {
       const data = await Project.create({ ...req.body });
       return res.status(200).json({ message: "success", data });
