@@ -1,19 +1,3 @@
-import dotenv from "dotenv";
-import expressService from "./services/express.service";
-import sequelizeService from "./services/sequelize.service";
-
-
-dotenv.config();
-
-const services = [expressService, sequelizeService];
-
-(async () => {
-  try {
-    for (const service of services) {
-      await service.init();
-    }
-  } catch (error) {
-    console.log(error);
-    process.exit(1);
-  }
-})();
+// Infra
+import "./infra/express/app";
+import "./infra/sequelize";

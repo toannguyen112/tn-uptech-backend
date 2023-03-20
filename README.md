@@ -1,11 +1,11 @@
-# wsp-loyalty
+# tn-backend
 
 ## Getting Started
 
 ```bash
 
 # Enter into the directory
-cd wsp-loyalty/
+cd tn-backend/
 
 # Install the dependencies
 yarn
@@ -55,4 +55,4 @@ yarn sequelize db:migrate:undo:all
 yarn sequelize db:seed:all
 ```
 
-# wsp-loyalty
+# tn-backend
