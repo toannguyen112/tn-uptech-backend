@@ -34,6 +34,18 @@ export default class Helper {
     return `<div>${data}</div>`;
   }
 
+  static queryNumberChildren(prop: number) {
+    const includes = [];
+    for (let index = 0; index < prop; index++) {
+      includes.push({
+        model: models.Folder,
+        as: "children",
+      })
+    }
+
+    return includes;
+  }
+
   static renderSlug(slug: string) {
     return slug.toString()
       .normalize('NFD')

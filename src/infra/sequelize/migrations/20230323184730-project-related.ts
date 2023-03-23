@@ -2,7 +2,7 @@
 
 module.exports = {
   up: (queryInterface, Sequelize) =>
-    queryInterface.createTable("folders", {
+    queryInterface.createTable("project_related", {
       id: {
         primaryKey: true,
         unique: true,
@@ -10,24 +10,15 @@ module.exports = {
         type: Sequelize.INTEGER,
       },
 
-      parent_id: {
+      file_id: {
         type: Sequelize.INTEGER,
+        references: {
+          model: "projects",
+          key: "id",
+        },
       },
 
-      hierarchyLevel: {
-        type: Sequelize.INTEGER,
-      },
-
-      label: {
-        type: Sequelize.STRING,
-      },
-
-      icon: {
-        type: Sequelize.STRING,
-        defaultValue: "pi pi-fw pi-cog"
-      },
-
-      path: {
+      name: {
         type: Sequelize.STRING,
       },
 
@@ -42,5 +33,5 @@ module.exports = {
       },
     }),
 
-  down: (queryInterface) => queryInterface.dropTable("folders"),
+  down: (queryInterface) => queryInterface.dropTable("project_related"),
 };

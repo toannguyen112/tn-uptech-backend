@@ -1,5 +1,4 @@
 
-
 module.exports = function (sequelize, DataTypes) {
     const Folder = sequelize.define(
         "folders",
@@ -15,11 +14,11 @@ module.exports = function (sequelize, DataTypes) {
                 hierarchy: true
             },
 
-            hierarchyLevel: {
-                type: DataTypes.INTEGER,
+            label: {
+                type: DataTypes.STRING,
             },
 
-            name: {
+            icon: {
                 type: DataTypes.STRING,
             },
 
@@ -33,11 +32,10 @@ module.exports = function (sequelize, DataTypes) {
         },
     );
 
-    Folder.belongsTo(Folder, { as: 'parent', foreignKey: 'parent_id' })
-    Folder.hasMany(Folder, { as: 'children', foreignKey: 'parent_id' })
-
-    // Folder.belongsToMany(Folder, { as: 'descendents', foreignKey: 'ancestorId', through: models.FolderAncestor })
-    // Folder.belongsToMany(Folder, { as: 'ancestors', foreignKey: 'folderId', through: models.FolderAncestor })
+    Folder.associate = function (models) {
+        Folder.belongsTo(Folder, { as: 'parent', foreignKey: 'parent_id' })
+        Folder.hasMany(Folder, { as: 'children', foreignKey: 'parent_id' })
+    };
 
     return Folder;
 };

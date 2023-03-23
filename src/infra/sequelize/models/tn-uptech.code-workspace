@@ -1,10 +1,10 @@
 {
-	"folders": [
-		{
-			"path": "../../../.."
-		},
-		{
-			"path": "../../../../../tn-uptech-frontend"
-		}
-	]
+  "folders": [
+    {
+      "path": "../../../.."
+    },
+    {
+      "path": "../../../../../tn-uptech-frontend"
+    }
+  ]
 }
