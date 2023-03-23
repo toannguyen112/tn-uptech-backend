@@ -1,6 +1,7 @@
 import * as fs from "fs";
 import * as path from "path";
 import * as Sequelize from "sequelize";
+
 import config from "../config/config";
 let inflection = require("inflection");
 
@@ -12,11 +13,11 @@ function toCamelCase(str) {
     if (~_) {
         return toCamelCase(
             str.substring(0, _) +
-                str
-                    .substring(_ + 1)
-                    .substring(0, 1)
-                    .toUpperCase() +
-                str.substring(_ + 2),
+            str
+                .substring(_ + 1)
+                .substring(0, 1)
+                .toUpperCase() +
+            str.substring(_ + 2),
         );
     } else {
         return str.substring(0, 1).toUpperCase() + str.substring(1);

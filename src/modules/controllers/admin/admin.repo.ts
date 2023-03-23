@@ -1,4 +1,3 @@
-
 export class AdmintRepo {
     private models: any;
 

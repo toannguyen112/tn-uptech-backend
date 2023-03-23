@@ -1,15 +1,11 @@
 import { Request, Response } from "express";
 import models from "../../../infra/sequelize/models";
-import { AdmintRepo } from "./admin.repo";
 import { BaseController } from "../base.controller";
 
-const adminRepo = new AdmintRepo(models);
 export default class AdminController extends BaseController {
 
-
     async index(req: Request, res: Response) {
-        const data = await adminRepo.getList();
-        return res.status(200).json(data);
+        return res.status(200).json("");
     }
 
     async show(req: Request, res: Response) {

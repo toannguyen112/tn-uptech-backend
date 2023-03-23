@@ -1,7 +1,8 @@
 const jwt = require("jsonwebtoken");
 import bcrypt from "bcrypt";
 import dayjs from "dayjs";
-import sanitizeHtml from 'sanitize-html';
+import models from "../infra/sequelize/models";
+import _ from 'lodash';
 export default class Helper {
   static randomString(length: number): string {
     var result: string = "";
@@ -42,29 +43,6 @@ export default class Helper {
       .replace(/\s+/g, '-')
       .replace(/[^\w-]+/g, '')
       .replace(/--+/g, '-')
-  }
-
-  static generateToken(model: any, dataObject: any = 'user') {
-    try {
-      let saveObjectToken;
-
-      if (dataObject === 'admin') {
-        saveObjectToken = { admin: { id: model.id, name: model.name } }
-      }
-
-      const token: string = jwt.sign(
-        saveObjectToken,
-        process.env.SERVER_JWT_SECRET,
-        { expiresIn: process.env.SERVER_JWT_TIMEOUT }
-      );
-
-      model.tokens = model.tokens ? model.tokens.concat({ token }) : [{ token }];
-      model.save();
-
-      return token;
-    } catch (error) {
-      console.log(error);
-    }
   }
 
   static async hashPassword(password: string = "123", number: number = 8) {

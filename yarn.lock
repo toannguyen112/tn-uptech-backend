@@ -353,7 +353,12 @@
   dependencies:
     "@types/superagent" "*"
 
-"@types/validator@^13.7.1", "@types/validator@^13.7.4":
+"@types/validator@^13.7.1":
+  version "13.7.14"
+  resolved "https://registry.yarnpkg.com/@types/validator/-/validator-13.7.14.tgz#5512aef43ba353ea2fe2d0d8c7ce71c75c2ad9e6"
+  integrity sha512-J6OAed6rhN6zyqL9Of6ZMamhlsOEU/poBVvbHr/dKOYKTeuYYMlDkMv+b6UUV0o2i0tw73cgyv/97WTWaUl0/g==
+
+"@types/validator@^13.7.4":
   version "13.7.4"
   resolved "https://registry.yarnpkg.com/@types/validator/-/validator-13.7.4.tgz#33cc949ee87dd47c63e35ba4ad94f6888852be04"
   integrity sha512-uAaSWegu2lymY18l+s5nmcXu3sFeeTOl1zhSGoYzcr6T3wz1M+3OcW4UjfPhIhHGd13tIMRDsEpR+d8w/MexwQ==
@@ -1042,9 +1047,9 @@ dotenv@^16.0.3:
   integrity sha512-7GO6HghkA5fYG9TYnNxi14/7K9f5occMlp3zXAuSxn7CKCxt9xbNWG7yF8hTCSUchlfWSe3uLmlPfigevRItzQ==
 
 dottie@^2.0.2:
-  version "2.0.2"
-  resolved "https://registry.yarnpkg.com/dottie/-/dottie-2.0.2.tgz#cc91c0726ce3a054ebf11c55fbc92a7f266dd154"
-  integrity sha512-fmrwR04lsniq/uSr8yikThDTrM7epXHBAAjH9TbeH3rEA8tdCO7mRzB9hdmdGyJCxF8KERo9CITcm3kGuoyMhg==
+  version "2.0.3"
+  resolved "https://registry.yarnpkg.com/dottie/-/dottie-2.0.3.tgz#797a4f4c92a9a65499806be4051b9d9dcd5a5d77"
+  integrity sha512-4liA0PuRkZWQFQjwBypdxPfZaRWiv5tkhMXY2hzsa2pNf5s7U3m9cwUchfNKe8wZQxdGPQQzO6Rm2uGe0rvohQ==
 
 ecdsa-sig-formatter@1.0.11:
   version "1.0.11"
@@ -1724,9 +1729,9 @@ imurmurhash@^0.1.4:
   integrity sha512-JmXMZ6wuvDmLiHEml9ykzqO6lwFbof0GG4IkcGaENdCRDDmMVnny7s5HsIgHCbaq0w2MyPhDqkhTUgS2LU2PHA==
 
 inflection@^1.13.2:
-  version "1.13.2"
-  resolved "https://registry.yarnpkg.com/inflection/-/inflection-1.13.2.tgz#15e8c797c6c3dadf31aa658f8df8a4ea024798b0"
-  integrity sha512-cmZlljCRTBFouT8UzMzrGcVEvkv6D/wBdcdKG7J1QH5cXjtU75Dm+P27v9EKu/Y43UYyCJd1WC4zLebRrC8NBw==
+  version "1.13.4"
+  resolved "https://registry.yarnpkg.com/inflection/-/inflection-1.13.4.tgz#65aa696c4e2da6225b148d7a154c449366633a32"
+  integrity sha512-6I/HUDeYFfuNCVS3td055BaXBwKYuzw7K3ExVMStBowKo9oOAMJIXIHvdyR3iboTCp1b+1i5DSkIZTcwIktuDw==
 
 inflection@^2.0.1:
   version "2.0.1"
@@ -2217,12 +2222,7 @@ moment-timezone@^0.5.35:
   dependencies:
     moment "^2.29.4"
 
-moment@^2.29.1:
-  version "2.29.3"
-  resolved "https://registry.yarnpkg.com/moment/-/moment-2.29.3.tgz#edd47411c322413999f7a5940d526de183c031f3"
-  integrity sha512-c6YRvhEo//6T2Jz/vVtYzqBzwvPT95JBQ+smCytzf7c50oMZRsR/a4w88aD34I+/QVSfnoAnSBFPJHItlOMJVw==
-
-moment@^2.29.4:
+moment@^2.29.1, moment@^2.29.4:
   version "2.29.4"
   resolved "https://registry.yarnpkg.com/moment/-/moment-2.29.4.tgz#3dbe052889fe7c1b2ed966fcb3a77328964ef108"
   integrity sha512-5LC9SOxjSc2HF6vO2CyuTDNivEdoz2IvyJJGj6X8DJ0eFyfszE0QiEd+iXmBvUP3WHxSjFH/vIsA0EN00cgr8w==
@@ -2929,12 +2929,11 @@ sequelize-cli@^6.4.1:
     umzug "^2.3.0"
     yargs "^16.2.0"
 
-sequelize-hierarchy-ts@^3.0.0:
-  version "3.0.0"
-  resolved "https://registry.yarnpkg.com/sequelize-hierarchy-ts/-/sequelize-hierarchy-ts-3.0.0.tgz#2d6d63f45f934a23419b7072d7bb51f720e2d951"
-  integrity sha512-+4jsfEB8LkCCoKiUxNE/M5+CJSQPsxHAc7mFIbqAaZpqwwvOrifwRuHPVTljp9Nx5aG1QvCoMFK2LU/MzsjJBQ==
+sequelize-hierarchy@^2.0.4:
+  version "2.0.4"
+  resolved "https://registry.yarnpkg.com/sequelize-hierarchy/-/sequelize-hierarchy-2.0.4.tgz#2f5564904f5ee159ae2272c299c8acf30ebd4789"
+  integrity sha512-3eVGxB3Yir6HHRZFr6/QeYEpSoqgLFOXx8aMi9B/rnYV4m2rKm6V6FhdaGki5o/gHMJgPyEq9RNYG58mpKsRVA==
   dependencies:
-    bluebird "^3.7.2"
     is-generator "^1.0.3"
     lodash "^4.17.11"
     semver-select "^1.1.0"

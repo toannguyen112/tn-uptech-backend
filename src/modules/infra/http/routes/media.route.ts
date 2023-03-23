@@ -1,7 +1,7 @@
 import { Router } from "express";
 import fs from "fs";
 import path from "path";
-import MediaController from "../../../controllers/media.controller";
+import MediaController from "../../../controllers/medias/media.controller";
 const multer = require("multer");
 
 const pathFolder = "./storage/uploads/";
@@ -17,11 +17,10 @@ var storage = multer.diskStorage({
 });
 
 const upload = multer({ storage: storage });
-const route = Router();
+const mediaRoute = Router();
 
-route.get("/medias/index", new MediaController().index);
-route.get("/medias/show/:id", new MediaController().show);
-route.post("/medias/store", upload.array("files"), new MediaController().store);
-route.delete("/medias/delete/:id", new MediaController().delete);
+mediaRoute.get("/medias/index", MediaController.index);
+mediaRoute.get("/medias/show/:id", MediaController.show);
+mediaRoute.post("/medias/store", upload.array("files"), MediaController.store);
 
-export default route;
+export { mediaRoute };

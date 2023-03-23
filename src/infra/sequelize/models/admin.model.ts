@@ -3,13 +3,13 @@ module.exports = function (sequelize, DataTypes) {
         "admins",
         {
             id: {
-                type: DataTypes.STRING(20),
+                type: DataTypes.STRING,
                 autoIncrement: true,
                 primaryKey: true,
             },
 
             name: {
-                type: DataTypes.STRING(254),
+                type: DataTypes.STRING,
             },
         },
         {
