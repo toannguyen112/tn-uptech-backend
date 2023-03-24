@@ -15,7 +15,8 @@
         "emitDecoratorMetadata": true,
         "esModuleInterop": true,
         "skipLibCheck": true,
-        "allowSyntheticDefaultImports": true
+        "allowSyntheticDefaultImports": true,
+
     },
     "include": ["src/infra/sequelize/**/*.js", "src/infra/sequelize/**/*.ts", "./src/**/*.js", "./src/**/*.ts", "./src/**/*.js"],
     "exclude": ["node_modules", "!node_modules/@types", "./dist"]

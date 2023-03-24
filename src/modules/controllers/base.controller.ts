@@ -1,5 +1,5 @@
 import * as express from "express";
-export abstract class BaseController {
+export class BaseController {
 
     public static jsonResponse(res: express.Response, code: number, message: string, data: any) {
         return res.status(code).json({ message, data });

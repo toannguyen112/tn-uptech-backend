@@ -1,7 +1,8 @@
 
 import { Sequelize, DataTypes, Model, Optional } from 'sequelize';
+import { Folder } from '../../../interface/folder.interface';
 
-export type FolderCreationAttributes = Optional<Folder, 'id' | 'email' | 'password'>;
+export type FolderCreationAttributes = Optional<Folder, 'id' | 'parent_id' | 'label' | 'icon' | 'path'>;
 
 export class FolderModel extends Model<Folder, FolderCreationAttributes> implements Folder {
     public id: number;
@@ -60,10 +61,6 @@ module.exports = function (sequelize, DataTypes): typeof FolderModel {
     Folder.associate = function (models) {
         Folder.belongsTo(Folder, { as: 'parent', foreignKey: 'parent_id' })
         Folder.hasMany(Folder, { as: 'children', foreignKey: 'parent_id' })
-    };
-
-    Folder.prototype.getRoot = async function () {
-
     };
 
     return Folder;

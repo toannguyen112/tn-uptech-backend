@@ -1,0 +1,87 @@
+2023-03-25 00:03:17 info: =================================
+2023-03-25 00:03:17 info: ======= ENV: development =======
+2023-03-25 00:03:17 info: 🚀 App listening on the port 8000
+2023-03-25 00:03:17 info: =================================
+2023-03-25 00:03:42 info: =================================
+2023-03-25 00:03:42 info: ======= ENV: development =======
+2023-03-25 00:03:42 info: 🚀 App listening on the port 8000
+2023-03-25 00:03:42 info: =================================
+2023-03-25 00:05:45 info: =================================
+2023-03-25 00:05:45 info: ======= ENV: development =======
+2023-03-25 00:05:45 info: 🚀 App listening on the port 8000
+2023-03-25 00:05:45 info: =================================
+2023-03-25 00:05:52 info: =================================
+2023-03-25 00:05:52 info: ======= ENV: development =======
+2023-03-25 00:05:52 info: 🚀 App listening on the port 8000
+2023-03-25 00:05:52 info: =================================
+2023-03-25 00:05:59 info: =================================
+2023-03-25 00:05:59 info: ======= ENV: development =======
+2023-03-25 00:05:59 info: 🚀 App listening on the port 8000
+2023-03-25 00:05:59 info: =================================
+2023-03-25 00:06:20 info: =================================
+2023-03-25 00:06:20 info: ======= ENV: development =======
+2023-03-25 00:06:20 info: 🚀 App listening on the port 8000
+2023-03-25 00:06:20 info: =================================
+2023-03-25 00:07:18 info: =================================
+2023-03-25 00:07:18 info: ======= ENV: development =======
+2023-03-25 00:07:18 info: 🚀 App listening on the port 8000
+2023-03-25 00:07:18 info: =================================
+2023-03-25 00:07:58 info: =================================
+2023-03-25 00:07:58 info: ======= ENV: development =======
+2023-03-25 00:07:58 info: 🚀 App listening on the port 8000
+2023-03-25 00:07:58 info: =================================
+2023-03-25 00:08:34 info: =================================
+2023-03-25 00:08:34 info: ======= ENV: development =======
+2023-03-25 00:08:34 info: 🚀 App listening on the port 8000
+2023-03-25 00:08:34 info: =================================
+2023-03-25 00:08:44 info: =================================
+2023-03-25 00:08:44 info: ======= ENV: development =======
+2023-03-25 00:08:44 info: 🚀 App listening on the port 8000
+2023-03-25 00:08:44 info: =================================
+2023-03-25 00:08:49 info: =================================
+2023-03-25 00:08:49 info: ======= ENV: development =======
+2023-03-25 00:08:49 info: 🚀 App listening on the port 8000
+2023-03-25 00:08:49 info: =================================
+2023-03-25 00:10:07 info: =================================
+2023-03-25 00:10:07 info: ======= ENV: development =======
+2023-03-25 00:10:07 info: 🚀 App listening on the port 8000
+2023-03-25 00:10:07 info: =================================
+2023-03-25 00:10:08 info: 36ms Executed (default): SELECT `folders`.`id`, `folders`.`id` AS `key`, `folders`.`label` AS `label`, `folders`.`icon`, `folders`.`path`, `children`.`id` AS `children.id`, `children`.`parent_id` AS `children.parent_id`, `children`.`label` AS `children.label`, `children`.`icon` AS `children.icon`, `children`.`path` AS `children.path`, `children`.`createdAt` AS `children.createdAt`, `children`.`updatedAt` AS `children.updatedAt`, `children->children`.`id` AS `children.children.id`, `children->children`.`parent_id` AS `children.children.parent_id`, `children->children`.`label` AS `children.children.label`, `children->children`.`icon` AS `children.children.icon`, `children->children`.`path` AS `children.children.path`, `children->children`.`createdAt` AS `children.children.createdAt`, `children->children`.`updatedAt` AS `children.children.updatedAt`, `children->children->children`.`id` AS `children.children.children.id`, `children->children->children`.`parent_id` AS `children.children.children.parent_id`, `children->children->children`.`label` AS `children.children.children.label`, `children->children->children`.`icon` AS `children.children.children.icon`, `children->children->children`.`path` AS `children.children.children.path`, `children->children->children`.`createdAt` AS `children.children.children.createdAt`, `children->children->children`.`updatedAt` AS `children.children.children.updatedAt` FROM `folders` AS `folders` LEFT OUTER JOIN `folders` AS `children` ON `folders`.`id` = `children`.`parent_id` LEFT OUTER JOIN `folders` AS `children->children` ON `children`.`id` = `children->children`.`parent_id` LEFT OUTER JOIN `folders` AS `children->children->children` ON `children->children`.`id` = `children->children->children`.`parent_id` WHERE `folders`.`parent_id` = 0;
+2023-03-25 00:10:08 info: [0mGET /folders [32m200[0m 160.121 ms - -[0m
+2023-03-25 00:10:09 info: 60ms Executed (default): SELECT `folders`.`id`, `folders`.`id` AS `key`, `folders`.`label` AS `label`, `folders`.`icon`, `folders`.`path`, `children`.`id` AS `children.id`, `children`.`parent_id` AS `children.parent_id`, `children`.`label` AS `children.label`, `children`.`icon` AS `children.icon`, `children`.`path` AS `children.path`, `children`.`createdAt` AS `children.createdAt`, `children`.`updatedAt` AS `children.updatedAt`, `children->children`.`id` AS `children.children.id`, `children->children`.`parent_id` AS `children.children.parent_id`, `children->children`.`label` AS `children.children.label`, `children->children`.`icon` AS `children.children.icon`, `children->children`.`path` AS `children.children.path`, `children->children`.`createdAt` AS `children.children.createdAt`, `children->children`.`updatedAt` AS `children.children.updatedAt`, `children->children->children`.`id` AS `children.children.children.id`, `children->children->children`.`parent_id` AS `children.children.children.parent_id`, `children->children->children`.`label` AS `children.children.children.label`, `children->children->children`.`icon` AS `children.children.children.icon`, `children->children->children`.`path` AS `children.children.children.path`, `children->children->children`.`createdAt` AS `children.children.children.createdAt`, `children->children->children`.`updatedAt` AS `children.children.children.updatedAt` FROM `folders` AS `folders` LEFT OUTER JOIN `folders` AS `children` ON `folders`.`id` = `children`.`parent_id` LEFT OUTER JOIN `folders` AS `children->children` ON `children`.`id` = `children->children`.`parent_id` LEFT OUTER JOIN `folders` AS `children->children->children` ON `children->children`.`id` = `children->children->children`.`parent_id` WHERE `folders`.`parent_id` = 0;
+2023-03-25 00:10:09 info: [0mGET /folders [36m304[0m 78.320 ms - -[0m
+2023-03-25 00:10:22 info: =================================
+2023-03-25 00:10:22 info: ======= ENV: development =======
+2023-03-25 00:10:22 info: 🚀 App listening on the port 8000
+2023-03-25 00:10:22 info: =================================
+2023-03-25 00:10:26 info: =================================
+2023-03-25 00:10:26 info: ======= ENV: development =======
+2023-03-25 00:10:26 info: 🚀 App listening on the port 8000
+2023-03-25 00:10:26 info: =================================
+2023-03-25 00:10:33 info: =================================
+2023-03-25 00:10:33 info: ======= ENV: development =======
+2023-03-25 00:10:33 info: 🚀 App listening on the port 8000
+2023-03-25 00:10:33 info: =================================
+2023-03-25 00:11:48 info: =================================
+2023-03-25 00:11:48 info: ======= ENV: development =======
+2023-03-25 00:11:48 info: 🚀 App listening on the port 8000
+2023-03-25 00:11:48 info: =================================
+2023-03-25 00:12:57 info: =================================
+2023-03-25 00:12:57 info: ======= ENV: development =======
+2023-03-25 00:12:57 info: 🚀 App listening on the port 8000
+2023-03-25 00:12:57 info: =================================
+2023-03-25 00:13:13 info: =================================
+2023-03-25 00:13:13 info: ======= ENV: development =======
+2023-03-25 00:13:13 info: 🚀 App listening on the port 8000
+2023-03-25 00:13:13 info: =================================
+2023-03-25 00:13:16 info: 13ms Executed (default): SELECT `folders`.`id`, `folders`.`id` AS `key`, `folders`.`label` AS `label`, `folders`.`icon`, `folders`.`path`, `children`.`id` AS `children.id`, `children`.`parent_id` AS `children.parent_id`, `children`.`label` AS `children.label`, `children`.`icon` AS `children.icon`, `children`.`path` AS `children.path`, `children`.`createdAt` AS `children.createdAt`, `children`.`updatedAt` AS `children.updatedAt`, `children->children`.`id` AS `children.children.id`, `children->children`.`parent_id` AS `children.children.parent_id`, `children->children`.`label` AS `children.children.label`, `children->children`.`icon` AS `children.children.icon`, `children->children`.`path` AS `children.children.path`, `children->children`.`createdAt` AS `children.children.createdAt`, `children->children`.`updatedAt` AS `children.children.updatedAt`, `children->children->children`.`id` AS `children.children.children.id`, `children->children->children`.`parent_id` AS `children.children.children.parent_id`, `children->children->children`.`label` AS `children.children.children.label`, `children->children->children`.`icon` AS `children.children.children.icon`, `children->children->children`.`path` AS `children.children.children.path`, `children->children->children`.`createdAt` AS `children.children.children.createdAt`, `children->children->children`.`updatedAt` AS `children.children.children.updatedAt` FROM `folders` AS `folders` LEFT OUTER JOIN `folders` AS `children` ON `folders`.`id` = `children`.`parent_id` LEFT OUTER JOIN `folders` AS `children->children` ON `children`.`id` = `children->children`.`parent_id` LEFT OUTER JOIN `folders` AS `children->children->children` ON `children->children`.`id` = `children->children->children`.`parent_id` WHERE `folders`.`parent_id` = 0;
+2023-03-25 00:13:16 info: [0mGET /folders [32m200[0m 130.404 ms - -[0m
+2023-03-25 00:14:10 info: [0mGET /projects/index [33m404[0m 6.511 ms - 153[0m
+2023-03-25 00:14:14 info: [0mGET /projects/index [33m404[0m 1.346 ms - 153[0m
+2023-03-25 00:14:40 info: [0mGET /projects/index [33m404[0m 2.459 ms - 153[0m
+2023-03-25 00:14:42 info: [0mGET /projects/index [33m404[0m 0.967 ms - 153[0m
+2023-03-25 00:14:43 info: [0mGET /projects/index [33m404[0m 0.799 ms - 153[0m
+2023-03-25 00:14:45 info: [0mGET /projects/index [33m404[0m 2.110 ms - 153[0m
+2023-03-25 00:14:51 info: [0mGET /projects/index [33m404[0m 0.627 ms - 153[0m
+2023-03-25 00:14:53 info: [0mGET /medias/index [33m404[0m 1.833 ms - 151[0m
+2023-03-25 00:14:53 info: [0mGET /folders/index [33m404[0m 2.241 ms - 152[0m

@@ -1,59 +1,62 @@
-import express, { NextFunction, Request, Response } from "express";
-import bodyParser from "body-parser";
-import cors from "cors";
-import helmet from "helmet";
-import compression from "compression";
-import rateLimit from "express-rate-limit";
-import dotenv from "dotenv";
-import cookieParser from "cookie-parser";
-import { router } from "./http/api";
+import 'reflect-metadata';
+import { ErrorMiddleware } from "../../middlewares/error.middleware";
+import compression from 'compression';
+import cookieParser from 'cookie-parser';
+import cors from 'cors';
+import express from 'express';
+import helmet from 'helmet';
+import hpp from 'hpp';
+import morgan from 'morgan';
+import { NODE_ENV, PORT, LOG_FORMAT, ORIGIN, CREDENTIALS } from '../../config';
+import { logger, stream } from "../../utils/logger";
+import { Routes } from "../../interface/routes.interface";
 
-dotenv.config();
+export class App {
+    public app: express.Application;
+    public env: string;
+    public port: string | number;
 
-const app = express();
+    constructor(routes: Routes[]) {
+        this.app = express();
+        this.env = NODE_ENV || 'development';
+        this.port = PORT || 8000;
 
-app.use(bodyParser.urlencoded({ extended: true }));
-app.use(bodyParser.json());
+        this.initializeMiddlewares();
+        this.initializeRoutes(routes);
+        this.initializeErrorHandling();
+    }
 
-const apiLimiter = rateLimit({
-    windowMs: 60 * 1000, // 1 minutes
-    max: 10000,
-    handler: function (req: Request, res: Response) {
-        res.status(429).send({
-            status: 500,
-            message: "Too many requests!",
+    public listen() {
+        this.app.listen(this.port, () => {
+            logger.info(`=================================`);
+            logger.info(`======= ENV: ${this.env} =======`);
+            logger.info(`🚀 App listening on the port ${this.port}`);
+            logger.info(`=================================`);
         });
-    },
-    skip: (req: Request) => {
-        if (req.ip === "::ffff:127.0.0.1") return true;
-        return false;
-    },
-});
+    }
 
-app.use(cookieParser());
-app.use(cors());
-app.use(helmet());
-app.use(apiLimiter);
-app.use(compression());
-app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({ extended: true }));
+    public getServer() {
+        return this.app;
+    }
 
-app.use(router);
+    private initializeMiddlewares() {
+        this.app.use(morgan(LOG_FORMAT, { stream }));
+        this.app.use(cors());
+        this.app.use(hpp());
+        this.app.use(helmet());
+        this.app.use(compression());
+        this.app.use(express.json());
+        this.app.use(express.urlencoded({ extended: true }));
+        this.app.use(cookieParser());
+    }
 
-app.all("*", (req: Request, res: Response) => {
-    res.status(404).send(`Can find ${req.originalUrl} on this server`);
-});
+    private initializeRoutes(routes: Routes[]) {
+        routes.forEach(route => {
+            this.app.use('/', route.router);
+        });
+    }
 
-const server = app.listen(process.env.PORT || 8000, () => {
-    console.log(`[App]: Server listening on ${process.env.HOST}:${process.env.PORT}`);
-});
-
-// MongoDBService.init();
-
-process.on("uncaughtException", () => {
-    server.close(() => {
-        process.exit(1);
-    });
-});
-
-export { app };
+    private initializeErrorHandling() {
+        this.app.use(ErrorMiddleware);
+    }
+}

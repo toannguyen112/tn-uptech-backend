@@ -1,5 +1,6 @@
 require("dotenv").config();
 const Sequelize = require("sequelize");
+const { logger } = require("../../../utils/logger");
 
 const { DB_USER, DB_PASS, DB_HOST, DB_NAME } = process.env;
 const databaseCredentials = {
@@ -43,7 +44,10 @@ const options = {
         idle: 10000,
         acquire: 220000,
     },
-    logging: true,
+    logging: (query, time) => {
+        logger.info(time + 'ms' + ' ' + query);
+    },
+    benchmark: true,
 };
 
 if (process.env.NODE_ENV === "development" || process.env.NODE_ENV === "staging" || process.env.NODE_ENV === "production") {
@@ -55,3 +59,4 @@ if (process.env.NODE_ENV === "development" || process.env.NODE_ENV === "staging"
 }
 
 module.exports.connection = new Sequelize(database, username, password, options);
+

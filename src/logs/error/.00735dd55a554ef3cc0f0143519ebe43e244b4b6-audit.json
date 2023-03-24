@@ -1,0 +1,20 @@
+{
+    "keep": {
+        "days": false,
+        "amount": 30
+    },
+    "auditLog": "/Users/toannguyen/Documents/Source/tn-uptech-backend/src/logs/error/.00735dd55a554ef3cc0f0143519ebe43e244b4b6-audit.json",
+    "files": [
+        {
+            "date": 1679674568041,
+            "name": "/Users/toannguyen/Documents/Source/tn-uptech-backend/src/logs/error/2023-03-24.log",
+            "hash": "4bfcec878122462405dc937c73fd753750afd6cf0c96a512b26ccb89f053305a"
+        },
+        {
+            "date": 1679677396744,
+            "name": "/Users/toannguyen/Documents/Source/tn-uptech-backend/src/logs/error/2023-03-25.log",
+            "hash": "d488f99b644b3f65f30dca5a22f77e22241aeb7e575ebc384fdba94f2d0d5f37"
+        }
+    ],
+    "hashType": "sha256"
+}
