@@ -12,8 +12,8 @@ export class FolderRoute implements Routes {
 
     private initializeRoutes() {
         this.router.get(`${this.path}`, this.folder.index);
-        this.router.get(`${this.path}/:id(\\d+)`, this.folder.show);
-        this.router.post(`${this.path}`, this.folder.create);
-        this.router.delete(`${this.path}/:id(\\d+)`, this.folder.delete);
+        this.router.get(`${this.path}show/:id(\\d+)`, this.folder.show);
+        this.router.post(`${this.path}/create`, this.folder.create);
+        this.router.delete(`${this.path}/delete/:id(\\d+)`, this.folder.delete);
     }
 }

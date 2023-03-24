@@ -12,6 +12,7 @@ module.exports = {
 
       parent_id: {
         type: Sequelize.INTEGER,
+        defaultValue: 0
       },
 
       hierarchyLevel: {
