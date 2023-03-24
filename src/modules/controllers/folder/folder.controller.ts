@@ -5,6 +5,12 @@ import Helper from "../../../utils/Helper";
 export const index = async (req: Request, res: Response) => {
   try {
     const data = await models.Folder.findAll({
+      attributes: [
+        ['id', 'key'],
+        ['label', 'label'],
+        'icon',
+        'path',
+      ],
       where: { parent_id: 0 },
       include: Helper.queryNumberChildren(10)
     });
@@ -23,8 +29,8 @@ export const store = async (req: Request, res: Response) => {
 
 }
 
-export const rmeove = async (req: Request, res: Response) => {
+export const remove = async (req: Request, res: Response) => {
 
 }
 
-export default { index, store, show, rmeove }
+export default { index, store, show, remove }

@@ -1,6 +1,6 @@
 module.exports = function (sequelize, DataTypes) {
-    const Admin = sequelize.define(
-        "admins",
+    const Project = sequelize.define(
+        "projects",
         {
             id: {
                 type: DataTypes.STRING,
@@ -11,12 +11,32 @@ module.exports = function (sequelize, DataTypes) {
             name: {
                 type: DataTypes.STRING,
             },
+
+            description: {
+                type: DataTypes.TEXT('long'),
+                allowNull: true,
+            },
+
+            isFeatured: {
+                type: DataTypes.BOOLEAN,
+                defaultValue: false
+            },
+
+            status: {
+                type: DataTypes.STRING,
+                defaultValue: 'active'
+            },
+
+            content: {
+                type: DataTypes.TEXT('long'),
+                allowNull: true,
+            },
         },
         {
             timestamps: true,
-            tableName: "admins",
+            tableName: "projects",
         },
     );
 
-    return Admin;
+    return Project;
 };

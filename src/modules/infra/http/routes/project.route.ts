@@ -1,12 +1,12 @@
 import { Router } from "express";
-import ProjectController from "../modules/controllers/project.controller";
-const route: Router = Router();
+import ProjectController from "../../../controllers/project.controller";
+const projectRoute: Router = Router();
 
-route.get("/projects/index", new ProjectController().index);
-route.get("/projects/show/:id", new ProjectController().show);
-route.post("/projects/create", new ProjectController().create);
-route.put("/projects/update/:id", new ProjectController().update);
-route.delete("/projects/delete/:id", new ProjectController().delete);
-route.post("/projects/deleteMultipleIds", new ProjectController().deleteMultipleIds);
+projectRoute.get("/projects/index", ProjectController.index);
+projectRoute.get("/projects/show/:id", ProjectController.show);
+projectRoute.post("/projects/create", ProjectController.create);
+projectRoute.put("/projects/update/:id", ProjectController.update);
+projectRoute.delete("/projects/delete/:id", ProjectController.remove);
+projectRoute.post("/projects/deleteMultipleIds", ProjectController.deleteMultipleIds);
 
-export default route;
+export default projectRoute;

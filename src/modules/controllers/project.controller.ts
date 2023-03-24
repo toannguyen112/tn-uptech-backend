@@ -1,10 +1,9 @@
 import { Request, Response } from "express";
-import Project from "../models/project.model";
-import { Op } from "sequelize";
+import models from "../../infra/sequelize/models";
 import { ApiFeatures } from "../../utils/ApiFeatures";
-export default class ProjectController {
 
-  async index(req: Request, res: Response) {
+const index = async (req: Request, res: Response) => {
+  try {
     const query = { ...req.query };
     const conditions = {};
     const objQuery = new ApiFeatures(query)
@@ -13,88 +12,90 @@ export default class ProjectController {
       .paranoid()
       .getObjQuery();
 
-    const { count, rows }: any = await Project.findAndCountAll(objQuery);
-
-    const data = rows.map((item: Project) => item.transform(item));
+    const { count, rows }: any = await models.Project.findAndCountAll(objQuery);
 
     const result = {
       page: Number(query?.page) * 1,
       pageSize: Number(query?.page_size) * 1,
       pageCount: Math.ceil(count / Number(query?.page_size) * 1),
       totalItems: count || 0,
-      data,
+      data: rows,
     };
 
     return res.status(200).json({ message: "success", data: result });
+
+  } catch (error) {
+    console.log(error);
   }
 
-  async create(req: Request, res: Response) {
+}
 
-    console.log(req.body);
+const create = async (req: Request, res: Response) => {
 
-    try {
-      const data = await Project.create({ ...req.body });
-      return res.status(200).json({ message: "success", data });
-    } catch (error) {
-      res.status(500).send(error);
-    }
-  }
-
-  async show(req: Request, res: Response) {
-    try {
-      const data = await Project.findOne({
-        where: { id: req.params.id }
-      });
-
-      const projectDetail = data.transform(data);
-      return res.status(200).json({ message: "success", data: projectDetail });
-    } catch (error) {
-      res.status(500).send(error);
-    }
-  }
-
-  async update(req: Request, res: Response) {
-    try {
-      const { id } = req.params;
-      const reqBody = req.body;
-
-      const body = {
-        "id": reqBody.id,
-        "name": reqBody.name,
-        "status": reqBody.status,
-        "description": reqBody.description,
-        "isFeatured": reqBody.isFeatured,
-        "content": reqBody.content,
-      }
-
-      const data = await Project.update(body, { where: { id } });
-
-      return res.status(200).json({ message: "success", data });
-    } catch (error) {
-      res.status(500).send(error);
-    }
-  }
-
-  async deleteMultipleIds(req: Request, res: Response) {
-    try {
-      const { ids } = req.body;
-      await Project.destroy({ where: { id: ids } }).then((result) => {
-        return res.status(200).json({ message: "success", data: result });
-      });
-    } catch (error) {
-      res.status(500).send(error);
-    }
-  }
-
-  async delete(req: Request, res: Response) {
-    try {
-      const { id } = req.params;
-      await Project.destroy({ where: { id } });
-
-      const data = await Project.findAll({});
-      return res.status(200).json({ message: "success", data: data });
-    } catch (error) {
-      res.status(500).send(error);
-    }
+  try {
+    const data = await models.Project.create({ ...req.body });
+    return res.status(200).json({ message: "success", data });
+  } catch (error) {
+    res.status(500).send(error);
   }
 }
+
+const show = async (req: Request, res: Response) => {
+  try {
+    const data = await models.Project.findOne({
+      where: { id: req.params.id }
+    });
+
+    const projectDetail = data.transform(data);
+    return res.status(200).json({ message: "success", data: projectDetail });
+  } catch (error) {
+    res.status(500).send(error);
+  }
+}
+
+const update = async (req: Request, res: Response) => {
+  try {
+    const { id } = req.params;
+    const reqBody = req.body;
+
+    const body = {
+      "id": reqBody.id,
+      "name": reqBody.name,
+      "status": reqBody.status,
+      "description": reqBody.description,
+      "isFeatured": reqBody.isFeatured,
+      "content": reqBody.content,
+    }
+
+    const data = await models.Project.update(body, { where: { id } });
+
+    return res.status(200).json({ message: "success", data });
+  } catch (error) {
+    res.status(500).send(error);
+  }
+}
+
+const deleteMultipleIds = async (req: Request, res: Response) => {
+  try {
+    const { ids } = req.body;
+    await models.Project.destroy({ where: { id: ids } }).then((result) => {
+      return res.status(200).json({ message: "success", data: result });
+    });
+  } catch (error) {
+    res.status(500).send(error);
+  }
+}
+
+const remove = async (req: Request, res: Response) => {
+  try {
+    const { id } = req.params;
+    await models.Project.destroy({ where: { id } });
+
+    const data = await models.Project.findAll({});
+    return res.status(200).json({ message: "success", data: data });
+  } catch (error) {
+    res.status(500).send(error);
+  }
+}
+
+export default { index, create, show, remove, deleteMultipleIds, update }
