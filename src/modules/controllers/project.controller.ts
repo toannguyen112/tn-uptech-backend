@@ -1,6 +1,6 @@
 import { Request, Response } from "express";
 import models from "../../infra/sequelize/models";
-import { ApiFeatures } from "../../utils/ApiFeatures";
+import { ApiFeatures } from "../../utils/apiFeatures";
 
 const index = async (req: Request, res: Response) => {
   try {

@@ -5,6 +5,9 @@
     },
     {
       "path": "../../../../../tn-uptech-frontend"
+    },
+    {
+      "path": "../../../../../ecommerce-laravel"
     }
   ]
 }
