@@ -33,3 +33,9 @@ TypeError: Cannot read properties of undefined (reading 'storeMedia')
 TypeError: Cannot read properties of undefined (reading 'storeMedia')
     at MediaController.create (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/modules/controllers/media.controller.ts:20:25)
     at processTicksAndRejections (node:internal/process/task_queues:96:5)
+2023-03-25 14:18:00 error: uncaughtException: models_1.default.Media.storeMedia is not a function
+TypeError: models_1.default.Media.storeMedia is not a function
+    at MediaController.create (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/modules/controllers/media.controller.ts:20:26)
+2023-03-25 14:20:51 error: uncaughtException: models_1.default.Media.storeMedia is not a function
+TypeError: models_1.default.Media.storeMedia is not a function
+    at MediaController.create (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/modules/controllers/media.controller.ts:20:26)

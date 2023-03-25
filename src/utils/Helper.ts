@@ -22,14 +22,6 @@ export default class Helper {
     return dayjs(date).format(format);
   }
 
-  static applyMixins(derivedCtor: any, baseCtors: any[]) {
-    baseCtors.forEach((baseCtor) => {
-      Object.getOwnPropertyNames(baseCtor.prototype).forEach((name) => {
-        Object.defineProperty(derivedCtor.prototype, name, Object.getOwnPropertyDescriptor(baseCtor.prototype, name));
-      });
-    });
-  }
-
   static transformRichText(data: string) {
     return `<div>${data}</div>`;
   }

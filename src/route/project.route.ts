@@ -1,12 +1,21 @@
-// import { Router } from "express";
-// import ProjectController from "../../../controllers/project.controller";
-// const projectRoute: Router = Router();
 
-// projectRoute.get("/projects/index", ProjectController.index);
-// projectRoute.get("/projects/show/:id", ProjectController.show);
-// projectRoute.post("/projects/create", ProjectController.create);
-// projectRoute.put("/projects/update/:id", ProjectController.update);
-// projectRoute.delete("/projects/delete/:id", ProjectController.remove);
-// projectRoute.post("/projects/deleteMultipleIds", ProjectController.deleteMultipleIds);
+import { Router } from "express";
+import { Routes } from "../interface/routes.interface";
+import { ProjectController } from "../modules/controllers/project.controller";
+export class ProjectRoute implements Routes {
+    public path = '/projects';
+    public router = Router();
+    public project = new ProjectController();
 
-// export default projectRoute;
+    constructor() {
+        this.initializeRoutes();
+    }
+
+    private initializeRoutes() {
+        this.router.get(`${this.path}`, this.project.index);
+        this.router.get(`${this.path}/show/:id(\\d+)`, this.project.show);
+        this.router.post(`${this.path}/create`, this.project.create);
+        this.router.delete(`${this.path}/delete/:id(\\d+)`, this.project.delete);
+        this.router.delete(`${this.path}/deleteMultipleIds`, this.project.deleteMultipleIds);
+    }
+}

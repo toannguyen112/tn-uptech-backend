@@ -1,6 +1,7 @@
 
 import { Model } from 'sequelize';
 import { Media } from '../../../interface/Media.interface';
+import Helper from '../../../utils/helper';
 
 export class MediaModel extends Model<Media> implements Media {
     public id: number;
@@ -40,6 +41,9 @@ module.exports = function (sequelize, DataTypes): typeof MediaModel {
 
             path: {
                 type: DataTypes.STRING,
+                get() {
+                    return Helper.staticUrl(this.getDataValue('path'));
+                }
             },
 
             extension: {

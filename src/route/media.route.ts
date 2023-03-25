@@ -16,8 +16,9 @@ var storage = multer.diskStorage({
 
 const upload = multer({ storage: storage });
 
-import { Router } from "express";
 import path from "path";
+
+import { Router } from "express";
 import { Routes } from "../interface/routes.interface";
 import { MediaController } from "../modules/controllers/media.controller";
 
