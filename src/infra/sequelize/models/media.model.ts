@@ -39,6 +39,14 @@ module.exports = function (sequelize, DataTypes): typeof MediaModel {
                 type: DataTypes.STRING,
             },
 
+            fodler_id: {
+                type: DataTypes.STRING,
+                references: {
+                    model: "folders",
+                    key: "id",
+                },
+            },
+
             path: {
                 type: DataTypes.STRING,
                 get() {

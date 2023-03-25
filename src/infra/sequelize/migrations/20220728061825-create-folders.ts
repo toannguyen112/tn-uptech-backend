@@ -15,10 +15,6 @@ module.exports = {
         defaultValue: 0
       },
 
-      hierarchyLevel: {
-        type: Sequelize.INTEGER,
-      },
-
       label: {
         type: Sequelize.STRING,
       },

@@ -15,6 +15,7 @@ export class MediaService {
         const file = {
             filename: image.filename,
             disk: diskPath,
+            fodler_id: 1,
             path,
             extension: "",
             mime: image.mimetype,

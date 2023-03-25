@@ -1,5 +1,4 @@
 import { Request, Response } from "express";
-import models from "../../infra/sequelize/models";
 import { Container } from 'typedi';
 import { BaseController } from "./base.controller";
 import { MediaService } from "../../services/media.service";
@@ -9,7 +8,7 @@ export class MediaController extends BaseController {
 
   public index = async (req: Request, res: Response) => {
     const data = await this.media.getList();
-    return res.status(200).json({ message: "OK", data });
+    return this.success(res, data, "success");
   }
 
   public show = async (req: Request, res: Response) => { }
@@ -20,24 +19,20 @@ export class MediaController extends BaseController {
       for await (const image of images) {
         await this.media.storeImage(image)
       }
-      const data = await models.Media.findAll({});
-      return res.status(200).json({ message: "OK", data });
+      return this.success(res, {}, "success");
     } catch (error) {
-      console.log(error);
       return res.status(500);
     }
   }
 
   public delete = async (req: Request, res: Response) => {
-      try {
-        const { id } = req.params;
-        await models.Project.destroy({ where: { id } });
-
-        const data = await models.Project.findAll({});
-        return res.status(200).json({ message: "success", data: data });
-      } catch (error) {
-        res.status(500).send(error);
-      }
+    try {
+      const { id } = req.params;
+      const data = await this.media.delete(id);
+      return this.success(res, data, "success");
+    } catch (error) {
+      res.status(500).send(error);
+    }
   }
 
 }

@@ -18,6 +18,14 @@ module.exports = {
         type: Sequelize.STRING,
       },
 
+      fodler_id: {
+        type: Sequelize.INTEGER,
+        references: {
+          model: "folders",
+          key: "id",
+        },
+      },
+
       path: {
         type: Sequelize.STRING,
       },
