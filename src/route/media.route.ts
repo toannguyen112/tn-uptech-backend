@@ -1,7 +1,7 @@
 import { Router } from "express";
 import fs from "fs";
 import path from "path";
-import MediaController from "../../../controllers/medias/media.controller";
+
 const multer = require("multer");
 
 const pathFolder = "./storage/uploads/";

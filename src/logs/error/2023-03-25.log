@@ -24,3 +24,5 @@ TSError: ⨯ Unable to compile TypeScript:
 2023-03-25 01:09:22 error: [DELETE] /folders/delete/6 >> StatusCode:: 500, Message:: Invalid value { id: '6' }
 2023-03-25 01:10:29 error: [DELETE] /folders/delete/6 >> StatusCode:: 500, Message:: Invalid value { id: '6' }
 2023-03-25 01:14:40 error: [GET] /folders >> StatusCode:: 500, Message:: Invalid value { parent_id: { '$eq': 0 } }
+2023-03-25 12:29:02 error: [GET] /folders >> StatusCode:: 500, Message:: Invalid value { parent_id: { '$eq': 0 } }
+2023-03-25 12:29:08 error: [GET] /folders >> StatusCode:: 500, Message:: Invalid value { parent_id: { '$eq': 0 } }

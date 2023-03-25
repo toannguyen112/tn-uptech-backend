@@ -11,13 +11,6 @@ const databaseCredentials = {
         host: DB_HOST,
         dialect: "mysql",
     },
-    test: {
-        username: DB_USER,
-        password: DB_PASS,
-        database: DB_NAME,
-        host: DB_HOST,
-        dialect: "mysql",
-    },
     production: {
         username: DB_USER,
         password: DB_PASS,
@@ -50,7 +43,7 @@ const options = {
     benchmark: true,
 };
 
-if (process.env.NODE_ENV === "development" || process.env.NODE_ENV === "staging" || process.env.NODE_ENV === "production") {
+if (process.env.NODE_ENV === "development" || process.env.NODE_ENV === "production") {
     options.ssl = true;
     options.dialectOptions.ssl = {
         require: true,
