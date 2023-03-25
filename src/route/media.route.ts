@@ -24,3 +24,23 @@
 // mediaRoute.post("/medias/store", upload.array("files"), MediaController.store);
 
 // export { mediaRoute };
+import { Router } from "express";
+import { Routes } from "../interface/routes.interface";
+import { MediaController } from "../modules/controllers/media.controller";
+
+export class MediaRoute implements Routes {
+    public path = '/medias';
+    public router = Router();
+    public media = new MediaController();
+
+    constructor() {
+        this.initializeRoutes();
+    }
+
+    private initializeRoutes() {
+        this.router.get(`${this.path}`, this.media.index);
+        this.router.get(`${this.path}show/:id(\\d+)`, this.media.show);
+        this.router.post(`${this.path}/create`, this.media.create);
+        this.router.delete(`${this.path}/delete/:id(\\d+)`, this.media.delete);
+    }
+}

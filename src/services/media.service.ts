@@ -1,18 +1,18 @@
 import models from "../infra/sequelize/models";
-import { Folder } from "../interface/folder.interface";
+import { Media } from "../interface/media.interface";
 import { Service } from 'typedi';
 
 @Service()
-export class FolderService {
-    public async index(): Promise<Folder[]> {
-        return await models.Folder.findAll({})
+export class MediaService {
+    public async index(): Promise<Media[]> {
+        return await models.Media.findAll({})
     }
 
-    public async create(body): Promise<Folder> {
-        return await models.Folder.create({ ...body });
+    public async create(body): Promise<Media> {
+        return await models.Media.create({ ...body });
     }
 
-    public async delete(id): Promise<Folder> {
-        return await models.Folder.destroy({ where: { id } });
+    public async delete(id): Promise<Media> {
+        return await models.Media.destroy({ where: { id } });
     }
 }

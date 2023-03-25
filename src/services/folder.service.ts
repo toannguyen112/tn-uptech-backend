@@ -1,6 +1,7 @@
 import models from "../infra/sequelize/models";
 import { Folder } from "../interface/folder.interface";
 import { Service } from 'typedi';
+import { Op } from "sequelize";
 @Service()
 export class FolderService {
     public async index(): Promise<Folder[]> {
@@ -8,25 +9,13 @@ export class FolderService {
             attributes: [
                 ['id', 'key'],
                 ['label', 'label'],
-                'icon',
-                'path',
+                ['icon', 'icon'],
+                ['path', 'path'],
             ],
             where: {
-                $or: [
-                    {
-                        parent_id:
-                        {
-                            $eq: 0
-                        }
-                    },
-                    {
-                        parent_id:
-                        {
-                            $eq: null
-                        }
-                    },
-                ],
-
+                [Op.or]: [
+                    { parent_id: 0 },
+                    { parent_id: null }]
             },
             include: {
                 model: models.Folder,
