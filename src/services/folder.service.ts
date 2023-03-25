@@ -2,6 +2,7 @@ import models from "../infra/sequelize/models";
 import { Folder } from "../interface/folder.interface";
 import { Service } from 'typedi';
 import { Op } from "sequelize";
+import { Media } from "../interface/media.interface";
 @Service()
 export class FolderService {
 
@@ -35,6 +36,10 @@ export class FolderService {
                 }
             }
         })
+    }
+
+    public async getMeidas(fodlerId): Promise<Media[]> {
+        return await models.Media.findAll({});
     }
 
     public async create(body): Promise<Folder> {

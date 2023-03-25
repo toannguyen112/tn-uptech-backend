@@ -26,3 +26,10 @@ TSError: ⨯ Unable to compile TypeScript:
 2023-03-25 01:14:40 error: [GET] /folders >> StatusCode:: 500, Message:: Invalid value { parent_id: { '$eq': 0 } }
 2023-03-25 12:29:02 error: [GET] /folders >> StatusCode:: 500, Message:: Invalid value { parent_id: { '$eq': 0 } }
 2023-03-25 12:29:08 error: [GET] /folders >> StatusCode:: 500, Message:: Invalid value { parent_id: { '$eq': 0 } }
+2023-03-25 14:02:35 error: uncaughtException: Cannot read properties of undefined (reading 'storeMedia')
+TypeError: Cannot read properties of undefined (reading 'storeMedia')
+    at MediaController.create (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/modules/controllers/media.controller.ts:18:25)
+2023-03-25 14:03:49 error: uncaughtException: Cannot read properties of undefined (reading 'storeMedia')
+TypeError: Cannot read properties of undefined (reading 'storeMedia')
+    at MediaController.create (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/modules/controllers/media.controller.ts:20:25)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)

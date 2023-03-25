@@ -2,6 +2,7 @@ import { NextFunction, Request, Response } from 'express';
 import { Container } from 'typedi';
 import { FolderService } from "../../services/folder.service";
 import { Folder } from "../../interface/folder.interface";
+import { Media } from "../../interface/media.interface";
 import { BaseController } from '../controllers/base.controller'
 
 export class FolderController extends BaseController {
@@ -17,8 +18,13 @@ export class FolderController extends BaseController {
     }
   }
 
-  public show = async (req: Request, res: Response, next: NextFunction) => {
-
+  public getMedias = async (req: Request, res: Response, next: NextFunction) => {
+    try {
+      const data: Media[] = await this.folder.getMeidas(null);
+      this.success(res, data, "success");
+    } catch (error) {
+      next(error);
+    }
   }
 
   public create = async (req: Request, res: Response, next: NextFunction) => {

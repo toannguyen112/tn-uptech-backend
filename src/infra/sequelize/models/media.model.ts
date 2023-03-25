@@ -1,21 +1,27 @@
 
-import { Sequelize, DataTypes, Model, Optional } from 'sequelize';
-import { Folder } from '../../../interface/folder.interface';
+import { Model } from 'sequelize';
+import { Media } from '../../../interface/Media.interface';
 
-
-export class MediaModel extends Model<Folder> implements Folder {
+export class MediaModel extends Model<Media> implements Media {
     public id: number;
-    public parent_id: string;
-    public label: string;
-    public icon: string;
+    public filename: string;
+    public disk: string;
     public path: string;
+    public extension: string;
+    public mime: string;
+    public size: string;
+    public width: string;
+    public height: string;
+    public alt: string;
+    public creator: string;
+    public editor: string;
 
     public readonly createdAt!: Date;
     public readonly updatedAt!: Date;
 }
 
 module.exports = function (sequelize, DataTypes): typeof MediaModel {
-    const Folder = sequelize.define(
+    const Media = sequelize.define(
         "medias",
         {
             id: {
@@ -24,9 +30,48 @@ module.exports = function (sequelize, DataTypes): typeof MediaModel {
                 primaryKey: true,
             },
 
-            parent_id: {
+            filename: {
+                type: DataTypes.STRING,
+            },
+
+            disk: {
+                type: DataTypes.STRING,
+            },
+
+            path: {
+                type: DataTypes.STRING,
+            },
+
+            extension: {
+                type: DataTypes.STRING,
+            },
+
+            mime: {
+                type: DataTypes.STRING,
+            },
+
+            size: {
                 type: DataTypes.INTEGER,
-                hierarchy: true
+            },
+
+            width: {
+                type: DataTypes.INTEGER,
+            },
+
+            height: {
+                type: DataTypes.INTEGER,
+            },
+
+            alt: {
+                type: DataTypes.STRING,
+            },
+
+            creator: {
+                type: DataTypes.STRING,
+            },
+
+            editor: {
+                type: DataTypes.STRING,
             },
 
             createdAt: {
@@ -45,9 +90,5 @@ module.exports = function (sequelize, DataTypes): typeof MediaModel {
         },
     );
 
-    Folder.associate = function (models) {
-
-    };
-
-    return Folder;
+    return Media;
 };
