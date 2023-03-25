@@ -4,14 +4,17 @@ import { Service } from 'typedi';
 import { Op } from "sequelize";
 @Service()
 export class FolderService {
+
+    private attributes = [
+        ['id', 'key'],
+        ['label', 'label'],
+        ['icon', 'icon'],
+        ['path', 'path'],
+    ]
+
     public async index(): Promise<Folder[]> {
         return await models.Folder.findAll({
-            attributes: [
-                ['id', 'key'],
-                ['label', 'label'],
-                ['icon', 'icon'],
-                ['path', 'path'],
-            ],
+            attributes: this.attributes,
             where: {
                 [Op.or]: [
                     { parent_id: 0 },
@@ -20,7 +23,9 @@ export class FolderService {
             include: {
                 model: models.Folder,
                 as: "children",
+                attributes: this.attributes,
                 include: {
+                    attributes: this.attributes,
                     model: models.Folder,
                     as: "children",
                     include: {

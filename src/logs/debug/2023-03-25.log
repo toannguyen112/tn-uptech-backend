@@ -869,3 +869,70 @@
 2023-03-25 13:18:36 info: [0mGET /folders [36m304[0m 10.809 ms - -[0m
 2023-03-25 13:18:36 info: [0mGET /folders [36m304[0m 9.059 ms - -[0m
 2023-03-25 13:18:36 info: [0mGET /folders [36m304[0m 24.316 ms - -[0m
+2023-03-25 13:23:58 info: [0mGET /folders [36m304[0m 86.467 ms - -[0m
+2023-03-25 13:24:55 info: [0mGET /medias [0m-[0m - ms - -[0m
+2023-03-25 13:24:56 info: [0mGET /folders [36m304[0m 83.186 ms - -[0m
+2023-03-25 13:25:57 info: [0mOPTIONS /folders/create [32m204[0m 0.727 ms - 0[0m
+2023-03-25 13:25:57 info: [0mPOST /folders/create [32m200[0m 171.271 ms - 162[0m
+2023-03-25 13:25:57 info: [0mGET /folders [32m200[0m 9.915 ms - -[0m
+2023-03-25 13:29:00 info: [0mGET /projects/index [33m404[0m 59.081 ms - 153[0m
+2023-03-25 13:29:49 info: [0mGET /medias [0m-[0m - ms - -[0m
+2023-03-25 13:29:52 info: [0mGET /projects/index [33m404[0m 18.232 ms - 153[0m
+2023-03-25 13:30:02 info: [0mGET /folders [36m304[0m 46.597 ms - -[0m
+2023-03-25 13:30:05 info: [0mGET /folders [36m304[0m 11.465 ms - -[0m
+2023-03-25 13:30:14 info: [0mOPTIONS /folders/create [32m204[0m 0.196 ms - 0[0m
+2023-03-25 13:30:14 info: [0mPOST /folders/create [32m200[0m 18.255 ms - 145[0m
+2023-03-25 13:30:14 info: [0mGET /folders [32m200[0m 6.619 ms - -[0m
+2023-03-25 13:30:30 info: [0mOPTIONS /folders/create [32m204[0m 0.437 ms - 0[0m
+2023-03-25 13:30:30 info: [0mPOST /folders/create [32m200[0m 32.118 ms - 169[0m
+2023-03-25 13:30:30 info: [0mGET /folders [32m200[0m 17.745 ms - -[0m
+2023-03-25 13:32:33 info: =================================
+2023-03-25 13:32:33 info: ======= ENV: development =======
+2023-03-25 13:32:33 info: 🚀 App listening on the port 8000
+2023-03-25 13:32:33 info: =================================
+2023-03-25 13:32:37 info: =================================
+2023-03-25 13:32:37 info: ======= ENV: development =======
+2023-03-25 13:32:37 info: 🚀 App listening on the port 8000
+2023-03-25 13:32:37 info: =================================
+2023-03-25 13:32:39 info: [0mGET /folders [32m200[0m 118.165 ms - -[0m
+2023-03-25 13:33:20 info: =================================
+2023-03-25 13:33:20 info: ======= ENV: development =======
+2023-03-25 13:33:20 info: 🚀 App listening on the port 8000
+2023-03-25 13:33:20 info: =================================
+2023-03-25 13:33:53 info: =================================
+2023-03-25 13:33:53 info: ======= ENV: development =======
+2023-03-25 13:33:53 info: 🚀 App listening on the port 8000
+2023-03-25 13:33:53 info: =================================
+2023-03-25 13:33:57 info: [0mGET /folders [36m304[0m 100.344 ms - -[0m
+2023-03-25 13:34:06 info: [0mGET /folders [36m304[0m 34.535 ms - -[0m
+2023-03-25 13:34:29 info: [0mOPTIONS /folders/create [32m204[0m 1.166 ms - 0[0m
+2023-03-25 13:34:29 info: [0mPOST /folders/create [32m200[0m 42.587 ms - 168[0m
+2023-03-25 13:34:29 info: [0mGET /folders [32m200[0m 10.791 ms - -[0m
+2023-03-25 13:34:40 info: [0mOPTIONS /folders/delete/16 [32m204[0m 0.366 ms - 0[0m
+2023-03-25 13:34:40 info: [0mDELETE /folders/delete/16 [32m200[0m 27.979 ms - 30[0m
+2023-03-25 13:34:40 info: [0mGET /folders [32m200[0m 14.567 ms - -[0m
+2023-03-25 13:34:48 info: [0mOPTIONS /folders/delete/3 [32m204[0m 0.247 ms - 0[0m
+2023-03-25 13:34:48 info: [0mDELETE /folders/delete/3 [32m200[0m 4.031 ms - 30[0m
+2023-03-25 13:34:48 info: [0mGET /folders [32m200[0m 8.728 ms - -[0m
+2023-03-25 13:34:52 info: [0mOPTIONS /folders/delete/12 [32m204[0m 0.285 ms - 0[0m
+2023-03-25 13:34:52 info: [0mDELETE /folders/delete/12 [32m200[0m 10.494 ms - 30[0m
+2023-03-25 13:34:52 info: [0mGET /folders [32m200[0m 9.545 ms - -[0m
+2023-03-25 13:35:26 info: [0mGET /folders [36m304[0m 78.761 ms - -[0m
+2023-03-25 13:35:28 info: [0mGET /folders [36m304[0m 46.699 ms - -[0m
+2023-03-25 13:35:29 info: [0mGET /folders [36m304[0m 37.307 ms - -[0m
+2023-03-25 13:35:31 info: [0mGET /folders [36m304[0m 15.385 ms - -[0m
+2023-03-25 13:36:09 info: [0mGET /folders [36m304[0m 36.731 ms - -[0m
+2023-03-25 13:36:16 info: [0mGET /folders [36m304[0m 170.720 ms - -[0m
+2023-03-25 13:36:27 info: [0mGET /folders [36m304[0m 66.904 ms - -[0m
+2023-03-25 13:37:27 info: [0mGET /folders [36m304[0m 204.550 ms - -[0m
+2023-03-25 13:39:11 info: [0mGET /folders [36m304[0m 22.230 ms - -[0m
+2023-03-25 13:39:13 info: [0mGET /folders [36m304[0m 21.360 ms - -[0m
+2023-03-25 13:39:30 info: [0mGET /folders [36m304[0m 16.222 ms - -[0m
+2023-03-25 13:39:38 info: [0mGET /folders [36m304[0m 10.729 ms - -[0m
+2023-03-25 13:39:40 info: [0mGET /folders [36m304[0m 26.951 ms - -[0m
+2023-03-25 13:39:42 info: [0mGET /folders [36m304[0m 53.534 ms - -[0m
+2023-03-25 13:39:44 info: [0mGET /folders [36m304[0m 56.832 ms - -[0m
+2023-03-25 13:39:46 info: [0mGET /folders [36m304[0m 8.800 ms - -[0m
+2023-03-25 13:39:55 info: [0mGET /folders [36m304[0m 11.147 ms - -[0m
+2023-03-25 13:40:00 info: [0mGET /folders [36m304[0m 7.760 ms - -[0m
+2023-03-25 13:40:23 info: [0mGET /folders [36m304[0m 37.165 ms - -[0m
