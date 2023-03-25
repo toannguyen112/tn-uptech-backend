@@ -1,6 +1,6 @@
 require("dotenv").config();
 const Sequelize = require("sequelize");
-// const logger = require("../../../utils/logger");
+const Logger = require("../../../utils/logger");
 
 const { DB_USER, DB_PASS, DB_HOST, DB_NAME } = process.env;
 const databaseCredentials = {
@@ -38,7 +38,7 @@ const options = {
         acquire: 220000,
     },
     logging: (query, time) => {
-        // logger.info(time + 'ms' + ' ' + query);
+        new Logger.info(time + 'ms' + ' ' + query);
     },
     benchmark: true,
 };
