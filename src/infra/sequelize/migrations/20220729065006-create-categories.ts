@@ -20,14 +20,6 @@ module.exports = {
         type: Sequelize.STRING,
       },
 
-      file_id: {
-        type: Sequelize.INTEGER,
-        references: {
-          model: "files",
-          key: "id",
-        },
-      },
-
       status: {
         allowNull: true,
         type: Sequelize.STRING,

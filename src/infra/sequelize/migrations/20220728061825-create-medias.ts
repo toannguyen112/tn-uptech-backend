@@ -2,7 +2,7 @@
 
 module.exports = {
   up: (queryInterface, Sequelize) =>
-    queryInterface.createTable("files", {
+    queryInterface.createTable("medias", {
       id: {
         primaryKey: true,
         unique: true,
@@ -65,5 +65,5 @@ module.exports = {
       },
     }),
 
-  down: (queryInterface) => queryInterface.dropTable("files"),
+  down: (queryInterface) => queryInterface.dropTable("medias"),
 };

@@ -43,14 +43,6 @@ module.exports = {
         defaultValue: new Date(),
       },
 
-      file_id: {
-        type: Sequelize.INTEGER,
-        references: {
-          model: "files",
-          key: "id",
-        },
-      },
-
       updatedAt: {
         type: Sequelize.DATE,
         defaultValue: new Date(),

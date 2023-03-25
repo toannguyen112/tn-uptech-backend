@@ -1,6 +1,6 @@
 import { Request, Response } from "express";
-import models from "../../../infra/sequelize/models";
-import { BaseController } from "../base.controller";
+import models from "../../infra/sequelize/models";
+import { BaseController } from "./base.controller";
 
 export default class AdminController extends BaseController {
 
@@ -11,7 +11,7 @@ export default class AdminController extends BaseController {
     async show(req: Request, res: Response) {
         try {
             const { id } = req.params;
-            const data = await models.Admin.findOne({ where: { id }, include: [] });
+            const data = await models.Admin.findOne({ where: { id } });
             return res.status(200).json(data);
         } catch (error) {
             res.status(500).send(error);

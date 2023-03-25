@@ -1,5 +1,5 @@
 import { Request, Response } from "express";
-import models from "../../../infra/sequelize/models";
+import models from "../../infra/sequelize/models";
 
 export const index = async (req: Request, res: Response) => {
 
