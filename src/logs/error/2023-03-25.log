@@ -39,3 +39,34 @@ TypeError: models_1.default.Media.storeMedia is not a function
 2023-03-25 14:20:51 error: uncaughtException: models_1.default.Media.storeMedia is not a function
 TypeError: models_1.default.Media.storeMedia is not a function
     at MediaController.create (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/modules/controllers/media.controller.ts:20:26)
+2023-03-25 16:33:00 error: [POST] /folders/get-medias >> StatusCode:: 500, Message:: WHERE parameter "id" has invalid "undefined" value
+2023-03-25 16:33:50 error: [POST] /folders/get-medias >> StatusCode:: 500, Message:: WHERE parameter "id" has invalid "undefined" value
+2023-03-25 16:34:09 error: [POST] /folders/get-medias >> StatusCode:: 500, Message:: WHERE parameter "id" has invalid "undefined" value
+2023-03-25 16:34:13 error: [POST] /folders/get-medias >> StatusCode:: 500, Message:: WHERE parameter "id" has invalid "undefined" value
+2023-03-25 16:34:52 error: [POST] /folders/get-medias >> StatusCode:: 500, Message:: WHERE parameter "id" has invalid "undefined" value
+2023-03-25 16:36:28 error: [POST] /folders/get-medias >> StatusCode:: 500, Message:: WHERE parameter "id" has invalid "undefined" value
+2023-03-25 16:36:33 error: [POST] /folders/get-medias >> StatusCode:: 500, Message:: WHERE parameter "id" has invalid "undefined" value
+2023-03-25 16:37:46 error: [POST] /folders/get-medias >> StatusCode:: 500, Message:: WHERE parameter "id" has invalid "undefined" value
+2023-03-25 16:38:05 error: [POST] /folders/get-medias >> StatusCode:: 500, Message:: WHERE parameter "id" has invalid "undefined" value
+2023-03-25 16:38:50 error: [POST] /folders/get-medias >> StatusCode:: 500, Message:: WHERE parameter "id" has invalid "undefined" value
+2023-03-25 16:44:03 error: [POST] /folders/get-medias >> StatusCode:: 500, Message:: Unknown column 'medias.folder_id' in 'where clause'
+2023-03-25 16:44:04 error: [POST] /folders/get-medias >> StatusCode:: 500, Message:: Unknown column 'medias.folder_id' in 'where clause'
+2023-03-25 16:44:05 error: [POST] /folders/get-medias >> StatusCode:: 500, Message:: Unknown column 'medias.folder_id' in 'where clause'
+2023-03-25 16:44:05 error: [POST] /folders/get-medias >> StatusCode:: 500, Message:: Unknown column 'medias.folder_id' in 'where clause'
+2023-03-25 16:44:06 error: [POST] /folders/get-medias >> StatusCode:: 500, Message:: Unknown column 'medias.folder_id' in 'where clause'
+2023-03-25 16:44:06 error: [POST] /folders/get-medias >> StatusCode:: 500, Message:: Unknown column 'medias.folder_id' in 'where clause'
+2023-03-25 16:44:06 error: [POST] /folders/get-medias >> StatusCode:: 500, Message:: Unknown column 'medias.folder_id' in 'where clause'
+2023-03-25 16:44:06 error: [POST] /folders/get-medias >> StatusCode:: 500, Message:: Unknown column 'medias.folder_id' in 'where clause'
+2023-03-25 16:44:07 error: [POST] /folders/get-medias >> StatusCode:: 500, Message:: Unknown column 'medias.folder_id' in 'where clause'
+2023-03-25 16:44:07 error: [POST] /folders/get-medias >> StatusCode:: 500, Message:: Unknown column 'medias.folder_id' in 'where clause'
+2023-03-25 16:44:07 error: [POST] /folders/get-medias >> StatusCode:: 500, Message:: Unknown column 'medias.folder_id' in 'where clause'
+2023-03-25 16:44:08 error: [POST] /folders/get-medias >> StatusCode:: 500, Message:: Unknown column 'medias.folder_id' in 'where clause'
+2023-03-25 16:44:08 error: [POST] /folders/get-medias >> StatusCode:: 500, Message:: Unknown column 'medias.folder_id' in 'where clause'
+2023-03-25 16:44:10 error: [POST] /folders/get-medias >> StatusCode:: 500, Message:: Unknown column 'medias.folder_id' in 'where clause'
+2023-03-25 16:45:29 error: [POST] /folders/get-medias >> StatusCode:: 500, Message:: Unknown column 'folder_id' in 'field list'
+2023-03-25 16:45:31 error: [POST] /folders/get-medias >> StatusCode:: 500, Message:: Unknown column 'folder_id' in 'field list'
+2023-03-25 16:45:32 error: [POST] /folders/get-medias >> StatusCode:: 500, Message:: Unknown column 'folder_id' in 'field list'
+2023-03-25 16:45:32 error: [POST] /folders/get-medias >> StatusCode:: 500, Message:: Unknown column 'folder_id' in 'field list'
+2023-03-25 16:45:32 error: [POST] /folders/get-medias >> StatusCode:: 500, Message:: Unknown column 'folder_id' in 'field list'
+2023-03-25 16:45:33 error: [POST] /folders/get-medias >> StatusCode:: 500, Message:: Unknown column 'folder_id' in 'field list'
+2023-03-25 17:29:00 error: [POST] /medias/create >> StatusCode:: 500, Message:: Unexpected field

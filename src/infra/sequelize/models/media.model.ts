@@ -8,6 +8,7 @@ export class MediaModel extends Model<Media> implements Media {
     public filename: string;
     public disk: string;
     public path: string;
+    public folder_id: string;
     public extension: string;
     public mime: string;
     public size: string;
@@ -39,7 +40,7 @@ module.exports = function (sequelize, DataTypes): typeof MediaModel {
                 type: DataTypes.STRING,
             },
 
-            fodler_id: {
+            folder_id: {
                 type: DataTypes.STRING,
                 references: {
                     model: "folders",

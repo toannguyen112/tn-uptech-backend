@@ -33,7 +33,6 @@ export class MediaRoute implements Routes {
 
     private initializeRoutes() {
         this.router.get(`${this.path}`, this.media.index);
-        this.router.get(`${this.path}/show/:id(\\d+)`, this.media.show);
         this.router.post(`${this.path}/create`, upload.array("files"), this.media.create);
         this.router.delete(`${this.path}/delete/:id(\\d+)`, this.media.delete);
     }

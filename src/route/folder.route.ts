@@ -12,8 +12,7 @@ export class FolderRoute implements Routes {
 
     private initializeRoutes() {
         this.router.get(`${this.path}`, this.folder.index);
-        // this.router.get(`${this.path}/show/:id(\\d+)`, this.folder.show);
-        this.router.get(`${this.path}/get-medias`, this.folder.getMedias);
+        this.router.post(`${this.path}/get-medias`, this.folder.getMedias);
         this.router.post(`${this.path}/create`, this.folder.create);
         this.router.delete(`${this.path}/delete/:id(\\d+)`, this.folder.delete);
     }

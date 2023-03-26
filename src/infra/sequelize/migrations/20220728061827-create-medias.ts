@@ -18,7 +18,7 @@ module.exports = {
         type: Sequelize.STRING,
       },
 
-      fodler_id: {
+      folder_id: {
         type: Sequelize.INTEGER,
         references: {
           model: "folders",

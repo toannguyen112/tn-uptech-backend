@@ -4,6 +4,7 @@ export interface Media {
     disk: string;
     path: string;
     extension: string;
+    folder_id: string;
     mime: string;
     size: string;
     width: string;

@@ -11,13 +11,13 @@ export class MediaController extends BaseController {
     return this.success(res, data, "success");
   }
 
-  public show = async (req: Request, res: Response) => { }
-
   public create = async (req: Request, res: Response) => {
     try {
       const images = req["files"];
+      const { folderId } = req.body;
+
       for await (const image of images) {
-        await this.media.storeImage(image)
+        await this.media.storeImage(image, folderId)
       }
       return this.success(res, {}, "success");
     } catch (error) {

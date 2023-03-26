@@ -8,14 +8,19 @@ export class MediaService {
         return await models.Media.findAll({})
     }
 
-    public async storeImage(image: any, uploads: string = "uploads", disk: string = "storage"): Promise<Media> {
+    public async storeImage(
+        image: any,
+        fodlerId: number = 0,
+        uploads: string = "uploads",
+        disk: string = "storage",
+    ): Promise<Media> {
         const path = `/${uploads}/${image.filename}`;
         const diskPath = disk;
 
         const file = {
             filename: image.filename,
             disk: diskPath,
-            fodler_id: 1,
+            folder_id: fodlerId,
             path,
             extension: "",
             mime: image.mimetype,
@@ -24,9 +29,7 @@ export class MediaService {
             size: image.size,
         };
 
-        const data = await models.Media.findOne({ where: { filename: image.filename } });
-        if (!data) return await models.Media.create(file);
-        if (data) return data;
+        return await models.Media.create(file);
     }
 
     public async delete(id): Promise<Media> {

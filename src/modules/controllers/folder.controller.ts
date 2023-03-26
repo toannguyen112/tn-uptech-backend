@@ -20,7 +20,8 @@ export class FolderController extends BaseController {
 
   public getMedias = async (req: Request, res: Response, next: NextFunction) => {
     try {
-      const data: Media[] = await this.folder.getMeidas(null);
+      const folderId = req.body.folderId;
+      const data: Media[] = await this.folder.getMeidas(folderId);
       this.success(res, data, "success");
     } catch (error) {
       next(error);
