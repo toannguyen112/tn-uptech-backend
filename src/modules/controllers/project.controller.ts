@@ -49,8 +49,7 @@ export class ProjectController extends BaseController {
                 where: { id: req.params.id }
             });
 
-            const projectDetail = data.transform(data);
-            return res.status(200).json({ message: "success", data: projectDetail });
+            return res.status(200).json({ message: "success", data });
         } catch (error) {
             res.status(500).send(error);
         }
