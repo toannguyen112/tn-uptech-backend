@@ -1,8 +1,8 @@
 
 
 module.exports = function (sequelize, DataTypes) {
-    const Folder = sequelize.define(
-        "posts",
+    const Video = sequelize.define(
+        "videos",
         {
             id: {
                 type: DataTypes.INTEGER,
@@ -10,9 +10,12 @@ module.exports = function (sequelize, DataTypes) {
                 primaryKey: true,
             },
 
-            view: {
-                type: DataTypes.INTEGER,
-                defaultValue: 0
+            label: {
+                type: DataTypes.STRING,
+            },
+
+            path: {
+                type: DataTypes.STRING,
             },
 
             createdAt: {
@@ -27,9 +30,9 @@ module.exports = function (sequelize, DataTypes) {
         },
         {
             timestamps: true,
-            tableName: "posts",
+            tableName: "videos",
         },
     );
 
-    return Folder;
+    return Video;
 };

@@ -1,5 +1,6 @@
 
 import { Model } from 'sequelize';
+import models from '.';
 import { Media } from '../../../interface/Media.interface';
 import Helper from '../../../utils/helper';
 
@@ -86,7 +87,7 @@ module.exports = function (sequelize, DataTypes): typeof MediaModel {
             editor: {
                 type: DataTypes.STRING,
             },
-            
+
             createdAt: {
                 type: DataTypes.DATE,
                 defaultValue: new Date(),
@@ -108,6 +109,16 @@ module.exports = function (sequelize, DataTypes): typeof MediaModel {
             tableName: "medias",
         },
     );
+
+    Media.associate = function (models) {
+        Media.hasMany(models.Project, {
+            foreignKey: 'projecttableId',
+            constraints: false,
+            scope: {
+                commentableType: 'image'
+            }
+        });
+    };
 
     return Media;
 };

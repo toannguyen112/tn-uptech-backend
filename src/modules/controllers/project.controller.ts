@@ -45,9 +45,7 @@ export class ProjectController extends BaseController {
 
     public show = async (req: Request, res: Response, next: NextFunction) => {
         try {
-            const data = await models.Project.findOne({
-                where: { id: req.params.id }
-            });
+            const data = await models.Project.findOne({where: { id: req.params.id }});
 
             return res.status(200).json({ message: "success", data });
         } catch (error) {

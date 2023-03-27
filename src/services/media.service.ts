@@ -1,7 +1,6 @@
 import models from "../infra/sequelize/models";
 import { Media } from "../interface/media.interface";
 import { Service } from 'typedi';
-
 @Service()
 export class MediaService {
     public async getList(): Promise<Media[]> {

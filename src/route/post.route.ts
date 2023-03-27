@@ -1,11 +1,22 @@
-// import { Router } from "express";
-// import PostController from "../modules/controllers/post.controller";
-// const route: Router = Router();
 
-// route.get("/posts/index", new PostController().index);
-// route.get("/posts/show/:id", new PostController().show);
-// route.post("/posts/create", new PostController().create);
-// route.put("/posts/update/:id", new PostController().update);
-// route.delete("/posts/delete/:id", new PostController().delete);
+import { Router } from "express";
+import { Routes } from "../interface/routes.interface";
+import PostController from "../modules/controllers/post.controller";
 
-// export default route;
+export class PostRoute implements Routes {
+    public path = '/medias';
+    public router = Router();
+    public post = new PostController();
+
+    constructor() {
+        this.initializeRoutes();
+    }
+
+    private initializeRoutes() {
+        this.router.get(`${this.path}`, this.post.index);
+        this.router.post(`${this.path}/create`, this.post.create);
+        this.router.get(`${this.path}/show/:id`, this.post.show);
+        this.router.put(`${this.path}/update/:id`, this.post.update);
+        this.router.delete(`${this.path}/delete/:id(\\d+)`, this.post.delete);
+    }
+}
