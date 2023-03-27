@@ -1,3 +1,5 @@
+import Helper from "../../../utils/helper";
+
 module.exports = function (sequelize, DataTypes) {
     const Project = sequelize.define(
         "projects",
@@ -30,6 +32,22 @@ module.exports = function (sequelize, DataTypes) {
             content: {
                 type: DataTypes.TEXT('long'),
                 allowNull: true,
+            },
+
+            createdAt: {
+                type: DataTypes.DATE,
+                defaultValue: new Date(),
+                get() {
+                    return Helper.formatDayJs(this.getDataValue('createdAt'));
+                }
+            },
+
+            updatedAt: {
+                type: DataTypes.DATE,
+                defaultValue: new Date(),
+                get() {
+                    return Helper.formatDayJs(this.getDataValue('updatedAt'));
+                }
             },
         },
         {
