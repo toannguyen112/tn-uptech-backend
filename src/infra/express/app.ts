@@ -11,10 +11,9 @@ import { NODE_ENV, PORT, LOG_FORMAT, ORIGIN, CREDENTIALS } from '../../config';
 import { logger, stream } from "../../utils/logger";
 import { Routes } from "../../interface/routes.interface";
 import { Request, Response, NextFunction } from "express"
+import { LangMiddleware } from '../../middlewares/lang.middleware';
 
-export interface LanguageRequest extends Request {
-    lang: string
-}
+
 
 export class App {
     public app: express.Application;
@@ -45,18 +44,7 @@ export class App {
     }
 
     private initializeMiddlewares() {
-        this.app.use((req: LanguageRequest, res: Response, next: NextFunction) => {
-
-            const lang = req.acceptsLanguages('vi', 'en');
-
-            if (lang) {
-                req.lang = lang
-            } else {
-                req.lang = 'en'
-            }
-
-            next();
-        });
+        this.app.use(LangMiddleware);
         this.app.use(express.static("storage"));
         this.app.use("/uploads", express.static("uploads"));
         this.app.use(morgan(LOG_FORMAT, { stream }));

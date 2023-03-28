@@ -2,7 +2,6 @@
 import { NextFunction, Request, Response } from 'express';
 import models from '../../infra/sequelize/models';
 import { Container } from 'typedi';
-import { ApiFeatures } from '../../utils/ApiFeatures';
 import { BaseController } from "./base.controller";
 import { ProjectService } from '../../services/project.service';
 
@@ -24,7 +23,7 @@ export class ProjectController extends BaseController {
     public create = async (req: Request, res: Response, next: NextFunction) => {
 
         console.log(req.body);
-
+        return;
         try {
             const data = await models.Project.create({ ...req.body });
             return res.status(200).json({ message: "success", data });

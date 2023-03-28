@@ -27,4 +27,19 @@ export class PostService {
         return result;
     }
 
+    public create = async (body) => {
+        return await models.Post.create({ ...body });
+    }
+
+    public show = async (id) => {
+        return await models.Post.findOne({ where: { id } });
+    }
+
+    public update = async (id, body) => {
+        const data = await models.Post.update(body, { where: { id } });
+    }
+
+    public delete = async (id) => {
+        return await models.Post.destroy({ where: { id } });
+    }
 }

@@ -562,3 +562,685 @@ TSError: ⨯ Unable to compile TypeScript:
     at Module.load (node:internal/modules/cjs/loader:1069:32)
     at Function.Module._load (node:internal/modules/cjs/loader:904:12)
     at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-03-28 13:07:51 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/modules/controllers/post.controller.ts[0m:[93m11[0m:[93m37[0m - [91merror[0m[90m TS2339: [0mProperty 'post' does not exist on type 'PostController'.
+
+[7m11[0m             const data = await this.post.getList({ ...req.query });
+[7m  [0m [91m                                    ~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/modules/controllers/post.controller.ts[0m:[93m11[0m:[93m37[0m - [91merror[0m[90m TS2339: [0mProperty 'post' does not exist on type 'PostController'.
+
+[7m11[0m             const data = await this.post.getList({ ...req.query });
+[7m  [0m [91m                                    ~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-03-28 13:07:58 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/modules/controllers/post.controller.ts[0m:[93m8[0m:[93m22[0m - [91merror[0m[90m TS2304: [0mCannot find name 'Container'.
+
+[7m8[0m     public project = Container.get(ProjectService);
+[7m [0m [91m                     ~~~~~~~~~[0m
+[96msrc/modules/controllers/post.controller.ts[0m:[93m8[0m:[93m36[0m - [91merror[0m[90m TS2304: [0mCannot find name 'ProjectService'.
+
+[7m8[0m     public project = Container.get(ProjectService);
+[7m [0m [91m                                   ~~~~~~~~~~~~~~[0m
+[96msrc/modules/controllers/post.controller.ts[0m:[93m13[0m:[93m37[0m - [91merror[0m[90m TS2339: [0mProperty 'post' does not exist on type 'PostController'.
+
+[7m13[0m             const data = await this.post.getList({ ...req.query });
+[7m  [0m [91m                                    ~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/modules/controllers/post.controller.ts[0m:[93m8[0m:[93m22[0m - [91merror[0m[90m TS2304: [0mCannot find name 'Container'.
+
+[7m8[0m     public project = Container.get(ProjectService);
+[7m [0m [91m                     ~~~~~~~~~[0m
+[96msrc/modules/controllers/post.controller.ts[0m:[93m8[0m:[93m36[0m - [91merror[0m[90m TS2304: [0mCannot find name 'ProjectService'.
+
+[7m8[0m     public project = Container.get(ProjectService);
+[7m [0m [91m                                   ~~~~~~~~~~~~~~[0m
+[96msrc/modules/controllers/post.controller.ts[0m:[93m13[0m:[93m37[0m - [91merror[0m[90m TS2339: [0mProperty 'post' does not exist on type 'PostController'.
+
+[7m13[0m             const data = await this.post.getList({ ...req.query });
+[7m  [0m [91m                                    ~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-03-28 13:08:04 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/modules/controllers/post.controller.ts[0m:[93m8[0m:[93m22[0m - [91merror[0m[90m TS2304: [0mCannot find name 'Container'.
+
+[7m8[0m     public project = Container.get(ProjectService);
+[7m [0m [91m                     ~~~~~~~~~[0m
+[96msrc/modules/controllers/post.controller.ts[0m:[93m8[0m:[93m36[0m - [91merror[0m[90m TS2304: [0mCannot find name 'ProjectService'.
+
+[7m8[0m     public project = Container.get(ProjectService);
+[7m [0m [91m                                   ~~~~~~~~~~~~~~[0m
+[96msrc/modules/controllers/post.controller.ts[0m:[93m13[0m:[93m37[0m - [91merror[0m[90m TS2339: [0mProperty 'post' does not exist on type 'PostController'.
+
+[7m13[0m             const data = await this.post.getList({ ...req.query });
+[7m  [0m [91m                                    ~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/modules/controllers/post.controller.ts[0m:[93m8[0m:[93m22[0m - [91merror[0m[90m TS2304: [0mCannot find name 'Container'.
+
+[7m8[0m     public project = Container.get(ProjectService);
+[7m [0m [91m                     ~~~~~~~~~[0m
+[96msrc/modules/controllers/post.controller.ts[0m:[93m8[0m:[93m36[0m - [91merror[0m[90m TS2304: [0mCannot find name 'ProjectService'.
+
+[7m8[0m     public project = Container.get(ProjectService);
+[7m [0m [91m                                   ~~~~~~~~~~~~~~[0m
+[96msrc/modules/controllers/post.controller.ts[0m:[93m13[0m:[93m37[0m - [91merror[0m[90m TS2339: [0mProperty 'post' does not exist on type 'PostController'.
+
+[7m13[0m             const data = await this.post.getList({ ...req.query });
+[7m  [0m [91m                                    ~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-03-28 13:08:17 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/modules/controllers/post.controller.ts[0m:[93m8[0m:[93m33[0m - [91merror[0m[90m TS2304: [0mCannot find name 'ProjectService'.
+
+[7m8[0m     public post = Container.get(ProjectService);
+[7m [0m [91m                                ~~~~~~~~~~~~~~[0m
+[96msrc/modules/controllers/post.controller.ts[0m:[93m13[0m:[93m42[0m - [91merror[0m[90m TS2339: [0mProperty 'getList' does not exist on type 'unknown'.
+
+[7m13[0m             const data = await this.post.getList({ ...req.query });
+[7m  [0m [91m                                         ~~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/modules/controllers/post.controller.ts[0m:[93m8[0m:[93m33[0m - [91merror[0m[90m TS2304: [0mCannot find name 'ProjectService'.
+
+[7m8[0m     public post = Container.get(ProjectService);
+[7m [0m [91m                                ~~~~~~~~~~~~~~[0m
+[96msrc/modules/controllers/post.controller.ts[0m:[93m13[0m:[93m42[0m - [91merror[0m[90m TS2339: [0mProperty 'getList' does not exist on type 'unknown'.
+
+[7m13[0m             const data = await this.post.getList({ ...req.query });
+[7m  [0m [91m                                         ~~~~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-03-28 13:13:52 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/route/post.route.ts[0m:[93m4[0m:[93m8[0m - [91merror[0m[90m TS2613: [0mModule '"/Users/toannguyen/Documents/Source/tn-uptech-backend/src/modules/controllers/post.controller"' has no default export. Did you mean to use 'import { PostController } from "/Users/toannguyen/Documents/Source/tn-uptech-backend/src/modules/controllers/post.controller"' instead?
+
+[7m4[0m import PostController from "../modules/controllers/post.controller";
+[7m [0m [91m       ~~~~~~~~~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/route/post.route.ts[0m:[93m4[0m:[93m8[0m - [91merror[0m[90m TS2613: [0mModule '"/Users/toannguyen/Documents/Source/tn-uptech-backend/src/modules/controllers/post.controller"' has no default export. Did you mean to use 'import { PostController } from "/Users/toannguyen/Documents/Source/tn-uptech-backend/src/modules/controllers/post.controller"' instead?
+
+[7m4[0m import PostController from "../modules/controllers/post.controller";
+[7m [0m [91m       ~~~~~~~~~~~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-03-28 13:14:08 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/route/post.route.ts[0m:[93m4[0m:[93m8[0m - [91merror[0m[90m TS2613: [0mModule '"/Users/toannguyen/Documents/Source/tn-uptech-backend/src/modules/controllers/post.controller"' has no default export. Did you mean to use 'import { PostController } from "/Users/toannguyen/Documents/Source/tn-uptech-backend/src/modules/controllers/post.controller"' instead?
+
+[7m4[0m import PostController from "../modules/controllers/post.controller";
+[7m [0m [91m       ~~~~~~~~~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/route/post.route.ts[0m:[93m4[0m:[93m8[0m - [91merror[0m[90m TS2613: [0mModule '"/Users/toannguyen/Documents/Source/tn-uptech-backend/src/modules/controllers/post.controller"' has no default export. Did you mean to use 'import { PostController } from "/Users/toannguyen/Documents/Source/tn-uptech-backend/src/modules/controllers/post.controller"' instead?
+
+[7m4[0m import PostController from "../modules/controllers/post.controller";
+[7m [0m [91m       ~~~~~~~~~~~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-03-28 13:16:26 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/services/post.service.ts[0m:[93m30[0m:[93m30[0m - [91merror[0m[90m TS2304: [0mCannot find name 'Request'.
+
+[7m30[0m     public async create(req: Request, res: Response, next: NextFunction) {
+[7m  [0m [91m                             ~~~~~~~[0m
+[96msrc/services/post.service.ts[0m:[93m30[0m:[93m44[0m - [91merror[0m[90m TS2304: [0mCannot find name 'Response'.
+
+[7m30[0m     public async create(req: Request, res: Response, next: NextFunction) {
+[7m  [0m [91m                                           ~~~~~~~~[0m
+[96msrc/services/post.service.ts[0m:[93m30[0m:[93m60[0m - [91merror[0m[90m TS2304: [0mCannot find name 'NextFunction'.
+
+[7m30[0m     public async create(req: Request, res: Response, next: NextFunction) {
+[7m  [0m [91m                                                           ~~~~~~~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/services/post.service.ts[0m:[93m30[0m:[93m30[0m - [91merror[0m[90m TS2304: [0mCannot find name 'Request'.
+
+[7m30[0m     public async create(req: Request, res: Response, next: NextFunction) {
+[7m  [0m [91m                             ~~~~~~~[0m
+[96msrc/services/post.service.ts[0m:[93m30[0m:[93m44[0m - [91merror[0m[90m TS2304: [0mCannot find name 'Response'.
+
+[7m30[0m     public async create(req: Request, res: Response, next: NextFunction) {
+[7m  [0m [91m                                           ~~~~~~~~[0m
+[96msrc/services/post.service.ts[0m:[93m30[0m:[93m60[0m - [91merror[0m[90m TS2304: [0mCannot find name 'NextFunction'.
+
+[7m30[0m     public async create(req: Request, res: Response, next: NextFunction) {
+[7m  [0m [91m                                                           ~~~~~~~~~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-03-28 13:16:40 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/services/post.service.ts[0m:[93m30[0m:[93m27[0m - [91merror[0m[90m TS2304: [0mCannot find name 'Request'.
+
+[7m30[0m     public create = (req: Request, res: Response, next: NextFunction) => {
+[7m  [0m [91m                          ~~~~~~~[0m
+[96msrc/services/post.service.ts[0m:[93m30[0m:[93m41[0m - [91merror[0m[90m TS2304: [0mCannot find name 'Response'.
+
+[7m30[0m     public create = (req: Request, res: Response, next: NextFunction) => {
+[7m  [0m [91m                                        ~~~~~~~~[0m
+[96msrc/services/post.service.ts[0m:[93m30[0m:[93m57[0m - [91merror[0m[90m TS2304: [0mCannot find name 'NextFunction'.
+
+[7m30[0m     public create = (req: Request, res: Response, next: NextFunction) => {
+[7m  [0m [91m                                                        ~~~~~~~~~~~~[0m
+[96msrc/services/post.service.ts[0m:[93m33[0m:[93m26[0m - [91merror[0m[90m TS1308: [0m'await' expressions are only allowed within async functions and at the top levels of modules.
+
+[7m33[0m             const data = await models.Post.create(req.body);
+[7m  [0m [91m                         ~~~~~[0m
+
+  [96msrc/services/post.service.ts[0m:[93m30[0m:[93m21[0m
+    [7m30[0m     public create = (req: Request, res: Response, next: NextFunction) => {
+    [7m  [0m [96m                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+    Did you mean to mark this function as 'async'?
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/services/post.service.ts[0m:[93m30[0m:[93m27[0m - [91merror[0m[90m TS2304: [0mCannot find name 'Request'.
+
+[7m30[0m     public create = (req: Request, res: Response, next: NextFunction) => {
+[7m  [0m [91m                          ~~~~~~~[0m
+[96msrc/services/post.service.ts[0m:[93m30[0m:[93m41[0m - [91merror[0m[90m TS2304: [0mCannot find name 'Response'.
+
+[7m30[0m     public create = (req: Request, res: Response, next: NextFunction) => {
+[7m  [0m [91m                                        ~~~~~~~~[0m
+[96msrc/services/post.service.ts[0m:[93m30[0m:[93m57[0m - [91merror[0m[90m TS2304: [0mCannot find name 'NextFunction'.
+
+[7m30[0m     public create = (req: Request, res: Response, next: NextFunction) => {
+[7m  [0m [91m                                                        ~~~~~~~~~~~~[0m
+[96msrc/services/post.service.ts[0m:[93m33[0m:[93m26[0m - [91merror[0m[90m TS1308: [0m'await' expressions are only allowed within async functions and at the top levels of modules.
+
+[7m33[0m             const data = await models.Post.create(req.body);
+[7m  [0m [91m                         ~~~~~[0m
+
+  [96msrc/services/post.service.ts[0m:[93m30[0m:[93m21[0m
+    [7m30[0m     public create = (req: Request, res: Response, next: NextFunction) => {
+    [7m  [0m [96m                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+    Did you mean to mark this function as 'async'?
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-03-28 13:16:52 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/services/post.service.ts[0m:[93m33[0m:[93m26[0m - [91merror[0m[90m TS1308: [0m'await' expressions are only allowed within async functions and at the top levels of modules.
+
+[7m33[0m             const data = await models.Post.create(req.body);
+[7m  [0m [91m                         ~~~~~[0m
+
+  [96msrc/services/post.service.ts[0m:[93m30[0m:[93m21[0m
+    [7m30[0m     public create = (body) => {
+    [7m  [0m [96m                    ~~~~~~~~~~~[0m
+    Did you mean to mark this function as 'async'?
+[96msrc/services/post.service.ts[0m:[93m33[0m:[93m51[0m - [91merror[0m[90m TS2304: [0mCannot find name 'req'.
+
+[7m33[0m             const data = await models.Post.create(req.body);
+[7m  [0m [91m                                                  ~~~[0m
+[96msrc/services/post.service.ts[0m:[93m34[0m:[93m20[0m - [91merror[0m[90m TS2304: [0mCannot find name 'res'.
+
+[7m34[0m             return res.status(200).json(data);
+[7m  [0m [91m                   ~~~[0m
+[96msrc/services/post.service.ts[0m:[93m36[0m:[93m13[0m - [91merror[0m[90m TS2304: [0mCannot find name 'res'.
+
+[7m36[0m             res.status(500).send(error);
+[7m  [0m [91m            ~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/services/post.service.ts[0m:[93m33[0m:[93m26[0m - [91merror[0m[90m TS1308: [0m'await' expressions are only allowed within async functions and at the top levels of modules.
+
+[7m33[0m             const data = await models.Post.create(req.body);
+[7m  [0m [91m                         ~~~~~[0m
+
+  [96msrc/services/post.service.ts[0m:[93m30[0m:[93m21[0m
+    [7m30[0m     public create = (body) => {
+    [7m  [0m [96m                    ~~~~~~~~~~~[0m
+    Did you mean to mark this function as 'async'?
+[96msrc/services/post.service.ts[0m:[93m33[0m:[93m51[0m - [91merror[0m[90m TS2304: [0mCannot find name 'req'.
+
+[7m33[0m             const data = await models.Post.create(req.body);
+[7m  [0m [91m                                                  ~~~[0m
+[96msrc/services/post.service.ts[0m:[93m34[0m:[93m20[0m - [91merror[0m[90m TS2304: [0mCannot find name 'res'.
+
+[7m34[0m             return res.status(200).json(data);
+[7m  [0m [91m                   ~~~[0m
+[96msrc/services/post.service.ts[0m:[93m36[0m:[93m13[0m - [91merror[0m[90m TS2304: [0mCannot find name 'res'.
+
+[7m36[0m             res.status(500).send(error);
+[7m  [0m [91m            ~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-03-28 13:16:58 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/services/post.service.ts[0m:[93m33[0m:[93m51[0m - [91merror[0m[90m TS2304: [0mCannot find name 'req'.
+
+[7m33[0m             const data = await models.Post.create(req.body);
+[7m  [0m [91m                                                  ~~~[0m
+[96msrc/services/post.service.ts[0m:[93m34[0m:[93m20[0m - [91merror[0m[90m TS2304: [0mCannot find name 'res'.
+
+[7m34[0m             return res.status(200).json(data);
+[7m  [0m [91m                   ~~~[0m
+[96msrc/services/post.service.ts[0m:[93m36[0m:[93m13[0m - [91merror[0m[90m TS2304: [0mCannot find name 'res'.
+
+[7m36[0m             res.status(500).send(error);
+[7m  [0m [91m            ~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/services/post.service.ts[0m:[93m33[0m:[93m51[0m - [91merror[0m[90m TS2304: [0mCannot find name 'req'.
+
+[7m33[0m             const data = await models.Post.create(req.body);
+[7m  [0m [91m                                                  ~~~[0m
+[96msrc/services/post.service.ts[0m:[93m34[0m:[93m20[0m - [91merror[0m[90m TS2304: [0mCannot find name 'res'.
+
+[7m34[0m             return res.status(200).json(data);
+[7m  [0m [91m                   ~~~[0m
+[96msrc/services/post.service.ts[0m:[93m36[0m:[93m13[0m - [91merror[0m[90m TS2304: [0mCannot find name 'res'.
+
+[7m36[0m             res.status(500).send(error);
+[7m  [0m [91m            ~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-03-28 13:17:07 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/services/post.service.ts[0m:[93m31[0m:[93m47[0m - [91merror[0m[90m TS2304: [0mCannot find name 'req'.
+
+[7m31[0m         const data = await models.Post.create(req.body);
+[7m  [0m [91m                                              ~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/services/post.service.ts[0m:[93m31[0m:[93m47[0m - [91merror[0m[90m TS2304: [0mCannot find name 'req'.
+
+[7m31[0m         const data = await models.Post.create(req.body);
+[7m  [0m [91m                                              ~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-03-28 13:17:35 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/services/post.service.ts[0m:[93m34[0m:[93m12[0m - [91merror[0m[90m TS2300: [0mDuplicate identifier 'create'.
+
+[7m34[0m     public create = async (body) => {
+[7m  [0m [91m           ~~~~~~[0m
+[96msrc/services/post.service.ts[0m:[93m38[0m:[93m12[0m - [91merror[0m[90m TS2300: [0mDuplicate identifier 'create'.
+
+[7m38[0m     public create = async (body) => {
+[7m  [0m [91m           ~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/services/post.service.ts[0m:[93m34[0m:[93m12[0m - [91merror[0m[90m TS2300: [0mDuplicate identifier 'create'.
+
+[7m34[0m     public create = async (body) => {
+[7m  [0m [91m           ~~~~~~[0m
+[96msrc/services/post.service.ts[0m:[93m38[0m:[93m12[0m - [91merror[0m[90m TS2300: [0mDuplicate identifier 'create'.
+
+[7m38[0m     public create = async (body) => {
+[7m  [0m [91m           ~~~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-03-28 13:18:05 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/modules/controllers/post.controller.ts[0m:[93m59[0m:[93m64[0m - [91merror[0m[90m TS2304: [0mCannot find name 'data'.
+
+[7m59[0m             return res.status(200).json({ message: "OK", data: data });
+[7m  [0m [91m                                                               ~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/modules/controllers/post.controller.ts[0m:[93m59[0m:[93m64[0m - [91merror[0m[90m TS2304: [0mCannot find name 'data'.
+
+[7m59[0m             return res.status(200).json({ message: "OK", data: data });
+[7m  [0m [91m                                                               ~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-03-28 13:21:11 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/modules/controllers/post.controller.ts[0m:[93m33[0m:[93m47[0m - [91merror[0m[90m TS2304: [0mCannot find name 'id'.
+
+[7m33[0m             const data = await this.post.show(id);
+[7m  [0m [91m                                              ~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/modules/controllers/post.controller.ts[0m:[93m33[0m:[93m47[0m - [91merror[0m[90m TS2304: [0mCannot find name 'id'.
+
+[7m33[0m             const data = await this.post.show(id);
+[7m  [0m [91m                                              ~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-03-28 13:21:53 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/services/post.service.ts[0m:[93m39[0m:[93m47[0m - [91merror[0m[90m TS2304: [0mCannot find name 'req'.
+
+[7m39[0m         const data = await models.Post.update(req.body, { where: { id } });
+[7m  [0m [91m                                              ~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/services/post.service.ts[0m:[93m39[0m:[93m47[0m - [91merror[0m[90m TS2304: [0mCannot find name 'req'.
+
+[7m39[0m         const data = await models.Post.update(req.body, { where: { id } });
+[7m  [0m [91m                                              ~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-03-28 13:22:08 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/modules/controllers/post.controller.ts[0m:[93m43[0m:[93m55[0m - [91merror[0m[90m TS2304: [0mCannot find name 'body'.
+
+[7m43[0m             const data = await models.Post.update(id, body);
+[7m  [0m [91m                                                      ~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/modules/controllers/post.controller.ts[0m:[93m43[0m:[93m55[0m - [91merror[0m[90m TS2304: [0mCannot find name 'body'.
+
+[7m43[0m             const data = await models.Post.update(id, body);
+[7m  [0m [91m                                                      ~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-03-28 13:22:34 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/modules/controllers/post.controller.ts[0m:[93m43[0m:[93m37[0m - [91merror[0m[90m TS2349: [0mThis expression is not callable.
+  Type 'PostService' has no call signatures.
+
+[7m43[0m             const data = await this.post(id, req.body);
+[7m  [0m [91m                                    ~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/modules/controllers/post.controller.ts[0m:[93m43[0m:[93m37[0m - [91merror[0m[90m TS2349: [0mThis expression is not callable.
+  Type 'PostService' has no call signatures.
+
+[7m43[0m             const data = await this.post(id, req.body);
+[7m  [0m [91m                                    ~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-03-28 13:28:39 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/route/post.route.ts[0m:[93m17[0m:[93m59[0m - [91merror[0m[90m TS2551: [0mProperty 'create' does not exist on type 'PostController'. Did you mean 'created'?
+
+[7m17[0m         this.router.post(`${this.path}/create`, this.post.create);
+[7m  [0m [91m                                                          ~~~~~~[0m
+
+  [96msrc/modules/controllers/base.controller.ts[0m:[93m17[0m:[93m12[0m
+    [7m17[0m     public created(res: express.Response, data?: object) {
+    [7m  [0m [96m           ~~~~~~~[0m
+    'created' is declared here.
+[96msrc/route/post.route.ts[0m:[93m18[0m:[93m60[0m - [91merror[0m[90m TS2339: [0mProperty 'show' does not exist on type 'PostController'.
+
+[7m18[0m         this.router.get(`${this.path}/show/:id`, this.post.show);
+[7m  [0m [91m                                                           ~~~~[0m
+[96msrc/route/post.route.ts[0m:[93m19[0m:[93m62[0m - [91merror[0m[90m TS2339: [0mProperty 'update' does not exist on type 'PostController'.
+
+[7m19[0m         this.router.put(`${this.path}/update/:id`, this.post.update);
+[7m  [0m [91m                                                             ~~~~~~[0m
+[96msrc/route/post.route.ts[0m:[93m20[0m:[93m71[0m - [91merror[0m[90m TS2339: [0mProperty 'delete' does not exist on type 'PostController'.
+
+[7m20[0m         this.router.delete(`${this.path}/delete/:id(\\d+)`, this.post.delete);
+[7m  [0m [91m                                                                      ~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/route/post.route.ts[0m:[93m17[0m:[93m59[0m - [91merror[0m[90m TS2551: [0mProperty 'create' does not exist on type 'PostController'. Did you mean 'created'?
+
+[7m17[0m         this.router.post(`${this.path}/create`, this.post.create);
+[7m  [0m [91m                                                          ~~~~~~[0m
+
+  [96msrc/modules/controllers/base.controller.ts[0m:[93m17[0m:[93m12[0m
+    [7m17[0m     public created(res: express.Response, data?: object) {
+    [7m  [0m [96m           ~~~~~~~[0m
+    'created' is declared here.
+[96msrc/route/post.route.ts[0m:[93m18[0m:[93m60[0m - [91merror[0m[90m TS2339: [0mProperty 'show' does not exist on type 'PostController'.
+
+[7m18[0m         this.router.get(`${this.path}/show/:id`, this.post.show);
+[7m  [0m [91m                                                           ~~~~[0m
+[96msrc/route/post.route.ts[0m:[93m19[0m:[93m62[0m - [91merror[0m[90m TS2339: [0mProperty 'update' does not exist on type 'PostController'.
+
+[7m19[0m         this.router.put(`${this.path}/update/:id`, this.post.update);
+[7m  [0m [91m                                                             ~~~~~~[0m
+[96msrc/route/post.route.ts[0m:[93m20[0m:[93m71[0m - [91merror[0m[90m TS2339: [0mProperty 'delete' does not exist on type 'PostController'.
+
+[7m20[0m         this.router.delete(`${this.path}/delete/:id(\\d+)`, this.post.delete);
+[7m  [0m [91m                                                                      ~~~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-03-28 13:28:45 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/route/post.route.ts[0m:[93m17[0m:[93m59[0m - [91merror[0m[90m TS2551: [0mProperty 'create' does not exist on type 'PostController'. Did you mean 'created'?
+
+[7m17[0m         this.router.post(`${this.path}/create`, this.post.create);
+[7m  [0m [91m                                                          ~~~~~~[0m
+
+  [96msrc/modules/controllers/base.controller.ts[0m:[93m17[0m:[93m12[0m
+    [7m17[0m     public created(res: express.Response, data?: object) {
+    [7m  [0m [96m           ~~~~~~~[0m
+    'created' is declared here.
+[96msrc/route/post.route.ts[0m:[93m18[0m:[93m60[0m - [91merror[0m[90m TS2339: [0mProperty 'show' does not exist on type 'PostController'.
+
+[7m18[0m         this.router.get(`${this.path}/show/:id`, this.post.show);
+[7m  [0m [91m                                                           ~~~~[0m
+[96msrc/route/post.route.ts[0m:[93m19[0m:[93m62[0m - [91merror[0m[90m TS2339: [0mProperty 'update' does not exist on type 'PostController'.
+
+[7m19[0m         this.router.put(`${this.path}/update/:id`, this.post.update);
+[7m  [0m [91m                                                             ~~~~~~[0m
+[96msrc/route/post.route.ts[0m:[93m20[0m:[93m71[0m - [91merror[0m[90m TS2339: [0mProperty 'delete' does not exist on type 'PostController'.
+
+[7m20[0m         this.router.delete(`${this.path}/delete/:id(\\d+)`, this.post.delete);
+[7m  [0m [91m                                                                      ~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/route/post.route.ts[0m:[93m17[0m:[93m59[0m - [91merror[0m[90m TS2551: [0mProperty 'create' does not exist on type 'PostController'. Did you mean 'created'?
+
+[7m17[0m         this.router.post(`${this.path}/create`, this.post.create);
+[7m  [0m [91m                                                          ~~~~~~[0m
+
+  [96msrc/modules/controllers/base.controller.ts[0m:[93m17[0m:[93m12[0m
+    [7m17[0m     public created(res: express.Response, data?: object) {
+    [7m  [0m [96m           ~~~~~~~[0m
+    'created' is declared here.
+[96msrc/route/post.route.ts[0m:[93m18[0m:[93m60[0m - [91merror[0m[90m TS2339: [0mProperty 'show' does not exist on type 'PostController'.
+
+[7m18[0m         this.router.get(`${this.path}/show/:id`, this.post.show);
+[7m  [0m [91m                                                           ~~~~[0m
+[96msrc/route/post.route.ts[0m:[93m19[0m:[93m62[0m - [91merror[0m[90m TS2339: [0mProperty 'update' does not exist on type 'PostController'.
+
+[7m19[0m         this.router.put(`${this.path}/update/:id`, this.post.update);
+[7m  [0m [91m                                                             ~~~~~~[0m
+[96msrc/route/post.route.ts[0m:[93m20[0m:[93m71[0m - [91merror[0m[90m TS2339: [0mProperty 'delete' does not exist on type 'PostController'.
+
+[7m20[0m         this.router.delete(`${this.path}/delete/:id(\\d+)`, this.post.delete);
+[7m  [0m [91m                                                                      ~~~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-03-28 13:29:27 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/modules/controllers/post.controller.ts[0m:[93m22[0m:[93m43[0m - [91merror[0m[90m TS2339: [0mProperty 'post' does not exist on type 'PostController'.
+
+[7m22[0m             const data = await await this.post.create(req.body);
+[7m  [0m [91m                                          ~~~~[0m
+[96msrc/modules/controllers/post.controller.ts[0m:[93m31[0m:[93m37[0m - [91merror[0m[90m TS2339: [0mProperty 'post' does not exist on type 'PostController'.
+
+[7m31[0m             const data = await this.post.show(req.params.id);
+[7m  [0m [91m                                    ~~~~[0m
+[96msrc/modules/controllers/post.controller.ts[0m:[93m41[0m:[93m37[0m - [91merror[0m[90m TS2339: [0mProperty 'post' does not exist on type 'PostController'.
+
+[7m41[0m             const data = await this.post.update(id, req.body);
+[7m  [0m [91m                                    ~~~~[0m
+[96msrc/modules/controllers/post.controller.ts[0m:[93m51[0m:[93m24[0m - [91merror[0m[90m TS2339: [0mProperty 'post' does not exist on type 'PostController'.
+
+[7m51[0m             await this.post.delete(id);
+[7m  [0m [91m                       ~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/modules/controllers/post.controller.ts[0m:[93m22[0m:[93m43[0m - [91merror[0m[90m TS2339: [0mProperty 'post' does not exist on type 'PostController'.
+
+[7m22[0m             const data = await await this.post.create(req.body);
+[7m  [0m [91m                                          ~~~~[0m
+[96msrc/modules/controllers/post.controller.ts[0m:[93m31[0m:[93m37[0m - [91merror[0m[90m TS2339: [0mProperty 'post' does not exist on type 'PostController'.
+
+[7m31[0m             const data = await this.post.show(req.params.id);
+[7m  [0m [91m                                    ~~~~[0m
+[96msrc/modules/controllers/post.controller.ts[0m:[93m41[0m:[93m37[0m - [91merror[0m[90m TS2339: [0mProperty 'post' does not exist on type 'PostController'.
+
+[7m41[0m             const data = await this.post.update(id, req.body);
+[7m  [0m [91m                                    ~~~~[0m
+[96msrc/modules/controllers/post.controller.ts[0m:[93m51[0m:[93m24[0m - [91merror[0m[90m TS2339: [0mProperty 'post' does not exist on type 'PostController'.
+
+[7m51[0m             await this.post.delete(id);
+[7m  [0m [91m                       ~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)

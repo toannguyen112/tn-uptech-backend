@@ -1,107 +1,56 @@
-import { Request, Response } from "express";
-import { Op } from "sequelize";
-import models from "../../infra/sequelize/models";
-import { ApiFeatures } from "../../utils/ApiFeatures";
+import { NextFunction, Request, Response } from 'express';
+
+import { Container } from 'typedi';
 import { BaseController } from "./base.controller";
-export default class PostController extends BaseController {
+import { PostService } from "../../services/post.service";
+export class PostController extends BaseController {
 
-    async index(req: Request, res: Response) {
+    public post = Container.get(PostService);
 
-        const query = { ...req.query };
-
-        const queryObject = {
-            status: req.query.status,
-        };
-
-        const conditions = {};
-        const excludedFields = ["page", "page_size", "sort_field", "sort_order", "fields"];
-        excludedFields.forEach((field) => delete queryObject[field]);
-        const arrQueryObject = Object.entries(queryObject).map((item) => {
-            return {
-                key: item[0],
-                value: item[1],
-            };
-        });
-
-        for (let index = 0; index < arrQueryObject.length; index++) {
-            switch (arrQueryObject[index].key) {
-                case "status":
-                    const status = typeof arrQueryObject[index].value === "string" ? [arrQueryObject[index].value] : arrQueryObject[index].value;
-                    if (Array.isArray(status)) {
-                        conditions["status"] = {
-                            [Op.in]: status,
-                        };
-                    }
-                    break;
-
-                default:
-                    break;
-            }
-        }
-
-        const objQuery = new ApiFeatures(query)
-            .filter(conditions)
-            .limitFields()
-            .paginate()
-            .paranoid()
-            .getObjQuery();
-
-        const { count, rows }: any = await models.Post.findAndCountAll(objQuery);
-
-        const data = rows.map((item: any) => models.Post.transform(item));
-
-        const result = {
-            page: Number(query?.page) * 1,
-            pageSize: Number(query?.page_size) * 1,
-            pageCount: Math.ceil(count / Number(query?.page_size) * 1),
-            totalItems: count || 0,
-            data: data,
-        };
-
-        return res.status(200)
-            .json({ message: "success", data: result });
-    }
-
-    async create(req: Request, res: Response) {
+    public async index(req: Request, res: Response, next: NextFunction) {
 
         try {
-            const data = await models.Post.create(req.body);
+            const data = await this.post.getList({ ...req.query });
+            return res.status(200).json({ message: "success", data });
+        } catch (error) {
+            console.log(error);
+        }
+    }
+
+    public async create(req: Request, res: Response, next: NextFunction) {
+
+        try {
+            const data = await await this.post.create(req.body);
             return res.status(200).json(data);
         } catch (error) {
             res.status(500).send(error);
         }
     }
 
-    async show(req: Request, res: Response) {
+    public async show(req: Request, res: Response, next: NextFunction) {
         try {
-            const data = await models.Post.findOne({
-                where: {
-                    id: req.params.id
-                },
-            });
-
-            return res.status(200).json({ message: "success", data: data });
+            const data = await this.post.show(req.params.id);
+            return res.status(200).json({ message: "success", data });
         } catch (error) {
             res.status(500).send(error);
         }
     }
 
-    async update(req: Request, res: Response) {
+    public async update(req: Request, res: Response, next: NextFunction) {
         try {
             const { id } = req.params;
-            const data = await models.Post.update(req.body, { where: { id } });
+            const data = await this.post.update(id, req.body);
             return res.status(200).json({ message: "OK", data });
         } catch (error) {
             res.status(500).send(error);
         }
     }
 
-    async delete(req: Request, res: Response) {
+    public async delete(req: Request, res: Response, next: NextFunction) {
         try {
             const { id } = req.params;
-            await models.Post.destroy({ where: { id } });
-            const data = await models.Post.findAll({});
-            return res.status(200).json({ message: "OK", data: data });
+            await this.post.delete(id);
+            return res.status(200).json({ message: "OK", data: "" });
         } catch (error) {
             res.status(500).send(error);
         }
