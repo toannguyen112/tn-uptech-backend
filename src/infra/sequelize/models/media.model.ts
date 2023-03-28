@@ -2,7 +2,7 @@
 import { Model } from 'sequelize';
 import models from '.';
 import { Media } from '../../../interface/Media.interface';
-import Helper from '../../../utils/helper';
+import Helper from '../../../utils/Helper';
 
 export class MediaModel extends Model<Media> implements Media {
     public id: number;

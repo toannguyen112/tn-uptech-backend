@@ -1,5 +1,5 @@
 import models from ".";
-import Helper from "../../../utils/helper";
+import Helper from "../../../utils/Helper";
 
 module.exports = function (sequelize, DataTypes) {
     const Project = sequelize.define(

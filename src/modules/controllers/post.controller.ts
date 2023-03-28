@@ -1,7 +1,7 @@
 import { Request, Response } from "express";
 import { Op } from "sequelize";
 import models from "../../infra/sequelize/models";
-import { ApiFeatures } from "../../utils/apiFeatures";
+import { ApiFeatures } from "../../utils/ApiFeatures";
 import { BaseController } from "./base.controller";
 export default class PostController extends BaseController {
 

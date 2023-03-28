@@ -1,7 +1,7 @@
 
 import { NextFunction, Request, Response } from 'express';
 import models from '../../infra/sequelize/models';
-import { ApiFeatures } from '../../utils/apiFeatures';
+import { ApiFeatures } from '../../utils/ApiFeatures';
 import { BaseController } from "./base.controller";
 
 export class ProjectController extends BaseController {

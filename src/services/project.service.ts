@@ -1,6 +1,6 @@
 import models from "../infra/sequelize/models";
 import { Service } from 'typedi';
-import { ApiFeatures } from "../utils/apiFeatures";
+import { ApiFeatures } from "../utils/ApiFeatures";
 
 @Service()
 export class ProjectService {
