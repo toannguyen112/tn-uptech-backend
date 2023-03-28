@@ -1,12 +1,10 @@
 import models from "../infra/sequelize/models";
 import { Service } from 'typedi';
 import { ApiFeatures } from "../utils/ApiFeatures";
-
 @Service()
 export class ProjectService {
 
     public getList = async (query) => {
-
         const conditions = {};
         const objQuery = new ApiFeatures(query)
             .filter(conditions)
@@ -27,12 +25,37 @@ export class ProjectService {
         return result;
     }
 
+    public store = async (body) => {
+        const item = {
+            ...body,
+            thumbnail: body.thumbnail ? body.thumbnail.id : null,
+            banner: body.banner ? body.banner.id : null,
+        }
+
+        return await models.Project.create(item);
+    }
+
     public findById = async (id: string | number) => {
-        return await models.Project.findOne({ where: { id }, include: [models.Media] });
+        return await models.Project.findOne({
+            where: { id },
+            include: [{
+                model: models.Media,
+                as: "image"
+            },
+            {
+                model: models.Media,
+                as: "banner_image"
+            }]
+        });
     }
 
     public updateById = async (id, body) => {
-        return await models.Project.update(body, { where: { id } });
+        const item = {
+            ...body,
+            thumbnail: body.thumbnail ? body.thumbnail.id : null,
+            banner: body.banner ? body.banner.id : null,
+        }
+        return await models.Project.update(item, { where: { id } });
     }
 
     public deleteById = async (id) => {

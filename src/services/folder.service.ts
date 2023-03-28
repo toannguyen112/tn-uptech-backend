@@ -38,7 +38,7 @@ export class FolderService {
         })
     }
 
-    public async getMeidas(fodlerId): Promise<Media[]> {
+    public async getMeidas(fodlerId:string | number): Promise<Media[]> {
         return await models.Media.findAll({ where: { folder_id: fodlerId } });
     }
 

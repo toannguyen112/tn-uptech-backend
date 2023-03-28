@@ -77,7 +77,17 @@ module.exports = function (sequelize, DataTypes) {
         },
     );
 
-    Project.associate = function (models) { };
+    Project.associate = function (models) {
+        Project.belongsTo(models.Media, {
+            as: 'image',
+            foreignKey: "thumbnail"
+        });
+
+        Project.belongsTo(models.Media, {
+            as: 'banner_image',
+            foreignKey: "banner"
+        });
+    };
 
     return Project;
 };

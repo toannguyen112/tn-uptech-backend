@@ -16,6 +16,7 @@ module.exports = {
           model: "medias",
           key: "id",
         },
+        allowNull: true,
       },
 
       banner: {
@@ -24,11 +25,13 @@ module.exports = {
           model: "medias",
           key: "id",
         },
+        allowNull: true,
       },
 
       images: {
         type: Sequelize.JSON,
-        defaultValue: []
+        defaultValue: [],
+        allowNull: true,
       },
 
       name: {

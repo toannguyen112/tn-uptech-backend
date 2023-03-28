@@ -1,4 +1,3 @@
-
 import Helper from '../../../utils/Helper';
 
 module.exports = function (sequelize, DataTypes) {
@@ -88,7 +87,18 @@ module.exports = function (sequelize, DataTypes) {
         },
     );
 
-    Media.associate = function (models) {};
+    Media.associate = function (models) {
+        Media.hasMany(models.Project, {
+            as: 'image',
+            foreignKey: "thumbnail"
+        });
+
+        Media.hasMany(models.Project, {
+            as: 'banner_image',
+            foreignKey: "banner"
+        });
+
+    };
 
     return Media;
 };

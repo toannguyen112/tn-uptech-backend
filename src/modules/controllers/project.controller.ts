@@ -10,7 +10,7 @@ export class ProjectController extends BaseController {
     public index = async (req: Request, res: Response, next: NextFunction) => {
         try {
             const data = await project.getList({ ...req.query });
-            return this.success(res,data);
+            return this.success(res, data);
         } catch (error) {
             console.log(error);
         }
@@ -18,17 +18,31 @@ export class ProjectController extends BaseController {
 
     public create = async (req: Request, res: Response, next: NextFunction) => {
         try {
-            const data = await models.Project.create({ ...req.body });
-            return this.success(res,data);
+            const data = await project.store({ ...req.body });
+            return this.success(res, data);
         } catch (error) {
+            console.log(error);
             res.status(500).send(error);
+        }
+    }
+
+    public transform = (item) => {
+        return {
+            "id": item.id,
+            "name": item.name,
+            "status": item.status,
+            "description": item.description,
+            "isFeatured": item.isFeatured,
+            "content": item.content,
+            "thumbnail": item.image,
+            "banner": item.banner_image,
         }
     }
 
     public show = async (req: Request, res: Response, next: NextFunction) => {
         try {
             const data = await project.findById(req.params.id);
-            return this.success(res,data);
+            return this.success(res, this.transform(data));
         } catch (error) {
             res.status(500).send(error);
         }
@@ -49,8 +63,7 @@ export class ProjectController extends BaseController {
             }
 
             const data = await models.Project.update(body, { where: { id } });
-
-            return this.success(res,data);
+            return this.success(res, data);
         } catch (error) {
             res.status(500).send(error);
         }
@@ -60,7 +73,7 @@ export class ProjectController extends BaseController {
         try {
             const { ids } = req.body;
             const data = await project.deleteMultipleIds(ids);
-            return this.success(res,data);
+            return this.success(res, data);
         } catch (error) {
             res.status(500).send(error);
         }
@@ -69,7 +82,7 @@ export class ProjectController extends BaseController {
     public delete = async (req: Request, res: Response, next: NextFunction) => {
         try {
             const data = await project.deleteById(req.params.id);
-            return this.success(res,data);
+            return this.success(res, data);
         } catch (error) {
             res.status(500).send(error);
         }

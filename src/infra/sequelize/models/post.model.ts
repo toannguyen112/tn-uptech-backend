@@ -77,12 +77,9 @@ module.exports = function (sequelize, DataTypes) {
         },
     );
 
-    Post.associate = function (models) {
-        Post.hasMany(models.Media, {
-            foreignKey: 'post_id',
-            constraints: false,
-        });
-    };
+    // Post.associate = function (models) {
+    //     Post.hasOne(models.Media);
+    // };
 
     return Post;
 };
