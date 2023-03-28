@@ -1,8 +1,8 @@
 import Helper from "../../../utils/Helper";
 
 module.exports = function (sequelize, DataTypes) {
-    const Post = sequelize.define(
-        "posts",
+    const Category = sequelize.define(
+        "categories",
         {
             id: {
                 type: DataTypes.INTEGER,
@@ -12,31 +12,6 @@ module.exports = function (sequelize, DataTypes) {
 
             name: {
                 type: DataTypes.STRING,
-            },
-
-            isFeatured: {
-                type: DataTypes.BOOLEAN,
-                defaultValue: false
-            },
-
-            status: {
-                type: DataTypes.STRING,
-                defaultValue: 'active'
-            },
-
-            description: {
-                type: DataTypes.TEXT('long'),
-                allowNull: true,
-            },
-
-            content: {
-                type: DataTypes.TEXT('long'),
-                allowNull: true,
-            },
-
-            view: {
-                type: DataTypes.INTEGER,
-                defaultValue: 0
             },
 
             createdAt: {
@@ -57,16 +32,9 @@ module.exports = function (sequelize, DataTypes) {
         },
         {
             timestamps: true,
-            tableName: "posts",
+            tableName: "categories",
         },
     );
 
-    Post.associate = function (models) {
-        Post.hasMany(models.Media, {
-            foreignKey: 'post_id',
-            constraints: false,
-        });
-    };
-
-    return Post;
+    return Category;
 };

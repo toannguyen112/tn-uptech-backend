@@ -1,32 +1,20 @@
 
 import { NextFunction, Request, Response } from 'express';
 import models from '../../infra/sequelize/models';
+import { Container } from 'typedi';
 import { ApiFeatures } from '../../utils/ApiFeatures';
 import { BaseController } from "./base.controller";
+import { ProjectService } from '../../services/project.service';
 
 export class ProjectController extends BaseController {
 
+    public project = Container.get(ProjectService);
+
     public index = async (req: Request, res: Response, next: NextFunction) => {
+
         try {
-            const query = { ...req.query };
-            const conditions = {};
-            const objQuery = new ApiFeatures(query)
-                .filter(conditions)
-                .paginate()
-                .paranoid()
-                .getObjQuery();
-
-            const { count, rows }: any = await models.Project.findAndCountAll(objQuery);
-
-            const result = {
-                page: Number(query?.page) * 1,
-                pageSize: Number(query?.page_size) * 1,
-                pageCount: Math.ceil(count / Number(query?.page_size) * 1),
-                totalItems: count || 0,
-                data: rows,
-            };
-
-            return res.status(200).json({ message: "success", data: result });
+            const data = await this.project.getList({ ...req.query });
+            return res.status(200).json({ message: "success", data });
 
         } catch (error) {
             console.log(error);
@@ -34,6 +22,8 @@ export class ProjectController extends BaseController {
     }
 
     public create = async (req: Request, res: Response, next: NextFunction) => {
+
+        console.log(req.body);
 
         try {
             const data = await models.Project.create({ ...req.body });

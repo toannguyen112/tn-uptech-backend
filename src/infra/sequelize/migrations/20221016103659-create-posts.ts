@@ -38,6 +38,11 @@ module.exports = {
         allowNull: true,
       },
 
+      view: {
+        type: Sequelize.INTEGER,
+        defaultValue: 0
+      },
+
       createdAt: {
         type: Sequelize.DATE,
         defaultValue: new Date(),

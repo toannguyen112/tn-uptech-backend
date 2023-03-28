@@ -2,7 +2,7 @@
 
 module.exports = {
   up: (queryInterface, Sequelize) =>
-    queryInterface.createTable("project_related", {
+    queryInterface.createTable("post_related", {
       id: {
         primaryKey: true,
         unique: true,
@@ -10,10 +10,10 @@ module.exports = {
         type: Sequelize.INTEGER,
       },
 
-      project_id: {
+      post_id: {
         type: Sequelize.INTEGER,
         references: {
-          model: "projects",
+          model: "posts",
           key: "id",
         },
       },
@@ -33,5 +33,5 @@ module.exports = {
       },
     }),
 
-  down: (queryInterface) => queryInterface.dropTable("project_related"),
+  down: (queryInterface) => queryInterface.dropTable("post_related"),
 };

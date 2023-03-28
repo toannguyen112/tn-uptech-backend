@@ -3,10 +3,10 @@ import { Service } from 'typedi';
 import { ApiFeatures } from "../utils/ApiFeatures";
 
 @Service()
-export class ProjectService {
+export class PostService {
 
     public getList = async (query) => {
-        
+
         const conditions = {};
         const objQuery = new ApiFeatures(query)
             .filter(conditions)
@@ -14,7 +14,7 @@ export class ProjectService {
             .paranoid()
             .getObjQuery();
 
-        const { count, rows }: any = await models.Project.findAndCountAll(objQuery);
+        const { count, rows }: any = await models.Post.findAndCountAll(objQuery);
 
         const result = {
             page: Number(query?.page) * 1,

@@ -2,7 +2,7 @@
 
 module.exports = {
   up: (queryInterface, Sequelize) =>
-    queryInterface.createTable("project_related", {
+    queryInterface.createTable("project_translation", {
       id: {
         primaryKey: true,
         unique: true,
@@ -18,8 +18,13 @@ module.exports = {
         },
       },
 
-      name: {
+      slug: {
         type: Sequelize.STRING,
+      },
+
+      language: {
+        type: Sequelize.STRING,
+        defaultValue: "vi",
       },
 
       createdAt: {
@@ -33,5 +38,5 @@ module.exports = {
       },
     }),
 
-  down: (queryInterface) => queryInterface.dropTable("project_related"),
+  down: (queryInterface) => queryInterface.dropTable("project_translation"),
 };

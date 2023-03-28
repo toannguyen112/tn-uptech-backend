@@ -42,3 +42,523 @@ TSError: ⨯ Unable to compile TypeScript:
     at Module.load (node:internal/modules/cjs/loader:1069:32)
     at Function.Module._load (node:internal/modules/cjs/loader:904:12)
     at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-03-28 11:52:48 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/route/locale.route.ts[0m:[93m8[0m:[93m23[0m - [91merror[0m[90m TS2552: [0mCannot find name 'PostController'. Did you mean 'AbortController'?
+
+[7m8[0m     public post = new PostController();
+[7m [0m [91m                      ~~~~~~~~~~~~~~[0m
+
+  [96mnode_modules/@types/node/globals.d.ts[0m:[93m67[0m:[93m13[0m
+    [7m67[0m declare var AbortController: {
+    [7m  [0m [96m            ~~~~~~~~~~~~~~~[0m
+    'AbortController' is declared here.
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/route/locale.route.ts[0m:[93m8[0m:[93m23[0m - [91merror[0m[90m TS2552: [0mCannot find name 'PostController'. Did you mean 'AbortController'?
+
+[7m8[0m     public post = new PostController();
+[7m [0m [91m                      ~~~~~~~~~~~~~~[0m
+
+  [96mnode_modules/@types/node/globals.d.ts[0m:[93m67[0m:[93m13[0m
+    [7m67[0m declare var AbortController: {
+    [7m  [0m [96m            ~~~~~~~~~~~~~~~[0m
+    'AbortController' is declared here.
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-03-28 11:52:58 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/route/locale.route.ts[0m:[93m14[0m:[93m46[0m - [91merror[0m[90m TS2339: [0mProperty 'post' does not exist on type 'LocaleRoute'.
+
+[7m14[0m         this.router.get(`${this.path}`, this.post.index);
+[7m  [0m [91m                                             ~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/route/locale.route.ts[0m:[93m14[0m:[93m46[0m - [91merror[0m[90m TS2339: [0mProperty 'post' does not exist on type 'LocaleRoute'.
+
+[7m14[0m         this.router.get(`${this.path}`, this.post.index);
+[7m  [0m [91m                                             ~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-03-28 11:54:00 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/route/locale.route.ts[0m:[93m19[0m:[93m13[0m - [91merror[0m[90m TS2339: [0mProperty 'lang' does not exist on type 'Request<ParamsDictionary, any, any, ParsedQs, Record<string, any>>'.
+
+[7m19[0m         req.lang = lang
+[7m  [0m [91m            ~~~~[0m
+[96msrc/route/locale.route.ts[0m:[93m21[0m:[93m13[0m - [91merror[0m[90m TS2339: [0mProperty 'lang' does not exist on type 'Request<ParamsDictionary, any, any, ParsedQs, Record<string, any>>'.
+
+[7m21[0m         req.lang = 'en'
+[7m  [0m [91m            ~~~~[0m
+[96msrc/route/locale.route.ts[0m:[93m24[0m:[93m5[0m - [91merror[0m[90m TS2304: [0mCannot find name 'next'.
+
+[7m24[0m     next()
+[7m  [0m [91m    ~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/route/locale.route.ts[0m:[93m19[0m:[93m13[0m - [91merror[0m[90m TS2339: [0mProperty 'lang' does not exist on type 'Request<ParamsDictionary, any, any, ParsedQs, Record<string, any>>'.
+
+[7m19[0m         req.lang = lang
+[7m  [0m [91m            ~~~~[0m
+[96msrc/route/locale.route.ts[0m:[93m21[0m:[93m13[0m - [91merror[0m[90m TS2339: [0mProperty 'lang' does not exist on type 'Request<ParamsDictionary, any, any, ParsedQs, Record<string, any>>'.
+
+[7m21[0m         req.lang = 'en'
+[7m  [0m [91m            ~~~~[0m
+[96msrc/route/locale.route.ts[0m:[93m24[0m:[93m5[0m - [91merror[0m[90m TS2304: [0mCannot find name 'next'.
+
+[7m24[0m     next()
+[7m  [0m [91m    ~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-03-28 11:54:10 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/route/locale.route.ts[0m:[93m19[0m:[93m21[0m - [91merror[0m[90m TS2339: [0mProperty 'lang' does not exist on type 'Request<ParamsDictionary, any, any, ParsedQs, Record<string, any>>'.
+
+[7m19[0m                 req.lang = lang
+[7m  [0m [91m                    ~~~~[0m
+[96msrc/route/locale.route.ts[0m:[93m21[0m:[93m21[0m - [91merror[0m[90m TS2339: [0mProperty 'lang' does not exist on type 'Request<ParamsDictionary, any, any, ParsedQs, Record<string, any>>'.
+
+[7m21[0m                 req.lang = 'en'
+[7m  [0m [91m                    ~~~~[0m
+[96msrc/route/locale.route.ts[0m:[93m24[0m:[93m13[0m - [91merror[0m[90m TS2304: [0mCannot find name 'next'.
+
+[7m24[0m             next()
+[7m  [0m [91m            ~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/route/locale.route.ts[0m:[93m19[0m:[93m21[0m - [91merror[0m[90m TS2339: [0mProperty 'lang' does not exist on type 'Request<ParamsDictionary, any, any, ParsedQs, Record<string, any>>'.
+
+[7m19[0m                 req.lang = lang
+[7m  [0m [91m                    ~~~~[0m
+[96msrc/route/locale.route.ts[0m:[93m21[0m:[93m21[0m - [91merror[0m[90m TS2339: [0mProperty 'lang' does not exist on type 'Request<ParamsDictionary, any, any, ParsedQs, Record<string, any>>'.
+
+[7m21[0m                 req.lang = 'en'
+[7m  [0m [91m                    ~~~~[0m
+[96msrc/route/locale.route.ts[0m:[93m24[0m:[93m13[0m - [91merror[0m[90m TS2304: [0mCannot find name 'next'.
+
+[7m24[0m             next()
+[7m  [0m [91m            ~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-03-28 11:56:51 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/route/locale.route.ts[0m:[93m7[0m:[93m42[0m - [91merror[0m[90m TS2304: [0mCannot find name 'Request'.
+
+[7m7[0m export interface LanguageRequest extends Request {
+[7m [0m [91m                                         ~~~~~~~[0m
+[96msrc/route/locale.route.ts[0m:[93m26[0m:[93m21[0m - [91merror[0m[90m TS2339: [0mProperty 'lang' does not exist on type 'Request<ParamsDictionary, any, any, ParsedQs, Record<string, any>>'.
+
+[7m26[0m                 req.lang = lang
+[7m  [0m [91m                    ~~~~[0m
+[96msrc/route/locale.route.ts[0m:[93m28[0m:[93m21[0m - [91merror[0m[90m TS2339: [0mProperty 'lang' does not exist on type 'Request<ParamsDictionary, any, any, ParsedQs, Record<string, any>>'.
+
+[7m28[0m                 req.lang = 'en'
+[7m  [0m [91m                    ~~~~[0m
+[96msrc/route/locale.route.ts[0m:[93m31[0m:[93m13[0m - [91merror[0m[90m TS2304: [0mCannot find name 'next'.
+
+[7m31[0m             next()
+[7m  [0m [91m            ~~~~[0m
+[96msrc/route/locale.route.ts[0m:[93m5[0m:[93m41[0m - [91merror[0m[90m TS1002: [0mUnterminated string literal.
+
+[7m5[0m export type Language = "en" | "es" | "it
+[7m [0m [91m                                        [0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/route/locale.route.ts[0m:[93m7[0m:[93m42[0m - [91merror[0m[90m TS2304: [0mCannot find name 'Request'.
+
+[7m7[0m export interface LanguageRequest extends Request {
+[7m [0m [91m                                         ~~~~~~~[0m
+[96msrc/route/locale.route.ts[0m:[93m26[0m:[93m21[0m - [91merror[0m[90m TS2339: [0mProperty 'lang' does not exist on type 'Request<ParamsDictionary, any, any, ParsedQs, Record<string, any>>'.
+
+[7m26[0m                 req.lang = lang
+[7m  [0m [91m                    ~~~~[0m
+[96msrc/route/locale.route.ts[0m:[93m28[0m:[93m21[0m - [91merror[0m[90m TS2339: [0mProperty 'lang' does not exist on type 'Request<ParamsDictionary, any, any, ParsedQs, Record<string, any>>'.
+
+[7m28[0m                 req.lang = 'en'
+[7m  [0m [91m                    ~~~~[0m
+[96msrc/route/locale.route.ts[0m:[93m31[0m:[93m13[0m - [91merror[0m[90m TS2304: [0mCannot find name 'next'.
+
+[7m31[0m             next()
+[7m  [0m [91m            ~~~~[0m
+[96msrc/route/locale.route.ts[0m:[93m5[0m:[93m41[0m - [91merror[0m[90m TS1002: [0mUnterminated string literal.
+
+[7m5[0m export type Language = "en" | "es" | "it
+[7m [0m [91m                                        [0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-03-28 11:57:00 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/route/locale.route.ts[0m:[93m7[0m:[93m42[0m - [91merror[0m[90m TS2304: [0mCannot find name 'Request'.
+
+[7m7[0m export interface LanguageRequest extends Request {
+[7m [0m [91m                                         ~~~~~~~[0m
+[96msrc/route/locale.route.ts[0m:[93m26[0m:[93m21[0m - [91merror[0m[90m TS2339: [0mProperty 'lang' does not exist on type 'Request<ParamsDictionary, any, any, ParsedQs, Record<string, any>>'.
+
+[7m26[0m                 req.lang = lang
+[7m  [0m [91m                    ~~~~[0m
+[96msrc/route/locale.route.ts[0m:[93m28[0m:[93m21[0m - [91merror[0m[90m TS2339: [0mProperty 'lang' does not exist on type 'Request<ParamsDictionary, any, any, ParsedQs, Record<string, any>>'.
+
+[7m28[0m                 req.lang = 'en'
+[7m  [0m [91m                    ~~~~[0m
+[96msrc/route/locale.route.ts[0m:[93m31[0m:[93m13[0m - [91merror[0m[90m TS2304: [0mCannot find name 'next'.
+
+[7m31[0m             next()
+[7m  [0m [91m            ~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/route/locale.route.ts[0m:[93m7[0m:[93m42[0m - [91merror[0m[90m TS2304: [0mCannot find name 'Request'.
+
+[7m7[0m export interface LanguageRequest extends Request {
+[7m [0m [91m                                         ~~~~~~~[0m
+[96msrc/route/locale.route.ts[0m:[93m26[0m:[93m21[0m - [91merror[0m[90m TS2339: [0mProperty 'lang' does not exist on type 'Request<ParamsDictionary, any, any, ParsedQs, Record<string, any>>'.
+
+[7m26[0m                 req.lang = lang
+[7m  [0m [91m                    ~~~~[0m
+[96msrc/route/locale.route.ts[0m:[93m28[0m:[93m21[0m - [91merror[0m[90m TS2339: [0mProperty 'lang' does not exist on type 'Request<ParamsDictionary, any, any, ParsedQs, Record<string, any>>'.
+
+[7m28[0m                 req.lang = 'en'
+[7m  [0m [91m                    ~~~~[0m
+[96msrc/route/locale.route.ts[0m:[93m31[0m:[93m13[0m - [91merror[0m[90m TS2304: [0mCannot find name 'next'.
+
+[7m31[0m             next()
+[7m  [0m [91m            ~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-03-28 11:57:07 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/route/locale.route.ts[0m:[93m7[0m:[93m42[0m - [91merror[0m[90m TS2304: [0mCannot find name 'Request'.
+
+[7m7[0m export interface LanguageRequest extends Request {
+[7m [0m [91m                                         ~~~~~~~[0m
+[96msrc/route/locale.route.ts[0m:[93m21[0m:[93m47[0m - [91merror[0m[90m TS2304: [0mCannot find name 'LanguageRequestres'.
+
+[7m21[0m         this.router.get(`${this.path}`, (req: LanguageRequestres) => {
+[7m  [0m [91m                                              ~~~~~~~~~~~~~~~~~~[0m
+[96msrc/route/locale.route.ts[0m:[93m31[0m:[93m13[0m - [91merror[0m[90m TS2304: [0mCannot find name 'next'.
+
+[7m31[0m             next()
+[7m  [0m [91m            ~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/route/locale.route.ts[0m:[93m7[0m:[93m42[0m - [91merror[0m[90m TS2304: [0mCannot find name 'Request'.
+
+[7m7[0m export interface LanguageRequest extends Request {
+[7m [0m [91m                                         ~~~~~~~[0m
+[96msrc/route/locale.route.ts[0m:[93m21[0m:[93m47[0m - [91merror[0m[90m TS2304: [0mCannot find name 'LanguageRequestres'.
+
+[7m21[0m         this.router.get(`${this.path}`, (req: LanguageRequestres) => {
+[7m  [0m [91m                                              ~~~~~~~~~~~~~~~~~~[0m
+[96msrc/route/locale.route.ts[0m:[93m31[0m:[93m13[0m - [91merror[0m[90m TS2304: [0mCannot find name 'next'.
+
+[7m31[0m             next()
+[7m  [0m [91m            ~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-03-28 11:57:15 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/route/locale.route.ts[0m:[93m7[0m:[93m42[0m - [91merror[0m[90m TS2304: [0mCannot find name 'Request'.
+
+[7m7[0m export interface LanguageRequest extends Request {
+[7m [0m [91m                                         ~~~~~~~[0m
+[96msrc/route/locale.route.ts[0m:[93m21[0m:[93m47[0m - [91merror[0m[90m TS2304: [0mCannot find name 'LanguageRequestres'.
+
+[7m21[0m         this.router.get(`${this.path}`, (req: LanguageRequestres) => {
+[7m  [0m [91m                                              ~~~~~~~~~~~~~~~~~~[0m
+[96msrc/route/locale.route.ts[0m:[93m31[0m:[93m13[0m - [91merror[0m[90m TS2304: [0mCannot find name 'next'.
+
+[7m31[0m             next()
+[7m  [0m [91m            ~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/route/locale.route.ts[0m:[93m7[0m:[93m42[0m - [91merror[0m[90m TS2304: [0mCannot find name 'Request'.
+
+[7m7[0m export interface LanguageRequest extends Request {
+[7m [0m [91m                                         ~~~~~~~[0m
+[96msrc/route/locale.route.ts[0m:[93m21[0m:[93m47[0m - [91merror[0m[90m TS2304: [0mCannot find name 'LanguageRequestres'.
+
+[7m21[0m         this.router.get(`${this.path}`, (req: LanguageRequestres) => {
+[7m  [0m [91m                                              ~~~~~~~~~~~~~~~~~~[0m
+[96msrc/route/locale.route.ts[0m:[93m31[0m:[93m13[0m - [91merror[0m[90m TS2304: [0mCannot find name 'next'.
+
+[7m31[0m             next()
+[7m  [0m [91m            ~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-03-28 11:57:38 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/route/locale.route.ts[0m:[93m22[0m:[93m47[0m - [91merror[0m[90m TS2304: [0mCannot find name 'LanguageRequestres'.
+
+[7m22[0m         this.router.get(`${this.path}`, (req: LanguageRequestres) => {
+[7m  [0m [91m                                              ~~~~~~~~~~~~~~~~~~[0m
+[96msrc/route/locale.route.ts[0m:[93m32[0m:[93m13[0m - [91merror[0m[90m TS2304: [0mCannot find name 'next'.
+
+[7m32[0m             next();
+[7m  [0m [91m            ~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/route/locale.route.ts[0m:[93m22[0m:[93m47[0m - [91merror[0m[90m TS2304: [0mCannot find name 'LanguageRequestres'.
+
+[7m22[0m         this.router.get(`${this.path}`, (req: LanguageRequestres) => {
+[7m  [0m [91m                                              ~~~~~~~~~~~~~~~~~~[0m
+[96msrc/route/locale.route.ts[0m:[93m32[0m:[93m13[0m - [91merror[0m[90m TS2304: [0mCannot find name 'next'.
+
+[7m32[0m             next();
+[7m  [0m [91m            ~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-03-28 11:57:56 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/route/locale.route.ts[0m:[93m27[0m:[93m17[0m - [91merror[0m[90m TS2322: [0mType 'string' is not assignable to type 'Language'.
+
+[7m27[0m                 req.language = lang
+[7m  [0m [91m                ~~~~~~~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/route/locale.route.ts[0m:[93m27[0m:[93m17[0m - [91merror[0m[90m TS2322: [0mType 'string' is not assignable to type 'Language'.
+
+[7m27[0m                 req.language = lang
+[7m  [0m [91m                ~~~~~~~~~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-03-28 11:58:52 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/route/locale.route.ts[0m:[93m26[0m:[93m17[0m - [91merror[0m[90m TS2322: [0mType 'string' is not assignable to type 'Language'.
+
+[7m26[0m                 req.language = lang
+[7m  [0m [91m                ~~~~~~~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/route/locale.route.ts[0m:[93m26[0m:[93m17[0m - [91merror[0m[90m TS2322: [0mType 'string' is not assignable to type 'Language'.
+
+[7m26[0m                 req.language = lang
+[7m  [0m [91m                ~~~~~~~~~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-03-28 11:58:58 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/route/locale.route.ts[0m:[93m26[0m:[93m17[0m - [91merror[0m[90m TS2322: [0mType 'string' is not assignable to type 'Language'.
+
+[7m26[0m                 req['language'] = lang
+[7m  [0m [91m                ~~~~~~~~~~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/route/locale.route.ts[0m:[93m26[0m:[93m17[0m - [91merror[0m[90m TS2322: [0mType 'string' is not assignable to type 'Language'.
+
+[7m26[0m                 req['language'] = lang
+[7m  [0m [91m                ~~~~~~~~~~~~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-03-28 11:59:10 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/route/locale.route.ts[0m:[93m26[0m:[93m17[0m - [91merror[0m[90m TS2322: [0mType 'string' is not assignable to type 'Language'.
+
+[7m26[0m                 req.language = lang
+[7m  [0m [91m                ~~~~~~~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/route/locale.route.ts[0m:[93m26[0m:[93m17[0m - [91merror[0m[90m TS2322: [0mType 'string' is not assignable to type 'Language'.
+
+[7m26[0m                 req.language = lang
+[7m  [0m [91m                ~~~~~~~~~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-03-28 12:01:26 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/modules/controllers/project.controller.ts[0m:[93m11[0m:[93m25[0m - [91merror[0m[90m TS2339: [0mProperty 'language' does not exist on type 'Request<ParamsDictionary, any, any, ParsedQs, Record<string, any>>'.
+
+[7m11[0m         console.log(req.language);
+[7m  [0m [91m                        ~~~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/modules/controllers/project.controller.ts[0m:[93m11[0m:[93m25[0m - [91merror[0m[90m TS2339: [0mProperty 'language' does not exist on type 'Request<ParamsDictionary, any, any, ParsedQs, Record<string, any>>'.
+
+[7m11[0m         console.log(req.language);
+[7m  [0m [91m                        ~~~~~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-03-28 12:47:31 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/modules/controllers/project.controller.ts[0m:[93m9[0m:[93m21[0m - [91merror[0m[90m TS2304: [0mCannot find name 'Container'.
+
+[7m9[0m     public folder = Container.get(FolderService);
+[7m [0m [91m                    ~~~~~~~~~[0m
+[96msrc/modules/controllers/project.controller.ts[0m:[93m9[0m:[93m35[0m - [91merror[0m[90m TS2304: [0mCannot find name 'FolderService'.
+
+[7m9[0m     public folder = Container.get(FolderService);
+[7m [0m [91m                                  ~~~~~~~~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/modules/controllers/project.controller.ts[0m:[93m9[0m:[93m21[0m - [91merror[0m[90m TS2304: [0mCannot find name 'Container'.
+
+[7m9[0m     public folder = Container.get(FolderService);
+[7m [0m [91m                    ~~~~~~~~~[0m
+[96msrc/modules/controllers/project.controller.ts[0m:[93m9[0m:[93m35[0m - [91merror[0m[90m TS2304: [0mCannot find name 'FolderService'.
+
+[7m9[0m     public folder = Container.get(FolderService);
+[7m [0m [91m                                  ~~~~~~~~~~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-03-28 12:47:43 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/modules/controllers/project.controller.ts[0m:[93m10[0m:[93m35[0m - [91merror[0m[90m TS2304: [0mCannot find name 'FolderService'.
+
+[7m10[0m     public folder = Container.get(FolderService);
+[7m  [0m [91m                                  ~~~~~~~~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/modules/controllers/project.controller.ts[0m:[93m10[0m:[93m35[0m - [91merror[0m[90m TS2304: [0mCannot find name 'FolderService'.
+
+[7m10[0m     public folder = Container.get(FolderService);
+[7m  [0m [91m                                  ~~~~~~~~~~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-03-28 12:48:24 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/modules/controllers/project.controller.ts[0m:[93m16[0m:[93m47[0m - [91merror[0m[90m TS2304: [0mCannot find name 'query'.
+
+[7m16[0m             const data = this.project.getList(query)
+[7m  [0m [91m                                              ~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/modules/controllers/project.controller.ts[0m:[93m16[0m:[93m47[0m - [91merror[0m[90m TS2304: [0mCannot find name 'query'.
+
+[7m16[0m             const data = this.project.getList(query)
+[7m  [0m [91m                                              ~~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
