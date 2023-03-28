@@ -37,6 +37,10 @@ module.exports = function (sequelize, DataTypes): typeof MediaModel {
                 type: DataTypes.STRING,
             },
 
+            project_id: {
+                type: DataTypes.INTEGER,
+            },
+
             disk: {
                 type: DataTypes.STRING,
             },
@@ -111,13 +115,11 @@ module.exports = function (sequelize, DataTypes): typeof MediaModel {
     );
 
     Media.associate = function (models) {
-        Media.hasMany(models.Project, {
-            foreignKey: 'projecttableId',
-            constraints: false,
-            scope: {
-                commentableType: 'image'
-            }
-        });
+        Media.belongsTo(models.Project,
+            {
+                foreignKey: 'project_id',
+                constraints: false
+            });
     };
 
     return Media;

@@ -57,23 +57,12 @@ module.exports = function (sequelize, DataTypes) {
         },
     );
 
-    // Project.addHook("afterFind", findResult => {
-    //     if (!Array.isArray(findResult)) findResult = [findResult];
-    //     for (const instance of findResult) {
-    //         if (instance.commentableType === "image" && instance.image !== undefined) {
-    //             instance.commentable = instance.image;
-    //         } else if (instance.commentableType === "video" && instance.video !== undefined) {
-    //             instance.commentable = instance.video;
-    //         }
-
-    //         delete instance.image;
-    //         delete instance.dataValues.image;
-    //         delete instance.video;
-    //         delete instance.dataValues.video;
-    //     }
-    // });
-
-    // Project.belongsTo(models.Media, { foreignKey: 'projecttableId', constraints: false });
+    Project.associate = function (models) {
+        Project.hasMany(models.Media, {
+            foreignKey: 'project_id',
+            constraints: false,
+        });
+    };
 
     return Project;
 };

@@ -17,6 +17,6 @@ export class ProjectRoute implements Routes {
         this.router.post(`${this.path}/create`, this.project.create);
         this.router.put(`${this.path}/update/:id`, this.project.update);
         this.router.delete(`${this.path}/delete/:id(\\d+)`, this.project.delete);
-        this.router.delete(`${this.path}/deleteMultipleIds`, this.project.deleteMultipleIds);
+        this.router.post(`${this.path}/deleteMultipleIds`, this.project.deleteMultipleIds);
     }
 }

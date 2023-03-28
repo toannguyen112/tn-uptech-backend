@@ -1,19 +1,14 @@
+import models from ".";
 import Helper from "../../../utils/helper";
 
-
 module.exports = function (sequelize, DataTypes) {
-    const Post = sequelize.define(
-        "posts",
+    const ProjectRelated = sequelize.define(
+        "project_related",
         {
             id: {
-                type: DataTypes.INTEGER,
+                type: DataTypes.STRING,
                 autoIncrement: true,
                 primaryKey: true,
-            },
-
-            view: {
-                type: DataTypes.INTEGER,
-                defaultValue: 0
             },
 
             createdAt: {
@@ -34,16 +29,9 @@ module.exports = function (sequelize, DataTypes) {
         },
         {
             timestamps: true,
-            tableName: "posts",
+            tableName: "project_related",
         },
     );
 
-    Post.associate = function (models) {
-        Post.hasMany(models.Media, {
-            foreignKey: 'post_id',
-            constraints: false,
-        });
-    };
-
-    return Post;
+    return ProjectRelated;
 };

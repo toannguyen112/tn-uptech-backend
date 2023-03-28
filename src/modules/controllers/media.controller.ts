@@ -2,13 +2,22 @@ import { Request, Response } from "express";
 import { Container } from 'typedi';
 import { BaseController } from "./base.controller";
 import { MediaService } from "../../services/media.service";
+import models from "../../infra/sequelize/models";
 export class MediaController extends BaseController {
 
   public media = Container.get(MediaService);
 
   public index = async (req: Request, res: Response) => {
-    const data = await this.media.getList();
-    return this.success(res, data, "success");
+
+    try {
+      const data = await this.media.getList();
+      return this.success(res, data, "success");
+
+    } catch (error) {
+      console.log(error);
+    }
+
+
   }
 
   public create = async (req: Request, res: Response) => {
