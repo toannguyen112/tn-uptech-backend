@@ -92,13 +92,7 @@ module.exports = function (sequelize, DataTypes) {
         },
     );
 
-    Media.associate = function (models) {
-        Media.belongsTo(models.Project,
-            {
-                foreignKey: 'project_id',
-                constraints: false
-            });
-    };
+    Media.associate = function (models) {};
 
     return Media;
 };

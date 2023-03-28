@@ -11,6 +11,22 @@ module.exports = function (sequelize, DataTypes) {
                 primaryKey: true,
             },
 
+            project_id: {
+                type: DataTypes.INTEGER,
+                references: {
+                    model: "projects",
+                    key: "id",
+                },
+            },
+
+            project_realted_id: {
+                type: DataTypes.INTEGER,
+                references: {
+                    model: "projects",
+                    key: "id",
+                },
+            },
+
             createdAt: {
                 type: DataTypes.DATE,
                 defaultValue: new Date(),
@@ -32,6 +48,10 @@ module.exports = function (sequelize, DataTypes) {
             tableName: "project_related",
         },
     );
+
+    ProjectRelated.associate = function (models) {
+        ProjectRelated.belongsTo(models.Project, {foreignKey: 'id'});
+    };
 
     return ProjectRelated;
 };

@@ -18,8 +18,12 @@ module.exports = {
         },
       },
 
-      name: {
-        type: Sequelize.STRING,
+      post_related_id: {
+        type: Sequelize.INTEGER,
+        references: {
+          model: "posts",
+          key: "id",
+        },
       },
 
       createdAt: {

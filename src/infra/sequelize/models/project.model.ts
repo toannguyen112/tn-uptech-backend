@@ -57,9 +57,8 @@ module.exports = function (sequelize, DataTypes) {
     );
 
     Project.associate = function (models) {
-        Project.hasMany(models.Media, {
-            foreignKey: 'project_id',
-            constraints: false,
+        Project.hasMany(models.ProjectRelated, {
+            foreignKey: 'project_related_id'
         });
     };
 

@@ -1508,3 +1508,535 @@ TSError: ⨯ Unable to compile TypeScript:
     at Module.load (node:internal/modules/cjs/loader:1069:32)
     at Function.Module._load (node:internal/modules/cjs/loader:904:12)
     at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-03-28 15:18:15 error: uncaughtException: cookie_parser_1.default.json is not a function
+TypeError: cookie_parser_1.default.json is not a function
+    at App.initializeMiddlewares (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/express/app.ts:55:35)
+    at new App (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/express/app.ts:28:14)
+    at Object.<anonymous> (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/server.ts:16:13)
+    at Module._compile (node:internal/modules/cjs/loader:1191:14)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1618:23)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)
+2023-03-28 15:18:27 error: uncaughtException: cookie_parser_1.default.json is not a function
+TypeError: cookie_parser_1.default.json is not a function
+    at App.initializeMiddlewares (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/express/app.ts:55:35)
+    at new App (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/express/app.ts:28:14)
+    at Object.<anonymous> (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/server.ts:16:13)
+    at Module._compile (node:internal/modules/cjs/loader:1191:14)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1618:23)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)
+2023-03-28 18:52:41 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/services/project.service.ts[0m:[93m30[0m:[93m31[0m - [91merror[0m[90m TS2304: [0mCannot find name 'Request'.
+
+[7m30[0m     public show = async (req: Request, res: Response, next: NextFunction) => {
+[7m  [0m [91m                              ~~~~~~~[0m
+[96msrc/services/project.service.ts[0m:[93m30[0m:[93m45[0m - [91merror[0m[90m TS2304: [0mCannot find name 'Response'.
+
+[7m30[0m     public show = async (req: Request, res: Response, next: NextFunction) => {
+[7m  [0m [91m                                            ~~~~~~~~[0m
+[96msrc/services/project.service.ts[0m:[93m30[0m:[93m61[0m - [91merror[0m[90m TS2304: [0mCannot find name 'NextFunction'.
+
+[7m30[0m     public show = async (req: Request, res: Response, next: NextFunction) => {
+[7m  [0m [91m                                                            ~~~~~~~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/services/project.service.ts[0m:[93m30[0m:[93m31[0m - [91merror[0m[90m TS2304: [0mCannot find name 'Request'.
+
+[7m30[0m     public show = async (req: Request, res: Response, next: NextFunction) => {
+[7m  [0m [91m                              ~~~~~~~[0m
+[96msrc/services/project.service.ts[0m:[93m30[0m:[93m45[0m - [91merror[0m[90m TS2304: [0mCannot find name 'Response'.
+
+[7m30[0m     public show = async (req: Request, res: Response, next: NextFunction) => {
+[7m  [0m [91m                                            ~~~~~~~~[0m
+[96msrc/services/project.service.ts[0m:[93m30[0m:[93m61[0m - [91merror[0m[90m TS2304: [0mCannot find name 'NextFunction'.
+
+[7m30[0m     public show = async (req: Request, res: Response, next: NextFunction) => {
+[7m  [0m [91m                                                            ~~~~~~~~~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-03-28 18:52:52 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/services/project.service.ts[0m:[93m33[0m:[93m30[0m - [91merror[0m[90m TS2304: [0mCannot find name 'req'.
+
+[7m33[0m                 where: { id: req.params.id },
+[7m  [0m [91m                             ~~~[0m
+[96msrc/services/project.service.ts[0m:[93m37[0m:[93m20[0m - [91merror[0m[90m TS2304: [0mCannot find name 'res'.
+
+[7m37[0m             return res.status(200).json({ message: "success", data });
+[7m  [0m [91m                   ~~~[0m
+[96msrc/services/project.service.ts[0m:[93m39[0m:[93m13[0m - [91merror[0m[90m TS2304: [0mCannot find name 'res'.
+
+[7m39[0m             res.status(500).send(error);
+[7m  [0m [91m            ~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/services/project.service.ts[0m:[93m33[0m:[93m30[0m - [91merror[0m[90m TS2304: [0mCannot find name 'req'.
+
+[7m33[0m                 where: { id: req.params.id },
+[7m  [0m [91m                             ~~~[0m
+[96msrc/services/project.service.ts[0m:[93m37[0m:[93m20[0m - [91merror[0m[90m TS2304: [0mCannot find name 'res'.
+
+[7m37[0m             return res.status(200).json({ message: "success", data });
+[7m  [0m [91m                   ~~~[0m
+[96msrc/services/project.service.ts[0m:[93m39[0m:[93m13[0m - [91merror[0m[90m TS2304: [0mCannot find name 'res'.
+
+[7m39[0m             res.status(500).send(error);
+[7m  [0m [91m            ~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-03-28 18:53:01 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/services/project.service.ts[0m:[93m20[0m:[93m33[0m - [91merror[0m[90m TS2339: [0mProperty 'page' does not exist on type '{}'.
+
+[7m20[0m             page: Number(query?.page) * 1,
+[7m  [0m [91m                                ~~~~[0m
+[96msrc/services/project.service.ts[0m:[93m21[0m:[93m37[0m - [91merror[0m[90m TS2339: [0mProperty 'page_size' does not exist on type '{}'.
+
+[7m21[0m             pageSize: Number(query?.page_size) * 1,
+[7m  [0m [91m                                    ~~~~~~~~~[0m
+[96msrc/services/project.service.ts[0m:[93m22[0m:[93m56[0m - [91merror[0m[90m TS2339: [0mProperty 'page_size' does not exist on type '{}'.
+
+[7m22[0m             pageCount: Math.ceil(count / Number(query?.page_size) * 1),
+[7m  [0m [91m                                                       ~~~~~~~~~[0m
+[96msrc/services/project.service.ts[0m:[93m33[0m:[93m30[0m - [91merror[0m[90m TS2304: [0mCannot find name 'req'.
+
+[7m33[0m                 where: { id: req.params.id },
+[7m  [0m [91m                             ~~~[0m
+[96msrc/services/project.service.ts[0m:[93m37[0m:[93m20[0m - [91merror[0m[90m TS2304: [0mCannot find name 'res'.
+
+[7m37[0m             return res.status(200).json({ message: "success", data });
+[7m  [0m [91m                   ~~~[0m
+[96msrc/services/project.service.ts[0m:[93m39[0m:[93m13[0m - [91merror[0m[90m TS2304: [0mCannot find name 'res'.
+
+[7m39[0m             res.status(500).send(error);
+[7m  [0m [91m            ~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/services/project.service.ts[0m:[93m20[0m:[93m33[0m - [91merror[0m[90m TS2339: [0mProperty 'page' does not exist on type '{}'.
+
+[7m20[0m             page: Number(query?.page) * 1,
+[7m  [0m [91m                                ~~~~[0m
+[96msrc/services/project.service.ts[0m:[93m21[0m:[93m37[0m - [91merror[0m[90m TS2339: [0mProperty 'page_size' does not exist on type '{}'.
+
+[7m21[0m             pageSize: Number(query?.page_size) * 1,
+[7m  [0m [91m                                    ~~~~~~~~~[0m
+[96msrc/services/project.service.ts[0m:[93m22[0m:[93m56[0m - [91merror[0m[90m TS2339: [0mProperty 'page_size' does not exist on type '{}'.
+
+[7m22[0m             pageCount: Math.ceil(count / Number(query?.page_size) * 1),
+[7m  [0m [91m                                                       ~~~~~~~~~[0m
+[96msrc/services/project.service.ts[0m:[93m33[0m:[93m30[0m - [91merror[0m[90m TS2304: [0mCannot find name 'req'.
+
+[7m33[0m                 where: { id: req.params.id },
+[7m  [0m [91m                             ~~~[0m
+[96msrc/services/project.service.ts[0m:[93m37[0m:[93m20[0m - [91merror[0m[90m TS2304: [0mCannot find name 'res'.
+
+[7m37[0m             return res.status(200).json({ message: "success", data });
+[7m  [0m [91m                   ~~~[0m
+[96msrc/services/project.service.ts[0m:[93m39[0m:[93m13[0m - [91merror[0m[90m TS2304: [0mCannot find name 'res'.
+
+[7m39[0m             res.status(500).send(error);
+[7m  [0m [91m            ~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-03-28 18:53:07 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/services/project.service.ts[0m:[93m20[0m:[93m33[0m - [91merror[0m[90m TS2339: [0mProperty 'page' does not exist on type '{}'.
+
+[7m20[0m             page: Number(query?.page) * 1,
+[7m  [0m [91m                                ~~~~[0m
+[96msrc/services/project.service.ts[0m:[93m21[0m:[93m37[0m - [91merror[0m[90m TS2339: [0mProperty 'page_size' does not exist on type '{}'.
+
+[7m21[0m             pageSize: Number(query?.page_size) * 1,
+[7m  [0m [91m                                    ~~~~~~~~~[0m
+[96msrc/services/project.service.ts[0m:[93m22[0m:[93m56[0m - [91merror[0m[90m TS2339: [0mProperty 'page_size' does not exist on type '{}'.
+
+[7m22[0m             pageCount: Math.ceil(count / Number(query?.page_size) * 1),
+[7m  [0m [91m                                                       ~~~~~~~~~[0m
+[96msrc/services/project.service.ts[0m:[93m33[0m:[93m30[0m - [91merror[0m[90m TS2304: [0mCannot find name 'req'.
+
+[7m33[0m                 where: { id: req.params.id },
+[7m  [0m [91m                             ~~~[0m
+[96msrc/services/project.service.ts[0m:[93m37[0m:[93m20[0m - [91merror[0m[90m TS2304: [0mCannot find name 'res'.
+
+[7m37[0m             return res.status(200).json({ message: "success", data });
+[7m  [0m [91m                   ~~~[0m
+[96msrc/services/project.service.ts[0m:[93m39[0m:[93m13[0m - [91merror[0m[90m TS2304: [0mCannot find name 'res'.
+
+[7m39[0m             res.status(500).send(error);
+[7m  [0m [91m            ~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/services/project.service.ts[0m:[93m20[0m:[93m33[0m - [91merror[0m[90m TS2339: [0mProperty 'page' does not exist on type '{}'.
+
+[7m20[0m             page: Number(query?.page) * 1,
+[7m  [0m [91m                                ~~~~[0m
+[96msrc/services/project.service.ts[0m:[93m21[0m:[93m37[0m - [91merror[0m[90m TS2339: [0mProperty 'page_size' does not exist on type '{}'.
+
+[7m21[0m             pageSize: Number(query?.page_size) * 1,
+[7m  [0m [91m                                    ~~~~~~~~~[0m
+[96msrc/services/project.service.ts[0m:[93m22[0m:[93m56[0m - [91merror[0m[90m TS2339: [0mProperty 'page_size' does not exist on type '{}'.
+
+[7m22[0m             pageCount: Math.ceil(count / Number(query?.page_size) * 1),
+[7m  [0m [91m                                                       ~~~~~~~~~[0m
+[96msrc/services/project.service.ts[0m:[93m33[0m:[93m30[0m - [91merror[0m[90m TS2304: [0mCannot find name 'req'.
+
+[7m33[0m                 where: { id: req.params.id },
+[7m  [0m [91m                             ~~~[0m
+[96msrc/services/project.service.ts[0m:[93m37[0m:[93m20[0m - [91merror[0m[90m TS2304: [0mCannot find name 'res'.
+
+[7m37[0m             return res.status(200).json({ message: "success", data });
+[7m  [0m [91m                   ~~~[0m
+[96msrc/services/project.service.ts[0m:[93m39[0m:[93m13[0m - [91merror[0m[90m TS2304: [0mCannot find name 'res'.
+
+[7m39[0m             res.status(500).send(error);
+[7m  [0m [91m            ~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-03-28 18:53:15 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/services/project.service.ts[0m:[93m20[0m:[93m33[0m - [91merror[0m[90m TS2339: [0mProperty 'page' does not exist on type '{}'.
+
+[7m20[0m             page: Number(query?.page) * 1,
+[7m  [0m [91m                                ~~~~[0m
+[96msrc/services/project.service.ts[0m:[93m21[0m:[93m37[0m - [91merror[0m[90m TS2339: [0mProperty 'page_size' does not exist on type '{}'.
+
+[7m21[0m             pageSize: Number(query?.page_size) * 1,
+[7m  [0m [91m                                    ~~~~~~~~~[0m
+[96msrc/services/project.service.ts[0m:[93m22[0m:[93m56[0m - [91merror[0m[90m TS2339: [0mProperty 'page_size' does not exist on type '{}'.
+
+[7m22[0m             pageCount: Math.ceil(count / Number(query?.page_size) * 1),
+[7m  [0m [91m                                                       ~~~~~~~~~[0m
+[96msrc/services/project.service.ts[0m:[93m33[0m:[93m30[0m - [91merror[0m[90m TS2304: [0mCannot find name 'req'.
+
+[7m33[0m                 where: { id: req.params.id },
+[7m  [0m [91m                             ~~~[0m
+[96msrc/services/project.service.ts[0m:[93m37[0m:[93m20[0m - [91merror[0m[90m TS2304: [0mCannot find name 'res'.
+
+[7m37[0m             return res.status(200).json({ message: "success", data });
+[7m  [0m [91m                   ~~~[0m
+[96msrc/services/project.service.ts[0m:[93m39[0m:[93m13[0m - [91merror[0m[90m TS2304: [0mCannot find name 'res'.
+
+[7m39[0m             res.status(500).send(error);
+[7m  [0m [91m            ~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/services/project.service.ts[0m:[93m20[0m:[93m33[0m - [91merror[0m[90m TS2339: [0mProperty 'page' does not exist on type '{}'.
+
+[7m20[0m             page: Number(query?.page) * 1,
+[7m  [0m [91m                                ~~~~[0m
+[96msrc/services/project.service.ts[0m:[93m21[0m:[93m37[0m - [91merror[0m[90m TS2339: [0mProperty 'page_size' does not exist on type '{}'.
+
+[7m21[0m             pageSize: Number(query?.page_size) * 1,
+[7m  [0m [91m                                    ~~~~~~~~~[0m
+[96msrc/services/project.service.ts[0m:[93m22[0m:[93m56[0m - [91merror[0m[90m TS2339: [0mProperty 'page_size' does not exist on type '{}'.
+
+[7m22[0m             pageCount: Math.ceil(count / Number(query?.page_size) * 1),
+[7m  [0m [91m                                                       ~~~~~~~~~[0m
+[96msrc/services/project.service.ts[0m:[93m33[0m:[93m30[0m - [91merror[0m[90m TS2304: [0mCannot find name 'req'.
+
+[7m33[0m                 where: { id: req.params.id },
+[7m  [0m [91m                             ~~~[0m
+[96msrc/services/project.service.ts[0m:[93m37[0m:[93m20[0m - [91merror[0m[90m TS2304: [0mCannot find name 'res'.
+
+[7m37[0m             return res.status(200).json({ message: "success", data });
+[7m  [0m [91m                   ~~~[0m
+[96msrc/services/project.service.ts[0m:[93m39[0m:[93m13[0m - [91merror[0m[90m TS2304: [0mCannot find name 'res'.
+
+[7m39[0m             res.status(500).send(error);
+[7m  [0m [91m            ~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-03-28 18:53:38 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/services/project.service.ts[0m:[93m37[0m:[93m20[0m - [91merror[0m[90m TS2304: [0mCannot find name 'res'.
+
+[7m37[0m             return res.status(200).json({ message: "success", data });
+[7m  [0m [91m                   ~~~[0m
+[96msrc/services/project.service.ts[0m:[93m39[0m:[93m13[0m - [91merror[0m[90m TS2304: [0mCannot find name 'res'.
+
+[7m39[0m             res.status(500).send(error);
+[7m  [0m [91m            ~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/services/project.service.ts[0m:[93m37[0m:[93m20[0m - [91merror[0m[90m TS2304: [0mCannot find name 'res'.
+
+[7m37[0m             return res.status(200).json({ message: "success", data });
+[7m  [0m [91m                   ~~~[0m
+[96msrc/services/project.service.ts[0m:[93m39[0m:[93m13[0m - [91merror[0m[90m TS2304: [0mCannot find name 'res'.
+
+[7m39[0m             res.status(500).send(error);
+[7m  [0m [91m            ~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-03-28 18:56:59 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/services/project.service.ts[0m:[93m35[0m:[93m67[0m - [91merror[0m[90m TS18004: [0mNo value exists in scope for the shorthand property 'id'. Either declare one or provide an initializer.
+
+[7m35[0m         const data = await models.Project.update(body, { where: { id } });
+[7m  [0m [91m                                                                  ~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/services/project.service.ts[0m:[93m35[0m:[93m67[0m - [91merror[0m[90m TS18004: [0mNo value exists in scope for the shorthand property 'id'. Either declare one or provide an initializer.
+
+[7m35[0m         const data = await models.Project.update(body, { where: { id } });
+[7m  [0m [91m                                                                  ~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-03-28 18:58:49 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/services/project.service.ts[0m:[93m42[0m:[93m44[0m - [91merror[0m[90m TS2304: [0mCannot find name 'Request'.
+
+[7m42[0m     public deleteMultipleIds = async (req: Request, res: Response, next: NextFunction) => {
+[7m  [0m [91m                                           ~~~~~~~[0m
+[96msrc/services/project.service.ts[0m:[93m42[0m:[93m58[0m - [91merror[0m[90m TS2304: [0mCannot find name 'Response'.
+
+[7m42[0m     public deleteMultipleIds = async (req: Request, res: Response, next: NextFunction) => {
+[7m  [0m [91m                                                         ~~~~~~~~[0m
+[96msrc/services/project.service.ts[0m:[93m42[0m:[93m74[0m - [91merror[0m[90m TS2304: [0mCannot find name 'NextFunction'.
+
+[7m42[0m     public deleteMultipleIds = async (req: Request, res: Response, next: NextFunction) => {
+[7m  [0m [91m                                                                         ~~~~~~~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/services/project.service.ts[0m:[93m42[0m:[93m44[0m - [91merror[0m[90m TS2304: [0mCannot find name 'Request'.
+
+[7m42[0m     public deleteMultipleIds = async (req: Request, res: Response, next: NextFunction) => {
+[7m  [0m [91m                                           ~~~~~~~[0m
+[96msrc/services/project.service.ts[0m:[93m42[0m:[93m58[0m - [91merror[0m[90m TS2304: [0mCannot find name 'Response'.
+
+[7m42[0m     public deleteMultipleIds = async (req: Request, res: Response, next: NextFunction) => {
+[7m  [0m [91m                                                         ~~~~~~~~[0m
+[96msrc/services/project.service.ts[0m:[93m42[0m:[93m74[0m - [91merror[0m[90m TS2304: [0mCannot find name 'NextFunction'.
+
+[7m42[0m     public deleteMultipleIds = async (req: Request, res: Response, next: NextFunction) => {
+[7m  [0m [91m                                                                         ~~~~~~~~~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-03-28 18:59:02 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/services/project.service.ts[0m:[93m44[0m:[93m29[0m - [91merror[0m[90m TS2304: [0mCannot find name 'req'.
+
+[7m44[0m             const { ids } = req.body;
+[7m  [0m [91m                            ~~~[0m
+[96msrc/services/project.service.ts[0m:[93m46[0m:[93m24[0m - [91merror[0m[90m TS2304: [0mCannot find name 'res'.
+
+[7m46[0m                 return res.status(200).json({ message: "success", data: result });
+[7m  [0m [91m                       ~~~[0m
+[96msrc/services/project.service.ts[0m:[93m49[0m:[93m13[0m - [91merror[0m[90m TS2304: [0mCannot find name 'res'.
+
+[7m49[0m             res.status(500).send(error);
+[7m  [0m [91m            ~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/services/project.service.ts[0m:[93m44[0m:[93m29[0m - [91merror[0m[90m TS2304: [0mCannot find name 'req'.
+
+[7m44[0m             const { ids } = req.body;
+[7m  [0m [91m                            ~~~[0m
+[96msrc/services/project.service.ts[0m:[93m46[0m:[93m24[0m - [91merror[0m[90m TS2304: [0mCannot find name 'res'.
+
+[7m46[0m                 return res.status(200).json({ message: "success", data: result });
+[7m  [0m [91m                       ~~~[0m
+[96msrc/services/project.service.ts[0m:[93m49[0m:[93m13[0m - [91merror[0m[90m TS2304: [0mCannot find name 'res'.
+
+[7m49[0m             res.status(500).send(error);
+[7m  [0m [91m            ~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-03-28 19:00:50 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/modules/controllers/project.controller.ts[0m:[93m75[0m:[93m27[0m - [91merror[0m[90m TS2554: [0mExpected 2 arguments, but got 1.
+
+[7m75[0m             await project.deleteById(id);
+[7m  [0m [91m                          ~~~~~~~~~~~~~~[0m
+
+  [96msrc/services/project.service.ts[0m:[93m38[0m:[93m36[0m
+    [7m38[0m     public deleteById = async (id, body) => {
+    [7m  [0m [96m                                   ~~~~[0m
+    An argument for 'body' was not provided.
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/modules/controllers/project.controller.ts[0m:[93m75[0m:[93m27[0m - [91merror[0m[90m TS2554: [0mExpected 2 arguments, but got 1.
+
+[7m75[0m             await project.deleteById(id);
+[7m  [0m [91m                          ~~~~~~~~~~~~~~[0m
+
+  [96msrc/services/project.service.ts[0m:[93m38[0m:[93m36[0m
+    [7m38[0m     public deleteById = async (id, body) => {
+    [7m  [0m [96m                                   ~~~~[0m
+    An argument for 'body' was not provided.
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-03-28 19:01:06 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/modules/controllers/project.controller.ts[0m:[93m75[0m:[93m40[0m - [91merror[0m[90m TS2554: [0mExpected 2 arguments, but got 1.
+
+[7m75[0m             const data = await project.deleteById(id);
+[7m  [0m [91m                                       ~~~~~~~~~~~~~~[0m
+
+  [96msrc/services/project.service.ts[0m:[93m38[0m:[93m36[0m
+    [7m38[0m     public deleteById = async (id, body) => {
+    [7m  [0m [96m                                   ~~~~[0m
+    An argument for 'body' was not provided.
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/modules/controllers/project.controller.ts[0m:[93m75[0m:[93m40[0m - [91merror[0m[90m TS2554: [0mExpected 2 arguments, but got 1.
+
+[7m75[0m             const data = await project.deleteById(id);
+[7m  [0m [91m                                       ~~~~~~~~~~~~~~[0m
+
+  [96msrc/services/project.service.ts[0m:[93m38[0m:[93m36[0m
+    [7m38[0m     public deleteById = async (id, body) => {
+    [7m  [0m [96m                                   ~~~~[0m
+    An argument for 'body' was not provided.
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-03-28 19:01:22 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/modules/controllers/project.controller.ts[0m:[93m74[0m:[93m40[0m - [91merror[0m[90m TS2554: [0mExpected 2 arguments, but got 1.
+
+[7m74[0m             const data = await project.deleteById(req.params.id);
+[7m  [0m [91m                                       ~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+  [96msrc/services/project.service.ts[0m:[93m38[0m:[93m36[0m
+    [7m38[0m     public deleteById = async (id, body) => {
+    [7m  [0m [96m                                   ~~~~[0m
+    An argument for 'body' was not provided.
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/modules/controllers/project.controller.ts[0m:[93m74[0m:[93m40[0m - [91merror[0m[90m TS2554: [0mExpected 2 arguments, but got 1.
+
+[7m74[0m             const data = await project.deleteById(req.params.id);
+[7m  [0m [91m                                       ~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+  [96msrc/services/project.service.ts[0m:[93m38[0m:[93m36[0m
+    [7m38[0m     public deleteById = async (id, body) => {
+    [7m  [0m [96m                                   ~~~~[0m
+    An argument for 'body' was not provided.
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-03-28 19:02:36 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/modules/controllers/project.controller.ts[0m:[93m10[0m:[93m5[0m - [91merror[0m[90m TS2377: [0mConstructors for derived classes must contain a 'super' call.
+
+[7m10[0m     constructor() { }
+[7m  [0m [91m    ~~~~~~~~~~~~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/modules/controllers/project.controller.ts[0m:[93m10[0m:[93m5[0m - [91merror[0m[90m TS2377: [0mConstructors for derived classes must contain a 'super' call.
+
+[7m10[0m     constructor() { }
+[7m  [0m [91m    ~~~~~~~~~~~~~~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)

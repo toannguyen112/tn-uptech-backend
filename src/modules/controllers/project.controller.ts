@@ -1,33 +1,25 @@
 
 import { NextFunction, Request, Response } from 'express';
 import models from '../../infra/sequelize/models';
-import { Container } from 'typedi';
 import { BaseController } from "./base.controller";
 import { ProjectService } from '../../services/project.service';
 
 const project = new ProjectService();
 export class ProjectController extends BaseController {
 
-    // public project = Container.get(ProjectService);
-
     public index = async (req: Request, res: Response, next: NextFunction) => {
-
         try {
             const data = await project.getList({ ...req.query });
-            return res.status(200).json({ message: "success", data });
-
+            return this.success(res,data);
         } catch (error) {
             console.log(error);
         }
     }
 
     public create = async (req: Request, res: Response, next: NextFunction) => {
-
-        console.log(req.body);
-        return;
         try {
             const data = await models.Project.create({ ...req.body });
-            return res.status(200).json({ message: "success", data });
+            return this.success(res,data);
         } catch (error) {
             res.status(500).send(error);
         }
@@ -35,12 +27,8 @@ export class ProjectController extends BaseController {
 
     public show = async (req: Request, res: Response, next: NextFunction) => {
         try {
-            const data = await models.Project.findOne({
-                where: { id: req.params.id },
-                include: [models.Media]
-            });
-
-            return res.status(200).json({ message: "success", data });
+            const data = await project.findById(req.params.id);
+            return this.success(res,data);
         } catch (error) {
             res.status(500).send(error);
         }
@@ -62,7 +50,7 @@ export class ProjectController extends BaseController {
 
             const data = await models.Project.update(body, { where: { id } });
 
-            return res.status(200).json({ message: "success", data });
+            return this.success(res,data);
         } catch (error) {
             res.status(500).send(error);
         }
@@ -71,9 +59,8 @@ export class ProjectController extends BaseController {
     public deleteMultipleIds = async (req: Request, res: Response, next: NextFunction) => {
         try {
             const { ids } = req.body;
-            await models.Project.destroy({ where: { id: ids } }).then((result) => {
-                return res.status(200).json({ message: "success", data: result });
-            });
+            const data = await project.deleteMultipleIds(ids);
+            return this.success(res,data);
         } catch (error) {
             res.status(500).send(error);
         }
@@ -81,14 +68,10 @@ export class ProjectController extends BaseController {
 
     public delete = async (req: Request, res: Response, next: NextFunction) => {
         try {
-            const { id } = req.params;
-            await models.Project.destroy({ where: { id } });
-
-            const data = await models.Project.findAll({});
-            return res.status(200).json({ message: "success", data: data });
+            const data = await project.deleteById(req.params.id);
+            return this.success(res,data);
         } catch (error) {
             res.status(500).send(error);
         }
     }
-
 }

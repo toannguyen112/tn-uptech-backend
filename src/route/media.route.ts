@@ -1,6 +1,11 @@
 
 const fs = require("fs");
 const multer = require("multer");
+import path from "path";
+
+import { Router } from "express";
+import { Routes } from "../interface/routes.interface";
+import { MediaController } from "../modules/controllers/media.controller";
 
 const pathFolder = "./storage/uploads/";
 var storage = multer.diskStorage({
@@ -15,13 +20,6 @@ var storage = multer.diskStorage({
 });
 
 const upload = multer({ storage: storage });
-
-import path from "path";
-
-import { Router } from "express";
-import { Routes } from "../interface/routes.interface";
-import { MediaController } from "../modules/controllers/media.controller";
-
 export class MediaRoute implements Routes {
     public path = '/medias';
     public router = Router();
