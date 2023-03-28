@@ -1244,3 +1244,267 @@ TSError: ⨯ Unable to compile TypeScript:
     at Module.load (node:internal/modules/cjs/loader:1069:32)
     at Function.Module._load (node:internal/modules/cjs/loader:904:12)
     at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-03-28 13:45:33 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/modules/controllers/post.controller.ts[0m:[93m12[0m:[93m21[0m - [91merror[0m[90m TS2663: [0mCannot find name 'post'. Did you mean the instance member 'this.post'?
+
+[7m12[0m         console.log(post);
+[7m  [0m [91m                    ~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/modules/controllers/post.controller.ts[0m:[93m12[0m:[93m21[0m - [91merror[0m[90m TS2663: [0mCannot find name 'post'. Did you mean the instance member 'this.post'?
+
+[7m12[0m         console.log(post);
+[7m  [0m [91m                    ~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-03-28 13:46:02 error: uncaughtException: Cannot read properties of undefined (reading 'post')
+TypeError: Cannot read properties of undefined (reading 'post')
+    at index (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/modules/controllers/post.controller.ts:12:26)
+    at Layer.handle [as handle_request] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/express/lib/router/route.js:144:13)
+    at Route.dispatch (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/express/lib/router/route.js:114:3)
+    at Layer.handle [as handle_request] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/express/lib/router/index.js:284:15
+    at Function.process_params (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/express/lib/router/index.js:346:12)
+    at next (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/express/lib/router/index.js:280:10)
+    at Function.handle (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/express/lib/router/index.js:175:3)
+    at router (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/express/lib/router/index.js:47:12)
+2023-03-28 13:47:24 error: uncaughtException: Cannot read properties of undefined (reading 'post')
+TypeError: Cannot read properties of undefined (reading 'post')
+    at index (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/modules/controllers/post.controller.ts:11:26)
+    at Layer.handle [as handle_request] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/express/lib/router/route.js:144:13)
+    at Route.dispatch (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/express/lib/router/route.js:114:3)
+    at Layer.handle [as handle_request] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/express/lib/router/index.js:284:15
+    at Function.process_params (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/express/lib/router/index.js:346:12)
+    at next (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/express/lib/router/index.js:280:10)
+    at Function.handle (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/express/lib/router/index.js:175:3)
+    at router (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/express/lib/router/index.js:47:12)
+2023-03-28 13:48:06 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/modules/controllers/post.controller.ts[0m:[93m4[0m:[93m10[0m - [91merror[0m[90m TS2440: [0mImport declaration conflicts with local declaration of 'PostService'.
+
+[7m4[0m import { PostService } from "../../services/post.service";
+[7m [0m [91m         ~~~~~~~~~~~[0m
+[96msrc/modules/controllers/post.controller.ts[0m:[93m6[0m:[93m25[0m - [91merror[0m[90m TS2448: [0mBlock-scoped variable 'PostService' used before its declaration.
+
+[7m6[0m const PostService = new PostService();
+[7m [0m [91m                        ~~~~~~~~~~~[0m
+
+  [96msrc/modules/controllers/post.controller.ts[0m:[93m6[0m:[93m7[0m
+    [7m6[0m const PostService = new PostService();
+    [7m [0m [96m      ~~~~~~~~~~~[0m
+    'PostService' is declared here.
+[96msrc/modules/controllers/post.controller.ts[0m:[93m14[0m:[93m42[0m - [91merror[0m[90m TS2339: [0mProperty 'getList' does not exist on type 'unknown'.
+
+[7m14[0m             const data = await this.post.getList({ ...req.query });
+[7m  [0m [91m                                         ~~~~~~~[0m
+[96msrc/modules/controllers/post.controller.ts[0m:[93m24[0m:[93m48[0m - [91merror[0m[90m TS2339: [0mProperty 'create' does not exist on type 'unknown'.
+
+[7m24[0m             const data = await await this.post.create(req.body);
+[7m  [0m [91m                                               ~~~~~~[0m
+[96msrc/modules/controllers/post.controller.ts[0m:[93m33[0m:[93m42[0m - [91merror[0m[90m TS2339: [0mProperty 'show' does not exist on type 'unknown'.
+
+[7m33[0m             const data = await this.post.show(req.params.id);
+[7m  [0m [91m                                         ~~~~[0m
+[96msrc/modules/controllers/post.controller.ts[0m:[93m43[0m:[93m42[0m - [91merror[0m[90m TS2339: [0mProperty 'update' does not exist on type 'unknown'.
+
+[7m43[0m             const data = await this.post.update(id, req.body);
+[7m  [0m [91m                                         ~~~~~~[0m
+[96msrc/modules/controllers/post.controller.ts[0m:[93m53[0m:[93m29[0m - [91merror[0m[90m TS2339: [0mProperty 'delete' does not exist on type 'unknown'.
+
+[7m53[0m             await this.post.delete(id);
+[7m  [0m [91m                            ~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/modules/controllers/post.controller.ts[0m:[93m4[0m:[93m10[0m - [91merror[0m[90m TS2440: [0mImport declaration conflicts with local declaration of 'PostService'.
+
+[7m4[0m import { PostService } from "../../services/post.service";
+[7m [0m [91m         ~~~~~~~~~~~[0m
+[96msrc/modules/controllers/post.controller.ts[0m:[93m6[0m:[93m25[0m - [91merror[0m[90m TS2448: [0mBlock-scoped variable 'PostService' used before its declaration.
+
+[7m6[0m const PostService = new PostService();
+[7m [0m [91m                        ~~~~~~~~~~~[0m
+
+  [96msrc/modules/controllers/post.controller.ts[0m:[93m6[0m:[93m7[0m
+    [7m6[0m const PostService = new PostService();
+    [7m [0m [96m      ~~~~~~~~~~~[0m
+    'PostService' is declared here.
+[96msrc/modules/controllers/post.controller.ts[0m:[93m14[0m:[93m42[0m - [91merror[0m[90m TS2339: [0mProperty 'getList' does not exist on type 'unknown'.
+
+[7m14[0m             const data = await this.post.getList({ ...req.query });
+[7m  [0m [91m                                         ~~~~~~~[0m
+[96msrc/modules/controllers/post.controller.ts[0m:[93m24[0m:[93m48[0m - [91merror[0m[90m TS2339: [0mProperty 'create' does not exist on type 'unknown'.
+
+[7m24[0m             const data = await await this.post.create(req.body);
+[7m  [0m [91m                                               ~~~~~~[0m
+[96msrc/modules/controllers/post.controller.ts[0m:[93m33[0m:[93m42[0m - [91merror[0m[90m TS2339: [0mProperty 'show' does not exist on type 'unknown'.
+
+[7m33[0m             const data = await this.post.show(req.params.id);
+[7m  [0m [91m                                         ~~~~[0m
+[96msrc/modules/controllers/post.controller.ts[0m:[93m43[0m:[93m42[0m - [91merror[0m[90m TS2339: [0mProperty 'update' does not exist on type 'unknown'.
+
+[7m43[0m             const data = await this.post.update(id, req.body);
+[7m  [0m [91m                                         ~~~~~~[0m
+[96msrc/modules/controllers/post.controller.ts[0m:[93m53[0m:[93m29[0m - [91merror[0m[90m TS2339: [0mProperty 'delete' does not exist on type 'unknown'.
+
+[7m53[0m             await this.post.delete(id);
+[7m  [0m [91m                            ~~~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-03-28 13:48:11 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/modules/controllers/post.controller.ts[0m:[93m6[0m:[93m18[0m - [91merror[0m[90m TS2304: [0mCannot find name 'PostService'.
+
+[7m6[0m const post = new PostService();
+[7m [0m [91m                 ~~~~~~~~~~~[0m
+[96msrc/modules/controllers/post.controller.ts[0m:[93m9[0m:[93m33[0m - [91merror[0m[90m TS2304: [0mCannot find name 'PostService'.
+
+[7m9[0m     public post = Container.get(PostService);
+[7m [0m [91m                                ~~~~~~~~~~~[0m
+[96msrc/modules/controllers/post.controller.ts[0m:[93m14[0m:[93m42[0m - [91merror[0m[90m TS2339: [0mProperty 'getList' does not exist on type 'unknown'.
+
+[7m14[0m             const data = await this.post.getList({ ...req.query });
+[7m  [0m [91m                                         ~~~~~~~[0m
+[96msrc/modules/controllers/post.controller.ts[0m:[93m24[0m:[93m48[0m - [91merror[0m[90m TS2339: [0mProperty 'create' does not exist on type 'unknown'.
+
+[7m24[0m             const data = await await this.post.create(req.body);
+[7m  [0m [91m                                               ~~~~~~[0m
+[96msrc/modules/controllers/post.controller.ts[0m:[93m33[0m:[93m42[0m - [91merror[0m[90m TS2339: [0mProperty 'show' does not exist on type 'unknown'.
+
+[7m33[0m             const data = await this.post.show(req.params.id);
+[7m  [0m [91m                                         ~~~~[0m
+[96msrc/modules/controllers/post.controller.ts[0m:[93m43[0m:[93m42[0m - [91merror[0m[90m TS2339: [0mProperty 'update' does not exist on type 'unknown'.
+
+[7m43[0m             const data = await this.post.update(id, req.body);
+[7m  [0m [91m                                         ~~~~~~[0m
+[96msrc/modules/controllers/post.controller.ts[0m:[93m53[0m:[93m29[0m - [91merror[0m[90m TS2339: [0mProperty 'delete' does not exist on type 'unknown'.
+
+[7m53[0m             await this.post.delete(id);
+[7m  [0m [91m                            ~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/modules/controllers/post.controller.ts[0m:[93m6[0m:[93m18[0m - [91merror[0m[90m TS2304: [0mCannot find name 'PostService'.
+
+[7m6[0m const post = new PostService();
+[7m [0m [91m                 ~~~~~~~~~~~[0m
+[96msrc/modules/controllers/post.controller.ts[0m:[93m9[0m:[93m33[0m - [91merror[0m[90m TS2304: [0mCannot find name 'PostService'.
+
+[7m9[0m     public post = Container.get(PostService);
+[7m [0m [91m                                ~~~~~~~~~~~[0m
+[96msrc/modules/controllers/post.controller.ts[0m:[93m14[0m:[93m42[0m - [91merror[0m[90m TS2339: [0mProperty 'getList' does not exist on type 'unknown'.
+
+[7m14[0m             const data = await this.post.getList({ ...req.query });
+[7m  [0m [91m                                         ~~~~~~~[0m
+[96msrc/modules/controllers/post.controller.ts[0m:[93m24[0m:[93m48[0m - [91merror[0m[90m TS2339: [0mProperty 'create' does not exist on type 'unknown'.
+
+[7m24[0m             const data = await await this.post.create(req.body);
+[7m  [0m [91m                                               ~~~~~~[0m
+[96msrc/modules/controllers/post.controller.ts[0m:[93m33[0m:[93m42[0m - [91merror[0m[90m TS2339: [0mProperty 'show' does not exist on type 'unknown'.
+
+[7m33[0m             const data = await this.post.show(req.params.id);
+[7m  [0m [91m                                         ~~~~[0m
+[96msrc/modules/controllers/post.controller.ts[0m:[93m43[0m:[93m42[0m - [91merror[0m[90m TS2339: [0mProperty 'update' does not exist on type 'unknown'.
+
+[7m43[0m             const data = await this.post.update(id, req.body);
+[7m  [0m [91m                                         ~~~~~~[0m
+[96msrc/modules/controllers/post.controller.ts[0m:[93m53[0m:[93m29[0m - [91merror[0m[90m TS2339: [0mProperty 'delete' does not exist on type 'unknown'.
+
+[7m53[0m             await this.post.delete(id);
+[7m  [0m [91m                            ~~~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-03-28 13:49:19 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/modules/controllers/project.controller.ts[0m:[93m8[0m:[93m18[0m - [91merror[0m[90m TS2304: [0mCannot find name 'PostService'.
+
+[7m8[0m const post = new PostService();
+[7m [0m [91m                 ~~~~~~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/modules/controllers/project.controller.ts[0m:[93m8[0m:[93m18[0m - [91merror[0m[90m TS2304: [0mCannot find name 'PostService'.
+
+[7m8[0m const post = new PostService();
+[7m [0m [91m                 ~~~~~~~~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-03-28 13:49:57 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/modules/controllers/post.controller.ts[0m:[93m24[0m:[93m43[0m - [91merror[0m[90m TS2339: [0mProperty 'post' does not exist on type 'PostController'.
+
+[7m24[0m             const data = await await this.post.create(req.body);
+[7m  [0m [91m                                          ~~~~[0m
+[96msrc/modules/controllers/post.controller.ts[0m:[93m33[0m:[93m37[0m - [91merror[0m[90m TS2339: [0mProperty 'post' does not exist on type 'PostController'.
+
+[7m33[0m             const data = await this.post.show(req.params.id);
+[7m  [0m [91m                                    ~~~~[0m
+[96msrc/modules/controllers/post.controller.ts[0m:[93m43[0m:[93m37[0m - [91merror[0m[90m TS2339: [0mProperty 'post' does not exist on type 'PostController'.
+
+[7m43[0m             const data = await this.post.update(id, req.body);
+[7m  [0m [91m                                    ~~~~[0m
+[96msrc/modules/controllers/post.controller.ts[0m:[93m53[0m:[93m24[0m - [91merror[0m[90m TS2339: [0mProperty 'post' does not exist on type 'PostController'.
+
+[7m53[0m             await this.post.delete(id);
+[7m  [0m [91m                       ~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/modules/controllers/post.controller.ts[0m:[93m24[0m:[93m43[0m - [91merror[0m[90m TS2339: [0mProperty 'post' does not exist on type 'PostController'.
+
+[7m24[0m             const data = await await this.post.create(req.body);
+[7m  [0m [91m                                          ~~~~[0m
+[96msrc/modules/controllers/post.controller.ts[0m:[93m33[0m:[93m37[0m - [91merror[0m[90m TS2339: [0mProperty 'post' does not exist on type 'PostController'.
+
+[7m33[0m             const data = await this.post.show(req.params.id);
+[7m  [0m [91m                                    ~~~~[0m
+[96msrc/modules/controllers/post.controller.ts[0m:[93m43[0m:[93m37[0m - [91merror[0m[90m TS2339: [0mProperty 'post' does not exist on type 'PostController'.
+
+[7m43[0m             const data = await this.post.update(id, req.body);
+[7m  [0m [91m                                    ~~~~[0m
+[96msrc/modules/controllers/post.controller.ts[0m:[93m53[0m:[93m24[0m - [91merror[0m[90m TS2339: [0mProperty 'post' does not exist on type 'PostController'.
+
+[7m53[0m             await this.post.delete(id);
+[7m  [0m [91m                       ~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)

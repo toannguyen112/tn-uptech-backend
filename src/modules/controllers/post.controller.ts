@@ -1,16 +1,17 @@
 import { NextFunction, Request, Response } from 'express';
-
 import { Container } from 'typedi';
 import { BaseController } from "./base.controller";
 import { PostService } from "../../services/post.service";
+
+const post = new PostService();
 export class PostController extends BaseController {
 
-    public post = Container.get(PostService);
+    // public post = Container.get(PostService);
 
     public async index(req: Request, res: Response, next: NextFunction) {
 
         try {
-            const data = await this.post.getList({ ...req.query });
+            const data = await post.getList({ ...req.query });
             return res.status(200).json({ message: "success", data });
         } catch (error) {
             console.log(error);
@@ -20,7 +21,7 @@ export class PostController extends BaseController {
     public async create(req: Request, res: Response, next: NextFunction) {
 
         try {
-            const data = await await this.post.create(req.body);
+            const data = await await post.create(req.body);
             return res.status(200).json(data);
         } catch (error) {
             res.status(500).send(error);
@@ -29,7 +30,7 @@ export class PostController extends BaseController {
 
     public async show(req: Request, res: Response, next: NextFunction) {
         try {
-            const data = await this.post.show(req.params.id);
+            const data = await post.show(req.params.id);
             return res.status(200).json({ message: "success", data });
         } catch (error) {
             res.status(500).send(error);
@@ -39,7 +40,7 @@ export class PostController extends BaseController {
     public async update(req: Request, res: Response, next: NextFunction) {
         try {
             const { id } = req.params;
-            const data = await this.post.update(id, req.body);
+            const data = await post.update(id, req.body);
             return res.status(200).json({ message: "OK", data });
         } catch (error) {
             res.status(500).send(error);
@@ -49,7 +50,7 @@ export class PostController extends BaseController {
     public async delete(req: Request, res: Response, next: NextFunction) {
         try {
             const { id } = req.params;
-            await this.post.delete(id);
+            await post.delete(id);
             return res.status(200).json({ message: "OK", data: "" });
         } catch (error) {
             res.status(500).send(error);

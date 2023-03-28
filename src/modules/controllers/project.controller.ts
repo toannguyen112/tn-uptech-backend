@@ -5,14 +5,15 @@ import { Container } from 'typedi';
 import { BaseController } from "./base.controller";
 import { ProjectService } from '../../services/project.service';
 
+const project = new ProjectService();
 export class ProjectController extends BaseController {
 
-    public project = Container.get(ProjectService);
+    // public project = Container.get(ProjectService);
 
     public index = async (req: Request, res: Response, next: NextFunction) => {
 
         try {
-            const data = await this.project.getList({ ...req.query });
+            const data = await project.getList({ ...req.query });
             return res.status(200).json({ message: "success", data });
 
         } catch (error) {
