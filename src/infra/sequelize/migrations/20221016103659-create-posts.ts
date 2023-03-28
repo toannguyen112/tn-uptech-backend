@@ -10,6 +10,27 @@ module.exports = {
         type: Sequelize.INTEGER,
       },
 
+      thumbnail: {
+        type: Sequelize.STRING,
+        references: {
+          model: "medias",
+          key: "id",
+        },
+      },
+
+      banner: {
+        type: Sequelize.STRING,
+        references: {
+          model: "medias",
+          key: "id",
+        },
+      },
+
+      images: {
+        type: Sequelize.JSON,
+        defaultValue: []
+      },
+
       name: {
         type: Sequelize.STRING,
       },

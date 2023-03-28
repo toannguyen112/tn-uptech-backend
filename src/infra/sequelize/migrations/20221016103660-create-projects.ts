@@ -14,6 +14,27 @@ module.exports = {
         type: Sequelize.STRING,
       },
 
+      thumbnail: {
+        type: Sequelize.STRING,
+        references: {
+          model: "medias",
+          key: "id",
+        },
+      },
+
+      banner: {
+        type: Sequelize.STRING,
+        references: {
+          model: "medias",
+          key: "id",
+        },
+      },
+
+      images: {
+        type: Sequelize.JSON,
+        defaultValue: []
+      },
+
       description: {
         type: Sequelize.TEXT('long'),
         allowNull: true,

@@ -10,6 +10,27 @@ module.exports = function (sequelize, DataTypes) {
                 primaryKey: true,
             },
 
+            thumbnail: {
+                type: DataTypes.STRING,
+                references: {
+                    model: "medias",
+                    key: "id",
+                },
+            },
+
+            banner: {
+                type: DataTypes.STRING,
+                references: {
+                    model: "medias",
+                    key: "id",
+                },
+            },
+
+            images: {
+                type: DataTypes.JSON,
+                defaultValue: []
+            },
+
             name: {
                 type: DataTypes.STRING,
             },
@@ -56,11 +77,7 @@ module.exports = function (sequelize, DataTypes) {
         },
     );
 
-    Project.associate = function (models) {
-        Project.hasMany(models.ProjectRelated, {
-            foreignKey: 'project_related_id'
-        });
-    };
+    Project.associate = function (models) { };
 
     return Project;
 };

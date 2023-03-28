@@ -10,6 +10,22 @@ module.exports = function (sequelize, DataTypes) {
                 primaryKey: true,
             },
 
+            thumbnail: {
+                type: DataTypes.STRING,
+                references: {
+                    model: "medias",
+                    key: "id",
+                },
+            },
+
+            banner: {
+                type: DataTypes.STRING,
+                references: {
+                    model: "medias",
+                    key: "id",
+                },
+            },
+
             name: {
                 type: DataTypes.STRING,
             },
