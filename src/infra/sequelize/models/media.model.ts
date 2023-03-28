@@ -1,29 +1,7 @@
 
-import { Model } from 'sequelize';
-import models from '.';
-import { Media } from '../../../interface/Media.interface';
 import Helper from '../../../utils/Helper';
 
-export class MediaModel extends Model<Media> implements Media {
-    public id: number;
-    public filename: string;
-    public disk: string;
-    public path: string;
-    public folder_id: string;
-    public extension: string;
-    public mime: string;
-    public size: string;
-    public width: string;
-    public height: string;
-    public alt: string;
-    public creator: string;
-    public editor: string;
-
-    public readonly createdAt!: Date;
-    public readonly updatedAt!: Date;
-}
-
-module.exports = function (sequelize, DataTypes): typeof MediaModel {
+module.exports = function (sequelize, DataTypes) {
     const Media = sequelize.define(
         "medias",
         {

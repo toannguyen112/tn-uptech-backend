@@ -1,5 +1,5 @@
 
-import { Sequelize, DataTypes, Model, Optional } from 'sequelize';
+import {  Model, Optional } from 'sequelize';
 import { Folder } from '../../../interface/folder.interface';
 
 export type FolderCreationAttributes = Optional<Folder, 'id' | 'parent_id' | 'label' | 'icon' | 'path'>;
