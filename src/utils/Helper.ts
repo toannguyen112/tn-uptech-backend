@@ -3,6 +3,7 @@ import bcrypt from "bcrypt";
 import dayjs from "dayjs";
 import models from "../infra/sequelize/models";
 import _ from 'lodash';
+import fs from 'fs-extra'
 export default class Helper {
   static randomString(length: number): string {
     var result: string = "";
@@ -20,6 +21,15 @@ export default class Helper {
 
   public static formatDayJs(date: any, format: string = "DD/MM/YYYY"): any {
     return dayjs(date).format(format);
+  }
+
+  public static async emptyDirSync() {
+    try {
+      await fs.emptyDirSync('./storage/uploads');
+      console.log('success!')
+    } catch (err) {
+      console.error(err)
+    }
   }
 
   static transformRichText(data: string) {
