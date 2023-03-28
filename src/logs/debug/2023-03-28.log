@@ -342,3 +342,8 @@
 2023-03-28 09:21:11 info: ======= ENV: development =======
 2023-03-28 09:21:11 info: 🚀 App listening on the port 8000
 2023-03-28 09:21:11 info: =================================
+2023-03-28 09:23:30 info: [0mGET /voucher?voucher=EE-VOD97BUA-TT&member=LME1hzW8SexZd1gEzV [33m404[0m 13.102 ms - 146[0m
+2023-03-28 09:26:40 info: =================================
+2023-03-28 09:26:40 info: ======= ENV: development =======
+2023-03-28 09:26:40 info: 🚀 App listening on the port 8000
+2023-03-28 09:26:40 info: =================================
