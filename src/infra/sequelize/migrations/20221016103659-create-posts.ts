@@ -11,7 +11,7 @@ module.exports = {
       },
 
       thumbnail: {
-        type: Sequelize.STRING,
+        type: Sequelize.INTEGER,
         references: {
           model: "medias",
           key: "id",
@@ -19,7 +19,7 @@ module.exports = {
       },
 
       banner: {
-        type: Sequelize.STRING,
+        type: Sequelize.INTEGER,
         references: {
           model: "medias",
           key: "id",
