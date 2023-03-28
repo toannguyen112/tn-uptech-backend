@@ -15,10 +15,6 @@ module.exports = function (sequelize, DataTypes) {
                 type: DataTypes.STRING,
             },
 
-            project_id: {
-                type: DataTypes.INTEGER,
-            },
-
             disk: {
                 type: DataTypes.STRING,
             },

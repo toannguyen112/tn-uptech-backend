@@ -14,19 +14,6 @@ module.exports = {
         type: Sequelize.STRING,
       },
 
-      // mediatableType: {
-      //   type: Sequelize.STRING,
-      //   defaultValue: 'media'
-      // },
-
-      project_id: {
-        type: Sequelize.INTEGER,
-      },
-
-      post_id: {
-        type: Sequelize.INTEGER,
-      },
-
       disk: {
         type: Sequelize.STRING,
       },

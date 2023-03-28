@@ -1367,3 +1367,22 @@
 2023-03-28 19:03:34 info: ======= ENV: development =======
 2023-03-28 19:03:34 info: 🚀 App listening on the port 8000
 2023-03-28 19:03:34 info: =================================
+2023-03-28 19:05:29 info: [0mOPTIONS /folders/get-medias [32m204[0m 11.377 ms - 0[0m
+2023-03-28 19:05:29 info: [0mPOST /folders/get-medias [32m200[0m 481.546 ms - 31[0m
+2023-03-28 19:05:29 info: [0mGET /folders [36m304[0m 380.914 ms - -[0m
+2023-03-28 19:05:30 info: [0mPOST /folders/get-medias [32m200[0m 16.493 ms - 990[0m
+2023-03-28 19:05:32 info: [0mPOST /folders/get-medias [32m200[0m 3.915 ms - 31[0m
+2023-03-28 19:05:48 info: [0mPOST /medias/create [32m200[0m 107.923 ms - 31[0m
+2023-03-28 19:05:48 info: [0mOPTIONS /folders/get-medias [32m204[0m 0.139 ms - 0[0m
+2023-03-28 19:05:48 info: [0mPOST /folders/get-medias [32m200[0m 6.307 ms - 354[0m
+2023-03-28 19:05:49 info: [0mPOST /folders/get-medias [32m200[0m 61.966 ms - 990[0m
+2023-03-28 19:05:50 info: [0mPOST /folders/get-medias [32m200[0m 6.405 ms - 31[0m
+2023-03-28 19:05:50 info: [0mPOST /folders/get-medias [32m200[0m 52.351 ms - 354[0m
+2023-03-28 19:06:21 info: =================================
+2023-03-28 19:06:21 info: ======= ENV: development =======
+2023-03-28 19:06:21 info: 🚀 App listening on the port 8000
+2023-03-28 19:06:21 info: =================================
+2023-03-28 19:06:35 info: =================================
+2023-03-28 19:06:35 info: ======= ENV: development =======
+2023-03-28 19:06:35 info: 🚀 App listening on the port 8000
+2023-03-28 19:06:35 info: =================================
