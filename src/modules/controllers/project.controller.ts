@@ -1,6 +1,5 @@
 
 import { NextFunction, Request, Response } from 'express';
-import models from '../../infra/sequelize/models';
 import { BaseController } from "./base.controller";
 import { ProjectService } from '../../services/project.service';
 
@@ -51,18 +50,7 @@ export class ProjectController extends BaseController {
     public update = async (req: Request, res: Response, next: NextFunction) => {
         try {
             const { id } = req.params;
-            const reqBody = req.body;
-
-            const body = {
-                "id": reqBody.id,
-                "name": reqBody.name,
-                "status": reqBody.status,
-                "description": reqBody.description,
-                "isFeatured": reqBody.isFeatured,
-                "content": reqBody.content,
-            }
-
-            const data = await models.Project.update(body, { where: { id } });
+            const data = await project.updateById(id, req.body);
             return this.success(res, data);
         } catch (error) {
             res.status(500).send(error);
