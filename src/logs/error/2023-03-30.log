@@ -1,0 +1,84 @@
+2023-03-30 08:51:33 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/services/project.service.ts[0m:[93m11[0m:[93m14[0m - [91merror[0m[90m TS2551: [0mProperty 'include' does not exist on type 'ApiFeatures'. Did you mean 'includes'?
+
+[7m11[0m             .include([])
+[7m  [0m [91m             ~~~~~~~[0m
+
+  [96msrc/utils/ApiFeatures.ts[0m:[93m37[0m:[93m5[0m
+    [7m37[0m     includes(includes = []) {
+    [7m  [0m [96m    ~~~~~~~~[0m
+    'includes' is declared here.
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/services/project.service.ts[0m:[93m11[0m:[93m14[0m - [91merror[0m[90m TS2551: [0mProperty 'include' does not exist on type 'ApiFeatures'. Did you mean 'includes'?
+
+[7m11[0m             .include([])
+[7m  [0m [91m             ~~~~~~~[0m
+
+  [96msrc/utils/ApiFeatures.ts[0m:[93m37[0m:[93m5[0m
+    [7m37[0m     includes(includes = []) {
+    [7m  [0m [96m    ~~~~~~~~[0m
+    'includes' is declared here.
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-03-30 08:51:52 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/services/project.service.ts[0m:[93m11[0m:[93m23[0m - [91merror[0m[90m TS2304: [0mCannot find name 'include'.
+
+[7m11[0m             .includes(include: [{
+[7m  [0m [91m                      ~~~~~~~[0m
+[96msrc/services/project.service.ts[0m:[93m11[0m:[93m32[0m - [91merror[0m[90m TS2554: [0mExpected 0-1 arguments, but got 2.
+
+[7m 11[0m             .includes(include: [{
+[7m   [0m [91m                               ~~[0m
+[7m 12[0m                 model: models.Media,
+[7m   [0m [91m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+[7m...[0m 
+[7m 17[0m                 as: "banner_image"
+[7m   [0m [91m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+[7m 18[0m             }])
+[7m   [0m [91m~~~~~~~~~~~~~~[0m
+[96msrc/services/project.service.ts[0m:[93m11[0m:[93m30[0m - [91merror[0m[90m TS1005: [0m',' expected.
+
+[7m11[0m             .includes(include: [{
+[7m  [0m [91m                             ~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/services/project.service.ts[0m:[93m11[0m:[93m23[0m - [91merror[0m[90m TS2304: [0mCannot find name 'include'.
+
+[7m11[0m             .includes(include: [{
+[7m  [0m [91m                      ~~~~~~~[0m
+[96msrc/services/project.service.ts[0m:[93m11[0m:[93m32[0m - [91merror[0m[90m TS2554: [0mExpected 0-1 arguments, but got 2.
+
+[7m 11[0m             .includes(include: [{
+[7m   [0m [91m                               ~~[0m
+[7m 12[0m                 model: models.Media,
+[7m   [0m [91m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+[7m...[0m 
+[7m 17[0m                 as: "banner_image"
+[7m   [0m [91m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+[7m 18[0m             }])
+[7m   [0m [91m~~~~~~~~~~~~~~[0m
+[96msrc/services/project.service.ts[0m:[93m11[0m:[93m30[0m - [91merror[0m[90m TS1005: [0m',' expected.
+
+[7m11[0m             .includes(include: [{
+[7m  [0m [91m                             ~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)

@@ -8,18 +8,36 @@ export class ProjectService {
         const conditions = {};
         const objQuery = new ApiFeatures(query)
             .filter(conditions)
+            .includes([{
+                model: models.Media,
+                as: "image"
+            }])
             .paginate()
             .paranoid()
             .getObjQuery();
 
         const { count, rows }: any = await models.Project.findAndCountAll(objQuery);
 
+        const transformData = rows.map((item) => {
+            return {
+                id: item.id,
+                name: item.name,
+                description: item.description,
+                isFeatured: item.isFeatured,
+                status: item.status,
+                content: item.content,
+                thumbnail: item.image,
+                createdAt: item.createdAt,
+                updatedAt: item.updatedAt,
+            }
+        });
+
         const result = {
             page: Number(query?.page) * 1,
             pageSize: Number(query?.page_size) * 1,
             pageCount: Math.ceil(count / Number(query?.page_size) * 1),
             totalItems: count || 0,
-            data: rows,
+            data: transformData,
         };
 
         return result;
