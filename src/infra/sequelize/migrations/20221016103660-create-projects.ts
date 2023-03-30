@@ -10,10 +10,6 @@ module.exports = {
         type: Sequelize.INTEGER,
       },
 
-      name: {
-        type: Sequelize.STRING,
-      },
-
       thumbnail: {
         type: Sequelize.INTEGER,
         references: {
@@ -38,11 +34,6 @@ module.exports = {
         allowNull: true,
       },
 
-      description: {
-        type: Sequelize.TEXT('long'),
-        allowNull: true,
-      },
-
       isFeatured: {
         type: Sequelize.BOOLEAN,
         defaultValue: false
@@ -51,11 +42,6 @@ module.exports = {
       status: {
         type: Sequelize.STRING,
         defaultValue: 'active'
-      },
-
-      content: {
-        type: Sequelize.TEXT('long'),
-        allowNull: true,
       },
 
       createdAt: {

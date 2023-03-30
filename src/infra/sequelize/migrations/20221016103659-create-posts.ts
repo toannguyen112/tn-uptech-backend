@@ -34,19 +34,6 @@ module.exports = {
         allowNull: true,
       },
 
-      name: {
-        type: Sequelize.STRING,
-      },
-
-      type: {
-        type: Sequelize.STRING,
-      },
-
-      description: {
-        type: Sequelize.STRING,
-        allowNull: true,
-      },
-
       isFeatured: {
         type: Sequelize.BOOLEAN,
         defaultValue: false
@@ -55,11 +42,6 @@ module.exports = {
       status: {
         type: Sequelize.STRING,
         defaultValue: "active"
-      },
-
-      content: {
-        type: Sequelize.STRING,
-        allowNull: true,
       },
 
       view: {

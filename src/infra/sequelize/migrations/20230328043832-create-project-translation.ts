@@ -18,13 +18,28 @@ module.exports = {
         },
       },
 
-      slug: {
-        type: Sequelize.STRING,
-      },
-
-      language: {
+      locale: {
         type: Sequelize.STRING,
         defaultValue: "vi",
+      },
+
+      name: {
+        type: Sequelize.STRING,
+        allowNull: false,
+      },
+
+      content: {
+        type: Sequelize.TEXT('long'),
+        allowNull: true,
+      },
+
+      description: {
+        type: Sequelize.TEXT('long'),
+        allowNull: true,
+      },
+
+      slug: {
+        type: Sequelize.STRING,
       },
 
       createdAt: {

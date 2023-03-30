@@ -1,9 +1,8 @@
-import models from ".";
-import Helper from "../../../utils/Helper";
+import Helper from "../../../../utils/Helper";
 
 module.exports = function (sequelize, DataTypes) {
-    const ProjectRelated = sequelize.define(
-        "project_related",
+    const PostRelated = sequelize.define(
+        "post_related",
         {
             id: {
                 type: DataTypes.STRING,
@@ -11,18 +10,18 @@ module.exports = function (sequelize, DataTypes) {
                 primaryKey: true,
             },
 
-            project_id: {
+            post_id: {
                 type: DataTypes.INTEGER,
                 references: {
-                    model: "projects",
+                    model: "posts",
                     key: "id",
                 },
             },
 
-            project_realted_id: {
+            post_realted_id: {
                 type: DataTypes.INTEGER,
                 references: {
-                    model: "projects",
+                    model: "posts",
                     key: "id",
                 },
             },
@@ -45,13 +44,13 @@ module.exports = function (sequelize, DataTypes) {
         },
         {
             timestamps: true,
-            tableName: "project_related",
+            tableName: "post_related",
         },
     );
 
-    ProjectRelated.associate = function (models) {
-        ProjectRelated.belongsTo(models.Project, {foreignKey: 'id'});
+    PostRelated.associate = function (models) {
+        PostRelated.belongsTo(models.Post, { foreignKey: 'id' });
     };
 
-    return ProjectRelated;
+    return PostRelated;
 };

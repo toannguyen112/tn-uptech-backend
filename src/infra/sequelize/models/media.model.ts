@@ -88,15 +88,25 @@ module.exports = function (sequelize, DataTypes) {
     );
 
     Media.associate = function (models) {
-        Media.hasMany(models.Project, {
-            as: 'image',
-            foreignKey: "thumbnail"
-        });
+        // Media.hasMany(models.Project, {
+        //     as: 'image',
+        //     foreignKey: "thumbnail"
+        // });
 
-        Media.hasMany(models.Project, {
-            as: 'banner_image',
-            foreignKey: "banner"
-        });
+        // Media.hasMany(models.Project, {
+        //     as: 'banner_image',
+        //     foreignKey: "banner"
+        // });
+
+        // Media.hasMany(models.Post, {
+        //     as: 'image',
+        //     foreignKey: "thumbnail"
+        // });
+
+        // Media.hasMany(models.Post, {
+        //     as: 'banner_image',
+        //     foreignKey: "banner"
+        // });
 
     };
 

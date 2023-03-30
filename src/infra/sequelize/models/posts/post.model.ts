@@ -1,4 +1,4 @@
-import Helper from "../../../utils/Helper";
+import Helper from "../../../../utils/Helper";
 
 module.exports = function (sequelize, DataTypes) {
     const Post = sequelize.define(
@@ -26,10 +26,6 @@ module.exports = function (sequelize, DataTypes) {
                 },
             },
 
-            name: {
-                type: DataTypes.STRING,
-            },
-
             isFeatured: {
                 type: DataTypes.BOOLEAN,
                 defaultValue: false
@@ -38,16 +34,6 @@ module.exports = function (sequelize, DataTypes) {
             status: {
                 type: DataTypes.STRING,
                 defaultValue: 'active'
-            },
-
-            description: {
-                type: DataTypes.TEXT('long'),
-                allowNull: true,
-            },
-
-            content: {
-                type: DataTypes.TEXT('long'),
-                allowNull: true,
             },
 
             view: {

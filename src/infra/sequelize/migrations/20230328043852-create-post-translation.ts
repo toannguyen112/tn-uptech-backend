@@ -22,7 +22,26 @@ module.exports = {
         type: Sequelize.STRING,
       },
 
-      language: {
+      content: {
+        type: Sequelize.STRING,
+        allowNull: true,
+      },
+
+      name: {
+        type: Sequelize.STRING,
+        allowNull: false,
+      },
+
+      type: {
+        type: Sequelize.STRING,
+      },
+
+      description: {
+        type: Sequelize.STRING,
+        allowNull: true,
+      },
+
+      locale: {
         type: Sequelize.STRING,
         defaultValue: "vi",
       },

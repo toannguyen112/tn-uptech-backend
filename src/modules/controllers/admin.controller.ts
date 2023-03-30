@@ -8,6 +8,14 @@ export default class AdminController extends BaseController {
         return res.status(200).json("");
     }
 
+    async login(req: Request, res: Response) {
+        return res.status(200).json("");
+    }
+
+    async regiser(req: Request, res: Response) {
+        return res.status(200).json("");
+    }
+
     async show(req: Request, res: Response) {
         try {
             const { id } = req.params;

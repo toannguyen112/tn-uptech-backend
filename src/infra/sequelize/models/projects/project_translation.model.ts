@@ -1,8 +1,8 @@
-import Helper from "../../../utils/Helper";
+import Helper from "../../../../utils/Helper";
 
 module.exports = function (sequelize, DataTypes) {
     const Project = sequelize.define(
-        "projects",
+        "project_translation",
         {
             id: {
                 type: DataTypes.STRING,
@@ -40,16 +40,6 @@ module.exports = function (sequelize, DataTypes) {
                 allowNull: true,
             },
 
-            isFeatured: {
-                type: DataTypes.BOOLEAN,
-                defaultValue: false
-            },
-
-            status: {
-                type: DataTypes.STRING,
-                defaultValue: 'active'
-            },
-
             content: {
                 type: DataTypes.TEXT('long'),
                 allowNull: true,
@@ -73,7 +63,7 @@ module.exports = function (sequelize, DataTypes) {
         },
         {
             timestamps: true,
-            tableName: "projects",
+            tableName: "project_translation",
         },
     );
 
