@@ -1,9 +1,8 @@
-import Helper from "../../../../utils/Helper";
-
+import Helper from "../../../utils/Helper";
 
 module.exports = function (sequelize, DataTypes) {
-    const Project = sequelize.define(
-        "projects",
+    const ProjectTranslation = sequelize.define(
+        "project_translation",
         {
             id: {
                 type: DataTypes.STRING,
@@ -11,35 +10,31 @@ module.exports = function (sequelize, DataTypes) {
                 primaryKey: true,
             },
 
-            thumbnail: {
+            project_id: {
                 type: DataTypes.STRING,
                 references: {
-                    model: "medias",
+                    model: "projects",
                     key: "id",
                 },
             },
 
-            banner: {
+            locale: {
                 type: DataTypes.STRING,
-                references: {
-                    model: "medias",
-                    key: "id",
-                },
+                defaultValue: "vi",
             },
 
-            images: {
-                type: DataTypes.JSON,
-                defaultValue: []
-            },
-
-            isFeatured: {
-                type: DataTypes.BOOLEAN,
-                defaultValue: false
-            },
-
-            status: {
+            name: {
                 type: DataTypes.STRING,
-                defaultValue: 'active'
+            },
+
+            description: {
+                type: DataTypes.TEXT('long'),
+                allowNull: true,
+            },
+
+            content: {
+                type: DataTypes.TEXT('long'),
+                allowNull: true,
             },
 
             createdAt: {
@@ -60,21 +55,16 @@ module.exports = function (sequelize, DataTypes) {
         },
         {
             timestamps: true,
-            tableName: "projects",
+            tableName: "project_translation",
         },
     );
 
-    Project.associate = function (models) {
-        Project.belongsTo(models.Media, {
-            as: 'image',
-            foreignKey: "thumbnail"
+    ProjectTranslation.associate = function (models) {
+        ProjectTranslation.belongsTo(models.Project, {
+            as: "project",
+            foreignKey: "project_id",
         });
+    }
 
-        Project.belongsTo(models.Media, {
-            as: 'banner_image',
-            foreignKey: "banner"
-        });
-    };
-
-    return Project;
+    return ProjectTranslation;
 };

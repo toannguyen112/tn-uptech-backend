@@ -1,11 +1,11 @@
-import Helper from "../../../../utils/Helper";
+import Helper from "../../../utils/Helper";
 
 module.exports = function (sequelize, DataTypes) {
-    const Post = sequelize.define(
-        "posts",
+    const Project = sequelize.define(
+        "projects",
         {
             id: {
-                type: DataTypes.INTEGER,
+                type: DataTypes.STRING,
                 autoIncrement: true,
                 primaryKey: true,
             },
@@ -26,6 +26,11 @@ module.exports = function (sequelize, DataTypes) {
                 },
             },
 
+            images: {
+                type: DataTypes.JSON,
+                defaultValue: []
+            },
+
             isFeatured: {
                 type: DataTypes.BOOLEAN,
                 defaultValue: false
@@ -34,11 +39,6 @@ module.exports = function (sequelize, DataTypes) {
             status: {
                 type: DataTypes.STRING,
                 defaultValue: 'active'
-            },
-
-            view: {
-                type: DataTypes.INTEGER,
-                defaultValue: 0
             },
 
             createdAt: {
@@ -59,13 +59,26 @@ module.exports = function (sequelize, DataTypes) {
         },
         {
             timestamps: true,
-            tableName: "posts",
+            tableName: "projects",
         },
     );
 
-    // Post.associate = function (models) {
-    //     Post.hasOne(models.Media);
-    // };
+    Project.associate = function (models) {
+        Project.belongsTo(models.Media, {
+            as: 'image',
+            foreignKey: "thumbnail"
+        });
 
-    return Post;
+        Project.belongsTo(models.Media, {
+            as: 'banner_image',
+            foreignKey: "banner"
+        });
+
+        Project.hasMany(models.ProjectTranslation, {
+            as: "translation",
+            foreignKey: "id"
+        });
+    };
+
+    return Project;
 };

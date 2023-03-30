@@ -8,9 +8,12 @@ export const LangMiddleware = (req: LanguageRequest, res: Response, next: NextFu
     const lang = req.acceptsLanguages('vi', 'en');
 
     if (lang) {
-        req.lang = lang
+        global.lang = lang
+
+
+
     } else {
-        req.lang = 'en'
+        global.lang = 'en'
     }
 
     next();

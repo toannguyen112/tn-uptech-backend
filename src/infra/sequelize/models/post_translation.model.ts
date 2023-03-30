@@ -1,34 +1,13 @@
-import Helper from "../../../../utils/Helper";
+import Helper from "../../../utils/Helper";
 
 module.exports = function (sequelize, DataTypes) {
-    const Project = sequelize.define(
-        "project_translation",
+    const Post = sequelize.define(
+        "post_translation",
         {
             id: {
-                type: DataTypes.STRING,
+                type: DataTypes.INTEGER,
                 autoIncrement: true,
                 primaryKey: true,
-            },
-
-            thumbnail: {
-                type: DataTypes.STRING,
-                references: {
-                    model: "medias",
-                    key: "id",
-                },
-            },
-
-            banner: {
-                type: DataTypes.STRING,
-                references: {
-                    model: "medias",
-                    key: "id",
-                },
-            },
-
-            images: {
-                type: DataTypes.JSON,
-                defaultValue: []
             },
 
             name: {
@@ -63,21 +42,9 @@ module.exports = function (sequelize, DataTypes) {
         },
         {
             timestamps: true,
-            tableName: "project_translation",
+            tableName: "post_translation",
         },
     );
 
-    Project.associate = function (models) {
-        Project.belongsTo(models.Media, {
-            as: 'image',
-            foreignKey: "thumbnail"
-        });
-
-        Project.belongsTo(models.Media, {
-            as: 'banner_image',
-            foreignKey: "banner"
-        });
-    };
-
-    return Project;
+    return Post;
 };

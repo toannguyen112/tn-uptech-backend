@@ -6,8 +6,6 @@ import { PostService } from "../../services/post.service";
 const post = new PostService();
 export class PostController extends BaseController {
 
-    // public post = Container.get(PostService);
-
     public async index(req: Request, res: Response, next: NextFunction) {
 
         try {
@@ -21,7 +19,7 @@ export class PostController extends BaseController {
     public async create(req: Request, res: Response, next: NextFunction) {
 
         try {
-            const data = await await post.create(req.body);
+            const data = await await post.store(req.body);
             return res.status(200).json(data);
         } catch (error) {
             res.status(500).send(error);

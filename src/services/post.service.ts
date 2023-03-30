@@ -27,8 +27,15 @@ export class PostService {
         return result;
     }
 
-    public create = async (body) => {
-        return await models.Post.create({ ...body });
+    public store = async (body) => {
+
+        const item = {
+            ...body,
+            thumbnail: body.thumbnail ? body.thumbnail.id : null,
+            banner: body.banner ? body.banner.id : null,
+        }
+
+        return await models.Post.create(item);
     }
 
     public show = async (id) => {
@@ -36,7 +43,13 @@ export class PostService {
     }
 
     public update = async (id, body) => {
-        const data = await models.Post.update(body, { where: { id } });
+
+        const item = {
+            ...body,
+            thumbnail: body.thumbnail ? body.thumbnail.id : null,
+            banner: body.banner ? body.banner.id : null,
+        }
+        return await models.Post.update(item, { where: { id } });
     }
 
     public delete = async (id) => {

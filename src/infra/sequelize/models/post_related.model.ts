@@ -1,27 +1,29 @@
-import Helper from "../../../../utils/Helper";
+import Helper from "../../../utils/Helper";
 
 module.exports = function (sequelize, DataTypes) {
-    const Post = sequelize.define(
-        "post_translation",
+    const PostRelated = sequelize.define(
+        "post_related",
         {
             id: {
-                type: DataTypes.INTEGER,
+                type: DataTypes.STRING,
                 autoIncrement: true,
                 primaryKey: true,
             },
 
-            name: {
-                type: DataTypes.STRING,
+            post_id: {
+                type: DataTypes.INTEGER,
+                references: {
+                    model: "posts",
+                    key: "id",
+                },
             },
 
-            description: {
-                type: DataTypes.TEXT('long'),
-                allowNull: true,
-            },
-
-            content: {
-                type: DataTypes.TEXT('long'),
-                allowNull: true,
+            post_realted_id: {
+                type: DataTypes.INTEGER,
+                references: {
+                    model: "posts",
+                    key: "id",
+                },
             },
 
             createdAt: {
@@ -42,9 +44,13 @@ module.exports = function (sequelize, DataTypes) {
         },
         {
             timestamps: true,
-            tableName: "post_translation",
+            tableName: "post_related",
         },
     );
 
-    return Post;
+    PostRelated.associate = function (models) {
+        PostRelated.belongsTo(models.Post, { foreignKey: 'id' });
+    };
+
+    return PostRelated;
 };

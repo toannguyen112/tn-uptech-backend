@@ -1,17 +1,29 @@
 import models from "../infra/sequelize/models";
 import { Service } from 'typedi';
 import { ApiFeatures } from "../utils/ApiFeatures";
+import { ProjectDTO } from "../dtos/project.dto";
 @Service()
 export class ProjectService {
 
     public getList = async (query) => {
         const conditions = {};
+
         const objQuery = new ApiFeatures(query)
             .filter(conditions)
-            .includes([{
-                model: models.Media,
-                as: "image"
-            }])
+            .includes([
+                {
+                    model: models.Media,
+                    as: "image"
+                },
+                {
+                    model: models.ProjectTranslation,
+                    as: "translation",
+                    require: true,
+                    where: {
+                        locale: "vi",
+                    }
+                },
+            ])
             .paginate()
             .paranoid()
             .getObjQuery();
@@ -19,17 +31,7 @@ export class ProjectService {
         const { count, rows }: any = await models.Project.findAndCountAll(objQuery);
 
         const transformData = rows.map((item) => {
-            return {
-                id: item.id,
-                name: item.name,
-                description: item.description,
-                isFeatured: item.isFeatured,
-                status: item.status,
-                content: item.content,
-                thumbnail: item.image,
-                createdAt: item.createdAt,
-                updatedAt: item.updatedAt,
-            }
+            return ProjectDTO.transform(item)
         });
 
         const result = {
@@ -54,17 +56,29 @@ export class ProjectService {
     }
 
     public findById = async (id: string | number) => {
-        return await models.Project.findOne({
+         const res =  await models.Project.findOne({
             where: { id },
-            include: [{
-                model: models.Media,
-                as: "image"
-            },
-            {
-                model: models.Media,
-                as: "banner_image"
-            }]
+            include: [
+                {
+                    model: models.Media,
+                    as: "image"
+                },
+                {
+                    model: models.Media,
+                    as: "banner_image"
+                },
+                {
+                    model: models.ProjectTranslation,
+                    as: "translation",
+                    require: true,
+                    where: {
+                        locale: "vi",
+                    }
+                },
+            ]
         });
+
+        return ProjectDTO.transformDetail(res);
     }
 
     public updateById = async (id, body) => {

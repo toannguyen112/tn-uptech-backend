@@ -1,30 +1,45 @@
-import models from "..";
-import Helper from "../../../../utils/Helper";
+import Helper from "../../../utils/Helper";
+
 
 module.exports = function (sequelize, DataTypes) {
-    const ProjectRelated = sequelize.define(
-        "project_related",
+    const Post = sequelize.define(
+        "posts",
         {
             id: {
-                type: DataTypes.STRING,
+                type: DataTypes.INTEGER,
                 autoIncrement: true,
                 primaryKey: true,
             },
 
-            project_id: {
-                type: DataTypes.INTEGER,
+            thumbnail: {
+                type: DataTypes.STRING,
                 references: {
-                    model: "projects",
+                    model: "medias",
                     key: "id",
                 },
             },
 
-            project_realted_id: {
-                type: DataTypes.INTEGER,
+            banner: {
+                type: DataTypes.STRING,
                 references: {
-                    model: "projects",
+                    model: "medias",
                     key: "id",
                 },
+            },
+
+            isFeatured: {
+                type: DataTypes.BOOLEAN,
+                defaultValue: false
+            },
+
+            status: {
+                type: DataTypes.STRING,
+                defaultValue: 'active'
+            },
+
+            view: {
+                type: DataTypes.INTEGER,
+                defaultValue: 0
             },
 
             createdAt: {
@@ -45,13 +60,13 @@ module.exports = function (sequelize, DataTypes) {
         },
         {
             timestamps: true,
-            tableName: "project_related",
+            tableName: "posts",
         },
     );
 
-    ProjectRelated.associate = function (models) {
-        ProjectRelated.belongsTo(models.Project, { foreignKey: 'id' });
-    };
+    // Post.associate = function (models) {
+    //     Post.hasOne(models.Media);
+    // };
 
-    return ProjectRelated;
+    return Post;
 };
