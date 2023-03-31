@@ -18,22 +18,12 @@ module.exports = {
         },
       },
 
-      project_realted_id: {
+      project_related_id: {
         type: Sequelize.INTEGER,
         references: {
           model: "projects",
           key: "id",
         },
-      },
-
-      createdAt: {
-        type: Sequelize.DATE,
-        defaultValue: new Date(),
-      },
-
-      updatedAt: {
-        type: Sequelize.DATE,
-        defaultValue: new Date(),
       },
     }),
 

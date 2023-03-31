@@ -2,7 +2,7 @@
 
 module.exports = {
   up: (queryInterface, Sequelize) =>
-    queryInterface.createTable("post_translation", {
+    queryInterface.createTable("banner_translation", {
       id: {
         primaryKey: true,
         unique: true,
@@ -10,36 +10,24 @@ module.exports = {
         type: Sequelize.INTEGER,
       },
 
-      post_id: {
+      banner_id: {
         type: Sequelize.INTEGER,
         references: {
-          model: "posts",
+          model: "banners",
           key: "id",
         },
       },
 
-      content: {
-        type: Sequelize.STRING,
-        allowNull: true,
-      },
-
       name: {
         type: Sequelize.STRING,
-        allowNull: false,
       },
 
-      type: {
+      sub_name: {
         type: Sequelize.STRING,
       },
 
-      description: {
+      desctiption: {
         type: Sequelize.STRING,
-        allowNull: true,
-      },
-
-      locale: {
-        type: Sequelize.STRING,
-        defaultValue: "vi",
       },
 
       slug: {
@@ -52,5 +40,5 @@ module.exports = {
 
     }),
 
-  down: (queryInterface) => queryInterface.dropTable("post_translation"),
+  down: (queryInterface) => queryInterface.dropTable("banner_translation"),
 };

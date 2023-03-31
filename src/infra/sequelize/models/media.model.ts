@@ -107,7 +107,6 @@ module.exports = function (sequelize, DataTypes) {
         //     as: 'banner_image',
         //     foreignKey: "banner"
         // });
-
     };
 
     return Media;

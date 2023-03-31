@@ -19,7 +19,7 @@ module.exports = function (sequelize, DataTypes) {
                 },
             },
 
-            project_realted_id: {
+            project_related_id: {
                 type: DataTypes.INTEGER,
                 references: {
                     model: "projects",
@@ -27,21 +27,6 @@ module.exports = function (sequelize, DataTypes) {
                 },
             },
 
-            createdAt: {
-                type: DataTypes.DATE,
-                defaultValue: new Date(),
-                get() {
-                    return Helper.formatDayJs(this.getDataValue('createdAt'));
-                }
-            },
-
-            updatedAt: {
-                type: DataTypes.DATE,
-                defaultValue: new Date(),
-                get() {
-                    return Helper.formatDayJs(this.getDataValue('updatedAt'));
-                }
-            },
         },
         {
             timestamps: true,
@@ -51,6 +36,11 @@ module.exports = function (sequelize, DataTypes) {
 
     ProjectRelated.associate = function (models) {
         ProjectRelated.belongsTo(models.Project, { foreignKey: 'id' });
+
+        ProjectRelated.belongsTo(models.Project, {
+            as: 'related',
+            foreignKey: "project_id"
+        });
     };
 
     return ProjectRelated;

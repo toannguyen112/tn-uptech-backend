@@ -4,6 +4,7 @@ export class ProjectDTO {
         return {
             id: item.id,
             name: translationData.name || "",
+            slug: "",
             description: translationData.description || "",
             isFeatured: item.isFeatured,
             status: item.status,
@@ -20,11 +21,13 @@ export class ProjectDTO {
         return {
             id: item.id,
             name: translationData.name || "",
+            slug: "",
             description: translationData.description || "",
             isFeatured: item.isFeatured,
             status: item.status,
             content: translationData.content || "",
-            thumbnail: item.image,
+            thumbnail: item.image || null,
+            banner: item.banner_image || null,
             createdAt: item.createdAt,
             updatedAt: item.updatedAt,
         }

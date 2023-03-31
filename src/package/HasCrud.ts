@@ -1,0 +1,5 @@
+class HasCrud {
+    constructor(parameters) {
+        
+    }
+}

@@ -64,6 +64,7 @@ module.exports = function (sequelize, DataTypes) {
     );
 
     Project.associate = function (models) {
+
         Project.belongsTo(models.Media, {
             as: 'image',
             foreignKey: "thumbnail"
@@ -76,6 +77,11 @@ module.exports = function (sequelize, DataTypes) {
 
         Project.hasMany(models.ProjectTranslation, {
             as: "translation",
+            foreignKey: "id"
+        });
+
+        Project.hasMany(models.ProjectRelated, {
+            as: 'related',
             foreignKey: "id"
         });
     };

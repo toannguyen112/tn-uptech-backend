@@ -42,15 +42,10 @@ module.exports = {
         type: Sequelize.STRING,
       },
 
-      createdAt: {
-        type: Sequelize.DATE,
-        defaultValue: new Date(),
+      custom_slug: {
+        type: Sequelize.STRING,
       },
 
-      updatedAt: {
-        type: Sequelize.DATE,
-        defaultValue: new Date(),
-      },
     }),
 
   down: (queryInterface) => queryInterface.dropTable("project_translation"),

@@ -10,22 +10,12 @@ module.exports = {
         type: Sequelize.INTEGER,
       },
 
-      name: {
-        allowNull: true,
-        type: Sequelize.STRING,
-      },
-
       type: {
         allowNull: true,
         type: Sequelize.STRING,
       },
 
       status: {
-        allowNull: true,
-        type: Sequelize.STRING,
-      },
-
-      slug: {
         allowNull: true,
         type: Sequelize.STRING,
       },

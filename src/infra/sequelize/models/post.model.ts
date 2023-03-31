@@ -64,9 +64,17 @@ module.exports = function (sequelize, DataTypes) {
         },
     );
 
-    // Post.associate = function (models) {
-    //     Post.hasOne(models.Media);
-    // };
+    Post.associate = function (models) {
+          Post.belongsTo(models.Media, {
+            as: 'image',
+            foreignKey: "thumbnail"
+        });
+
+        Post.belongsTo(models.Media, {
+            as: 'banner_image',
+            foreignKey: "banner"
+        });
+    };
 
     return Post;
 };
