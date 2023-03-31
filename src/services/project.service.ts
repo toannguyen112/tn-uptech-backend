@@ -47,9 +47,15 @@ export class ProjectService {
 
     public store = async (body) => {
         return await models.Project.create({
-               ...body,
+            ...body,
             thumbnail: body.thumbnail ? body.thumbnail.id : null,
             banner: body.banner ? body.banner.id : null,
+            translation: { ...body },
+        }, {
+            include: {
+                model: models.ProjectTranslation,
+                as: 'translation'
+            }
         });
     }
 
@@ -59,11 +65,11 @@ export class ProjectService {
             include: [
                 {
                     model: models.Media,
-                    as: "image"
+                    as: "image",
                 },
                 {
                     model: models.Media,
-                    as: "banner_image"
+                    as: "banner_image",
                 },
                 {
                     model: models.ProjectTranslation,

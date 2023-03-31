@@ -1,4 +1,3 @@
-import Helper from "../../../utils/Helper";
 
 module.exports = function (sequelize, DataTypes) {
     const ProjectTranslation = sequelize.define(

@@ -25,23 +25,10 @@ export class ProjectController extends BaseController {
         }
     }
 
-    public transform = (item) => {
-        return {
-            "id": item.id,
-            "name": item.name,
-            "status": item.status,
-            "description": item.description,
-            "isFeatured": item.isFeatured,
-            "content": item.content,
-            "thumbnail": item.image,
-            "banner": item.banner_image,
-        }
-    }
-
     public show = async (req: Request, res: Response, next: NextFunction) => {
         try {
             const data = await project.findById(req.params.id);
-            return this.success(res, this.transform(data));
+            return this.success(res, data);
         } catch (error) {
             res.status(500).send(error);
         }

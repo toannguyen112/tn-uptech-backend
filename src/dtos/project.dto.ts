@@ -17,6 +17,7 @@ export class ProjectDTO {
     }
 
     static transformDetail = (item) => {
+
         const translationData = item.translation[0];
         return {
             id: item.id,
