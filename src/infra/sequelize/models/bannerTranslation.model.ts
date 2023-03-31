@@ -8,27 +8,27 @@ module.exports = function (sequelize, DataTypes) {
                 primaryKey: true,
                 unique: true,
                 autoIncrement: true,
-                type: sequelize.INTEGER,
+                type: DataTypes.INTEGER,
             },
 
             name: {
-                type: sequelize.STRING,
+                type: DataTypes.STRING,
             },
 
             slug: {
-                type: sequelize.STRING,
+                type: DataTypes.STRING,
             },
 
             sub_name: {
-                type: sequelize.STRING,
+                type: DataTypes.STRING,
             },
 
             desctiption: {
-                type: sequelize.STRING,
+                type: DataTypes.STRING,
             },
 
             banner_id: {
-                type: sequelize.INTEGER,
+                type: DataTypes.INTEGER,
                 references: {
                     model: "banners",
                     key: "id",

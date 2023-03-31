@@ -21,7 +21,7 @@ module.exports = {
 
       icon: {
         type: Sequelize.STRING,
-        defaultValue: "pi pi-fw pi-cog"
+        defaultValue: "pi pi-fw pi-inbox"
       },
 
       path: {

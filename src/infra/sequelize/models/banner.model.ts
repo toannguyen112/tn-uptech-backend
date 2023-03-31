@@ -7,30 +7,30 @@ module.exports = function (sequelize, DataTypes) {
                 primaryKey: true,
                 unique: true,
                 autoIncrement: true,
-                type: sequelize.INTEGER,
+                type: DataTypes.INTEGER,
             },
 
             status: {
-                type: sequelize.STRING,
+                type: DataTypes.STRING,
                 allowNull: true,
             },
 
             position: {
-                type: sequelize.INTEGER,
+                type: DataTypes.INTEGER,
                 allowNull: true,
             },
 
             image: {
-                type: sequelize.STRING,
+                type: DataTypes.STRING,
             },
 
             createdAt: {
-                type: sequelize.DATE,
+                type: DataTypes.DATE,
                 defaultValue: new Date(),
             },
 
             updatedAt: {
-                type: sequelize.DATE,
+                type: DataTypes.DATE,
                 defaultValue: new Date(),
             },
         },

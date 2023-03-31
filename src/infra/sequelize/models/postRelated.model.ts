@@ -26,24 +26,9 @@ module.exports = function (sequelize, DataTypes) {
                 },
             },
 
-            createdAt: {
-                type: DataTypes.DATE,
-                defaultValue: new Date(),
-                get() {
-                    return Helper.formatDayJs(this.getDataValue('createdAt'));
-                }
-            },
-
-            updatedAt: {
-                type: DataTypes.DATE,
-                defaultValue: new Date(),
-                get() {
-                    return Helper.formatDayJs(this.getDataValue('updatedAt'));
-                }
-            },
         },
         {
-            timestamps: true,
+            timestamps: false,
             tableName: "post_related",
         },
     );

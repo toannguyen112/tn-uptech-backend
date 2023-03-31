@@ -36,25 +36,9 @@ module.exports = function (sequelize, DataTypes) {
                 type: DataTypes.TEXT('long'),
                 allowNull: true,
             },
-
-            createdAt: {
-                type: DataTypes.DATE,
-                defaultValue: new Date(),
-                get() {
-                    return Helper.formatDayJs(this.getDataValue('createdAt'));
-                }
-            },
-
-            updatedAt: {
-                type: DataTypes.DATE,
-                defaultValue: new Date(),
-                get() {
-                    return Helper.formatDayJs(this.getDataValue('updatedAt'));
-                }
-            },
         },
         {
-            timestamps: true,
+            timestamps: false,
             tableName: "project_translation",
         },
     );

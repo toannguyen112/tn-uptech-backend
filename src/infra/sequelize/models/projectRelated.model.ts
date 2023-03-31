@@ -29,7 +29,7 @@ module.exports = function (sequelize, DataTypes) {
 
         },
         {
-            timestamps: true,
+            timestamps: false,
             tableName: "project_related",
         },
     );
