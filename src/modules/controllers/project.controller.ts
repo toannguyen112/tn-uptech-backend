@@ -2,11 +2,13 @@
 import { NextFunction, Request, Response } from 'express';
 import { BaseController } from "./base.controller";
 import { ProjectService } from '../../services/project.service';
+import { log } from 'console';
 
 const project = new ProjectService();
 export class ProjectController extends BaseController {
 
     public index = async (req: Request, res: Response, next: NextFunction) => {
+
         try {
             const data = await project.getList({ ...req.query });
             return this.success(res, data);
