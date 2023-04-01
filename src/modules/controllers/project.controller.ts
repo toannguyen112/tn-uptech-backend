@@ -8,7 +8,6 @@ const project = new ProjectService();
 export class ProjectController extends BaseController {
 
     public index = async (req: Request, res: Response, next: NextFunction) => {
-
         try {
             const data = await project.getList({ ...req.query });
             return this.success(res, data);
@@ -29,8 +28,13 @@ export class ProjectController extends BaseController {
 
     public show = async (req: Request, res: Response, next: NextFunction) => {
         try {
-            const data = await project.findById(req.params.id);
-            return this.success(res, data);
+            const { id } = req.params;
+            try {
+                const data = await project.findById(id);
+                return this.success(res, data);
+            } catch (error) {
+                console.log(error);
+            }
         } catch (error) {
             res.status(500).send(error);
         }

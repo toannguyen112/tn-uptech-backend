@@ -1,4 +1,3 @@
-import Helper from "../../../utils/Helper";
 
 module.exports = function (sequelize, DataTypes) {
     const PostRelated = sequelize.define(
@@ -11,14 +10,6 @@ module.exports = function (sequelize, DataTypes) {
             },
 
             post_id: {
-                type: DataTypes.INTEGER,
-                references: {
-                    model: "posts",
-                    key: "id",
-                },
-            },
-
-            post_realted_id: {
                 type: DataTypes.INTEGER,
                 references: {
                     model: "posts",

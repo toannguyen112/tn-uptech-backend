@@ -21,6 +21,7 @@ module.exports = {
       locale: {
         type: Sequelize.STRING,
         defaultValue: "vi",
+        allowNull: false,
       },
 
       name: {

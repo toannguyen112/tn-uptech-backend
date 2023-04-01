@@ -18,14 +18,6 @@ module.exports = {
         },
       },
 
-      post_related_id: {
-        type: Sequelize.INTEGER,
-        references: {
-          model: "posts",
-          key: "id",
-        },
-      },
-
     }),
 
   down: (queryInterface) => queryInterface.dropTable("post_related"),

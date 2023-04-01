@@ -1,4 +1,3 @@
-import Helper from "../../../utils/Helper";
 
 module.exports = function (sequelize, DataTypes) {
     const Post = sequelize.define(
@@ -11,6 +10,10 @@ module.exports = function (sequelize, DataTypes) {
             },
 
             name: {
+                type: DataTypes.STRING,
+            },
+
+            slug: {
                 type: DataTypes.STRING,
             },
 

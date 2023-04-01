@@ -18,13 +18,6 @@ module.exports = {
         },
       },
 
-      project_related_id: {
-        type: Sequelize.INTEGER,
-        references: {
-          model: "projects",
-          key: "id",
-        },
-      },
     }),
 
   down: (queryInterface) => queryInterface.dropTable("project_related"),

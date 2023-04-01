@@ -2,7 +2,6 @@ import models from "../infra/sequelize/models";
 import { Service } from 'typedi';
 import { ApiFeatures } from "../utils/ApiFeatures";
 
-@Service()
 export class PostService {
 
     public getList = async (query) => {
@@ -38,7 +37,7 @@ export class PostService {
         return await models.Post.create(item);
     }
 
-    public show = async (id) => {
+    public findById = async (id) => {
         return await models.Post.findOne({ where: { id } });
     }
 

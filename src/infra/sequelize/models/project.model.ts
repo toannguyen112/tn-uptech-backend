@@ -76,7 +76,7 @@ module.exports = function (sequelize, DataTypes) {
         });
 
         Project.hasMany(models.ProjectTranslation, {
-            as: "translation",
+            as: "translations",
             foreignKey: "id"
         });
 

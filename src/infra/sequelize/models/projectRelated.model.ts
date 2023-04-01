@@ -1,5 +1,3 @@
-import models from ".";
-import Helper from "../../../utils/Helper";
 
 module.exports = function (sequelize, DataTypes) {
     const ProjectRelated = sequelize.define(
@@ -19,14 +17,6 @@ module.exports = function (sequelize, DataTypes) {
                 },
             },
 
-            project_related_id: {
-                type: DataTypes.INTEGER,
-                references: {
-                    model: "projects",
-                    key: "id",
-                },
-            },
-
         },
         {
             timestamps: false,
@@ -35,12 +25,7 @@ module.exports = function (sequelize, DataTypes) {
     );
 
     ProjectRelated.associate = function (models) {
-        ProjectRelated.belongsTo(models.Project, { foreignKey: 'id' });
-
-        ProjectRelated.belongsTo(models.Project, {
-            as: 'related',
-            foreignKey: "project_id"
-        });
+        ProjectRelated.belongsTo(models.Project,{ foreignKey: 'project_id' });
     };
 
     return ProjectRelated;

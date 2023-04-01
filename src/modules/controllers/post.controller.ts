@@ -1,5 +1,4 @@
 import { NextFunction, Request, Response } from 'express';
-import { Container } from 'typedi';
 import { BaseController } from "./base.controller";
 import { PostService } from "../../services/post.service";
 
@@ -10,7 +9,7 @@ export class PostController extends BaseController {
 
         try {
             const data = await post.getList({ ...req.query });
-            return res.status(200).json({ message: "success", data });
+            return this.success(res, data);
         } catch (error) {
             console.log(error);
         }
@@ -20,7 +19,7 @@ export class PostController extends BaseController {
 
         try {
             const data = await await post.store(req.body);
-            return res.status(200).json(data);
+            return this.success(res, data);
         } catch (error) {
             res.status(500).send(error);
         }
@@ -28,8 +27,8 @@ export class PostController extends BaseController {
 
     public async show(req: Request, res: Response, next: NextFunction) {
         try {
-            const data = await post.show(req.params.id);
-            return res.status(200).json({ message: "success", data });
+            const data = await post.findById(req.params.id);
+            return this.success(res, data);
         } catch (error) {
             res.status(500).send(error);
         }
@@ -39,7 +38,7 @@ export class PostController extends BaseController {
         try {
             const { id } = req.params;
             const data = await post.update(id, req.body);
-            return res.status(200).json({ message: "OK", data });
+            return this.success(res, data);
         } catch (error) {
             res.status(500).send(error);
         }
@@ -47,9 +46,8 @@ export class PostController extends BaseController {
 
     public async delete(req: Request, res: Response, next: NextFunction) {
         try {
-            const { id } = req.params;
-            await post.delete(id);
-            return res.status(200).json({ message: "OK", data: "" });
+            const data = await post.delete(req.params.id);
+            return this.success(res, data);
         } catch (error) {
             res.status(500).send(error);
         }

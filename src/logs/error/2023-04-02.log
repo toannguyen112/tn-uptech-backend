@@ -1,0 +1,116 @@
+2023-04-02 00:05:35 error: uncaughtException: Service with "MaybeConstructable<FolderService>" identifier was not found in the container. Register it before usage via explicitly calling the "Container.set" function or using the "@Service()" decorator.
+ServiceNotFoundError: Service with "MaybeConstructable<FolderService>" identifier was not found in the container. Register it before usage via explicitly calling the "Container.set" function or using the "@Service()" decorator.
+    at ContainerInstance.get (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/src/container-instance.class.ts:75:11)
+    at Function.get (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/src/container.class.ts:61:32)
+    at new FolderController (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/modules/controllers/folder.controller.ts:10:29)
+    at new FolderRoute (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/route/folder.route.ts:7:21)
+    at Object.<anonymous> (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/server.ts:9:5)
+    at Module._compile (node:internal/modules/cjs/loader:1191:14)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1618:23)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+2023-04-02 00:06:33 error: uncaughtException: Service with "MaybeConstructable<FolderService>" identifier was not found in the container. Register it before usage via explicitly calling the "Container.set" function or using the "@Service()" decorator.
+ServiceNotFoundError: Service with "MaybeConstructable<FolderService>" identifier was not found in the container. Register it before usage via explicitly calling the "Container.set" function or using the "@Service()" decorator.
+    at ContainerInstance.get (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/src/container-instance.class.ts:75:11)
+    at Function.get (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/src/container.class.ts:61:32)
+    at new FolderController (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/modules/controllers/folder.controller.ts:10:29)
+    at new FolderRoute (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/route/folder.route.ts:7:21)
+    at Object.<anonymous> (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/server.ts:9:5)
+    at Module._compile (node:internal/modules/cjs/loader:1191:14)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1618:23)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+2023-04-02 00:07:18 error: uncaughtException: Service with "MaybeConstructable<FolderService>" identifier was not found in the container. Register it before usage via explicitly calling the "Container.set" function or using the "@Service()" decorator.
+ServiceNotFoundError: Service with "MaybeConstructable<FolderService>" identifier was not found in the container. Register it before usage via explicitly calling the "Container.set" function or using the "@Service()" decorator.
+    at ContainerInstance.get (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/src/container-instance.class.ts:75:11)
+    at Function.get (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/src/container.class.ts:61:32)
+    at new FolderController (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/modules/controllers/folder.controller.ts:10:29)
+    at new FolderRoute (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/route/folder.route.ts:7:21)
+    at Object.<anonymous> (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/server.ts:9:5)
+    at Module._compile (node:internal/modules/cjs/loader:1191:14)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1618:23)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+2023-04-02 00:08:44 error: uncaughtException: Service with "MaybeConstructable<FolderService>" identifier was not found in the container. Register it before usage via explicitly calling the "Container.set" function or using the "@Service()" decorator.
+ServiceNotFoundError: Service with "MaybeConstructable<FolderService>" identifier was not found in the container. Register it before usage via explicitly calling the "Container.set" function or using the "@Service()" decorator.
+    at ContainerInstance.get (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/src/container-instance.class.ts:75:11)
+    at Function.get (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/src/container.class.ts:61:32)
+    at new FolderController (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/modules/controllers/folder.controller.ts:10:29)
+    at new FolderRoute (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/route/folder.route.ts:7:21)
+    at Object.<anonymous> (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/server.ts:9:5)
+    at Module._compile (node:internal/modules/cjs/loader:1191:14)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1618:23)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+2023-04-02 00:08:52 error: uncaughtException: Service with "MaybeConstructable<FolderService>" identifier was not found in the container. Register it before usage via explicitly calling the "Container.set" function or using the "@Service()" decorator.
+ServiceNotFoundError: Service with "MaybeConstructable<FolderService>" identifier was not found in the container. Register it before usage via explicitly calling the "Container.set" function or using the "@Service()" decorator.
+    at ContainerInstance.get (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/src/container-instance.class.ts:75:11)
+    at Function.get (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/src/container.class.ts:61:32)
+    at new FolderController (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/modules/controllers/folder.controller.ts:10:29)
+    at new FolderRoute (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/route/folder.route.ts:7:21)
+    at Object.<anonymous> (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/server.ts:9:5)
+    at Module._compile (node:internal/modules/cjs/loader:1191:14)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1618:23)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+2023-04-02 00:09:37 error: uncaughtException: Service with "MaybeConstructable<FolderService>" identifier was not found in the container. Register it before usage via explicitly calling the "Container.set" function or using the "@Service()" decorator.
+ServiceNotFoundError: Service with "MaybeConstructable<FolderService>" identifier was not found in the container. Register it before usage via explicitly calling the "Container.set" function or using the "@Service()" decorator.
+    at ContainerInstance.get (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/src/container-instance.class.ts:75:11)
+    at Function.get (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/src/container.class.ts:61:32)
+    at new FolderController (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/modules/controllers/folder.controller.ts:10:29)
+    at new FolderRoute (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/route/folder.route.ts:7:21)
+    at Object.<anonymous> (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/server.ts:9:5)
+    at Module._compile (node:internal/modules/cjs/loader:1191:14)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1618:23)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+2023-04-02 00:10:07 error: uncaughtException: Service with "MaybeConstructable<FolderService>" identifier was not found in the container. Register it before usage via explicitly calling the "Container.set" function or using the "@Service()" decorator.
+ServiceNotFoundError: Service with "MaybeConstructable<FolderService>" identifier was not found in the container. Register it before usage via explicitly calling the "Container.set" function or using the "@Service()" decorator.
+    at ContainerInstance.get (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/src/container-instance.class.ts:75:11)
+    at Function.get (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/src/container.class.ts:61:32)
+    at new FolderController (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/modules/controllers/folder.controller.ts:10:29)
+    at new FolderRoute (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/route/folder.route.ts:7:21)
+    at Object.<anonymous> (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/server.ts:9:5)
+    at Module._compile (node:internal/modules/cjs/loader:1191:14)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1618:23)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+2023-04-02 00:21:06 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/services/project.service.ts[0m:[93m56[0m:[93m13[0m - [91merror[0m[90m TS1308: [0m'await' expressions are only allowed within async functions and at the top levels of modules.
+
+[7m56[0m             await models.ProjectTranslation.create
+[7m  [0m [91m            ~~~~~[0m
+
+  [96msrc/services/project.service.ts[0m:[93m53[0m:[93m17[0m
+    [7m53[0m         }).then((projects) => {
+    [7m  [0m [96m                ~~~~~~~~~~~~~~~[0m
+    Did you mean to mark this function as 'async'?
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/services/project.service.ts[0m:[93m56[0m:[93m13[0m - [91merror[0m[90m TS1308: [0m'await' expressions are only allowed within async functions and at the top levels of modules.
+
+[7m56[0m             await models.ProjectTranslation.create
+[7m  [0m [91m            ~~~~~[0m
+
+  [96msrc/services/project.service.ts[0m:[93m53[0m:[93m17[0m
+    [7m53[0m         }).then((projects) => {
+    [7m  [0m [96m                ~~~~~~~~~~~~~~~[0m
+    Did you mean to mark this function as 'async'?
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)

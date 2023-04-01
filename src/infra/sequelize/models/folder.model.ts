@@ -1,21 +1,6 @@
 
-import { Model, Optional } from 'sequelize';
-import { Folder } from '../../../interface/folder.interface';
 
-export type FolderCreationAttributes = Optional<Folder, 'id' | 'parent_id' | 'label' | 'icon' | 'path'>;
-
-export class FolderModel extends Model<Folder, FolderCreationAttributes> implements Folder {
-    public id: number;
-    public parent_id: string;
-    public label: string;
-    public icon: string;
-    public path: string;
-
-    public readonly createdAt!: Date;
-    public readonly updatedAt!: Date;
-}
-
-module.exports = function (sequelize, DataTypes): typeof FolderModel {
+module.exports = function (sequelize, DataTypes) {
     const Folder = sequelize.define(
         "folders",
         {
