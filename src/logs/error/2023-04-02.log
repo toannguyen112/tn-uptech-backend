@@ -114,3 +114,407 @@ TSError: ⨯ Unable to compile TypeScript:
     at Module.load (node:internal/modules/cjs/loader:1069:32)
     at Function.Module._load (node:internal/modules/cjs/loader:904:12)
     at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-02 00:28:18 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/services/project.service.ts[0m:[93m121[0m:[93m13[0m - [91merror[0m[90m TS2322: [0mType '({ id?: undefined; name?: undefined; slug?: undefined; description?: undefined; isFeatured?: undefined; status?: undefined; content?: undefined; thumbnail?: undefined; createdAt?: undefined; updatedAt?: undefined; } | { ...; })[]' is not assignable to type '[]'.
+  Target allows only 0 element(s) but source may have more.
+
+[7m121[0m             related = projects.map((item: any) => {
+[7m   [0m [91m            ~~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/services/project.service.ts[0m:[93m121[0m:[93m13[0m - [91merror[0m[90m TS2322: [0mType '({ id?: undefined; name?: undefined; slug?: undefined; description?: undefined; isFeatured?: undefined; status?: undefined; content?: undefined; thumbnail?: undefined; createdAt?: undefined; updatedAt?: undefined; } | { ...; })[]' is not assignable to type '[]'.
+  Target allows only 0 element(s) but source may have more.
+
+[7m121[0m             related = projects.map((item: any) => {
+[7m   [0m [91m            ~~~~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-02 00:47:28 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/services/project.service.ts[0m:[93m103[0m:[93m31[0m - [91merror[0m[90m TS2304: [0mCannot find name 'body'.
+
+[7m103[0m                 related : [...body.related]
+[7m   [0m [91m                              ~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/services/project.service.ts[0m:[93m103[0m:[93m31[0m - [91merror[0m[90m TS2304: [0mCannot find name 'body'.
+
+[7m103[0m                 related : [...body.related]
+[7m   [0m [91m                              ~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-02 00:47:34 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/services/project.service.ts[0m:[93m103[0m:[93m31[0m - [91merror[0m[90m TS2304: [0mCannot find name 'body'.
+
+[7m103[0m                 related : [...body.related]
+[7m   [0m [91m                              ~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/services/project.service.ts[0m:[93m103[0m:[93m31[0m - [91merror[0m[90m TS2304: [0mCannot find name 'body'.
+
+[7m103[0m                 related : [...body.related]
+[7m   [0m [91m                              ~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-02 00:48:18 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/services/project.service.ts[0m:[93m100[0m:[93m29[0m - [91merror[0m[90m TS1308: [0m'await' expressions are only allowed within async functions and at the top levels of modules.
+
+[7m100[0m             const related = await models.Project.findAll({
+[7m   [0m [91m                            ~~~~~[0m
+
+  [96msrc/services/project.service.ts[0m:[93m99[0m:[93m17[0m
+    [7m99[0m         }).then((res) => {
+    [7m  [0m [96m                ~~~~~~~~~~[0m
+    Did you mean to mark this function as 'async'?
+[96msrc/services/project.service.ts[0m:[93m102[0m:[93m31[0m - [91merror[0m[90m TS2304: [0mCannot find name 'body'.
+
+[7m102[0m                 related : [...body.related]
+[7m   [0m [91m                              ~~~~[0m
+[96msrc/services/project.service.ts[0m:[93m109[0m:[93m52[0m - [91merror[0m[90m TS18004: [0mNo value exists in scope for the shorthand property 'related'. Either declare one or provide an initializer.
+
+[7m109[0m         return ProjectDTO.transformDetail({ ...res,related });
+[7m   [0m [91m                                                   ~~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/services/project.service.ts[0m:[93m100[0m:[93m29[0m - [91merror[0m[90m TS1308: [0m'await' expressions are only allowed within async functions and at the top levels of modules.
+
+[7m100[0m             const related = await models.Project.findAll({
+[7m   [0m [91m                            ~~~~~[0m
+
+  [96msrc/services/project.service.ts[0m:[93m99[0m:[93m17[0m
+    [7m99[0m         }).then((res) => {
+    [7m  [0m [96m                ~~~~~~~~~~[0m
+    Did you mean to mark this function as 'async'?
+[96msrc/services/project.service.ts[0m:[93m102[0m:[93m31[0m - [91merror[0m[90m TS2304: [0mCannot find name 'body'.
+
+[7m102[0m                 related : [...body.related]
+[7m   [0m [91m                              ~~~~[0m
+[96msrc/services/project.service.ts[0m:[93m109[0m:[93m52[0m - [91merror[0m[90m TS18004: [0mNo value exists in scope for the shorthand property 'related'. Either declare one or provide an initializer.
+
+[7m109[0m         return ProjectDTO.transformDetail({ ...res,related });
+[7m   [0m [91m                                                   ~~~~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-02 00:48:27 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/services/project.service.ts[0m:[93m102[0m:[93m31[0m - [91merror[0m[90m TS2304: [0mCannot find name 'body'.
+
+[7m102[0m                 related : [...body.related]
+[7m   [0m [91m                              ~~~~[0m
+[96msrc/services/project.service.ts[0m:[93m109[0m:[93m52[0m - [91merror[0m[90m TS18004: [0mNo value exists in scope for the shorthand property 'related'. Either declare one or provide an initializer.
+
+[7m109[0m         return ProjectDTO.transformDetail({ ...res,related });
+[7m   [0m [91m                                                   ~~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/services/project.service.ts[0m:[93m102[0m:[93m31[0m - [91merror[0m[90m TS2304: [0mCannot find name 'body'.
+
+[7m102[0m                 related : [...body.related]
+[7m   [0m [91m                              ~~~~[0m
+[96msrc/services/project.service.ts[0m:[93m109[0m:[93m52[0m - [91merror[0m[90m TS18004: [0mNo value exists in scope for the shorthand property 'related'. Either declare one or provide an initializer.
+
+[7m109[0m         return ProjectDTO.transformDetail({ ...res,related });
+[7m   [0m [91m                                                   ~~~~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-02 00:51:38 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/services/project.service.ts[0m:[93m115[0m:[93m48[0m - [91merror[0m[90m TS2304: [0mCannot find name 'res'.
+
+[7m115[0m         return ProjectDTO.transformDetail({ ...res, related });
+[7m   [0m [91m                                               ~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/services/project.service.ts[0m:[93m115[0m:[93m48[0m - [91merror[0m[90m TS2304: [0mCannot find name 'res'.
+
+[7m115[0m         return ProjectDTO.transformDetail({ ...res, related });
+[7m   [0m [91m                                               ~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-02 00:52:02 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/services/project.service.ts[0m:[93m115[0m:[93m48[0m - [91merror[0m[90m TS2304: [0mCannot find name 'project'.
+
+[7m115[0m         return ProjectDTO.transformDetail({ ...project, related });
+[7m   [0m [91m                                               ~~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/services/project.service.ts[0m:[93m115[0m:[93m48[0m - [91merror[0m[90m TS2304: [0mCannot find name 'project'.
+
+[7m115[0m         return ProjectDTO.transformDetail({ ...project, related });
+[7m   [0m [91m                                               ~~~~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-02 00:56:00 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/services/project.service.ts[0m:[93m104[0m:[93m28[0m - [91merror[0m[90m TS2304: [0mCannot find name 'project'.
+
+[7m104[0m         const proejctIds = project.related;
+[7m   [0m [91m                           ~~~~~~~[0m
+[96msrc/services/project.service.ts[0m:[93m112[0m:[93m48[0m - [91merror[0m[90m TS2304: [0mCannot find name 'project'.
+
+[7m112[0m         return ProjectDTO.transformDetail({ ...project, related });
+[7m   [0m [91m                                               ~~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/services/project.service.ts[0m:[93m104[0m:[93m28[0m - [91merror[0m[90m TS2304: [0mCannot find name 'project'.
+
+[7m104[0m         const proejctIds = project.related;
+[7m   [0m [91m                           ~~~~~~~[0m
+[96msrc/services/project.service.ts[0m:[93m112[0m:[93m48[0m - [91merror[0m[90m TS2304: [0mCannot find name 'project'.
+
+[7m112[0m         return ProjectDTO.transformDetail({ ...project, related });
+[7m   [0m [91m                                               ~~~~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-02 01:18:36 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/services/project.service.ts[0m:[93m108[0m:[93m41[0m - [91merror[0m[90m TS1005: [0m':' expected.
+
+[7m108[0m                 related: { [proejctIds] }
+[7m   [0m [91m                                        ~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/services/project.service.ts[0m:[93m108[0m:[93m41[0m - [91merror[0m[90m TS1005: [0m':' expected.
+
+[7m108[0m                 related: { [proejctIds] }
+[7m   [0m [91m                                        ~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-02 01:44:56 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/modules/controllers/project.controller.ts[0m:[93m21[0m:[93m40[0m - [91merror[0m[90m TS2339: [0mProperty 'store' does not exist on type 'ProjectService'.
+
+[7m21[0m             const data = await project.store({ ...req.body });
+[7m  [0m [91m                                       ~~~~~[0m
+[96msrc/modules/controllers/project.controller.ts[0m:[93m33[0m:[93m44[0m - [91merror[0m[90m TS2339: [0mProperty 'findById' does not exist on type 'ProjectService'.
+
+[7m33[0m                 const data = await project.findById(id);
+[7m  [0m [91m                                           ~~~~~~~~[0m
+[96msrc/modules/controllers/project.controller.ts[0m:[93m46[0m:[93m40[0m - [91merror[0m[90m TS2339: [0mProperty 'updateById' does not exist on type 'ProjectService'.
+
+[7m46[0m             const data = await project.updateById(id, req.body);
+[7m  [0m [91m                                       ~~~~~~~~~~[0m
+[96msrc/modules/controllers/project.controller.ts[0m:[93m56[0m:[93m40[0m - [91merror[0m[90m TS2339: [0mProperty 'deleteMultipleIds' does not exist on type 'ProjectService'.
+
+[7m56[0m             const data = await project.deleteMultipleIds(ids);
+[7m  [0m [91m                                       ~~~~~~~~~~~~~~~~~[0m
+[96msrc/modules/controllers/project.controller.ts[0m:[93m65[0m:[93m40[0m - [91merror[0m[90m TS2339: [0mProperty 'deleteById' does not exist on type 'ProjectService'.
+
+[7m65[0m             const data = await project.deleteById(req.params.id);
+[7m  [0m [91m                                       ~~~~~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/modules/controllers/project.controller.ts[0m:[93m21[0m:[93m40[0m - [91merror[0m[90m TS2339: [0mProperty 'store' does not exist on type 'ProjectService'.
+
+[7m21[0m             const data = await project.store({ ...req.body });
+[7m  [0m [91m                                       ~~~~~[0m
+[96msrc/modules/controllers/project.controller.ts[0m:[93m33[0m:[93m44[0m - [91merror[0m[90m TS2339: [0mProperty 'findById' does not exist on type 'ProjectService'.
+
+[7m33[0m                 const data = await project.findById(id);
+[7m  [0m [91m                                           ~~~~~~~~[0m
+[96msrc/modules/controllers/project.controller.ts[0m:[93m46[0m:[93m40[0m - [91merror[0m[90m TS2339: [0mProperty 'updateById' does not exist on type 'ProjectService'.
+
+[7m46[0m             const data = await project.updateById(id, req.body);
+[7m  [0m [91m                                       ~~~~~~~~~~[0m
+[96msrc/modules/controllers/project.controller.ts[0m:[93m56[0m:[93m40[0m - [91merror[0m[90m TS2339: [0mProperty 'deleteMultipleIds' does not exist on type 'ProjectService'.
+
+[7m56[0m             const data = await project.deleteMultipleIds(ids);
+[7m  [0m [91m                                       ~~~~~~~~~~~~~~~~~[0m
+[96msrc/modules/controllers/project.controller.ts[0m:[93m65[0m:[93m40[0m - [91merror[0m[90m TS2339: [0mProperty 'deleteById' does not exist on type 'ProjectService'.
+
+[7m65[0m             const data = await project.deleteById(req.params.id);
+[7m  [0m [91m                                       ~~~~~~~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-02 01:46:04 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/modules/controllers/project.controller.ts[0m:[93m21[0m:[93m40[0m - [91merror[0m[90m TS2339: [0mProperty 'store' does not exist on type 'ProjectService'.
+
+[7m21[0m             const data = await project.store({ ...req.body });
+[7m  [0m [91m                                       ~~~~~[0m
+[96msrc/modules/controllers/project.controller.ts[0m:[93m33[0m:[93m44[0m - [91merror[0m[90m TS2339: [0mProperty 'findById' does not exist on type 'ProjectService'.
+
+[7m33[0m                 const data = await project.findById(id);
+[7m  [0m [91m                                           ~~~~~~~~[0m
+[96msrc/modules/controllers/project.controller.ts[0m:[93m46[0m:[93m40[0m - [91merror[0m[90m TS2339: [0mProperty 'updateById' does not exist on type 'ProjectService'.
+
+[7m46[0m             const data = await project.updateById(id, req.body);
+[7m  [0m [91m                                       ~~~~~~~~~~[0m
+[96msrc/modules/controllers/project.controller.ts[0m:[93m56[0m:[93m40[0m - [91merror[0m[90m TS2339: [0mProperty 'deleteMultipleIds' does not exist on type 'ProjectService'.
+
+[7m56[0m             const data = await project.deleteMultipleIds(ids);
+[7m  [0m [91m                                       ~~~~~~~~~~~~~~~~~[0m
+[96msrc/modules/controllers/project.controller.ts[0m:[93m65[0m:[93m40[0m - [91merror[0m[90m TS2339: [0mProperty 'deleteById' does not exist on type 'ProjectService'.
+
+[7m65[0m             const data = await project.deleteById(req.params.id);
+[7m  [0m [91m                                       ~~~~~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/modules/controllers/project.controller.ts[0m:[93m21[0m:[93m40[0m - [91merror[0m[90m TS2339: [0mProperty 'store' does not exist on type 'ProjectService'.
+
+[7m21[0m             const data = await project.store({ ...req.body });
+[7m  [0m [91m                                       ~~~~~[0m
+[96msrc/modules/controllers/project.controller.ts[0m:[93m33[0m:[93m44[0m - [91merror[0m[90m TS2339: [0mProperty 'findById' does not exist on type 'ProjectService'.
+
+[7m33[0m                 const data = await project.findById(id);
+[7m  [0m [91m                                           ~~~~~~~~[0m
+[96msrc/modules/controllers/project.controller.ts[0m:[93m46[0m:[93m40[0m - [91merror[0m[90m TS2339: [0mProperty 'updateById' does not exist on type 'ProjectService'.
+
+[7m46[0m             const data = await project.updateById(id, req.body);
+[7m  [0m [91m                                       ~~~~~~~~~~[0m
+[96msrc/modules/controllers/project.controller.ts[0m:[93m56[0m:[93m40[0m - [91merror[0m[90m TS2339: [0mProperty 'deleteMultipleIds' does not exist on type 'ProjectService'.
+
+[7m56[0m             const data = await project.deleteMultipleIds(ids);
+[7m  [0m [91m                                       ~~~~~~~~~~~~~~~~~[0m
+[96msrc/modules/controllers/project.controller.ts[0m:[93m65[0m:[93m40[0m - [91merror[0m[90m TS2339: [0mProperty 'deleteById' does not exist on type 'ProjectService'.
+
+[7m65[0m             const data = await project.deleteById(req.params.id);
+[7m  [0m [91m                                       ~~~~~~~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-02 01:46:12 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/modules/controllers/project.controller.ts[0m:[93m21[0m:[93m40[0m - [91merror[0m[90m TS2339: [0mProperty 'store' does not exist on type 'ProjectService'.
+
+[7m21[0m             const data = await project.store({ ...req.body });
+[7m  [0m [91m                                       ~~~~~[0m
+[96msrc/modules/controllers/project.controller.ts[0m:[93m33[0m:[93m44[0m - [91merror[0m[90m TS2339: [0mProperty 'findById' does not exist on type 'ProjectService'.
+
+[7m33[0m                 const data = await project.findById(id);
+[7m  [0m [91m                                           ~~~~~~~~[0m
+[96msrc/modules/controllers/project.controller.ts[0m:[93m46[0m:[93m40[0m - [91merror[0m[90m TS2339: [0mProperty 'updateById' does not exist on type 'ProjectService'.
+
+[7m46[0m             const data = await project.updateById(id, req.body);
+[7m  [0m [91m                                       ~~~~~~~~~~[0m
+[96msrc/modules/controllers/project.controller.ts[0m:[93m56[0m:[93m40[0m - [91merror[0m[90m TS2339: [0mProperty 'deleteMultipleIds' does not exist on type 'ProjectService'.
+
+[7m56[0m             const data = await project.deleteMultipleIds(ids);
+[7m  [0m [91m                                       ~~~~~~~~~~~~~~~~~[0m
+[96msrc/modules/controllers/project.controller.ts[0m:[93m65[0m:[93m40[0m - [91merror[0m[90m TS2339: [0mProperty 'deleteById' does not exist on type 'ProjectService'.
+
+[7m65[0m             const data = await project.deleteById(req.params.id);
+[7m  [0m [91m                                       ~~~~~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/modules/controllers/project.controller.ts[0m:[93m21[0m:[93m40[0m - [91merror[0m[90m TS2339: [0mProperty 'store' does not exist on type 'ProjectService'.
+
+[7m21[0m             const data = await project.store({ ...req.body });
+[7m  [0m [91m                                       ~~~~~[0m
+[96msrc/modules/controllers/project.controller.ts[0m:[93m33[0m:[93m44[0m - [91merror[0m[90m TS2339: [0mProperty 'findById' does not exist on type 'ProjectService'.
+
+[7m33[0m                 const data = await project.findById(id);
+[7m  [0m [91m                                           ~~~~~~~~[0m
+[96msrc/modules/controllers/project.controller.ts[0m:[93m46[0m:[93m40[0m - [91merror[0m[90m TS2339: [0mProperty 'updateById' does not exist on type 'ProjectService'.
+
+[7m46[0m             const data = await project.updateById(id, req.body);
+[7m  [0m [91m                                       ~~~~~~~~~~[0m
+[96msrc/modules/controllers/project.controller.ts[0m:[93m56[0m:[93m40[0m - [91merror[0m[90m TS2339: [0mProperty 'deleteMultipleIds' does not exist on type 'ProjectService'.
+
+[7m56[0m             const data = await project.deleteMultipleIds(ids);
+[7m  [0m [91m                                       ~~~~~~~~~~~~~~~~~[0m
+[96msrc/modules/controllers/project.controller.ts[0m:[93m65[0m:[93m40[0m - [91merror[0m[90m TS2339: [0mProperty 'deleteById' does not exist on type 'ProjectService'.
+
+[7m65[0m             const data = await project.deleteById(req.params.id);
+[7m  [0m [91m                                       ~~~~~~~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)

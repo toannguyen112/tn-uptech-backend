@@ -27,6 +27,24 @@ module.exports = {
       {
         id: 2,
         name: `Name En`,
+        project_id: 1,
+        slug: `name-test-en`,
+        locale: `en`,
+        content: "content en",
+        description: "description en",
+      },
+      {
+        id: 3,
+        name: `Name Vi`,
+        project_id: 2,
+        slug: `name-test-vi`,
+        locale: `vi`,
+        content: "content vi",
+        description: "description vi",
+      },
+      {
+        id: 4,
+        name: `Name En`,
         project_id: 2,
         slug: `name-test-en`,
         locale: `en`,
@@ -35,16 +53,6 @@ module.exports = {
       },
     ]);
 
-    await queryInterface.bulkInsert("project_related", [
-      {
-        id: 1,
-        project_id: 1,
-      },
-      {
-        id: 2,
-        project_id: 2,
-      },
-    ]);
   },
   async down(queryInterface) {
     await queryInterface.bulkDelete("projects", null, {});

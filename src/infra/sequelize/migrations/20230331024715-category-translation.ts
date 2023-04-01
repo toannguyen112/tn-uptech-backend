@@ -2,7 +2,7 @@
 
 module.exports = {
   up: (queryInterface, Sequelize) =>
-    queryInterface.createTable("post_related", {
+    queryInterface.createTable("category_transaction", {
       id: {
         primaryKey: true,
         unique: true,
@@ -35,5 +35,5 @@ module.exports = {
 
     }),
 
-  down: (queryInterface) => queryInterface.dropTable("post_related"),
+  down: (queryInterface) => queryInterface.dropTable("category_transaction"),
 };

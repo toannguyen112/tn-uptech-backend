@@ -12,15 +12,14 @@ export class ProjectService {
             .includes([
                 {
                     model: models.Media,
-                    as: "image"
+                    as: "image",
+                    required: false,
                 },
                 {
                     model: models.ProjectTranslation,
                     as: "translations",
-                    required: true,
-                    where: {
-                        locale: "vi",
-                    }
+                    required: false,
+                    where: { locale: "vi" }
                 },
             ])
             .paginate()
@@ -50,26 +49,30 @@ export class ProjectService {
             ...body,
             thumbnail: body.thumbnail ? body.thumbnail.id : null,
             banner: body.banner ? body.banner.id : null,
-        }).then(async (project: any) => {
+        })
+            .then(async (project: any) => {
 
-            const projectId = project.id;
+                const projectId = project.id;
 
-            await models.ProjectTranslation.create({
-                ...body,
-                project_id: projectId,
-                locale: 'vi'
+                await models.ProjectTranslation.create({
+                    ...body,
+                    project_id: projectId,
+                    locale: 'vi'
+                });
+
+                await models.ProjectTranslation.create({
+                    ...body,
+                    project_id: projectId,
+                    locale: 'en'
+                });
             });
-
-            await models.ProjectTranslation.create({
-                ...body,
-                project_id: projectId,
-                locale: 'en'
-            });
-        });
     }
 
     public findById = async (id: string | number) => {
-        const res = await models.Project.findOne({
+
+        let related = [];
+
+        const project = await models.Project.findOne({
             where: {
                 id: id,
                 status: 'active',
@@ -97,33 +100,29 @@ export class ProjectService {
             ]
         });
 
-        let related: [];
+        const proejctIds = project.related;
 
-        await models.ProjectRelated.findAll({
-            where: {
-                project_id: id
-            },
+        await models.Project.findAll({
+            where: { id: proejctIds },
             include: {
-                model: models.Project,
-                as: "project",
-                required: false,
-                include: {
-                    model: models.ProjectTranslation,
-                    as: "translations",
-                    required: false,
-                    where: {
-                        locale: "vi",
-                        project_id: id
-                    }
-                },
+                model: models.ProjectTranslation,
+                as: "translations",
+                required: true,
+                where: {
+                    locale: "vi",
+                }
             },
-        }).then(function (projects) {
-            related = projects.map((item: any) => {
-                return ProjectDTO.transform(item.project);
-            })
-        })
+        }).then((res) => {
 
-        return ProjectDTO.transformDetail({ ...res, related });
+            related = res.map((item) => {
+                return {
+                    id: item.id,
+                    name: item.translations[0].name,
+                }
+            }) ?? []
+        });
+
+        return ProjectDTO.transformDetail({ ...project, related });
     }
 
     public updateById = async (id: string, body) => {

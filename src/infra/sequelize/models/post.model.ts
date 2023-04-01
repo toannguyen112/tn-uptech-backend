@@ -19,6 +19,12 @@ module.exports = function (sequelize, DataTypes) {
                 },
             },
 
+            related: {
+                type: DataTypes.JSON,
+                defaultValue: [],
+                allowNull: true,
+            },
+
             banner: {
                 type: DataTypes.STRING,
                 references: {
@@ -65,7 +71,7 @@ module.exports = function (sequelize, DataTypes) {
     );
 
     Post.associate = function (models) {
-          Post.belongsTo(models.Media, {
+        Post.belongsTo(models.Media, {
             as: 'image',
             foreignKey: "thumbnail"
         });

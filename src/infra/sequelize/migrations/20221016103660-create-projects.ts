@@ -28,6 +28,12 @@ module.exports = {
         allowNull: true,
       },
 
+      related: {
+        type: Sequelize.JSON,
+        defaultValue: [],
+        allowNull: true,
+      },
+
       images: {
         type: Sequelize.JSON,
         defaultValue: [],

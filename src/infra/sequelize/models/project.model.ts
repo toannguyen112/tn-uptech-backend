@@ -26,6 +26,12 @@ module.exports = function (sequelize, DataTypes) {
                 },
             },
 
+            related: {
+                type: DataTypes.JSON,
+                defaultValue: [],
+                allowNull: true,
+            },
+
             images: {
                 type: DataTypes.JSON,
                 defaultValue: []
@@ -77,13 +83,9 @@ module.exports = function (sequelize, DataTypes) {
 
         Project.hasMany(models.ProjectTranslation, {
             as: "translations",
-            foreignKey: "id"
+            foreignKey: "project_id"
         });
 
-        Project.hasMany(models.ProjectRelated, {
-            as: 'related',
-            foreignKey: "id"
-        });
     };
 
     return Project;

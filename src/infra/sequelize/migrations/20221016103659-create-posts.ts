@@ -19,6 +19,12 @@ module.exports = {
         allowNull: true,
       },
 
+      related: {
+        type: Sequelize.JSON,
+        defaultValue: [],
+        allowNull: true,
+      },
+
       banner: {
         type: Sequelize.INTEGER,
         references: {
