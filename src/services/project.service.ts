@@ -1,13 +1,12 @@
 import models from "../infra/sequelize/models";
 import { ApiFeatures } from "../utils/ApiFeatures";
 import { ProjectDTO } from "../dtos/project.dto";
+import Helper from "../utils/Helper";
 
 export class ProjectService {
 
     public getList = async (query) => {
-
         const conditions = {};
-
         const objQuery = new ApiFeatures(query)
             .filter(conditions)
             .includes([
@@ -50,23 +49,33 @@ export class ProjectService {
             ...body,
             thumbnail: body.thumbnail ? body.thumbnail.id : null,
             banner: body.banner ? body.banner.id : null,
-        })
+        },
+            {
+                individualHooks: true,
+            }
+        )
             .then(async (project: any) => {
 
                 if (project) {
                     const projectId = project.id;
 
+                    console.log(body.slug);
+
                     await models.ProjectTranslation.create({
                         ...body,
+                        slug: Helper.renderSlug(body.slug ? body.slug : body.name),
+                        custom_slug: Helper.renderSlug(body.custom_slug ? body.custom_slug : body.name),
                         project_id: projectId,
                         locale: 'vi'
                     });
 
-                    await models.ProjectTranslation.create({
-                        ...body,
-                        project_id: projectId,
-                        locale: 'en'
-                    });
+                    // await models.ProjectTranslation.create({
+                    //     ...body,
+                    //     slug: Helper.renderSlug(body.slug ? body.slug : body.name),
+                    //     custom_slug: Helper.renderSlug(body.custom_slug ? body.custom_slug : body.name),
+                    //     project_id: projectId,
+                    //     locale: 'en'
+                    // });
                 }
             });
     }
@@ -113,7 +122,11 @@ export class ProjectService {
             thumbnail: body.thumbnail ? body.thumbnail.id : null,
             banner: body.banner ? body.banner.id : null,
         },
-            { where: { id } })
+            {
+                where: { id },
+                individualHooks: true
+            },
+        )
             .then(async (res) => {
 
                 if (res) {
@@ -130,8 +143,8 @@ export class ProjectService {
                 name: body.name,
                 content: body.content,
                 description: body.description,
-                slug: body.slug,
-                custom_slug: body.custom_slug,
+                slug: Helper.renderSlug(body.slug ? body.slug : body.name),
+                custom_slug: Helper.renderSlug(body.custom_slug ? body.custom_slug : body.name),
             },
                 {
                     where: {

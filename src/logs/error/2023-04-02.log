@@ -1218,3 +1218,137 @@ TSError: ⨯ Unable to compile TypeScript:
     at Module.load (node:internal/modules/cjs/loader:1069:32)
     at Function.Module._load (node:internal/modules/cjs/loader:904:12)
     at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-02 16:48:34 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/services/project.service.ts[0m:[93m52[0m:[93m13[0m - [91merror[0m[90m TS2304: [0mCannot find name 'individualHooks'.
+
+[7m52[0m             individualHooks: true
+[7m  [0m [91m            ~~~~~~~~~~~~~~~[0m
+[96msrc/services/project.service.ts[0m:[93m52[0m:[93m28[0m - [91merror[0m[90m TS1005: [0m',' expected.
+
+[7m52[0m             individualHooks: true
+[7m  [0m [91m                           ~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/services/project.service.ts[0m:[93m52[0m:[93m13[0m - [91merror[0m[90m TS2304: [0mCannot find name 'individualHooks'.
+
+[7m52[0m             individualHooks: true
+[7m  [0m [91m            ~~~~~~~~~~~~~~~[0m
+[96msrc/services/project.service.ts[0m:[93m52[0m:[93m28[0m - [91merror[0m[90m TS1005: [0m',' expected.
+
+[7m52[0m             individualHooks: true
+[7m  [0m [91m                           ~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-02 16:48:43 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/services/project.service.ts[0m:[93m52[0m:[93m13[0m - [91merror[0m[90m TS2304: [0mCannot find name 'individualHooks'.
+
+[7m52[0m             individualHooks: true,
+[7m  [0m [91m            ~~~~~~~~~~~~~~~[0m
+[96msrc/services/project.service.ts[0m:[93m52[0m:[93m28[0m - [91merror[0m[90m TS1005: [0m',' expected.
+
+[7m52[0m             individualHooks: true,
+[7m  [0m [91m                           ~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/services/project.service.ts[0m:[93m52[0m:[93m13[0m - [91merror[0m[90m TS2304: [0mCannot find name 'individualHooks'.
+
+[7m52[0m             individualHooks: true,
+[7m  [0m [91m            ~~~~~~~~~~~~~~~[0m
+[96msrc/services/project.service.ts[0m:[93m52[0m:[93m28[0m - [91merror[0m[90m TS1005: [0m',' expected.
+
+[7m52[0m             individualHooks: true,
+[7m  [0m [91m                           ~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-02 16:49:40 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/services/project.service.ts[0m:[93m119[0m:[93m13[0m - [91merror[0m[90m TS2304: [0mCannot find name 'individualHooks'.
+
+[7m119[0m             individualHooks: true,
+[7m   [0m [91m            ~~~~~~~~~~~~~~~[0m
+[96msrc/services/project.service.ts[0m:[93m119[0m:[93m28[0m - [91merror[0m[90m TS1005: [0m',' expected.
+
+[7m119[0m             individualHooks: true,
+[7m   [0m [91m                           ~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/services/project.service.ts[0m:[93m119[0m:[93m13[0m - [91merror[0m[90m TS2304: [0mCannot find name 'individualHooks'.
+
+[7m119[0m             individualHooks: true,
+[7m   [0m [91m            ~~~~~~~~~~~~~~~[0m
+[96msrc/services/project.service.ts[0m:[93m119[0m:[93m28[0m - [91merror[0m[90m TS1005: [0m',' expected.
+
+[7m119[0m             individualHooks: true,
+[7m   [0m [91m                           ~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-02 16:55:48 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/services/project.service.ts[0m:[93m65[0m:[93m25[0m - [91merror[0m[90m TS1117: [0mAn object literal cannot have multiple properties with the same name.
+
+[7m65[0m                         slug: Helper.renderSlug(body.slug ? body.slug : body.name),
+[7m  [0m [91m                        ~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/services/project.service.ts[0m:[93m65[0m:[93m25[0m - [91merror[0m[90m TS1117: [0mAn object literal cannot have multiple properties with the same name.
+
+[7m65[0m                         slug: Helper.renderSlug(body.slug ? body.slug : body.name),
+[7m  [0m [91m                        ~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-02 16:56:02 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/services/project.service.ts[0m:[93m65[0m:[93m56[0m - [91merror[0m[90m TS2304: [0mCannot find name 'custom_slug'.
+
+[7m65[0m                         custom_slug: Helper.renderSlug(custom_slug),
+[7m  [0m [91m                                                       ~~~~~~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/services/project.service.ts[0m:[93m65[0m:[93m56[0m - [91merror[0m[90m TS2304: [0mCannot find name 'custom_slug'.
+
+[7m65[0m                         custom_slug: Helper.renderSlug(custom_slug),
+[7m  [0m [91m                                                       ~~~~~~~~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
