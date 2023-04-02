@@ -3,7 +3,6 @@ import { ApiFeatures } from "../utils/ApiFeatures";
 import { ProjectDTO } from "../dtos/project.dto";
 
 export class ProjectService {
-
     public getList = async (query) => {
         const conditions = {};
 
@@ -70,8 +69,6 @@ export class ProjectService {
 
     public findById = async (id: string | number) => {
 
-        let related = [];
-
         const project = await models.Project.findOne({
             where: {
                 id: id,
@@ -100,29 +97,7 @@ export class ProjectService {
             ]
         });
 
-        const proejctIds = project.related;
-
-        await models.Project.findAll({
-            where: { id: proejctIds },
-            include: {
-                model: models.ProjectTranslation,
-                as: "translations",
-                required: true,
-                where: {
-                    locale: "vi",
-                }
-            },
-        }).then((res) => {
-
-            related = res.map((item) => {
-                return {
-                    id: item.id,
-                    name: item.translations[0].name,
-                }
-            }) ?? []
-        });
-
-        return ProjectDTO.transformDetail({ ...project, related });
+        return ProjectDTO.transformDetail(project);
     }
 
     public updateById = async (id: string, body) => {

@@ -23,8 +23,8 @@ export class ProjectDTO {
     static transformDetail = (item) => {
 
         if (!item) return {};
-
         const translationData = item.translations[0];
+
         return {
             id: item.id,
             name: translationData.name || "",
