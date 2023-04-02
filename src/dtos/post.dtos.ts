@@ -1,4 +1,4 @@
-export class ProjectDTO {
+export class PostDTO {
     static transform = (item) => {
 
         if (!item.translations.length) return {};
@@ -28,8 +28,7 @@ export class ProjectDTO {
         return {
             id: item.id,
             name: translationData.name || "",
-            slug: translationData.slug || "",
-            custom_slug: translationData.custom_slug || "",
+            slug: item.slug || "",
             description: translationData.description || "",
             isFeatured: item.isFeatured || false,
             status: item.status || 'inactive',

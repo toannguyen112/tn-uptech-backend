@@ -52,19 +52,19 @@ export class ProjectService {
             .then(async (project: any) => {
 
                 if (project) {
-                const projectId = project.id;
+                    const projectId = project.id;
 
-                await models.ProjectTranslation.create({
-                    ...body,
-                    project_id: projectId,
-                    locale: 'vi'
-                });
+                    await models.ProjectTranslation.create({
+                        ...body,
+                        project_id: projectId,
+                        locale: 'vi'
+                    });
 
-                await models.ProjectTranslation.create({
-                    ...body,
-                    project_id: projectId,
-                    locale: 'en'
-                });                    
+                    await models.ProjectTranslation.create({
+                        ...body,
+                        project_id: projectId,
+                        locale: 'en'
+                    });
                 }
             });
     }
@@ -115,36 +115,31 @@ export class ProjectService {
             .then(async (res) => {
 
                 if (res) {
-                    await models.ProjectTranslation.update({
-                        name: body.name,
-                        content: body.content,
-                        description: body.description,
-                        slug: body.slug,
-                        custom_slug: body.custom_slug,
-                    },
-                        {
-                            where: {
-                                project_id: id,
-                                locale: 'vi'
-                            }
-                        });
-
-                    await models.ProjectTranslation.update({
-                        name: body.name,
-                        content: body.content,
-                        description: body.description,
-                        slug: body.slug,
-                        custom_slug: body.custom_slug,
-                    },
-                        {
-                            where: {
-                                project_id: id,
-                                locale: 'en'
-                            }
-                        });
+                    await this.handleUpdate({ project_id: id, lang: "vi", body });
+                    await this.handleUpdate({ project_id: id, lang: "en", body });
                 }
-
             });
+    }
+
+    public handleUpdate = async ({ project_id, lang = "vi", body }) => {
+
+        try {
+            return await models.ProjectTranslation.update({
+                name: body.name,
+                content: body.content,
+                description: body.description,
+                slug: body.slug,
+                custom_slug: body.custom_slug,
+            },
+                {
+                    where: {
+                        project_id,
+                        locale: lang
+                    }
+                });
+        } catch (error) {
+            console.log(error);
+        }
     }
 
     public deleteById = async (id: string) => {

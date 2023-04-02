@@ -50,6 +50,10 @@ module.exports = {
         defaultValue: "active"
       },
 
+      author: {
+        type: Sequelize.STRING,
+      },
+
       view: {
         type: Sequelize.INTEGER,
         defaultValue: 0

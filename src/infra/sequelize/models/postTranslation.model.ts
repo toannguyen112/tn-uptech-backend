@@ -4,17 +4,34 @@ module.exports = function (sequelize, DataTypes) {
         "post_translation",
         {
             id: {
-                type: DataTypes.INTEGER,
-                autoIncrement: true,
                 primaryKey: true,
+                unique: true,
+                autoIncrement: true,
+                type: DataTypes.INTEGER,
+            },
+
+            post_id: {
+                type: DataTypes.INTEGER,
+                references: {
+                    model: "posts",
+                    key: "id",
+                },
+            },
+
+            locale: {
+                type: DataTypes.STRING,
+                defaultValue: "vi",
+                allowNull: false,
             },
 
             name: {
                 type: DataTypes.STRING,
+                allowNull: false,
             },
 
-            slug: {
-                type: DataTypes.STRING,
+            content: {
+                type: DataTypes.TEXT('long'),
+                allowNull: true,
             },
 
             description: {
@@ -22,8 +39,15 @@ module.exports = function (sequelize, DataTypes) {
                 allowNull: true,
             },
 
-            content: {
-                type: DataTypes.TEXT('long'),
+            slug: {
+                type: DataTypes.STRING,
+                unique: true,
+                allowNull: true,
+            },
+
+            custom_slug: {
+                type: DataTypes.STRING,
+                unique: true,
                 allowNull: true,
             },
         },

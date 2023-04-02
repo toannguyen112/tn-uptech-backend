@@ -572,3 +572,585 @@ TSError: ⨯ Unable to compile TypeScript:
     at Module.load (node:internal/modules/cjs/loader:1069:32)
     at Function.Module._load (node:internal/modules/cjs/loader:904:12)
     at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-02 15:45:01 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/dtos/project.dto.ts[0m:[93m32[0m:[93m13[0m - [91merror[0m[90m TS1117: [0mAn object literal cannot have multiple properties with the same name.
+
+[7m32[0m             slug: translationData.slug || "",
+[7m  [0m [91m            ~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/dtos/project.dto.ts[0m:[93m32[0m:[93m13[0m - [91merror[0m[90m TS1117: [0mAn object literal cannot have multiple properties with the same name.
+
+[7m32[0m             slug: translationData.slug || "",
+[7m  [0m [91m            ~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-02 15:47:35 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/services/project.service.ts[0m:[93m151[0m:[93m16[0m - [91merror[0m[90m TS1308: [0m'await' expressions are only allowed within async functions and at the top levels of modules.
+
+[7m151[0m         return await models.ProjectTranslation.update({
+[7m   [0m [91m               ~~~~~[0m
+
+  [96msrc/services/project.service.ts[0m:[93m150[0m:[93m20[0m
+    [7m150[0m     handleUpdate = ({ proejct_id, lang, body }) => {
+    [7m   [0m [96m                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+    Did you mean to mark this function as 'async'?
+[96msrc/services/project.service.ts[0m:[93m160[0m:[93m33[0m - [91merror[0m[90m TS2304: [0mCannot find name 'id'.
+
+[7m160[0m                     project_id: id,
+[7m   [0m [91m                                ~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/services/project.service.ts[0m:[93m151[0m:[93m16[0m - [91merror[0m[90m TS1308: [0m'await' expressions are only allowed within async functions and at the top levels of modules.
+
+[7m151[0m         return await models.ProjectTranslation.update({
+[7m   [0m [91m               ~~~~~[0m
+
+  [96msrc/services/project.service.ts[0m:[93m150[0m:[93m20[0m
+    [7m150[0m     handleUpdate = ({ proejct_id, lang, body }) => {
+    [7m   [0m [96m                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+    Did you mean to mark this function as 'async'?
+[96msrc/services/project.service.ts[0m:[93m160[0m:[93m33[0m - [91merror[0m[90m TS2304: [0mCannot find name 'id'.
+
+[7m160[0m                     project_id: id,
+[7m   [0m [91m                                ~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-02 15:47:42 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/services/project.service.ts[0m:[93m160[0m:[93m33[0m - [91merror[0m[90m TS2304: [0mCannot find name 'id'.
+
+[7m160[0m                     project_id: id,
+[7m   [0m [91m                                ~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/services/project.service.ts[0m:[93m160[0m:[93m33[0m - [91merror[0m[90m TS2304: [0mCannot find name 'id'.
+
+[7m160[0m                     project_id: id,
+[7m   [0m [91m                                ~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-02 15:47:48 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/services/project.service.ts[0m:[93m160[0m:[93m21[0m - [91merror[0m[90m TS2552: [0mCannot find name 'project_id'. Did you mean 'proejct_id'?
+
+[7m160[0m                     project_id,
+[7m   [0m [91m                    ~~~~~~~~~~[0m
+
+  [96msrc/services/project.service.ts[0m:[93m150[0m:[93m29[0m
+    [7m150[0m     handleUpdate = async ({ proejct_id, lang, body }) => {
+    [7m   [0m [96m                            ~~~~~~~~~~[0m
+    'proejct_id' is declared here.
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/services/project.service.ts[0m:[93m160[0m:[93m21[0m - [91merror[0m[90m TS2552: [0mCannot find name 'project_id'. Did you mean 'proejct_id'?
+
+[7m160[0m                     project_id,
+[7m   [0m [91m                    ~~~~~~~~~~[0m
+
+  [96msrc/services/project.service.ts[0m:[93m150[0m:[93m29[0m
+    [7m150[0m     handleUpdate = async ({ proejct_id, lang, body }) => {
+    [7m   [0m [96m                            ~~~~~~~~~~[0m
+    'proejct_id' is declared here.
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-02 15:47:53 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/services/project.service.ts[0m:[93m160[0m:[93m21[0m - [91merror[0m[90m TS2552: [0mCannot find name 'project_id'. Did you mean 'proejct_id'?
+
+[7m160[0m                     project_id,
+[7m   [0m [91m                    ~~~~~~~~~~[0m
+
+  [96msrc/services/project.service.ts[0m:[93m150[0m:[93m29[0m
+    [7m150[0m     handleUpdate = async ({ proejct_id, lang, body }) => {
+    [7m   [0m [96m                            ~~~~~~~~~~[0m
+    'proejct_id' is declared here.
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/services/project.service.ts[0m:[93m160[0m:[93m21[0m - [91merror[0m[90m TS2552: [0mCannot find name 'project_id'. Did you mean 'proejct_id'?
+
+[7m160[0m                     project_id,
+[7m   [0m [91m                    ~~~~~~~~~~[0m
+
+  [96msrc/services/project.service.ts[0m:[93m150[0m:[93m29[0m
+    [7m150[0m     handleUpdate = async ({ proejct_id, lang, body }) => {
+    [7m   [0m [96m                            ~~~~~~~~~~[0m
+    'proejct_id' is declared here.
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-02 15:48:59 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/services/project.service.ts[0m:[93m118[0m:[93m41[0m - [91merror[0m[90m TS2552: [0mCannot find name 'project_id'. Did you mean 'ProjectDTO'?
+
+[7m118[0m                     this.handleUpdate({ project_id, "vi", body });
+[7m   [0m [91m                                        ~~~~~~~~~~[0m
+[96msrc/services/project.service.ts[0m:[93m118[0m:[93m53[0m - [91merror[0m[90m TS2345: [0mArgument of type '{ project_id: any; vi: any; body: any; }' is not assignable to parameter of type '{ project_id: any; lang: any; body: any; }'.
+  Object literal may only specify known properties, and '"vi"' does not exist in type '{ project_id: any; lang: any; body: any; }'.
+
+[7m118[0m                     this.handleUpdate({ project_id, "vi", body });
+[7m   [0m [91m                                                    ~~~~[0m
+[96msrc/services/project.service.ts[0m:[93m119[0m:[93m41[0m - [91merror[0m[90m TS2552: [0mCannot find name 'project_id'. Did you mean 'ProjectDTO'?
+
+[7m119[0m                     this.handleUpdate({ project_id, "vi", body });
+[7m   [0m [91m                                        ~~~~~~~~~~[0m
+[96msrc/services/project.service.ts[0m:[93m119[0m:[93m53[0m - [91merror[0m[90m TS2345: [0mArgument of type '{ project_id: any; vi: any; body: any; }' is not assignable to parameter of type '{ project_id: any; lang: any; body: any; }'.
+  Object literal may only specify known properties, and '"vi"' does not exist in type '{ project_id: any; lang: any; body: any; }'.
+
+[7m119[0m                     this.handleUpdate({ project_id, "vi", body });
+[7m   [0m [91m                                                    ~~~~[0m
+[96msrc/services/project.service.ts[0m:[93m118[0m:[93m57[0m - [91merror[0m[90m TS1005: [0m':' expected.
+
+[7m118[0m                     this.handleUpdate({ project_id, "vi", body });
+[7m   [0m [91m                                                        ~[0m
+[96msrc/services/project.service.ts[0m:[93m119[0m:[93m57[0m - [91merror[0m[90m TS1005: [0m':' expected.
+
+[7m119[0m                     this.handleUpdate({ project_id, "vi", body });
+[7m   [0m [91m                                                        ~[0m
+[96msrc/services/project.service.ts[0m:[93m121[0m:[93m18[0m - [91merror[0m[90m TS1128: [0mDeclaration or statement expected.
+
+[7m121[0m                 });
+[7m   [0m [91m                 ~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/services/project.service.ts[0m:[93m118[0m:[93m41[0m - [91merror[0m[90m TS2552: [0mCannot find name 'project_id'. Did you mean 'ProjectDTO'?
+
+[7m118[0m                     this.handleUpdate({ project_id, "vi", body });
+[7m   [0m [91m                                        ~~~~~~~~~~[0m
+[96msrc/services/project.service.ts[0m:[93m118[0m:[93m53[0m - [91merror[0m[90m TS2345: [0mArgument of type '{ project_id: any; vi: any; body: any; }' is not assignable to parameter of type '{ project_id: any; lang: any; body: any; }'.
+  Object literal may only specify known properties, and '"vi"' does not exist in type '{ project_id: any; lang: any; body: any; }'.
+
+[7m118[0m                     this.handleUpdate({ project_id, "vi", body });
+[7m   [0m [91m                                                    ~~~~[0m
+[96msrc/services/project.service.ts[0m:[93m119[0m:[93m41[0m - [91merror[0m[90m TS2552: [0mCannot find name 'project_id'. Did you mean 'ProjectDTO'?
+
+[7m119[0m                     this.handleUpdate({ project_id, "vi", body });
+[7m   [0m [91m                                        ~~~~~~~~~~[0m
+[96msrc/services/project.service.ts[0m:[93m119[0m:[93m53[0m - [91merror[0m[90m TS2345: [0mArgument of type '{ project_id: any; vi: any; body: any; }' is not assignable to parameter of type '{ project_id: any; lang: any; body: any; }'.
+  Object literal may only specify known properties, and '"vi"' does not exist in type '{ project_id: any; lang: any; body: any; }'.
+
+[7m119[0m                     this.handleUpdate({ project_id, "vi", body });
+[7m   [0m [91m                                                    ~~~~[0m
+[96msrc/services/project.service.ts[0m:[93m118[0m:[93m57[0m - [91merror[0m[90m TS1005: [0m':' expected.
+
+[7m118[0m                     this.handleUpdate({ project_id, "vi", body });
+[7m   [0m [91m                                                        ~[0m
+[96msrc/services/project.service.ts[0m:[93m119[0m:[93m57[0m - [91merror[0m[90m TS1005: [0m':' expected.
+
+[7m119[0m                     this.handleUpdate({ project_id, "vi", body });
+[7m   [0m [91m                                                        ~[0m
+[96msrc/services/project.service.ts[0m:[93m121[0m:[93m18[0m - [91merror[0m[90m TS1128: [0mDeclaration or statement expected.
+
+[7m121[0m                 });
+[7m   [0m [91m                 ~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-02 15:49:08 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/services/project.service.ts[0m:[93m118[0m:[93m41[0m - [91merror[0m[90m TS2552: [0mCannot find name 'project_id'. Did you mean 'ProjectDTO'?
+
+[7m118[0m                     this.handleUpdate({ project_id, "vi", body });
+[7m   [0m [91m                                        ~~~~~~~~~~[0m
+[96msrc/services/project.service.ts[0m:[93m118[0m:[93m53[0m - [91merror[0m[90m TS2345: [0mArgument of type '{ project_id: any; vi: any; body: any; }' is not assignable to parameter of type '{ project_id: any; lang: any; body: any; }'.
+  Object literal may only specify known properties, and '"vi"' does not exist in type '{ project_id: any; lang: any; body: any; }'.
+
+[7m118[0m                     this.handleUpdate({ project_id, "vi", body });
+[7m   [0m [91m                                                    ~~~~[0m
+[96msrc/services/project.service.ts[0m:[93m119[0m:[93m41[0m - [91merror[0m[90m TS2552: [0mCannot find name 'project_id'. Did you mean 'ProjectDTO'?
+
+[7m119[0m                     this.handleUpdate({ project_id, "vi", body });
+[7m   [0m [91m                                        ~~~~~~~~~~[0m
+[96msrc/services/project.service.ts[0m:[93m119[0m:[93m53[0m - [91merror[0m[90m TS2345: [0mArgument of type '{ project_id: any; vi: any; body: any; }' is not assignable to parameter of type '{ project_id: any; lang: any; body: any; }'.
+  Object literal may only specify known properties, and '"vi"' does not exist in type '{ project_id: any; lang: any; body: any; }'.
+
+[7m119[0m                     this.handleUpdate({ project_id, "vi", body });
+[7m   [0m [91m                                                    ~~~~[0m
+[96msrc/services/project.service.ts[0m:[93m118[0m:[93m57[0m - [91merror[0m[90m TS1005: [0m':' expected.
+
+[7m118[0m                     this.handleUpdate({ project_id, "vi", body });
+[7m   [0m [91m                                                        ~[0m
+[96msrc/services/project.service.ts[0m:[93m119[0m:[93m57[0m - [91merror[0m[90m TS1005: [0m':' expected.
+
+[7m119[0m                     this.handleUpdate({ project_id, "vi", body });
+[7m   [0m [91m                                                        ~[0m
+[96msrc/services/project.service.ts[0m:[93m120[0m:[93m18[0m - [91merror[0m[90m TS1128: [0mDeclaration or statement expected.
+
+[7m120[0m                 });
+[7m   [0m [91m                 ~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/services/project.service.ts[0m:[93m118[0m:[93m41[0m - [91merror[0m[90m TS2552: [0mCannot find name 'project_id'. Did you mean 'ProjectDTO'?
+
+[7m118[0m                     this.handleUpdate({ project_id, "vi", body });
+[7m   [0m [91m                                        ~~~~~~~~~~[0m
+[96msrc/services/project.service.ts[0m:[93m118[0m:[93m53[0m - [91merror[0m[90m TS2345: [0mArgument of type '{ project_id: any; vi: any; body: any; }' is not assignable to parameter of type '{ project_id: any; lang: any; body: any; }'.
+  Object literal may only specify known properties, and '"vi"' does not exist in type '{ project_id: any; lang: any; body: any; }'.
+
+[7m118[0m                     this.handleUpdate({ project_id, "vi", body });
+[7m   [0m [91m                                                    ~~~~[0m
+[96msrc/services/project.service.ts[0m:[93m119[0m:[93m41[0m - [91merror[0m[90m TS2552: [0mCannot find name 'project_id'. Did you mean 'ProjectDTO'?
+
+[7m119[0m                     this.handleUpdate({ project_id, "vi", body });
+[7m   [0m [91m                                        ~~~~~~~~~~[0m
+[96msrc/services/project.service.ts[0m:[93m119[0m:[93m53[0m - [91merror[0m[90m TS2345: [0mArgument of type '{ project_id: any; vi: any; body: any; }' is not assignable to parameter of type '{ project_id: any; lang: any; body: any; }'.
+  Object literal may only specify known properties, and '"vi"' does not exist in type '{ project_id: any; lang: any; body: any; }'.
+
+[7m119[0m                     this.handleUpdate({ project_id, "vi", body });
+[7m   [0m [91m                                                    ~~~~[0m
+[96msrc/services/project.service.ts[0m:[93m118[0m:[93m57[0m - [91merror[0m[90m TS1005: [0m':' expected.
+
+[7m118[0m                     this.handleUpdate({ project_id, "vi", body });
+[7m   [0m [91m                                                        ~[0m
+[96msrc/services/project.service.ts[0m:[93m119[0m:[93m57[0m - [91merror[0m[90m TS1005: [0m':' expected.
+
+[7m119[0m                     this.handleUpdate({ project_id, "vi", body });
+[7m   [0m [91m                                                        ~[0m
+[96msrc/services/project.service.ts[0m:[93m120[0m:[93m18[0m - [91merror[0m[90m TS1128: [0mDeclaration or statement expected.
+
+[7m120[0m                 });
+[7m   [0m [91m                 ~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-02 15:49:21 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/services/project.service.ts[0m:[93m118[0m:[93m41[0m - [91merror[0m[90m TS2345: [0mArgument of type '{ id: string; vi: any; body: any; }' is not assignable to parameter of type '{ project_id: any; lang: any; body: any; }'.
+  Object literal may only specify known properties, and 'id' does not exist in type '{ project_id: any; lang: any; body: any; }'.
+
+[7m118[0m                     this.handleUpdate({ id, "vi", body });
+[7m   [0m [91m                                        ~~[0m
+[96msrc/services/project.service.ts[0m:[93m118[0m:[93m49[0m - [91merror[0m[90m TS1005: [0m':' expected.
+
+[7m118[0m                     this.handleUpdate({ id, "vi", body });
+[7m   [0m [91m                                                ~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/services/project.service.ts[0m:[93m118[0m:[93m41[0m - [91merror[0m[90m TS2345: [0mArgument of type '{ id: string; vi: any; body: any; }' is not assignable to parameter of type '{ project_id: any; lang: any; body: any; }'.
+  Object literal may only specify known properties, and 'id' does not exist in type '{ project_id: any; lang: any; body: any; }'.
+
+[7m118[0m                     this.handleUpdate({ id, "vi", body });
+[7m   [0m [91m                                        ~~[0m
+[96msrc/services/project.service.ts[0m:[93m118[0m:[93m49[0m - [91merror[0m[90m TS1005: [0m':' expected.
+
+[7m118[0m                     this.handleUpdate({ id, "vi", body });
+[7m   [0m [91m                                                ~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-02 15:49:41 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/services/project.service.ts[0m:[93m118[0m:[93m19[0m - [91merror[0m[90m TS2304: [0mCannot find name 'async'.
+
+[7m118[0m                   async  this.handleUpdate({ id, "vi", body });
+[7m   [0m [91m                  ~~~~~[0m
+[96msrc/services/project.service.ts[0m:[93m118[0m:[93m46[0m - [91merror[0m[90m TS2345: [0mArgument of type '{ id: string; vi: any; body: any; }' is not assignable to parameter of type '{ project_id: any; lang: any; body: any; }'.
+  Object literal may only specify known properties, and 'id' does not exist in type '{ project_id: any; lang: any; body: any; }'.
+
+[7m118[0m                   async  this.handleUpdate({ id, "vi", body });
+[7m   [0m [91m                                             ~~[0m
+[96msrc/services/project.service.ts[0m:[93m118[0m:[93m19[0m - [91merror[0m[90m TS1434: [0mUnexpected keyword or identifier.
+
+[7m118[0m                   async  this.handleUpdate({ id, "vi", body });
+[7m   [0m [91m                  ~~~~~[0m
+[96msrc/services/project.service.ts[0m:[93m118[0m:[93m54[0m - [91merror[0m[90m TS1005: [0m':' expected.
+
+[7m118[0m                   async  this.handleUpdate({ id, "vi", body });
+[7m   [0m [91m                                                     ~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/services/project.service.ts[0m:[93m118[0m:[93m19[0m - [91merror[0m[90m TS2304: [0mCannot find name 'async'.
+
+[7m118[0m                   async  this.handleUpdate({ id, "vi", body });
+[7m   [0m [91m                  ~~~~~[0m
+[96msrc/services/project.service.ts[0m:[93m118[0m:[93m46[0m - [91merror[0m[90m TS2345: [0mArgument of type '{ id: string; vi: any; body: any; }' is not assignable to parameter of type '{ project_id: any; lang: any; body: any; }'.
+  Object literal may only specify known properties, and 'id' does not exist in type '{ project_id: any; lang: any; body: any; }'.
+
+[7m118[0m                   async  this.handleUpdate({ id, "vi", body });
+[7m   [0m [91m                                             ~~[0m
+[96msrc/services/project.service.ts[0m:[93m118[0m:[93m19[0m - [91merror[0m[90m TS1434: [0mUnexpected keyword or identifier.
+
+[7m118[0m                   async  this.handleUpdate({ id, "vi", body });
+[7m   [0m [91m                  ~~~~~[0m
+[96msrc/services/project.service.ts[0m:[93m118[0m:[93m54[0m - [91merror[0m[90m TS1005: [0m':' expected.
+
+[7m118[0m                   async  this.handleUpdate({ id, "vi", body });
+[7m   [0m [91m                                                     ~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-02 15:49:50 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/services/project.service.ts[0m:[93m118[0m:[93m47[0m - [91merror[0m[90m TS2345: [0mArgument of type '{ id: string; vi: any; body: any; }' is not assignable to parameter of type '{ project_id: any; lang: any; body: any; }'.
+  Object literal may only specify known properties, and 'id' does not exist in type '{ project_id: any; lang: any; body: any; }'.
+
+[7m118[0m                     await this.handleUpdate({ id, "vi", body });
+[7m   [0m [91m                                              ~~[0m
+[96msrc/services/project.service.ts[0m:[93m118[0m:[93m55[0m - [91merror[0m[90m TS1005: [0m':' expected.
+
+[7m118[0m                     await this.handleUpdate({ id, "vi", body });
+[7m   [0m [91m                                                      ~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/services/project.service.ts[0m:[93m118[0m:[93m47[0m - [91merror[0m[90m TS2345: [0mArgument of type '{ id: string; vi: any; body: any; }' is not assignable to parameter of type '{ project_id: any; lang: any; body: any; }'.
+  Object literal may only specify known properties, and 'id' does not exist in type '{ project_id: any; lang: any; body: any; }'.
+
+[7m118[0m                     await this.handleUpdate({ id, "vi", body });
+[7m   [0m [91m                                              ~~[0m
+[96msrc/services/project.service.ts[0m:[93m118[0m:[93m55[0m - [91merror[0m[90m TS1005: [0m':' expected.
+
+[7m118[0m                     await this.handleUpdate({ id, "vi", body });
+[7m   [0m [91m                                                      ~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-02 15:49:58 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/services/project.service.ts[0m:[93m118[0m:[93m47[0m - [91merror[0m[90m TS2345: [0mArgument of type '{ id: string; vi: any; body: any; }' is not assignable to parameter of type '{ project_id: any; lang: any; body: any; }'.
+  Object literal may only specify known properties, and 'id' does not exist in type '{ project_id: any; lang: any; body: any; }'.
+
+[7m118[0m                     await this.handleUpdate({ id: id, "vi", body });
+[7m   [0m [91m                                              ~~~~~~[0m
+[96msrc/services/project.service.ts[0m:[93m118[0m:[93m59[0m - [91merror[0m[90m TS1005: [0m':' expected.
+
+[7m118[0m                     await this.handleUpdate({ id: id, "vi", body });
+[7m   [0m [91m                                                          ~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/services/project.service.ts[0m:[93m118[0m:[93m47[0m - [91merror[0m[90m TS2345: [0mArgument of type '{ id: string; vi: any; body: any; }' is not assignable to parameter of type '{ project_id: any; lang: any; body: any; }'.
+  Object literal may only specify known properties, and 'id' does not exist in type '{ project_id: any; lang: any; body: any; }'.
+
+[7m118[0m                     await this.handleUpdate({ id: id, "vi", body });
+[7m   [0m [91m                                              ~~~~~~[0m
+[96msrc/services/project.service.ts[0m:[93m118[0m:[93m59[0m - [91merror[0m[90m TS1005: [0m':' expected.
+
+[7m118[0m                     await this.handleUpdate({ id: id, "vi", body });
+[7m   [0m [91m                                                          ~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-02 15:50:16 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/services/project.service.ts[0m:[93m118[0m:[93m63[0m - [91merror[0m[90m TS2345: [0mArgument of type '{ project_id: string; vi: any; body: any; }' is not assignable to parameter of type '{ project_id: any; lang: any; body: any; }'.
+  Object literal may only specify known properties, and '"vi"' does not exist in type '{ project_id: any; lang: any; body: any; }'.
+
+[7m118[0m                     await this.handleUpdate({ project_id: id, "vi", body });
+[7m   [0m [91m                                                              ~~~~[0m
+[96msrc/services/project.service.ts[0m:[93m118[0m:[93m67[0m - [91merror[0m[90m TS1005: [0m':' expected.
+
+[7m118[0m                     await this.handleUpdate({ project_id: id, "vi", body });
+[7m   [0m [91m                                                                  ~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/services/project.service.ts[0m:[93m118[0m:[93m63[0m - [91merror[0m[90m TS2345: [0mArgument of type '{ project_id: string; vi: any; body: any; }' is not assignable to parameter of type '{ project_id: any; lang: any; body: any; }'.
+  Object literal may only specify known properties, and '"vi"' does not exist in type '{ project_id: any; lang: any; body: any; }'.
+
+[7m118[0m                     await this.handleUpdate({ project_id: id, "vi", body });
+[7m   [0m [91m                                                              ~~~~[0m
+[96msrc/services/project.service.ts[0m:[93m118[0m:[93m67[0m - [91merror[0m[90m TS1005: [0m':' expected.
+
+[7m118[0m                     await this.handleUpdate({ project_id: id, "vi", body });
+[7m   [0m [91m                                                                  ~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-02 15:53:45 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/services/project.service.ts[0m:[93m122[0m:[93m22[0m - [91merror[0m[90m TS2552: [0mCannot find name 'error'. Did you mean 'Error'?
+
+[7m122[0m             }).catch(error){
+[7m   [0m [91m                     ~~~~~[0m
+
+  [96mnode_modules/typescript/lib/lib.es5.d.ts[0m:[93m1039[0m:[93m13[0m
+    [7m1039[0m declare var Error: ErrorConstructor;
+    [7m    [0m [96m            ~~~~~[0m
+    'Error' is declared here.
+[96msrc/services/project.service.ts[0m:[93m123[0m:[93m25[0m - [91merror[0m[90m TS2552: [0mCannot find name 'error'. Did you mean 'Error'?
+
+[7m123[0m             console.log(error);
+[7m   [0m [91m                        ~~~~~[0m
+
+  [96mnode_modules/typescript/lib/lib.es5.d.ts[0m:[93m1039[0m:[93m13[0m
+    [7m1039[0m declare var Error: ErrorConstructor;
+    [7m    [0m [96m            ~~~~~[0m
+    'Error' is declared here.
+[96msrc/services/project.service.ts[0m:[93m122[0m:[93m28[0m - [91merror[0m[90m TS1005: [0m';' expected.
+
+[7m122[0m             }).catch(error){
+[7m   [0m [91m                           ~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/services/project.service.ts[0m:[93m122[0m:[93m22[0m - [91merror[0m[90m TS2552: [0mCannot find name 'error'. Did you mean 'Error'?
+
+[7m122[0m             }).catch(error){
+[7m   [0m [91m                     ~~~~~[0m
+
+  [96mnode_modules/typescript/lib/lib.es5.d.ts[0m:[93m1039[0m:[93m13[0m
+    [7m1039[0m declare var Error: ErrorConstructor;
+    [7m    [0m [96m            ~~~~~[0m
+    'Error' is declared here.
+[96msrc/services/project.service.ts[0m:[93m123[0m:[93m25[0m - [91merror[0m[90m TS2552: [0mCannot find name 'error'. Did you mean 'Error'?
+
+[7m123[0m             console.log(error);
+[7m   [0m [91m                        ~~~~~[0m
+
+  [96mnode_modules/typescript/lib/lib.es5.d.ts[0m:[93m1039[0m:[93m13[0m
+    [7m1039[0m declare var Error: ErrorConstructor;
+    [7m    [0m [96m            ~~~~~[0m
+    'Error' is declared here.
+[96msrc/services/project.service.ts[0m:[93m122[0m:[93m28[0m - [91merror[0m[90m TS1005: [0m';' expected.
+
+[7m122[0m             }).catch(error){
+[7m   [0m [91m                           ~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-02 15:54:12 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/modules/controllers/project.controller.ts[0m:[93m55[0m:[93m40[0m - [91merror[0m[90m TS2339: [0mProperty 'deleteMultipleIds' does not exist on type 'ProjectService'.
+
+[7m55[0m             const data = await project.deleteMultipleIds(ids);
+[7m  [0m [91m                                       ~~~~~~~~~~~~~~~~~[0m
+[96msrc/modules/controllers/project.controller.ts[0m:[93m64[0m:[93m40[0m - [91merror[0m[90m TS2339: [0mProperty 'deleteById' does not exist on type 'ProjectService'.
+
+[7m64[0m             const data = await project.deleteById(req.params.id);
+[7m  [0m [91m                                       ~~~~~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/modules/controllers/project.controller.ts[0m:[93m55[0m:[93m40[0m - [91merror[0m[90m TS2339: [0mProperty 'deleteMultipleIds' does not exist on type 'ProjectService'.
+
+[7m55[0m             const data = await project.deleteMultipleIds(ids);
+[7m  [0m [91m                                       ~~~~~~~~~~~~~~~~~[0m
+[96msrc/modules/controllers/project.controller.ts[0m:[93m64[0m:[93m40[0m - [91merror[0m[90m TS2339: [0mProperty 'deleteById' does not exist on type 'ProjectService'.
+
+[7m64[0m             const data = await project.deleteById(req.params.id);
+[7m  [0m [91m                                       ~~~~~~~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-02 15:57:50 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/services/project.service.ts[0m:[93m119[0m:[93m80[0m - [91merror[0m[90m TS1109: [0mExpression expected.
+
+[7m119[0m                     await this.handleUpdate({ project_id: id, lang: "en", body:; body });
+[7m   [0m [91m                                                                               ~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/services/project.service.ts[0m:[93m119[0m:[93m80[0m - [91merror[0m[90m TS1109: [0mExpression expected.
+
+[7m119[0m                     await this.handleUpdate({ project_id: id, lang: "en", body:; body });
+[7m   [0m [91m                                                                               ~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
