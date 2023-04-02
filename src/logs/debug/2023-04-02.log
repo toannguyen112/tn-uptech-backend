@@ -1054,3 +1054,250 @@
 2023-04-02 14:20:33 info: [0mGET /projects/show/5 [36m304[0m 52.965 ms - -[0m
 2023-04-02 14:20:33 info: [0mGET /projects [36m304[0m 7.927 ms - -[0m
 2023-04-02 14:21:13 info: [0mGET /projects [36m304[0m 352.649 ms - -[0m
+2023-04-02 14:23:02 info: [0mGET /projects? [36m304[0m 122.238 ms - -[0m
+2023-04-02 14:23:02 info: [0mGET /projects/show/5 [36m304[0m 185.332 ms - -[0m
+2023-04-02 14:23:06 info: [0mGET /projects/show/5 [36m304[0m 17.849 ms - -[0m
+2023-04-02 14:23:06 info: [0mGET /projects [36m304[0m 28.913 ms - -[0m
+2023-04-02 14:23:20 info: [0mGET /projects/show/5 [36m304[0m 213.070 ms - -[0m
+2023-04-02 14:23:20 info: [0mGET /projects? [36m304[0m 205.700 ms - -[0m
+2023-04-02 14:23:22 info: [0mGET /projects [36m304[0m 21.485 ms - -[0m
+2023-04-02 14:23:45 info: [0mOPTIONS /projects/create [32m204[0m 11.432 ms - 0[0m
+2023-04-02 14:23:45 info: [0mPOST /projects/create [32m200[0m 100.608 ms - 2[0m
+2023-04-02 14:23:45 info: [0mGET /projects? [32m200[0m 25.808 ms - -[0m
+2023-04-02 14:23:48 info: [0mGET /projects/show/6 [32m200[0m 10.739 ms - 250[0m
+2023-04-02 14:23:48 info: [0mGET /projects [32m200[0m 13.526 ms - -[0m
+2023-04-02 14:23:49 info: [0mGET /projects/show/6 [36m304[0m 10.800 ms - -[0m
+2023-04-02 14:23:49 info: [0mGET /projects? [36m304[0m 10.654 ms - -[0m
+2023-04-02 14:23:51 info: [0mGET /projects/show/6 [36m304[0m 23.672 ms - -[0m
+2023-04-02 14:23:51 info: [0mGET /projects [36m304[0m 15.957 ms - -[0m
+2023-04-02 14:23:53 info: [0mOPTIONS /folders/get-medias [32m204[0m 0.382 ms - 0[0m
+2023-04-02 14:23:53 info: [0mPOST /folders/get-medias [32m200[0m 40.435 ms - 31[0m
+2023-04-02 14:23:53 info: [0mGET /folders [36m304[0m 52.832 ms - -[0m
+2023-04-02 14:29:22 info: [0mPOST /medias/create [32m200[0m 144.304 ms - 31[0m
+2023-04-02 14:29:22 info: [0mOPTIONS /folders/get-medias [32m204[0m 0.814 ms - 0[0m
+2023-04-02 14:29:22 info: [0mPOST /folders/get-medias [32m200[0m 13.679 ms - 312[0m
+2023-04-02 14:29:25 info: [0mPOST /folders/get-medias [32m200[0m 8.122 ms - 312[0m
+2023-04-02 14:29:25 info: [0mGET /folders [36m304[0m 34.920 ms - -[0m
+2023-04-02 14:29:27 info: [0mOPTIONS /projects/update/6 [32m204[0m 0.376 ms - 0[0m
+2023-04-02 14:29:27 info: [0mPUT /projects/update/6 [32m200[0m 55.952 ms - 32[0m
+2023-04-02 14:29:27 info: [0mGET /projects/show/6 [32m200[0m 19.609 ms - 804[0m
+2023-04-02 14:29:27 info: [0mGET /projects/show/6 [36m304[0m 7.504 ms - -[0m
+2023-04-02 14:29:27 info: [0mGET /projects/show/5 [36m304[0m 34.422 ms - -[0m
+2023-04-02 14:29:27 info: [0mGET /projects/show/5 [36m304[0m 17.953 ms - -[0m
+2023-04-02 14:29:27 info: [0mGET /projects [32m200[0m 27.712 ms - -[0m
+2023-04-02 14:29:32 info: [0mPUT /projects/update/6 [32m200[0m 9.709 ms - 32[0m
+2023-04-02 14:29:32 info: [0mGET /projects/show/5 [36m304[0m 30.859 ms - -[0m
+2023-04-02 14:29:32 info: [0mGET /projects/show/6 [32m200[0m 31.873 ms - 803[0m
+2023-04-02 14:29:32 info: [0mGET /projects/show/5 [36m304[0m 6.166 ms - -[0m
+2023-04-02 14:29:32 info: [0mGET /projects/show/6 [36m304[0m 9.142 ms - -[0m
+2023-04-02 14:29:32 info: [0mGET /projects [32m200[0m 10.229 ms - -[0m
+2023-04-02 14:29:35 info: [0mOPTIONS /projects/update/6 [32m204[0m 0.571 ms - 0[0m
+2023-04-02 14:29:35 info: [0mPUT /projects/update/6 [32m200[0m 28.677 ms - 32[0m
+2023-04-02 14:29:35 info: [0mGET /projects/show/5 [36m304[0m 11.294 ms - -[0m
+2023-04-02 14:29:35 info: [0mGET /projects/show/6 [32m200[0m 7.663 ms - 806[0m
+2023-04-02 14:29:35 info: [0mGET /projects/show/6 [36m304[0m 18.398 ms - -[0m
+2023-04-02 14:29:35 info: [0mGET /projects/show/5 [36m304[0m 24.827 ms - -[0m
+2023-04-02 14:29:36 info: [0mGET /projects [32m200[0m 14.076 ms - -[0m
+2023-04-02 14:29:37 info: [0mPOST /medias/create [0m-[0m - ms - -[0m
+2023-04-02 14:29:39 info: [0mGET /projects [36m304[0m 153.083 ms - -[0m
+2023-04-02 14:29:39 info: [0mGET /projects/show/6 [36m304[0m 105.007 ms - -[0m
+2023-04-02 14:29:40 info: [0mGET /projects [36m304[0m 12.031 ms - -[0m
+2023-04-02 14:29:48 info: [0mOPTIONS /projects/update/6 [32m204[0m 0.458 ms - 0[0m
+2023-04-02 14:29:48 info: [0mPUT /projects/update/6 [32m200[0m 22.919 ms - 32[0m
+2023-04-02 14:29:48 info: [0mGET /projects/show/6 [32m200[0m 20.473 ms - 814[0m
+2023-04-02 14:29:48 info: [0mGET /projects [32m200[0m 21.764 ms - -[0m
+2023-04-02 14:30:01 info: [0mOPTIONS /projects/update/6 [32m204[0m 0.517 ms - 0[0m
+2023-04-02 14:30:01 info: [0mPUT /projects/update/6 [32m200[0m 36.940 ms - 32[0m
+2023-04-02 14:30:01 info: [0mGET /projects/show/6 [32m200[0m 15.370 ms - 814[0m
+2023-04-02 14:30:02 info: [0mGET /projects [32m200[0m 14.053 ms - -[0m
+2023-04-02 14:30:47 info: [0mOPTIONS /projects/update/6 [32m204[0m 0.591 ms - 0[0m
+2023-04-02 14:30:47 info: [0mPUT /projects/update/6 [32m200[0m 34.192 ms - 32[0m
+2023-04-02 14:30:48 info: [0mGET /projects/show/6 [32m200[0m 13.933 ms - 814[0m
+2023-04-02 14:30:48 info: [0mGET /projects [32m200[0m 14.012 ms - -[0m
+2023-04-02 14:31:02 info: [0mOPTIONS /projects/update/6 [32m204[0m 1.211 ms - 0[0m
+2023-04-02 14:31:02 info: [0mPUT /projects/update/6 [32m200[0m 124.971 ms - 32[0m
+2023-04-02 14:31:02 info: [0mGET /projects/show/6 [32m200[0m 27.618 ms - 815[0m
+2023-04-02 14:31:03 info: [0mGET /projects [32m200[0m 21.179 ms - -[0m
+2023-04-02 14:31:06 info: [0mPUT /projects/update/6 [32m200[0m 22.036 ms - 32[0m
+2023-04-02 14:31:06 info: [0mGET /projects/show/6 [32m200[0m 15.122 ms - 31[0m
+2023-04-02 14:31:06 info: [0mGET /projects [32m200[0m 23.534 ms - -[0m
+2023-04-02 14:31:27 info: =================================
+2023-04-02 14:31:27 info: ======= ENV: development =======
+2023-04-02 14:31:27 info: 🚀 App listening on the port 8000
+2023-04-02 14:31:27 info: =================================
+2023-04-02 14:31:39 info: [0mOPTIONS /projects/update/6 [32m204[0m 2.062 ms - 0[0m
+2023-04-02 14:31:40 info: [0mPUT /projects/update/6 [32m200[0m 186.472 ms - 32[0m
+2023-04-02 14:31:40 info: [0mGET /projects/show/6 [32m200[0m 32.739 ms - 249[0m
+2023-04-02 14:31:41 info: [0mGET /projects [32m200[0m 139.062 ms - -[0m
+2023-04-02 14:32:11 info: [0mGET /projects [36m304[0m 107.880 ms - -[0m
+2023-04-02 14:32:11 info: [0mGET /projects/show/6 [36m304[0m 41.546 ms - -[0m
+2023-04-02 14:32:11 info: [0mGET /projects [36m304[0m 8.216 ms - -[0m
+2023-04-02 14:34:21 info: =================================
+2023-04-02 14:34:21 info: ======= ENV: development =======
+2023-04-02 14:34:21 info: 🚀 App listening on the port 8000
+2023-04-02 14:34:21 info: =================================
+2023-04-02 14:34:27 info: =================================
+2023-04-02 14:34:27 info: ======= ENV: development =======
+2023-04-02 14:34:27 info: 🚀 App listening on the port 8000
+2023-04-02 14:34:27 info: =================================
+2023-04-02 14:34:35 info: =================================
+2023-04-02 14:34:35 info: ======= ENV: development =======
+2023-04-02 14:34:35 info: 🚀 App listening on the port 8000
+2023-04-02 14:34:35 info: =================================
+2023-04-02 14:35:09 info: =================================
+2023-04-02 14:35:09 info: ======= ENV: development =======
+2023-04-02 14:35:09 info: 🚀 App listening on the port 8000
+2023-04-02 14:35:09 info: =================================
+2023-04-02 14:38:01 info: =================================
+2023-04-02 14:38:01 info: ======= ENV: development =======
+2023-04-02 14:38:01 info: 🚀 App listening on the port 8000
+2023-04-02 14:38:01 info: =================================
+2023-04-02 14:38:11 info: =================================
+2023-04-02 14:38:11 info: ======= ENV: development =======
+2023-04-02 14:38:11 info: 🚀 App listening on the port 8000
+2023-04-02 14:38:11 info: =================================
+2023-04-02 14:38:20 info: =================================
+2023-04-02 14:38:20 info: ======= ENV: development =======
+2023-04-02 14:38:20 info: 🚀 App listening on the port 8000
+2023-04-02 14:38:20 info: =================================
+2023-04-02 14:38:33 info: =================================
+2023-04-02 14:38:33 info: ======= ENV: development =======
+2023-04-02 14:38:33 info: 🚀 App listening on the port 8000
+2023-04-02 14:38:33 info: =================================
+2023-04-02 14:39:30 info: =================================
+2023-04-02 14:39:30 info: ======= ENV: development =======
+2023-04-02 14:39:30 info: 🚀 App listening on the port 8000
+2023-04-02 14:39:30 info: =================================
+2023-04-02 14:40:54 info: =================================
+2023-04-02 14:40:54 info: ======= ENV: development =======
+2023-04-02 14:40:54 info: 🚀 App listening on the port 8000
+2023-04-02 14:40:54 info: =================================
+2023-04-02 14:41:03 info: =================================
+2023-04-02 14:41:03 info: ======= ENV: development =======
+2023-04-02 14:41:03 info: 🚀 App listening on the port 8000
+2023-04-02 14:41:03 info: =================================
+2023-04-02 14:41:16 info: =================================
+2023-04-02 14:41:17 info: ======= ENV: development =======
+2023-04-02 14:41:17 info: 🚀 App listening on the port 8000
+2023-04-02 14:41:17 info: =================================
+2023-04-02 14:41:46 info: =================================
+2023-04-02 14:41:46 info: ======= ENV: development =======
+2023-04-02 14:41:46 info: 🚀 App listening on the port 8000
+2023-04-02 14:41:46 info: =================================
+2023-04-02 14:42:22 info: =================================
+2023-04-02 14:42:22 info: ======= ENV: development =======
+2023-04-02 14:42:22 info: 🚀 App listening on the port 8000
+2023-04-02 14:42:22 info: =================================
+2023-04-02 14:43:22 info: =================================
+2023-04-02 14:43:22 info: ======= ENV: development =======
+2023-04-02 14:43:22 info: 🚀 App listening on the port 8000
+2023-04-02 14:43:22 info: =================================
+2023-04-02 14:43:34 info: [0mGET /projects/show/6 [36m304[0m 1054.264 ms - -[0m
+2023-04-02 14:43:34 info: [0mGET /projects/show/6 [36m304[0m 102.358 ms - -[0m
+2023-04-02 14:43:35 info: [0mGET /projects [36m304[0m 560.572 ms - -[0m
+2023-04-02 14:43:41 info: [0mGET /projects/show/6 [36m304[0m 27.366 ms - -[0m
+2023-04-02 14:43:41 info: [0mGET /projects/show/6 [36m304[0m 17.335 ms - -[0m
+2023-04-02 14:43:42 info: [0mGET /projects [36m304[0m 31.318 ms - -[0m
+2023-04-02 14:44:42 info: =================================
+2023-04-02 14:44:42 info: ======= ENV: development =======
+2023-04-02 14:44:42 info: 🚀 App listening on the port 8000
+2023-04-02 14:44:42 info: =================================
+2023-04-02 14:45:00 info: =================================
+2023-04-02 14:45:00 info: ======= ENV: development =======
+2023-04-02 14:45:00 info: 🚀 App listening on the port 8000
+2023-04-02 14:45:00 info: =================================
+2023-04-02 14:45:09 info: [0mGET /projects/show/6 [36m304[0m 67.222 ms - -[0m
+2023-04-02 14:45:09 info: [0mGET /projects [36m304[0m 367.754 ms - -[0m
+2023-04-02 14:45:10 info: [0mGET /projects [36m304[0m 49.251 ms - -[0m
+2023-04-02 14:45:13 info: [0mOPTIONS /projects/update/6 [32m204[0m 2.379 ms - 0[0m
+2023-04-02 14:45:13 info: [0mPUT /projects/update/6 [32m200[0m 79.360 ms - 2[0m
+2023-04-02 14:45:13 info: [0mGET /projects/show/6 [32m200[0m 12.070 ms - 252[0m
+2023-04-02 14:45:13 info: [0mGET /projects [32m200[0m 25.113 ms - -[0m
+2023-04-02 14:45:18 info: [0mOPTIONS /projects/update/6 [32m204[0m 1.415 ms - 0[0m
+2023-04-02 14:45:18 info: [0mPUT /projects/update/6 [32m200[0m 128.931 ms - 2[0m
+2023-04-02 14:45:18 info: [0mGET /projects/show/6 [32m200[0m 18.733 ms - 284[0m
+2023-04-02 14:45:19 info: [0mGET /projects [32m200[0m 35.022 ms - -[0m
+2023-04-02 14:45:31 info: [0mOPTIONS /projects/update/6 [32m204[0m 12.387 ms - 0[0m
+2023-04-02 14:45:31 info: [0mPUT /projects/update/6 [32m200[0m 53.049 ms - 2[0m
+2023-04-02 14:45:31 info: [0mGET /projects/show/6 [32m200[0m 28.848 ms - 297[0m
+2023-04-02 14:45:32 info: [0mGET /projects [32m200[0m 29.305 ms - -[0m
+2023-04-02 14:45:34 info: [0mOPTIONS /folders/get-medias [32m204[0m 0.935 ms - 0[0m
+2023-04-02 14:45:34 info: [0mPOST /folders/get-medias [32m200[0m 81.464 ms - 312[0m
+2023-04-02 14:45:34 info: [0mGET /folders [36m304[0m 63.287 ms - -[0m
+2023-04-02 14:45:35 info: [0mPOST /folders/get-medias [32m200[0m 16.970 ms - 312[0m
+2023-04-02 14:45:35 info: [0mGET /folders [36m304[0m 30.663 ms - -[0m
+2023-04-02 14:45:38 info: [0mOPTIONS /projects/update/6 [32m204[0m 0.325 ms - 0[0m
+2023-04-02 14:45:38 info: [0mPUT /projects/update/6 [32m200[0m 26.784 ms - 2[0m
+2023-04-02 14:45:38 info: [0mGET /projects/show/6 [32m200[0m 8.739 ms - 851[0m
+2023-04-02 14:45:38 info: [0mGET /projects [32m200[0m 26.460 ms - -[0m
+2023-04-02 14:45:41 info: [0mGET /projects [36m304[0m 58.922 ms - -[0m
+2023-04-02 14:45:41 info: [0mGET /projects/show/6 [36m304[0m 29.852 ms - -[0m
+2023-04-02 14:45:42 info: [0mGET /projects [36m304[0m 111.354 ms - -[0m
+2023-04-02 14:45:59 info: [0mOPTIONS /projects/update/6 [32m204[0m 2.397 ms - 0[0m
+2023-04-02 14:46:00 info: [0mPUT /projects/update/6 [32m200[0m 377.151 ms - 2[0m
+2023-04-02 14:46:00 info: [0mGET /projects/show/6 [32m200[0m 161.526 ms - 31[0m
+2023-04-02 14:46:01 info: [0mGET /projects [32m200[0m 25.116 ms - -[0m
+2023-04-02 14:46:11 info: [0mGET /projects [36m304[0m 246.414 ms - -[0m
+2023-04-02 14:46:11 info: [0mGET /projects/show/6 [36m304[0m 91.185 ms - -[0m
+2023-04-02 14:46:12 info: [0mGET /projects [36m304[0m 92.384 ms - -[0m
+2023-04-02 14:46:25 info: [0mOPTIONS /projects/update/6 [32m204[0m 1.186 ms - 0[0m
+2023-04-02 14:46:25 info: [0mPUT /projects/update/6 [32m200[0m 369.539 ms - 2[0m
+2023-04-02 14:46:25 info: [0mGET /projects/show/6 [32m200[0m 31.415 ms - 224[0m
+2023-04-02 14:46:26 info: [0mGET /projects [32m200[0m 159.309 ms - -[0m
+2023-04-02 14:46:28 info: [0mPUT /projects/update/6 [32m200[0m 42.649 ms - 2[0m
+2023-04-02 14:46:29 info: [0mGET /projects/show/6 [32m200[0m 131.828 ms - 262[0m
+2023-04-02 14:46:29 info: [0mGET /projects [32m200[0m 17.662 ms - -[0m
+2023-04-02 14:46:32 info: [0mGET /projects [36m304[0m 254.618 ms - -[0m
+2023-04-02 14:46:32 info: [0mGET /projects/show/6 [36m304[0m 102.246 ms - -[0m
+2023-04-02 14:46:34 info: [0mGET /projects [36m304[0m 68.912 ms - -[0m
+2023-04-02 14:46:50 info: [0mOPTIONS /projects/update/6 [32m204[0m 1.721 ms - 0[0m
+2023-04-02 14:46:50 info: [0mPUT /projects/update/6 [32m200[0m 97.386 ms - 2[0m
+2023-04-02 14:46:50 info: [0mGET /projects/show/6 [32m200[0m 24.507 ms - 261[0m
+2023-04-02 14:46:51 info: [0mGET /projects [32m200[0m 20.690 ms - -[0m
+2023-04-02 14:46:54 info: [0mPUT /projects/update/6 [32m200[0m 42.370 ms - 2[0m
+2023-04-02 14:46:54 info: [0mGET /projects/show/6 [32m200[0m 75.186 ms - 31[0m
+2023-04-02 14:46:55 info: [0mGET /projects [32m200[0m 12.407 ms - -[0m
+2023-04-02 14:47:34 info: =================================
+2023-04-02 14:47:34 info: ======= ENV: development =======
+2023-04-02 14:47:34 info: 🚀 App listening on the port 8000
+2023-04-02 14:47:34 info: =================================
+2023-04-02 14:47:37 info: [0mGET /projects? [32m200[0m 313.869 ms - -[0m
+2023-04-02 14:47:40 info: [0mGET /projects/show/6 [36m304[0m 60.561 ms - -[0m
+2023-04-02 14:47:41 info: [0mGET /projects [36m304[0m 105.912 ms - -[0m
+2023-04-02 14:48:04 info: =================================
+2023-04-02 14:48:04 info: ======= ENV: development =======
+2023-04-02 14:48:04 info: 🚀 App listening on the port 8000
+2023-04-02 14:48:04 info: =================================
+2023-04-02 14:48:11 info: [0mGET /projects/show/6 [32m200[0m 200.612 ms - 263[0m
+2023-04-02 14:48:11 info: [0mGET /projects [36m304[0m 462.833 ms - -[0m
+2023-04-02 14:48:12 info: [0mGET /projects [36m304[0m 12.672 ms - -[0m
+2023-04-02 14:48:14 info: [0mOPTIONS /projects/update/6 [32m204[0m 0.954 ms - 0[0m
+2023-04-02 14:48:14 info: [0mPUT /projects/update/6 [32m200[0m 65.097 ms - 2[0m
+2023-04-02 14:48:14 info: [0mGET /projects/show/6 [32m200[0m 23.321 ms - 261[0m
+2023-04-02 14:48:15 info: [0mGET /projects [32m200[0m 93.548 ms - -[0m
+2023-04-02 14:48:19 info: [0mPUT /projects/update/6 [32m200[0m 37.562 ms - 2[0m
+2023-04-02 14:48:19 info: [0mGET /projects/show/6 [32m200[0m 34.434 ms - 264[0m
+2023-04-02 14:48:20 info: [0mGET /projects [36m304[0m 34.875 ms - -[0m
+2023-04-02 14:48:21 info: [0mOPTIONS /folders/get-medias [32m204[0m 0.273 ms - 0[0m
+2023-04-02 14:48:21 info: [0mPOST /folders/get-medias [32m200[0m 20.585 ms - 312[0m
+2023-04-02 14:48:21 info: [0mGET /folders [36m304[0m 84.863 ms - -[0m
+2023-04-02 14:48:24 info: [0mOPTIONS /projects/update/6 [32m204[0m 0.609 ms - 0[0m
+2023-04-02 14:48:24 info: [0mPUT /projects/update/6 [32m200[0m 25.252 ms - 2[0m
+2023-04-02 14:48:24 info: [0mGET /projects/show/6 [32m200[0m 20.295 ms - 541[0m
+2023-04-02 14:48:24 info: [0mGET /projects [32m200[0m 13.426 ms - -[0m
+2023-04-02 14:48:27 info: [0mGET /projects/show/6 [36m304[0m 117.323 ms - -[0m
+2023-04-02 14:48:27 info: [0mGET /projects? [32m200[0m 137.483 ms - -[0m
+2023-04-02 14:48:30 info: [0mGET /projects/show/6 [36m304[0m 61.832 ms - -[0m
+2023-04-02 14:48:31 info: [0mGET /projects [36m304[0m 53.692 ms - -[0m
+2023-04-02 14:48:35 info: [0mOPTIONS /folders/get-medias [32m204[0m 3.625 ms - 0[0m
+2023-04-02 14:48:35 info: [0mPOST /folders/get-medias [32m200[0m 26.048 ms - 312[0m
+2023-04-02 14:48:35 info: [0mGET /folders [36m304[0m 25.883 ms - -[0m
+2023-04-02 14:48:40 info: [0mOPTIONS /projects/update/6 [32m204[0m 0.701 ms - 0[0m
+2023-04-02 14:48:41 info: [0mPUT /projects/update/6 [32m200[0m 45.195 ms - 2[0m
+2023-04-02 14:48:41 info: [0mGET /projects/show/6 [32m200[0m 8.502 ms - 879[0m
+2023-04-02 14:48:41 info: [0mGET /projects/show/6 [36m304[0m 6.623 ms - -[0m
+2023-04-02 14:48:41 info: [0mGET /projects [32m200[0m 23.733 ms - -[0m
+2023-04-02 14:48:44 info: [0mGET /projects/show/6 [36m304[0m 15.801 ms - -[0m
+2023-04-02 14:48:44 info: [0mGET /projects? [32m200[0m 12.240 ms - -[0m
+2023-04-02 14:48:46 info: [0mGET /projects/show/6 [36m304[0m 26.386 ms - -[0m
+2023-04-02 14:48:47 info: [0mGET /projects [36m304[0m 14.121 ms - -[0m

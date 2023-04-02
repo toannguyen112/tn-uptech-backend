@@ -51,6 +51,7 @@ export class ProjectService {
         })
             .then(async (project: any) => {
 
+                if (project) {
                 const projectId = project.id;
 
                 await models.ProjectTranslation.create({
@@ -63,7 +64,8 @@ export class ProjectService {
                     ...body,
                     project_id: projectId,
                     locale: 'en'
-                });
+                });                    
+                }
             });
     }
 
@@ -72,7 +74,6 @@ export class ProjectService {
         const project = await models.Project.findOne({
             where: {
                 id: id,
-                status: 'active',
             },
             include: [
                 {
@@ -101,11 +102,49 @@ export class ProjectService {
     }
 
     public updateById = async (id: string, body) => {
+
         return await models.Project.update({
-            ...body,
+            related: body.related,
+            status: body.status,
+            images: body.images,
+            isFeatured: body.isFeatured,
             thumbnail: body.thumbnail ? body.thumbnail.id : null,
             banner: body.banner ? body.banner.id : null,
-        }, { where: { id } });
+        },
+            { where: { id } })
+            .then(async (res) => {
+
+                if (res) {
+                    await models.ProjectTranslation.update({
+                        name: body.name,
+                        content: body.content,
+                        description: body.description,
+                        slug: body.slug,
+                        custom_slug: body.custom_slug,
+                    },
+                        {
+                            where: {
+                                project_id: id,
+                                locale: 'vi'
+                            }
+                        });
+
+                    await models.ProjectTranslation.update({
+                        name: body.name,
+                        content: body.content,
+                        description: body.description,
+                        slug: body.slug,
+                        custom_slug: body.custom_slug,
+                    },
+                        {
+                            where: {
+                                project_id: id,
+                                locale: 'en'
+                            }
+                        });
+                }
+
+            });
     }
 
     public deleteById = async (id: string) => {
