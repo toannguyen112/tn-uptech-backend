@@ -3,7 +3,9 @@ import { ApiFeatures } from "../utils/ApiFeatures";
 import { ProjectDTO } from "../dtos/project.dto";
 
 export class ProjectService {
+
     public getList = async (query) => {
+
         const conditions = {};
 
         const objQuery = new ApiFeatures(query)

@@ -6,7 +6,5 @@ export interface LanguageRequest extends Request {
 
 export const LangMiddleware = (req: LanguageRequest, res: Response, next: NextFunction) => {
     const lang = req.acceptsLanguages('vi', 'en');
-    console.log(lang);
-
     next();
 };

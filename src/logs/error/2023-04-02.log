@@ -1154,3 +1154,67 @@ TSError: ⨯ Unable to compile TypeScript:
     at Module.load (node:internal/modules/cjs/loader:1069:32)
     at Function.Module._load (node:internal/modules/cjs/loader:904:12)
     at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-02 16:15:10 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/modules/controllers/project.controller.ts[0m:[93m11[0m:[93m40[0m - [91merror[0m[90m TS2554: [0mExpected 2 arguments, but got 1.
+
+[7m11[0m             const data = await project.getList({ ...req.query });
+[7m  [0m [91m                                       ~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+  [96msrc/services/project.service.ts[0m:[93m7[0m:[93m36[0m
+    [7m7[0m     public getList = async (query, lang) => {
+    [7m [0m [96m                                   ~~~~[0m
+    An argument for 'lang' was not provided.
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/modules/controllers/project.controller.ts[0m:[93m11[0m:[93m40[0m - [91merror[0m[90m TS2554: [0mExpected 2 arguments, but got 1.
+
+[7m11[0m             const data = await project.getList({ ...req.query });
+[7m  [0m [91m                                       ~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+  [96msrc/services/project.service.ts[0m:[93m7[0m:[93m36[0m
+    [7m7[0m     public getList = async (query, lang) => {
+    [7m [0m [96m                                   ~~~~[0m
+    An argument for 'lang' was not provided.
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-02 16:16:02 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/modules/controllers/project.controller.ts[0m:[93m11[0m:[93m40[0m - [91merror[0m[90m TS2554: [0mExpected 2 arguments, but got 1.
+
+[7m11[0m             const data = await project.getList({ ...req.query });
+[7m  [0m [91m                                       ~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+  [96msrc/services/project.service.ts[0m:[93m7[0m:[93m36[0m
+    [7m7[0m     public getList = async (query, lang) => {
+    [7m [0m [96m                                   ~~~~[0m
+    An argument for 'lang' was not provided.
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/modules/controllers/project.controller.ts[0m:[93m11[0m:[93m40[0m - [91merror[0m[90m TS2554: [0mExpected 2 arguments, but got 1.
+
+[7m11[0m             const data = await project.getList({ ...req.query });
+[7m  [0m [91m                                       ~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+  [96msrc/services/project.service.ts[0m:[93m7[0m:[93m36[0m
+    [7m7[0m     public getList = async (query, lang) => {
+    [7m [0m [96m                                   ~~~~[0m
+    An argument for 'lang' was not provided.
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
