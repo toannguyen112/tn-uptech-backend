@@ -19,6 +19,15 @@ module.exports = {
         allowNull: true,
       },
 
+      ceo_id: {
+        type: Sequelize.INTEGER,
+        references: {
+          model: "ceos",
+          key: "id",
+        },
+        allowNull: true,
+      },
+
       related: {
         type: Sequelize.JSON,
         defaultValue: [],
@@ -48,10 +57,6 @@ module.exports = {
       status: {
         type: Sequelize.STRING,
         defaultValue: "active"
-      },
-
-      author: {
-        type: Sequelize.STRING,
       },
 
       view: {
