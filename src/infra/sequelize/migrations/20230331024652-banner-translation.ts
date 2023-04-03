@@ -33,7 +33,7 @@ module.exports = {
         allowNull: true,
       },
 
-      desctiption: {
+      description: {
         type: Sequelize.STRING,
         allowNull: true,
       },

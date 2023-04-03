@@ -20,7 +20,7 @@ module.exports = {
           banner_id: 1,
           locale: `vi`,
           sub_name: "sub_name vi",
-          desctiption: "desctiption vi",
+          description: "description vi",
         },
         {
           id: 2,
@@ -28,7 +28,7 @@ module.exports = {
           banner_id: 1,
           locale: `en`,
           sub_name: "sub_name en",
-          desctiption: "desctiption vi",
+          description: "description vi",
         },
         {
           id: 3,
@@ -36,7 +36,7 @@ module.exports = {
           banner_id: 2,
           locale: `vi`,
           sub_name: "sub_name vi",
-          desctiption: "desctiption vi",
+          description: "description vi",
         },
         {
           id: 4,
@@ -44,7 +44,7 @@ module.exports = {
           banner_id: 2,
           locale: `en`,
           sub_name: "sub_name en",
-          desctiption: "desctiption vi",
+          description: "description vi",
         },
       ]);
     } catch (error) {

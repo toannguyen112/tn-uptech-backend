@@ -1,7 +1,6 @@
 import { BannerDTO } from "../dtos/banner.dto";
 import models from "../infra/sequelize/models";
 import { ApiFeatures } from "../utils/ApiFeatures";
-import Helper from "../utils/Helper";
 import { Op } from "sequelize";
 export class BannerService {
 

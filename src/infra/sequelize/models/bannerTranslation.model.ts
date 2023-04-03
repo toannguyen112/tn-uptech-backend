@@ -28,13 +28,14 @@ module.exports = function (sequelize, DataTypes) {
                 type: DataTypes.STRING,
             },
 
+            description: {
+                type: DataTypes.TEXT('long'),
+            },
+
             sub_name: {
                 type: DataTypes.STRING,
             },
 
-            desctiption: {
-                type: DataTypes.STRING,
-            },
         },
         {
             timestamps: false,
