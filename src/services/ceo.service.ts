@@ -1,9 +1,10 @@
+import { CeoDTO } from "../dtos/ceo.dto";
 import models from "../infra/sequelize/models";
 import { ApiFeatures } from "../utils/ApiFeatures";
-import { ProjectDTO } from "../dtos/project.dto";
+
 import Helper from "../utils/Helper";
 import { Op } from "sequelize";
-export class ProjectService {
+export class CeoService {
 
     public getList = async (query) => {
 
@@ -66,7 +67,7 @@ export class ProjectService {
                         required: false,
                     },
                     {
-                        model: models.ProjectTranslation,
+                        model: models.CeoTranslation,
                         as: "translations",
                         required: true,
                         where: queryTranslation
@@ -77,14 +78,14 @@ export class ProjectService {
                 .paranoid()
                 .getObjQuery();
 
-            const { count, rows }: any = await models.Project.findAndCountAll(objQuery);
+            const { count, rows }: any = await models.Ceo.findAndCountAll(objQuery);
 
             const result = {
                 page: Number(query?.page) * 1,
                 pageSize: Number(query?.page_size) * 1,
                 pageCount: Math.ceil(count / Number(query?.page_size) * 1),
                 totalItems: count || 0,
-                data: rows.map((item) => ProjectDTO.transform(item)),
+                data: rows.map((item) => CeoDTO.transform(item)),
             };
 
             return result;
@@ -95,7 +96,7 @@ export class ProjectService {
 
     public store = async (body) => {
 
-        return await models.Project.create({
+        return await models.Ceo.create({
             ...body,
             thumbnail: body.thumbnail ? body.thumbnail.id : null,
             banner: body.banner ? body.banner.id : null,
@@ -109,19 +110,19 @@ export class ProjectService {
                 if (project) {
                     const projectId = project.id;
 
-                    await models.ProjectTranslation.create({
+                    await models.CeoTranslation.create({
                         ...body,
                         slug: Helper.renderSlug(body.slug ? body.slug : body.name),
                         custom_slug: Helper.renderSlug(body.custom_slug ? body.custom_slug : body.name),
-                        project_id: projectId,
+                        ceo_id: projectId,
                         locale: 'vi'
                     });
 
-                    await models.ProjectTranslation.create({
+                    await models.CeoTranslation.create({
                         ...body,
                         slug: Helper.renderSlug(body.slug ? `en-${body.slug}` : `en-${body.name}`),
                         custom_slug: Helper.renderSlug(body.custom_slug ? `en-${body.custom_slug}` : `en-${body.name}`),
-                        project_id: projectId,
+                        ceo_id: projectId,
                         locale: 'en'
                     });
                 }
@@ -130,7 +131,7 @@ export class ProjectService {
 
     public findById = async (id: string | number) => {
 
-        const project = await models.Project.findOne({
+        const project = await models.Ceo.findOne({
             where: {
                 id: id,
             },
@@ -141,62 +142,49 @@ export class ProjectService {
                     required: false,
                 },
                 {
-                    model: models.Media,
-                    as: "banner_image",
-                    required: false,
-                },
-                {
-                    model: models.ProjectTranslation,
+                    model: models.CeoTranslation,
                     as: "translations",
                     required: true,
                     where: {
                         locale: "vi",
-                        project_id: id,
+                        ceo_id: id,
                     }
                 },
             ]
         });
 
-        return ProjectDTO.transformDetail(project);
+        return CeoDTO.transformDetail(project);
     }
 
     public updateById = async (id: string, body) => {
 
-        return await models.Project.update({
-            related: body.related,
+        return await models.Ceo.update({
             status: body.status,
-            images: body.images,
-            isFeatured: body.isFeatured,
             thumbnail: body.thumbnail ? body.thumbnail.id : null,
-            banner: body.banner ? body.banner.id : null,
-        },
-            {
-                where: { id },
-                individualHooks: true
-            },
+        }, { where: { id } },
         )
             .then(async (res) => {
 
                 if (res) {
-                    await this.handleUpdate({ project_id: id, lang: "vi", body });
-                    await this.handleUpdate({ project_id: id, lang: "en", body });
+                    await this.handleUpdate({ ceo_id: id, lang: "vi", body });
+                    await this.handleUpdate({ ceo_id: id, lang: "en", body });
                 }
             });
     }
 
-    public handleUpdate = async ({ project_id, lang = "vi", body }) => {
+    public handleUpdate = async ({ ceo_id, lang = "vi", body }) => {
 
         try {
-            return await models.ProjectTranslation.update({
+            return await models.CeoTranslation.update({
                 name: body.name,
-                content: body.content,
+                detail: body.detail,
                 description: body.description,
                 slug: Helper.renderSlug(body.slug ? body.slug : body.name),
                 custom_slug: Helper.renderSlug(body.custom_slug ? body.custom_slug : body.name),
             },
                 {
                     where: {
-                        project_id,
+                        ceo_id,
                         locale: lang
                     }
                 });
@@ -206,10 +194,10 @@ export class ProjectService {
     }
 
     public deleteById = async (id: string) => {
-        return await models.Project.destroy({ where: { id } });
+        return await models.Ceo.destroy({ where: { id } });
     }
 
     public deleteMultipleIds = async (ids: []) => {
-        return await models.Project.destroy({ where: { id: ids } })
+        return await models.Ceo.destroy({ where: { id: ids } })
     }
 }

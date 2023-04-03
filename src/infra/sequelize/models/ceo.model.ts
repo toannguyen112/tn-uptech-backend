@@ -54,11 +54,6 @@ module.exports = function (sequelize, DataTypes) {
             foreignKey: "thumbnail"
         });
 
-        Ceo.belongsTo(models.Media, {
-            as: 'banner_image',
-            foreignKey: "banner"
-        });
-
         Ceo.hasMany(models.CeoTranslation, {
             as: "translations",
             foreignKey: "ceo_id"

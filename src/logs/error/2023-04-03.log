@@ -970,3 +970,125 @@ TSError: ⨯ Unable to compile TypeScript:
     at Module.load (node:internal/modules/cjs/loader:1069:32)
     at Function.Module._load (node:internal/modules/cjs/loader:904:12)
     at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-03 23:35:48 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/modules/controllers/project.controller.ts[0m:[93m32[0m:[93m44[0m - [91merror[0m[90m TS2339: [0mProperty 'findById' does not exist on type 'ProjectService'.
+
+[7m32[0m                 const data = await project.findById(id);
+[7m  [0m [91m                                           ~~~~~~~~[0m
+[96msrc/modules/controllers/project.controller.ts[0m:[93m45[0m:[93m40[0m - [91merror[0m[90m TS2339: [0mProperty 'updateById' does not exist on type 'ProjectService'.
+
+[7m45[0m             const data = await project.updateById(id, req.body);
+[7m  [0m [91m                                       ~~~~~~~~~~[0m
+[96msrc/modules/controllers/project.controller.ts[0m:[93m55[0m:[93m40[0m - [91merror[0m[90m TS2339: [0mProperty 'deleteMultipleIds' does not exist on type 'ProjectService'.
+
+[7m55[0m             const data = await project.deleteMultipleIds(ids);
+[7m  [0m [91m                                       ~~~~~~~~~~~~~~~~~[0m
+[96msrc/modules/controllers/project.controller.ts[0m:[93m64[0m:[93m40[0m - [91merror[0m[90m TS2339: [0mProperty 'deleteById' does not exist on type 'ProjectService'.
+
+[7m64[0m             const data = await project.deleteById(req.params.id);
+[7m  [0m [91m                                       ~~~~~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/modules/controllers/project.controller.ts[0m:[93m32[0m:[93m44[0m - [91merror[0m[90m TS2339: [0mProperty 'findById' does not exist on type 'ProjectService'.
+
+[7m32[0m                 const data = await project.findById(id);
+[7m  [0m [91m                                           ~~~~~~~~[0m
+[96msrc/modules/controllers/project.controller.ts[0m:[93m45[0m:[93m40[0m - [91merror[0m[90m TS2339: [0mProperty 'updateById' does not exist on type 'ProjectService'.
+
+[7m45[0m             const data = await project.updateById(id, req.body);
+[7m  [0m [91m                                       ~~~~~~~~~~[0m
+[96msrc/modules/controllers/project.controller.ts[0m:[93m55[0m:[93m40[0m - [91merror[0m[90m TS2339: [0mProperty 'deleteMultipleIds' does not exist on type 'ProjectService'.
+
+[7m55[0m             const data = await project.deleteMultipleIds(ids);
+[7m  [0m [91m                                       ~~~~~~~~~~~~~~~~~[0m
+[96msrc/modules/controllers/project.controller.ts[0m:[93m64[0m:[93m40[0m - [91merror[0m[90m TS2339: [0mProperty 'deleteById' does not exist on type 'ProjectService'.
+
+[7m64[0m             const data = await project.deleteById(req.params.id);
+[7m  [0m [91m                                       ~~~~~~~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-03 23:47:23 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/route/ceo.route.ts[0m:[93m8[0m:[93m22[0m - [91merror[0m[90m TS2552: [0mCannot find name 'PostController'. Did you mean 'AbortController'?
+
+[7m8[0m     public ceo = new PostController();
+[7m [0m [91m                     ~~~~~~~~~~~~~~[0m
+
+  [96mnode_modules/@types/node/globals.d.ts[0m:[93m67[0m:[93m13[0m
+    [7m67[0m declare var AbortController: {
+    [7m  [0m [96m            ~~~~~~~~~~~~~~~[0m
+    'AbortController' is declared here.
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/route/ceo.route.ts[0m:[93m8[0m:[93m22[0m - [91merror[0m[90m TS2552: [0mCannot find name 'PostController'. Did you mean 'AbortController'?
+
+[7m8[0m     public ceo = new PostController();
+[7m [0m [91m                     ~~~~~~~~~~~~~~[0m
+
+  [96mnode_modules/@types/node/globals.d.ts[0m:[93m67[0m:[93m13[0m
+    [7m67[0m declare var AbortController: {
+    [7m  [0m [96m            ~~~~~~~~~~~~~~~[0m
+    'AbortController' is declared here.
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-03 23:47:28 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/route/ceo.route.ts[0m:[93m8[0m:[93m22[0m - [91merror[0m[90m TS2304: [0mCannot find name 'CeoController'.
+
+[7m8[0m     public ceo = new CeoController();
+[7m [0m [91m                     ~~~~~~~~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/route/ceo.route.ts[0m:[93m8[0m:[93m22[0m - [91merror[0m[90m TS2304: [0mCannot find name 'CeoController'.
+
+[7m8[0m     public ceo = new CeoController();
+[7m [0m [91m                     ~~~~~~~~~~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-03 23:47:36 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/route/ceo.route.ts[0m:[93m8[0m:[93m22[0m - [91merror[0m[90m TS2304: [0mCannot find name 'CeoController'.
+
+[7m8[0m     public ceo = new CeoController();
+[7m [0m [91m                     ~~~~~~~~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/route/ceo.route.ts[0m:[93m8[0m:[93m22[0m - [91merror[0m[90m TS2304: [0mCannot find name 'CeoController'.
+
+[7m8[0m     public ceo = new CeoController();
+[7m [0m [91m                     ~~~~~~~~~~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
