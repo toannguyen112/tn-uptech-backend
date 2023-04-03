@@ -9,6 +9,14 @@ module.exports = {
         type: Sequelize.INTEGER,
       },
 
+      thumbnail: {
+        type: Sequelize.INTEGER,
+        references: {
+          model: "medias",
+          key: "id",
+        },
+      },
+
       status: {
         type: Sequelize.STRING,
         allowNull: true,

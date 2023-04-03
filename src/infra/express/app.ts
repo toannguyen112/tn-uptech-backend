@@ -10,10 +10,7 @@ import morgan from 'morgan';
 import { NODE_ENV, PORT, LOG_FORMAT, ORIGIN, CREDENTIALS } from '../../config';
 import { logger, stream } from "../../utils/logger";
 import { Routes } from "../../interface/routes.interface";
-import { Request, Response, NextFunction } from "express"
 import { LangMiddleware } from '../../middlewares/lang.middleware';
-
-
 
 export class App {
     public app: express.Application;

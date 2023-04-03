@@ -1,4 +1,4 @@
-import { BannertDTO } from "../dtos/banner.dto";
+import { BannerDTO } from "../dtos/banner.dto";
 import models from "../infra/sequelize/models";
 import { ApiFeatures } from "../utils/ApiFeatures";
 import Helper from "../utils/Helper";
@@ -84,7 +84,7 @@ export class BannerService {
                 pageSize: Number(query?.page_size) * 1,
                 pageCount: Math.ceil(count / Number(query?.page_size) * 1),
                 totalItems: count || 0,
-                data: rows.map((item) => BannertDTO.transform(item)),
+                data: rows.map((item) => BannerDTO.transform(item)),
             };
 
             return result;

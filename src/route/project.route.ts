@@ -2,6 +2,7 @@
 import { Router } from "express";
 import { Routes } from "../interface/routes.interface";
 import { ProjectController } from "../modules/controllers/project.controller";
+
 export class ProjectRoute implements Routes {
     public path = '/projects';
     public router = Router();

@@ -23,7 +23,7 @@ export class LocaleRoute implements Routes {
             if (lang) {
                 req.lang = lang
 
-            } else { 
+            } else {
                 req.lang = 'en'
             }
 

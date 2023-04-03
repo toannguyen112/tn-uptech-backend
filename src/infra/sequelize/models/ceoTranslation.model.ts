@@ -30,21 +30,16 @@ module.exports = function (sequelize, DataTypes) {
                 allowNull: false,
             },
 
-            custom_slug: {
-                allowNull: true,
-                type: DataTypes.STRING,
-            },
-
             name: {
                 type: DataTypes.STRING,
             },
 
             description: {
-                type: DataTypes.STRING,
+                type: DataTypes.TEXT('long'),
             },
 
             detail: {
-                type: DataTypes.STRING,
+                type: DataTypes.TEXT('long'),
             },
 
             date: {
@@ -84,7 +79,7 @@ module.exports = function (sequelize, DataTypes) {
 
             education: {
                 allowNull: true,
-                type: DataTypes.STRING,
+                type: DataTypes.TEXT('long'),
             },
         },
         {

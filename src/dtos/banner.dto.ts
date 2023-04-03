@@ -1,4 +1,4 @@
-export class BannertDTO {
+export class BannerDTO {
     static transform = (item) => {
 
         if (!item.translations.length) return {};

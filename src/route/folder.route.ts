@@ -1,6 +1,7 @@
 import { Router } from "express";
-import { Routes } from "../interface/routes.interface";
 import { FolderController } from "../modules/controllers/folder.controller";
+import { Routes } from "../interface/routes.interface";
+
 export class FolderRoute implements Routes {
     public path = '/folders';
     public router = Router();

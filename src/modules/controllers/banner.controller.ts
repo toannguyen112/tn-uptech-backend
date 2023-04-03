@@ -1,4 +1,5 @@
 import { NextFunction, Request, Response } from 'express';
+import { BannerService } from '../../services/banner.service';
 
 const banner = new BannerService();
 export class BannerController {

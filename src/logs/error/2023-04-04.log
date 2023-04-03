@@ -1,0 +1,1578 @@
+2023-04-04 00:35:36 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/route/admin/banner.route.ts[0m:[93m3[0m:[93m24[0m - [91merror[0m[90m TS2307: [0mCannot find module '../interface/routes.interface' or its corresponding type declarations.
+
+[7m3[0m import { Routes } from "../interface/routes.interface";
+[7m [0m [91m                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+[96msrc/route/admin/banner.route.ts[0m:[93m4[0m:[93m31[0m - [91merror[0m[90m TS2307: [0mCannot find module '../modules/controllers/ceo.controller' or its corresponding type declarations.
+
+[7m4[0m import { CeoController } from "../modules/controllers/ceo.controller";
+[7m [0m [91m                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/route/admin/banner.route.ts[0m:[93m3[0m:[93m24[0m - [91merror[0m[90m TS2307: [0mCannot find module '../interface/routes.interface' or its corresponding type declarations.
+
+[7m3[0m import { Routes } from "../interface/routes.interface";
+[7m [0m [91m                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+[96msrc/route/admin/banner.route.ts[0m:[93m4[0m:[93m31[0m - [91merror[0m[90m TS2307: [0mCannot find module '../modules/controllers/ceo.controller' or its corresponding type declarations.
+
+[7m4[0m import { CeoController } from "../modules/controllers/ceo.controller";
+[7m [0m [91m                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-04 00:35:49 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/route/admin/banner.route.ts[0m:[93m3[0m:[93m24[0m - [91merror[0m[90m TS2307: [0mCannot find module '../interface/routes.interface' or its corresponding type declarations.
+
+[7m3[0m import { Routes } from "../interface/routes.interface";
+[7m [0m [91m                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+[96msrc/route/admin/banner.route.ts[0m:[93m4[0m:[93m31[0m - [91merror[0m[90m TS2307: [0mCannot find module '../modules/controllers/ceo.controller' or its corresponding type declarations.
+
+[7m4[0m import { CeoController } from "../modules/controllers/ceo.controller";
+[7m [0m [91m                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/route/admin/banner.route.ts[0m:[93m3[0m:[93m24[0m - [91merror[0m[90m TS2307: [0mCannot find module '../interface/routes.interface' or its corresponding type declarations.
+
+[7m3[0m import { Routes } from "../interface/routes.interface";
+[7m [0m [91m                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+[96msrc/route/admin/banner.route.ts[0m:[93m4[0m:[93m31[0m - [91merror[0m[90m TS2307: [0mCannot find module '../modules/controllers/ceo.controller' or its corresponding type declarations.
+
+[7m4[0m import { CeoController } from "../modules/controllers/ceo.controller";
+[7m [0m [91m                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-04 00:35:57 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/route/admin/banner.route.ts[0m:[93m3[0m:[93m24[0m - [91merror[0m[90m TS2307: [0mCannot find module '../interface/routes.interface' or its corresponding type declarations.
+
+[7m3[0m import { Routes } from "../interface/routes.interface";
+[7m [0m [91m                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+[96msrc/route/admin/banner.route.ts[0m:[93m4[0m:[93m31[0m - [91merror[0m[90m TS2307: [0mCannot find module '../modules/controllers/ceo.controller' or its corresponding type declarations.
+
+[7m4[0m import { CeoController } from "../modules/controllers/ceo.controller";
+[7m [0m [91m                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/route/admin/banner.route.ts[0m:[93m3[0m:[93m24[0m - [91merror[0m[90m TS2307: [0mCannot find module '../interface/routes.interface' or its corresponding type declarations.
+
+[7m3[0m import { Routes } from "../interface/routes.interface";
+[7m [0m [91m                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+[96msrc/route/admin/banner.route.ts[0m:[93m4[0m:[93m31[0m - [91merror[0m[90m TS2307: [0mCannot find module '../modules/controllers/ceo.controller' or its corresponding type declarations.
+
+[7m4[0m import { CeoController } from "../modules/controllers/ceo.controller";
+[7m [0m [91m                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-04 00:36:14 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/route/admin/banner.route.ts[0m:[93m3[0m:[93m24[0m - [91merror[0m[90m TS2307: [0mCannot find module '../interface/routes.interface' or its corresponding type declarations.
+
+[7m3[0m import { Routes } from "../interface/routes.interface";
+[7m [0m [91m                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+[96msrc/route/admin/banner.route.ts[0m:[93m4[0m:[93m31[0m - [91merror[0m[90m TS2307: [0mCannot find module '../modules/controllers/ceo.controller' or its corresponding type declarations.
+
+[7m4[0m import { CeoController } from "../modules/controllers/ceo.controller";
+[7m [0m [91m                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/route/admin/banner.route.ts[0m:[93m3[0m:[93m24[0m - [91merror[0m[90m TS2307: [0mCannot find module '../interface/routes.interface' or its corresponding type declarations.
+
+[7m3[0m import { Routes } from "../interface/routes.interface";
+[7m [0m [91m                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+[96msrc/route/admin/banner.route.ts[0m:[93m4[0m:[93m31[0m - [91merror[0m[90m TS2307: [0mCannot find module '../modules/controllers/ceo.controller' or its corresponding type declarations.
+
+[7m4[0m import { CeoController } from "../modules/controllers/ceo.controller";
+[7m [0m [91m                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-04 00:36:23 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/route/admin/banner.route.ts[0m:[93m3[0m:[93m24[0m - [91merror[0m[90m TS2307: [0mCannot find module '../interface/routes.interface' or its corresponding type declarations.
+
+[7m3[0m import { Routes } from "../interface/routes.interface";
+[7m [0m [91m                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+[96msrc/route/admin/banner.route.ts[0m:[93m4[0m:[93m31[0m - [91merror[0m[90m TS2307: [0mCannot find module '../modules/controllers/ceo.controller' or its corresponding type declarations.
+
+[7m4[0m import { CeoController } from "../modules/controllers/ceo.controller";
+[7m [0m [91m                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/route/admin/banner.route.ts[0m:[93m3[0m:[93m24[0m - [91merror[0m[90m TS2307: [0mCannot find module '../interface/routes.interface' or its corresponding type declarations.
+
+[7m3[0m import { Routes } from "../interface/routes.interface";
+[7m [0m [91m                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+[96msrc/route/admin/banner.route.ts[0m:[93m4[0m:[93m31[0m - [91merror[0m[90m TS2307: [0mCannot find module '../modules/controllers/ceo.controller' or its corresponding type declarations.
+
+[7m4[0m import { CeoController } from "../modules/controllers/ceo.controller";
+[7m [0m [91m                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-04 00:36:27 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/route/admin/banner.route.ts[0m:[93m3[0m:[93m24[0m - [91merror[0m[90m TS2307: [0mCannot find module '../interface/routes.interface' or its corresponding type declarations.
+
+[7m3[0m import { Routes } from "../interface/routes.interface";
+[7m [0m [91m                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+[96msrc/route/admin/banner.route.ts[0m:[93m4[0m:[93m31[0m - [91merror[0m[90m TS2307: [0mCannot find module '../modules/controllers/ceo.controller' or its corresponding type declarations.
+
+[7m4[0m import { CeoController } from "../modules/controllers/ceo.controller";
+[7m [0m [91m                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/route/admin/banner.route.ts[0m:[93m3[0m:[93m24[0m - [91merror[0m[90m TS2307: [0mCannot find module '../interface/routes.interface' or its corresponding type declarations.
+
+[7m3[0m import { Routes } from "../interface/routes.interface";
+[7m [0m [91m                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+[96msrc/route/admin/banner.route.ts[0m:[93m4[0m:[93m31[0m - [91merror[0m[90m TS2307: [0mCannot find module '../modules/controllers/ceo.controller' or its corresponding type declarations.
+
+[7m4[0m import { CeoController } from "../modules/controllers/ceo.controller";
+[7m [0m [91m                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-04 00:36:33 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/route/admin/banner.route.ts[0m:[93m3[0m:[93m24[0m - [91merror[0m[90m TS2307: [0mCannot find module '../interface/routes.interface' or its corresponding type declarations.
+
+[7m3[0m import { Routes } from "../interface/routes.interface";
+[7m [0m [91m                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+[96msrc/route/admin/banner.route.ts[0m:[93m4[0m:[93m31[0m - [91merror[0m[90m TS2307: [0mCannot find module '../modules/controllers/ceo.controller' or its corresponding type declarations.
+
+[7m4[0m import { CeoController } from "../modules/controllers/ceo.controller";
+[7m [0m [91m                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/route/admin/banner.route.ts[0m:[93m3[0m:[93m24[0m - [91merror[0m[90m TS2307: [0mCannot find module '../interface/routes.interface' or its corresponding type declarations.
+
+[7m3[0m import { Routes } from "../interface/routes.interface";
+[7m [0m [91m                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+[96msrc/route/admin/banner.route.ts[0m:[93m4[0m:[93m31[0m - [91merror[0m[90m TS2307: [0mCannot find module '../modules/controllers/ceo.controller' or its corresponding type declarations.
+
+[7m4[0m import { CeoController } from "../modules/controllers/ceo.controller";
+[7m [0m [91m                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-04 00:36:39 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/route/admin/banner.route.ts[0m:[93m3[0m:[93m24[0m - [91merror[0m[90m TS2307: [0mCannot find module '../interface/routes.interface' or its corresponding type declarations.
+
+[7m3[0m import { Routes } from "../interface/routes.interface";
+[7m [0m [91m                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+[96msrc/route/admin/banner.route.ts[0m:[93m4[0m:[93m31[0m - [91merror[0m[90m TS2307: [0mCannot find module '../modules/controllers/ceo.controller' or its corresponding type declarations.
+
+[7m4[0m import { CeoController } from "../modules/controllers/ceo.controller";
+[7m [0m [91m                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/route/admin/banner.route.ts[0m:[93m3[0m:[93m24[0m - [91merror[0m[90m TS2307: [0mCannot find module '../interface/routes.interface' or its corresponding type declarations.
+
+[7m3[0m import { Routes } from "../interface/routes.interface";
+[7m [0m [91m                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+[96msrc/route/admin/banner.route.ts[0m:[93m4[0m:[93m31[0m - [91merror[0m[90m TS2307: [0mCannot find module '../modules/controllers/ceo.controller' or its corresponding type declarations.
+
+[7m4[0m import { CeoController } from "../modules/controllers/ceo.controller";
+[7m [0m [91m                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-04 00:37:16 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/route/admin/banner.route.ts[0m:[93m8[0m:[93m25[0m - [91merror[0m[90m TS2304: [0mCannot find name 'CeoController'.
+
+[7m8[0m     public banner = new CeoController();
+[7m [0m [91m                        ~~~~~~~~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/route/admin/banner.route.ts[0m:[93m8[0m:[93m25[0m - [91merror[0m[90m TS2304: [0mCannot find name 'CeoController'.
+
+[7m8[0m     public banner = new CeoController();
+[7m [0m [91m                        ~~~~~~~~~~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-04 00:37:24 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/modules/controllers/banner.controller.ts[0m:[93m3[0m:[93m20[0m - [91merror[0m[90m TS2304: [0mCannot find name 'BannerService'.
+
+[7m3[0m const banner = new BannerService();
+[7m [0m [91m                   ~~~~~~~~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/modules/controllers/banner.controller.ts[0m:[93m3[0m:[93m20[0m - [91merror[0m[90m TS2304: [0mCannot find name 'BannerService'.
+
+[7m3[0m const banner = new BannerService();
+[7m [0m [91m                   ~~~~~~~~~~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-04 00:37:32 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/services/banner.service.ts[0m:[93m155[0m:[93m16[0m - [91merror[0m[90m TS2552: [0mCannot find name 'BannerDTO'. Did you mean 'BannertDTO'?
+
+[7m155[0m         return BannerDTO.transformDetail(banner);
+[7m   [0m [91m               ~~~~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/services/banner.service.ts[0m:[93m155[0m:[93m16[0m - [91merror[0m[90m TS2552: [0mCannot find name 'BannerDTO'. Did you mean 'BannertDTO'?
+
+[7m155[0m         return BannerDTO.transformDetail(banner);
+[7m   [0m [91m               ~~~~~~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-04 00:37:56 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/infra/sequelize/models/banner.model.ts[0m:[93m31[0m:[93m28[0m - [91merror[0m[90m TS2304: [0mCannot find name 'Helper'.
+
+[7m31[0m                     return Helper.formatDayJs(this.getDataValue('createdAt'));
+[7m  [0m [91m                           ~~~~~~[0m
+[96msrc/infra/sequelize/models/banner.model.ts[0m:[93m39[0m:[93m28[0m - [91merror[0m[90m TS2304: [0mCannot find name 'Helper'.
+
+[7m39[0m                     return Helper.formatDayJs(this.getDataValue('updatedAt'));
+[7m  [0m [91m                           ~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/infra/sequelize/models/banner.model.ts[0m:[93m31[0m:[93m28[0m - [91merror[0m[90m TS2304: [0mCannot find name 'Helper'.
+
+[7m31[0m                     return Helper.formatDayJs(this.getDataValue('createdAt'));
+[7m  [0m [91m                           ~~~~~~[0m
+[96msrc/infra/sequelize/models/banner.model.ts[0m:[93m39[0m:[93m28[0m - [91merror[0m[90m TS2304: [0mCannot find name 'Helper'.
+
+[7m39[0m                     return Helper.formatDayJs(this.getDataValue('updatedAt'));
+[7m  [0m [91m                           ~~~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-04 00:38:03 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/services/banner.service.ts[0m:[93m155[0m:[93m16[0m - [91merror[0m[90m TS2552: [0mCannot find name 'BannerDTO'. Did you mean 'BannertDTO'?
+
+[7m155[0m         return BannerDTO.transformDetail(banner);
+[7m   [0m [91m               ~~~~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/services/banner.service.ts[0m:[93m155[0m:[93m16[0m - [91merror[0m[90m TS2552: [0mCannot find name 'BannerDTO'. Did you mean 'BannertDTO'?
+
+[7m155[0m         return BannerDTO.transformDetail(banner);
+[7m   [0m [91m               ~~~~~~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-04 00:38:14 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/infra/sequelize/models/banner.model.ts[0m:[93m51[0m:[93m9[0m - [91merror[0m[90m TS2304: [0mCannot find name 'Post'.
+
+[7m51[0m         Post.belongsTo(models.Media, {
+[7m  [0m [91m        ~~~~[0m
+[96msrc/infra/sequelize/models/banner.model.ts[0m:[93m56[0m:[93m9[0m - [91merror[0m[90m TS2304: [0mCannot find name 'Post'.
+
+[7m56[0m         Post.hasMany(models.PostTranslation, {
+[7m  [0m [91m        ~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/infra/sequelize/models/banner.model.ts[0m:[93m51[0m:[93m9[0m - [91merror[0m[90m TS2304: [0mCannot find name 'Post'.
+
+[7m51[0m         Post.belongsTo(models.Media, {
+[7m  [0m [91m        ~~~~[0m
+[96msrc/infra/sequelize/models/banner.model.ts[0m:[93m56[0m:[93m9[0m - [91merror[0m[90m TS2304: [0mCannot find name 'Post'.
+
+[7m56[0m         Post.hasMany(models.PostTranslation, {
+[7m  [0m [91m        ~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-04 00:38:20 error: uncaughtException: Naming collision between attribute 'image' and association 'image' on model banners. To remedy this, change either foreignKey or as in your association definition
+Error: Naming collision between attribute 'image' and association 'image' on model banners. To remedy this, change either foreignKey or as in your association definition
+    at Object.checkNamingCollision (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/sequelize/src/associations/helpers.js:5:11)
+    at BelongsTo._injectAttributes (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/sequelize/src/associations/belongs-to.js:103:13)
+    at Function.<anonymous> (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/sequelize/src/associations/mixin.js:108:17)
+    at Function.Banner.associate (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/banner.model.ts:51:16)
+    at /Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:51:31
+    at Array.forEach (<anonymous>)
+    at createModels (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:49:25)
+    at Object.<anonymous> (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:63:16)
+    at Module._compile (node:internal/modules/cjs/loader:1191:14)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1618:23)
+2023-04-04 00:38:28 error: uncaughtException: Naming collision between attribute 'image' and association 'image' on model banners. To remedy this, change either foreignKey or as in your association definition
+Error: Naming collision between attribute 'image' and association 'image' on model banners. To remedy this, change either foreignKey or as in your association definition
+    at Object.checkNamingCollision (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/sequelize/src/associations/helpers.js:5:11)
+    at BelongsTo._injectAttributes (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/sequelize/src/associations/belongs-to.js:103:13)
+    at Function.<anonymous> (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/sequelize/src/associations/mixin.js:108:17)
+    at Function.Banner.associate (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/banner.model.ts:51:16)
+    at /Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:51:31
+    at Array.forEach (<anonymous>)
+    at createModels (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:49:25)
+    at Object.<anonymous> (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:63:16)
+    at Module._compile (node:internal/modules/cjs/loader:1191:14)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1618:23)
+2023-04-04 00:38:51 error: uncaughtException: Naming collision between attribute 'image' and association 'image' on model banners. To remedy this, change either foreignKey or as in your association definition
+Error: Naming collision between attribute 'image' and association 'image' on model banners. To remedy this, change either foreignKey or as in your association definition
+    at Object.checkNamingCollision (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/sequelize/src/associations/helpers.js:5:11)
+    at BelongsTo._injectAttributes (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/sequelize/src/associations/belongs-to.js:103:13)
+    at Function.<anonymous> (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/sequelize/src/associations/mixin.js:108:17)
+    at Function.Banner.associate (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/banner.model.ts:51:16)
+    at /Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:51:31
+    at Array.forEach (<anonymous>)
+    at createModels (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:49:25)
+    at Object.<anonymous> (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:63:16)
+    at Module._compile (node:internal/modules/cjs/loader:1191:14)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1618:23)
+2023-04-04 00:39:25 error: uncaughtException: Naming collision between attribute 'image' and association 'image' on model banners. To remedy this, change either foreignKey or as in your association definition
+Error: Naming collision between attribute 'image' and association 'image' on model banners. To remedy this, change either foreignKey or as in your association definition
+    at Object.checkNamingCollision (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/sequelize/src/associations/helpers.js:5:11)
+    at BelongsTo._injectAttributes (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/sequelize/src/associations/belongs-to.js:103:13)
+    at Function.<anonymous> (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/sequelize/src/associations/mixin.js:108:17)
+    at Function.Banner.associate (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/banner.model.ts:51:16)
+    at /Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:51:31
+    at Array.forEach (<anonymous>)
+    at createModels (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:49:25)
+    at Object.<anonymous> (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:63:16)
+    at Module._compile (node:internal/modules/cjs/loader:1191:14)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1618:23)
+2023-04-04 00:39:34 error: uncaughtException: Naming collision between attribute 'image' and association 'image' on model banners. To remedy this, change either foreignKey or as in your association definition
+Error: Naming collision between attribute 'image' and association 'image' on model banners. To remedy this, change either foreignKey or as in your association definition
+    at Object.checkNamingCollision (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/sequelize/src/associations/helpers.js:5:11)
+    at BelongsTo._injectAttributes (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/sequelize/src/associations/belongs-to.js:103:13)
+    at Function.<anonymous> (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/sequelize/src/associations/mixin.js:108:17)
+    at Function.Banner.associate (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/banner.model.ts:51:16)
+    at /Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:51:31
+    at Array.forEach (<anonymous>)
+    at createModels (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:49:25)
+    at Object.<anonymous> (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:63:16)
+    at Module._compile (node:internal/modules/cjs/loader:1191:14)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1618:23)
+2023-04-04 00:39:54 error: uncaughtException: Naming collision between attribute 'image' and association 'image' on model banners. To remedy this, change either foreignKey or as in your association definition
+Error: Naming collision between attribute 'image' and association 'image' on model banners. To remedy this, change either foreignKey or as in your association definition
+    at Object.checkNamingCollision (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/sequelize/src/associations/helpers.js:5:11)
+    at BelongsTo._injectAttributes (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/sequelize/src/associations/belongs-to.js:103:13)
+    at Function.<anonymous> (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/sequelize/src/associations/mixin.js:108:17)
+    at Function.Banner.associate (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/banner.model.ts:51:16)
+    at /Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:51:31
+    at Array.forEach (<anonymous>)
+    at createModels (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:49:25)
+    at Object.<anonymous> (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:63:16)
+    at Module._compile (node:internal/modules/cjs/loader:1191:14)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1618:23)
+2023-04-04 00:40:15 error: uncaughtException: Naming collision between attribute 'image' and association 'image' on model banners. To remedy this, change either foreignKey or as in your association definition
+Error: Naming collision between attribute 'image' and association 'image' on model banners. To remedy this, change either foreignKey or as in your association definition
+    at Object.checkNamingCollision (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/sequelize/src/associations/helpers.js:5:11)
+    at BelongsTo._injectAttributes (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/sequelize/src/associations/belongs-to.js:103:13)
+    at Function.<anonymous> (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/sequelize/src/associations/mixin.js:108:17)
+    at Function.Banner.associate (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/banner.model.ts:51:16)
+    at /Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:51:31
+    at Array.forEach (<anonymous>)
+    at createModels (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:49:25)
+    at Object.<anonymous> (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:63:16)
+    at Module._compile (node:internal/modules/cjs/loader:1191:14)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1618:23)
+2023-04-04 00:40:23 error: uncaughtException: Naming collision between attribute 'image' and association 'image' on model banners. To remedy this, change either foreignKey or as in your association definition
+Error: Naming collision between attribute 'image' and association 'image' on model banners. To remedy this, change either foreignKey or as in your association definition
+    at Object.checkNamingCollision (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/sequelize/src/associations/helpers.js:5:11)
+    at BelongsTo._injectAttributes (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/sequelize/src/associations/belongs-to.js:103:13)
+    at Function.<anonymous> (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/sequelize/src/associations/mixin.js:108:17)
+    at Function.Banner.associate (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/banner.model.ts:51:16)
+    at /Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:51:31
+    at Array.forEach (<anonymous>)
+    at createModels (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:49:25)
+    at Object.<anonymous> (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:63:16)
+    at Module._compile (node:internal/modules/cjs/loader:1191:14)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1618:23)
+2023-04-04 00:40:33 error: uncaughtException: Naming collision between attribute 'image' and association 'image' on model banners. To remedy this, change either foreignKey or as in your association definition
+Error: Naming collision between attribute 'image' and association 'image' on model banners. To remedy this, change either foreignKey or as in your association definition
+    at Object.checkNamingCollision (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/sequelize/src/associations/helpers.js:5:11)
+    at BelongsTo._injectAttributes (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/sequelize/src/associations/belongs-to.js:103:13)
+    at Function.<anonymous> (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/sequelize/src/associations/mixin.js:108:17)
+    at Function.Banner.associate (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/banner.model.ts:51:16)
+    at /Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:51:31
+    at Array.forEach (<anonymous>)
+    at createModels (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:49:25)
+    at Object.<anonymous> (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:63:16)
+    at Module._compile (node:internal/modules/cjs/loader:1191:14)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1618:23)
+2023-04-04 00:40:41 error: uncaughtException: Naming collision between attribute 'image' and association 'image' on model banners. To remedy this, change either foreignKey or as in your association definition
+Error: Naming collision between attribute 'image' and association 'image' on model banners. To remedy this, change either foreignKey or as in your association definition
+    at Object.checkNamingCollision (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/sequelize/src/associations/helpers.js:5:11)
+    at BelongsTo._injectAttributes (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/sequelize/src/associations/belongs-to.js:103:13)
+    at Function.<anonymous> (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/sequelize/src/associations/mixin.js:108:17)
+    at Function.Banner.associate (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/banner.model.ts:51:16)
+    at /Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:51:31
+    at Array.forEach (<anonymous>)
+    at createModels (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:49:25)
+    at Object.<anonymous> (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:63:16)
+    at Module._compile (node:internal/modules/cjs/loader:1191:14)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1618:23)
+2023-04-04 00:40:46 error: uncaughtException: Naming collision between attribute 'image' and association 'image' on model banners. To remedy this, change either foreignKey or as in your association definition
+Error: Naming collision between attribute 'image' and association 'image' on model banners. To remedy this, change either foreignKey or as in your association definition
+    at Object.checkNamingCollision (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/sequelize/src/associations/helpers.js:5:11)
+    at BelongsTo._injectAttributes (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/sequelize/src/associations/belongs-to.js:103:13)
+    at Function.<anonymous> (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/sequelize/src/associations/mixin.js:108:17)
+    at Function.Banner.associate (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/banner.model.ts:51:16)
+    at /Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:51:31
+    at Array.forEach (<anonymous>)
+    at createModels (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:49:25)
+    at Object.<anonymous> (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:63:16)
+    at Module._compile (node:internal/modules/cjs/loader:1191:14)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1618:23)
+2023-04-04 00:41:33 error: uncaughtException: Naming collision between attribute 'image' and association 'image' on model banners. To remedy this, change either foreignKey or as in your association definition
+Error: Naming collision between attribute 'image' and association 'image' on model banners. To remedy this, change either foreignKey or as in your association definition
+    at Object.checkNamingCollision (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/sequelize/src/associations/helpers.js:5:11)
+    at BelongsTo._injectAttributes (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/sequelize/src/associations/belongs-to.js:103:13)
+    at Function.<anonymous> (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/sequelize/src/associations/mixin.js:108:17)
+    at Function.Banner.associate (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/banner.model.ts:51:16)
+    at /Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:51:31
+    at Array.forEach (<anonymous>)
+    at createModels (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:49:25)
+    at Object.<anonymous> (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:63:16)
+    at Module._compile (node:internal/modules/cjs/loader:1191:14)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1618:23)
+2023-04-04 00:41:44 error: uncaughtException: Naming collision between attribute 'image' and association 'image' on model banners. To remedy this, change either foreignKey or as in your association definition
+Error: Naming collision between attribute 'image' and association 'image' on model banners. To remedy this, change either foreignKey or as in your association definition
+    at Object.checkNamingCollision (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/sequelize/src/associations/helpers.js:5:11)
+    at BelongsTo._injectAttributes (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/sequelize/src/associations/belongs-to.js:103:13)
+    at Function.<anonymous> (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/sequelize/src/associations/mixin.js:108:17)
+    at Function.Banner.associate (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/banner.model.ts:51:16)
+    at /Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:51:31
+    at Array.forEach (<anonymous>)
+    at createModels (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:49:25)
+    at Object.<anonymous> (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:63:16)
+    at Module._compile (node:internal/modules/cjs/loader:1191:14)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1618:23)
+2023-04-04 00:42:00 error: uncaughtException: Naming collision between attribute 'image' and association 'image' on model banners. To remedy this, change either foreignKey or as in your association definition
+Error: Naming collision between attribute 'image' and association 'image' on model banners. To remedy this, change either foreignKey or as in your association definition
+    at Object.checkNamingCollision (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/sequelize/src/associations/helpers.js:5:11)
+    at BelongsTo._injectAttributes (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/sequelize/src/associations/belongs-to.js:103:13)
+    at Function.<anonymous> (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/sequelize/src/associations/mixin.js:108:17)
+    at Function.Banner.associate (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/banner.model.ts:51:16)
+    at /Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:51:31
+    at Array.forEach (<anonymous>)
+    at createModels (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:49:25)
+    at Object.<anonymous> (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:63:16)
+    at Module._compile (node:internal/modules/cjs/loader:1191:14)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1618:23)
+2023-04-04 00:42:10 error: uncaughtException: Naming collision between attribute 'image' and association 'image' on model banners. To remedy this, change either foreignKey or as in your association definition
+Error: Naming collision between attribute 'image' and association 'image' on model banners. To remedy this, change either foreignKey or as in your association definition
+    at Object.checkNamingCollision (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/sequelize/src/associations/helpers.js:5:11)
+    at BelongsTo._injectAttributes (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/sequelize/src/associations/belongs-to.js:103:13)
+    at Function.<anonymous> (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/sequelize/src/associations/mixin.js:108:17)
+    at Function.Banner.associate (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/banner.model.ts:51:16)
+    at /Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:51:31
+    at Array.forEach (<anonymous>)
+    at createModels (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:49:25)
+    at Object.<anonymous> (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:63:16)
+    at Module._compile (node:internal/modules/cjs/loader:1191:14)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1618:23)
+2023-04-04 00:42:41 error: uncaughtException: Naming collision between attribute 'image' and association 'image' on model banners. To remedy this, change either foreignKey or as in your association definition
+Error: Naming collision between attribute 'image' and association 'image' on model banners. To remedy this, change either foreignKey or as in your association definition
+    at Object.checkNamingCollision (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/sequelize/src/associations/helpers.js:5:11)
+    at BelongsTo._injectAttributes (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/sequelize/src/associations/belongs-to.js:103:13)
+    at Function.<anonymous> (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/sequelize/src/associations/mixin.js:108:17)
+    at Function.Banner.associate (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/banner.model.ts:51:16)
+    at /Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:51:31
+    at Array.forEach (<anonymous>)
+    at createModels (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:49:25)
+    at Object.<anonymous> (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:63:16)
+    at Module._compile (node:internal/modules/cjs/loader:1191:14)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1618:23)
+2023-04-04 00:43:07 error: uncaughtException: Naming collision between attribute 'image' and association 'image' on model banners. To remedy this, change either foreignKey or as in your association definition
+Error: Naming collision between attribute 'image' and association 'image' on model banners. To remedy this, change either foreignKey or as in your association definition
+    at Object.checkNamingCollision (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/sequelize/src/associations/helpers.js:5:11)
+    at BelongsTo._injectAttributes (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/sequelize/src/associations/belongs-to.js:103:13)
+    at Function.<anonymous> (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/sequelize/src/associations/mixin.js:108:17)
+    at Function.Banner.associate (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/banner.model.ts:51:16)
+    at /Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:51:31
+    at Array.forEach (<anonymous>)
+    at createModels (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:49:25)
+    at Object.<anonymous> (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:63:16)
+    at Module._compile (node:internal/modules/cjs/loader:1191:14)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1618:23)
+2023-04-04 00:43:31 error: uncaughtException: Naming collision between attribute 'image' and association 'image' on model banners. To remedy this, change either foreignKey or as in your association definition
+Error: Naming collision between attribute 'image' and association 'image' on model banners. To remedy this, change either foreignKey or as in your association definition
+    at Object.checkNamingCollision (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/sequelize/src/associations/helpers.js:5:11)
+    at BelongsTo._injectAttributes (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/sequelize/src/associations/belongs-to.js:103:13)
+    at Function.<anonymous> (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/sequelize/src/associations/mixin.js:108:17)
+    at Function.Banner.associate (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/banner.model.ts:51:16)
+    at /Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:51:31
+    at Array.forEach (<anonymous>)
+    at createModels (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:49:25)
+    at Object.<anonymous> (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:63:16)
+    at Module._compile (node:internal/modules/cjs/loader:1191:14)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1618:23)
+2023-04-04 00:43:41 error: uncaughtException: Naming collision between attribute 'image' and association 'image' on model banners. To remedy this, change either foreignKey or as in your association definition
+Error: Naming collision between attribute 'image' and association 'image' on model banners. To remedy this, change either foreignKey or as in your association definition
+    at Object.checkNamingCollision (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/sequelize/src/associations/helpers.js:5:11)
+    at BelongsTo._injectAttributes (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/sequelize/src/associations/belongs-to.js:103:13)
+    at Function.<anonymous> (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/sequelize/src/associations/mixin.js:108:17)
+    at Function.Banner.associate (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/banner.model.ts:51:16)
+    at /Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:51:31
+    at Array.forEach (<anonymous>)
+    at createModels (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:49:25)
+    at Object.<anonymous> (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:63:16)
+    at Module._compile (node:internal/modules/cjs/loader:1191:14)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1618:23)
+2023-04-04 00:44:05 error: uncaughtException: Naming collision between attribute 'image' and association 'image' on model banners. To remedy this, change either foreignKey or as in your association definition
+Error: Naming collision between attribute 'image' and association 'image' on model banners. To remedy this, change either foreignKey or as in your association definition
+    at Object.checkNamingCollision (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/sequelize/src/associations/helpers.js:5:11)
+    at BelongsTo._injectAttributes (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/sequelize/src/associations/belongs-to.js:103:13)
+    at Function.<anonymous> (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/sequelize/src/associations/mixin.js:108:17)
+    at Function.Banner.associate (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/banner.model.ts:51:16)
+    at /Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:51:31
+    at Array.forEach (<anonymous>)
+    at createModels (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:49:25)
+    at Object.<anonymous> (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:63:16)
+    at Module._compile (node:internal/modules/cjs/loader:1191:14)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1618:23)
+2023-04-04 00:44:42 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/services/banner.service.ts[0m:[93m155[0m:[93m16[0m - [91merror[0m[90m TS2552: [0mCannot find name 'BannerDTO'. Did you mean 'BannertDTO'?
+
+[7m155[0m         return BannerDTO.transformDetail(banner);
+[7m   [0m [91m               ~~~~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/services/banner.service.ts[0m:[93m155[0m:[93m16[0m - [91merror[0m[90m TS2552: [0mCannot find name 'BannerDTO'. Did you mean 'BannertDTO'?
+
+[7m155[0m         return BannerDTO.transformDetail(banner);
+[7m   [0m [91m               ~~~~~~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-04 00:45:09 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/services/banner.service.ts[0m:[93m155[0m:[93m16[0m - [91merror[0m[90m TS2552: [0mCannot find name 'BannerDTO'. Did you mean 'BannertDTO'?
+
+[7m155[0m         return BannerDTO.transformDetail(banner);
+[7m   [0m [91m               ~~~~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/services/banner.service.ts[0m:[93m155[0m:[93m16[0m - [91merror[0m[90m TS2552: [0mCannot find name 'BannerDTO'. Did you mean 'BannertDTO'?
+
+[7m155[0m         return BannerDTO.transformDetail(banner);
+[7m   [0m [91m               ~~~~~~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-04 00:46:27 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/services/banner.service.ts[0m:[93m155[0m:[93m16[0m - [91merror[0m[90m TS2552: [0mCannot find name 'BannerDTO'. Did you mean 'BannertDTO'?
+
+[7m155[0m         return BannerDTO.transformDetail(banner);
+[7m   [0m [91m               ~~~~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/services/banner.service.ts[0m:[93m155[0m:[93m16[0m - [91merror[0m[90m TS2552: [0mCannot find name 'BannerDTO'. Did you mean 'BannertDTO'?
+
+[7m155[0m         return BannerDTO.transformDetail(banner);
+[7m   [0m [91m               ~~~~~~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-04 00:46:39 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/services/banner.service.ts[0m:[93m155[0m:[93m16[0m - [91merror[0m[90m TS2552: [0mCannot find name 'BannerDTO'. Did you mean 'BannertDTO'?
+
+[7m155[0m         return BannerDTO.transformDetail(banner);
+[7m   [0m [91m               ~~~~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/services/banner.service.ts[0m:[93m155[0m:[93m16[0m - [91merror[0m[90m TS2552: [0mCannot find name 'BannerDTO'. Did you mean 'BannertDTO'?
+
+[7m155[0m         return BannerDTO.transformDetail(banner);
+[7m   [0m [91m               ~~~~~~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-04 00:46:48 error: uncaughtException: Naming collision between attribute 'image' and association 'image' on model banners. To remedy this, change either foreignKey or as in your association definition
+Error: Naming collision between attribute 'image' and association 'image' on model banners. To remedy this, change either foreignKey or as in your association definition
+    at Object.checkNamingCollision (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/sequelize/src/associations/helpers.js:5:11)
+    at BelongsTo._injectAttributes (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/sequelize/src/associations/belongs-to.js:103:13)
+    at Function.<anonymous> (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/sequelize/src/associations/mixin.js:108:17)
+    at Function.Banner.associate (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/banner.model.ts:51:16)
+    at /Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:51:31
+    at Array.forEach (<anonymous>)
+    at createModels (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:49:25)
+    at Object.<anonymous> (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:63:16)
+    at Module._compile (node:internal/modules/cjs/loader:1191:14)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1618:23)
+2023-04-04 00:47:03 error: uncaughtException: Naming collision between attribute 'image' and association 'image' on model banners. To remedy this, change either foreignKey or as in your association definition
+Error: Naming collision between attribute 'image' and association 'image' on model banners. To remedy this, change either foreignKey or as in your association definition
+    at Object.checkNamingCollision (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/sequelize/src/associations/helpers.js:5:11)
+    at BelongsTo._injectAttributes (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/sequelize/src/associations/belongs-to.js:103:13)
+    at Function.<anonymous> (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/sequelize/src/associations/mixin.js:108:17)
+    at Function.Banner.associate (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/banner.model.ts:51:16)
+    at /Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:51:31
+    at Array.forEach (<anonymous>)
+    at createModels (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:49:25)
+    at Object.<anonymous> (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:63:16)
+    at Module._compile (node:internal/modules/cjs/loader:1191:14)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1618:23)
+2023-04-04 00:48:36 error: uncaughtException: Naming collision between attribute 'image' and association 'image' on model banners. To remedy this, change either foreignKey or as in your association definition
+Error: Naming collision between attribute 'image' and association 'image' on model banners. To remedy this, change either foreignKey or as in your association definition
+    at Object.checkNamingCollision (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/sequelize/src/associations/helpers.js:5:11)
+    at BelongsTo._injectAttributes (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/sequelize/src/associations/belongs-to.js:103:13)
+    at Function.<anonymous> (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/sequelize/src/associations/mixin.js:108:17)
+    at Function.Banner.associate (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/banner.model.ts:51:16)
+    at /Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:51:31
+    at Array.forEach (<anonymous>)
+    at createModels (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:49:25)
+    at Object.<anonymous> (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:63:16)
+    at Module._compile (node:internal/modules/cjs/loader:1191:14)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1618:23)
+2023-04-04 00:48:59 error: uncaughtException: Naming collision between attribute 'image' and association 'image' on model banners. To remedy this, change either foreignKey or as in your association definition
+Error: Naming collision between attribute 'image' and association 'image' on model banners. To remedy this, change either foreignKey or as in your association definition
+    at Object.checkNamingCollision (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/sequelize/src/associations/helpers.js:5:11)
+    at BelongsTo._injectAttributes (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/sequelize/src/associations/belongs-to.js:103:13)
+    at Function.<anonymous> (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/sequelize/src/associations/mixin.js:108:17)
+    at Function.Banner.associate (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/banner.model.ts:51:16)
+    at /Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:51:31
+    at Array.forEach (<anonymous>)
+    at createModels (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:49:25)
+    at Object.<anonymous> (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:63:16)
+    at Module._compile (node:internal/modules/cjs/loader:1191:14)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1618:23)
+2023-04-04 00:49:14 error: uncaughtException: Naming collision between attribute 'image' and association 'image' on model banners. To remedy this, change either foreignKey or as in your association definition
+Error: Naming collision between attribute 'image' and association 'image' on model banners. To remedy this, change either foreignKey or as in your association definition
+    at Object.checkNamingCollision (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/sequelize/src/associations/helpers.js:5:11)
+    at BelongsTo._injectAttributes (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/sequelize/src/associations/belongs-to.js:103:13)
+    at Function.<anonymous> (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/sequelize/src/associations/mixin.js:108:17)
+    at Function.Banner.associate (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/banner.model.ts:51:16)
+    at /Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:51:31
+    at Array.forEach (<anonymous>)
+    at createModels (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:49:25)
+    at Object.<anonymous> (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:63:16)
+    at Module._compile (node:internal/modules/cjs/loader:1191:14)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1618:23)
+2023-04-04 00:49:34 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/services/banner.service.ts[0m:[93m155[0m:[93m16[0m - [91merror[0m[90m TS2552: [0mCannot find name 'BannerDTO'. Did you mean 'BannertDTO'?
+
+[7m155[0m         return BannerDTO.transformDetail(banner);
+[7m   [0m [91m               ~~~~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/services/banner.service.ts[0m:[93m155[0m:[93m16[0m - [91merror[0m[90m TS2552: [0mCannot find name 'BannerDTO'. Did you mean 'BannertDTO'?
+
+[7m155[0m         return BannerDTO.transformDetail(banner);
+[7m   [0m [91m               ~~~~~~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-04 00:50:19 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/services/banner.service.ts[0m:[93m155[0m:[93m16[0m - [91merror[0m[90m TS2552: [0mCannot find name 'BannerDTO'. Did you mean 'BannertDTO'?
+
+[7m155[0m         return BannerDTO.transformDetail(banner);
+[7m   [0m [91m               ~~~~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/services/banner.service.ts[0m:[93m155[0m:[93m16[0m - [91merror[0m[90m TS2552: [0mCannot find name 'BannerDTO'. Did you mean 'BannertDTO'?
+
+[7m155[0m         return BannerDTO.transformDetail(banner);
+[7m   [0m [91m               ~~~~~~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-04 00:50:29 error: uncaughtException: Naming collision between attribute 'image' and association 'image' on model banners. To remedy this, change either foreignKey or as in your association definition
+Error: Naming collision between attribute 'image' and association 'image' on model banners. To remedy this, change either foreignKey or as in your association definition
+    at Object.checkNamingCollision (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/sequelize/src/associations/helpers.js:5:11)
+    at BelongsTo._injectAttributes (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/sequelize/src/associations/belongs-to.js:103:13)
+    at Function.<anonymous> (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/sequelize/src/associations/mixin.js:108:17)
+    at Function.Banner.associate (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/banner.model.ts:51:16)
+    at /Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:51:31
+    at Array.forEach (<anonymous>)
+    at createModels (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:49:25)
+    at Object.<anonymous> (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:63:16)
+    at Module._compile (node:internal/modules/cjs/loader:1191:14)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1618:23)
+2023-04-04 00:50:38 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/route/admin/folder.route.ts[0m:[93m3[0m:[93m37[0m - [91merror[0m[90m TS2552: [0mCannot find name 'Routes'. Did you mean 'Router'?
+
+[7m3[0m export class FolderRoute implements Routes {
+[7m [0m [91m                                    ~~~~~~[0m
+[96msrc/route/admin/folder.route.ts[0m:[93m6[0m:[93m25[0m - [91merror[0m[90m TS2304: [0mCannot find name 'FolderController'.
+
+[7m6[0m     public folder = new FolderController();
+[7m [0m [91m                        ~~~~~~~~~~~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/route/admin/folder.route.ts[0m:[93m3[0m:[93m37[0m - [91merror[0m[90m TS2552: [0mCannot find name 'Routes'. Did you mean 'Router'?
+
+[7m3[0m export class FolderRoute implements Routes {
+[7m [0m [91m                                    ~~~~~~[0m
+[96msrc/route/admin/folder.route.ts[0m:[93m6[0m:[93m25[0m - [91merror[0m[90m TS2304: [0mCannot find name 'FolderController'.
+
+[7m6[0m     public folder = new FolderController();
+[7m [0m [91m                        ~~~~~~~~~~~~~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-04 00:50:47 error: uncaughtException: Naming collision between attribute 'image' and association 'image' on model banners. To remedy this, change either foreignKey or as in your association definition
+Error: Naming collision between attribute 'image' and association 'image' on model banners. To remedy this, change either foreignKey or as in your association definition
+    at Object.checkNamingCollision (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/sequelize/src/associations/helpers.js:5:11)
+    at BelongsTo._injectAttributes (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/sequelize/src/associations/belongs-to.js:103:13)
+    at Function.<anonymous> (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/sequelize/src/associations/mixin.js:108:17)
+    at Function.Banner.associate (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/banner.model.ts:51:16)
+    at /Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:51:31
+    at Array.forEach (<anonymous>)
+    at createModels (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:49:25)
+    at Object.<anonymous> (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:63:16)
+    at Module._compile (node:internal/modules/cjs/loader:1191:14)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1618:23)
+2023-04-04 00:51:05 error: uncaughtException: Naming collision between attribute 'image' and association 'image' on model banners. To remedy this, change either foreignKey or as in your association definition
+Error: Naming collision between attribute 'image' and association 'image' on model banners. To remedy this, change either foreignKey or as in your association definition
+    at Object.checkNamingCollision (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/sequelize/src/associations/helpers.js:5:11)
+    at BelongsTo._injectAttributes (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/sequelize/src/associations/belongs-to.js:103:13)
+    at Function.<anonymous> (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/sequelize/src/associations/mixin.js:108:17)
+    at Function.Banner.associate (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/banner.model.ts:51:16)
+    at /Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:51:31
+    at Array.forEach (<anonymous>)
+    at createModels (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:49:25)
+    at Object.<anonymous> (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:63:16)
+    at Module._compile (node:internal/modules/cjs/loader:1191:14)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1618:23)
+2023-04-04 00:51:15 error: uncaughtException: Naming collision between attribute 'image' and association 'image' on model banners. To remedy this, change either foreignKey or as in your association definition
+Error: Naming collision between attribute 'image' and association 'image' on model banners. To remedy this, change either foreignKey or as in your association definition
+    at Object.checkNamingCollision (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/sequelize/src/associations/helpers.js:5:11)
+    at BelongsTo._injectAttributes (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/sequelize/src/associations/belongs-to.js:103:13)
+    at Function.<anonymous> (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/sequelize/src/associations/mixin.js:108:17)
+    at Function.Banner.associate (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/banner.model.ts:51:16)
+    at /Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:51:31
+    at Array.forEach (<anonymous>)
+    at createModels (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:49:25)
+    at Object.<anonymous> (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:63:16)
+    at Module._compile (node:internal/modules/cjs/loader:1191:14)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1618:23)
+2023-04-04 00:51:50 error: uncaughtException: Naming collision between attribute 'image' and association 'image' on model banners. To remedy this, change either foreignKey or as in your association definition
+Error: Naming collision between attribute 'image' and association 'image' on model banners. To remedy this, change either foreignKey or as in your association definition
+    at Object.checkNamingCollision (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/sequelize/src/associations/helpers.js:5:11)
+    at BelongsTo._injectAttributes (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/sequelize/src/associations/belongs-to.js:103:13)
+    at Function.<anonymous> (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/sequelize/src/associations/mixin.js:108:17)
+    at Function.Banner.associate (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/banner.model.ts:51:16)
+    at /Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:51:31
+    at Array.forEach (<anonymous>)
+    at createModels (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:49:25)
+    at Object.<anonymous> (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:63:16)
+    at Module._compile (node:internal/modules/cjs/loader:1191:14)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1618:23)
+2023-04-04 00:52:28 error: uncaughtException: Naming collision between attribute 'image' and association 'image' on model banners. To remedy this, change either foreignKey or as in your association definition
+Error: Naming collision between attribute 'image' and association 'image' on model banners. To remedy this, change either foreignKey or as in your association definition
+    at Object.checkNamingCollision (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/sequelize/src/associations/helpers.js:5:11)
+    at BelongsTo._injectAttributes (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/sequelize/src/associations/belongs-to.js:103:13)
+    at Function.<anonymous> (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/sequelize/src/associations/mixin.js:108:17)
+    at Function.Banner.associate (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/banner.model.ts:51:16)
+    at /Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:51:31
+    at Array.forEach (<anonymous>)
+    at createModels (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:49:25)
+    at Object.<anonymous> (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:63:16)
+    at Module._compile (node:internal/modules/cjs/loader:1191:14)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1618:23)
+2023-04-04 00:52:34 error: uncaughtException: Naming collision between attribute 'image' and association 'image' on model banners. To remedy this, change either foreignKey or as in your association definition
+Error: Naming collision between attribute 'image' and association 'image' on model banners. To remedy this, change either foreignKey or as in your association definition
+    at Object.checkNamingCollision (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/sequelize/src/associations/helpers.js:5:11)
+    at BelongsTo._injectAttributes (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/sequelize/src/associations/belongs-to.js:103:13)
+    at Function.<anonymous> (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/sequelize/src/associations/mixin.js:108:17)
+    at Function.Banner.associate (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/banner.model.ts:51:16)
+    at /Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:51:31
+    at Array.forEach (<anonymous>)
+    at createModels (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:49:25)
+    at Object.<anonymous> (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:63:16)
+    at Module._compile (node:internal/modules/cjs/loader:1191:14)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1618:23)
+2023-04-04 00:52:44 error: uncaughtException: Naming collision between attribute 'image' and association 'image' on model banners. To remedy this, change either foreignKey or as in your association definition
+Error: Naming collision between attribute 'image' and association 'image' on model banners. To remedy this, change either foreignKey or as in your association definition
+    at Object.checkNamingCollision (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/sequelize/src/associations/helpers.js:5:11)
+    at BelongsTo._injectAttributes (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/sequelize/src/associations/belongs-to.js:103:13)
+    at Function.<anonymous> (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/sequelize/src/associations/mixin.js:108:17)
+    at Function.Banner.associate (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/banner.model.ts:51:16)
+    at /Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:51:31
+    at Array.forEach (<anonymous>)
+    at createModels (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:49:25)
+    at Object.<anonymous> (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:63:16)
+    at Module._compile (node:internal/modules/cjs/loader:1191:14)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1618:23)
+2023-04-04 00:54:18 error: uncaughtException: Naming collision between attribute 'image' and association 'image' on model banners. To remedy this, change either foreignKey or as in your association definition
+Error: Naming collision between attribute 'image' and association 'image' on model banners. To remedy this, change either foreignKey or as in your association definition
+    at Object.checkNamingCollision (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/sequelize/src/associations/helpers.js:5:11)
+    at BelongsTo._injectAttributes (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/sequelize/src/associations/belongs-to.js:103:13)
+    at Function.<anonymous> (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/sequelize/src/associations/mixin.js:108:17)
+    at Function.Banner.associate (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/banner.model.ts:51:16)
+    at /Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:51:31
+    at Array.forEach (<anonymous>)
+    at createModels (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:49:25)
+    at Object.<anonymous> (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:63:16)
+    at Module._compile (node:internal/modules/cjs/loader:1191:14)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1618:23)
+2023-04-04 00:54:33 error: uncaughtException: Naming collision between attribute 'image' and association 'image' on model banners. To remedy this, change either foreignKey or as in your association definition
+Error: Naming collision between attribute 'image' and association 'image' on model banners. To remedy this, change either foreignKey or as in your association definition
+    at Object.checkNamingCollision (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/sequelize/src/associations/helpers.js:5:11)
+    at BelongsTo._injectAttributes (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/sequelize/src/associations/belongs-to.js:103:13)
+    at Function.<anonymous> (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/sequelize/src/associations/mixin.js:108:17)
+    at Function.Banner.associate (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/banner.model.ts:51:16)
+    at /Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:51:31
+    at Array.forEach (<anonymous>)
+    at createModels (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:49:25)
+    at Object.<anonymous> (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:63:16)
+    at Module._compile (node:internal/modules/cjs/loader:1191:14)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1618:23)
+2023-04-04 00:55:15 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/services/banner.service.ts[0m:[93m155[0m:[93m16[0m - [91merror[0m[90m TS2552: [0mCannot find name 'BannerDTO'. Did you mean 'BannertDTO'?
+
+[7m155[0m         return BannerDTO.transformDetail(banner);
+[7m   [0m [91m               ~~~~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/services/banner.service.ts[0m:[93m155[0m:[93m16[0m - [91merror[0m[90m TS2552: [0mCannot find name 'BannerDTO'. Did you mean 'BannertDTO'?
+
+[7m155[0m         return BannerDTO.transformDetail(banner);
+[7m   [0m [91m               ~~~~~~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-04 00:55:27 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/services/banner.service.ts[0m:[93m155[0m:[93m16[0m - [91merror[0m[90m TS2552: [0mCannot find name 'BannerDTO'. Did you mean 'BannertDTO'?
+
+[7m155[0m         return BannerDTO.transformDetail(banner);
+[7m   [0m [91m               ~~~~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/services/banner.service.ts[0m:[93m155[0m:[93m16[0m - [91merror[0m[90m TS2552: [0mCannot find name 'BannerDTO'. Did you mean 'BannertDTO'?
+
+[7m155[0m         return BannerDTO.transformDetail(banner);
+[7m   [0m [91m               ~~~~~~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-04 00:55:37 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/services/banner.service.ts[0m:[93m155[0m:[93m16[0m - [91merror[0m[90m TS2552: [0mCannot find name 'BannerDTO'. Did you mean 'BannertDTO'?
+
+[7m155[0m         return BannerDTO.transformDetail(banner);
+[7m   [0m [91m               ~~~~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/services/banner.service.ts[0m:[93m155[0m:[93m16[0m - [91merror[0m[90m TS2552: [0mCannot find name 'BannerDTO'. Did you mean 'BannertDTO'?
+
+[7m155[0m         return BannerDTO.transformDetail(banner);
+[7m   [0m [91m               ~~~~~~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-04 00:55:42 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/services/banner.service.ts[0m:[93m155[0m:[93m16[0m - [91merror[0m[90m TS2552: [0mCannot find name 'BannerDTO'. Did you mean 'BannertDTO'?
+
+[7m155[0m         return BannerDTO.transformDetail(banner);
+[7m   [0m [91m               ~~~~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/services/banner.service.ts[0m:[93m155[0m:[93m16[0m - [91merror[0m[90m TS2552: [0mCannot find name 'BannerDTO'. Did you mean 'BannertDTO'?
+
+[7m155[0m         return BannerDTO.transformDetail(banner);
+[7m   [0m [91m               ~~~~~~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-04 00:56:05 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/services/banner.service.ts[0m:[93m155[0m:[93m16[0m - [91merror[0m[90m TS2552: [0mCannot find name 'BannerDTO'. Did you mean 'BannertDTO'?
+
+[7m155[0m         return BannerDTO.transformDetail(banner);
+[7m   [0m [91m               ~~~~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/services/banner.service.ts[0m:[93m155[0m:[93m16[0m - [91merror[0m[90m TS2552: [0mCannot find name 'BannerDTO'. Did you mean 'BannertDTO'?
+
+[7m155[0m         return BannerDTO.transformDetail(banner);
+[7m   [0m [91m               ~~~~~~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-04 00:57:41 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/services/banner.service.ts[0m:[93m155[0m:[93m16[0m - [91merror[0m[90m TS2552: [0mCannot find name 'BannerDTO'. Did you mean 'BannertDTO'?
+
+[7m155[0m         return BannerDTO.transformDetail(banner);
+[7m   [0m [91m               ~~~~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/services/banner.service.ts[0m:[93m155[0m:[93m16[0m - [91merror[0m[90m TS2552: [0mCannot find name 'BannerDTO'. Did you mean 'BannertDTO'?
+
+[7m155[0m         return BannerDTO.transformDetail(banner);
+[7m   [0m [91m               ~~~~~~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-04 00:59:19 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/services/banner.service.ts[0m:[93m155[0m:[93m16[0m - [91merror[0m[90m TS2552: [0mCannot find name 'BannerDTO'. Did you mean 'BannertDTO'?
+
+[7m155[0m         return BannerDTO.transformDetail(banner);
+[7m   [0m [91m               ~~~~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/services/banner.service.ts[0m:[93m155[0m:[93m16[0m - [91merror[0m[90m TS2552: [0mCannot find name 'BannerDTO'. Did you mean 'BannertDTO'?
+
+[7m155[0m         return BannerDTO.transformDetail(banner);
+[7m   [0m [91m               ~~~~~~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-04 00:59:57 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/services/banner.service.ts[0m:[93m155[0m:[93m16[0m - [91merror[0m[90m TS2552: [0mCannot find name 'BannerDTO'. Did you mean 'BannertDTO'?
+
+[7m155[0m         return BannerDTO.transformDetail(banner);
+[7m   [0m [91m               ~~~~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/services/banner.service.ts[0m:[93m155[0m:[93m16[0m - [91merror[0m[90m TS2552: [0mCannot find name 'BannerDTO'. Did you mean 'BannertDTO'?
+
+[7m155[0m         return BannerDTO.transformDetail(banner);
+[7m   [0m [91m               ~~~~~~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-04 01:00:18 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/services/banner.service.ts[0m:[93m155[0m:[93m16[0m - [91merror[0m[90m TS2552: [0mCannot find name 'BannerDTO'. Did you mean 'BannertDTO'?
+
+[7m155[0m         return BannerDTO.transformDetail(banner);
+[7m   [0m [91m               ~~~~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/services/banner.service.ts[0m:[93m155[0m:[93m16[0m - [91merror[0m[90m TS2552: [0mCannot find name 'BannerDTO'. Did you mean 'BannertDTO'?
+
+[7m155[0m         return BannerDTO.transformDetail(banner);
+[7m   [0m [91m               ~~~~~~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-04 01:01:15 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/services/banner.service.ts[0m:[93m155[0m:[93m16[0m - [91merror[0m[90m TS2552: [0mCannot find name 'BannerDTO'. Did you mean 'BannertDTO'?
+
+[7m155[0m         return BannerDTO.transformDetail(banner);
+[7m   [0m [91m               ~~~~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/services/banner.service.ts[0m:[93m155[0m:[93m16[0m - [91merror[0m[90m TS2552: [0mCannot find name 'BannerDTO'. Did you mean 'BannertDTO'?
+
+[7m155[0m         return BannerDTO.transformDetail(banner);
+[7m   [0m [91m               ~~~~~~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-04 01:06:49 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/services/banner.service.ts[0m:[93m155[0m:[93m16[0m - [91merror[0m[90m TS2552: [0mCannot find name 'BannerDTO'. Did you mean 'BannertDTO'?
+
+[7m155[0m         return BannerDTO.transformDetail(banner);
+[7m   [0m [91m               ~~~~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/services/banner.service.ts[0m:[93m155[0m:[93m16[0m - [91merror[0m[90m TS2552: [0mCannot find name 'BannerDTO'. Did you mean 'BannertDTO'?
+
+[7m155[0m         return BannerDTO.transformDetail(banner);
+[7m   [0m [91m               ~~~~~~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-04 01:07:26 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/services/banner.service.ts[0m:[93m155[0m:[93m16[0m - [91merror[0m[90m TS2552: [0mCannot find name 'BannerDTO'. Did you mean 'BannertDTO'?
+
+[7m155[0m         return BannerDTO.transformDetail(banner);
+[7m   [0m [91m               ~~~~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/services/banner.service.ts[0m:[93m155[0m:[93m16[0m - [91merror[0m[90m TS2552: [0mCannot find name 'BannerDTO'. Did you mean 'BannertDTO'?
+
+[7m155[0m         return BannerDTO.transformDetail(banner);
+[7m   [0m [91m               ~~~~~~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-04 01:11:13 error: uncaughtException: Naming collision between attribute 'image' and association 'image' on model banners. To remedy this, change either foreignKey or as in your association definition
+Error: Naming collision between attribute 'image' and association 'image' on model banners. To remedy this, change either foreignKey or as in your association definition
+    at Object.checkNamingCollision (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/sequelize/src/associations/helpers.js:5:11)
+    at BelongsTo._injectAttributes (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/sequelize/src/associations/belongs-to.js:103:13)
+    at Function.<anonymous> (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/sequelize/src/associations/mixin.js:108:17)
+    at Function.Banner.associate (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/banner.model.ts:51:16)
+    at /Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:51:31
+    at Array.forEach (<anonymous>)
+    at createModels (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:49:25)
+    at Object.<anonymous> (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:63:16)
+    at Module._compile (node:internal/modules/cjs/loader:1191:14)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1618:23)
+2023-04-04 01:12:01 error: uncaughtException: Naming collision between attribute 'image' and association 'image' on model banners. To remedy this, change either foreignKey or as in your association definition
+Error: Naming collision between attribute 'image' and association 'image' on model banners. To remedy this, change either foreignKey or as in your association definition
+    at Object.checkNamingCollision (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/sequelize/src/associations/helpers.js:5:11)
+    at BelongsTo._injectAttributes (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/sequelize/src/associations/belongs-to.js:103:13)
+    at Function.<anonymous> (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/sequelize/src/associations/mixin.js:108:17)
+    at Function.Banner.associate (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/banner.model.ts:51:16)
+    at /Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:51:31
+    at Array.forEach (<anonymous>)
+    at createModels (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:49:25)
+    at Object.<anonymous> (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:63:16)
+    at Module._compile (node:internal/modules/cjs/loader:1191:14)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1618:23)
+2023-04-04 01:12:14 error: uncaughtException: Naming collision between attribute 'image' and association 'image' on model banners. To remedy this, change either foreignKey or as in your association definition
+Error: Naming collision between attribute 'image' and association 'image' on model banners. To remedy this, change either foreignKey or as in your association definition
+    at Object.checkNamingCollision (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/sequelize/src/associations/helpers.js:5:11)
+    at BelongsTo._injectAttributes (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/sequelize/src/associations/belongs-to.js:103:13)
+    at Function.<anonymous> (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/sequelize/src/associations/mixin.js:108:17)
+    at Function.Banner.associate (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/banner.model.ts:51:16)
+    at /Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:51:31
+    at Array.forEach (<anonymous>)
+    at createModels (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:49:25)
+    at Object.<anonymous> (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:63:16)
+    at Module._compile (node:internal/modules/cjs/loader:1191:14)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1618:23)
+2023-04-04 01:12:24 error: uncaughtException: Naming collision between attribute 'image' and association 'image' on model banners. To remedy this, change either foreignKey or as in your association definition
+Error: Naming collision between attribute 'image' and association 'image' on model banners. To remedy this, change either foreignKey or as in your association definition
+    at Object.checkNamingCollision (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/sequelize/src/associations/helpers.js:5:11)
+    at BelongsTo._injectAttributes (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/sequelize/src/associations/belongs-to.js:103:13)
+    at Function.<anonymous> (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/sequelize/src/associations/mixin.js:108:17)
+    at Function.Banner.associate (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/banner.model.ts:51:16)
+    at /Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:51:31
+    at Array.forEach (<anonymous>)
+    at createModels (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:49:25)
+    at Object.<anonymous> (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:63:16)
+    at Module._compile (node:internal/modules/cjs/loader:1191:14)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1618:23)
+2023-04-04 01:13:49 error: uncaughtException: Naming collision between attribute 'image' and association 'image' on model banners. To remedy this, change either foreignKey or as in your association definition
+Error: Naming collision between attribute 'image' and association 'image' on model banners. To remedy this, change either foreignKey or as in your association definition
+    at Object.checkNamingCollision (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/sequelize/src/associations/helpers.js:5:11)
+    at BelongsTo._injectAttributes (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/sequelize/src/associations/belongs-to.js:103:13)
+    at Function.<anonymous> (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/sequelize/src/associations/mixin.js:108:17)
+    at Function.Banner.associate (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/banner.model.ts:51:16)
+    at /Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:51:31
+    at Array.forEach (<anonymous>)
+    at createModels (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:49:25)
+    at Object.<anonymous> (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:63:16)
+    at Module._compile (node:internal/modules/cjs/loader:1191:14)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1618:23)
+2023-04-04 01:14:05 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/infra/sequelize/models/bannerTranslation.model.ts[0m:[93m39[0m:[93m5[0m - [91merror[0m[90m TS2304: [0mCannot find name 'PostTranslation'.
+
+[7m39[0m     PostTranslation.associate = function (models) {
+[7m  [0m [91m    ~~~~~~~~~~~~~~~[0m
+[96msrc/infra/sequelize/models/bannerTranslation.model.ts[0m:[93m40[0m:[93m9[0m - [91merror[0m[90m TS2304: [0mCannot find name 'PostTranslation'.
+
+[7m40[0m         PostTranslation.belongsTo(models.Post, {
+[7m  [0m [91m        ~~~~~~~~~~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/infra/sequelize/models/bannerTranslation.model.ts[0m:[93m39[0m:[93m5[0m - [91merror[0m[90m TS2304: [0mCannot find name 'PostTranslation'.
+
+[7m39[0m     PostTranslation.associate = function (models) {
+[7m  [0m [91m    ~~~~~~~~~~~~~~~[0m
+[96msrc/infra/sequelize/models/bannerTranslation.model.ts[0m:[93m40[0m:[93m9[0m - [91merror[0m[90m TS2304: [0mCannot find name 'PostTranslation'.
+
+[7m40[0m         PostTranslation.belongsTo(models.Post, {
+[7m  [0m [91m        ~~~~~~~~~~~~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-04 01:14:17 error: uncaughtException: Naming collision between attribute 'image' and association 'image' on model banners. To remedy this, change either foreignKey or as in your association definition
+Error: Naming collision between attribute 'image' and association 'image' on model banners. To remedy this, change either foreignKey or as in your association definition
+    at Object.checkNamingCollision (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/sequelize/src/associations/helpers.js:5:11)
+    at BelongsTo._injectAttributes (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/sequelize/src/associations/belongs-to.js:103:13)
+    at Function.<anonymous> (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/sequelize/src/associations/mixin.js:108:17)
+    at Function.Banner.associate (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/banner.model.ts:51:16)
+    at /Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:51:31
+    at Array.forEach (<anonymous>)
+    at createModels (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:49:25)
+    at Object.<anonymous> (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:63:16)
+    at Module._compile (node:internal/modules/cjs/loader:1191:14)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1618:23)
+2023-04-04 01:18:48 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/infra/sequelize/models/ceoTranslation.model.ts[0m:[93m10[0m:[93m23[0m - [91merror[0m[90m TS2552: [0mCannot find name 'Sequelize'. Did you mean 'sequelize'?
+
+[7m10[0m                 type: Sequelize.INTEGER,
+[7m  [0m [91m                      ~~~~~~~~~[0m
+
+  [96msrc/infra/sequelize/models/ceoTranslation.model.ts[0m:[93m2[0m:[93m28[0m
+    [7m2[0m module.exports = function (sequelize, DataTypes) {
+    [7m [0m [96m                           ~~~~~~~~~[0m
+    'sequelize' is declared here.
+[96msrc/infra/sequelize/models/ceoTranslation.model.ts[0m:[93m15[0m:[93m23[0m - [91merror[0m[90m TS2552: [0mCannot find name 'Sequelize'. Did you mean 'sequelize'?
+
+[7m15[0m                 type: Sequelize.STRING,
+[7m  [0m [91m                      ~~~~~~~~~[0m
+
+  [96msrc/infra/sequelize/models/ceoTranslation.model.ts[0m:[93m2[0m:[93m28[0m
+    [7m2[0m module.exports = function (sequelize, DataTypes) {
+    [7m [0m [96m                           ~~~~~~~~~[0m
+    'sequelize' is declared here.
+[96msrc/infra/sequelize/models/ceoTranslation.model.ts[0m:[93m19[0m:[93m23[0m - [91merror[0m[90m TS2552: [0mCannot find name 'Sequelize'. Did you mean 'sequelize'?
+
+[7m19[0m                 type: Sequelize.INTEGER,
+[7m  [0m [91m                      ~~~~~~~~~[0m
+
+  [96msrc/infra/sequelize/models/ceoTranslation.model.ts[0m:[93m2[0m:[93m28[0m
+    [7m2[0m module.exports = function (sequelize, DataTypes) {
+    [7m [0m [96m                           ~~~~~~~~~[0m
+    'sequelize' is declared here.
+[96msrc/infra/sequelize/models/ceoTranslation.model.ts[0m:[93m28[0m:[93m23[0m - [91merror[0m[90m TS2552: [0mCannot find name 'Sequelize'. Did you mean 'sequelize'?
+
+[7m28[0m                 type: Sequelize.STRING,
+[7m  [0m [91m                      ~~~~~~~~~[0m
+
+  [96msrc/infra/sequelize/models/ceoTranslation.model.ts[0m:[93m2[0m:[93m28[0m
+    [7m2[0m module.exports = function (sequelize, DataTypes) {
+    [7m [0m [96m                           ~~~~~~~~~[0m
+    'sequelize' is declared here.
+[96msrc/infra/sequelize/models/ceoTranslation.model.ts[0m:[93m34[0m:[93m23[0m - [91merror[0m[90m TS2552: [0mCannot find name 'Sequelize'. Did you mean 'sequelize'?
+
+[7m34[0m                 type: Sequelize.STRING,
+[7m  [0m [91m                      ~~~~~~~~~[0m
+
+  [96msrc/infra/sequelize/models/ceoTranslation.model.ts[0m:[93m2[0m:[93m28[0m
+    [7m2[0m module.exports = function (sequelize, DataTypes) {
+    [7m [0m [96m                           ~~~~~~~~~[0m
+    'sequelize' is declared here.
+[96msrc/infra/sequelize/models/ceoTranslation.model.ts[0m:[93m38[0m:[93m23[0m - [91merror[0m[90m TS2552: [0mCannot find name 'Sequelize'. Did you mean 'sequelize'?
+
+[7m38[0m                 type: Sequelize.TEXT('long'),
+[7m  [0m [91m                      ~~~~~~~~~[0m
+
+  [96msrc/infra/sequelize/models/ceoTranslation.model.ts[0m:[93m2[0m:[93m28[0m
+    [7m2[0m module.exports = function (sequelize, DataTypes) {
+    [7m [0m [96m                           ~~~~~~~~~[0m
+    'sequelize' is declared here.
+[96msrc/infra/sequelize/models/ceoTranslation.model.ts[0m:[93m42[0m:[93m23[0m - [91merror[0m[90m TS2552: [0mCannot find name 'Sequelize'. Did you mean 'sequelize'?
+
+[7m42[0m                 type: Sequelize.TEXT('long'),
+[7m  [0m [91m                      ~~~~~~~~~[0m
+
+  [96msrc/infra/sequelize/models/ceoTranslation.model.ts[0m:[93m2[0m:[93m28[0m
+    [7m2[0m module.exports = function (sequelize, DataTypes) {
+    [7m [0m [96m                           ~~~~~~~~~[0m
+    'sequelize' is declared here.
+[96msrc/infra/sequelize/models/ceoTranslation.model.ts[0m:[93m46[0m:[93m23[0m - [91merror[0m[90m TS2552: [0mCannot find name 'Sequelize'. Did you mean 'sequelize'?
+
+[7m46[0m                 type: Sequelize.STRING,
+[7m  [0m [91m                      ~~~~~~~~~[0m
+
+  [96msrc/infra/sequelize/models/ceoTranslation.model.ts[0m:[93m2[0m:[93m28[0m
+    [7m2[0m module.exports = function (sequelize, DataTypes) {
+    [7m [0m [96m                           ~~~~~~~~~[0m
+    'sequelize' is declared here.
+[96msrc/infra/sequelize/models/ceoTranslation.model.ts[0m:[93m50[0m:[93m23[0m - [91merror[0m[90m TS2552: [0mCannot find name 'Sequelize'. Did you mean 'sequelize'?
+
+[7m50[0m                 type: Sequelize.STRING,
+[7m  [0m [91m                      ~~~~~~~~~[0m
+
+  [96msrc/infra/sequelize/models/ceoTranslation.model.ts[0m:[93m2[0m:[93m28[0m
+    [7m2[0m module.exports = function (sequelize, DataTypes) {
+    [7m [0m [96m                           ~~~~~~~~~[0m
+    'sequelize' is declared here.
+[96msrc/infra/sequelize/models/ceoTranslation.model.ts[0m:[93m54[0m:[93m23[0m - [91merror[0m[90m TS2552: [0mCannot find name 'Sequelize'. Did you mean 'sequelize'?
+
+[7m54[0m                 type: Sequelize.STRING,
+[7m  [0m [91m                      ~~~~~~~~~[0m
+
+  [96msrc/infra/sequelize/models/ceoTranslation.model.ts[0m:[93m2[0m:[93m28[0m
+    [7m2[0m module.exports = function (sequelize, DataTypes) {
+    [7m [0m [96m                           ~~~~~~~~~[0m
+    'sequelize' is declared here.
+[96msrc/infra/sequelize/models/ceoTranslation.model.ts[0m:[93m58[0m:[93m23[0m - [91merror[0m[90m TS2304: [0mCannot find name 'Sequelize'.
+
+[7m58[0m                 type: Sequelize.STRING,
+[7m  [0m [91m                      ~~~~~~~~~[0m
+[96msrc/infra/sequelize/models/ceoTranslation.model.ts[0m:[93m62[0m:[93m23[0m - [91merror[0m[90m TS2304: [0mCannot find name 'Sequelize'.
+
+[7m62[0m                 type: Sequelize.STRING,
+[7m  [0m [91m                      ~~~~~~~~~[0m
+[96msrc/infra/sequelize/models/ceoTranslation.model.ts[0m:[93m67[0m:[93m23[0m - [91merror[0m[90m TS2304: [0mCannot find name 'Sequelize'.
+
+[7m67[0m                 type: Sequelize.STRING,
+[7m  [0m [91m                      ~~~~~~~~~[0m
+[96msrc/infra/sequelize/models/ceoTranslation.model.ts[0m:[93m72[0m:[93m23[0m - [91merror[0m[90m TS2304: [0mCannot find name 'Sequelize'.
+
+[7m72[0m                 type: Sequelize.STRING,
+[7m  [0m [91m                      ~~~~~~~~~[0m
+[96msrc/infra/sequelize/models/ceoTranslation.model.ts[0m:[93m77[0m:[93m23[0m - [91merror[0m[90m TS2304: [0mCannot find name 'Sequelize'.
+
+[7m77[0m                 type: Sequelize.STRING,
+[7m  [0m [91m                      ~~~~~~~~~[0m
+[96msrc/infra/sequelize/models/ceoTranslation.model.ts[0m:[93m82[0m:[93m23[0m - [91merror[0m[90m TS2304: [0mCannot find name 'Sequelize'.
+
+[7m82[0m                 type: Sequelize.TEXT('long'),
+[7m  [0m [91m                      ~~~~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/infra/sequelize/models/ceoTranslation.model.ts[0m:[93m10[0m:[93m23[0m - [91merror[0m[90m TS2552: [0mCannot find name 'Sequelize'. Did you mean 'sequelize'?
+
+[7m10[0m                 type: Sequelize.INTEGER,
+[7m  [0m [91m                      ~~~~~~~~~[0m
+
+  [96msrc/infra/sequelize/models/ceoTranslation.model.ts[0m:[93m2[0m:[93m28[0m
+    [7m2[0m module.exports = function (sequelize, DataTypes) {
+    [7m [0m [96m                           ~~~~~~~~~[0m
+    'sequelize' is declared here.
+[96msrc/infra/sequelize/models/ceoTranslation.model.ts[0m:[93m15[0m:[93m23[0m - [91merror[0m[90m TS2552: [0mCannot find name 'Sequelize'. Did you mean 'sequelize'?
+
+[7m15[0m                 type: Sequelize.STRING,
+[7m  [0m [91m                      ~~~~~~~~~[0m
+
+  [96msrc/infra/sequelize/models/ceoTranslation.model.ts[0m:[93m2[0m:[93m28[0m
+    [7m2[0m module.exports = function (sequelize, DataTypes) {
+    [7m [0m [96m                           ~~~~~~~~~[0m
+    'sequelize' is declared here.
+[96msrc/infra/sequelize/models/ceoTranslation.model.ts[0m:[93m19[0m:[93m23[0m - [91merror[0m[90m TS2552: [0mCannot find name 'Sequelize'. Did you mean 'sequelize'?
+
+[7m19[0m                 type: Sequelize.INTEGER,
+[7m  [0m [91m                      ~~~~~~~~~[0m
+
+  [96msrc/infra/sequelize/models/ceoTranslation.model.ts[0m:[93m2[0m:[93m28[0m
+    [7m2[0m module.exports = function (sequelize, DataTypes) {
+    [7m [0m [96m                           ~~~~~~~~~[0m
+    'sequelize' is declared here.
+[96msrc/infra/sequelize/models/ceoTranslation.model.ts[0m:[93m28[0m:[93m23[0m - [91merror[0m[90m TS2552: [0mCannot find name 'Sequelize'. Did you mean 'sequelize'?
+
+[7m28[0m                 type: Sequelize.STRING,
+[7m  [0m [91m                      ~~~~~~~~~[0m
+
+  [96msrc/infra/sequelize/models/ceoTranslation.model.ts[0m:[93m2[0m:[93m28[0m
+    [7m2[0m module.exports = function (sequelize, DataTypes) {
+    [7m [0m [96m                           ~~~~~~~~~[0m
+    'sequelize' is declared here.
+[96msrc/infra/sequelize/models/ceoTranslation.model.ts[0m:[93m34[0m:[93m23[0m - [91merror[0m[90m TS2552: [0mCannot find name 'Sequelize'. Did you mean 'sequelize'?
+
+[7m34[0m                 type: Sequelize.STRING,
+[7m  [0m [91m                      ~~~~~~~~~[0m
+
+  [96msrc/infra/sequelize/models/ceoTranslation.model.ts[0m:[93m2[0m:[93m28[0m
+    [7m2[0m module.exports = function (sequelize, DataTypes) {
+    [7m [0m [96m                           ~~~~~~~~~[0m
+    'sequelize' is declared here.
+[96msrc/infra/sequelize/models/ceoTranslation.model.ts[0m:[93m38[0m:[93m23[0m - [91merror[0m[90m TS2552: [0mCannot find name 'Sequelize'. Did you mean 'sequelize'?
+
+[7m38[0m                 type: Sequelize.TEXT('long'),
+[7m  [0m [91m                      ~~~~~~~~~[0m
+
+  [96msrc/infra/sequelize/models/ceoTranslation.model.ts[0m:[93m2[0m:[93m28[0m
+    [7m2[0m module.exports = function (sequelize, DataTypes) {
+    [7m [0m [96m                           ~~~~~~~~~[0m
+    'sequelize' is declared here.
+[96msrc/infra/sequelize/models/ceoTranslation.model.ts[0m:[93m42[0m:[93m23[0m - [91merror[0m[90m TS2552: [0mCannot find name 'Sequelize'. Did you mean 'sequelize'?
+
+[7m42[0m                 type: Sequelize.TEXT('long'),
+[7m  [0m [91m                      ~~~~~~~~~[0m
+
+  [96msrc/infra/sequelize/models/ceoTranslation.model.ts[0m:[93m2[0m:[93m28[0m
+    [7m2[0m module.exports = function (sequelize, DataTypes) {
+    [7m [0m [96m                           ~~~~~~~~~[0m
+    'sequelize' is declared here.
+[96msrc/infra/sequelize/models/ceoTranslation.model.ts[0m:[93m46[0m:[93m23[0m - [91merror[0m[90m TS2552: [0mCannot find name 'Sequelize'. Did you mean 'sequelize'?
+
+[7m46[0m                 type: Sequelize.STRING,
+[7m  [0m [91m                      ~~~~~~~~~[0m
+
+  [96msrc/infra/sequelize/models/ceoTranslation.model.ts[0m:[93m2[0m:[93m28[0m
+    [7m2[0m module.exports = function (sequelize, DataTypes) {
+    [7m [0m [96m                           ~~~~~~~~~[0m
+    'sequelize' is declared here.
+[96msrc/infra/sequelize/models/ceoTranslation.model.ts[0m:[93m50[0m:[93m23[0m - [91merror[0m[90m TS2552: [0mCannot find name 'Sequelize'. Did you mean 'sequelize'?
+
+[7m50[0m                 type: Sequelize.STRING,
+[7m  [0m [91m                      ~~~~~~~~~[0m
+
+  [96msrc/infra/sequelize/models/ceoTranslation.model.ts[0m:[93m2[0m:[93m28[0m
+    [7m2[0m module.exports = function (sequelize, DataTypes) {
+    [7m [0m [96m                           ~~~~~~~~~[0m
+    'sequelize' is declared here.
+[96msrc/infra/sequelize/models/ceoTranslation.model.ts[0m:[93m54[0m:[93m23[0m - [91merror[0m[90m TS2552: [0mCannot find name 'Sequelize'. Did you mean 'sequelize'?
+
+[7m54[0m                 type: Sequelize.STRING,
+[7m  [0m [91m                      ~~~~~~~~~[0m
+
+  [96msrc/infra/sequelize/models/ceoTranslation.model.ts[0m:[93m2[0m:[93m28[0m
+    [7m2[0m module.exports = function (sequelize, DataTypes) {
+    [7m [0m [96m                           ~~~~~~~~~[0m
+    'sequelize' is declared here.
+[96msrc/infra/sequelize/models/ceoTranslation.model.ts[0m:[93m58[0m:[93m23[0m - [91merror[0m[90m TS2304: [0mCannot find name 'Sequelize'.
+
+[7m58[0m                 type: Sequelize.STRING,
+[7m  [0m [91m                      ~~~~~~~~~[0m
+[96msrc/infra/sequelize/models/ceoTranslation.model.ts[0m:[93m62[0m:[93m23[0m - [91merror[0m[90m TS2304: [0mCannot find name 'Sequelize'.
+
+[7m62[0m                 type: Sequelize.STRING,
+[7m  [0m [91m                      ~~~~~~~~~[0m
+[96msrc/infra/sequelize/models/ceoTranslation.model.ts[0m:[93m67[0m:[93m23[0m - [91merror[0m[90m TS2304: [0mCannot find name 'Sequelize'.
+
+[7m67[0m                 type: Sequelize.STRING,
+[7m  [0m [91m                      ~~~~~~~~~[0m
+[96msrc/infra/sequelize/models/ceoTranslation.model.ts[0m:[93m72[0m:[93m23[0m - [91merror[0m[90m TS2304: [0mCannot find name 'Sequelize'.
+
+[7m72[0m                 type: Sequelize.STRING,
+[7m  [0m [91m                      ~~~~~~~~~[0m
+[96msrc/infra/sequelize/models/ceoTranslation.model.ts[0m:[93m77[0m:[93m23[0m - [91merror[0m[90m TS2304: [0mCannot find name 'Sequelize'.
+
+[7m77[0m                 type: Sequelize.STRING,
+[7m  [0m [91m                      ~~~~~~~~~[0m
+[96msrc/infra/sequelize/models/ceoTranslation.model.ts[0m:[93m82[0m:[93m23[0m - [91merror[0m[90m TS2304: [0mCannot find name 'Sequelize'.
+
+[7m82[0m                 type: Sequelize.TEXT('long'),
+[7m  [0m [91m                      ~~~~~~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)

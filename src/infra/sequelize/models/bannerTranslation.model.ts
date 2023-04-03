@@ -1,4 +1,3 @@
-import Helper from '../../../utils/Helper';
 
 module.exports = function (sequelize, DataTypes) {
     const BannerTranslation = sequelize.define(
@@ -36,6 +35,13 @@ module.exports = function (sequelize, DataTypes) {
             tableName: "banner_translation",
         },
     );
+
+    BannerTranslation.associate = function (models) {
+        BannerTranslation.belongsTo(models.Banner, {
+            as: "banner",
+            foreignKey: "banner_id",
+        });
+    }
 
     return BannerTranslation;
 };

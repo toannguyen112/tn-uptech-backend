@@ -2,7 +2,8 @@
 import { Router } from "express";
 import { Routes } from "../interface/routes.interface";
 import AdminController from "../modules/controllers/admin.controller";
-export class PostRoute implements Routes {
+
+export class AminRoute implements Routes {
     public path = '/admins';
     public router = Router();
     public admin = new AdminController();

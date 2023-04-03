@@ -12,9 +12,9 @@ module.exports = function (sequelize, DataTypes) {
                 type: DataTypes.INTEGER,
             },
 
-            slug: {
-                allowNull: true,
+            status: {
                 type: DataTypes.STRING,
+                defaultValue: 'active'
             },
 
             thumbnail: {
