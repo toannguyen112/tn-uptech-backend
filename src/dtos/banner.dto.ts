@@ -25,6 +25,7 @@ export class BannerDTO {
             name: translationData.name || "",
             description: translationData.description || "",
             status: item.status || 'inactive',
+            sub_name: translationData.sub_name || '',
             content: translationData.content || "",
             thumbnail: item.image || null,
             createdAt: item.createdAt,
