@@ -18,24 +18,24 @@ module.exports = {
         },
       },
 
+      locale: {
+        type: Sequelize.STRING,
+        allowNull: false,
+      },
+
       name: {
         type: Sequelize.STRING,
+        allowNull: false,
       },
 
       sub_name: {
         type: Sequelize.STRING,
+        allowNull: true,
       },
 
       desctiption: {
         type: Sequelize.STRING,
-      },
-
-      slug: {
-        type: Sequelize.STRING,
-      },
-
-      custom_slug: {
-        type: Sequelize.STRING,
+        allowNull: true,
       },
 
     }),

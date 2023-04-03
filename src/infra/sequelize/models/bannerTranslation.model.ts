@@ -11,11 +11,15 @@ module.exports = function (sequelize, DataTypes) {
                 type: DataTypes.INTEGER,
             },
 
-            name: {
-                type: DataTypes.STRING,
+            banner_id: {
+                type: DataTypes.INTEGER,
+                references: {
+                    model: "banners",
+                    key: "id",
+                },
             },
 
-            slug: {
+            name: {
                 type: DataTypes.STRING,
             },
 
@@ -26,27 +30,12 @@ module.exports = function (sequelize, DataTypes) {
             desctiption: {
                 type: DataTypes.STRING,
             },
-
-            banner_id: {
-                type: DataTypes.INTEGER,
-                references: {
-                    model: "banners",
-                    key: "id",
-                },
-            },
         },
         {
             timestamps: false,
             tableName: "banner_translation",
         },
     );
-
-    // BannerTranslation.associate = function (models) {
-    //     BannerTranslation.belongsTo(models.Banner, {
-    //         as: "banner",
-    //         foreignKey: "banner_id",
-    //     });
-    // };
 
     return BannerTranslation;
 };

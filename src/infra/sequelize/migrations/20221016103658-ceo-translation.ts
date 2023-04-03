@@ -30,21 +30,16 @@ module.exports = {
         allowNull: false,
       },
 
-      custom_slug: {
-        allowNull: true,
-        type: Sequelize.STRING,
-      },
-
       name: {
         type: Sequelize.STRING,
       },
 
       description: {
-        type: Sequelize.STRING,
+        type: Sequelize.TEXT('long'),
       },
 
       detail: {
-        type: Sequelize.STRING,
+        type: Sequelize.TEXT('long'),
       },
 
       date: {
@@ -84,7 +79,7 @@ module.exports = {
 
       education: {
         allowNull: true,
-        type: Sequelize.STRING,
+        type: Sequelize.TEXT('long'),
       },
     }),
 

@@ -56,5 +56,6 @@ module.exports = {
   },
   async down(queryInterface) {
     await queryInterface.bulkDelete("projects", null, {});
+    await queryInterface.bulkDelete("project_translation", null, {});
   },
 };

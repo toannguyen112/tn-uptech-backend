@@ -1,98 +1,203 @@
+import { BannertDTO } from "../dtos/banner.dto";
 import models from "../infra/sequelize/models";
-import { Service } from 'typedi';
 import { ApiFeatures } from "../utils/ApiFeatures";
-import { ProjectDTO } from "../dtos/project.dto";
-@Service()
-export class ProjectService {
+import Helper from "../utils/Helper";
+import { Op } from "sequelize";
+export class BannerService {
 
     public getList = async (query) => {
-        const conditions = {};
 
-        const objQuery = new ApiFeatures(query)
-            .filter(conditions)
-            .includes([
-                {
-                    model: models.Media,
-                    as: "image"
-                },
-                {
-                    model: models.ProjectTranslation,
-                    as: "translation",
-                    require: true,
-                    where: {
-                        locale: "vi",
-                    }
-                },
-            ])
-            .paginate()
-            .paranoid()
-            .getObjQuery();
+        try {
+            const conditions = {};
 
-        const { count, rows }: any = await models.Project.findAndCountAll(objQuery);
+            const queryObject = {
+                status: query.status,
+                search: query.search,
+            };
 
-        const transformData = rows.map((item) => {
-            return ProjectDTO.transform(item)
-        });
+            const excludedFields = ["page", "page_size", "sort_field", "sort_order", "fields"];
 
-        const result = {
-            page: Number(query?.page) * 1,
-            pageSize: Number(query?.page_size) * 1,
-            pageCount: Math.ceil(count / Number(query?.page_size) * 1),
-            totalItems: count || 0,
-            data: transformData,
-        };
+            excludedFields.forEach((field) => delete queryObject[field]);
 
-        return result;
+            const arrQueryObject = Object.entries(queryObject).map((item) => {
+                return {
+                    key: item[0],
+                    value: item[1],
+                };
+            });
+
+            for (let index = 0; index < arrQueryObject.length; index++) {
+                switch (arrQueryObject[index].key) {
+                    case "status":
+                        const status = typeof arrQueryObject[index].value === "string" ?
+                            [arrQueryObject[index].value] : arrQueryObject[index].value;
+                        if (Array.isArray(status)) {
+                            conditions["status"] = {
+                                [Op.in]: status.toString().split(','),
+                            };
+                        }
+                        break;
+
+                    default:
+                        break;
+                }
+            }
+
+            let queryTranslation = {};
+
+            if (query.search) {
+                queryTranslation = {
+                    name: { [Op.like]: `%${query.search}%` },
+                    locale: "vi"
+                }
+            }
+            else {
+                queryTranslation = {
+                    locale: "vi"
+                }
+            }
+
+            const objQuery = new ApiFeatures(query)
+                .filter(conditions)
+                .includes([
+                    {
+                        model: models.Media,
+                        as: "image",
+                        required: false,
+                    },
+                    {
+                        model: models.BannerTranslation,
+                        as: "translations",
+                        required: true,
+                        where: queryTranslation
+                    },
+                ])
+                .sort(query.sort_field || "createdAt", query.sort_order || "DESC")
+                .paginate()
+                .paranoid()
+                .getObjQuery();
+
+            const { count, rows }: any = await models.Banner.findAndCountAll(objQuery);
+
+            const result = {
+                page: Number(query?.page) * 1,
+                pageSize: Number(query?.page_size) * 1,
+                pageCount: Math.ceil(count / Number(query?.page_size) * 1),
+                totalItems: count || 0,
+                data: rows.map((item) => BannertDTO.transform(item)),
+            };
+
+            return result;
+        } catch (error) {
+            console.log(error);
+        }
     }
 
     public store = async (body) => {
-        return await models.Project.create({
-               ...body,
+
+        return await models.Banner.create({
+            ...body,
             thumbnail: body.thumbnail ? body.thumbnail.id : null,
             banner: body.banner ? body.banner.id : null,
-        });
+        },
+            {
+                individualHooks: true,
+            }
+        )
+            .then(async (banner: any) => {
+
+                if (banner) {
+                    const bannerId = banner.id;
+
+                    await models.BannerTranslation.create({
+                        ...body,
+                        slug: Helper.renderSlug(body.slug ? body.slug : body.name),
+                        custom_slug: Helper.renderSlug(body.custom_slug ? body.custom_slug : body.name),
+                        banner_id: bannerId,
+                        locale: 'vi'
+                    });
+
+                    await models.BannerTranslation.create({
+                        ...body,
+                        slug: Helper.renderSlug(body.slug ? `en-${body.slug}` : `en-${body.name}`),
+                        custom_slug: Helper.renderSlug(body.custom_slug ? `en-${body.custom_slug}` : `en-${body.name}`),
+                        banner_id: bannerId,
+                        locale: 'en'
+                    });
+                }
+            });
     }
 
     public findById = async (id: string | number) => {
-        const res = await models.Project.findOne({
-            where: { id },
+
+        const banner = await models.Banner.findOne({
+            where: {
+                id: id,
+            },
             include: [
                 {
                     model: models.Media,
-                    as: "image"
+                    as: "image",
+                    required: false,
                 },
                 {
-                    model: models.Media,
-                    as: "banner_image"
-                },
-                {
-                    model: models.ProjectTranslation,
-                    as: "translation",
-                    require: true,
+                    model: models.BannerTranslation,
+                    as: "translations",
+                    required: true,
                     where: {
                         locale: "vi",
+                        banner_id: id,
                     }
                 },
             ]
         });
 
-        return ProjectDTO.transformDetail(res);
+        return BannerDTO.transformDetail(banner);
     }
 
-    public updateById = async (id, body) => {
-        return await models.Project.update({
-            ...body,
+    public updateById = async (id: string, body) => {
+
+        return await models.Banner.update({
+            status: body.status,
             thumbnail: body.thumbnail ? body.thumbnail.id : null,
-            banner: body.banner ? body.banner.id : null,
-        }, { where: { id } });
+        },
+            {
+                where: { id },
+            },
+        )
+            .then(async (res) => {
+
+                if (res) {
+                    await this.handleUpdate({ banner_id: id, lang: "vi", body });
+                    await this.handleUpdate({ banner_id: id, lang: "en", body });
+                }
+            });
     }
 
-    public deleteById = async (id) => {
-        return await models.Project.destroy({ where: { id } });
+    public handleUpdate = async ({ banner_id, lang = "vi", body }) => {
+
+        try {
+            return await models.BannerTranslation.update({
+                name: body.name,
+                content: body.content,
+                description: body.description,
+            },
+                {
+                    where: {
+                        banner_id,
+                        locale: lang
+                    }
+                });
+        } catch (error) {
+            console.log(error);
+        }
     }
 
-    public deleteMultipleIds = async (ids) => {
-        return await models.Project.destroy({ where: { id: ids } })
+    public deleteById = async (id: string) => {
+        return await models.Banner.destroy({ where: { id } });
     }
 
+    public deleteMultipleIds = async (ids: []) => {
+        return await models.Banner.destroy({ where: { id: ids } })
+    }
 }
