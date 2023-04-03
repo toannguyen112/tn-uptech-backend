@@ -9,9 +9,9 @@ export class PostController extends BaseController {
 
         try {
             const data = await post.getList(req.query);
-            return this.success(res, data);
+            res.status(200).send({ message: "ok", data });
         } catch (error) {
-            console.log(error);
+            res.status(500).send(error.message);
         }
     }
 
@@ -19,18 +19,18 @@ export class PostController extends BaseController {
 
         try {
             const data = await await post.store(req.body);
-            return this.success(res, data);
+            res.status(200).send({ message: "ok", data });
         } catch (error) {
-            res.status(500).send(error);
+            res.status(500).send(error.message);
         }
     }
 
     public async show(req: Request, res: Response, next: NextFunction) {
         try {
             const data = await post.findById(req.params.id);
-            return this.success(res, data);
+            res.status(200).send({ message: "ok", data });
         } catch (error) {
-            res.status(500).send(error);
+            res.status(500).send(error.message);
         }
     }
 
@@ -38,18 +38,18 @@ export class PostController extends BaseController {
         try {
             const { id } = req.params;
             const data = await post.update(id, req.body);
-            return this.success(res, data);
+            res.status(200).send({ message: "ok", data });
         } catch (error) {
-            res.status(500).send(error);
+            res.status(500).send(error.message);
         }
     }
 
     public async delete(req: Request, res: Response, next: NextFunction) {
         try {
             const data = await post.delete(req.params.id);
-            return this.success(res, data);
+            res.status(200).send({ message: "ok", data });
         } catch (error) {
-            res.status(500).send(error);
+            res.status(500).send(error.message);
         }
     }
 }

@@ -12,15 +12,17 @@ module.exports = {
 
       post_id: {
         type: Sequelize.INTEGER,
+        onDelete: 'CASCADE',
         references: {
           model: "posts",
           key: "id",
         },
       },
 
-      content: {
+      locale: {
         type: Sequelize.STRING,
-        allowNull: true,
+        defaultValue: "vi",
+        allowNull: false,
       },
 
       name: {
@@ -28,26 +30,26 @@ module.exports = {
         allowNull: false,
       },
 
-      type: {
-        type: Sequelize.STRING,
-      },
-
-      description: {
-        type: Sequelize.STRING,
+      content: {
+        type: Sequelize.TEXT('long'),
         allowNull: true,
       },
 
-      locale: {
-        type: Sequelize.STRING,
-        defaultValue: "vi",
+      description: {
+        type: Sequelize.TEXT('long'),
+        allowNull: true,
       },
 
       slug: {
         type: Sequelize.STRING,
+        unique: true,
+        allowNull: true,
       },
 
       custom_slug: {
         type: Sequelize.STRING,
+        unique: true,
+        allowNull: true,
       },
 
     }),

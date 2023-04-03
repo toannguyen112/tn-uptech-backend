@@ -77,8 +77,6 @@ export class ProjectService {
                 .paranoid()
                 .getObjQuery();
 
-            console.log(objQuery);
-
             const { count, rows }: any = await models.Project.findAndCountAll(objQuery);
 
             const result = {

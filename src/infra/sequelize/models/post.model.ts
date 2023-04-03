@@ -80,6 +80,11 @@ module.exports = function (sequelize, DataTypes) {
             as: 'banner_image',
             foreignKey: "banner"
         });
+
+        Post.hasMany(models.PostTranslation, {
+            as: "translations",
+            foreignKey: "post_id"
+        });
     };
 
     return Post;

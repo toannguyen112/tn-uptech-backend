@@ -1,6 +1,6 @@
 
 module.exports = function (sequelize, DataTypes) {
-    const Post = sequelize.define(
+    const PostTranslation = sequelize.define(
         "post_translation",
         {
             id: {
@@ -57,5 +57,12 @@ module.exports = function (sequelize, DataTypes) {
         },
     );
 
-    return Post;
+    PostTranslation.associate = function (models) {
+        PostTranslation.belongsTo(models.Post, {
+            as: "post",
+            foreignKey: "post_id",
+        });
+    }
+
+    return PostTranslation;
 };

@@ -28,7 +28,8 @@ export class PostDTO {
         return {
             id: item.id,
             name: translationData.name || "",
-            slug: item.slug || "",
+            slug: translationData.slug || "",
+            custom_slug: translationData.custom_slug || "",
             description: translationData.description || "",
             isFeatured: item.isFeatured || false,
             status: item.status || 'inactive',

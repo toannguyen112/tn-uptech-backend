@@ -646,3 +646,327 @@ TSError: ⨯ Unable to compile TypeScript:
     at Module.load (node:internal/modules/cjs/loader:1069:32)
     at Function.Module._load (node:internal/modules/cjs/loader:904:12)
     at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-03 20:57:48 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/services/post.service.ts[0m:[93m35[0m:[93m34[0m - [91merror[0m[90m TS2304: [0mCannot find name 'Op'.
+
+[7m35[0m                                 [Op.in]: status.toString().split(','),
+[7m  [0m [91m                                 ~~[0m
+[96msrc/services/post.service.ts[0m:[93m49[0m:[93m30[0m - [91merror[0m[90m TS2304: [0mCannot find name 'Op'.
+
+[7m49[0m                     name: { [Op.like]: `%${query.search}%` },
+[7m  [0m [91m                             ~~[0m
+[96msrc/services/post.service.ts[0m:[93m86[0m:[93m42[0m - [91merror[0m[90m TS2304: [0mCannot find name 'ProjectDTO'.
+
+[7m86[0m                 data: rows.map((item) => ProjectDTO.transform(item)),
+[7m  [0m [91m                                         ~~~~~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/services/post.service.ts[0m:[93m35[0m:[93m34[0m - [91merror[0m[90m TS2304: [0mCannot find name 'Op'.
+
+[7m35[0m                                 [Op.in]: status.toString().split(','),
+[7m  [0m [91m                                 ~~[0m
+[96msrc/services/post.service.ts[0m:[93m49[0m:[93m30[0m - [91merror[0m[90m TS2304: [0mCannot find name 'Op'.
+
+[7m49[0m                     name: { [Op.like]: `%${query.search}%` },
+[7m  [0m [91m                             ~~[0m
+[96msrc/services/post.service.ts[0m:[93m86[0m:[93m42[0m - [91merror[0m[90m TS2304: [0mCannot find name 'ProjectDTO'.
+
+[7m86[0m                 data: rows.map((item) => ProjectDTO.transform(item)),
+[7m  [0m [91m                                         ~~~~~~~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-03 20:58:25 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/services/post.service.ts[0m:[93m35[0m:[93m34[0m - [91merror[0m[90m TS2304: [0mCannot find name 'Op'.
+
+[7m35[0m                                 [Op.in]: status.toString().split(','),
+[7m  [0m [91m                                 ~~[0m
+[96msrc/services/post.service.ts[0m:[93m49[0m:[93m30[0m - [91merror[0m[90m TS2304: [0mCannot find name 'Op'.
+
+[7m49[0m                     name: { [Op.like]: `%${query.search}%` },
+[7m  [0m [91m                             ~~[0m
+[96msrc/services/post.service.ts[0m:[93m86[0m:[93m42[0m - [91merror[0m[90m TS2304: [0mCannot find name 'ProjectDTO'.
+
+[7m86[0m                 data: rows.map((item) => ProjectDTO.transform(item)),
+[7m  [0m [91m                                         ~~~~~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/services/post.service.ts[0m:[93m35[0m:[93m34[0m - [91merror[0m[90m TS2304: [0mCannot find name 'Op'.
+
+[7m35[0m                                 [Op.in]: status.toString().split(','),
+[7m  [0m [91m                                 ~~[0m
+[96msrc/services/post.service.ts[0m:[93m49[0m:[93m30[0m - [91merror[0m[90m TS2304: [0mCannot find name 'Op'.
+
+[7m49[0m                     name: { [Op.like]: `%${query.search}%` },
+[7m  [0m [91m                             ~~[0m
+[96msrc/services/post.service.ts[0m:[93m86[0m:[93m42[0m - [91merror[0m[90m TS2304: [0mCannot find name 'ProjectDTO'.
+
+[7m86[0m                 data: rows.map((item) => ProjectDTO.transform(item)),
+[7m  [0m [91m                                         ~~~~~~~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-03 20:58:30 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/services/post.service.ts[0m:[93m35[0m:[93m34[0m - [91merror[0m[90m TS2304: [0mCannot find name 'Op'.
+
+[7m35[0m                                 [Op.in]: status.toString().split(','),
+[7m  [0m [91m                                 ~~[0m
+[96msrc/services/post.service.ts[0m:[93m49[0m:[93m30[0m - [91merror[0m[90m TS2304: [0mCannot find name 'Op'.
+
+[7m49[0m                     name: { [Op.like]: `%${query.search}%` },
+[7m  [0m [91m                             ~~[0m
+[96msrc/services/post.service.ts[0m:[93m86[0m:[93m42[0m - [91merror[0m[90m TS2304: [0mCannot find name 'ProjectDTO'.
+
+[7m86[0m                 data: rows.map((item) => ProjectDTO.transform(item)),
+[7m  [0m [91m                                         ~~~~~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/services/post.service.ts[0m:[93m35[0m:[93m34[0m - [91merror[0m[90m TS2304: [0mCannot find name 'Op'.
+
+[7m35[0m                                 [Op.in]: status.toString().split(','),
+[7m  [0m [91m                                 ~~[0m
+[96msrc/services/post.service.ts[0m:[93m49[0m:[93m30[0m - [91merror[0m[90m TS2304: [0mCannot find name 'Op'.
+
+[7m49[0m                     name: { [Op.like]: `%${query.search}%` },
+[7m  [0m [91m                             ~~[0m
+[96msrc/services/post.service.ts[0m:[93m86[0m:[93m42[0m - [91merror[0m[90m TS2304: [0mCannot find name 'ProjectDTO'.
+
+[7m86[0m                 data: rows.map((item) => ProjectDTO.transform(item)),
+[7m  [0m [91m                                         ~~~~~~~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-03 20:58:37 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/services/post.service.ts[0m:[93m35[0m:[93m34[0m - [91merror[0m[90m TS2304: [0mCannot find name 'Op'.
+
+[7m35[0m                                 [Op.in]: status.toString().split(','),
+[7m  [0m [91m                                 ~~[0m
+[96msrc/services/post.service.ts[0m:[93m49[0m:[93m30[0m - [91merror[0m[90m TS2304: [0mCannot find name 'Op'.
+
+[7m49[0m                     name: { [Op.like]: `%${query.search}%` },
+[7m  [0m [91m                             ~~[0m
+[96msrc/services/post.service.ts[0m:[93m86[0m:[93m42[0m - [91merror[0m[90m TS2304: [0mCannot find name 'PostDTO'.
+
+[7m86[0m                 data: rows.map((item) => PostDTO.transform(item)),
+[7m  [0m [91m                                         ~~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/services/post.service.ts[0m:[93m35[0m:[93m34[0m - [91merror[0m[90m TS2304: [0mCannot find name 'Op'.
+
+[7m35[0m                                 [Op.in]: status.toString().split(','),
+[7m  [0m [91m                                 ~~[0m
+[96msrc/services/post.service.ts[0m:[93m49[0m:[93m30[0m - [91merror[0m[90m TS2304: [0mCannot find name 'Op'.
+
+[7m49[0m                     name: { [Op.like]: `%${query.search}%` },
+[7m  [0m [91m                             ~~[0m
+[96msrc/services/post.service.ts[0m:[93m86[0m:[93m42[0m - [91merror[0m[90m TS2304: [0mCannot find name 'PostDTO'.
+
+[7m86[0m                 data: rows.map((item) => PostDTO.transform(item)),
+[7m  [0m [91m                                         ~~~~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-03 20:58:48 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/services/post.service.ts[0m:[93m34[0m:[93m34[0m - [91merror[0m[90m TS2304: [0mCannot find name 'Op'.
+
+[7m34[0m                                 [Op.in]: status.toString().split(','),
+[7m  [0m [91m                                 ~~[0m
+[96msrc/services/post.service.ts[0m:[93m48[0m:[93m30[0m - [91merror[0m[90m TS2304: [0mCannot find name 'Op'.
+
+[7m48[0m                     name: { [Op.like]: `%${query.search}%` },
+[7m  [0m [91m                             ~~[0m
+[96msrc/services/post.service.ts[0m:[93m85[0m:[93m42[0m - [91merror[0m[90m TS2304: [0mCannot find name 'PostDTO'.
+
+[7m85[0m                 data: rows.map((item) => PostDTO.transform(item)),
+[7m  [0m [91m                                         ~~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/services/post.service.ts[0m:[93m34[0m:[93m34[0m - [91merror[0m[90m TS2304: [0mCannot find name 'Op'.
+
+[7m34[0m                                 [Op.in]: status.toString().split(','),
+[7m  [0m [91m                                 ~~[0m
+[96msrc/services/post.service.ts[0m:[93m48[0m:[93m30[0m - [91merror[0m[90m TS2304: [0mCannot find name 'Op'.
+
+[7m48[0m                     name: { [Op.like]: `%${query.search}%` },
+[7m  [0m [91m                             ~~[0m
+[96msrc/services/post.service.ts[0m:[93m85[0m:[93m42[0m - [91merror[0m[90m TS2304: [0mCannot find name 'PostDTO'.
+
+[7m85[0m                 data: rows.map((item) => PostDTO.transform(item)),
+[7m  [0m [91m                                         ~~~~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-03 20:59:55 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/services/post.service.ts[0m:[93m86[0m:[93m42[0m - [91merror[0m[90m TS2304: [0mCannot find name 'PostDTO'.
+
+[7m86[0m                 data: rows.map((item) => PostDTO.transform(item)),
+[7m  [0m [91m                                         ~~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/services/post.service.ts[0m:[93m86[0m:[93m42[0m - [91merror[0m[90m TS2304: [0mCannot find name 'PostDTO'.
+
+[7m86[0m                 data: rows.map((item) => PostDTO.transform(item)),
+[7m  [0m [91m                                         ~~~~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-03 21:18:01 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/modules/controllers/post.controller.ts[0m:[93m12[0m:[93m34[0m - [91merror[0m[90m TS2304: [0mCannot find name 'message'.
+
+[7m12[0m             res.status(200).send(message: "ok", data);
+[7m  [0m [91m                                 ~~~~~~~[0m
+[96msrc/modules/controllers/post.controller.ts[0m:[93m12[0m:[93m43[0m - [91merror[0m[90m TS2554: [0mExpected 0-1 arguments, but got 3.
+
+[7m12[0m             res.status(200).send(message: "ok", data);
+[7m  [0m [91m                                          ~~~~~~~~~~[0m
+[96msrc/modules/controllers/post.controller.ts[0m:[93m12[0m:[93m41[0m - [91merror[0m[90m TS1005: [0m',' expected.
+
+[7m12[0m             res.status(200).send(message: "ok", data);
+[7m  [0m [91m                                        ~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/modules/controllers/post.controller.ts[0m:[93m12[0m:[93m34[0m - [91merror[0m[90m TS2304: [0mCannot find name 'message'.
+
+[7m12[0m             res.status(200).send(message: "ok", data);
+[7m  [0m [91m                                 ~~~~~~~[0m
+[96msrc/modules/controllers/post.controller.ts[0m:[93m12[0m:[93m43[0m - [91merror[0m[90m TS2554: [0mExpected 0-1 arguments, but got 3.
+
+[7m12[0m             res.status(200).send(message: "ok", data);
+[7m  [0m [91m                                          ~~~~~~~~~~[0m
+[96msrc/modules/controllers/post.controller.ts[0m:[93m12[0m:[93m41[0m - [91merror[0m[90m TS1005: [0m',' expected.
+
+[7m12[0m             res.status(200).send(message: "ok", data);
+[7m  [0m [91m                                        ~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-03 21:27:25 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/services/post.service.ts[0m:[93m158[0m:[93m16[0m - [91merror[0m[90m TS2304: [0mCannot find name 'ProjectDTO'.
+
+[7m158[0m         return ProjectDTO.transformDetail(project);
+[7m   [0m [91m               ~~~~~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/services/post.service.ts[0m:[93m158[0m:[93m16[0m - [91merror[0m[90m TS2304: [0mCannot find name 'ProjectDTO'.
+
+[7m158[0m         return ProjectDTO.transformDetail(project);
+[7m   [0m [91m               ~~~~~~~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-03 21:27:41 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/services/post.service.ts[0m:[93m158[0m:[93m16[0m - [91merror[0m[90m TS2304: [0mCannot find name 'ProjectDTO'.
+
+[7m158[0m         return ProjectDTO.transformDetail(post);
+[7m   [0m [91m               ~~~~~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/services/post.service.ts[0m:[93m158[0m:[93m16[0m - [91merror[0m[90m TS2304: [0mCannot find name 'ProjectDTO'.
+
+[7m158[0m         return ProjectDTO.transformDetail(post);
+[7m   [0m [91m               ~~~~~~~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-03 21:30:58 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/services/post.service.ts[0m:[93m177[0m:[93m32[0m - [91merror[0m[90m TS2339: [0mProperty 'handleUpdate' does not exist on type 'PostService'.
+
+[7m177[0m                     await this.handleUpdate({ project_id: id, lang: "vi", body });
+[7m   [0m [91m                               ~~~~~~~~~~~~[0m
+[96msrc/services/post.service.ts[0m:[93m178[0m:[93m32[0m - [91merror[0m[90m TS2339: [0mProperty 'handleUpdate' does not exist on type 'PostService'.
+
+[7m178[0m                     await this.handleUpdate({ project_id: id, lang: "en", body });
+[7m   [0m [91m                               ~~~~~~~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/services/post.service.ts[0m:[93m177[0m:[93m32[0m - [91merror[0m[90m TS2339: [0mProperty 'handleUpdate' does not exist on type 'PostService'.
+
+[7m177[0m                     await this.handleUpdate({ project_id: id, lang: "vi", body });
+[7m   [0m [91m                               ~~~~~~~~~~~~[0m
+[96msrc/services/post.service.ts[0m:[93m178[0m:[93m32[0m - [91merror[0m[90m TS2339: [0mProperty 'handleUpdate' does not exist on type 'PostService'.
+
+[7m178[0m                     await this.handleUpdate({ project_id: id, lang: "en", body });
+[7m   [0m [91m                               ~~~~~~~~~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
