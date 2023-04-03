@@ -98,11 +98,7 @@ export class BannerService {
         return await models.Banner.create({
             ...body,
             thumbnail: body.thumbnail ? body.thumbnail.id : null,
-            banner: body.banner ? body.banner.id : null,
-        },
-            {
-                individualHooks: true,
-            }
+        }
         )
             .then(async (banner: any) => {
 
@@ -111,16 +107,12 @@ export class BannerService {
 
                     await models.BannerTranslation.create({
                         ...body,
-                        slug: Helper.renderSlug(body.slug ? body.slug : body.name),
-                        custom_slug: Helper.renderSlug(body.custom_slug ? body.custom_slug : body.name),
                         banner_id: bannerId,
                         locale: 'vi'
                     });
 
                     await models.BannerTranslation.create({
                         ...body,
-                        slug: Helper.renderSlug(body.slug ? `en-${body.slug}` : `en-${body.name}`),
-                        custom_slug: Helper.renderSlug(body.custom_slug ? `en-${body.custom_slug}` : `en-${body.name}`),
                         banner_id: bannerId,
                         locale: 'en'
                     });

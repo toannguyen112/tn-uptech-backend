@@ -504,3 +504,32 @@
 2023-04-04 01:27:45 info: [0mGET /ceos/show/1 [36m304[0m 84.469 ms - -[0m
 2023-04-04 01:27:45 info: [0mGET /ceos?page=1&page_size=10 [32m200[0m 96.429 ms - 650[0m
 2023-04-04 01:27:45 info: [0mGET /ceos?page=1&page_size=10 [36m304[0m 14.769 ms - -[0m
+2023-04-04 01:27:54 info: [0mGET /banners? [36m304[0m 111.625 ms - -[0m
+2023-04-04 01:27:54 info: [0mGET /banners?page=1&page_size=10 [36m304[0m 61.401 ms - -[0m
+2023-04-04 01:27:58 info: [0mOPTIONS /banners/create [32m204[0m 0.136 ms - 0[0m
+2023-04-04 01:27:58 info: [0mPOST /banners/create [31m500[0m 66.535 ms - 43[0m
+2023-04-04 01:27:59 info: [0mPOST /banners/create [31m500[0m 6.440 ms - 43[0m
+2023-04-04 01:28:00 info: [0mGET /banners?page=1&page_size=10 [36m304[0m 35.747 ms - -[0m
+2023-04-04 01:28:00 info: [0mGET /banners?page=1&page_size=10 [36m304[0m 15.510 ms - -[0m
+2023-04-04 01:28:09 info: [0mOPTIONS /banners/create [32m204[0m 0.376 ms - 0[0m
+2023-04-04 01:28:09 info: [0mPOST /banners/create [31m500[0m 9.761 ms - 43[0m
+2023-04-04 01:28:18 info: [0mOPTIONS /banners/create [32m204[0m 0.485 ms - 0[0m
+2023-04-04 01:28:18 info: [0mPOST /banners/create [31m500[0m 32.252 ms - 43[0m
+2023-04-04 01:29:05 info: =================================
+2023-04-04 01:29:05 info: ======= ENV: development =======
+2023-04-04 01:29:05 info: 🚀 App listening on the port 8000
+2023-04-04 01:29:05 info: =================================
+2023-04-04 01:29:19 info: =================================
+2023-04-04 01:29:19 info: ======= ENV: development =======
+2023-04-04 01:29:19 info: 🚀 App listening on the port 8000
+2023-04-04 01:29:19 info: =================================
+2023-04-04 01:29:36 info: [0mOPTIONS /banners/create [32m204[0m 11.449 ms - 0[0m
+2023-04-04 01:29:36 info: [0mPOST /banners/create [31m500[0m 214.033 ms - 43[0m
+2023-04-04 01:30:15 info: =================================
+2023-04-04 01:30:15 info: ======= ENV: development =======
+2023-04-04 01:30:15 info: 🚀 App listening on the port 8000
+2023-04-04 01:30:15 info: =================================
+2023-04-04 01:30:21 info: [0mOPTIONS /banners/create [32m204[0m 1.942 ms - 0[0m
+2023-04-04 01:30:21 info: [0mPOST /banners/create [32m200[0m 106.842 ms - 16[0m
+2023-04-04 01:30:21 info: [0mGET /banners?page=1&page_size=10 [32m200[0m 137.968 ms - 418[0m
+2023-04-04 01:30:21 info: [0mGET /banners?page=1&page_size=10 [36m304[0m 17.839 ms - -[0m
