@@ -1,0 +1,1216 @@
+2023-04-03 11:27:27 info: [0mGET /projects [36m304[0m 268.308 ms - -[0m
+2023-04-03 11:27:28 info: [0mGET /projects [36m304[0m 21.329 ms - -[0m
+2023-04-03 11:27:31 info: [0mOPTIONS /projects/create [32m204[0m 1.111 ms - 0[0m
+2023-04-03 11:27:31 info: [0mPOST /projects/create [32m200[0m 35.651 ms - 2[0m
+2023-04-03 11:27:31 info: [0mGET /projects [32m200[0m 8.099 ms - 263[0m
+2023-04-03 11:27:37 info: [0mOPTIONS /projects/deleteMultipleIds [32m204[0m 0.495 ms - 0[0m
+2023-04-03 11:27:37 info: [0mPOST /projects/deleteMultipleIds [32m200[0m 34.277 ms - 30[0m
+2023-04-03 11:27:37 info: [0mGET /projects [32m200[0m 5.444 ms - 92[0m
+2023-04-03 11:27:37 info: [0mGET /projects [36m304[0m 8.353 ms - -[0m
+2023-04-03 11:27:41 info: [0mGET /projects [36m304[0m 86.717 ms - -[0m
+2023-04-03 11:28:11 info: [0mGET /projects [36m304[0m 84.137 ms - -[0m
+2023-04-03 11:28:13 info: [0mOPTIONS /projects/create [32m204[0m 0.181 ms - 0[0m
+2023-04-03 11:28:13 info: [0mPOST /projects/create [32m200[0m 52.962 ms - 2[0m
+2023-04-03 11:28:13 info: [0mGET /projects [32m200[0m 10.771 ms - 262[0m
+2023-04-03 11:28:18 info: [0mOPTIONS /projects/deleteMultipleIds [32m204[0m 0.590 ms - 0[0m
+2023-04-03 11:28:18 info: [0mPOST /projects/deleteMultipleIds [32m200[0m 37.480 ms - 30[0m
+2023-04-03 11:28:18 info: [0mGET /projects [32m200[0m 9.927 ms - 92[0m
+2023-04-03 11:28:18 info: [0mGET /projects [36m304[0m 4.956 ms - -[0m
+2023-04-03 11:29:20 info: [0mGET /projects [36m304[0m 157.179 ms - -[0m
+2023-04-03 11:29:22 info: [0mGET /projects [36m304[0m 11.914 ms - -[0m
+2023-04-03 11:29:33 info: [0mGET /projects [36m304[0m 30.153 ms - -[0m
+2023-04-03 11:33:22 info: [0mGET /projects [36m304[0m 368.137 ms - -[0m
+2023-04-03 11:33:38 info: [0mGET /projects [36m304[0m 60.954 ms - -[0m
+2023-04-03 11:33:40 info: [0mGET /projects [36m304[0m 44.735 ms - -[0m
+2023-04-03 11:33:41 info: [0mGET /projects [36m304[0m 27.088 ms - -[0m
+2023-04-03 11:33:43 info: [0mGET /projects [36m304[0m 12.196 ms - -[0m
+2023-04-03 11:33:45 info: [0mGET /projects [36m304[0m 30.033 ms - -[0m
+2023-04-03 11:34:23 info: [0mGET /projects? [32m200[0m 170.574 ms - 92[0m
+2023-04-03 11:34:24 info: [0mGET /projects? [36m304[0m 5.182 ms - -[0m
+2023-04-03 11:34:34 info: [0mGET /projects? [36m304[0m 12.260 ms - -[0m
+2023-04-03 11:36:37 info: [0mGET /projects? [36m304[0m 357.378 ms - -[0m
+2023-04-03 11:36:52 info: [0mGET /projects? [36m304[0m 282.832 ms - -[0m
+2023-04-03 11:36:54 info: [0mGET /projects [36m304[0m 29.727 ms - -[0m
+2023-04-03 11:36:58 info: [0mOPTIONS /projects/create [32m204[0m 0.517 ms - 0[0m
+2023-04-03 11:36:58 info: [0mPOST /projects/create [32m200[0m 28.844 ms - 2[0m
+2023-04-03 11:36:58 info: [0mGET /projects? [32m200[0m 32.388 ms - 262[0m
+2023-04-03 11:36:59 info: [0mGET /projects [32m200[0m 39.361 ms - 262[0m
+2023-04-03 11:37:02 info: [0mPOST /projects/create [32m200[0m 18.337 ms - 2[0m
+2023-04-03 11:37:02 info: [0mGET /projects? [32m200[0m 13.301 ms - 438[0m
+2023-04-03 11:37:03 info: [0mGET /projects [32m200[0m 29.872 ms - 438[0m
+2023-04-03 11:37:05 info: [0mOPTIONS /projects/create [32m204[0m 0.216 ms - 0[0m
+2023-04-03 11:37:05 info: [0mPOST /projects/create [32m200[0m 11.630 ms - 2[0m
+2023-04-03 11:37:05 info: [0mGET /projects? [32m200[0m 18.122 ms - 609[0m
+2023-04-03 11:37:06 info: [0mGET /projects [32m200[0m 54.407 ms - 609[0m
+2023-04-03 11:37:09 info: [0mPOST /projects/create [32m200[0m 7.608 ms - 2[0m
+2023-04-03 11:37:09 info: [0mGET /projects? [32m200[0m 27.606 ms - 782[0m
+2023-04-03 11:37:59 info: [0mGET /projects? [36m304[0m 967.830 ms - -[0m
+2023-04-03 11:37:59 info: [0mGET /projects? [36m304[0m 60.547 ms - -[0m
+2023-04-03 11:38:51 info: [0mGET /projects [32m200[0m 263.239 ms - 782[0m
+2023-04-03 11:38:53 info: [0mGET /projects? [36m304[0m 22.837 ms - -[0m
+2023-04-03 11:40:06 info: [0mGET /posts [0m-[0m - ms - -[0m
+2023-04-03 11:40:16 info: [0mGET /projects? [36m304[0m 42.751 ms - -[0m
+2023-04-03 11:41:58 info: [0mGET /projects? [36m304[0m 173.387 ms - -[0m
+2023-04-03 11:42:11 info: [0mGET /projects? [36m304[0m 69.125 ms - -[0m
+2023-04-03 11:42:12 info: [0mGET /projects?page=1 [32m200[0m 36.114 ms - 782[0m
+2023-04-03 11:42:12 info: [0mGET /projects? [36m304[0m 6.528 ms - -[0m
+2023-04-03 11:42:12 info: [0mGET /projects? [36m304[0m 7.960 ms - -[0m
+2023-04-03 11:42:25 info: [0mGET /projects?page=2 [32m200[0m 93.437 ms - 92[0m
+2023-04-03 11:42:25 info: [0mGET /projects? [36m304[0m 39.834 ms - -[0m
+2023-04-03 11:42:25 info: [0mGET /projects? [36m304[0m 15.007 ms - -[0m
+2023-04-03 11:43:21 info: [0mGET /projects [36m304[0m 31.475 ms - -[0m
+2023-04-03 11:43:24 info: [0mGET /projects?page=2 [36m304[0m 49.460 ms - -[0m
+2023-04-03 11:43:26 info: [0mGET /projects?page=1 [36m304[0m 14.784 ms - -[0m
+2023-04-03 11:43:29 info: [0mGET /projects?page=2 [36m304[0m 7.549 ms - -[0m
+2023-04-03 11:53:34 info: [0mGET /projects? [36m304[0m 300.418 ms - -[0m
+2023-04-03 11:53:38 info: [0mGET /projects? [36m304[0m 183.942 ms - -[0m
+2023-04-03 11:53:43 info: [0mGET /projects? [36m304[0m 245.223 ms - -[0m
+2023-04-03 11:53:57 info: [0mGET /projects?page=1&page_size=50 [0m-[0m - ms - -[0m
+2023-04-03 11:55:07 info: [0mGET /projects?page=1&page_size=50 [0m-[0m - ms - -[0m
+2023-04-03 11:55:07 info: [0mGET /projects?page=1&page_size=50 [0m-[0m - ms - -[0m
+2023-04-03 11:55:07 info: [0mGET /projects?page=1&page_size=50 [0m-[0m - ms - -[0m
+2023-04-03 11:55:32 info: [0mGET /projects?page=1 [36m304[0m 15.705 ms - -[0m
+2023-04-03 11:55:45 info: [0mGET /projects?page=1 [36m304[0m 23.554 ms - -[0m
+2023-04-03 11:56:01 info: [0mGET /projects?page=1 [36m304[0m 33.308 ms - -[0m
+2023-04-03 11:57:23 info: [0mGET /projects?page=2&page_size=20 [0m-[0m - ms - -[0m
+2023-04-03 11:57:25 info: [0mGET /projects?page=2 [32m200[0m 22.597 ms - 92[0m
+2023-04-03 11:57:58 info: =================================
+2023-04-03 11:57:58 info: ======= ENV: development =======
+2023-04-03 11:57:58 info: 🚀 App listening on the port 8000
+2023-04-03 11:57:58 info: =================================
+2023-04-03 11:58:29 info: =================================
+2023-04-03 11:58:29 info: ======= ENV: development =======
+2023-04-03 11:58:29 info: 🚀 App listening on the port 8000
+2023-04-03 11:58:29 info: =================================
+2023-04-03 11:58:37 info: [0mGET /projects?page=2&page_size=20 [32m200[0m 239.356 ms - 2[0m
+2023-04-03 11:59:25 info: =================================
+2023-04-03 11:59:25 info: ======= ENV: development =======
+2023-04-03 11:59:25 info: 🚀 App listening on the port 8000
+2023-04-03 11:59:25 info: =================================
+2023-04-03 11:59:31 info: [0mGET /projects?page=2&page_size=20 [32m200[0m 13.841 ms - 2[0m
+2023-04-03 12:00:10 info: =================================
+2023-04-03 12:00:10 info: ======= ENV: development =======
+2023-04-03 12:00:10 info: 🚀 App listening on the port 8000
+2023-04-03 12:00:10 info: =================================
+2023-04-03 12:00:25 info: [0mGET /projects?page=2&page_size=20 [32m200[0m 192.691 ms - 2[0m
+2023-04-03 12:01:02 info: [0mGET /projects?page=2&page_size=20 [32m200[0m 23.507 ms - 2[0m
+2023-04-03 12:02:12 info: =================================
+2023-04-03 12:02:12 info: ======= ENV: development =======
+2023-04-03 12:02:12 info: 🚀 App listening on the port 8000
+2023-04-03 12:02:12 info: =================================
+2023-04-03 12:02:14 info: [0mGET /projects?page=2&page_size=20 [32m200[0m 136.049 ms - 2[0m
+2023-04-03 12:02:24 info: [0mGET /projects?page=2&page_size=10 [32m200[0m 14.335 ms - 2[0m
+2023-04-03 12:03:14 info: =================================
+2023-04-03 12:03:14 info: ======= ENV: development =======
+2023-04-03 12:03:14 info: 🚀 App listening on the port 8000
+2023-04-03 12:03:14 info: =================================
+2023-04-03 12:03:16 info: [0mGET /projects?page=2&page_size=10 [32m200[0m 136.348 ms - 2[0m
+2023-04-03 12:04:03 info: [0mGET /projects?page=2&page_size=10 [32m200[0m 42.877 ms - 2[0m
+2023-04-03 12:05:46 info: =================================
+2023-04-03 12:05:46 info: ======= ENV: development =======
+2023-04-03 12:05:46 info: 🚀 App listening on the port 8000
+2023-04-03 12:05:46 info: =================================
+2023-04-03 12:05:51 info: [0mGET /projects?page=2&page_size=10 [32m200[0m 106.876 ms - 2[0m
+2023-04-03 12:05:56 info: [0mGET /projects?page=2&page_size=10 [32m200[0m 28.606 ms - 2[0m
+2023-04-03 12:06:05 info: =================================
+2023-04-03 12:06:05 info: ======= ENV: development =======
+2023-04-03 12:06:05 info: 🚀 App listening on the port 8000
+2023-04-03 12:06:05 info: =================================
+2023-04-03 12:06:25 info: [0mGET /projects?page=2 [32m200[0m 88.050 ms - 2[0m
+2023-04-03 12:06:30 info: [0mGET /projects?page=2 [32m200[0m 11.282 ms - 2[0m
+2023-04-03 12:06:33 info: [0mGET /projects?page=2 [32m200[0m 53.353 ms - 2[0m
+2023-04-03 12:06:49 info: =================================
+2023-04-03 12:06:49 info: ======= ENV: development =======
+2023-04-03 12:06:49 info: 🚀 App listening on the port 8000
+2023-04-03 12:06:49 info: =================================
+2023-04-03 12:07:01 info: =================================
+2023-04-03 12:07:01 info: ======= ENV: development =======
+2023-04-03 12:07:01 info: 🚀 App listening on the port 8000
+2023-04-03 12:07:01 info: =================================
+2023-04-03 12:07:11 info: =================================
+2023-04-03 12:07:11 info: ======= ENV: development =======
+2023-04-03 12:07:11 info: 🚀 App listening on the port 8000
+2023-04-03 12:07:11 info: =================================
+2023-04-03 12:07:51 info: =================================
+2023-04-03 12:07:51 info: ======= ENV: development =======
+2023-04-03 12:07:51 info: 🚀 App listening on the port 8000
+2023-04-03 12:07:51 info: =================================
+2023-04-03 12:07:51 info: [0mGET /projects?page=1 [32m200[0m 98.221 ms - 262[0m
+2023-04-03 12:08:02 info: =================================
+2023-04-03 12:08:02 info: ======= ENV: development =======
+2023-04-03 12:08:02 info: 🚀 App listening on the port 8000
+2023-04-03 12:08:02 info: =================================
+2023-04-03 12:08:08 info: [0mGET /projects?page=2&page_size=1 [32m200[0m 142.931 ms - 2[0m
+2023-04-03 12:08:13 info: [0mGET /projects?page=1&page_size=10 [32m200[0m 17.423 ms - 2[0m
+2023-04-03 12:14:03 info: =================================
+2023-04-03 12:14:03 info: ======= ENV: development =======
+2023-04-03 12:14:03 info: 🚀 App listening on the port 8000
+2023-04-03 12:14:03 info: =================================
+2023-04-03 12:14:36 info: [0mGET /projects?page=1&page_size=10 [32m200[0m 157.232 ms - 2[0m
+2023-04-03 12:14:46 info: [0mGET /projects?page=1&status=active [32m200[0m 17.757 ms - 2[0m
+2023-04-03 12:14:51 info: [0mGET /projects?page=1&status=active [32m200[0m 13.151 ms - 2[0m
+2023-04-03 12:15:18 info: =================================
+2023-04-03 12:15:18 info: ======= ENV: development =======
+2023-04-03 12:15:18 info: 🚀 App listening on the port 8000
+2023-04-03 12:15:18 info: =================================
+2023-04-03 12:15:26 info: [0mGET /projects?page=1&status=active [32m200[0m 90.015 ms - 433[0m
+2023-04-03 12:15:32 info: [0mGET /projects?page=1&status=inactive [32m200[0m 13.936 ms - 440[0m
+2023-04-03 12:15:48 info: [0mGET /projects?page=1&page_size=50 [32m200[0m 137.384 ms - 2[0m
+2023-04-03 12:15:48 info: [0mGET /projects?page=1&status=active [32m200[0m 221.440 ms - 433[0m
+2023-04-03 12:15:48 info: [0mGET /projects?page=1&page_size=50 [36m304[0m 48.620 ms - -[0m
+2023-04-03 12:16:48 info: [0mGET /projects?page=1&page_size=50 [36m304[0m 102.867 ms - -[0m
+2023-04-03 12:16:48 info: [0mGET /projects?page=1&page_size=50 [36m304[0m 49.572 ms - -[0m
+2023-04-03 12:16:48 info: [0mGET /projects?page=1&page_size=50 [36m304[0m 44.809 ms - -[0m
+2023-04-03 12:17:04 info: [0mGET /projects?page=1 [0m-[0m - ms - -[0m
+2023-04-03 12:17:04 info: [0mGET /projects?page=1 [0m-[0m - ms - -[0m
+2023-04-03 12:17:07 info: [0mGET /projects?page=1 [32m200[0m 57.181 ms - 782[0m
+2023-04-03 12:17:07 info: [0mGET /projects?page=1 [36m304[0m 46.525 ms - -[0m
+2023-04-03 12:17:07 info: [0mGET /projects?page=1 [36m304[0m 33.197 ms - -[0m
+2023-04-03 12:17:17 info: [0mGET /projects?page=1&status=active [36m304[0m 60.190 ms - -[0m
+2023-04-03 12:17:17 info: [0mGET /projects?page=1 [36m304[0m 17.613 ms - -[0m
+2023-04-03 12:17:17 info: [0mGET /projects?page=1 [36m304[0m 29.166 ms - -[0m
+2023-04-03 12:17:37 info: [0mGET /projects?status=Activated&page=1 [32m200[0m 31.274 ms - 92[0m
+2023-04-03 12:17:54 info: [0mGET /projects?status=Activated&page=1 [36m304[0m 49.664 ms - -[0m
+2023-04-03 12:17:56 info: [0mGET /projects?page=1 [36m304[0m 82.540 ms - -[0m
+2023-04-03 12:17:57 info: [0mGET /projects?page=1 [36m304[0m 16.772 ms - -[0m
+2023-04-03 12:17:58 info: [0mGET /projects?page=1 [36m304[0m 10.982 ms - -[0m
+2023-04-03 12:17:59 info: [0mGET /projects?status=activated&page=1 [32m200[0m 37.996 ms - 92[0m
+2023-04-03 12:18:02 info: [0mGET /projects?page=1 [36m304[0m 27.086 ms - -[0m
+2023-04-03 12:18:04 info: [0mGET /projects?page=1 [36m304[0m 15.221 ms - -[0m
+2023-04-03 12:18:05 info: [0mGET /projects?status=inactive&page=1 [32m200[0m 7.682 ms - 440[0m
+2023-04-03 12:18:09 info: [0mGET /projects?page=1 [36m304[0m 24.673 ms - -[0m
+2023-04-03 12:18:10 info: [0mGET /projects?status=activated&page=1 [36m304[0m 94.122 ms - -[0m
+2023-04-03 12:18:17 info: [0mGET /projects?page=1 [36m304[0m 7.784 ms - -[0m
+2023-04-03 12:18:26 info: [0mGET /projects?page=1 [36m304[0m 14.886 ms - -[0m
+2023-04-03 12:19:37 info: [0mGET /projects?page=1 [36m304[0m 55.817 ms - -[0m
+2023-04-03 12:19:37 info: [0mGET /projects?page=1 [36m304[0m 11.225 ms - -[0m
+2023-04-03 12:19:37 info: [0mGET /projects?page=1 [36m304[0m 29.616 ms - -[0m
+2023-04-03 12:19:50 info: [0mGET /projects?status=active&page=1 [32m200[0m 54.539 ms - 433[0m
+2023-04-03 12:19:56 info: [0mGET /projects?status=active%2Cinactive&page=1 [32m200[0m 9.721 ms - 92[0m
+2023-04-03 12:20:00 info: [0mGET /projects?status=active&page=1 [36m304[0m 12.180 ms - -[0m
+2023-04-03 12:20:02 info: [0mGET /projects?page=1 [36m304[0m 3.885 ms - -[0m
+2023-04-03 12:20:14 info: [0mGET /projects?status=inactive&page=1 [36m304[0m 34.805 ms - -[0m
+2023-04-03 12:20:17 info: [0mGET /projects?status=inactive%2Cactive&page=1 [32m200[0m 9.839 ms - 92[0m
+2023-04-03 12:20:22 info: [0mGET /projects?status=inactive&page=1 [36m304[0m 14.847 ms - -[0m
+2023-04-03 12:20:22 info: [0mGET /projects?page=1 [36m304[0m 9.796 ms - -[0m
+2023-04-03 12:20:26 info: [0mGET /projects?status=active&page=1 [36m304[0m 4.138 ms - -[0m
+2023-04-03 12:20:27 info: [0mGET /projects?status=active%2Cinactive&page=1 [36m304[0m 6.878 ms - -[0m
+2023-04-03 12:20:36 info: [0mGET /projects?status=active&page=1 [36m304[0m 4.288 ms - -[0m
+2023-04-03 12:20:37 info: [0mGET /projects?status=active%2Cinactive&page=1 [36m304[0m 3.740 ms - -[0m
+2023-04-03 12:20:38 info: [0mGET /projects?status=active&page=1 [36m304[0m 11.245 ms - -[0m
+2023-04-03 12:20:39 info: [0mGET /projects?page=1 [36m304[0m 4.940 ms - -[0m
+2023-04-03 12:20:40 info: [0mGET /projects?status=active&page=1 [36m304[0m 6.009 ms - -[0m
+2023-04-03 12:20:40 info: [0mGET /projects?page=1 [36m304[0m 5.675 ms - -[0m
+2023-04-03 12:20:41 info: [0mGET /projects?status=inactive&page=1 [36m304[0m 79.033 ms - -[0m
+2023-04-03 12:20:41 info: [0mGET /projects?page=1 [36m304[0m 33.205 ms - -[0m
+2023-04-03 12:20:42 info: [0mGET /projects?status=active&page=1 [36m304[0m 28.219 ms - -[0m
+2023-04-03 12:20:42 info: [0mGET /projects?page=1 [36m304[0m 7.303 ms - -[0m
+2023-04-03 12:20:43 info: [0mGET /projects?status=inactive&page=1 [36m304[0m 8.477 ms - -[0m
+2023-04-03 12:20:44 info: [0mGET /projects?page=1 [36m304[0m 7.309 ms - -[0m
+2023-04-03 12:20:45 info: [0mGET /projects?status=active&page=1 [36m304[0m 4.418 ms - -[0m
+2023-04-03 12:20:45 info: [0mGET /projects?page=1 [36m304[0m 9.536 ms - -[0m
+2023-04-03 12:20:46 info: [0mGET /projects?status=inactive&page=1 [36m304[0m 3.712 ms - -[0m
+2023-04-03 12:20:46 info: [0mGET /projects?page=1 [36m304[0m 8.769 ms - -[0m
+2023-04-03 12:20:47 info: [0mGET /projects?status=active&page=1 [36m304[0m 13.133 ms - -[0m
+2023-04-03 12:20:51 info: [0mGET /projects?page=1 [36m304[0m 8.895 ms - -[0m
+2023-04-03 12:20:53 info: [0mGET /projects?status=active&page=1 [36m304[0m 4.707 ms - -[0m
+2023-04-03 12:21:15 info: [0mGET /projects?status=active%2Cinactive&page=1 [36m304[0m 23.232 ms - -[0m
+2023-04-03 12:21:15 info: [0mGET /projects?status=active&page=1 [36m304[0m 9.046 ms - -[0m
+2023-04-03 12:21:16 info: [0mGET /projects?page=1 [36m304[0m 7.151 ms - -[0m
+2023-04-03 12:21:16 info: [0mGET /projects?status=active&page=1 [36m304[0m 16.251 ms - -[0m
+2023-04-03 12:21:18 info: [0mGET /projects?status=active%2Cinactive&page=1 [36m304[0m 5.192 ms - -[0m
+2023-04-03 12:21:19 info: [0mGET /projects?status=active&page=1 [36m304[0m 10.965 ms - -[0m
+2023-04-03 12:21:20 info: [0mGET /projects?status=active%2Cinactive&page=1 [36m304[0m 6.517 ms - -[0m
+2023-04-03 12:21:21 info: [0mGET /projects?status=active&page=1 [36m304[0m 7.005 ms - -[0m
+2023-04-03 12:21:22 info: [0mGET /projects?status=active%2Cinactive&page=1 [36m304[0m 29.765 ms - -[0m
+2023-04-03 12:21:24 info: [0mGET /projects?status=active&page=1 [36m304[0m 8.759 ms - -[0m
+2023-04-03 12:21:25 info: [0mGET /projects?page=1 [36m304[0m 6.245 ms - -[0m
+2023-04-03 12:21:30 info: [0mGET /projects?status=active&page=1 [36m304[0m 8.069 ms - -[0m
+2023-04-03 12:21:31 info: [0mGET /projects?page=1 [36m304[0m 4.416 ms - -[0m
+2023-04-03 12:21:33 info: [0mGET /projects?status=inactive&page=1 [36m304[0m 7.545 ms - -[0m
+2023-04-03 12:21:37 info: [0mGET /projects?status=inactive%2Cactive&page=1 [36m304[0m 3.577 ms - -[0m
+2023-04-03 12:21:55 info: [0mGET /projects?status=inactive&page=1 [36m304[0m 62.974 ms - -[0m
+2023-04-03 12:21:56 info: [0mGET /projects?page=1 [36m304[0m 10.176 ms - -[0m
+2023-04-03 12:22:00 info: [0mGET /projects?status=inactive&page=1 [36m304[0m 6.515 ms - -[0m
+2023-04-03 12:22:01 info: [0mGET /projects?status=inactive%2Cactive&page=1 [36m304[0m 19.871 ms - -[0m
+2023-04-03 13:01:31 info: [0mGET /projects?page=1 [0m-[0m - ms - -[0m
+2023-04-03 13:01:31 info: [0mGET /projects?page=1 [32m200[0m 124.297 ms - 782[0m
+2023-04-03 13:01:38 info: [0mGET /projects? [36m304[0m 12.648 ms - -[0m
+2023-04-03 13:01:43 info: [0mGET /projects?status=inactive%2Cactive&page=1 [36m304[0m 77.972 ms - -[0m
+2023-04-03 13:01:43 info: [0mGET /projects? [36m304[0m 80.230 ms - -[0m
+2023-04-03 13:01:47 info: [0mGET /projects/show/15 [32m200[0m 132.983 ms - 264[0m
+2023-04-03 13:01:48 info: [0mGET /projects [36m304[0m 41.956 ms - -[0m
+2023-04-03 13:01:48 info: [0mGET /projects/show/15 [36m304[0m 62.546 ms - -[0m
+2023-04-03 13:01:49 info: [0mGET /projects? [36m304[0m 324.401 ms - -[0m
+2023-04-03 13:01:49 info: [0mGET /projects?page=1 [36m304[0m 312.052 ms - -[0m
+2023-04-03 13:02:00 info: [0mGET /projects [36m304[0m 96.250 ms - -[0m
+2023-04-03 13:02:01 info: [0mGET /projects?page=1 [36m304[0m 23.023 ms - -[0m
+2023-04-03 13:02:01 info: [0mGET /projects?page=1 [36m304[0m 31.089 ms - -[0m
+2023-04-03 13:02:02 info: [0mGET /projects [36m304[0m 79.807 ms - -[0m
+2023-04-03 13:02:03 info: [0mOPTIONS /folders/get-medias [32m204[0m 10.819 ms - 0[0m
+2023-04-03 13:02:04 info: [0mPOST /folders/get-medias [32m200[0m 105.348 ms - 31[0m
+2023-04-03 13:02:04 info: [0mGET /folders [36m304[0m 39.468 ms - -[0m
+2023-04-03 13:02:05 info: [0mPOST /folders/get-medias [32m200[0m 8.425 ms - 314[0m
+2023-04-03 13:02:06 info: [0mPOST /folders/get-medias [32m200[0m 10.441 ms - 31[0m
+2023-04-03 13:02:07 info: [0mPOST /folders/get-medias [32m200[0m 3.378 ms - 314[0m
+2023-04-03 13:02:07 info: [0mPOST /folders/get-medias [32m200[0m 12.777 ms - 31[0m
+2023-04-03 13:02:08 info: [0mPOST /folders/get-medias [32m200[0m 3.497 ms - 314[0m
+2023-04-03 13:02:14 info: [0mOPTIONS /projects/create [32m204[0m 0.194 ms - 0[0m
+2023-04-03 13:02:14 info: [0mPOST /projects/create [32m200[0m 60.475 ms - 2[0m
+2023-04-03 13:02:15 info: [0mGET /projects?page=1 [32m200[0m 142.794 ms - -[0m
+2023-04-03 13:02:15 info: [0mGET /projects?page=1 [36m304[0m 80.997 ms - -[0m
+2023-04-03 13:02:30 info: [0mGET /projects?page=1 [36m304[0m 293.242 ms - -[0m
+2023-04-03 13:02:30 info: [0mGET /projects? [32m200[0m 426.839 ms - -[0m
+2023-04-03 13:02:30 info: [0mGET /projects [32m200[0m 11.697 ms - -[0m
+2023-04-03 13:02:31 info: [0mGET /projects?page=1 [36m304[0m 110.349 ms - -[0m
+2023-04-03 13:02:31 info: [0mGET /projects?page=1 [36m304[0m 9.898 ms - -[0m
+2023-04-03 13:04:46 info: [0mGET /projects/show/18 [32m200[0m 62.642 ms - 536[0m
+2023-04-03 13:04:46 info: [0mGET /projects [36m304[0m 66.987 ms - -[0m
+2023-04-03 13:04:50 info: [0mOPTIONS /folders/get-medias [32m204[0m 0.191 ms - 0[0m
+2023-04-03 13:04:50 info: [0mPOST /folders/get-medias [32m200[0m 45.686 ms - 31[0m
+2023-04-03 13:04:50 info: [0mGET /folders [36m304[0m 55.977 ms - -[0m
+2023-04-03 13:04:52 info: [0mPOST /folders/get-medias [32m200[0m 3.578 ms - 31[0m
+2023-04-03 13:04:53 info: [0mPOST /folders/get-medias [32m200[0m 2.908 ms - 314[0m
+2023-04-03 13:04:56 info: [0mOPTIONS /folders/get-medias [32m204[0m 0.329 ms - 0[0m
+2023-04-03 13:04:56 info: [0mPOST /folders/get-medias [32m200[0m 7.703 ms - 31[0m
+2023-04-03 13:04:56 info: [0mPOST /folders/get-medias [32m200[0m 6.081 ms - 314[0m
+2023-04-03 13:04:57 info: [0mPOST /folders/get-medias [32m200[0m 2.583 ms - 31[0m
+2023-04-03 13:04:57 info: [0mPOST /folders/get-medias [32m200[0m 4.412 ms - 31[0m
+2023-04-03 13:05:01 info: [0mGET /projects/show/18 [36m304[0m 114.318 ms - -[0m
+2023-04-03 13:05:01 info: [0mGET /projects?page=1 [36m304[0m 136.542 ms - -[0m
+2023-04-03 13:05:01 info: [0mGET /projects? [36m304[0m 273.515 ms - -[0m
+2023-04-03 13:05:17 info: [0mOPTIONS /projects/delete/17 [32m204[0m 0.256 ms - 0[0m
+2023-04-03 13:05:17 info: [0mDELETE /projects/delete/17 [32m200[0m 18.047 ms - 30[0m
+2023-04-03 13:05:17 info: [0mGET /projects? [32m200[0m 72.775 ms - -[0m
+2023-04-03 13:05:17 info: [0mGET /projects?status=active&page=1 [32m200[0m 136.497 ms - 883[0m
+2023-04-03 13:05:17 info: [0mGET /projects?status=inactive&page=1 [32m200[0m 148.565 ms - 267[0m
+2023-04-03 13:05:17 info: [0mGET /projects?status=active%2Cinactive&page=1 [36m304[0m 169.599 ms - -[0m
+2023-04-03 13:05:17 info: [0mGET /projects?status=inactive%2Cactive&page=1 [36m304[0m 121.614 ms - -[0m
+2023-04-03 13:05:17 info: [0mGET /projects? [36m304[0m 31.334 ms - -[0m
+2023-04-03 13:05:17 info: [0mGET /projects?page=1 [32m200[0m 152.128 ms - -[0m
+2023-04-03 13:05:17 info: [0mGET /projects?status=active&page=1 [36m304[0m 32.935 ms - -[0m
+2023-04-03 13:05:17 info: [0mGET /projects?status=inactive&page=1 [36m304[0m 33.396 ms - -[0m
+2023-04-03 13:05:17 info: [0mGET /projects?status=active%2Cinactive&page=1 [36m304[0m 25.532 ms - -[0m
+2023-04-03 13:05:17 info: [0mGET /projects?status=inactive%2Cactive&page=1 [36m304[0m 27.898 ms - -[0m
+2023-04-03 13:05:18 info: [0mGET /projects? [36m304[0m 27.305 ms - -[0m
+2023-04-03 13:05:18 info: [0mGET /projects?status=active&page=1 [36m304[0m 20.016 ms - -[0m
+2023-04-03 13:05:18 info: [0mGET /projects?status=inactive&page=1 [36m304[0m 21.979 ms - -[0m
+2023-04-03 13:05:18 info: [0mGET /projects?page=1 [36m304[0m 39.021 ms - -[0m
+2023-04-03 13:05:18 info: [0mGET /projects?status=active%2Cinactive&page=1 [36m304[0m 31.573 ms - -[0m
+2023-04-03 13:05:18 info: [0mGET /projects?status=inactive%2Cactive&page=1 [36m304[0m 23.994 ms - -[0m
+2023-04-03 13:05:18 info: [0mGET /projects?page=1 [36m304[0m 9.955 ms - -[0m
+2023-04-03 13:05:18 info: [0mGET /projects? [36m304[0m 26.125 ms - -[0m
+2023-04-03 13:05:18 info: [0mGET /projects?status=active&page=1 [36m304[0m 23.045 ms - -[0m
+2023-04-03 13:05:18 info: [0mGET /projects?status=inactive&page=1 [36m304[0m 27.418 ms - -[0m
+2023-04-03 13:05:18 info: [0mGET /projects?status=active%2Cinactive&page=1 [36m304[0m 10.264 ms - -[0m
+2023-04-03 13:05:18 info: [0mGET /projects?status=inactive%2Cactive&page=1 [36m304[0m 9.505 ms - -[0m
+2023-04-03 13:05:18 info: [0mGET /projects?status=active&page=1 [36m304[0m 7.120 ms - -[0m
+2023-04-03 13:05:18 info: [0mGET /projects?page=1 [36m304[0m 15.288 ms - -[0m
+2023-04-03 13:05:18 info: [0mGET /projects? [36m304[0m 15.386 ms - -[0m
+2023-04-03 13:05:18 info: [0mGET /projects?status=inactive&page=1 [36m304[0m 13.145 ms - -[0m
+2023-04-03 13:05:18 info: [0mGET /projects?status=active%2Cinactive&page=1 [36m304[0m 9.848 ms - -[0m
+2023-04-03 13:05:18 info: [0mGET /projects?status=active&page=1 [36m304[0m 11.991 ms - -[0m
+2023-04-03 13:05:18 info: [0mGET /projects? [36m304[0m 11.182 ms - -[0m
+2023-04-03 13:05:18 info: [0mGET /projects?page=1 [36m304[0m 15.474 ms - -[0m
+2023-04-03 13:05:18 info: [0mGET /projects?status=inactive&page=1 [36m304[0m 11.761 ms - -[0m
+2023-04-03 13:05:18 info: [0mGET /projects?status=active%2Cinactive&page=1 [36m304[0m 14.226 ms - -[0m
+2023-04-03 13:05:18 info: [0mGET /projects?page=1 [36m304[0m 25.815 ms - -[0m
+2023-04-03 13:05:18 info: [0mGET /projects?status=active&page=1 [36m304[0m 31.732 ms - -[0m
+2023-04-03 13:05:18 info: [0mGET /projects?status=inactive&page=1 [36m304[0m 21.074 ms - -[0m
+2023-04-03 13:05:18 info: [0mGET /projects?status=active%2Cinactive&page=1 [36m304[0m 28.658 ms - -[0m
+2023-04-03 13:05:18 info: [0mGET /projects?page=1 [36m304[0m 10.900 ms - -[0m
+2023-04-03 13:05:18 info: [0mGET /projects?status=active&page=1 [36m304[0m 14.949 ms - -[0m
+2023-04-03 13:05:18 info: [0mGET /projects?status=inactive&page=1 [36m304[0m 15.145 ms - -[0m
+2023-04-03 13:05:18 info: [0mGET /projects?page=1 [36m304[0m 12.403 ms - -[0m
+2023-04-03 13:05:18 info: [0mGET /projects?status=active&page=1 [36m304[0m 19.107 ms - -[0m
+2023-04-03 13:05:18 info: [0mGET /projects?page=1 [36m304[0m 16.935 ms - -[0m
+2023-04-03 13:05:18 info: [0mGET /projects?status=active&page=1 [36m304[0m 19.998 ms - -[0m
+2023-04-03 13:05:18 info: [0mGET /projects?page=1 [36m304[0m 18.212 ms - -[0m
+2023-04-03 13:05:18 info: [0mGET /projects?status=active&page=1 [36m304[0m 21.741 ms - -[0m
+2023-04-03 13:05:18 info: [0mGET /projects?page=1 [36m304[0m 11.833 ms - -[0m
+2023-04-03 13:05:18 info: [0mGET /projects?status=active&page=1 [36m304[0m 8.510 ms - -[0m
+2023-04-03 13:05:18 info: [0mGET /projects?page=1 [36m304[0m 9.104 ms - -[0m
+2023-04-03 13:05:18 info: [0mGET /projects?status=active&page=1 [36m304[0m 8.472 ms - -[0m
+2023-04-03 13:05:18 info: [0mGET /projects?page=1 [36m304[0m 6.045 ms - -[0m
+2023-04-03 13:05:18 info: [0mGET /projects?status=active&page=1 [36m304[0m 7.870 ms - -[0m
+2023-04-03 13:05:18 info: [0mGET /projects?page=1 [36m304[0m 19.789 ms - -[0m
+2023-04-03 13:05:18 info: [0mGET /projects?status=active&page=1 [36m304[0m 78.447 ms - -[0m
+2023-04-03 13:05:18 info: [0mGET /projects?page=1 [36m304[0m 70.014 ms - -[0m
+2023-04-03 13:05:18 info: [0mGET /projects?status=active&page=1 [36m304[0m 7.924 ms - -[0m
+2023-04-03 13:05:18 info: [0mGET /projects?page=1 [36m304[0m 9.758 ms - -[0m
+2023-04-03 13:05:18 info: [0mGET /projects?page=1 [36m304[0m 6.472 ms - -[0m
+2023-04-03 13:05:18 info: [0mGET /projects?page=1 [36m304[0m 5.486 ms - -[0m
+2023-04-03 13:05:18 info: [0mGET /projects?page=1 [36m304[0m 5.262 ms - -[0m
+2023-04-03 13:05:18 info: [0mGET /projects?page=1 [36m304[0m 4.684 ms - -[0m
+2023-04-03 13:05:18 info: [0mGET /projects?page=1 [36m304[0m 10.082 ms - -[0m
+2023-04-03 13:05:18 info: [0mGET /projects?page=1 [36m304[0m 33.786 ms - -[0m
+2023-04-03 13:05:18 info: [0mGET /projects?page=1 [36m304[0m 9.168 ms - -[0m
+2023-04-03 13:05:18 info: [0mGET /projects?page=1 [36m304[0m 5.856 ms - -[0m
+2023-04-03 13:05:18 info: [0mGET /projects?page=1 [36m304[0m 10.133 ms - -[0m
+2023-04-03 13:05:18 info: [0mGET /projects?page=1 [36m304[0m 5.870 ms - -[0m
+2023-04-03 13:05:20 info: [0mGET /projects/show/14 [32m200[0m 19.661 ms - 257[0m
+2023-04-03 13:05:21 info: [0mGET /projects [32m200[0m 65.501 ms - -[0m
+2023-04-03 13:05:23 info: [0mGET /projects/show/14 [36m304[0m 90.449 ms - -[0m
+2023-04-03 13:05:23 info: [0mGET /projects?page=1 [36m304[0m 115.386 ms - -[0m
+2023-04-03 13:05:23 info: [0mGET /projects?page=1 [36m304[0m 62.610 ms - -[0m
+2023-04-03 13:05:24 info: [0mGET /projects? [36m304[0m 17.571 ms - -[0m
+2023-04-03 13:08:57 info: [0mGET /projects? [36m304[0m 247.967 ms - -[0m
+2023-04-03 13:08:59 info: [0mGET /projects?status=active&page=1 [36m304[0m 22.642 ms - -[0m
+2023-04-03 13:09:00 info: [0mGET /projects?page=1 [36m304[0m 12.528 ms - -[0m
+2023-04-03 13:09:01 info: [0mGET /projects?status=inactive&page=1 [36m304[0m 17.603 ms - -[0m
+2023-04-03 13:09:01 info: [0mGET /projects?page=1 [36m304[0m 9.273 ms - -[0m
+2023-04-03 13:09:02 info: [0mGET /projects?status=inactive&page=1 [36m304[0m 6.073 ms - -[0m
+2023-04-03 13:09:03 info: [0mGET /projects?page=1 [36m304[0m 17.880 ms - -[0m
+2023-04-03 13:09:03 info: [0mGET /projects?status=active&page=1 [36m304[0m 23.093 ms - -[0m
+2023-04-03 13:09:04 info: [0mGET /projects?page=1 [36m304[0m 16.405 ms - -[0m
+2023-04-03 13:09:04 info: [0mGET /projects?status=inactive&page=1 [36m304[0m 11.206 ms - -[0m
+2023-04-03 13:09:11 info: [0mGET /projects?page=1 [36m304[0m 43.802 ms - -[0m
+2023-04-03 13:09:11 info: [0mGET /projects?status=active&page=1 [36m304[0m 15.098 ms - -[0m
+2023-04-03 13:09:47 info: [0mOPTIONS /folders/get-medias [32m204[0m 10.885 ms - 0[0m
+2023-04-03 13:09:47 info: [0mPOST /folders/get-medias [32m200[0m 217.079 ms - 31[0m
+2023-04-03 13:09:47 info: [0mGET /folders [36m304[0m 193.099 ms - -[0m
+2023-04-03 13:09:49 info: [0mPOST /folders/get-medias [32m200[0m 4.792 ms - 31[0m
+2023-04-03 13:09:50 info: [0mPOST /folders/get-medias [32m200[0m 30.455 ms - 314[0m
+2023-04-03 13:09:50 info: [0mPOST /folders/get-medias [32m200[0m 21.021 ms - 31[0m
+2023-04-03 13:09:51 info: [0mPOST /folders/get-medias [32m200[0m 8.394 ms - 314[0m
+2023-04-03 13:09:53 info: [0mOPTIONS /folders/get-medias [32m204[0m 0.392 ms - 0[0m
+2023-04-03 13:09:53 info: [0mPOST /folders/get-medias [32m200[0m 5.073 ms - 31[0m
+2023-04-03 13:10:00 info: [0mPOST /medias/create [32m200[0m 117.983 ms - 31[0m
+2023-04-03 13:10:00 info: [0mOPTIONS /folders/get-medias [32m204[0m 0.302 ms - 0[0m
+2023-04-03 13:10:00 info: [0mPOST /folders/get-medias [32m200[0m 9.791 ms - 312[0m
+2023-04-03 13:10:03 info: [0mGET /projects? [36m304[0m 125.574 ms - -[0m
+2023-04-03 13:10:03 info: [0mGET /projects?page=1 [36m304[0m 117.240 ms - -[0m
+2023-04-03 13:10:06 info: [0mGET /projects [36m304[0m 43.775 ms - -[0m
+2023-04-03 13:10:08 info: [0mGET /projects?page=1 [36m304[0m 52.709 ms - -[0m
+2023-04-03 13:10:08 info: [0mGET /projects?page=1 [36m304[0m 41.367 ms - -[0m
+2023-04-03 13:10:09 info: [0mGET /projects [36m304[0m 36.615 ms - -[0m
+2023-04-03 13:10:25 info: [0mGET /posts [0m-[0m - ms - -[0m
+2023-04-03 13:10:33 info: [0mGET /projects? [36m304[0m 140.463 ms - -[0m
+2023-04-03 13:10:33 info: [0mGET /projects?page=1 [36m304[0m 34.737 ms - -[0m
+2023-04-03 13:10:35 info: [0mGET /projects [36m304[0m 17.702 ms - -[0m
+2023-04-03 13:10:36 info: [0mGET /projects?page=1 [36m304[0m 133.178 ms - -[0m
+2023-04-03 13:10:36 info: [0mGET /projects?page=1 [36m304[0m 56.685 ms - -[0m
+2023-04-03 13:10:44 info: [0mGET /projects? [36m304[0m 60.687 ms - -[0m
+2023-04-03 13:10:44 info: [0mGET /projects?page=1 [36m304[0m 40.254 ms - -[0m
+2023-04-03 13:10:45 info: [0mGET /projects [36m304[0m 34.191 ms - -[0m
+2023-04-03 13:10:45 info: [0mGET /projects?page=1 [36m304[0m 22.873 ms - -[0m
+2023-04-03 13:10:46 info: [0mGET /projects?page=1 [36m304[0m 7.175 ms - -[0m
+2023-04-03 13:10:48 info: [0mGET /projects [36m304[0m 24.160 ms - -[0m
+2023-04-03 13:10:49 info: [0mGET /projects?page=1 [36m304[0m 109.664 ms - -[0m
+2023-04-03 13:10:49 info: [0mGET /projects?page=1 [36m304[0m 47.506 ms - -[0m
+2023-04-03 13:10:50 info: [0mGET /projects/show/18 [36m304[0m 16.410 ms - -[0m
+2023-04-03 13:10:51 info: [0mGET /projects [36m304[0m 9.833 ms - -[0m
+2023-04-03 13:10:54 info: [0mOPTIONS /folders/get-medias [32m204[0m 0.584 ms - 0[0m
+2023-04-03 13:10:54 info: [0mPOST /folders/get-medias [32m200[0m 34.788 ms - 312[0m
+2023-04-03 13:10:54 info: [0mGET /folders [36m304[0m 55.454 ms - -[0m
+2023-04-03 13:10:57 info: [0mOPTIONS /projects/update/18 [32m204[0m 0.441 ms - 0[0m
+2023-04-03 13:10:57 info: [0mPUT /projects/update/18 [32m200[0m 51.688 ms - 2[0m
+2023-04-03 13:10:57 info: [0mGET /projects/show/18 [32m200[0m 19.502 ms - 813[0m
+2023-04-03 13:10:57 info: [0mGET /projects [36m304[0m 94.443 ms - -[0m
+2023-04-03 13:11:04 info: [0mOPTIONS /projects/update/18 [32m204[0m 0.313 ms - 0[0m
+2023-04-03 13:11:04 info: [0mPUT /projects/update/18 [32m200[0m 538.927 ms - 2[0m
+2023-04-03 13:11:04 info: [0mGET /projects/show/18 [32m200[0m 10.390 ms - 820[0m
+2023-04-03 13:11:05 info: [0mGET /projects [32m200[0m 14.398 ms - -[0m
+2023-04-03 13:11:08 info: [0mGET /projects/show/18 [36m304[0m 23.876 ms - -[0m
+2023-04-03 13:11:08 info: [0mGET /projects? [32m200[0m 28.153 ms - -[0m
+2023-04-03 13:11:08 info: [0mGET /projects?page=1 [32m200[0m 67.911 ms - -[0m
+2023-04-03 13:11:14 info: [0mGET /projects/show/16 [32m200[0m 129.906 ms - 257[0m
+2023-04-03 13:11:15 info: [0mGET /projects [36m304[0m 16.962 ms - -[0m
+2023-04-03 13:11:15 info: [0mGET /projects/show/16 [36m304[0m 21.920 ms - -[0m
+2023-04-03 13:11:15 info: [0mGET /projects?page=1 [36m304[0m 149.106 ms - -[0m
+2023-04-03 13:11:15 info: [0mGET /projects?page=1 [36m304[0m 97.703 ms - -[0m
+2023-04-03 13:11:22 info: [0mGET /projects? [36m304[0m 30.098 ms - -[0m
+2023-04-03 13:14:05 info: [0mGET /projects?status=active&page=1 [32m200[0m 271.405 ms - 882[0m
+2023-04-03 13:14:06 info: [0mGET /projects?status=active%2Cinactive&page=1 [36m304[0m 25.231 ms - -[0m
+2023-04-03 13:14:06 info: [0mGET /projects?status=active&page=1 [36m304[0m 7.037 ms - -[0m
+2023-04-03 13:14:06 info: [0mGET /projects?page=1 [36m304[0m 32.026 ms - -[0m
+2023-04-03 13:14:35 info: =================================
+2023-04-03 13:14:35 info: ======= ENV: development =======
+2023-04-03 13:14:35 info: 🚀 App listening on the port 8000
+2023-04-03 13:14:35 info: =================================
+2023-04-03 13:14:47 info: [0mGET /projects?status=active&page=1 [36m304[0m 278.160 ms - -[0m
+2023-04-03 13:14:47 info: [0mGET /projects?status=active%2Cinactive&page=1 [36m304[0m 18.431 ms - -[0m
+2023-04-03 13:14:48 info: [0mGET /projects?status=active&page=1 [36m304[0m 23.439 ms - -[0m
+2023-04-03 13:14:48 info: [0mGET /projects?page=1 [36m304[0m 17.207 ms - -[0m
+2023-04-03 13:14:49 info: [0mGET /projects?status=inactive&page=1 [36m304[0m 24.747 ms - -[0m
+2023-04-03 13:14:50 info: [0mGET /projects?status=inactive%2Cactive&page=1 [36m304[0m 10.048 ms - -[0m
+2023-04-03 13:14:50 info: [0mGET /projects?status=inactive&page=1 [36m304[0m 23.397 ms - -[0m
+2023-04-03 13:14:51 info: [0mGET /projects?page=1 [36m304[0m 7.125 ms - -[0m
+2023-04-03 13:16:03 info: =================================
+2023-04-03 13:16:03 info: ======= ENV: development =======
+2023-04-03 13:16:03 info: 🚀 App listening on the port 8000
+2023-04-03 13:16:03 info: =================================
+2023-04-03 13:17:10 info: [0mGET /projects?status=active&page=1 [36m304[0m 202.785 ms - -[0m
+2023-04-03 13:17:10 info: [0mGET /projects?status=active%2Cinactive&page=1 [36m304[0m 18.668 ms - -[0m
+2023-04-03 13:17:11 info: [0mGET /projects?status=active&page=1 [36m304[0m 18.977 ms - -[0m
+2023-04-03 13:17:11 info: [0mGET /projects?status=active%2Cinactive&page=1 [36m304[0m 16.780 ms - -[0m
+2023-04-03 13:17:12 info: [0mGET /projects?status=active&page=1 [36m304[0m 22.370 ms - -[0m
+2023-04-03 13:17:12 info: [0mGET /projects?status=active%2Cinactive&page=1 [36m304[0m 15.043 ms - -[0m
+2023-04-03 13:17:14 info: [0mGET /projects?status=active&page=1 [36m304[0m 17.207 ms - -[0m
+2023-04-03 13:17:14 info: [0mGET /projects?page=1 [36m304[0m 7.301 ms - -[0m
+2023-04-03 13:17:24 info: [0mGET /projects?status=inactive&page=1 [36m304[0m 37.408 ms - -[0m
+2023-04-03 13:17:26 info: [0mGET /projects?status=inactive%2Cactive&page=1 [36m304[0m 44.036 ms - -[0m
+2023-04-03 13:17:30 info: [0mGET /projects?status=inactive&page=1 [36m304[0m 18.364 ms - -[0m
+2023-04-03 13:17:31 info: [0mGET /projects?page=1 [36m304[0m 21.055 ms - -[0m
+2023-04-03 13:20:16 info: [0mGET /projects?status=active&page=1 [36m304[0m 50.409 ms - -[0m
+2023-04-03 13:20:17 info: [0mGET /projects?status=active%2Cinactive&page=1 [36m304[0m 6.678 ms - -[0m
+2023-04-03 13:20:39 info: =================================
+2023-04-03 13:20:39 info: ======= ENV: development =======
+2023-04-03 13:20:39 info: 🚀 App listening on the port 8000
+2023-04-03 13:20:39 info: =================================
+2023-04-03 13:20:51 info: =================================
+2023-04-03 13:20:51 info: ======= ENV: development =======
+2023-04-03 13:20:51 info: 🚀 App listening on the port 8000
+2023-04-03 13:20:51 info: =================================
+2023-04-03 13:20:57 info: [0mGET /projects? [36m304[0m 229.969 ms - -[0m
+2023-04-03 13:21:01 info: [0mGET /projects?status=active&page=1 [36m304[0m 36.372 ms - -[0m
+2023-04-03 13:21:02 info: [0mGET /projects?page=1 [36m304[0m 28.560 ms - -[0m
+2023-04-03 13:21:07 info: [0mGET /projects?status=active&page=1 [36m304[0m 79.310 ms - -[0m
+2023-04-03 13:21:09 info: [0mGET /projects?status=active%2Cinactive&page=1 [36m304[0m 52.094 ms - -[0m
+2023-04-03 13:22:02 info: =================================
+2023-04-03 13:22:02 info: ======= ENV: development =======
+2023-04-03 13:22:02 info: 🚀 App listening on the port 8000
+2023-04-03 13:22:02 info: =================================
+2023-04-03 13:22:22 info: =================================
+2023-04-03 13:22:22 info: ======= ENV: development =======
+2023-04-03 13:22:22 info: 🚀 App listening on the port 8000
+2023-04-03 13:22:22 info: =================================
+2023-04-03 13:23:21 info: =================================
+2023-04-03 13:23:21 info: ======= ENV: development =======
+2023-04-03 13:23:21 info: 🚀 App listening on the port 8000
+2023-04-03 13:23:21 info: =================================
+2023-04-03 13:24:18 info: =================================
+2023-04-03 13:24:18 info: ======= ENV: development =======
+2023-04-03 13:24:18 info: 🚀 App listening on the port 8000
+2023-04-03 13:24:18 info: =================================
+2023-04-03 13:24:25 info: [0mGET /projects?status=active&page=1 [32m200[0m 338.453 ms - 2[0m
+2023-04-03 13:24:25 info: [0mGET /projects?status=active%2Cinactive&page=1 [32m200[0m 25.255 ms - 2[0m
+2023-04-03 13:24:27 info: [0mGET /projects?status=inactive&page=1 [32m200[0m 17.349 ms - 2[0m
+2023-04-03 13:24:27 info: [0mGET /projects?page=1 [32m200[0m 20.128 ms - 2[0m
+2023-04-03 13:24:35 info: [0mGET /projects?page=1 [36m304[0m 176.023 ms - -[0m
+2023-04-03 13:24:35 info: [0mGET /projects?page=1 [36m304[0m 79.435 ms - -[0m
+2023-04-03 13:24:35 info: [0mGET /projects?page=1 [36m304[0m 15.291 ms - -[0m
+2023-04-03 13:24:45 info: [0mGET /projects?page=1 [36m304[0m 343.671 ms - -[0m
+2023-04-03 13:24:45 info: [0mGET /projects?page=1 [36m304[0m 30.341 ms - -[0m
+2023-04-03 13:24:45 info: [0mGET /projects?page=1 [36m304[0m 148.278 ms - -[0m
+2023-04-03 13:24:46 info: [0mGET /projects?page=1 [36m304[0m 177.827 ms - -[0m
+2023-04-03 13:25:54 info: =================================
+2023-04-03 13:25:54 info: ======= ENV: development =======
+2023-04-03 13:25:54 info: 🚀 App listening on the port 8000
+2023-04-03 13:25:54 info: =================================
+2023-04-03 13:26:03 info: [0mGET /projects?page=1 [32m200[0m 284.347 ms - -[0m
+2023-04-03 13:26:03 info: [0mGET /projects?page=1 [36m304[0m 12.767 ms - -[0m
+2023-04-03 13:26:03 info: [0mGET /projects?page=1 [36m304[0m 62.556 ms - -[0m
+2023-04-03 13:26:12 info: [0mGET /projects?page=1 [36m304[0m 45.499 ms - -[0m
+2023-04-03 13:27:35 info: =================================
+2023-04-03 13:27:35 info: ======= ENV: development =======
+2023-04-03 13:27:35 info: 🚀 App listening on the port 8000
+2023-04-03 13:27:35 info: =================================
+2023-04-03 13:28:13 info: [0mGET /projects?page=1&status=active,inactive&status=inactive [32m200[0m 192.601 ms - 267[0m
+2023-04-03 13:28:21 info: [0mGET /projects?page=1&status=active,inactive [32m200[0m 27.824 ms - 92[0m
+2023-04-03 13:28:30 info: [0mGET /projects?page=1&status=active,inactive [32m200[0m 127.686 ms - 92[0m
+2023-04-03 13:37:06 info: =================================
+2023-04-03 13:37:06 info: ======= ENV: development =======
+2023-04-03 13:37:06 info: 🚀 App listening on the port 8000
+2023-04-03 13:37:06 info: =================================
+2023-04-03 13:37:14 info: =================================
+2023-04-03 13:37:14 info: ======= ENV: development =======
+2023-04-03 13:37:14 info: 🚀 App listening on the port 8000
+2023-04-03 13:37:14 info: =================================
+2023-04-03 13:37:23 info: [0mGET /projects?page=1 [36m304[0m 287.143 ms - -[0m
+2023-04-03 13:37:23 info: [0mGET /projects?page=1 [36m304[0m 15.312 ms - -[0m
+2023-04-03 13:37:23 info: [0mGET /projects?page=1 [36m304[0m 13.982 ms - -[0m
+2023-04-03 13:37:25 info: [0mGET /projects?status=active&page=1 [32m200[0m 16.803 ms - 882[0m
+2023-04-03 13:37:26 info: [0mGET /projects?page=1 [36m304[0m 22.776 ms - -[0m
+2023-04-03 13:37:27 info: [0mGET /projects?status=active&page=1 [36m304[0m 13.876 ms - -[0m
+2023-04-03 13:37:31 info: [0mGET /projects?status=active%2Cinactive&page=1 [32m200[0m 9.925 ms - -[0m
+2023-04-03 13:37:36 info: [0mGET /projects?status=active&page=1 [36m304[0m 11.876 ms - -[0m
+2023-04-03 13:37:38 info: [0mGET /projects?page=1 [36m304[0m 7.677 ms - -[0m
+2023-04-03 13:37:42 info: [0mGET /projects?status=inactive&page=1 [32m200[0m 7.305 ms - 267[0m
+2023-04-03 13:38:19 info: [0mGET /projects?status=inactive&page=1 [36m304[0m 102.309 ms - -[0m
+2023-04-03 13:38:19 info: [0mGET /projects?page=1 [36m304[0m 50.060 ms - -[0m
+2023-04-03 13:38:19 info: [0mGET /projects?status=inactive&page=1 [36m304[0m 117.663 ms - -[0m
+2023-04-03 13:38:22 info: [0mGET /projects?page=1 [36m304[0m 19.385 ms - -[0m
+2023-04-03 13:38:23 info: [0mGET /projects?status=active&page=1 [36m304[0m 8.806 ms - -[0m
+2023-04-03 13:38:24 info: [0mGET /projects?page=1 [36m304[0m 23.048 ms - -[0m
+2023-04-03 13:40:00 info: [0mGET /projects?page=1 [36m304[0m 94.659 ms - -[0m
+2023-04-03 13:40:01 info: [0mGET /projects?page=1 [36m304[0m 47.404 ms - -[0m
+2023-04-03 13:40:01 info: [0mGET /projects?page=1 [36m304[0m 15.035 ms - -[0m
+2023-04-03 13:40:01 info: [0mGET /projects?page=1 [36m304[0m 22.511 ms - -[0m
+2023-04-03 13:40:06 info: [0mGET /projects?page=1 [36m304[0m 14.439 ms - -[0m
+2023-04-03 13:40:06 info: [0mGET /projects?page=1 [36m304[0m 13.580 ms - -[0m
+2023-04-03 13:40:13 info: [0mGET /projects?page=1 [36m304[0m 23.153 ms - -[0m
+2023-04-03 13:40:13 info: [0mGET /projects?page=1 [36m304[0m 21.339 ms - -[0m
+2023-04-03 13:40:15 info: [0mGET /projects?page=1 [36m304[0m 46.842 ms - -[0m
+2023-04-03 13:40:15 info: [0mGET /projects?page=1 [36m304[0m 14.179 ms - -[0m
+2023-04-03 13:40:15 info: [0mGET /projects?page=1 [36m304[0m 6.402 ms - -[0m
+2023-04-03 13:40:31 info: [0mGET /projects?page=1 [36m304[0m 115.135 ms - -[0m
+2023-04-03 13:40:31 info: [0mGET /projects?page=1 [36m304[0m 20.737 ms - -[0m
+2023-04-03 13:40:34 info: [0mGET /projects?page=1 [36m304[0m 51.631 ms - -[0m
+2023-04-03 13:40:34 info: [0mGET /projects?page=1 [36m304[0m 35.208 ms - -[0m
+2023-04-03 13:40:34 info: [0mGET /projects?page=1 [36m304[0m 16.493 ms - -[0m
+2023-04-03 13:40:36 info: [0mGET /projects?page=1 [36m304[0m 9.986 ms - -[0m
+2023-04-03 13:40:36 info: [0mGET /projects?page=1 [36m304[0m 16.131 ms - -[0m
+2023-04-03 13:41:05 info: [0mGET /projects?page=1 [36m304[0m 127.022 ms - -[0m
+2023-04-03 13:41:05 info: [0mGET /projects?page=1 [36m304[0m 50.571 ms - -[0m
+2023-04-03 13:42:50 info: [0mGET /projects?page=1 [36m304[0m 93.694 ms - -[0m
+2023-04-03 13:42:50 info: [0mGET /projects?page=1 [36m304[0m 43.249 ms - -[0m
+2023-04-03 13:43:41 info: [0mGET /projects?page=1 [36m304[0m 49.435 ms - -[0m
+2023-04-03 13:43:41 info: [0mGET /projects?page=1 [36m304[0m 5.938 ms - -[0m
+2023-04-03 13:47:35 info: [0mGET /projects/show/18 [36m304[0m 84.807 ms - -[0m
+2023-04-03 13:47:36 info: [0mGET /projects [32m200[0m 37.535 ms - -[0m
+2023-04-03 13:47:40 info: [0mGET /projects/show/18 [36m304[0m 14.619 ms - -[0m
+2023-04-03 13:47:40 info: [0mGET /projects?page=1 [36m304[0m 69.107 ms - -[0m
+2023-04-03 13:47:40 info: [0mGET /projects?page=1 [36m304[0m 13.370 ms - -[0m
+2023-04-03 13:48:08 info: [0mGET /projects?page=1 [36m304[0m 52.683 ms - -[0m
+2023-04-03 13:48:08 info: [0mGET /projects?page=1 [36m304[0m 9.219 ms - -[0m
+2023-04-03 13:53:16 info: [0mGET /projects?page=1 [36m304[0m 115.911 ms - -[0m
+2023-04-03 13:53:16 info: [0mGET /projects?page=1 [36m304[0m 12.690 ms - -[0m
+2023-04-03 13:53:28 info: [0mGET /projects?page=1 [36m304[0m 19.017 ms - -[0m
+2023-04-03 13:53:28 info: [0mGET /projects?page=1 [36m304[0m 24.597 ms - -[0m
+2023-04-03 13:53:31 info: [0mGET /projects?page=1 [36m304[0m 12.169 ms - -[0m
+2023-04-03 13:53:31 info: [0mGET /projects?page=1 [36m304[0m 10.149 ms - -[0m
+2023-04-03 13:53:35 info: [0mGET /projects?page=1 [36m304[0m 31.898 ms - -[0m
+2023-04-03 13:53:35 info: [0mGET /projects?page=1 [36m304[0m 54.407 ms - -[0m
+2023-04-03 13:53:37 info: [0mGET /projects?page=1 [36m304[0m 41.402 ms - -[0m
+2023-04-03 13:53:37 info: [0mGET /projects?page=1 [36m304[0m 24.700 ms - -[0m
+2023-04-03 13:54:56 info: [0mGET /projects?page=1 [0m-[0m - ms - -[0m
+2023-04-03 13:54:58 info: [0mGET /projects?page=1 [32m200[0m 15.447 ms - -[0m
+2023-04-03 13:54:58 info: [0mGET /projects?page=1 [36m304[0m 6.502 ms - -[0m
+2023-04-03 13:54:58 info: [0mGET /projects?page=1 [36m304[0m 19.093 ms - -[0m
+2023-04-03 13:55:01 info: [0mGET /projects?page=1 [36m304[0m 34.569 ms - -[0m
+2023-04-03 13:55:01 info: [0mGET /projects?page=1 [36m304[0m 8.405 ms - -[0m
+2023-04-03 13:55:42 info: [0mGET /projects?page=1 [36m304[0m 103.523 ms - -[0m
+2023-04-03 13:55:42 info: [0mGET /projects?page=1 [36m304[0m 13.500 ms - -[0m
+2023-04-03 13:55:45 info: [0mGET /projects?page=1 [36m304[0m 65.685 ms - -[0m
+2023-04-03 13:55:45 info: [0mGET /projects?page=1 [36m304[0m 58.030 ms - -[0m
+2023-04-03 13:55:45 info: [0mGET /projects?page=1 [36m304[0m 13.304 ms - -[0m
+2023-04-03 13:55:49 info: [0mGET /projects?page=1 [36m304[0m 13.794 ms - -[0m
+2023-04-03 13:55:49 info: [0mGET /projects?page=1 [36m304[0m 78.577 ms - -[0m
+2023-04-03 13:56:16 info: [0mGET /projects?page=1 [36m304[0m 72.486 ms - -[0m
+2023-04-03 13:56:19 info: [0mGET /projects?page=1 [36m304[0m 47.992 ms - -[0m
+2023-04-03 13:56:19 info: [0mGET /projects?page=1 [36m304[0m 44.112 ms - -[0m
+2023-04-03 13:56:19 info: [0mGET /projects?page=1 [36m304[0m 39.193 ms - -[0m
+2023-04-03 13:56:28 info: [0mGET /projects?page=1 [36m304[0m 51.159 ms - -[0m
+2023-04-03 13:56:28 info: [0mGET /projects?page=1 [36m304[0m 49.413 ms - -[0m
+2023-04-03 13:56:29 info: [0mGET /projects?page=1 [36m304[0m 31.767 ms - -[0m
+2023-04-03 13:56:38 info: [0mGET /projects?page=1 [36m304[0m 28.798 ms - -[0m
+2023-04-03 13:56:39 info: [0mGET /projects?page=1 [36m304[0m 35.621 ms - -[0m
+2023-04-03 13:56:39 info: [0mGET /projects?page=1 [36m304[0m 10.306 ms - -[0m
+2023-04-03 13:58:54 info: [0mGET /projects?page=1 [36m304[0m 103.939 ms - -[0m
+2023-04-03 13:58:57 info: [0mGET /projects?page=1 [36m304[0m 41.262 ms - -[0m
+2023-04-03 13:58:57 info: [0mGET /projects?page=1 [36m304[0m 7.096 ms - -[0m
+2023-04-03 13:58:57 info: [0mGET /projects?page=1 [36m304[0m 8.599 ms - -[0m
+2023-04-03 13:58:58 info: [0mGET /projects?page=1&sort_field=id&sort_order=desc [32m200[0m 19.356 ms - -[0m
+2023-04-03 13:59:01 info: [0mGET /projects?page=1&sort_field=id&sort_order=asc [32m200[0m 7.368 ms - -[0m
+2023-04-03 13:59:02 info: [0mGET /projects?page=1&sort_field=id&sort_order=desc [36m304[0m 7.565 ms - -[0m
+2023-04-03 13:59:02 info: [0mGET /projects?page=1&sort_field=id&sort_order=asc [36m304[0m 10.609 ms - -[0m
+2023-04-03 13:59:03 info: [0mGET /projects?page=1&sort_field=id&sort_order=desc [36m304[0m 11.337 ms - -[0m
+2023-04-03 13:59:03 info: [0mGET /projects?page=1&sort_field=id&sort_order=asc [36m304[0m 8.402 ms - -[0m
+2023-04-03 13:59:04 info: [0mGET /projects?page=1&sort_field=id&sort_order=desc [36m304[0m 98.499 ms - -[0m
+2023-04-03 13:59:04 info: [0mGET /projects?page=1&sort_field=id&sort_order=asc [36m304[0m 7.270 ms - -[0m
+2023-04-03 13:59:06 info: [0mGET /projects?page=1&sort_field=id&sort_order=desc [36m304[0m 26.784 ms - -[0m
+2023-04-03 13:59:07 info: [0mGET /projects?page=1&sort_field=id&sort_order=asc [36m304[0m 9.015 ms - -[0m
+2023-04-03 13:59:12 info: [0mGET /projects?page=1&sort_field=id&sort_order=desc [36m304[0m 8.725 ms - -[0m
+2023-04-03 13:59:14 info: [0mGET /projects?page=1&sort_field=name&sort_order=desc [32m200[0m 100.516 ms - 2[0m
+2023-04-03 13:59:55 info: [0mGET /projects?page=1&sort_field=id&sort_order=desc [36m304[0m 89.911 ms - -[0m
+2023-04-03 14:00:01 info: [0mGET /projects?page=1&sort_field=id&sort_order=asc [36m304[0m 22.793 ms - -[0m
+2023-04-03 14:00:01 info: [0mGET /projects?page=1&sort_field=id&sort_order=desc [36m304[0m 32.508 ms - -[0m
+2023-04-03 14:00:03 info: [0mGET /projects?page=1&sort_field=id&sort_order=asc [36m304[0m 12.659 ms - -[0m
+2023-04-03 14:00:05 info: [0mGET /projects?page=1&sort_field=id&sort_order=desc [36m304[0m 9.893 ms - -[0m
+2023-04-03 14:00:07 info: [0mGET /projects?page=1&sort_field=id&sort_order=asc [36m304[0m 13.453 ms - -[0m
+2023-04-03 14:00:45 info: [0mGET /projects?page=1&sort_field=id&sort_order=desc [36m304[0m 72.707 ms - -[0m
+2023-04-03 14:00:47 info: [0mGET /projects?page=1&sort_field=id&sort_order=asc [36m304[0m 23.336 ms - -[0m
+2023-04-03 14:01:04 info: [0mGET /projects [36m304[0m 28.224 ms - -[0m
+2023-04-03 14:01:05 info: [0mGET /projects?page=1&sort_field=id&sort_order=asc [36m304[0m 12.634 ms - -[0m
+2023-04-03 14:01:05 info: [0mGET /projects?page=1 [36m304[0m 8.062 ms - -[0m
+2023-04-03 14:01:12 info: [0mGET /projects?page=1&sort_field=id&sort_order=desc [36m304[0m 8.593 ms - -[0m
+2023-04-03 14:01:13 info: [0mGET /projects?page=1&sort_field=id&sort_order=asc [36m304[0m 6.289 ms - -[0m
+2023-04-03 14:01:18 info: [0mGET /projects?page=1&sort_field=id&sort_order=desc [36m304[0m 7.899 ms - -[0m
+2023-04-03 14:01:18 info: [0mGET /projects?page=1&sort_field=id&sort_order=asc [36m304[0m 9.066 ms - -[0m
+2023-04-03 14:01:19 info: [0mGET /projects?page=1&sort_field=id&sort_order=desc [36m304[0m 7.526 ms - -[0m
+2023-04-03 14:01:19 info: [0mGET /projects?page=1&sort_field=id&sort_order=asc [36m304[0m 16.254 ms - -[0m
+2023-04-03 14:01:20 info: [0mGET /projects?page=1&sort_field=id&sort_order=desc [36m304[0m 6.621 ms - -[0m
+2023-04-03 14:01:20 info: [0mGET /projects?page=1&sort_field=id&sort_order=asc [36m304[0m 10.664 ms - -[0m
+2023-04-03 14:01:22 info: [0mGET /projects?page=1&sort_field=id&sort_order=desc [36m304[0m 7.355 ms - -[0m
+2023-04-03 14:01:22 info: [0mGET /projects?page=1&sort_field=id&sort_order=asc [36m304[0m 8.716 ms - -[0m
+2023-04-03 14:01:33 info: [0mGET /projects?page=1&sort_field=id&sort_order=desc [36m304[0m 14.943 ms - -[0m
+2023-04-03 14:01:33 info: [0mGET /projects?page=1&sort_field=id&sort_order=asc [36m304[0m 21.786 ms - -[0m
+2023-04-03 14:01:34 info: [0mGET /projects?page=1&sort_field=id&sort_order=desc [36m304[0m 6.527 ms - -[0m
+2023-04-03 14:01:34 info: [0mGET /projects?page=1&sort_field=id&sort_order=asc [36m304[0m 11.077 ms - -[0m
+2023-04-03 14:01:35 info: [0mGET /projects?page=1&sort_field=id&sort_order=desc [36m304[0m 5.272 ms - -[0m
+2023-04-03 14:01:35 info: [0mGET /projects?page=1&sort_field=id&sort_order=asc [36m304[0m 8.472 ms - -[0m
+2023-04-03 14:02:37 info: [0mGET /projects?page=1&sort_field=id&sort_order=desc [36m304[0m 24.847 ms - -[0m
+2023-04-03 14:02:38 info: [0mGET /projects?page=1&sort_field=id&sort_order=asc [36m304[0m 9.556 ms - -[0m
+2023-04-03 14:02:39 info: [0mGET /projects?page=1&sort_field=id&sort_order=desc [36m304[0m 8.331 ms - -[0m
+2023-04-03 14:06:59 info: [0mGET /projects?page=1&page_size=50 [36m304[0m 140.735 ms - -[0m
+2023-04-03 14:06:59 info: [0mGET /projects?page=1&page_size=50 [36m304[0m 7.994 ms - -[0m
+2023-04-03 14:07:25 info: [0mGET /projects?page=1&page_size=50 [36m304[0m 106.577 ms - -[0m
+2023-04-03 14:08:10 info: =================================
+2023-04-03 14:08:10 info: ======= ENV: development =======
+2023-04-03 14:08:10 info: 🚀 App listening on the port 8000
+2023-04-03 14:08:10 info: =================================
+2023-04-03 14:09:25 info: =================================
+2023-04-03 14:09:25 info: ======= ENV: development =======
+2023-04-03 14:09:25 info: 🚀 App listening on the port 8000
+2023-04-03 14:09:25 info: =================================
+2023-04-03 14:09:31 info: =================================
+2023-04-03 14:09:31 info: ======= ENV: development =======
+2023-04-03 14:09:31 info: 🚀 App listening on the port 8000
+2023-04-03 14:09:31 info: =================================
+2023-04-03 14:09:39 info: [0mGET /projects?page=1 [36m304[0m 248.946 ms - -[0m
+2023-04-03 14:09:39 info: [0mGET /projects?page=1 [36m304[0m 13.372 ms - -[0m
+2023-04-03 14:11:29 info: [0mGET /search/?search_query= [33m404[0m 6.837 ms - 146[0m
+2023-04-03 14:12:50 info: [0mGET /projects?page=1 [36m304[0m 82.718 ms - -[0m
+2023-04-03 14:12:50 info: [0mGET /projects?page=1 [36m304[0m 9.886 ms - -[0m
+2023-04-03 14:16:26 info: [0mGET /projects?page=1 [0m-[0m - ms - -[0m
+2023-04-03 14:16:27 info: [0mGET /projects?page=1 [32m200[0m 20.807 ms - -[0m
+2023-04-03 14:16:27 info: [0mGET /projects?page=1 [36m304[0m 15.208 ms - -[0m
+2023-04-03 14:16:27 info: [0mGET /projects?page=1 [36m304[0m 12.500 ms - -[0m
+2023-04-03 14:16:29 info: [0mGET /projects?page=1&search= [32m200[0m 267.323 ms - 2[0m
+2023-04-03 14:16:29 info: [0mGET /projects?page=1&search= [36m304[0m 44.900 ms - -[0m
+2023-04-03 14:16:29 info: [0mGET /projects?page=1&search= [36m304[0m 18.557 ms - -[0m
+2023-04-03 14:16:29 info: [0mGET /projects?page=1&search= [36m304[0m 12.691 ms - -[0m
+2023-04-03 14:16:30 info: [0mGET /projects?page=1&search= [36m304[0m 21.186 ms - -[0m
+2023-04-03 14:16:33 info: [0mGET /projects?page=1&search= [36m304[0m 11.918 ms - -[0m
+2023-04-03 14:16:33 info: [0mGET /projects?page=1&search= [36m304[0m 7.104 ms - -[0m
+2023-04-03 14:16:33 info: [0mGET /projects?page=1&search= [36m304[0m 9.775 ms - -[0m
+2023-04-03 14:16:33 info: [0mGET /projects?page=1&search= [36m304[0m 9.090 ms - -[0m
+2023-04-03 14:17:13 info: [0mGET /projects?page=1&search= [36m304[0m 177.507 ms - -[0m
+2023-04-03 14:17:14 info: [0mGET /projects?page=1 [36m304[0m 106.415 ms - -[0m
+2023-04-03 14:17:15 info: [0mGET /projects?page=1&search=s [32m200[0m 29.276 ms - 2[0m
+2023-04-03 14:17:15 info: [0mGET /projects?page=1&search=sv [32m200[0m 20.928 ms - 2[0m
+2023-04-03 14:17:16 info: [0mGET /projects?page=1&search=svs [32m200[0m 101.426 ms - 2[0m
+2023-04-03 14:17:16 info: [0mGET /projects?page=1&search=svsv [32m200[0m 70.510 ms - 2[0m
+2023-04-03 14:17:16 info: [0mGET /projects?page=1&search=svsvs [32m200[0m 48.845 ms - 2[0m
+2023-04-03 14:17:17 info: [0mGET /projects?page=1&search= [36m304[0m 28.327 ms - -[0m
+2023-04-03 14:17:37 info: [0mGET /projects?page=1&search= [36m304[0m 58.410 ms - -[0m
+2023-04-03 14:17:40 info: [0mGET /projects?page=1&search= [36m304[0m 58.665 ms - -[0m
+2023-04-03 14:17:40 info: [0mGET /projects?page=1 [36m304[0m 19.984 ms - -[0m
+2023-04-03 14:17:40 info: [0mGET /projects?page=1 [36m304[0m 39.171 ms - -[0m
+2023-04-03 14:17:43 info: [0mGET /projects?page=1&search=t [32m200[0m 28.010 ms - 2[0m
+2023-04-03 14:18:55 info: =================================
+2023-04-03 14:18:55 info: ======= ENV: development =======
+2023-04-03 14:18:55 info: 🚀 App listening on the port 8000
+2023-04-03 14:18:55 info: =================================
+2023-04-03 14:19:16 info: =================================
+2023-04-03 14:19:16 info: ======= ENV: development =======
+2023-04-03 14:19:16 info: 🚀 App listening on the port 8000
+2023-04-03 14:19:16 info: =================================
+2023-04-03 14:19:42 info: =================================
+2023-04-03 14:19:42 info: ======= ENV: development =======
+2023-04-03 14:19:42 info: 🚀 App listening on the port 8000
+2023-04-03 14:19:42 info: =================================
+2023-04-03 14:19:51 info: =================================
+2023-04-03 14:19:51 info: ======= ENV: development =======
+2023-04-03 14:19:51 info: 🚀 App listening on the port 8000
+2023-04-03 14:19:51 info: =================================
+2023-04-03 14:21:19 info: =================================
+2023-04-03 14:21:19 info: ======= ENV: development =======
+2023-04-03 14:21:19 info: 🚀 App listening on the port 8000
+2023-04-03 14:21:19 info: =================================
+2023-04-03 14:21:21 info: [0mGET /projects?page=1&search=v [32m200[0m 184.352 ms - -[0m
+2023-04-03 14:21:21 info: [0mGET /projects?page=1&search=vs [32m200[0m 119.770 ms - -[0m
+2023-04-03 14:21:23 info: [0mGET /projects?page=1&search= [32m200[0m 31.220 ms - -[0m
+2023-04-03 14:21:25 info: [0mGET /projects?page=1&search=v [36m304[0m 11.602 ms - -[0m
+2023-04-03 14:21:25 info: [0mGET /projects?page=1&search=vs [36m304[0m 10.525 ms - -[0m
+2023-04-03 14:21:25 info: [0mGET /projects?page=1&search=vsv [32m200[0m 9.150 ms - -[0m
+2023-04-03 14:21:25 info: [0mGET /projects?page=1&search=vsvs [32m200[0m 58.773 ms - -[0m
+2023-04-03 14:21:25 info: [0mGET /projects?page=1&search=vsvsv [32m200[0m 40.703 ms - -[0m
+2023-04-03 14:21:26 info: [0mGET /projects?page=1&search= [36m304[0m 10.165 ms - -[0m
+2023-04-03 14:22:46 info: =================================
+2023-04-03 14:22:46 info: ======= ENV: development =======
+2023-04-03 14:22:46 info: 🚀 App listening on the port 8000
+2023-04-03 14:22:46 info: =================================
+2023-04-03 14:23:01 info: =================================
+2023-04-03 14:23:01 info: ======= ENV: development =======
+2023-04-03 14:23:01 info: 🚀 App listening on the port 8000
+2023-04-03 14:23:01 info: =================================
+2023-04-03 14:23:13 info: =================================
+2023-04-03 14:23:14 info: ======= ENV: development =======
+2023-04-03 14:23:14 info: 🚀 App listening on the port 8000
+2023-04-03 14:23:14 info: =================================
+2023-04-03 14:23:15 info: [0mGET /projects?page=1&search= [36m304[0m 229.948 ms - -[0m
+2023-04-03 14:23:15 info: [0mGET /projects?page=1 [36m304[0m 154.611 ms - -[0m
+2023-04-03 14:23:15 info: [0mGET /projects?page=1 [36m304[0m 50.996 ms - -[0m
+2023-04-03 14:23:17 info: [0mGET /projects?page=1&search=d [32m200[0m 24.157 ms - -[0m
+2023-04-03 14:23:19 info: [0mGET /projects?page=1&search=du [32m200[0m 31.637 ms - -[0m
+2023-04-03 14:23:20 info: [0mGET /projects?page=1&search=du+ [32m200[0m 16.911 ms - -[0m
+2023-04-03 14:23:20 info: [0mGET /projects?page=1&search=du+a [32m200[0m 13.081 ms - -[0m
+2023-04-03 14:23:20 info: [0mGET /projects?page=1&search=du+an [32m200[0m 28.954 ms - -[0m
+2023-04-03 14:23:21 info: [0mGET /projects?page=1&search= [36m304[0m 9.919 ms - -[0m
+2023-04-03 14:23:25 info: [0mGET /projects?page=1&search=d [36m304[0m 33.404 ms - -[0m
+2023-04-03 14:23:25 info: [0mGET /projects?page=1&search=du [36m304[0m 48.307 ms - -[0m
+2023-04-03 14:23:25 info: [0mGET /projects?page=1&search=du+ [36m304[0m 21.781 ms - -[0m
+2023-04-03 14:23:25 info: [0mGET /projects?page=1&search=du+a [36m304[0m 7.736 ms - -[0m
+2023-04-03 14:23:25 info: [0mGET /projects?page=1&search=du+an [36m304[0m 12.665 ms - -[0m
+2023-04-03 14:23:25 info: [0mGET /projects?page=1&search=du+an+ [32m200[0m 9.851 ms - -[0m
+2023-04-03 14:23:26 info: [0mGET /projects?page=1&search=du+an+1 [32m200[0m 20.631 ms - -[0m
+2023-04-03 14:23:26 info: [0mGET /projects?page=1&search= [36m304[0m 11.834 ms - -[0m
+2023-04-03 14:23:27 info: [0mGET /projects?page=1&search=d [36m304[0m 15.249 ms - -[0m
+2023-04-03 14:23:27 info: [0mGET /projects?page=1&search=du [36m304[0m 11.485 ms - -[0m
+2023-04-03 14:23:27 info: [0mGET /projects?page=1&search=du+ [36m304[0m 13.609 ms - -[0m
+2023-04-03 14:23:30 info: [0mGET /projects?page=1&search=du [36m304[0m 21.888 ms - -[0m
+2023-04-03 14:23:30 info: [0mGET /projects?page=1&search=d [36m304[0m 11.363 ms - -[0m
+2023-04-03 14:23:31 info: [0mGET /projects?page=1&search= [36m304[0m 14.850 ms - -[0m
+2023-04-03 14:23:31 info: [0mGET /projects?page=1&search=d [36m304[0m 9.203 ms - -[0m
+2023-04-03 14:23:31 info: [0mGET /projects?page=1&search=du [36m304[0m 14.162 ms - -[0m
+2023-04-03 14:23:32 info: [0mGET /projects?page=1&search=dua [32m200[0m 11.101 ms - -[0m
+2023-04-03 14:23:32 info: [0mGET /projects?page=1&search=duan [32m200[0m 11.070 ms - -[0m
+2023-04-03 14:23:33 info: [0mGET /projects?page=1&search=duan1 [32m200[0m 9.965 ms - -[0m
+2023-04-03 14:23:34 info: [0mGET /projects?page=1&search= [36m304[0m 9.954 ms - -[0m
+2023-04-03 14:23:35 info: [0mGET /projects?page=1&search=d [36m304[0m 41.448 ms - -[0m
+2023-04-03 14:23:35 info: [0mGET /projects?page=1&search=du [36m304[0m 25.722 ms - -[0m
+2023-04-03 14:23:35 info: [0mGET /projects?page=1&search=duv [32m200[0m 12.021 ms - -[0m
+2023-04-03 14:23:35 info: [0mGET /projects?page=1&search=duvs [32m200[0m 13.797 ms - -[0m
+2023-04-03 14:23:35 info: [0mGET /projects?page=1&search=duvsv [32m200[0m 12.619 ms - -[0m
+2023-04-03 14:23:35 info: [0mGET /projects?page=1&search=duvsvs [32m200[0m 15.554 ms - -[0m
+2023-04-03 14:23:35 info: [0mGET /projects?page=1&search=duvsvsv [32m200[0m 8.429 ms - -[0m
+2023-04-03 14:23:35 info: [0mGET /projects?page=1&search=duvsvsvs [32m200[0m 56.824 ms - -[0m
+2023-04-03 14:23:35 info: [0mGET /projects?page=1&search=duvsvsvsv [32m200[0m 64.895 ms - -[0m
+2023-04-03 14:23:36 info: [0mGET /projects?page=1&search=duvsvsvsvs [32m200[0m 60.002 ms - -[0m
+2023-04-03 14:23:36 info: [0mGET /projects?page=1&search= [36m304[0m 16.027 ms - -[0m
+2023-04-03 14:23:36 info: [0mGET /projects?page=1&search=t [32m200[0m 64.385 ms - -[0m
+2023-04-03 14:23:36 info: [0mGET /projects?page=1&search=to [32m200[0m 57.918 ms - -[0m
+2023-04-03 14:23:36 info: [0mGET /projects?page=1&search=toa [32m200[0m 12.613 ms - -[0m
+2023-04-03 14:23:36 info: [0mGET /projects?page=1&search=toan [32m200[0m 28.366 ms - -[0m
+2023-04-03 14:23:40 info: [0mGET /projects?page=1&search=toanv [32m200[0m 77.542 ms - -[0m
+2023-04-03 14:23:40 info: [0mGET /projects?page=1&search=toanvs [32m200[0m 17.339 ms - -[0m
+2023-04-03 14:23:40 info: [0mGET /projects?page=1&search=toanvsv [32m200[0m 11.369 ms - -[0m
+2023-04-03 14:23:49 info: [0mGET /projects?page=1&search=toanvsv [36m304[0m 83.818 ms - -[0m
+2023-04-03 14:23:49 info: [0mGET /projects?page=1 [36m304[0m 71.054 ms - -[0m
+2023-04-03 14:23:49 info: [0mGET /projects?page=1 [36m304[0m 47.535 ms - -[0m
+2023-04-03 14:23:50 info: [0mGET /projects?page=1&search=v [36m304[0m 85.955 ms - -[0m
+2023-04-03 14:23:50 info: [0mGET /projects?page=1&search=vs [36m304[0m 44.480 ms - -[0m
+2023-04-03 14:23:50 info: [0mGET /projects?page=1&search=vsv [36m304[0m 62.847 ms - -[0m
+2023-04-03 14:23:50 info: [0mGET /projects?page=1&search=vsvs [36m304[0m 41.742 ms - -[0m
+2023-04-03 14:24:08 info: =================================
+2023-04-03 14:24:08 info: ======= ENV: development =======
+2023-04-03 14:24:08 info: 🚀 App listening on the port 8000
+2023-04-03 14:24:08 info: =================================
+2023-04-03 14:24:26 info: =================================
+2023-04-03 14:24:26 info: ======= ENV: development =======
+2023-04-03 14:24:26 info: 🚀 App listening on the port 8000
+2023-04-03 14:24:26 info: =================================
+2023-04-03 14:24:28 info: [0mGET /projects?page=1&search= [32m200[0m 24.327 ms - 2[0m
+2023-04-03 14:24:28 info: [0mGET /projects?page=1&search=v [32m200[0m 5.694 ms - 2[0m
+2023-04-03 14:24:28 info: [0mGET /projects?page=1&search=vs [32m200[0m 2.243 ms - 2[0m
+2023-04-03 14:24:28 info: [0mGET /projects?page=1&search=vsv [32m200[0m 6.847 ms - 2[0m
+2023-04-03 14:27:41 info: =================================
+2023-04-03 14:27:41 info: ======= ENV: development =======
+2023-04-03 14:27:41 info: 🚀 App listening on the port 8000
+2023-04-03 14:27:41 info: =================================
+2023-04-03 14:28:06 info: =================================
+2023-04-03 14:28:06 info: ======= ENV: development =======
+2023-04-03 14:28:06 info: 🚀 App listening on the port 8000
+2023-04-03 14:28:06 info: =================================
+2023-04-03 14:28:16 info: =================================
+2023-04-03 14:28:16 info: ======= ENV: development =======
+2023-04-03 14:28:16 info: 🚀 App listening on the port 8000
+2023-04-03 14:28:16 info: =================================
+2023-04-03 14:28:23 info: [0mGET /projects?page=1&search=d [32m200[0m 288.104 ms - 103[0m
+2023-04-03 14:28:23 info: [0mGET /projects?page=1&search=du [32m200[0m 219.678 ms - 103[0m
+2023-04-03 14:28:26 info: [0mGET /projects?page=1&search=dua [32m200[0m 40.000 ms - 103[0m
+2023-04-03 14:28:26 info: [0mGET /projects?page=1&search=duan [32m200[0m 14.327 ms - 103[0m
+2023-04-03 14:28:32 info: [0mGET /projects?page=1&search=duan1 [32m200[0m 17.575 ms - 103[0m
+2023-04-03 14:28:57 info: [0mGET /projects?page=1&search=duan [36m304[0m 46.848 ms - -[0m
+2023-04-03 14:29:20 info: [0mGET /projects?page=1&search=wertyui [32m200[0m 55.111 ms - 271[0m
+2023-04-03 14:29:26 info: [0mGET /projects?page=1&search=wertyui [36m304[0m 18.805 ms - -[0m
+2023-04-03 14:31:11 info: =================================
+2023-04-03 14:31:11 info: ======= ENV: development =======
+2023-04-03 14:31:11 info: 🚀 App listening on the port 8000
+2023-04-03 14:31:11 info: =================================
+2023-04-03 14:31:12 info: [0mGET /projects?page=1&search=wertyui [36m304[0m 174.706 ms - -[0m
+2023-04-03 14:31:15 info: [0mGET /projects?page=1&search=wertyui [36m304[0m 12.761 ms - -[0m
+2023-04-03 14:31:16 info: [0mGET /projects?page=1&search=wertyui [36m304[0m 16.390 ms - -[0m
+2023-04-03 14:31:20 info: [0mGET /projects?page=1&search=wertyui [36m304[0m 20.610 ms - -[0m
+2023-04-03 14:31:39 info: =================================
+2023-04-03 14:31:39 info: ======= ENV: development =======
+2023-04-03 14:31:39 info: 🚀 App listening on the port 8000
+2023-04-03 14:31:39 info: =================================
+2023-04-03 14:31:41 info: [0mGET /projects?page=1&search=wertyui [32m200[0m 127.483 ms - 262[0m
+2023-04-03 14:31:45 info: [0mGET /projects?page=1 [32m200[0m 36.764 ms - 92[0m
+2023-04-03 14:32:02 info: =================================
+2023-04-03 14:32:02 info: ======= ENV: development =======
+2023-04-03 14:32:02 info: 🚀 App listening on the port 8000
+2023-04-03 14:32:02 info: =================================
+2023-04-03 14:32:03 info: [0mGET /projects?page=1 [32m200[0m 88.139 ms - -[0m
+2023-04-03 14:32:13 info: [0mGET /projects?page=1 [36m304[0m 39.048 ms - -[0m
+2023-04-03 14:32:13 info: [0mGET /projects?page=1&search=wertyui [32m200[0m 82.773 ms - -[0m
+2023-04-03 14:32:13 info: [0mGET /projects?page=1 [36m304[0m 58.256 ms - -[0m
+2023-04-03 14:33:22 info: =================================
+2023-04-03 14:33:22 info: ======= ENV: development =======
+2023-04-03 14:33:22 info: 🚀 App listening on the port 8000
+2023-04-03 14:33:22 info: =================================
+2023-04-03 14:35:15 info: =================================
+2023-04-03 14:35:15 info: ======= ENV: development =======
+2023-04-03 14:35:15 info: 🚀 App listening on the port 8000
+2023-04-03 14:35:15 info: =================================
+2023-04-03 14:35:27 info: =================================
+2023-04-03 14:35:27 info: ======= ENV: development =======
+2023-04-03 14:35:27 info: 🚀 App listening on the port 8000
+2023-04-03 14:35:27 info: =================================
+2023-04-03 14:35:33 info: =================================
+2023-04-03 14:35:33 info: ======= ENV: development =======
+2023-04-03 14:35:33 info: 🚀 App listening on the port 8000
+2023-04-03 14:35:33 info: =================================
+2023-04-03 14:35:38 info: [0mGET /projects?page=1&search=du [32m200[0m 607.152 ms - 540[0m
+2023-04-03 14:35:38 info: [0mGET /projects?page=1&search=d [32m200[0m 671.342 ms - 711[0m
+2023-04-03 14:35:38 info: [0mGET /projects?page=1&search=dua [32m200[0m 16.624 ms - 92[0m
+2023-04-03 14:35:39 info: [0mGET /projects?page=1&search=duan [32m200[0m 21.436 ms - 92[0m
+2023-04-03 14:35:39 info: [0mGET /projects?page=1&search=dua [36m304[0m 19.871 ms - -[0m
+2023-04-03 14:35:40 info: [0mGET /projects?page=1&search=du [36m304[0m 16.508 ms - -[0m
+2023-04-03 14:35:41 info: [0mGET /projects?page=1&search=d [36m304[0m 14.161 ms - -[0m
+2023-04-03 14:35:41 info: [0mGET /projects?page=1&search= [32m200[0m 29.499 ms - -[0m
+2023-04-03 14:35:42 info: [0mGET /projects?page=1&search=w [32m200[0m 17.831 ms - 262[0m
+2023-04-03 14:35:43 info: [0mGET /projects?page=1&search= [36m304[0m 28.262 ms - -[0m
+2023-04-03 14:35:43 info: [0mGET /projects?page=1&search=w [36m304[0m 18.131 ms - -[0m
+2023-04-03 14:35:44 info: [0mGET /projects?page=1&search= [36m304[0m 17.360 ms - -[0m
+2023-04-03 14:38:11 info: [0mGET /projects?page=1&search=duan [36m304[0m 167.450 ms - -[0m
+2023-04-03 14:38:11 info: [0mGET /projects?page=1&search=du [36m304[0m 378.673 ms - -[0m
+2023-04-03 14:38:11 info: [0mGET /projects?page=1&search=d [36m304[0m 405.717 ms - -[0m
+2023-04-03 14:38:11 info: [0mGET /projects?page=1&search=dua [36m304[0m 303.279 ms - -[0m
+2023-04-03 14:38:12 info: [0mGET /projects?page=1&search=dua [36m304[0m 23.553 ms - -[0m
+2023-04-03 14:38:13 info: [0mGET /projects?page=1&search=du [36m304[0m 25.947 ms - -[0m
+2023-04-03 14:38:13 info: [0mGET /projects?page=1&search=d [36m304[0m 62.095 ms - -[0m
+2023-04-03 14:38:14 info: [0mGET /projects?page=1&search= [36m304[0m 16.130 ms - -[0m
+2023-04-03 14:38:14 info: [0mGET /projects?page=1&search=d [36m304[0m 10.790 ms - -[0m
+2023-04-03 14:38:15 info: [0mGET /projects?page=1&search=du [36m304[0m 16.429 ms - -[0m
+2023-04-03 14:38:15 info: [0mGET /projects?page=1&search=dua [36m304[0m 10.382 ms - -[0m
+2023-04-03 14:38:15 info: [0mGET /projects?page=1&search=duan [36m304[0m 12.841 ms - -[0m
+2023-04-03 14:38:16 info: [0mGET /projects?page=1&search=dua [36m304[0m 18.364 ms - -[0m
+2023-04-03 14:38:16 info: [0mGET /projects?page=1&search=du [36m304[0m 22.060 ms - -[0m
+2023-04-03 14:38:17 info: [0mGET /projects?page=1&search=du+ [32m200[0m 66.449 ms - 540[0m
+2023-04-03 14:38:17 info: [0mGET /projects?page=1&search=du+a [32m200[0m 16.420 ms - 540[0m
+2023-04-03 14:38:17 info: [0mGET /projects?page=1&search=du+an [32m200[0m 11.379 ms - 540[0m
+2023-04-03 14:38:17 info: [0mGET /projects?page=1&search=du+an+ [32m200[0m 14.770 ms - 540[0m
+2023-04-03 14:38:18 info: [0mGET /projects?page=1&search=du+an+1 [32m200[0m 9.771 ms - 540[0m
+2023-04-03 14:38:19 info: [0mGET /projects?page=1&search= [36m304[0m 12.161 ms - -[0m
+2023-04-03 14:38:20 info: [0mGET /projects?page=1&search=d [36m304[0m 22.575 ms - -[0m
+2023-04-03 14:38:20 info: [0mGET /projects?page=1&search=du [36m304[0m 14.959 ms - -[0m
+2023-04-03 14:38:20 info: [0mGET /projects?page=1&search=du+ [36m304[0m 10.555 ms - -[0m
+2023-04-03 14:38:20 info: [0mGET /projects?page=1&search=du+a [36m304[0m 6.076 ms - -[0m
+2023-04-03 14:38:21 info: [0mGET /projects?page=1&search=du+an [36m304[0m 21.465 ms - -[0m
+2023-04-03 14:38:21 info: [0mGET /projects?page=1&search=du+an1 [32m200[0m 9.628 ms - 92[0m
+2023-04-03 14:38:21 info: [0mGET /projects?page=1&search=du+an [36m304[0m 22.632 ms - -[0m
+2023-04-03 14:38:22 info: [0mGET /projects?page=1&search=du+an+ [36m304[0m 16.019 ms - -[0m
+2023-04-03 14:38:22 info: [0mGET /projects?page=1&search=du+an+1 [36m304[0m 19.256 ms - -[0m
+2023-04-03 14:38:24 info: [0mGET /projects?page=1&search= [36m304[0m 11.151 ms - -[0m
+2023-04-03 14:39:25 info: [0mGET /projects?page=1&search=x [32m200[0m 52.225 ms - 92[0m
+2023-04-03 14:39:25 info: [0mGET /projects?page=1&search=xv [32m200[0m 14.789 ms - 92[0m
+2023-04-03 14:39:25 info: [0mGET /projects?page=1&search=xvg [32m200[0m 29.022 ms - 92[0m
+2023-04-03 14:39:25 info: [0mGET /projects?page=1&search=xvgv [32m200[0m 8.846 ms - 92[0m
+2023-04-03 14:39:25 info: [0mGET /projects?page=1&search=xvgvh [32m200[0m 11.022 ms - 92[0m
+2023-04-03 14:39:26 info: [0mGET /projects?page=1&search=xvgvhv [32m200[0m 11.313 ms - 92[0m
+2023-04-03 14:39:26 info: [0mGET /projects?page=1&search=xvgvhv+ [32m200[0m 14.844 ms - 92[0m
+2023-04-03 14:39:26 info: [0mGET /projects?page=1&search=xvgvhv+v [32m200[0m 11.165 ms - 92[0m
+2023-04-03 14:39:26 info: [0mGET /projects?page=1&search=xvgvhv+vs [32m200[0m 36.810 ms - 92[0m
+2023-04-03 14:39:26 info: [0mGET /projects?page=1&search=xvgvhv+vsv [32m200[0m 19.456 ms - 92[0m
+2023-04-03 14:39:26 info: [0mGET /projects?page=1&search=xvgvhv+vsvs [32m200[0m 15.053 ms - 92[0m
+2023-04-03 14:39:26 info: [0mGET /projects?page=1&search=xvgvhv+vsvsv [32m200[0m 16.563 ms - 92[0m
+2023-04-03 14:39:26 info: [0mGET /projects?page=1&search=xvgvhv+vsvsvs [32m200[0m 15.291 ms - 92[0m
+2023-04-03 14:39:27 info: [0mGET /projects?page=1&search= [36m304[0m 13.049 ms - -[0m
+2023-04-03 14:39:33 info: [0mGET /projects?page=1&search=d [36m304[0m 58.618 ms - -[0m
+2023-04-03 14:39:33 info: [0mGET /projects?page=1&search=du [36m304[0m 79.668 ms - -[0m
+2023-04-03 14:39:33 info: [0mGET /projects?page=1&search=du+ [36m304[0m 26.809 ms - -[0m
+2023-04-03 14:39:33 info: [0mGET /projects?page=1&search=du+a [36m304[0m 37.592 ms - -[0m
+2023-04-03 14:39:33 info: [0mGET /projects?page=1&search=du+an [36m304[0m 39.924 ms - -[0m
+2023-04-03 14:39:33 info: [0mGET /projects?page=1&search=du+an+ [36m304[0m 23.160 ms - -[0m
+2023-04-03 14:39:34 info: [0mGET /projects?page=1&search=du+an+1 [36m304[0m 18.021 ms - -[0m
+2023-04-03 14:39:34 info: [0mGET /projects?page=1&search= [36m304[0m 11.031 ms - -[0m
+2023-04-03 14:39:36 info: [0mGET /projects?page=1&search=e [32m200[0m 46.292 ms - 609[0m
+2023-04-03 14:39:36 info: [0mGET /projects?page=1&search=ed [32m200[0m 37.432 ms - 262[0m
+2023-04-03 14:39:37 info: [0mGET /projects?page=1&search= [36m304[0m 40.545 ms - -[0m
+2023-04-03 14:39:38 info: [0mGET /projects?page=1&search=e [36m304[0m 33.431 ms - -[0m
+2023-04-03 14:39:38 info: [0mGET /projects?page=1&search=ef [32m200[0m 7.625 ms - 92[0m
+2023-04-03 14:39:38 info: [0mGET /projects?page=1&search= [36m304[0m 20.494 ms - -[0m
+2023-04-03 14:41:14 info: [0mGET /projects?page=1&search= [0m-[0m - ms - -[0m
+2023-04-03 14:41:16 info: [0mGET /projects?page=1 [36m304[0m 64.207 ms - -[0m
+2023-04-03 14:41:16 info: [0mGET /projects?page=1 [36m304[0m 42.684 ms - -[0m
+2023-04-03 14:41:16 info: [0mGET /projects?page=1 [36m304[0m 10.267 ms - -[0m
+2023-04-03 14:41:18 info: [0mGET /projects?page=1&search=d [36m304[0m 13.961 ms - -[0m
+2023-04-03 14:41:18 info: [0mGET /projects?page=1&search=du [36m304[0m 8.047 ms - -[0m
+2023-04-03 14:41:18 info: [0mGET /projects?page=1&search=dua [36m304[0m 18.331 ms - -[0m
+2023-04-03 14:41:18 info: [0mGET /projects?page=1&search=duan [36m304[0m 12.647 ms - -[0m
+2023-04-03 14:41:19 info: [0mGET /projects?page=1&search=duan [36m304[0m 6.783 ms - -[0m
+2023-04-03 14:42:28 info: [0mGET /projects?page=1&search=v [32m200[0m 118.845 ms - 92[0m
+2023-04-03 14:42:28 info: [0mGET /projects?page=1&search=vv [32m200[0m 9.480 ms - 92[0m
+2023-04-03 14:42:28 info: [0mGET /projects?page=1&search=vvs [32m200[0m 35.564 ms - 92[0m
+2023-04-03 14:42:28 info: [0mGET /projects?page=1&search=vv [36m304[0m 6.500 ms - -[0m
+2023-04-03 14:42:28 info: [0mGET /projects?page=1&search=v [36m304[0m 8.829 ms - -[0m
+2023-04-03 14:42:28 info: [0mGET /projects? [32m200[0m 13.328 ms - -[0m
+2023-04-03 14:42:33 info: [0mGET /projects?search=t [32m200[0m 40.937 ms - 438[0m
+2023-04-03 14:42:33 info: [0mGET /projects?search=to [32m200[0m 38.621 ms - 92[0m
+2023-04-03 14:42:33 info: [0mGET /projects?search=toa [32m200[0m 39.942 ms - 92[0m
+2023-04-03 14:42:33 info: [0mGET /projects?search=toan [32m200[0m 20.347 ms - 92[0m
+2023-04-03 14:42:35 info: [0mGET /projects?search=toa [36m304[0m 4.160 ms - -[0m
+2023-04-03 14:42:35 info: [0mGET /projects?search=to [36m304[0m 5.345 ms - -[0m
+2023-04-03 14:42:35 info: [0mGET /projects?search=t [36m304[0m 11.718 ms - -[0m
+2023-04-03 14:42:35 info: [0mGET /projects? [36m304[0m 6.406 ms - -[0m
+2023-04-03 14:42:38 info: [0mGET /projects? [36m304[0m 8.831 ms - -[0m
+2023-04-03 14:42:39 info: [0mGET /projects? [36m304[0m 8.768 ms - -[0m
+2023-04-03 14:42:39 info: [0mGET /projects?page=1 [36m304[0m 18.628 ms - -[0m
+2023-04-03 14:42:44 info: [0mGET /projects?page=1&search=d [36m304[0m 17.765 ms - -[0m
+2023-04-03 14:42:44 info: [0mGET /projects?page=1&search=du [36m304[0m 9.722 ms - -[0m
+2023-04-03 14:42:44 info: [0mGET /projects?page=1&search=dua [36m304[0m 8.283 ms - -[0m
+2023-04-03 14:42:45 info: [0mGET /projects?page=1&search=duan [36m304[0m 7.334 ms - -[0m
+2023-04-03 14:42:46 info: [0mGET /projects?page=1&search=dua [36m304[0m 14.366 ms - -[0m
+2023-04-03 14:42:46 info: [0mGET /projects?page=1&search=du [36m304[0m 10.013 ms - -[0m
+2023-04-03 14:42:46 info: [0mGET /projects?page=1&search=d [36m304[0m 10.747 ms - -[0m
+2023-04-03 14:42:46 info: [0mGET /projects? [36m304[0m 12.587 ms - -[0m
+2023-04-03 14:43:11 info: [0mGET /projects?search=d [32m200[0m 184.632 ms - 711[0m
+2023-04-03 14:43:11 info: [0mGET /projects?search=du [32m200[0m 118.118 ms - 540[0m
+2023-04-03 14:43:11 info: [0mGET /projects?search=d [36m304[0m 11.682 ms - -[0m
+2023-04-03 14:43:11 info: [0mGET /projects? [36m304[0m 10.535 ms - -[0m
+2023-04-03 14:43:13 info: [0mGET /projects? [36m304[0m 24.320 ms - -[0m
+2023-04-03 14:43:14 info: [0mGET /projects? [36m304[0m 4.405 ms - -[0m
+2023-04-03 14:43:14 info: [0mGET /projects?page=1 [36m304[0m 30.176 ms - -[0m
+2023-04-03 14:43:17 info: [0mGET /projects?page=1&search=d [36m304[0m 8.848 ms - -[0m
+2023-04-03 14:43:17 info: [0mGET /projects?page=1&search=du [36m304[0m 6.875 ms - -[0m
+2023-04-03 14:43:17 info: [0mGET /projects?page=1&search=d [36m304[0m 17.568 ms - -[0m
+2023-04-03 14:43:17 info: [0mGET /projects? [36m304[0m 10.716 ms - -[0m
+2023-04-03 14:43:30 info: [0mGET /projects?search=d [36m304[0m 28.431 ms - -[0m
+2023-04-03 14:43:30 info: [0mGET /projects?search=du [36m304[0m 10.323 ms - -[0m
+2023-04-03 14:43:30 info: [0mGET /projects? [36m304[0m 17.099 ms - -[0m
+2023-04-03 14:43:31 info: [0mGET /projects?search=d [36m304[0m 8.440 ms - -[0m
+2023-04-03 14:43:31 info: [0mGET /projects?search=du [36m304[0m 11.054 ms - -[0m
+2023-04-03 14:43:32 info: [0mGET /projects?search=d [36m304[0m 27.117 ms - -[0m
+2023-04-03 14:43:32 info: [0mGET /projects? [36m304[0m 12.232 ms - -[0m
+2023-04-03 14:43:34 info: [0mGET /projects? [36m304[0m 30.647 ms - -[0m
+2023-04-03 14:43:35 info: [0mGET /projects?page=1 [36m304[0m 18.367 ms - -[0m
+2023-04-03 14:43:37 info: [0mGET /projects?page=1&search=d [36m304[0m 24.793 ms - -[0m
+2023-04-03 14:43:41 info: [0mGET /projects? [36m304[0m 25.177 ms - -[0m
+2023-04-03 14:43:42 info: [0mGET /projects?search=v [32m200[0m 13.650 ms - 92[0m
+2023-04-03 14:43:42 info: [0mGET /projects?search=vv [32m200[0m 5.226 ms - 92[0m
+2023-04-03 14:43:42 info: [0mGET /projects?search=vvs [32m200[0m 31.072 ms - 92[0m
+2023-04-03 14:43:42 info: [0mGET /projects?search=vvsv [32m200[0m 8.812 ms - 92[0m
+2023-04-03 14:43:42 info: [0mGET /projects?search=vvs [36m304[0m 10.764 ms - -[0m
+2023-04-03 14:43:43 info: [0mGET /projects?search=vv [36m304[0m 10.036 ms - -[0m
+2023-04-03 14:43:43 info: [0mGET /projects?search=v [36m304[0m 11.519 ms - -[0m
+2023-04-03 14:43:43 info: [0mGET /projects? [36m304[0m 6.733 ms - -[0m
+2023-04-03 14:44:01 info: [0mGET /projects?search=v [36m304[0m 59.946 ms - -[0m
+2023-04-03 14:44:01 info: [0mGET /projects?search=vs [32m200[0m 19.102 ms - 92[0m
+2023-04-03 14:44:01 info: [0mGET /projects?search=vsv [32m200[0m 17.333 ms - 92[0m
+2023-04-03 14:44:01 info: [0mGET /projects?search=vsvs [32m200[0m 4.975 ms - 92[0m
+2023-04-03 14:44:01 info: [0mGET /projects?search=vsvsv [32m200[0m 11.468 ms - 92[0m
+2023-04-03 14:44:01 info: [0mGET /projects?search=vsvsvs [32m200[0m 8.966 ms - 92[0m
+2023-04-03 14:44:01 info: [0mGET /projects?search=vsvsvs+ [32m200[0m 15.846 ms - 92[0m
+2023-04-03 14:44:01 info: [0mGET /projects?search=vsvsvs+v [32m200[0m 11.312 ms - 92[0m
+2023-04-03 14:44:02 info: [0mGET /projects?search=vsvsvs+vs [32m200[0m 15.236 ms - 92[0m
+2023-04-03 14:44:02 info: [0mGET /projects?search=vsvsvs+vsv [32m200[0m 21.463 ms - 92[0m
+2023-04-03 14:44:02 info: [0mGET /projects?search=vsvsvs+vsvs [32m200[0m 27.348 ms - 92[0m
+2023-04-03 14:44:02 info: [0mGET /projects?search=vsvsvs+vsvsv [32m200[0m 20.891 ms - 92[0m
+2023-04-03 14:44:02 info: [0mGET /projects?search=vsvsvs+vsvsvs [32m200[0m 17.040 ms - 92[0m
+2023-04-03 14:44:02 info: [0mGET /projects?search=vsvsvs+vsvsvsv [32m200[0m 5.176 ms - 92[0m
+2023-04-03 14:44:02 info: [0mGET /projects?search=vsvsvs+vsvsvsvs [32m200[0m 11.427 ms - 92[0m
+2023-04-03 14:44:03 info: [0mGET /projects? [36m304[0m 16.026 ms - -[0m
+2023-04-03 14:44:03 info: [0mGET /projects?search=d [36m304[0m 11.416 ms - -[0m
+2023-04-03 14:44:03 info: [0mGET /projects?search=du [36m304[0m 11.271 ms - -[0m
+2023-04-03 14:44:04 info: [0mGET /projects?search=du+ [32m200[0m 19.501 ms - 540[0m
+2023-04-03 14:44:04 info: [0mGET /projects?search=du+a [32m200[0m 18.902 ms - 540[0m
+2023-04-03 14:44:04 info: [0mGET /projects?search=du+an [32m200[0m 12.872 ms - 540[0m
+2023-04-03 14:44:04 info: [0mGET /projects?search=du+an+ [32m200[0m 8.350 ms - 540[0m
+2023-04-03 14:44:04 info: [0mGET /projects?search=du+an+1 [32m200[0m 11.324 ms - 540[0m
+2023-04-03 14:44:08 info: [0mGET /projects? [36m304[0m 12.142 ms - -[0m
+2023-04-03 14:44:38 info: [0mGET /projects?search=d [36m304[0m 128.810 ms - -[0m
+2023-04-03 14:44:38 info: [0mGET /projects?search=dy [32m200[0m 98.977 ms - 92[0m
+2023-04-03 14:44:39 info: [0mGET /projects?search=d [36m304[0m 10.060 ms - -[0m
+2023-04-03 14:44:39 info: [0mGET /projects? [36m304[0m 6.519 ms - -[0m
+2023-04-03 14:44:39 info: [0mGET /projects?search=d [36m304[0m 19.990 ms - -[0m
+2023-04-03 14:44:39 info: [0mGET /projects?search=diu [32m200[0m 4.313 ms - 92[0m
+2023-04-03 14:44:39 info: [0mGET /projects?search=di [32m200[0m 12.024 ms - 92[0m
+2023-04-03 14:44:40 info: [0mGET /projects?search=d [36m304[0m 16.389 ms - -[0m
+2023-04-03 14:44:40 info: [0mGET /projects? [36m304[0m 7.935 ms - -[0m
+2023-04-03 14:44:40 info: [0mGET /projects?search=d [36m304[0m 30.558 ms - -[0m
+2023-04-03 14:44:40 info: [0mGET /projects?search=du [36m304[0m 12.254 ms - -[0m
+2023-04-03 14:44:40 info: [0mGET /projects?search=du+ [36m304[0m 10.295 ms - -[0m
+2023-04-03 14:44:40 info: [0mGET /projects?search=du+a [36m304[0m 6.659 ms - -[0m
+2023-04-03 14:44:41 info: [0mGET /projects?search=du+an [36m304[0m 58.161 ms - -[0m
+2023-04-03 14:44:41 info: [0mGET /projects? [36m304[0m 11.853 ms - -[0m
+2023-04-03 14:45:06 info: [0mGET /projects?search=d [36m304[0m 130.223 ms - -[0m
+2023-04-03 14:45:07 info: [0mGET /projects?search=de [32m200[0m 57.520 ms - 92[0m
+2023-04-03 14:45:09 info: [0mGET /projects?search=de [36m304[0m 6.055 ms - -[0m
+2023-04-03 14:45:12 info: [0mGET /projects?search=de [36m304[0m 62.243 ms - -[0m
+2023-04-03 14:45:12 info: [0mGET /projects?page=1 [36m304[0m 8.310 ms - -[0m
+2023-04-03 14:45:13 info: [0mGET /projects?page=1 [36m304[0m 58.679 ms - -[0m
+2023-04-03 14:45:19 info: [0mGET /projects?page=1&search=v [36m304[0m 19.445 ms - -[0m
+2023-04-03 14:45:19 info: [0mGET /projects?page=1&search=vd [32m200[0m 7.078 ms - 92[0m
+2023-04-03 14:45:20 info: [0mGET /projects?page=1&search=vdd [32m200[0m 13.172 ms - 92[0m
+2023-04-03 14:45:20 info: [0mGET /projects?page=1&search=vddv [32m200[0m 10.064 ms - 92[0m
+2023-04-03 14:45:20 info: [0mGET /projects?page=1&search=vddvd [32m200[0m 25.241 ms - 92[0m
+2023-04-03 14:45:28 info: [0mGET /projects?page=1&search=vddv [36m304[0m 15.948 ms - -[0m
+2023-04-03 14:45:28 info: [0mGET /projects?page=1&search=vdd [36m304[0m 7.456 ms - -[0m
+2023-04-03 14:45:29 info: [0mGET /projects?page=1&search=vd [36m304[0m 8.886 ms - -[0m
+2023-04-03 14:45:29 info: [0mGET /projects?page=1&search=v [36m304[0m 12.610 ms - -[0m
+2023-04-03 14:45:29 info: [0mGET /projects? [36m304[0m 10.909 ms - -[0m
+2023-04-03 14:46:09 info: [0mGET /projects?search=v [36m304[0m 194.833 ms - -[0m
+2023-04-03 14:46:09 info: [0mGET /projects?search=vsv [36m304[0m 71.096 ms - -[0m
+2023-04-03 14:46:09 info: [0mGET /projects?search=vs [36m304[0m 156.443 ms - -[0m
+2023-04-03 14:46:09 info: [0mGET /projects?search=vsvsv [36m304[0m 82.402 ms - -[0m
+2023-04-03 14:46:09 info: [0mGET /projects?search=vsvsvs [36m304[0m 40.693 ms - -[0m
+2023-04-03 14:46:09 info: [0mGET /projects?search=vsvs [36m304[0m 217.775 ms - -[0m
+2023-04-03 14:46:11 info: [0mGET /projects?search=vsvsvs [36m304[0m 16.642 ms - -[0m
+2023-04-03 14:46:14 info: [0mGET /projects?search=vsvsvs [36m304[0m 213.419 ms - -[0m
+2023-04-03 14:46:14 info: [0mGET /projects?page=1 [36m304[0m 48.056 ms - -[0m
+2023-04-03 14:46:15 info: [0mGET /projects?page=1&search=d [36m304[0m 22.161 ms - -[0m
+2023-04-03 14:46:15 info: [0mGET /projects?page=1&search=de [32m200[0m 41.512 ms - 92[0m
+2023-04-03 14:46:16 info: [0mGET /projects?page=1&search=d [36m304[0m 10.467 ms - -[0m
+2023-04-03 14:46:16 info: [0mGET /projects? [36m304[0m 9.753 ms - -[0m
+2023-04-03 14:48:59 info: [0mGET /projects?search=1 [32m200[0m 640.988 ms - 540[0m
+2023-04-03 14:49:01 info: [0mGET /projects? [36m304[0m 24.045 ms - -[0m
+2023-04-03 14:49:03 info: [0mGET /projects?search=t [36m304[0m 14.128 ms - -[0m
+2023-04-03 14:49:03 info: [0mGET /projects?search=tu [32m200[0m 12.356 ms - 92[0m
+2023-04-03 14:49:03 info: [0mGET /projects?search=tui [32m200[0m 14.500 ms - 92[0m
+2023-04-03 14:49:03 info: [0mGET /projects? [36m304[0m 16.871 ms - -[0m
+2023-04-03 14:49:05 info: [0mGET /projects?search=y [32m200[0m 29.609 ms - 438[0m
+2023-04-03 14:49:05 info: [0mGET /projects?search=yu [32m200[0m 47.026 ms - 438[0m
+2023-04-03 14:49:05 info: [0mGET /projects?search=yui [32m200[0m 10.881 ms - 438[0m
+2023-04-03 14:49:08 info: [0mGET /projects? [36m304[0m 22.561 ms - -[0m
+2023-04-03 14:49:12 info: [0mGET /projects?status=active&page=1 [36m304[0m 23.774 ms - -[0m
+2023-04-03 14:49:15 info: [0mGET /projects?status=active&page=1&search=d [32m200[0m 19.789 ms - 711[0m
+2023-04-03 14:49:15 info: [0mGET /projects?status=active&page=1&search=du [32m200[0m 10.550 ms - 540[0m
+2023-04-03 14:49:16 info: [0mGET /projects? [36m304[0m 22.271 ms - -[0m
+2023-04-03 14:49:50 info: [0mGET /projects?status=active%2Cinactive&page=1 [36m304[0m 98.063 ms - -[0m
+2023-04-03 14:49:50 info: [0mGET /projects?status=active&page=1 [36m304[0m 4.281 ms - -[0m
+2023-04-03 14:49:51 info: [0mGET /projects?page=1 [36m304[0m 19.636 ms - -[0m
+2023-04-03 14:49:52 info: [0mGET /projects?status=active&page=1 [36m304[0m 8.755 ms - -[0m
+2023-04-03 14:50:05 info: [0mGET /projects?status=active%2Cinactive&page=1 [36m304[0m 69.609 ms - -[0m
+2023-04-03 14:50:11 info: [0mGET /projects/show/15 [36m304[0m 105.036 ms - -[0m
+2023-04-03 14:50:11 info: [0mGET /projects [36m304[0m 41.724 ms - -[0m
+2023-04-03 14:50:16 info: [0mOPTIONS /projects/update/15 [32m204[0m 0.706 ms - 0[0m
+2023-04-03 14:50:16 info: [0mPUT /projects/update/15 [32m200[0m 98.008 ms - 2[0m
+2023-04-03 14:50:16 info: [0mGET /projects/show/15 [32m200[0m 18.264 ms - 268[0m
+2023-04-03 14:50:17 info: [0mGET /projects [32m200[0m 195.906 ms - -[0m
+2023-04-03 14:50:18 info: [0mGET /projects/show/15 [36m304[0m 11.436 ms - -[0m
+2023-04-03 14:50:19 info: [0mGET /projects?status=active%2Cinactive&page=1 [32m200[0m 120.380 ms - -[0m
+2023-04-03 14:50:19 info: [0mGET /projects?status=active%2Cinactive&page=1 [36m304[0m 50.444 ms - -[0m
+2023-04-03 14:50:26 info: [0mGET /projects?status=active&page=1 [36m304[0m 65.330 ms - -[0m
+2023-04-03 14:50:34 info: [0mGET /projects?status=active&page=1&search=i [32m200[0m 16.314 ms - 262[0m
+2023-04-03 14:50:34 info: [0mGET /projects?status=active&page=1&search=in [32m200[0m 8.388 ms - 92[0m
+2023-04-03 14:50:36 info: [0mGET /projects?status=active&page=1&search=i [36m304[0m 10.452 ms - -[0m
+2023-04-03 14:50:44 info: [0mGET /projects?status=active&page=1&search=in [36m304[0m 15.658 ms - -[0m
+2023-04-03 14:50:44 info: [0mGET /projects?status=active&page=1&search=ina [32m200[0m 12.874 ms - 92[0m
+2023-04-03 14:50:44 info: [0mGET /projects?status=active&page=1&search=inac [32m200[0m 8.647 ms - 92[0m
+2023-04-03 14:50:45 info: [0mGET /projects?status=active&page=1&search=inact [32m200[0m 5.753 ms - 92[0m
+2023-04-03 14:50:45 info: [0mGET /projects?status=active&page=1&search=inacti [32m200[0m 5.703 ms - 92[0m
+2023-04-03 14:50:45 info: [0mGET /projects?status=active&page=1&search=inactiv [32m200[0m 11.936 ms - 92[0m
+2023-04-03 14:50:45 info: [0mGET /projects?status=active&page=1&search=inactive [32m200[0m 12.618 ms - 92[0m
+2023-04-03 14:50:52 info: [0mGET /projects? [32m200[0m 27.402 ms - -[0m
+2023-04-03 14:52:18 info: [0mGET /projects? [36m304[0m 68.560 ms - -[0m
+2023-04-03 14:52:19 info: [0mGET /projects? [36m304[0m 11.292 ms - -[0m
+2023-04-03 14:52:20 info: [0mGET /projects? [36m304[0m 29.986 ms - -[0m
+2023-04-03 14:52:21 info: [0mGET /projects? [36m304[0m 19.239 ms - -[0m
+2023-04-03 14:52:22 info: [0mGET /projects?page=1 [32m200[0m 42.647 ms - -[0m
+2023-04-03 14:52:23 info: [0mGET /projects? [36m304[0m 100.287 ms - -[0m
+2023-04-03 14:52:23 info: [0mGET /projects? [36m304[0m 77.868 ms - -[0m
+2023-04-03 14:52:47 info: [0mGET /projects? [36m304[0m 139.709 ms - -[0m
+2023-04-03 14:52:49 info: [0mGET /projects? [36m304[0m 271.552 ms - -[0m
+2023-04-03 14:52:49 info: [0mGET /projects?page=1 [36m304[0m 26.660 ms - -[0m
+2023-04-03 14:52:51 info: [0mGET /projects?page=1&search=d [32m200[0m 30.651 ms - 891[0m
+2023-04-03 14:52:51 info: [0mGET /projects?page=1&search=du [32m200[0m 81.307 ms - 720[0m
+2023-04-03 14:52:52 info: [0mGET /projects?page=1&search=du [36m304[0m 5.224 ms - -[0m
+2023-04-03 14:52:53 info: [0mGET /projects?page=1&search=d [36m304[0m 10.931 ms - -[0m
+2023-04-03 14:52:53 info: [0mGET /projects?page=1&search=du [36m304[0m 11.168 ms - -[0m
+2023-04-03 14:52:55 info: [0mGET /projects?page=1&search=d [36m304[0m 14.074 ms - -[0m
+2023-04-03 14:52:55 info: [0mGET /projects?page=1&search=d [36m304[0m 21.162 ms - -[0m
+2023-04-03 14:53:01 info: [0mGET /projects?page=1&search=v [32m200[0m 32.816 ms - 271[0m
+2023-04-03 14:53:04 info: [0mGET /projects?page=1&search=v [36m304[0m 8.746 ms - -[0m
+2023-04-03 14:54:31 info: [0mGET /projects?page=1&search=v [36m304[0m 45.383 ms - -[0m
+2023-04-03 14:54:32 info: [0mGET /projects?page=1&search=v [36m304[0m 164.999 ms - -[0m
+2023-04-03 14:54:32 info: [0mGET /projects?page=1 [36m304[0m 169.143 ms - -[0m
+2023-04-03 14:54:33 info: [0mGET /projects?page=1 [36m304[0m 78.558 ms - -[0m
+2023-04-03 14:54:34 info: [0mGET /projects?page=1&search=s [32m200[0m 13.508 ms - 92[0m
+2023-04-03 14:54:34 info: [0mGET /projects?page=1&search=sv [32m200[0m 15.798 ms - 92[0m
+2023-04-03 14:54:34 info: [0mGET /projects?page=1&search=svs [32m200[0m 12.294 ms - 92[0m
+2023-04-03 14:54:34 info: [0mGET /projects?page=1&search=svss [32m200[0m 24.431 ms - 92[0m
+2023-04-03 14:54:35 info: [0mGET /projects?page=1&search=svs [36m304[0m 7.554 ms - -[0m
+2023-04-03 14:54:35 info: [0mGET /projects?page=1&search=sv [36m304[0m 10.944 ms - -[0m
+2023-04-03 14:54:35 info: [0mGET /projects?page=1&search=s [36m304[0m 7.715 ms - -[0m
+2023-04-03 14:54:35 info: [0mGET /projects?page=1 [36m304[0m 10.248 ms - -[0m
+2023-04-03 14:54:37 info: [0mGET /projects?page=1&search=s [36m304[0m 4.651 ms - -[0m
+2023-04-03 14:54:37 info: [0mGET /projects?page=1&search=se [32m200[0m 9.544 ms - 92[0m
+2023-04-03 14:54:37 info: [0mGET /projects?page=1&search=sea [32m200[0m 6.241 ms - 92[0m
+2023-04-03 14:54:37 info: [0mGET /projects?page=1&search=sear [32m200[0m 16.101 ms - 92[0m
+2023-04-03 14:54:38 info: [0mGET /projects?page=1&search=searc [32m200[0m 78.815 ms - 92[0m
+2023-04-03 14:54:38 info: [0mGET /projects?page=1&search=search [32m200[0m 7.613 ms - 92[0m
+2023-04-03 14:54:38 info: [0mGET /projects?page=1 [36m304[0m 6.747 ms - -[0m
+2023-04-03 14:54:38 info: [0mGET /projects?page=1&search=t [32m200[0m 13.992 ms - 442[0m
+2023-04-03 14:54:38 info: [0mGET /projects?page=1&search=to [32m200[0m 70.441 ms - 92[0m
+2023-04-03 14:54:38 info: [0mGET /projects?page=1&search=toa [32m200[0m 35.780 ms - 92[0m
+2023-04-03 14:54:39 info: [0mGET /projects?page=1&search=to [36m304[0m 11.809 ms - -[0m
+2023-04-03 14:54:39 info: [0mGET /projects?page=1 [36m304[0m 16.665 ms - -[0m
+2023-04-03 14:54:41 info: [0mGET /projects?status=active&page=1 [36m304[0m 15.876 ms - -[0m
+2023-04-03 14:54:44 info: [0mGET /projects?status=active&page=1&search=d [36m304[0m 10.968 ms - -[0m
+2023-04-03 14:54:44 info: [0mGET /projects?status=active&page=1&search=du [36m304[0m 13.732 ms - -[0m
+2023-04-03 14:54:44 info: [0mGET /projects?status=active&page=1&search=dua [32m200[0m 10.977 ms - 92[0m
+2023-04-03 14:54:44 info: [0mGET /projects?status=active&page=1&search=duan [32m200[0m 15.398 ms - 92[0m
+2023-04-03 14:54:45 info: [0mGET /projects?status=active&page=1&search=dua [36m304[0m 6.460 ms - -[0m
+2023-04-03 14:54:45 info: [0mGET /projects?status=active&page=1&search=du [36m304[0m 6.236 ms - -[0m
+2023-04-03 14:54:45 info: [0mGET /projects?status=active&page=1&search=d [36m304[0m 6.788 ms - -[0m
+2023-04-03 14:54:45 info: [0mGET /projects?status=active&page=1 [36m304[0m 24.862 ms - -[0m
+2023-04-03 14:55:15 info: [0mGET /projects?page=1 [36m304[0m 113.567 ms - -[0m
+2023-04-03 14:55:15 info: [0mGET /projects?status=inactive&page=1 [32m200[0m 17.691 ms - 271[0m
+2023-04-03 14:55:18 info: [0mGET /projects?status=inactive&page=1&search=d [32m200[0m 17.184 ms - 271[0m
+2023-04-03 14:55:19 info: [0mGET /projects?status=inactive&page=1&search=du [32m200[0m 10.769 ms - 271[0m
+2023-04-03 14:55:19 info: [0mGET /projects?status=inactive&page=1&search=dua [32m200[0m 21.342 ms - 92[0m
+2023-04-03 14:55:19 info: [0mGET /projects?status=inactive&page=1&search=duan [32m200[0m 6.478 ms - 92[0m
+2023-04-03 14:55:19 info: [0mGET /projects?status=inactive&page=1&search=duan1 [32m200[0m 6.359 ms - 92[0m
+2023-04-03 14:55:19 info: [0mGET /projects?status=inactive&page=1 [36m304[0m 5.977 ms - -[0m
+2023-04-03 14:55:22 info: [0mGET /projects?status=inactive%2Cactive&page=1 [32m200[0m 10.038 ms - -[0m
+2023-04-03 14:55:23 info: [0mGET /projects?status=inactive%2Cactive&page=1&search=d [32m200[0m 8.376 ms - 891[0m
+2023-04-03 14:55:24 info: [0mGET /projects?status=inactive%2Cactive&page=1&search=du [32m200[0m 4.166 ms - 720[0m
+2023-04-03 14:55:24 info: [0mGET /projects?status=inactive%2Cactive&page=1&search=du+ [32m200[0m 18.777 ms - 720[0m
+2023-04-03 14:55:24 info: [0mGET /projects?status=inactive%2Cactive&page=1&search=du+a [32m200[0m 12.301 ms - 720[0m
+2023-04-03 14:55:24 info: [0mGET /projects?status=inactive%2Cactive&page=1&search=du+an [32m200[0m 7.616 ms - 720[0m
+2023-04-03 14:55:24 info: [0mGET /projects?status=inactive%2Cactive&page=1 [36m304[0m 14.945 ms - -[0m
+2023-04-03 14:55:25 info: [0mGET /projects?status=inactive%2Cactive&page=1&search=d [36m304[0m 9.267 ms - -[0m
+2023-04-03 14:55:25 info: [0mGET /projects?status=inactive%2Cactive&page=1&search=du [36m304[0m 9.496 ms - -[0m
+2023-04-03 14:55:25 info: [0mGET /projects?status=inactive%2Cactive&page=1&search=dua [32m200[0m 17.770 ms - 92[0m
+2023-04-03 14:55:25 info: [0mGET /projects?status=inactive%2Cactive&page=1&search=duan [32m200[0m 3.986 ms - 92[0m
+2023-04-03 14:55:25 info: [0mGET /projects?status=inactive%2Cactive&page=1&search=dua [36m304[0m 7.877 ms - -[0m
+2023-04-03 14:55:25 info: [0mGET /projects?status=inactive%2Cactive&page=1&search=du [36m304[0m 6.010 ms - -[0m
+2023-04-03 14:55:26 info: [0mGET /projects?status=inactive%2Cactive&page=1&search=du+ [36m304[0m 31.862 ms - -[0m
+2023-04-03 14:55:26 info: [0mGET /projects?status=inactive%2Cactive&page=1&search=du+a [36m304[0m 6.623 ms - -[0m
+2023-04-03 14:55:26 info: [0mGET /projects?status=inactive%2Cactive&page=1&search=du+au [32m200[0m 9.528 ms - 92[0m
+2023-04-03 14:55:26 info: [0mGET /projects?status=inactive%2Cactive&page=1&search=du+a [36m304[0m 9.586 ms - -[0m
+2023-04-03 14:55:27 info: [0mGET /projects?status=inactive%2Cactive&page=1&search=du+an [36m304[0m 12.302 ms - -[0m
+2023-04-03 14:55:28 info: [0mGET /projects?status=inactive%2Cactive&page=1&search=du+an+ [32m200[0m 12.115 ms - 720[0m
+2023-04-03 14:55:28 info: [0mGET /projects?status=inactive%2Cactive&page=1&search=du+an+1 [32m200[0m 10.074 ms - 540[0m
+2023-04-03 14:55:28 info: [0mGET /projects?status=inactive%2Cactive&page=1 [36m304[0m 100.252 ms - -[0m
+2023-04-03 14:58:09 info: =================================
+2023-04-03 14:58:09 info: ======= ENV: development =======
+2023-04-03 14:58:09 info: 🚀 App listening on the port 8000
+2023-04-03 14:58:09 info: =================================
+2023-04-03 14:58:29 info: [0mGET /projects? [32m200[0m 147.251 ms - 92[0m
+2023-04-03 14:58:30 info: [0mGET /projects? [36m304[0m 34.381 ms - -[0m
+2023-04-03 14:58:32 info: [0mGET /projects? [36m304[0m 16.062 ms - -[0m
+2023-04-03 14:58:32 info: [0mGET /projects?page=1 [32m200[0m 36.121 ms - 92[0m
+2023-04-03 14:58:39 info: [0mGET /projects? [36m304[0m 65.932 ms - -[0m
+2023-04-03 14:58:39 info: [0mGET /projects?page=1 [36m304[0m 18.009 ms - -[0m
+2023-04-03 14:59:06 info: =================================
+2023-04-03 14:59:06 info: ======= ENV: development =======
+2023-04-03 14:59:06 info: 🚀 App listening on the port 8000
+2023-04-03 14:59:06 info: =================================
+2023-04-03 14:59:26 info: =================================
+2023-04-03 14:59:26 info: ======= ENV: development =======
+2023-04-03 14:59:26 info: 🚀 App listening on the port 8000
+2023-04-03 14:59:26 info: =================================
+2023-04-03 14:59:28 info: [0mGET /projects?page=1 [32m200[0m 154.299 ms - -[0m
+2023-04-03 14:59:29 info: [0mGET /projects?page=1 [36m304[0m 67.513 ms - -[0m
+2023-04-03 14:59:29 info: [0mGET /projects?page=1 [36m304[0m 40.889 ms - -[0m
+2023-04-03 14:59:32 info: [0mGET /projects?page=1&search=i [32m200[0m 47.076 ms - 442[0m
+2023-04-03 14:59:32 info: [0mGET /projects?page=1&search=in [32m200[0m 10.852 ms - 271[0m
+2023-04-03 14:59:32 info: [0mGET /projects?page=1&search=ina [32m200[0m 22.920 ms - 271[0m
+2023-04-03 14:59:32 info: [0mGET /projects?page=1&search=inac [32m200[0m 13.361 ms - 271[0m
+2023-04-03 14:59:33 info: [0mGET /projects?page=1 [36m304[0m 10.772 ms - -[0m
+2023-04-03 14:59:34 info: [0mGET /projects?status=active&page=1 [36m304[0m 15.997 ms - -[0m
+2023-04-03 14:59:36 info: [0mGET /projects?status=active&page=1&search=i [36m304[0m 20.501 ms - -[0m
+2023-04-03 14:59:36 info: [0mGET /projects?status=active&page=1&search=in [36m304[0m 111.542 ms - -[0m
+2023-04-03 14:59:36 info: [0mGET /projects?status=active&page=1&search=ina [36m304[0m 126.523 ms - -[0m
+2023-04-03 14:59:36 info: [0mGET /projects?status=active&page=1&search=inac [36m304[0m 37.128 ms - -[0m
+2023-04-03 14:59:36 info: [0mGET /projects?status=active&page=1&search=ina [36m304[0m 31.653 ms - -[0m
+2023-04-03 14:59:36 info: [0mGET /projects?status=active&page=1 [36m304[0m 13.802 ms - -[0m
+2023-04-03 14:59:38 info: [0mGET /projects?status=active&page=1&search=i [36m304[0m 8.652 ms - -[0m
+2023-04-03 14:59:38 info: [0mGET /projects?status=active&page=1&search=in [36m304[0m 14.415 ms - -[0m
+2023-04-03 14:59:38 info: [0mGET /projects?status=active&page=1&search=i [36m304[0m 10.559 ms - -[0m
+2023-04-03 14:59:38 info: [0mGET /projects?status=active&page=1 [36m304[0m 33.529 ms - -[0m

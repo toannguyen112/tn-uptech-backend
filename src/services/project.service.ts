@@ -2,45 +2,95 @@ import models from "../infra/sequelize/models";
 import { ApiFeatures } from "../utils/ApiFeatures";
 import { ProjectDTO } from "../dtos/project.dto";
 import Helper from "../utils/Helper";
-
+import { Op } from "sequelize";
 export class ProjectService {
 
     public getList = async (query) => {
-        const conditions = {};
-        const objQuery = new ApiFeatures(query)
-            .filter(conditions)
-            .includes([
-                {
-                    model: models.Media,
-                    as: "image",
-                    required: false,
-                },
-                {
-                    model: models.ProjectTranslation,
-                    as: "translations",
-                    required: false,
-                    where: { locale: "vi" }
-                },
-            ])
-            .paginate()
-            .paranoid()
-            .getObjQuery();
 
-        const { count, rows }: any = await models.Project.findAndCountAll(objQuery);
+        try {
+            const conditions = {};
 
-        const transformData = rows.map((item) => {
-            return ProjectDTO.transform(item);
-        });
+            const queryObject = {
+                status: query.status,
+                search: query.search,
+            };
 
-        const result = {
-            page: Number(query?.page) * 1,
-            pageSize: Number(query?.page_size) * 1,
-            pageCount: Math.ceil(count / Number(query?.page_size) * 1),
-            totalItems: count || 0,
-            data: transformData,
-        };
+            const excludedFields = ["page", "page_size", "sort_field", "sort_order", "fields"];
 
-        return result;
+            excludedFields.forEach((field) => delete queryObject[field]);
+
+            const arrQueryObject = Object.entries(queryObject).map((item) => {
+                return {
+                    key: item[0],
+                    value: item[1],
+                };
+            });
+
+            for (let index = 0; index < arrQueryObject.length; index++) {
+                switch (arrQueryObject[index].key) {
+                    case "status":
+                        const status = typeof arrQueryObject[index].value === "string" ?
+                            [arrQueryObject[index].value] : arrQueryObject[index].value;
+                        if (Array.isArray(status)) {
+                            conditions["status"] = {
+                                [Op.in]: status.toString().split(','),
+                            };
+                        }
+                        break;
+
+                    default:
+                        break;
+                }
+            }
+
+            let queryTranslation = {};
+
+            if (query.search) {
+                queryTranslation = {
+                    name: { [Op.like]: `%${query.search}%` },
+                    locale: "vi"
+                }
+            }
+            else {
+                queryTranslation = {
+                    locale: "vi"
+                }
+            }
+
+            const objQuery = new ApiFeatures(query)
+                .filter(conditions)
+                .includes([
+                    {
+                        model: models.Media,
+                        as: "image",
+                        required: false,
+                    },
+                    {
+                        model: models.ProjectTranslation,
+                        as: "translations",
+                        required: true,
+                        where: queryTranslation
+                    },
+                ])
+                .sort(query.sort_field || "createdAt", query.sort_order || "DESC")
+                .paginate()
+                .paranoid()
+                .getObjQuery();
+
+            const { count, rows }: any = await models.Project.findAndCountAll(objQuery);
+
+            const result = {
+                page: Number(query?.page) * 1,
+                pageSize: Number(query?.page_size) * 1,
+                pageCount: Math.ceil(count / Number(query?.page_size) * 1),
+                totalItems: count || 0,
+                data: rows.map((item) => ProjectDTO.transform(item)),
+            };
+
+            return result;
+        } catch (error) {
+            console.log(error);
+        }
     }
 
     public store = async (body) => {
@@ -58,8 +108,6 @@ export class ProjectService {
 
                 if (project) {
                     const projectId = project.id;
-
-                    console.log(body.slug);
 
                     await models.ProjectTranslation.create({
                         ...body,
