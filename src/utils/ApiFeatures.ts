@@ -7,7 +7,7 @@ export class ApiFeatures {
             this.query.page = 1;
         }
         if (!this.query["page_size"]) {
-            this.query.page_size = 20;
+            this.query.page_size = 10;
         }
     }
 
