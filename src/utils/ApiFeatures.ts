@@ -40,8 +40,8 @@ export class ApiFeatures {
     }
 
     paginate() {
-        const page = this.query?.page;
-        const pageSize = this.query?.page_size;
+        const page = Number(this.query?.page);
+        const pageSize = Number(this.query?.page_size);
         const offset = (page - 1) * pageSize;
         this.objQuery["limit"] = pageSize;
         this.objQuery["offset"] = offset;

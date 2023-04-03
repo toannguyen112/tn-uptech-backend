@@ -8,7 +8,7 @@ export class PostController extends BaseController {
     public async index(req: Request, res: Response, next: NextFunction) {
 
         try {
-            const data = await post.getList({ ...req.query });
+            const data = await post.getList(req.query);
             return this.success(res, data);
         } catch (error) {
             console.log(error);
