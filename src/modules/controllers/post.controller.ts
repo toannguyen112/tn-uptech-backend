@@ -5,10 +5,10 @@ import { PostService } from "../../services/post.service";
 const post = new PostService();
 export class PostController extends BaseController {
 
-    public async index(req: any, res: Response, next: NextFunction) {
+    public async index(req: Request, res: Response, next: NextFunction) {
 
         try {
-            const data = await post.getList(req.query, req.lang);
+            const data = await post.getList(req.query);
             res.status(200).send({ message: "ok", data });
         } catch (error) {
             res.status(500).send(error.message);

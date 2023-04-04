@@ -5,7 +5,7 @@ import { Op } from "sequelize";
 import Helper from "../utils/Helper";
 export class PostService {
 
-    public getList = async (query, lang = 'vi') => {
+    public getList = async (query) => {
         try {
 
             const conditions = {};
@@ -48,11 +48,11 @@ export class PostService {
             if (query.search) {
                 queryTranslation = {
                     name: { [Op.like]: `%${query.search}%` },
-                    locale: lang
+                    locale: global.lang
                 }
             }
             else {
-                queryTranslation = { locale: lang }
+                queryTranslation = { locale: global.lang }
             }
 
             const objQuery = new ApiFeatures(query)
@@ -115,13 +115,13 @@ export class PostService {
                         locale: 'vi'
                     });
 
-                    // await models.PostTranslation.create({
-                    //     ...body,
-                    //     slug: Helper.renderSlug(body.slug ? body.slug : body.name),
-                    //     custom_slug: Helper.renderSlug(body.custom_slug ? body.custom_slug : body.name),
-                    //     post_id: postId,
-                    //     locale: 'en'
-                    // });
+                    await models.PostTranslation.create({
+                        ...body,
+                        slug: Helper.renderSlug(body.slug ? body.slug : body.name),
+                        custom_slug: Helper.renderSlug(body.custom_slug ? body.custom_slug : body.name),
+                        post_id: postId,
+                        locale: 'en'
+                    });
                 }
             });
     }
@@ -145,7 +145,7 @@ export class PostService {
                         as: "translations",
                         required: true,
                         where: {
-                            locale: "vi",
+                            locale: global.lang,
                             ceo_id: id
                         }
                     },
@@ -160,7 +160,7 @@ export class PostService {
                     as: "translations",
                     required: true,
                     where: {
-                        locale: "vi",
+                        locale: global.lang,
                         post_id: id
                     }
                 },
@@ -184,8 +184,7 @@ export class PostService {
             .then(async (res) => {
 
                 if (res) {
-                    await this.handleUpdate({ post_id: id, lang: "vi", body });
-                    await this.handleUpdate({ post_id: id, lang: "en", body });
+                    await this.handleUpdate({ post_id: id, lang: global.lang, body });
                 }
             });
     }
