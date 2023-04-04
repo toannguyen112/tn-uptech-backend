@@ -49,12 +49,12 @@ export class CeoService {
             if (query.search) {
                 queryTranslation = {
                     name: { [Op.like]: `%${query.search}%` },
-                    locale: "vi"
+                    locale: global.lang
                 }
             }
             else {
                 queryTranslation = {
-                    locale: "vi"
+                    locale: global.lang
                 }
             }
 
@@ -99,22 +99,17 @@ export class CeoService {
         return await models.Ceo.create({
             ...body,
             thumbnail: body.thumbnail ? body.thumbnail.id : null,
-            banner: body.banner ? body.banner.id : null,
-        },
-            {
-                individualHooks: true,
-            }
-        )
-            .then(async (project: any) => {
+        },)
+            .then(async (ceo: any) => {
 
-                if (project) {
-                    const projectId = project.id;
+                if (ceo) {
+                    const ceoId = ceo.id;
 
                     await models.CeoTranslation.create({
                         ...body,
                         slug: Helper.renderSlug(body.slug ? body.slug : body.name),
                         custom_slug: Helper.renderSlug(body.custom_slug ? body.custom_slug : body.name),
-                        ceo_id: projectId,
+                        ceo_id: ceoId,
                         locale: 'vi'
                     });
 
@@ -122,7 +117,7 @@ export class CeoService {
                         ...body,
                         slug: Helper.renderSlug(body.slug ? `en-${body.slug}` : `en-${body.name}`),
                         custom_slug: Helper.renderSlug(body.custom_slug ? `en-${body.custom_slug}` : `en-${body.name}`),
-                        ceo_id: projectId,
+                        ceo_id: ceoId,
                         locale: 'en'
                     });
                 }
@@ -131,10 +126,8 @@ export class CeoService {
 
     public findById = async (id: string | number) => {
 
-        const project = await models.Ceo.findOne({
-            where: {
-                id: id,
-            },
+        const ceo = await models.Ceo.findOne({
+            where: {id},
             include: [
                 {
                     model: models.Media,
@@ -146,14 +139,14 @@ export class CeoService {
                     as: "translations",
                     required: true,
                     where: {
-                        locale: "vi",
+                        locale: global.lang,
                         ceo_id: id,
                     }
                 },
             ]
         });
 
-        return CeoDTO.transformDetail(project);
+        return CeoDTO.transformDetail(ceo);
     }
 
     public updateById = async (id: string, body) => {
@@ -164,11 +157,7 @@ export class CeoService {
         }, { where: { id } },
         )
             .then(async (res) => {
-
-                if (res) {
-                    await this.handleUpdate({ ceo_id: id, lang: "vi", body });
-                    await this.handleUpdate({ ceo_id: id, lang: "en", body });
-                }
+                await this.handleUpdate({ ceo_id: id, lang: global.lang, body });
             });
     }
 
