@@ -1,0 +1,196 @@
+2023-04-05 00:08:37 info: =================================
+2023-04-05 00:08:37 info: ======= ENV: development =======
+2023-04-05 00:08:37 info: 🚀 App listening on the port 8000
+2023-04-05 00:08:37 info: =================================
+2023-04-05 00:08:51 info: [0mGET /projects [36m304[0m 189.170 ms - -[0m
+2023-04-05 00:11:18 info: =================================
+2023-04-05 00:11:18 info: ======= ENV: development =======
+2023-04-05 00:11:18 info: 🚀 App listening on the port 8000
+2023-04-05 00:11:18 info: =================================
+2023-04-05 00:15:26 info: =================================
+2023-04-05 00:15:26 info: ======= ENV: development =======
+2023-04-05 00:15:26 info: 🚀 App listening on the port 8000
+2023-04-05 00:15:26 info: =================================
+2023-04-05 00:15:29 info: [0mGET /posts?page=1&page_size=10 [36m304[0m 233.692 ms - -[0m
+2023-04-05 00:15:29 info: [0mGET /posts?page=1&page_size=10 [36m304[0m 14.203 ms - -[0m
+2023-04-05 00:15:31 info: [0mGET /projects? [36m304[0m 18.367 ms - -[0m
+2023-04-05 00:15:31 info: [0mGET /projects?page=1&page_size=10 [36m304[0m 20.654 ms - -[0m
+2023-04-05 00:15:32 info: [0mGET /posts? [32m200[0m 10.149 ms - 254[0m
+2023-04-05 00:15:32 info: [0mGET /posts?page=1&page_size=10 [36m304[0m 8.636 ms - -[0m
+2023-04-05 00:15:34 info: [0mGET /posts? [36m304[0m 8.955 ms - -[0m
+2023-04-05 00:15:35 info: [0mGET /projects? [36m304[0m 10.966 ms - -[0m
+2023-04-05 00:15:35 info: [0mGET /projects?page=1&page_size=10 [36m304[0m 10.500 ms - -[0m
+2023-04-05 00:15:36 info: [0mGET /banners? [36m304[0m 17.287 ms - -[0m
+2023-04-05 00:15:36 info: [0mGET /banners?page=1&page_size=10 [36m304[0m 18.824 ms - -[0m
+2023-04-05 00:15:37 info: [0mGET /projects? [36m304[0m 12.996 ms - -[0m
+2023-04-05 00:15:37 info: [0mGET /projects?page=1&page_size=10 [36m304[0m 10.472 ms - -[0m
+2023-04-05 00:15:38 info: [0mGET /banners? [36m304[0m 9.898 ms - -[0m
+2023-04-05 00:15:38 info: [0mGET /banners?page=1&page_size=10 [36m304[0m 7.559 ms - -[0m
+2023-04-05 00:15:43 info: [0mGET /banners?page=1&page_size=10 [32m200[0m 36.474 ms - 308[0m
+2023-04-05 00:15:43 info: [0mGET /banners?page=1&page_size=10 [36m304[0m 17.815 ms - -[0m
+2023-04-05 00:15:43 info: [0mGET /banners?page=1&page_size=10 [36m304[0m 86.793 ms - -[0m
+2023-04-05 00:15:50 info: [0mOPTIONS /banners/create [32m204[0m 0.878 ms - 0[0m
+2023-04-05 00:15:50 info: [0mPOST /banners/create [32m200[0m 102.193 ms - 16[0m
+2023-04-05 00:15:50 info: [0mGET /banners?page=1&page_size=10 [32m200[0m 9.398 ms - 419[0m
+2023-04-05 00:15:50 info: [0mGET /banners?page=1&page_size=10 [36m304[0m 25.097 ms - -[0m
+2023-04-05 00:15:54 info: [0mGET /banners/show/3 [32m200[0m 22.780 ms - 178[0m
+2023-04-05 00:15:56 info: [0mGET /banners/show/3 [36m304[0m 20.092 ms - -[0m
+2023-04-05 00:15:56 info: [0mGET /banners?page=1&page_size=10 [36m304[0m 102.461 ms - -[0m
+2023-04-05 00:15:56 info: [0mGET /banners?page=1&page_size=10 [36m304[0m 16.465 ms - -[0m
+2023-04-05 00:15:59 info: [0mGET /projects? [32m200[0m 16.032 ms - 477[0m
+2023-04-05 00:15:59 info: [0mGET /projects?page=1&page_size=10 [32m200[0m 11.375 ms - 477[0m
+2023-04-05 00:16:01 info: [0mGET /projects [36m304[0m 19.050 ms - -[0m
+2023-04-05 00:16:03 info: [0mOPTIONS /projects/create [32m204[0m 0.392 ms - 0[0m
+2023-04-05 00:16:03 info: [0mPOST /projects/create [32m200[0m 20.576 ms - 2[0m
+2023-04-05 00:16:03 info: [0mGET /projects?page=1&page_size=10 [32m200[0m 46.503 ms - 648[0m
+2023-04-05 00:16:03 info: [0mGET /projects?page=1&page_size=10 [36m304[0m 39.603 ms - -[0m
+2023-04-05 00:16:05 info: [0mGET /posts? [32m200[0m 13.423 ms - 87[0m
+2023-04-05 00:16:06 info: [0mGET /posts?page=1&page_size=10 [32m200[0m 30.227 ms - 87[0m
+2023-04-05 00:16:06 info: [0mGET /projects [32m200[0m 13.082 ms - 648[0m
+2023-04-05 00:16:08 info: [0mOPTIONS /posts/create [32m204[0m 0.199 ms - 0[0m
+2023-04-05 00:16:08 error: {"name":"SequelizeUniqueConstraintError","errors":[{"message":"slug must be unique","type":"unique violation","path":"slug","value":"vsvsvs","origin":"DB","instance":{"id":null,"name":"vsvsvs","description":"","content":"","slug":"vsvsvs","custom_slug":"vsvsvs","post_id":14,"locale":"en"},"validatorKey":"not_unique","validatorName":null,"validatorArgs":[]}],"parent":{"code":"ER_DUP_ENTRY","errno":1062,"sqlState":"23000","sqlMessage":"Duplicate entry 'vsvsvs' for key 'post_translation.slug'","sql":"INSERT INTO `post_translation` (`id`,`post_id`,`locale`,`name`,`content`,`description`,`slug`,`custom_slug`) VALUES (DEFAULT,?,?,?,?,?,?,?);","parameters":[14,"en","vsvsvs","","","vsvsvs","vsvsvs"]},"original":{"code":"ER_DUP_ENTRY","errno":1062,"sqlState":"23000","sqlMessage":"Duplicate entry 'vsvsvs' for key 'post_translation.slug'","sql":"INSERT INTO `post_translation` (`id`,`post_id`,`locale`,`name`,`content`,`description`,`slug`,`custom_slug`) VALUES (DEFAULT,?,?,?,?,?,?,?);","parameters":[14,"en","vsvsvs","","","vsvsvs","vsvsvs"]},"fields":{"slug":"vsvsvs"},"sql":"INSERT INTO `post_translation` (`id`,`post_id`,`locale`,`name`,`content`,`description`,`slug`,`custom_slug`) VALUES (DEFAULT,?,?,?,?,?,?,?);"}
+2023-04-05 00:16:08 info: [0mPOST /posts/create [32m200[0m 99.141 ms - 16[0m
+2023-04-05 00:16:08 info: [0mGET /posts?page=1&page_size=10 [36m304[0m 11.046 ms - -[0m
+2023-04-05 00:16:08 info: [0mGET /posts?page=1&page_size=10 [36m304[0m 5.861 ms - -[0m
+2023-04-05 00:16:10 info: [0mGET /projects? [32m200[0m 13.548 ms - 648[0m
+2023-04-05 00:16:10 info: [0mGET /projects?page=1&page_size=10 [36m304[0m 39.601 ms - -[0m
+2023-04-05 00:16:10 info: [0mGET /posts? [36m304[0m 4.943 ms - -[0m
+2023-04-05 00:16:10 info: [0mGET /posts?page=1&page_size=10 [36m304[0m 10.330 ms - -[0m
+2023-04-05 00:16:18 info: [0mGET /posts?page=1&page_size=10 [36m304[0m 23.404 ms - -[0m
+2023-04-05 00:16:18 info: [0mGET /posts?page=1&page_size=10 [36m304[0m 33.386 ms - -[0m
+2023-04-05 00:16:18 info: [0mGET /posts?page=1&page_size=10 [36m304[0m 20.584 ms - -[0m
+2023-04-05 00:16:24 info: [0mGET /projects [36m304[0m 28.458 ms - -[0m
+2023-04-05 00:16:27 info: [0mOPTIONS /posts/create [32m204[0m 0.430 ms - 0[0m
+2023-04-05 00:16:27 error: {"name":"SequelizeUniqueConstraintError","errors":[{"message":"slug must be unique","type":"unique violation","path":"slug","value":"du-an-1","origin":"DB","instance":{"id":null,"name":"du án 1","description":"","content":"","slug":"du-an-1","custom_slug":"du-an-1","post_id":15,"locale":"en"},"validatorKey":"not_unique","validatorName":null,"validatorArgs":[]}],"parent":{"code":"ER_DUP_ENTRY","errno":1062,"sqlState":"23000","sqlMessage":"Duplicate entry 'du-an-1' for key 'post_translation.slug'","sql":"INSERT INTO `post_translation` (`id`,`post_id`,`locale`,`name`,`content`,`description`,`slug`,`custom_slug`) VALUES (DEFAULT,?,?,?,?,?,?,?);","parameters":[15,"en","du án 1","","","du-an-1","du-an-1"]},"original":{"code":"ER_DUP_ENTRY","errno":1062,"sqlState":"23000","sqlMessage":"Duplicate entry 'du-an-1' for key 'post_translation.slug'","sql":"INSERT INTO `post_translation` (`id`,`post_id`,`locale`,`name`,`content`,`description`,`slug`,`custom_slug`) VALUES (DEFAULT,?,?,?,?,?,?,?);","parameters":[15,"en","du án 1","","","du-an-1","du-an-1"]},"fields":{"slug":"du-an-1"},"sql":"INSERT INTO `post_translation` (`id`,`post_id`,`locale`,`name`,`content`,`description`,`slug`,`custom_slug`) VALUES (DEFAULT,?,?,?,?,?,?,?);"}
+2023-04-05 00:16:27 info: [0mPOST /posts/create [32m200[0m 20.467 ms - 16[0m
+2023-04-05 00:16:27 info: [0mGET /posts?page=1&page_size=10 [36m304[0m 8.287 ms - -[0m
+2023-04-05 00:16:27 info: [0mGET /posts?page=1&page_size=10 [36m304[0m 10.047 ms - -[0m
+2023-04-05 00:16:43 info: [0mGET /posts?page=1&page_size=10 [36m304[0m 47.316 ms - -[0m
+2023-04-05 00:16:43 info: [0mGET /posts?page=1&page_size=10 [36m304[0m 25.056 ms - -[0m
+2023-04-05 00:16:44 info: [0mGET /posts?page=1&page_size=10 [36m304[0m 48.156 ms - -[0m
+2023-04-05 00:16:44 info: [0mGET /projects [36m304[0m 13.483 ms - -[0m
+2023-04-05 00:16:53 info: [0mOPTIONS /posts/create [32m204[0m 0.193 ms - 0[0m
+2023-04-05 00:16:53 error: {"name":"SequelizeUniqueConstraintError","errors":[{"message":"slug must be unique","type":"unique violation","path":"slug","value":"bai-viet-1","origin":"DB","instance":{"id":null,"name":"bai viet 1","description":"","content":"","slug":"bai-viet-1","custom_slug":"bai-viet-1","post_id":16,"locale":"en"},"validatorKey":"not_unique","validatorName":null,"validatorArgs":[]}],"parent":{"code":"ER_DUP_ENTRY","errno":1062,"sqlState":"23000","sqlMessage":"Duplicate entry 'bai-viet-1' for key 'post_translation.slug'","sql":"INSERT INTO `post_translation` (`id`,`post_id`,`locale`,`name`,`content`,`description`,`slug`,`custom_slug`) VALUES (DEFAULT,?,?,?,?,?,?,?);","parameters":[16,"en","bai viet 1","","","bai-viet-1","bai-viet-1"]},"original":{"code":"ER_DUP_ENTRY","errno":1062,"sqlState":"23000","sqlMessage":"Duplicate entry 'bai-viet-1' for key 'post_translation.slug'","sql":"INSERT INTO `post_translation` (`id`,`post_id`,`locale`,`name`,`content`,`description`,`slug`,`custom_slug`) VALUES (DEFAULT,?,?,?,?,?,?,?);","parameters":[16,"en","bai viet 1","","","bai-viet-1","bai-viet-1"]},"fields":{"slug":"bai-viet-1"},"sql":"INSERT INTO `post_translation` (`id`,`post_id`,`locale`,`name`,`content`,`description`,`slug`,`custom_slug`) VALUES (DEFAULT,?,?,?,?,?,?,?);"}
+2023-04-05 00:16:53 info: [0mPOST /posts/create [32m200[0m 36.786 ms - 16[0m
+2023-04-05 00:16:53 info: [0mGET /posts?page=1&page_size=10 [36m304[0m 5.615 ms - -[0m
+2023-04-05 00:16:53 info: [0mGET /posts?page=1&page_size=10 [36m304[0m 18.615 ms - -[0m
+2023-04-05 00:18:18 info: [0mGET /posts? [36m304[0m 554.169 ms - -[0m
+2023-04-05 00:18:22 info: [0mGET /projects? [36m304[0m 60.963 ms - -[0m
+2023-04-05 00:18:22 info: [0mGET /projects?page=1&page_size=10 [36m304[0m 33.040 ms - -[0m
+2023-04-05 00:18:23 info: [0mGET /banners?page=1&page_size=10 [36m304[0m 29.432 ms - -[0m
+2023-04-05 00:18:23 info: [0mGET /banners? [32m200[0m 114.357 ms - 419[0m
+2023-04-05 00:18:25 info: [0mGET /projects? [36m304[0m 7.346 ms - -[0m
+2023-04-05 00:18:25 info: [0mGET /projects?page=1&page_size=10 [36m304[0m 12.982 ms - -[0m
+2023-04-05 00:18:26 info: [0mGET /projects [36m304[0m 15.660 ms - -[0m
+2023-04-05 00:18:28 info: [0mOPTIONS /projects/create [32m204[0m 0.327 ms - 0[0m
+2023-04-05 00:18:28 info: [0mPOST /projects/create [32m200[0m 133.461 ms - 2[0m
+2023-04-05 00:18:28 info: [0mGET /projects?page=1&page_size=10 [32m200[0m 9.489 ms - 817[0m
+2023-04-05 00:18:28 info: [0mGET /projects?page=1&page_size=10 [36m304[0m 15.074 ms - -[0m
+2023-04-05 00:18:30 info: [0mGET /projects [32m200[0m 7.159 ms - 817[0m
+2023-04-05 00:18:34 info: [0mOPTIONS /projects/create [32m204[0m 0.146 ms - 0[0m
+2023-04-05 00:18:34 info: [0mPOST /projects/create [32m200[0m 8.679 ms - 2[0m
+2023-04-05 00:18:34 info: [0mGET /projects?page=1&page_size=10 [32m200[0m 6.994 ms - 986[0m
+2023-04-05 00:18:34 info: [0mGET /projects?page=1&page_size=10 [36m304[0m 7.437 ms - -[0m
+2023-04-05 00:18:40 info: [0mOPTIONS /projects/deleteMultipleIds [32m204[0m 0.726 ms - 0[0m
+2023-04-05 00:18:40 info: [0mPOST /projects/deleteMultipleIds [32m200[0m 34.060 ms - 30[0m
+2023-04-05 00:18:40 info: [0mGET /posts? [36m304[0m 92.849 ms - -[0m
+2023-04-05 00:18:40 info: [0mGET /posts?page=1&page_size=10 [36m304[0m 172.844 ms - -[0m
+2023-04-05 00:18:40 info: [0mGET /projects? [32m200[0m 187.251 ms - 92[0m
+2023-04-05 00:18:40 info: [0mGET /projects?page=1&page_size=10 [32m200[0m 188.498 ms - 92[0m
+2023-04-05 00:18:40 info: [0mGET /banners? [36m304[0m 198.330 ms - -[0m
+2023-04-05 00:18:40 info: [0mGET /posts? [36m304[0m 181.354 ms - -[0m
+2023-04-05 00:18:40 info: [0mGET /banners?page=1&page_size=10 [36m304[0m 202.048 ms - -[0m
+2023-04-05 00:18:40 info: [0mGET /posts?page=1&page_size=10 [36m304[0m 77.122 ms - -[0m
+2023-04-05 00:18:40 info: [0mGET /projects? [36m304[0m 32.392 ms - -[0m
+2023-04-05 00:18:40 info: [0mGET /projects?page=1&page_size=10 [36m304[0m 39.920 ms - -[0m
+2023-04-05 00:18:40 info: [0mGET /posts?page=1&page_size=10 [36m304[0m 19.881 ms - -[0m
+2023-04-05 00:18:40 info: [0mGET /projects?page=1&page_size=10 [36m304[0m 23.832 ms - -[0m
+2023-04-05 00:18:40 info: [0mGET /posts?page=1&page_size=10 [36m304[0m 13.375 ms - -[0m
+2023-04-05 00:18:40 info: [0mGET /projects?page=1&page_size=10 [36m304[0m 17.119 ms - -[0m
+2023-04-05 00:18:40 info: [0mGET /posts?page=1&page_size=10 [36m304[0m 17.534 ms - -[0m
+2023-04-05 00:18:40 info: [0mGET /projects?page=1&page_size=10 [36m304[0m 7.302 ms - -[0m
+2023-04-05 00:18:40 info: [0mGET /projects?page=1&page_size=10 [36m304[0m 9.709 ms - -[0m
+2023-04-05 00:18:42 info: [0mGET /posts? [36m304[0m 51.754 ms - -[0m
+2023-04-05 00:18:42 info: [0mGET /posts?page=1&page_size=10 [36m304[0m 17.238 ms - -[0m
+2023-04-05 00:19:45 info: [0mGET /projects [32m200[0m 51.159 ms - 92[0m
+2023-04-05 00:19:47 info: [0mOPTIONS /posts/create [32m204[0m 0.267 ms - 0[0m
+2023-04-05 00:19:47 error: {"name":"SequelizeUniqueConstraintError","errors":[{"message":"slug must be unique","type":"unique violation","path":"slug","value":"vsvs","origin":"DB","instance":{"id":null,"name":"vsvs","description":"","content":"","slug":"vsvs","custom_slug":"vsvs","post_id":17,"locale":"en"},"validatorKey":"not_unique","validatorName":null,"validatorArgs":[]}],"parent":{"code":"ER_DUP_ENTRY","errno":1062,"sqlState":"23000","sqlMessage":"Duplicate entry 'vsvs' for key 'post_translation.slug'","sql":"INSERT INTO `post_translation` (`id`,`post_id`,`locale`,`name`,`content`,`description`,`slug`,`custom_slug`) VALUES (DEFAULT,?,?,?,?,?,?,?);","parameters":[17,"en","vsvs","","","vsvs","vsvs"]},"original":{"code":"ER_DUP_ENTRY","errno":1062,"sqlState":"23000","sqlMessage":"Duplicate entry 'vsvs' for key 'post_translation.slug'","sql":"INSERT INTO `post_translation` (`id`,`post_id`,`locale`,`name`,`content`,`description`,`slug`,`custom_slug`) VALUES (DEFAULT,?,?,?,?,?,?,?);","parameters":[17,"en","vsvs","","","vsvs","vsvs"]},"fields":{"slug":"vsvs"},"sql":"INSERT INTO `post_translation` (`id`,`post_id`,`locale`,`name`,`content`,`description`,`slug`,`custom_slug`) VALUES (DEFAULT,?,?,?,?,?,?,?);"}
+2023-04-05 00:19:47 info: [0mPOST /posts/create [32m200[0m 32.031 ms - 16[0m
+2023-04-05 00:19:47 info: [0mGET /posts?page=1&page_size=10 [36m304[0m 10.258 ms - -[0m
+2023-04-05 00:19:47 info: [0mGET /posts?page=1&page_size=10 [36m304[0m 14.825 ms - -[0m
+2023-04-05 00:21:38 info: =================================
+2023-04-05 00:21:38 info: ======= ENV: development =======
+2023-04-05 00:21:38 info: 🚀 App listening on the port 8000
+2023-04-05 00:21:38 info: =================================
+2023-04-05 00:21:47 info: =================================
+2023-04-05 00:21:47 info: ======= ENV: development =======
+2023-04-05 00:21:47 info: 🚀 App listening on the port 8000
+2023-04-05 00:21:47 info: =================================
+2023-04-05 00:22:38 info: =================================
+2023-04-05 00:22:38 info: ======= ENV: development =======
+2023-04-05 00:22:38 info: 🚀 App listening on the port 8000
+2023-04-05 00:22:38 info: =================================
+2023-04-05 00:23:37 info: =================================
+2023-04-05 00:23:37 info: ======= ENV: development =======
+2023-04-05 00:23:37 info: 🚀 App listening on the port 8000
+2023-04-05 00:23:37 info: =================================
+2023-04-05 00:23:55 info: =================================
+2023-04-05 00:23:55 info: ======= ENV: development =======
+2023-04-05 00:23:55 info: 🚀 App listening on the port 8000
+2023-04-05 00:23:55 info: =================================
+2023-04-05 00:24:09 info: =================================
+2023-04-05 00:24:09 info: ======= ENV: development =======
+2023-04-05 00:24:09 info: 🚀 App listening on the port 8000
+2023-04-05 00:24:09 info: =================================
+2023-04-05 00:24:22 info: [0mGET /posts?page=1&page_size=10 [36m304[0m 231.423 ms - -[0m
+2023-04-05 00:24:22 info: [0mGET /posts?page=1&page_size=10 [36m304[0m 78.300 ms - -[0m
+2023-04-05 00:24:22 info: [0mGET /posts?page=1&page_size=10 [36m304[0m 22.958 ms - -[0m
+2023-04-05 00:24:26 info: [0mGET /posts?page=1&page_size=10 [36m304[0m 59.837 ms - -[0m
+2023-04-05 00:24:26 info: [0mGET /posts?page=1&page_size=10 [36m304[0m 25.042 ms - -[0m
+2023-04-05 00:24:26 info: [0mGET /posts?page=1&page_size=10 [36m304[0m 16.245 ms - -[0m
+2023-04-05 00:24:28 info: [0mGET /projects [36m304[0m 167.061 ms - -[0m
+2023-04-05 00:24:30 info: [0mOPTIONS /posts/create [32m204[0m 1.002 ms - 0[0m
+2023-04-05 00:24:30 error: {"name":"SequelizeUniqueConstraintError","errors":[{"message":"slug must be unique","type":"unique violation","path":"slug","value":"23232","origin":"DB","instance":{"id":null,"name":"23232","description":"","content":"","slug":"23232","custom_slug":"23232","post_id":18,"locale":"en"},"validatorKey":"not_unique","validatorName":null,"validatorArgs":[]}],"parent":{"code":"ER_DUP_ENTRY","errno":1062,"sqlState":"23000","sqlMessage":"Duplicate entry '23232' for key 'post_translation.slug'","sql":"INSERT INTO `post_translation` (`id`,`post_id`,`locale`,`name`,`content`,`description`,`slug`,`custom_slug`) VALUES (DEFAULT,?,?,?,?,?,?,?);","parameters":[18,"en","23232","","","23232","23232"]},"original":{"code":"ER_DUP_ENTRY","errno":1062,"sqlState":"23000","sqlMessage":"Duplicate entry '23232' for key 'post_translation.slug'","sql":"INSERT INTO `post_translation` (`id`,`post_id`,`locale`,`name`,`content`,`description`,`slug`,`custom_slug`) VALUES (DEFAULT,?,?,?,?,?,?,?);","parameters":[18,"en","23232","","","23232","23232"]},"fields":{"slug":"23232"},"sql":"INSERT INTO `post_translation` (`id`,`post_id`,`locale`,`name`,`content`,`description`,`slug`,`custom_slug`) VALUES (DEFAULT,?,?,?,?,?,?,?);"}
+2023-04-05 00:24:30 info: [0mPOST /posts/create [32m200[0m 133.673 ms - 16[0m
+2023-04-05 00:24:30 info: [0mGET /posts?page=1&page_size=10 [36m304[0m 11.096 ms - -[0m
+2023-04-05 00:24:30 info: [0mGET /posts?page=1&page_size=10 [36m304[0m 14.149 ms - -[0m
+2023-04-05 00:25:57 info: =================================
+2023-04-05 00:25:57 info: ======= ENV: development =======
+2023-04-05 00:25:57 info: 🚀 App listening on the port 8000
+2023-04-05 00:25:57 info: =================================
+2023-04-05 00:26:12 info: [0mGET /posts?page=1&page_size=10 [36m304[0m 147.118 ms - -[0m
+2023-04-05 00:26:12 info: [0mGET /posts?page=1&page_size=10 [36m304[0m 16.055 ms - -[0m
+2023-04-05 00:26:12 info: [0mGET /posts?page=1&page_size=10 [36m304[0m 23.337 ms - -[0m
+2023-04-05 00:26:12 info: [0mGET /projects [36m304[0m 22.766 ms - -[0m
+2023-04-05 00:26:14 info: [0mOPTIONS /posts/create [32m204[0m 1.129 ms - 0[0m
+2023-04-05 00:26:14 info: [0mPOST /posts/create [32m200[0m 46.165 ms - 16[0m
+2023-04-05 00:26:15 info: [0mGET /posts?page=1&page_size=10 [32m200[0m 23.301 ms - 254[0m
+2023-04-05 00:26:15 info: [0mGET /posts?page=1&page_size=10 [36m304[0m 12.032 ms - -[0m
+2023-04-05 00:26:19 info: [0mGET /projects? [36m304[0m 17.344 ms - -[0m
+2023-04-05 00:26:19 info: [0mGET /projects?page=1&page_size=10 [36m304[0m 26.046 ms - -[0m
+2023-04-05 00:26:20 info: [0mGET /banners? [36m304[0m 18.146 ms - -[0m
+2023-04-05 00:26:20 info: [0mGET /banners?page=1&page_size=10 [36m304[0m 18.259 ms - -[0m
+2023-04-05 00:26:33 info: [0mGET /posts? [32m200[0m 79.130 ms - 254[0m
+2023-04-05 00:26:33 info: [0mGET /posts?page=1&page_size=10 [36m304[0m 35.903 ms - -[0m
+2023-04-05 00:26:35 info: [0mGET /posts/show/19 [32m200[0m 33.176 ms - 258[0m
+2023-04-05 00:26:35 info: [0mGET /projects [36m304[0m 27.898 ms - -[0m
+2023-04-05 00:26:41 info: [0mOPTIONS /posts/update/19 [32m204[0m 0.188 ms - 0[0m
+2023-04-05 00:26:41 info: [0mPUT /posts/update/19 [32m200[0m 16.164 ms - 16[0m
+2023-04-05 00:26:41 info: [0mGET /posts/show/19 [32m200[0m 7.488 ms - 261[0m
+2023-04-05 00:26:41 info: [0mGET /projects [36m304[0m 6.813 ms - -[0m
+2023-04-05 00:26:45 info: [0mGET /projects [36m304[0m 7.148 ms - -[0m
+2023-04-05 00:26:45 info: [0mGET /posts/show/19 [32m200[0m 16.065 ms - 252[0m
+2023-04-05 00:26:45 info: [0mGET /projects [36m304[0m 6.210 ms - -[0m
+2023-04-05 00:26:49 info: [0mOPTIONS /posts/update/19 [32m204[0m 0.544 ms - 0[0m
+2023-04-05 00:26:49 info: [0mPUT /posts/update/19 [32m200[0m 7.964 ms - 16[0m
+2023-04-05 00:26:49 info: [0mGET /posts/show/19 [32m200[0m 7.522 ms - 257[0m
+2023-04-05 00:26:50 info: [0mGET /projects [36m304[0m 9.476 ms - -[0m
+2023-04-05 00:26:54 info: [0mGET /projects [36m304[0m 5.838 ms - -[0m
+2023-04-05 00:26:54 info: [0mGET /posts/show/19 [32m200[0m 17.116 ms - 261[0m
+2023-04-05 00:26:55 info: [0mGET /projects [36m304[0m 5.883 ms - -[0m
+2023-04-05 00:26:58 info: [0mGET /projects [36m304[0m 9.625 ms - -[0m
+2023-04-05 00:26:59 info: [0mGET /posts/show/19 [32m200[0m 34.728 ms - 257[0m
+2023-04-05 00:26:59 info: [0mGET /projects [36m304[0m 12.048 ms - -[0m
+2023-04-05 00:27:05 info: [0mGET /projects [36m304[0m 5.502 ms - -[0m
+2023-04-05 00:27:05 info: [0mGET /posts/show/19 [32m200[0m 10.428 ms - 261[0m
+2023-04-05 00:27:05 info: [0mGET /projects [36m304[0m 30.347 ms - -[0m

@@ -105,21 +105,26 @@ export class PostService {
                 if (post) {
                     const postId = post.id;
                     try {
-                        await models.PostTranslation.create({
+
+                        const newItem = {
                             ...body,
                             slug: Helper.renderSlug(body.slug ? body.slug : body.name),
                             custom_slug: Helper.renderSlug(body.custom_slug ? body.custom_slug : body.name),
-                            post_id: postId,
+                        }
+
+                        await models.PostTranslation.create({
+                            ...newItem, post_id: postId,
                             locale: 'vi'
                         });
 
                         await models.PostTranslation.create({
-                            ...body,
-                            slug: Helper.renderSlug(body.slug ? body.slug : body.name),
-                            custom_slug: Helper.renderSlug(body.custom_slug ? body.custom_slug : body.name),
+                            ...newItem,
+                            slug: Helper.renderSlug(body.slug ? `en-${body.slug}` : `en-${body.name}`),
+                            custom_slug: Helper.renderSlug(body.custom_slug ? `en-${body.custom_slug}` : `en-${body.name}`),
                             post_id: postId,
                             locale: 'en'
                         });
+
                     } catch (error) {
                         logger.error(JSON.stringify(error));
                     }
