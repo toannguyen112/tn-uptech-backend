@@ -3,6 +3,7 @@ import models from "../infra/sequelize/models";
 import { ApiFeatures } from "../utils/ApiFeatures";
 import { Op } from "sequelize";
 import Helper from "../utils/Helper";
+import { logger } from "../utils/logger";
 export class PostService {
 
     public getList = async (query) => {
@@ -98,30 +99,30 @@ export class PostService {
             thumbnail: body.thumbnail ? body.thumbnail.id : null,
             banner: body.banner ? body.banner.id : null,
         },
-            {
-                individualHooks: true,
-            }
         )
             .then(async (post: any) => {
 
                 if (post) {
                     const postId = post.id;
+                    try {
+                        await models.PostTranslation.create({
+                            ...body,
+                            slug: Helper.renderSlug(body.slug ? body.slug : body.name),
+                            custom_slug: Helper.renderSlug(body.custom_slug ? body.custom_slug : body.name),
+                            post_id: postId,
+                            locale: 'vi'
+                        });
 
-                    await models.PostTranslation.create({
-                        ...body,
-                        slug: Helper.renderSlug(body.slug ? body.slug : body.name),
-                        custom_slug: Helper.renderSlug(body.custom_slug ? body.custom_slug : body.name),
-                        post_id: postId,
-                        locale: 'vi'
-                    });
-
-                    await models.PostTranslation.create({
-                        ...body,
-                        slug: Helper.renderSlug(body.slug ? body.slug : body.name),
-                        custom_slug: Helper.renderSlug(body.custom_slug ? body.custom_slug : body.name),
-                        post_id: postId,
-                        locale: 'en'
-                    });
+                        await models.PostTranslation.create({
+                            ...body,
+                            slug: Helper.renderSlug(body.slug ? body.slug : body.name),
+                            custom_slug: Helper.renderSlug(body.custom_slug ? body.custom_slug : body.name),
+                            post_id: postId,
+                            locale: 'en'
+                        });
+                    } catch (error) {
+                        logger.error(JSON.stringify(error));
+                    }
                 }
             });
     }
@@ -182,10 +183,7 @@ export class PostService {
         }, { where: { id } },
         )
             .then(async (res) => {
-
-                if (res) {
-                    await this.handleUpdate({ post_id: id, lang: global.lang, body });
-                }
+                await this.handleUpdate({ post_id: id, lang: global.lang, body });
             });
     }
 
@@ -201,7 +199,7 @@ export class PostService {
             },
                 { where: { post_id, locale: lang } });
         } catch (error) {
-            console.log(error.message);
+            logger.error(JSON.stringify(error));
         }
     }
 

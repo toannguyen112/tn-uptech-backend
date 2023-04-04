@@ -47,12 +47,12 @@ export class BannerService {
             if (query.search) {
                 queryTranslation = {
                     name: { [Op.like]: `%${query.search}%` },
-                    locale: "vi"
+                    locale: global.lang
                 }
             }
             else {
                 queryTranslation = {
-                    locale: "vi"
+                    locale: global.lang
                 }
             }
 
@@ -134,7 +134,7 @@ export class BannerService {
                     as: "translations",
                     required: true,
                     where: {
-                        locale: "vi",
+                        locale: global.lang,
                         banner_id: id,
                     }
                 },
@@ -150,16 +150,10 @@ export class BannerService {
             status: body.status,
             thumbnail: body.thumbnail ? body.thumbnail.id : null,
         },
-            {
-                where: { id },
-            },
+            { where: { id } },
         )
             .then(async (res) => {
-
-                if (res) {
-                    await this.handleUpdate({ banner_id: id, lang: "vi", body });
-                    await this.handleUpdate({ banner_id: id, lang: "en", body });
-                }
+                await this.handleUpdate({ banner_id: id, lang: global.lang, body });
             });
     }
 
