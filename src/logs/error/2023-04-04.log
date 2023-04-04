@@ -1576,3 +1576,61 @@ TSError: ⨯ Unable to compile TypeScript:
     at Module.load (node:internal/modules/cjs/loader:1069:32)
     at Function.Module._load (node:internal/modules/cjs/loader:904:12)
     at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-04 18:53:21 error: uncaughtException: listen EADDRINUSE: address already in use :::8000
+Error: listen EADDRINUSE: address already in use :::8000
+    at Server.setupListenHandle [as _listen2] (node:net:1463:16)
+    at listenInCluster (node:net:1511:12)
+    at Server.listen (node:net:1599:7)
+    at Function.listen (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/express/lib/application.js:635:24)
+    at App.listen (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/express/app.ts:31:18)
+    at Object.<anonymous> (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/server.ts:22:5)
+    at Module._compile (node:internal/modules/cjs/loader:1191:14)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1618:23)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+2023-04-04 19:04:22 error: uncaughtException: listen EADDRINUSE: address already in use :::8000
+Error: listen EADDRINUSE: address already in use :::8000
+    at Server.setupListenHandle [as _listen2] (node:net:1463:16)
+    at listenInCluster (node:net:1511:12)
+    at Server.listen (node:net:1599:7)
+    at Function.listen (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/express/lib/application.js:635:24)
+    at App.listen (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/express/app.ts:31:18)
+    at Object.<anonymous> (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/server.ts:22:5)
+    at Module._compile (node:internal/modules/cjs/loader:1191:14)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1618:23)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+2023-04-04 19:06:42 error: uncaughtException: listen EADDRINUSE: address already in use :::8000
+Error: listen EADDRINUSE: address already in use :::8000
+    at Server.setupListenHandle [as _listen2] (node:net:1463:16)
+    at listenInCluster (node:net:1511:12)
+    at Server.listen (node:net:1599:7)
+    at Function.listen (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/express/lib/application.js:635:24)
+    at App.listen (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/express/app.ts:31:18)
+    at Object.<anonymous> (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/server.ts:22:5)
+    at Module._compile (node:internal/modules/cjs/loader:1191:14)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1618:23)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+2023-04-04 19:25:47 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/services/job.service.ts[0m:[93m1[0m:[93m10[0m - [91merror[0m[90m TS2305: [0mModule '"../dtos/post.dtos"' has no exported member 'JobDTO'.
+
+[7m1[0m import { JobDTO } from "../dtos/post.dtos";
+[7m [0m [91m         ~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/services/job.service.ts[0m:[93m1[0m:[93m10[0m - [91merror[0m[90m TS2305: [0mModule '"../dtos/post.dtos"' has no exported member 'JobDTO'.
+
+[7m1[0m import { JobDTO } from "../dtos/post.dtos";
+[7m [0m [91m         ~~~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)

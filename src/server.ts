@@ -7,6 +7,7 @@ import { MediaRoute } from './route/media.route';
 import { PostRoute } from './route/post.route';
 import { ProjectRoute } from './route/project.route';
 import { FolderRoute } from './route/folder.route';
+import { JobRoute } from './route/job.route';
 
 const routers = [
     new FolderRoute(),
@@ -16,6 +17,7 @@ const routers = [
     new CeoRoute(),
     new BannerRoute(),
     new LocaleRoute(),
+    new JobRoute(),
 ];
 
 const app = new App([...routers]);

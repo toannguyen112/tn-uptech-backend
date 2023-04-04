@@ -2,7 +2,6 @@
 import { Router } from "express";
 import { Routes } from "../interface/routes.interface";
 import { PostController } from "../modules/controllers/post.controller";
-
 export class PostRoute implements Routes {
     public path = '/posts';
     public router = Router();
