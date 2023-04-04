@@ -1634,3 +1634,125 @@ TSError: ⨯ Unable to compile TypeScript:
     at Module.load (node:internal/modules/cjs/loader:1069:32)
     at Function.Module._load (node:internal/modules/cjs/loader:904:12)
     at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-04 19:59:07 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/infra/sequelize/models/admin.model.ts[0m:[93m25[0m:[93m23[0m - [91merror[0m[90m TS2552: [0mCannot find name 'Sequelize'. Did you mean 'sequelize'?
+
+[7m25[0m                 type: Sequelize.STRING,
+[7m  [0m [91m                      ~~~~~~~~~[0m
+
+  [96msrc/infra/sequelize/models/admin.model.ts[0m:[93m1[0m:[93m28[0m
+    [7m1[0m module.exports = function (sequelize, DataTypes) {
+    [7m [0m [96m                           ~~~~~~~~~[0m
+    'sequelize' is declared here.
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/infra/sequelize/models/admin.model.ts[0m:[93m25[0m:[93m23[0m - [91merror[0m[90m TS2552: [0mCannot find name 'Sequelize'. Did you mean 'sequelize'?
+
+[7m25[0m                 type: Sequelize.STRING,
+[7m  [0m [91m                      ~~~~~~~~~[0m
+
+  [96msrc/infra/sequelize/models/admin.model.ts[0m:[93m1[0m:[93m28[0m
+    [7m1[0m module.exports = function (sequelize, DataTypes) {
+    [7m [0m [96m                           ~~~~~~~~~[0m
+    'sequelize' is declared here.
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-04 21:11:07 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/middlewares/lang.middleware.ts[0m:[93m9[0m:[93m5[0m - [91merror[0m[90m TS2322: [0mType 'string | false' is not assignable to type 'string'.
+  Type 'boolean' is not assignable to type 'string'.
+
+[7m9[0m     req.lang = lang;
+[7m [0m [91m    ~~~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/middlewares/lang.middleware.ts[0m:[93m9[0m:[93m5[0m - [91merror[0m[90m TS2322: [0mType 'string | false' is not assignable to type 'string'.
+  Type 'boolean' is not assignable to type 'string'.
+
+[7m9[0m     req.lang = lang;
+[7m [0m [91m    ~~~~~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-04 21:16:42 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/modules/controllers/project.controller.ts[0m:[93m11[0m:[93m63[0m - [91merror[0m[90m TS2339: [0mProperty 'lang' does not exist on type 'Request<ParamsDictionary, any, any, ParsedQs, Record<string, any>>'.
+
+[7m11[0m             const data = await project.getList(req.query, req.lang);
+[7m  [0m [91m                                                              ~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/modules/controllers/project.controller.ts[0m:[93m11[0m:[93m63[0m - [91merror[0m[90m TS2339: [0mProperty 'lang' does not exist on type 'Request<ParamsDictionary, any, any, ParsedQs, Record<string, any>>'.
+
+[7m11[0m             const data = await project.getList(req.query, req.lang);
+[7m  [0m [91m                                                              ~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-04 21:18:05 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/modules/controllers/post.controller.ts[0m:[93m11[0m:[93m56[0m - [91merror[0m[90m TS2554: [0mExpected 1 arguments, but got 2.
+
+[7m11[0m             const data = await post.getList(req.query, req.lang);
+[7m  [0m [91m                                                       ~~~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/modules/controllers/post.controller.ts[0m:[93m11[0m:[93m56[0m - [91merror[0m[90m TS2554: [0mExpected 1 arguments, but got 2.
+
+[7m11[0m             const data = await post.getList(req.query, req.lang);
+[7m  [0m [91m                                                       ~~~~~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-04 21:20:56 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/modules/controllers/project.controller.ts[0m:[93m11[0m:[93m59[0m - [91merror[0m[90m TS2554: [0mExpected 1 arguments, but got 2.
+
+[7m11[0m             const data = await project.getList(req.query, req.lang);
+[7m  [0m [91m                                                          ~~~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/modules/controllers/project.controller.ts[0m:[93m11[0m:[93m59[0m - [91merror[0m[90m TS2554: [0mExpected 1 arguments, but got 2.
+
+[7m11[0m             const data = await project.getList(req.query, req.lang);
+[7m  [0m [91m                                                          ~~~~~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)

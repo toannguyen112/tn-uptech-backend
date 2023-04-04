@@ -19,6 +19,11 @@ module.exports = function (sequelize, DataTypes) {
                 type: DataTypes.STRING,
             },
 
+            email: {
+                allowNull: true,
+                type: DataTypes.STRING,
+            },
+
             password: {
                 allowNull: false,
                 type: DataTypes.STRING,
@@ -27,16 +32,6 @@ module.exports = function (sequelize, DataTypes) {
             tokens: {
                 allowNull: true,
                 type: DataTypes.JSON,
-            },
-
-            address: {
-                allowNull: true,
-                type: DataTypes.STRING,
-            },
-
-            link_cv: {
-                allowNull: true,
-                type: DataTypes.STRING,
             },
 
             phone: {

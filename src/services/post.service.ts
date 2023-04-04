@@ -5,7 +5,7 @@ import { Op } from "sequelize";
 import Helper from "../utils/Helper";
 export class PostService {
 
-    public getList = async (query) => {
+    public getList = async (query, lang = 'vi') => {
         try {
 
             const conditions = {};
@@ -48,11 +48,11 @@ export class PostService {
             if (query.search) {
                 queryTranslation = {
                     name: { [Op.like]: `%${query.search}%` },
-                    locale: "vi"
+                    locale: lang
                 }
             }
             else {
-                queryTranslation = { locale: "vi" }
+                queryTranslation = { locale: lang }
             }
 
             const objQuery = new ApiFeatures(query)

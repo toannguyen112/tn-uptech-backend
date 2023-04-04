@@ -6,7 +6,7 @@ import { ProjectService } from '../../services/project.service';
 const project = new ProjectService();
 export class ProjectController extends BaseController {
 
-    public index = async (req: Request, res: Response, next: NextFunction) => {
+    public index = async (req: any, res: Response, next: NextFunction) => {
         try {
             const data = await project.getList(req.query);
             return this.success(res, data);

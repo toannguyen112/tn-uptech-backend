@@ -48,12 +48,12 @@ export class ProjectService {
             if (query.search) {
                 queryTranslation = {
                     name: { [Op.like]: `%${query.search}%` },
-                    locale: "vi"
+                    locale: global.lang
                 }
             }
             else {
                 queryTranslation = {
-                    locale: "vi"
+                    locale: global.lang
                 }
             }
 

@@ -20,6 +20,11 @@ module.exports = {
         type: Sequelize.STRING,
       },
 
+      email: {
+        allowNull: true,
+        type: Sequelize.STRING,
+      },
+
       password: {
         allowNull: false,
         type: Sequelize.STRING,
@@ -28,16 +33,6 @@ module.exports = {
       tokens: {
         allowNull: true,
         type: Sequelize.JSON,
-      },
-
-      address: {
-        allowNull: true,
-        type: Sequelize.STRING,
-      },
-
-      link_cv: {
-        allowNull: true,
-        type: Sequelize.STRING,
       },
 
       phone: {
