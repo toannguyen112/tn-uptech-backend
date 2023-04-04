@@ -158,7 +158,7 @@ export class PostService {
                 {
                     model: models.PostTranslation,
                     as: "translations",
-                    required: flase,
+                    required: false,
                     where: {
                         locale: global.lang,
                         post_id: id
