@@ -169,17 +169,12 @@ export class ProjectService {
             isFeatured: body.isFeatured,
             thumbnail: body.thumbnail ? body.thumbnail.id : null,
             banner: body.banner ? body.banner.id : null,
-        },
-            {
-                where: { id },
-                individualHooks: true
-            },
+        }, { where: { id } },
         )
             .then(async (res) => {
 
                 if (res) {
-                    await this.handleUpdate({ project_id: id, lang: "vi", body });
-                    await this.handleUpdate({ project_id: id, lang: "en", body });
+                    await this.handleUpdate({ project_id: id, lang: global.lang, body });
                 }
             });
     }
