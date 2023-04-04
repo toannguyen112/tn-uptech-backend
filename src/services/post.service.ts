@@ -143,7 +143,7 @@ export class PostService {
                     include: {
                         model: models.CeoTranslation,
                         as: "translations",
-                        required: true,
+                        required: false,
                         where: {
                             locale: global.lang,
                             ceo_id: id
@@ -158,7 +158,7 @@ export class PostService {
                 {
                     model: models.PostTranslation,
                     as: "translations",
-                    required: true,
+                    required: flase,
                     where: {
                         locale: global.lang,
                         post_id: id

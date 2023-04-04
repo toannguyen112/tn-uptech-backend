@@ -30,7 +30,7 @@ export class PostController extends BaseController {
             const data = await post.findById(req.params.id);
             res.status(200).send({ message: "ok", data });
         } catch (error) {
-            res.status(500).send(error.message);
+            res.status(500).send(error);
         }
     }
 
