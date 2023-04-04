@@ -81,6 +81,11 @@ module.exports = function (sequelize, DataTypes) {
             foreignKey: "banner"
         });
 
+        Post.belongsTo(models.Ceo, {
+            as: 'ceo',
+            foreignKey: "ceo_id"
+        });
+
         Post.hasMany(models.PostTranslation, {
             as: "translations",
             foreignKey: "post_id"

@@ -34,6 +34,7 @@ export class PostDTO {
             isFeatured: item.isFeatured || false,
             status: item.status || 'inactive',
             content: translationData.content || "",
+            ceo: item.ceo.translations[0] || {},
             thumbnail: item.image || null,
             banner: item.banner_image || null,
             related: item.related || [],

@@ -137,6 +137,20 @@ export class PostService {
                     required: false,
                 },
                 {
+                    model: models.Ceo,
+                    as: "ceo",
+                    required: false,
+                    include: {
+                        model: models.CeoTranslation,
+                        as: "translations",
+                        required: true,
+                        where: {
+                            locale: "vi",
+                            ceo_id: id
+                        }
+                    },
+                },
+                {
                     model: models.Media,
                     as: "banner_image",
                     required: false,
