@@ -11,7 +11,7 @@ export const LangMiddleware = (req: LanguageRequest, res: Response, next: NextFu
         global.lang = lang;
     }
     else{
-        global.lang = 'en';
+        global.lang = 'vi';
     }
     next();
 };

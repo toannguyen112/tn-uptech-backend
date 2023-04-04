@@ -150,7 +150,7 @@ export class ProjectService {
                     as: "translations",
                     required: true,
                     where: {
-                        locale: "vi",
+                        locale: global.lang,
                         project_id: id,
                     }
                 },
