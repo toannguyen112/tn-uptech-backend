@@ -19,6 +19,9 @@ module.exports = function (sequelize, DataTypes) {
                 allowNull: true,
                 type: DataTypes.STRING,
                 defaultValue: 'post',
+                get() {
+                    return this.getDataValue('type') === 'post' ? 'Blog' : "Project"
+                }
             },
 
             createdAt: {

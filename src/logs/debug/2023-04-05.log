@@ -587,3 +587,41 @@
 2023-04-05 20:15:23 info: [0mGET /categories?page=1&page_size=10 [36m304[0m 5.948 ms - -[0m
 2023-04-05 20:16:13 info: [0mGET /categories?page=1&page_size=10 [36m304[0m 113.221 ms - -[0m
 2023-04-05 20:16:13 info: [0mGET /categories?page=1&page_size=10 [36m304[0m 24.396 ms - -[0m
+2023-04-05 20:17:38 info: [0mOPTIONS /folders/get-medias [32m204[0m 0.699 ms - 0[0m
+2023-04-05 20:17:38 info: [0mPOST /folders/get-medias [32m200[0m 50.957 ms - 31[0m
+2023-04-05 20:17:38 info: [0mGET /folders [36m304[0m 52.208 ms - -[0m
+2023-04-05 20:17:41 info: [0mPOST /folders/get-medias [32m200[0m 2.218 ms - 31[0m
+2023-04-05 20:17:41 info: [0mPOST /folders/get-medias [32m200[0m 2.454 ms - 31[0m
+2023-04-05 20:17:44 info: [0mGET /posts? [32m200[0m 90.658 ms - 472[0m
+2023-04-05 20:17:44 info: [0mGET /posts?page=1&page_size=10 [32m200[0m 41.917 ms - 472[0m
+2023-04-05 20:18:06 info: [0mGET /categories? [36m304[0m 65.615 ms - -[0m
+2023-04-05 20:18:06 info: [0mGET /categories?page=1&page_size=10 [36m304[0m 23.580 ms - -[0m
+2023-04-05 20:18:42 info: =================================
+2023-04-05 20:18:42 info: ======= ENV: development =======
+2023-04-05 20:18:42 info: 🚀 App listening on the port 8000
+2023-04-05 20:18:42 info: =================================
+2023-04-05 20:19:39 info: =================================
+2023-04-05 20:19:39 info: ======= ENV: development =======
+2023-04-05 20:19:39 info: 🚀 App listening on the port 8000
+2023-04-05 20:19:39 info: =================================
+2023-04-05 20:19:42 info: [0mGET /categories?page=1&page_size=10 [32m200[0m 109.580 ms - 314[0m
+2023-04-05 20:19:43 info: [0mGET /categories?page=1&page_size=10 [36m304[0m 27.073 ms - -[0m
+2023-04-05 20:19:43 info: [0mGET /categories?page=1&page_size=10 [36m304[0m 8.643 ms - -[0m
+2023-04-05 20:19:54 info: =================================
+2023-04-05 20:19:54 info: ======= ENV: development =======
+2023-04-05 20:19:54 info: 🚀 App listening on the port 8000
+2023-04-05 20:19:54 info: =================================
+2023-04-05 20:19:55 info: [0mGET /categories?page=1&page_size=10 [32m200[0m 117.972 ms - 338[0m
+2023-04-05 20:19:55 info: [0mGET /categories?page=1&page_size=10 [36m304[0m 66.282 ms - -[0m
+2023-04-05 20:19:55 info: [0mGET /categories?page=1&page_size=10 [36m304[0m 8.137 ms - -[0m
+2023-04-05 20:20:11 info: =================================
+2023-04-05 20:20:11 info: ======= ENV: development =======
+2023-04-05 20:20:11 info: 🚀 App listening on the port 8000
+2023-04-05 20:20:11 info: =================================
+2023-04-05 20:20:15 info: [0mGET /categories?page=1&page_size=10 [32m200[0m 154.567 ms - 322[0m
+2023-04-05 20:20:15 info: [0mGET /categories?page=1&page_size=10 [36m304[0m 42.229 ms - -[0m
+2023-04-05 20:20:15 info: [0mGET /categories?page=1&page_size=10 [36m304[0m 15.851 ms - -[0m
+2023-04-05 20:20:35 info: =================================
+2023-04-05 20:20:35 info: ======= ENV: development =======
+2023-04-05 20:20:35 info: 🚀 App listening on the port 8000
+2023-04-05 20:20:35 info: =================================
