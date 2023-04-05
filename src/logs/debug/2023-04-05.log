@@ -558,3 +558,32 @@
 2023-04-05 20:03:03 info: [0mGET /categories?page=1&page_size=10&search=bb [32m200[0m 7.342 ms - 87[0m
 2023-04-05 20:03:03 info: [0mGET /categories?page=1&page_size=10&search=b [36m304[0m 6.834 ms - -[0m
 2023-04-05 20:03:03 info: [0mGET /categories?page=1&page_size=10 [36m304[0m 5.620 ms - -[0m
+2023-04-05 20:11:02 info: [0mGET /categories?page=1&page_size=10 [36m304[0m 94.051 ms - -[0m
+2023-04-05 20:11:02 info: [0mGET /categories?page=1&page_size=10 [36m304[0m 73.556 ms - -[0m
+2023-04-05 20:11:05 info: [0mGET /categories?page=1&page_size=10 [36m304[0m 108.704 ms - -[0m
+2023-04-05 20:11:05 info: [0mGET /categories?page=1&page_size=10 [36m304[0m 3.929 ms - -[0m
+2023-04-05 20:11:56 info: [0mGET /categories?page=1&page_size=10 [36m304[0m 121.032 ms - -[0m
+2023-04-05 20:11:56 info: [0mGET /categories?page=1&page_size=10 [36m304[0m 8.238 ms - -[0m
+2023-04-05 20:12:00 error: {"name":"SequelizeEagerLoadingError"}
+2023-04-05 20:12:00 info: [0mGET /categories/show/2 [31m500[0m 5.189 ms - 184[0m
+2023-04-05 20:12:02 error: {"name":"SequelizeEagerLoadingError"}
+2023-04-05 20:12:02 info: [0mGET /categories/show/2 [31m500[0m 2.518 ms - 184[0m
+2023-04-05 20:12:02 info: [0mGET /categories?page=1&page_size=10 [36m304[0m 33.930 ms - -[0m
+2023-04-05 20:12:02 info: [0mGET /categories?page=1&page_size=10 [36m304[0m 20.621 ms - -[0m
+2023-04-05 20:12:03 error: {"name":"SequelizeEagerLoadingError"}
+2023-04-05 20:12:03 info: [0mGET /categories/show/2 [31m500[0m 2.204 ms - 184[0m
+2023-04-05 20:12:06 info: [0mOPTIONS /categories/delete/2 [32m204[0m 0.322 ms - 0[0m
+2023-04-05 20:12:06 error: {"name":"SequelizeForeignKeyConstraintError","parent":{"code":"ER_ROW_IS_REFERENCED_2","errno":1451,"sqlState":"23000","sqlMessage":"Cannot delete or update a parent row: a foreign key constraint fails (`tn-uptech-backend`.`category_translation`, CONSTRAINT `category_translation_ibfk_1` FOREIGN KEY (`category_id`) REFERENCES `categories` (`id`))","sql":"DELETE FROM `categories` WHERE `id` = '2'"},"original":{"code":"ER_ROW_IS_REFERENCED_2","errno":1451,"sqlState":"23000","sqlMessage":"Cannot delete or update a parent row: a foreign key constraint fails (`tn-uptech-backend`.`category_translation`, CONSTRAINT `category_translation_ibfk_1` FOREIGN KEY (`category_id`) REFERENCES `categories` (`id`))","sql":"DELETE FROM `categories` WHERE `id` = '2'"},"sql":"DELETE FROM `categories` WHERE `id` = '2'","parameters":{},"table":"categories","fields":["category_id"],"index":"category_translation_ibfk_1","reltype":"parent"}
+2023-04-05 20:12:06 info: [0mDELETE /categories/delete/2 [31m500[0m 63.313 ms - 214[0m
+2023-04-05 20:12:08 error: {"name":"SequelizeEagerLoadingError"}
+2023-04-05 20:12:08 info: [0mGET /categories/show/2 [31m500[0m 4.753 ms - 184[0m
+2023-04-05 20:12:08 info: [0mGET /categories?page=1&page_size=10 [36m304[0m 23.812 ms - -[0m
+2023-04-05 20:12:08 info: [0mGET /categories?page=1&page_size=10 [36m304[0m 3.197 ms - -[0m
+2023-04-05 20:12:10 info: [0mGET /categories?page=1&page_size=10 [36m304[0m 10.705 ms - -[0m
+2023-04-05 20:12:11 info: [0mGET /categories?page=1&page_size=10 [36m304[0m 17.429 ms - -[0m
+2023-04-05 20:12:11 info: [0mGET /categories?page=1&page_size=10 [36m304[0m 7.836 ms - -[0m
+2023-04-05 20:15:23 info: [0mGET /categories?page=1&page_size=10 [36m304[0m 68.123 ms - -[0m
+2023-04-05 20:15:23 info: [0mGET /categories?page=1&page_size=10 [36m304[0m 20.951 ms - -[0m
+2023-04-05 20:15:23 info: [0mGET /categories?page=1&page_size=10 [36m304[0m 5.948 ms - -[0m
+2023-04-05 20:16:13 info: [0mGET /categories?page=1&page_size=10 [36m304[0m 113.221 ms - -[0m
+2023-04-05 20:16:13 info: [0mGET /categories?page=1&page_size=10 [36m304[0m 24.396 ms - -[0m

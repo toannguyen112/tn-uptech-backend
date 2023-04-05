@@ -1743,3 +1743,8 @@ TSError: ⨯ Unable to compile TypeScript:
     at Module.load (node:internal/modules/cjs/loader:1069:32)
     at Function.Module._load (node:internal/modules/cjs/loader:904:12)
     at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-05 20:12:00 error: {"name":"SequelizeEagerLoadingError"}
+2023-04-05 20:12:02 error: {"name":"SequelizeEagerLoadingError"}
+2023-04-05 20:12:03 error: {"name":"SequelizeEagerLoadingError"}
+2023-04-05 20:12:06 error: {"name":"SequelizeForeignKeyConstraintError","parent":{"code":"ER_ROW_IS_REFERENCED_2","errno":1451,"sqlState":"23000","sqlMessage":"Cannot delete or update a parent row: a foreign key constraint fails (`tn-uptech-backend`.`category_translation`, CONSTRAINT `category_translation_ibfk_1` FOREIGN KEY (`category_id`) REFERENCES `categories` (`id`))","sql":"DELETE FROM `categories` WHERE `id` = '2'"},"original":{"code":"ER_ROW_IS_REFERENCED_2","errno":1451,"sqlState":"23000","sqlMessage":"Cannot delete or update a parent row: a foreign key constraint fails (`tn-uptech-backend`.`category_translation`, CONSTRAINT `category_translation_ibfk_1` FOREIGN KEY (`category_id`) REFERENCES `categories` (`id`))","sql":"DELETE FROM `categories` WHERE `id` = '2'"},"sql":"DELETE FROM `categories` WHERE `id` = '2'","parameters":{},"table":"categories","fields":["category_id"],"index":"category_translation_ibfk_1","reltype":"parent"}
+2023-04-05 20:12:08 error: {"name":"SequelizeEagerLoadingError"}
