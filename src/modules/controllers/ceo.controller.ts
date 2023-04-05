@@ -58,7 +58,7 @@ export class CeoController extends BaseController {
         try {
             const { ids } = req.body;
             const data = await ceo.deleteMultipleIds(ids);
-            return this.success(res, data);
+            res.status(200).send({ message: "ok", data });
         } catch (error) {
             res.status(500).send(error);
         }

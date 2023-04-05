@@ -9,11 +9,13 @@ import { ProjectRoute } from './route/project.route';
 import { FolderRoute } from './route/folder.route';
 import { JobRoute } from './route/job.route';
 import { RoleRoute } from './route/role.route';
+import { CategoryRoute } from './route/categories.route';
 
 const routers = [
     new FolderRoute(),
     new MediaRoute(),
     new ProjectRoute(),
+    new CategoryRoute(),
     new PostRoute(),
     new CeoRoute(),
     new BannerRoute(),

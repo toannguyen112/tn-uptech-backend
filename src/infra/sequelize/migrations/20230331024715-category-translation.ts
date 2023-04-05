@@ -2,7 +2,7 @@
 
 module.exports = {
   up: (queryInterface, Sequelize) =>
-    queryInterface.createTable("category_transaction", {
+    queryInterface.createTable("category_translation", {
       id: {
         primaryKey: true,
         unique: true,
@@ -16,6 +16,11 @@ module.exports = {
           model: "categories",
           key: "id",
         },
+      },
+
+      locale: {
+        type: Sequelize.STRING,
+        allowNull: false,
       },
 
       name: {
@@ -35,5 +40,5 @@ module.exports = {
 
     }),
 
-  down: (queryInterface) => queryInterface.dropTable("category_transaction"),
+  down: (queryInterface) => queryInterface.dropTable("category_translation"),
 };

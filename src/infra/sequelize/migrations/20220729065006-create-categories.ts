@@ -13,6 +13,7 @@ module.exports = {
       type: {
         allowNull: true,
         type: Sequelize.STRING,
+        defaultValue: 'post',
       },
 
       status: {

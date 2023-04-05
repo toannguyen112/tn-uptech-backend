@@ -1,37 +1,78 @@
 import models from "../infra/sequelize/models";
 import { Service } from 'typedi';
 import { ApiFeatures } from "../utils/ApiFeatures";
-import { ProjectDTO } from "../dtos/project.dto";
-@Service()
-export class ProjectService {
+import { CategoryDTO } from "../dtos/category.dtos";
+import { Op } from "sequelize";
+export class CategoryService {
 
     public getList = async (query) => {
+
         const conditions = {};
+
+        const queryObject = {
+            status: query.status,
+            search: query.search,
+        };
+
+        const excludedFields = ["page", "page_size", "sort_field", "sort_order", "fields"];
+
+        excludedFields.forEach((field) => delete queryObject[field]);
+
+        const arrQueryObject = Object.entries(queryObject).map((item) => {
+            return {
+                key: item[0],
+                value: item[1],
+            };
+        });
+
+        for (let index = 0; index < arrQueryObject.length; index++) {
+            switch (arrQueryObject[index].key) {
+                case "status":
+                    const status = typeof arrQueryObject[index].value === "string" ?
+                        [arrQueryObject[index].value] : arrQueryObject[index].value;
+                    if (Array.isArray(status)) {
+                        conditions["status"] = {
+                            [Op.in]: status.toString().split(','),
+                        };
+                    }
+                    break;
+
+                default:
+                    break;
+            }
+        }
+
+        let queryTranslation = {};
+
+        if (query.search) {
+            queryTranslation = {
+                name: { [Op.like]: `%${query.search}%` },
+                locale: global.lang
+            }
+        }
+        else {
+            queryTranslation = { locale: global.lang }
+        }
+
 
         const objQuery = new ApiFeatures(query)
             .filter(conditions)
             .includes([
                 {
-                    model: models.Media,
-                    as: "image"
-                },
-                {
-                    model: models.ProjectTranslation,
-                    as: "translation",
+                    model: models.CategoryTranslation,
+                    as: "translations",
                     require: true,
-                    where: {
-                        locale: "vi",
-                    }
+                    where: queryTranslation
                 },
             ])
             .paginate()
             .paranoid()
             .getObjQuery();
 
-        const { count, rows }: any = await models.Project.findAndCountAll(objQuery);
+        const { count, rows }: any = await models.Category.findAndCountAll(objQuery);
 
         const transformData = rows.map((item) => {
-            return ProjectDTO.transform(item)
+            return CategoryDTO.transform(item)
         });
 
         const result = {
@@ -46,53 +87,37 @@ export class ProjectService {
     }
 
     public store = async (body) => {
-        return await models.Project.create({
-               ...body,
-            thumbnail: body.thumbnail ? body.thumbnail.id : null,
-            banner: body.banner ? body.banner.id : null,
+        return await models.Category.create({
+            ...body,
         });
     }
 
     public findById = async (id: string | number) => {
-        const res = await models.Project.findOne({
+        const res = await models.Category.findOne({
             where: { id },
             include: [
                 {
-                    model: models.Media,
-                    as: "image"
-                },
-                {
-                    model: models.Media,
-                    as: "banner_image"
-                },
-                {
-                    model: models.ProjectTranslation,
+                    model: models.CategoryTranslation,
                     as: "translation",
                     require: true,
-                    where: {
-                        locale: "vi",
-                    }
+                    where: { locale: global.lang, }
                 },
             ]
         });
 
-        return ProjectDTO.transformDetail(res);
+        return CategoryDTO.transform(res);
     }
 
     public updateById = async (id, body) => {
-        return await models.Project.update({
-            ...body,
-            thumbnail: body.thumbnail ? body.thumbnail.id : null,
-            banner: body.banner ? body.banner.id : null,
-        }, { where: { id } });
+        return await models.Category.update({ ...body }, { where: { id } });
     }
 
     public deleteById = async (id) => {
-        return await models.Project.destroy({ where: { id } });
+        return await models.Category.destroy({ where: { id } });
     }
 
     public deleteMultipleIds = async (ids) => {
-        return await models.Project.destroy({ where: { id: ids } })
+        return await models.Category.destroy({ where: { id: ids } })
     }
 
 }
