@@ -1,7 +1,6 @@
 import { RoleDTO } from "../dtos/role.dtos";
 import models from "../infra/sequelize/models";
 import { ApiFeatures } from "../utils/ApiFeatures";
-import { Op } from "sequelize";
 
 export class RoleService {
 
@@ -9,10 +8,7 @@ export class RoleService {
         try {
 
             const conditions = {};
-
-            const queryObject = {
-                search: query.search,
-            };
+            const queryObject = { search: query.search };
 
             const excludedFields = ["page", "page_size", "sort_field", "sort_order", "fields"];
 
@@ -42,7 +38,7 @@ export class RoleService {
     }
 
     public store = async (body) => {
-        return await models.Role.create({ ...body })
+        return await models.Role.create({ ...body });
     }
 
     public findById = async (id) => {

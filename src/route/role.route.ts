@@ -1,6 +1,7 @@
 
 import { Router } from "express";
 import { Routes } from "../interface/routes.interface";
+import { RoleController } from "../modules/controllers/role.controller";
 export class RoleRoute implements Routes {
     public path = '/roles';
     public router = Router();

@@ -3,3 +3,695 @@
 2023-04-05 00:16:53 error: {"name":"SequelizeUniqueConstraintError","errors":[{"message":"slug must be unique","type":"unique violation","path":"slug","value":"bai-viet-1","origin":"DB","instance":{"id":null,"name":"bai viet 1","description":"","content":"","slug":"bai-viet-1","custom_slug":"bai-viet-1","post_id":16,"locale":"en"},"validatorKey":"not_unique","validatorName":null,"validatorArgs":[]}],"parent":{"code":"ER_DUP_ENTRY","errno":1062,"sqlState":"23000","sqlMessage":"Duplicate entry 'bai-viet-1' for key 'post_translation.slug'","sql":"INSERT INTO `post_translation` (`id`,`post_id`,`locale`,`name`,`content`,`description`,`slug`,`custom_slug`) VALUES (DEFAULT,?,?,?,?,?,?,?);","parameters":[16,"en","bai viet 1","","","bai-viet-1","bai-viet-1"]},"original":{"code":"ER_DUP_ENTRY","errno":1062,"sqlState":"23000","sqlMessage":"Duplicate entry 'bai-viet-1' for key 'post_translation.slug'","sql":"INSERT INTO `post_translation` (`id`,`post_id`,`locale`,`name`,`content`,`description`,`slug`,`custom_slug`) VALUES (DEFAULT,?,?,?,?,?,?,?);","parameters":[16,"en","bai viet 1","","","bai-viet-1","bai-viet-1"]},"fields":{"slug":"bai-viet-1"},"sql":"INSERT INTO `post_translation` (`id`,`post_id`,`locale`,`name`,`content`,`description`,`slug`,`custom_slug`) VALUES (DEFAULT,?,?,?,?,?,?,?);"}
 2023-04-05 00:19:47 error: {"name":"SequelizeUniqueConstraintError","errors":[{"message":"slug must be unique","type":"unique violation","path":"slug","value":"vsvs","origin":"DB","instance":{"id":null,"name":"vsvs","description":"","content":"","slug":"vsvs","custom_slug":"vsvs","post_id":17,"locale":"en"},"validatorKey":"not_unique","validatorName":null,"validatorArgs":[]}],"parent":{"code":"ER_DUP_ENTRY","errno":1062,"sqlState":"23000","sqlMessage":"Duplicate entry 'vsvs' for key 'post_translation.slug'","sql":"INSERT INTO `post_translation` (`id`,`post_id`,`locale`,`name`,`content`,`description`,`slug`,`custom_slug`) VALUES (DEFAULT,?,?,?,?,?,?,?);","parameters":[17,"en","vsvs","","","vsvs","vsvs"]},"original":{"code":"ER_DUP_ENTRY","errno":1062,"sqlState":"23000","sqlMessage":"Duplicate entry 'vsvs' for key 'post_translation.slug'","sql":"INSERT INTO `post_translation` (`id`,`post_id`,`locale`,`name`,`content`,`description`,`slug`,`custom_slug`) VALUES (DEFAULT,?,?,?,?,?,?,?);","parameters":[17,"en","vsvs","","","vsvs","vsvs"]},"fields":{"slug":"vsvs"},"sql":"INSERT INTO `post_translation` (`id`,`post_id`,`locale`,`name`,`content`,`description`,`slug`,`custom_slug`) VALUES (DEFAULT,?,?,?,?,?,?,?);"}
 2023-04-05 00:24:30 error: {"name":"SequelizeUniqueConstraintError","errors":[{"message":"slug must be unique","type":"unique violation","path":"slug","value":"23232","origin":"DB","instance":{"id":null,"name":"23232","description":"","content":"","slug":"23232","custom_slug":"23232","post_id":18,"locale":"en"},"validatorKey":"not_unique","validatorName":null,"validatorArgs":[]}],"parent":{"code":"ER_DUP_ENTRY","errno":1062,"sqlState":"23000","sqlMessage":"Duplicate entry '23232' for key 'post_translation.slug'","sql":"INSERT INTO `post_translation` (`id`,`post_id`,`locale`,`name`,`content`,`description`,`slug`,`custom_slug`) VALUES (DEFAULT,?,?,?,?,?,?,?);","parameters":[18,"en","23232","","","23232","23232"]},"original":{"code":"ER_DUP_ENTRY","errno":1062,"sqlState":"23000","sqlMessage":"Duplicate entry '23232' for key 'post_translation.slug'","sql":"INSERT INTO `post_translation` (`id`,`post_id`,`locale`,`name`,`content`,`description`,`slug`,`custom_slug`) VALUES (DEFAULT,?,?,?,?,?,?,?);","parameters":[18,"en","23232","","","23232","23232"]},"fields":{"slug":"23232"},"sql":"INSERT INTO `post_translation` (`id`,`post_id`,`locale`,`name`,`content`,`description`,`slug`,`custom_slug`) VALUES (DEFAULT,?,?,?,?,?,?,?);"}
+2023-04-05 18:41:52 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/route/role.route.ts[0m:[93m7[0m:[93m23[0m - [91merror[0m[90m TS2304: [0mCannot find name 'RoleController'.
+
+[7m7[0m     public role = new RoleController();
+[7m [0m [91m                      ~~~~~~~~~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/route/role.route.ts[0m:[93m7[0m:[93m23[0m - [91merror[0m[90m TS2304: [0mCannot find name 'RoleController'.
+
+[7m7[0m     public role = new RoleController();
+[7m [0m [91m                      ~~~~~~~~~~~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-05 18:42:04 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/modules/controllers/role.controller.ts[0m:[93m5[0m:[93m18[0m - [91merror[0m[90m TS2304: [0mCannot find name 'RoleService'.
+
+[7m5[0m const role = new RoleService();
+[7m [0m [91m                 ~~~~~~~~~~~[0m
+[96msrc/modules/controllers/role.controller.ts[0m:[93m11[0m:[93m32[0m - [91merror[0m[90m TS2304: [0mCannot find name 'post'.
+
+[7m11[0m             const data = await post.getList(req.query);
+[7m  [0m [91m                               ~~~~[0m
+[96msrc/modules/controllers/role.controller.ts[0m:[93m22[0m:[93m38[0m - [91merror[0m[90m TS2304: [0mCannot find name 'post'.
+
+[7m22[0m             const data = await await post.store(req.body);
+[7m  [0m [91m                                     ~~~~[0m
+[96msrc/modules/controllers/role.controller.ts[0m:[93m32[0m:[93m32[0m - [91merror[0m[90m TS2304: [0mCannot find name 'post'.
+
+[7m32[0m             const data = await post.findById(req.params.id);
+[7m  [0m [91m                               ~~~~[0m
+[96msrc/modules/controllers/role.controller.ts[0m:[93m43[0m:[93m32[0m - [91merror[0m[90m TS2304: [0mCannot find name 'post'.
+
+[7m43[0m             const data = await post.update(id, req.body);
+[7m  [0m [91m                               ~~~~[0m
+[96msrc/modules/controllers/role.controller.ts[0m:[93m53[0m:[93m32[0m - [91merror[0m[90m TS2304: [0mCannot find name 'post'.
+
+[7m53[0m             const data = await post.delete(req.params.id);
+[7m  [0m [91m                               ~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/modules/controllers/role.controller.ts[0m:[93m5[0m:[93m18[0m - [91merror[0m[90m TS2304: [0mCannot find name 'RoleService'.
+
+[7m5[0m const role = new RoleService();
+[7m [0m [91m                 ~~~~~~~~~~~[0m
+[96msrc/modules/controllers/role.controller.ts[0m:[93m11[0m:[93m32[0m - [91merror[0m[90m TS2304: [0mCannot find name 'post'.
+
+[7m11[0m             const data = await post.getList(req.query);
+[7m  [0m [91m                               ~~~~[0m
+[96msrc/modules/controllers/role.controller.ts[0m:[93m22[0m:[93m38[0m - [91merror[0m[90m TS2304: [0mCannot find name 'post'.
+
+[7m22[0m             const data = await await post.store(req.body);
+[7m  [0m [91m                                     ~~~~[0m
+[96msrc/modules/controllers/role.controller.ts[0m:[93m32[0m:[93m32[0m - [91merror[0m[90m TS2304: [0mCannot find name 'post'.
+
+[7m32[0m             const data = await post.findById(req.params.id);
+[7m  [0m [91m                               ~~~~[0m
+[96msrc/modules/controllers/role.controller.ts[0m:[93m43[0m:[93m32[0m - [91merror[0m[90m TS2304: [0mCannot find name 'post'.
+
+[7m43[0m             const data = await post.update(id, req.body);
+[7m  [0m [91m                               ~~~~[0m
+[96msrc/modules/controllers/role.controller.ts[0m:[93m53[0m:[93m32[0m - [91merror[0m[90m TS2304: [0mCannot find name 'post'.
+
+[7m53[0m             const data = await post.delete(req.params.id);
+[7m  [0m [91m                               ~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-05 18:42:58 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/modules/controllers/role.controller.ts[0m:[93m5[0m:[93m18[0m - [91merror[0m[90m TS2304: [0mCannot find name 'RoleService'.
+
+[7m5[0m const role = new RoleService();
+[7m [0m [91m                 ~~~~~~~~~~~[0m
+[96msrc/modules/controllers/role.controller.ts[0m:[93m11[0m:[93m32[0m - [91merror[0m[90m TS2304: [0mCannot find name 'post'.
+
+[7m11[0m             const data = await post.getList(req.query);
+[7m  [0m [91m                               ~~~~[0m
+[96msrc/modules/controllers/role.controller.ts[0m:[93m22[0m:[93m38[0m - [91merror[0m[90m TS2304: [0mCannot find name 'post'.
+
+[7m22[0m             const data = await await post.store(req.body);
+[7m  [0m [91m                                     ~~~~[0m
+[96msrc/modules/controllers/role.controller.ts[0m:[93m32[0m:[93m32[0m - [91merror[0m[90m TS2304: [0mCannot find name 'post'.
+
+[7m32[0m             const data = await post.findById(req.params.id);
+[7m  [0m [91m                               ~~~~[0m
+[96msrc/modules/controllers/role.controller.ts[0m:[93m43[0m:[93m32[0m - [91merror[0m[90m TS2304: [0mCannot find name 'post'.
+
+[7m43[0m             const data = await post.update(id, req.body);
+[7m  [0m [91m                               ~~~~[0m
+[96msrc/modules/controllers/role.controller.ts[0m:[93m53[0m:[93m32[0m - [91merror[0m[90m TS2304: [0mCannot find name 'post'.
+
+[7m53[0m             const data = await post.delete(req.params.id);
+[7m  [0m [91m                               ~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/modules/controllers/role.controller.ts[0m:[93m5[0m:[93m18[0m - [91merror[0m[90m TS2304: [0mCannot find name 'RoleService'.
+
+[7m5[0m const role = new RoleService();
+[7m [0m [91m                 ~~~~~~~~~~~[0m
+[96msrc/modules/controllers/role.controller.ts[0m:[93m11[0m:[93m32[0m - [91merror[0m[90m TS2304: [0mCannot find name 'post'.
+
+[7m11[0m             const data = await post.getList(req.query);
+[7m  [0m [91m                               ~~~~[0m
+[96msrc/modules/controllers/role.controller.ts[0m:[93m22[0m:[93m38[0m - [91merror[0m[90m TS2304: [0mCannot find name 'post'.
+
+[7m22[0m             const data = await await post.store(req.body);
+[7m  [0m [91m                                     ~~~~[0m
+[96msrc/modules/controllers/role.controller.ts[0m:[93m32[0m:[93m32[0m - [91merror[0m[90m TS2304: [0mCannot find name 'post'.
+
+[7m32[0m             const data = await post.findById(req.params.id);
+[7m  [0m [91m                               ~~~~[0m
+[96msrc/modules/controllers/role.controller.ts[0m:[93m43[0m:[93m32[0m - [91merror[0m[90m TS2304: [0mCannot find name 'post'.
+
+[7m43[0m             const data = await post.update(id, req.body);
+[7m  [0m [91m                               ~~~~[0m
+[96msrc/modules/controllers/role.controller.ts[0m:[93m53[0m:[93m32[0m - [91merror[0m[90m TS2304: [0mCannot find name 'post'.
+
+[7m53[0m             const data = await post.delete(req.params.id);
+[7m  [0m [91m                               ~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-05 18:43:10 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/modules/controllers/role.controller.ts[0m:[93m5[0m:[93m18[0m - [91merror[0m[90m TS2304: [0mCannot find name 'RoleService'.
+
+[7m5[0m const role = new RoleService();
+[7m [0m [91m                 ~~~~~~~~~~~[0m
+[96msrc/modules/controllers/role.controller.ts[0m:[93m11[0m:[93m32[0m - [91merror[0m[90m TS2304: [0mCannot find name 'post'.
+
+[7m11[0m             const data = await post.getList(req.query);
+[7m  [0m [91m                               ~~~~[0m
+[96msrc/modules/controllers/role.controller.ts[0m:[93m22[0m:[93m38[0m - [91merror[0m[90m TS2304: [0mCannot find name 'post'.
+
+[7m22[0m             const data = await await post.store(req.body);
+[7m  [0m [91m                                     ~~~~[0m
+[96msrc/modules/controllers/role.controller.ts[0m:[93m32[0m:[93m32[0m - [91merror[0m[90m TS2304: [0mCannot find name 'post'.
+
+[7m32[0m             const data = await post.findById(req.params.id);
+[7m  [0m [91m                               ~~~~[0m
+[96msrc/modules/controllers/role.controller.ts[0m:[93m43[0m:[93m32[0m - [91merror[0m[90m TS2304: [0mCannot find name 'post'.
+
+[7m43[0m             const data = await post.update(id, req.body);
+[7m  [0m [91m                               ~~~~[0m
+[96msrc/modules/controllers/role.controller.ts[0m:[93m53[0m:[93m32[0m - [91merror[0m[90m TS2304: [0mCannot find name 'post'.
+
+[7m53[0m             const data = await post.delete(req.params.id);
+[7m  [0m [91m                               ~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/modules/controllers/role.controller.ts[0m:[93m5[0m:[93m18[0m - [91merror[0m[90m TS2304: [0mCannot find name 'RoleService'.
+
+[7m5[0m const role = new RoleService();
+[7m [0m [91m                 ~~~~~~~~~~~[0m
+[96msrc/modules/controllers/role.controller.ts[0m:[93m11[0m:[93m32[0m - [91merror[0m[90m TS2304: [0mCannot find name 'post'.
+
+[7m11[0m             const data = await post.getList(req.query);
+[7m  [0m [91m                               ~~~~[0m
+[96msrc/modules/controllers/role.controller.ts[0m:[93m22[0m:[93m38[0m - [91merror[0m[90m TS2304: [0mCannot find name 'post'.
+
+[7m22[0m             const data = await await post.store(req.body);
+[7m  [0m [91m                                     ~~~~[0m
+[96msrc/modules/controllers/role.controller.ts[0m:[93m32[0m:[93m32[0m - [91merror[0m[90m TS2304: [0mCannot find name 'post'.
+
+[7m32[0m             const data = await post.findById(req.params.id);
+[7m  [0m [91m                               ~~~~[0m
+[96msrc/modules/controllers/role.controller.ts[0m:[93m43[0m:[93m32[0m - [91merror[0m[90m TS2304: [0mCannot find name 'post'.
+
+[7m43[0m             const data = await post.update(id, req.body);
+[7m  [0m [91m                               ~~~~[0m
+[96msrc/modules/controllers/role.controller.ts[0m:[93m53[0m:[93m32[0m - [91merror[0m[90m TS2304: [0mCannot find name 'post'.
+
+[7m53[0m             const data = await post.delete(req.params.id);
+[7m  [0m [91m                               ~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-05 18:43:24 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/modules/controllers/role.controller.ts[0m:[93m5[0m:[93m18[0m - [91merror[0m[90m TS2304: [0mCannot find name 'RoleService'.
+
+[7m5[0m const role = new RoleService();
+[7m [0m [91m                 ~~~~~~~~~~~[0m
+[96msrc/modules/controllers/role.controller.ts[0m:[93m11[0m:[93m32[0m - [91merror[0m[90m TS2304: [0mCannot find name 'post'.
+
+[7m11[0m             const data = await post.getList(req.query);
+[7m  [0m [91m                               ~~~~[0m
+[96msrc/modules/controllers/role.controller.ts[0m:[93m22[0m:[93m38[0m - [91merror[0m[90m TS2304: [0mCannot find name 'post'.
+
+[7m22[0m             const data = await await post.store(req.body);
+[7m  [0m [91m                                     ~~~~[0m
+[96msrc/modules/controllers/role.controller.ts[0m:[93m32[0m:[93m32[0m - [91merror[0m[90m TS2304: [0mCannot find name 'post'.
+
+[7m32[0m             const data = await post.findById(req.params.id);
+[7m  [0m [91m                               ~~~~[0m
+[96msrc/modules/controllers/role.controller.ts[0m:[93m43[0m:[93m32[0m - [91merror[0m[90m TS2304: [0mCannot find name 'post'.
+
+[7m43[0m             const data = await post.update(id, req.body);
+[7m  [0m [91m                               ~~~~[0m
+[96msrc/modules/controllers/role.controller.ts[0m:[93m53[0m:[93m32[0m - [91merror[0m[90m TS2304: [0mCannot find name 'post'.
+
+[7m53[0m             const data = await post.delete(req.params.id);
+[7m  [0m [91m                               ~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/modules/controllers/role.controller.ts[0m:[93m5[0m:[93m18[0m - [91merror[0m[90m TS2304: [0mCannot find name 'RoleService'.
+
+[7m5[0m const role = new RoleService();
+[7m [0m [91m                 ~~~~~~~~~~~[0m
+[96msrc/modules/controllers/role.controller.ts[0m:[93m11[0m:[93m32[0m - [91merror[0m[90m TS2304: [0mCannot find name 'post'.
+
+[7m11[0m             const data = await post.getList(req.query);
+[7m  [0m [91m                               ~~~~[0m
+[96msrc/modules/controllers/role.controller.ts[0m:[93m22[0m:[93m38[0m - [91merror[0m[90m TS2304: [0mCannot find name 'post'.
+
+[7m22[0m             const data = await await post.store(req.body);
+[7m  [0m [91m                                     ~~~~[0m
+[96msrc/modules/controllers/role.controller.ts[0m:[93m32[0m:[93m32[0m - [91merror[0m[90m TS2304: [0mCannot find name 'post'.
+
+[7m32[0m             const data = await post.findById(req.params.id);
+[7m  [0m [91m                               ~~~~[0m
+[96msrc/modules/controllers/role.controller.ts[0m:[93m43[0m:[93m32[0m - [91merror[0m[90m TS2304: [0mCannot find name 'post'.
+
+[7m43[0m             const data = await post.update(id, req.body);
+[7m  [0m [91m                               ~~~~[0m
+[96msrc/modules/controllers/role.controller.ts[0m:[93m53[0m:[93m32[0m - [91merror[0m[90m TS2304: [0mCannot find name 'post'.
+
+[7m53[0m             const data = await post.delete(req.params.id);
+[7m  [0m [91m                               ~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-05 18:43:39 error: uncaughtException: roles.hasMany called with something that's not a subclass of Sequelize.Model
+Error: roles.hasMany called with something that's not a subclass of Sequelize.Model
+    at Function.hasMany (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/sequelize/src/associations/mixin.js:18:13)
+    at Function.Role.associate (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/role.model.ts:55:14)
+    at /Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:51:31
+    at Array.forEach (<anonymous>)
+    at createModels (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:49:25)
+    at Object.<anonymous> (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:63:16)
+    at Module._compile (node:internal/modules/cjs/loader:1191:14)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1618:23)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+2023-04-05 18:43:50 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/modules/controllers/role.controller.ts[0m:[93m5[0m:[93m18[0m - [91merror[0m[90m TS2304: [0mCannot find name 'RoleService'.
+
+[7m5[0m const role = new RoleService();
+[7m [0m [91m                 ~~~~~~~~~~~[0m
+[96msrc/modules/controllers/role.controller.ts[0m:[93m11[0m:[93m32[0m - [91merror[0m[90m TS2304: [0mCannot find name 'post'.
+
+[7m11[0m             const data = await post.getList(req.query);
+[7m  [0m [91m                               ~~~~[0m
+[96msrc/modules/controllers/role.controller.ts[0m:[93m22[0m:[93m38[0m - [91merror[0m[90m TS2304: [0mCannot find name 'post'.
+
+[7m22[0m             const data = await await post.store(req.body);
+[7m  [0m [91m                                     ~~~~[0m
+[96msrc/modules/controllers/role.controller.ts[0m:[93m32[0m:[93m32[0m - [91merror[0m[90m TS2304: [0mCannot find name 'post'.
+
+[7m32[0m             const data = await post.findById(req.params.id);
+[7m  [0m [91m                               ~~~~[0m
+[96msrc/modules/controllers/role.controller.ts[0m:[93m43[0m:[93m32[0m - [91merror[0m[90m TS2304: [0mCannot find name 'post'.
+
+[7m43[0m             const data = await post.update(id, req.body);
+[7m  [0m [91m                               ~~~~[0m
+[96msrc/modules/controllers/role.controller.ts[0m:[93m53[0m:[93m32[0m - [91merror[0m[90m TS2304: [0mCannot find name 'post'.
+
+[7m53[0m             const data = await post.delete(req.params.id);
+[7m  [0m [91m                               ~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/modules/controllers/role.controller.ts[0m:[93m5[0m:[93m18[0m - [91merror[0m[90m TS2304: [0mCannot find name 'RoleService'.
+
+[7m5[0m const role = new RoleService();
+[7m [0m [91m                 ~~~~~~~~~~~[0m
+[96msrc/modules/controllers/role.controller.ts[0m:[93m11[0m:[93m32[0m - [91merror[0m[90m TS2304: [0mCannot find name 'post'.
+
+[7m11[0m             const data = await post.getList(req.query);
+[7m  [0m [91m                               ~~~~[0m
+[96msrc/modules/controllers/role.controller.ts[0m:[93m22[0m:[93m38[0m - [91merror[0m[90m TS2304: [0mCannot find name 'post'.
+
+[7m22[0m             const data = await await post.store(req.body);
+[7m  [0m [91m                                     ~~~~[0m
+[96msrc/modules/controllers/role.controller.ts[0m:[93m32[0m:[93m32[0m - [91merror[0m[90m TS2304: [0mCannot find name 'post'.
+
+[7m32[0m             const data = await post.findById(req.params.id);
+[7m  [0m [91m                               ~~~~[0m
+[96msrc/modules/controllers/role.controller.ts[0m:[93m43[0m:[93m32[0m - [91merror[0m[90m TS2304: [0mCannot find name 'post'.
+
+[7m43[0m             const data = await post.update(id, req.body);
+[7m  [0m [91m                               ~~~~[0m
+[96msrc/modules/controllers/role.controller.ts[0m:[93m53[0m:[93m32[0m - [91merror[0m[90m TS2304: [0mCannot find name 'post'.
+
+[7m53[0m             const data = await post.delete(req.params.id);
+[7m  [0m [91m                               ~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-05 18:44:59 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/modules/controllers/role.controller.ts[0m:[93m5[0m:[93m18[0m - [91merror[0m[90m TS2304: [0mCannot find name 'RoleService'.
+
+[7m5[0m const role = new RoleService();
+[7m [0m [91m                 ~~~~~~~~~~~[0m
+[96msrc/modules/controllers/role.controller.ts[0m:[93m11[0m:[93m32[0m - [91merror[0m[90m TS2304: [0mCannot find name 'post'.
+
+[7m11[0m             const data = await post.getList(req.query);
+[7m  [0m [91m                               ~~~~[0m
+[96msrc/modules/controllers/role.controller.ts[0m:[93m22[0m:[93m38[0m - [91merror[0m[90m TS2304: [0mCannot find name 'post'.
+
+[7m22[0m             const data = await await post.store(req.body);
+[7m  [0m [91m                                     ~~~~[0m
+[96msrc/modules/controllers/role.controller.ts[0m:[93m32[0m:[93m32[0m - [91merror[0m[90m TS2304: [0mCannot find name 'post'.
+
+[7m32[0m             const data = await post.findById(req.params.id);
+[7m  [0m [91m                               ~~~~[0m
+[96msrc/modules/controllers/role.controller.ts[0m:[93m43[0m:[93m32[0m - [91merror[0m[90m TS2304: [0mCannot find name 'post'.
+
+[7m43[0m             const data = await post.update(id, req.body);
+[7m  [0m [91m                               ~~~~[0m
+[96msrc/modules/controllers/role.controller.ts[0m:[93m53[0m:[93m32[0m - [91merror[0m[90m TS2304: [0mCannot find name 'post'.
+
+[7m53[0m             const data = await post.delete(req.params.id);
+[7m  [0m [91m                               ~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/modules/controllers/role.controller.ts[0m:[93m5[0m:[93m18[0m - [91merror[0m[90m TS2304: [0mCannot find name 'RoleService'.
+
+[7m5[0m const role = new RoleService();
+[7m [0m [91m                 ~~~~~~~~~~~[0m
+[96msrc/modules/controllers/role.controller.ts[0m:[93m11[0m:[93m32[0m - [91merror[0m[90m TS2304: [0mCannot find name 'post'.
+
+[7m11[0m             const data = await post.getList(req.query);
+[7m  [0m [91m                               ~~~~[0m
+[96msrc/modules/controllers/role.controller.ts[0m:[93m22[0m:[93m38[0m - [91merror[0m[90m TS2304: [0mCannot find name 'post'.
+
+[7m22[0m             const data = await await post.store(req.body);
+[7m  [0m [91m                                     ~~~~[0m
+[96msrc/modules/controllers/role.controller.ts[0m:[93m32[0m:[93m32[0m - [91merror[0m[90m TS2304: [0mCannot find name 'post'.
+
+[7m32[0m             const data = await post.findById(req.params.id);
+[7m  [0m [91m                               ~~~~[0m
+[96msrc/modules/controllers/role.controller.ts[0m:[93m43[0m:[93m32[0m - [91merror[0m[90m TS2304: [0mCannot find name 'post'.
+
+[7m43[0m             const data = await post.update(id, req.body);
+[7m  [0m [91m                               ~~~~[0m
+[96msrc/modules/controllers/role.controller.ts[0m:[93m53[0m:[93m32[0m - [91merror[0m[90m TS2304: [0mCannot find name 'post'.
+
+[7m53[0m             const data = await post.delete(req.params.id);
+[7m  [0m [91m                               ~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-05 18:45:14 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/modules/controllers/role.controller.ts[0m:[93m5[0m:[93m18[0m - [91merror[0m[90m TS2304: [0mCannot find name 'RoleService'.
+
+[7m5[0m const role = new RoleService();
+[7m [0m [91m                 ~~~~~~~~~~~[0m
+[96msrc/modules/controllers/role.controller.ts[0m:[93m11[0m:[93m32[0m - [91merror[0m[90m TS2304: [0mCannot find name 'post'.
+
+[7m11[0m             const data = await post.getList(req.query);
+[7m  [0m [91m                               ~~~~[0m
+[96msrc/modules/controllers/role.controller.ts[0m:[93m22[0m:[93m38[0m - [91merror[0m[90m TS2304: [0mCannot find name 'post'.
+
+[7m22[0m             const data = await await post.store(req.body);
+[7m  [0m [91m                                     ~~~~[0m
+[96msrc/modules/controllers/role.controller.ts[0m:[93m32[0m:[93m32[0m - [91merror[0m[90m TS2304: [0mCannot find name 'post'.
+
+[7m32[0m             const data = await post.findById(req.params.id);
+[7m  [0m [91m                               ~~~~[0m
+[96msrc/modules/controllers/role.controller.ts[0m:[93m43[0m:[93m32[0m - [91merror[0m[90m TS2304: [0mCannot find name 'post'.
+
+[7m43[0m             const data = await post.update(id, req.body);
+[7m  [0m [91m                               ~~~~[0m
+[96msrc/modules/controllers/role.controller.ts[0m:[93m53[0m:[93m32[0m - [91merror[0m[90m TS2304: [0mCannot find name 'post'.
+
+[7m53[0m             const data = await post.delete(req.params.id);
+[7m  [0m [91m                               ~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/modules/controllers/role.controller.ts[0m:[93m5[0m:[93m18[0m - [91merror[0m[90m TS2304: [0mCannot find name 'RoleService'.
+
+[7m5[0m const role = new RoleService();
+[7m [0m [91m                 ~~~~~~~~~~~[0m
+[96msrc/modules/controllers/role.controller.ts[0m:[93m11[0m:[93m32[0m - [91merror[0m[90m TS2304: [0mCannot find name 'post'.
+
+[7m11[0m             const data = await post.getList(req.query);
+[7m  [0m [91m                               ~~~~[0m
+[96msrc/modules/controllers/role.controller.ts[0m:[93m22[0m:[93m38[0m - [91merror[0m[90m TS2304: [0mCannot find name 'post'.
+
+[7m22[0m             const data = await await post.store(req.body);
+[7m  [0m [91m                                     ~~~~[0m
+[96msrc/modules/controllers/role.controller.ts[0m:[93m32[0m:[93m32[0m - [91merror[0m[90m TS2304: [0mCannot find name 'post'.
+
+[7m32[0m             const data = await post.findById(req.params.id);
+[7m  [0m [91m                               ~~~~[0m
+[96msrc/modules/controllers/role.controller.ts[0m:[93m43[0m:[93m32[0m - [91merror[0m[90m TS2304: [0mCannot find name 'post'.
+
+[7m43[0m             const data = await post.update(id, req.body);
+[7m  [0m [91m                               ~~~~[0m
+[96msrc/modules/controllers/role.controller.ts[0m:[93m53[0m:[93m32[0m - [91merror[0m[90m TS2304: [0mCannot find name 'post'.
+
+[7m53[0m             const data = await post.delete(req.params.id);
+[7m  [0m [91m                               ~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-05 18:45:30 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/modules/controllers/role.controller.ts[0m:[93m5[0m:[93m18[0m - [91merror[0m[90m TS2304: [0mCannot find name 'RoleService'.
+
+[7m5[0m const role = new RoleService();
+[7m [0m [91m                 ~~~~~~~~~~~[0m
+[96msrc/modules/controllers/role.controller.ts[0m:[93m11[0m:[93m32[0m - [91merror[0m[90m TS2304: [0mCannot find name 'post'.
+
+[7m11[0m             const data = await post.getList(req.query);
+[7m  [0m [91m                               ~~~~[0m
+[96msrc/modules/controllers/role.controller.ts[0m:[93m22[0m:[93m38[0m - [91merror[0m[90m TS2304: [0mCannot find name 'post'.
+
+[7m22[0m             const data = await await post.store(req.body);
+[7m  [0m [91m                                     ~~~~[0m
+[96msrc/modules/controllers/role.controller.ts[0m:[93m32[0m:[93m32[0m - [91merror[0m[90m TS2304: [0mCannot find name 'post'.
+
+[7m32[0m             const data = await post.findById(req.params.id);
+[7m  [0m [91m                               ~~~~[0m
+[96msrc/modules/controllers/role.controller.ts[0m:[93m43[0m:[93m32[0m - [91merror[0m[90m TS2304: [0mCannot find name 'post'.
+
+[7m43[0m             const data = await post.update(id, req.body);
+[7m  [0m [91m                               ~~~~[0m
+[96msrc/modules/controllers/role.controller.ts[0m:[93m53[0m:[93m32[0m - [91merror[0m[90m TS2304: [0mCannot find name 'post'.
+
+[7m53[0m             const data = await post.delete(req.params.id);
+[7m  [0m [91m                               ~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/modules/controllers/role.controller.ts[0m:[93m5[0m:[93m18[0m - [91merror[0m[90m TS2304: [0mCannot find name 'RoleService'.
+
+[7m5[0m const role = new RoleService();
+[7m [0m [91m                 ~~~~~~~~~~~[0m
+[96msrc/modules/controllers/role.controller.ts[0m:[93m11[0m:[93m32[0m - [91merror[0m[90m TS2304: [0mCannot find name 'post'.
+
+[7m11[0m             const data = await post.getList(req.query);
+[7m  [0m [91m                               ~~~~[0m
+[96msrc/modules/controllers/role.controller.ts[0m:[93m22[0m:[93m38[0m - [91merror[0m[90m TS2304: [0mCannot find name 'post'.
+
+[7m22[0m             const data = await await post.store(req.body);
+[7m  [0m [91m                                     ~~~~[0m
+[96msrc/modules/controllers/role.controller.ts[0m:[93m32[0m:[93m32[0m - [91merror[0m[90m TS2304: [0mCannot find name 'post'.
+
+[7m32[0m             const data = await post.findById(req.params.id);
+[7m  [0m [91m                               ~~~~[0m
+[96msrc/modules/controllers/role.controller.ts[0m:[93m43[0m:[93m32[0m - [91merror[0m[90m TS2304: [0mCannot find name 'post'.
+
+[7m43[0m             const data = await post.update(id, req.body);
+[7m  [0m [91m                               ~~~~[0m
+[96msrc/modules/controllers/role.controller.ts[0m:[93m53[0m:[93m32[0m - [91merror[0m[90m TS2304: [0mCannot find name 'post'.
+
+[7m53[0m             const data = await post.delete(req.params.id);
+[7m  [0m [91m                               ~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-05 18:45:37 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/modules/controllers/role.controller.ts[0m:[93m5[0m:[93m18[0m - [91merror[0m[90m TS2304: [0mCannot find name 'RoleService'.
+
+[7m5[0m const role = new RoleService();
+[7m [0m [91m                 ~~~~~~~~~~~[0m
+[96msrc/modules/controllers/role.controller.ts[0m:[93m11[0m:[93m32[0m - [91merror[0m[90m TS2304: [0mCannot find name 'post'.
+
+[7m11[0m             const data = await post.getList(req.query);
+[7m  [0m [91m                               ~~~~[0m
+[96msrc/modules/controllers/role.controller.ts[0m:[93m22[0m:[93m38[0m - [91merror[0m[90m TS2304: [0mCannot find name 'post'.
+
+[7m22[0m             const data = await await post.store(req.body);
+[7m  [0m [91m                                     ~~~~[0m
+[96msrc/modules/controllers/role.controller.ts[0m:[93m32[0m:[93m32[0m - [91merror[0m[90m TS2304: [0mCannot find name 'post'.
+
+[7m32[0m             const data = await post.findById(req.params.id);
+[7m  [0m [91m                               ~~~~[0m
+[96msrc/modules/controllers/role.controller.ts[0m:[93m43[0m:[93m32[0m - [91merror[0m[90m TS2304: [0mCannot find name 'post'.
+
+[7m43[0m             const data = await post.update(id, req.body);
+[7m  [0m [91m                               ~~~~[0m
+[96msrc/modules/controllers/role.controller.ts[0m:[93m53[0m:[93m32[0m - [91merror[0m[90m TS2304: [0mCannot find name 'post'.
+
+[7m53[0m             const data = await post.delete(req.params.id);
+[7m  [0m [91m                               ~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/modules/controllers/role.controller.ts[0m:[93m5[0m:[93m18[0m - [91merror[0m[90m TS2304: [0mCannot find name 'RoleService'.
+
+[7m5[0m const role = new RoleService();
+[7m [0m [91m                 ~~~~~~~~~~~[0m
+[96msrc/modules/controllers/role.controller.ts[0m:[93m11[0m:[93m32[0m - [91merror[0m[90m TS2304: [0mCannot find name 'post'.
+
+[7m11[0m             const data = await post.getList(req.query);
+[7m  [0m [91m                               ~~~~[0m
+[96msrc/modules/controllers/role.controller.ts[0m:[93m22[0m:[93m38[0m - [91merror[0m[90m TS2304: [0mCannot find name 'post'.
+
+[7m22[0m             const data = await await post.store(req.body);
+[7m  [0m [91m                                     ~~~~[0m
+[96msrc/modules/controllers/role.controller.ts[0m:[93m32[0m:[93m32[0m - [91merror[0m[90m TS2304: [0mCannot find name 'post'.
+
+[7m32[0m             const data = await post.findById(req.params.id);
+[7m  [0m [91m                               ~~~~[0m
+[96msrc/modules/controllers/role.controller.ts[0m:[93m43[0m:[93m32[0m - [91merror[0m[90m TS2304: [0mCannot find name 'post'.
+
+[7m43[0m             const data = await post.update(id, req.body);
+[7m  [0m [91m                               ~~~~[0m
+[96msrc/modules/controllers/role.controller.ts[0m:[93m53[0m:[93m32[0m - [91merror[0m[90m TS2304: [0mCannot find name 'post'.
+
+[7m53[0m             const data = await post.delete(req.params.id);
+[7m  [0m [91m                               ~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-05 18:45:46 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/modules/controllers/role.controller.ts[0m:[93m5[0m:[93m18[0m - [91merror[0m[90m TS2304: [0mCannot find name 'RoleService'.
+
+[7m5[0m const role = new RoleService();
+[7m [0m [91m                 ~~~~~~~~~~~[0m
+[96msrc/modules/controllers/role.controller.ts[0m:[93m11[0m:[93m32[0m - [91merror[0m[90m TS2304: [0mCannot find name 'post'.
+
+[7m11[0m             const data = await post.getList(req.query);
+[7m  [0m [91m                               ~~~~[0m
+[96msrc/modules/controllers/role.controller.ts[0m:[93m22[0m:[93m38[0m - [91merror[0m[90m TS2304: [0mCannot find name 'post'.
+
+[7m22[0m             const data = await await post.store(req.body);
+[7m  [0m [91m                                     ~~~~[0m
+[96msrc/modules/controllers/role.controller.ts[0m:[93m32[0m:[93m32[0m - [91merror[0m[90m TS2304: [0mCannot find name 'post'.
+
+[7m32[0m             const data = await post.findById(req.params.id);
+[7m  [0m [91m                               ~~~~[0m
+[96msrc/modules/controllers/role.controller.ts[0m:[93m43[0m:[93m32[0m - [91merror[0m[90m TS2304: [0mCannot find name 'post'.
+
+[7m43[0m             const data = await post.update(id, req.body);
+[7m  [0m [91m                               ~~~~[0m
+[96msrc/modules/controllers/role.controller.ts[0m:[93m53[0m:[93m32[0m - [91merror[0m[90m TS2304: [0mCannot find name 'post'.
+
+[7m53[0m             const data = await post.delete(req.params.id);
+[7m  [0m [91m                               ~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/modules/controllers/role.controller.ts[0m:[93m5[0m:[93m18[0m - [91merror[0m[90m TS2304: [0mCannot find name 'RoleService'.
+
+[7m5[0m const role = new RoleService();
+[7m [0m [91m                 ~~~~~~~~~~~[0m
+[96msrc/modules/controllers/role.controller.ts[0m:[93m11[0m:[93m32[0m - [91merror[0m[90m TS2304: [0mCannot find name 'post'.
+
+[7m11[0m             const data = await post.getList(req.query);
+[7m  [0m [91m                               ~~~~[0m
+[96msrc/modules/controllers/role.controller.ts[0m:[93m22[0m:[93m38[0m - [91merror[0m[90m TS2304: [0mCannot find name 'post'.
+
+[7m22[0m             const data = await await post.store(req.body);
+[7m  [0m [91m                                     ~~~~[0m
+[96msrc/modules/controllers/role.controller.ts[0m:[93m32[0m:[93m32[0m - [91merror[0m[90m TS2304: [0mCannot find name 'post'.
+
+[7m32[0m             const data = await post.findById(req.params.id);
+[7m  [0m [91m                               ~~~~[0m
+[96msrc/modules/controllers/role.controller.ts[0m:[93m43[0m:[93m32[0m - [91merror[0m[90m TS2304: [0mCannot find name 'post'.
+
+[7m43[0m             const data = await post.update(id, req.body);
+[7m  [0m [91m                               ~~~~[0m
+[96msrc/modules/controllers/role.controller.ts[0m:[93m53[0m:[93m32[0m - [91merror[0m[90m TS2304: [0mCannot find name 'post'.
+
+[7m53[0m             const data = await post.delete(req.params.id);
+[7m  [0m [91m                               ~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-05 18:52:14 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/services/role.service.ts[0m:[93m54[0m:[93m16[0m - [91merror[0m[90m TS2304: [0mCannot find name 'res'.
+
+[7m54[0m         return res.status(400).send({ 'message': 'query is fail', err });
+[7m  [0m [91m               ~~~[0m
+[96msrc/services/role.service.ts[0m:[93m54[0m:[93m9[0m - [91merror[0m[90m TS1005: [0m'{' expected.
+
+[7m54[0m         return res.status(400).send({ 'message': 'query is fail', err });
+[7m  [0m [91m        ~~~~~~[0m
+[96msrc/services/role.service.ts[0m:[93m55[0m:[93m5[0m - [91merror[0m[90m TS1128: [0mDeclaration or statement expected.
+
+[7m55[0m     )
+[7m  [0m [91m    ~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/services/role.service.ts[0m:[93m54[0m:[93m16[0m - [91merror[0m[90m TS2304: [0mCannot find name 'res'.
+
+[7m54[0m         return res.status(400).send({ 'message': 'query is fail', err });
+[7m  [0m [91m               ~~~[0m
+[96msrc/services/role.service.ts[0m:[93m54[0m:[93m9[0m - [91merror[0m[90m TS1005: [0m'{' expected.
+
+[7m54[0m         return res.status(400).send({ 'message': 'query is fail', err });
+[7m  [0m [91m        ~~~~~~[0m
+[96msrc/services/role.service.ts[0m:[93m55[0m:[93m5[0m - [91merror[0m[90m TS1128: [0mDeclaration or statement expected.
+
+[7m55[0m     )
+[7m  [0m [91m    ~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)

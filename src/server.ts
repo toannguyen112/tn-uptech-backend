@@ -8,6 +8,7 @@ import { PostRoute } from './route/post.route';
 import { ProjectRoute } from './route/project.route';
 import { FolderRoute } from './route/folder.route';
 import { JobRoute } from './route/job.route';
+import { RoleRoute } from './route/role.route';
 
 const routers = [
     new FolderRoute(),
