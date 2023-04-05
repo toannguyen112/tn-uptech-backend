@@ -9,15 +9,12 @@ module.exports = {
         primaryKey: true,
         type: Sequelize.INTEGER
       },
-      role_name: {
+      
+      name: {
         type: Sequelize.STRING,
         allowNull: false,
-        unique: true
       },
-      role_description: {
-        type: Sequelize.STRING,
-        allowNull: true
-      },
+
       createdAt: {
         type: Sequelize.DATE,
         defaultValue: new Date(),

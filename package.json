@@ -1,5 +1,5 @@
 {
-  "name": "portfolio",
+  "name": "tn-uptech",
   "version": "1.0.0",
   "main": "app.ts",
   "repository": "https://github.com/toannguyen112",
@@ -37,9 +37,6 @@
     "fs-extra": "^11.1.1",
     "helmet": "^6.0.1",
     "hpp": "^0.2.3",
-    "i18next": "^22.4.11",
-    "i18next-express-middleware": "^2.0.0",
-    "i18next-node-fs-backend": "^2.1.3",
     "inflection": "^2.0.1",
     "jsonwebtoken": "^8.5.1",
     "lodash": "^4.17.21",
@@ -56,8 +53,6 @@
     "sequelize-cli": "^6.4.1",
     "ts-node": "^10.9.1",
     "tsc-alias": "^1.8.4",
-    "typedi": "^0.10.0",
-    "underscore": "^1.13.6",
     "winston": "^3.8.1",
     "winston-daily-rotate-file": "^4.7.1"
   },

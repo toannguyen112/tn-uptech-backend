@@ -17,6 +17,7 @@ const routers = [
     new CeoRoute(),
     new BannerRoute(),
     new LocaleRoute(),
+    new RoleRoute(),
     new JobRoute(),
 ];
 

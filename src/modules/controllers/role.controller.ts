@@ -1,24 +1,60 @@
-import { Request, Response } from "express";
+import { NextFunction, Request, Response } from 'express';
+import { BaseController } from "./base.controller";
+import { logger } from '../../utils/logger';
 
-export default class RoleController {
-    async index(req: Request, res: Response) {
+const role = new RoleService();
+export class RoleController extends BaseController {
 
+    public async index(req: Request, res: Response, next: NextFunction) {
+
+        try {
+            const data = await post.getList(req.query);
+            res.status(200).send({ message: "ok", data });
+        } catch (error) {
+            logger.error(error);
+            res.status(500).send(error.message);
+        }
     }
 
-    async create(req: Request, res: Response) {
+    public async create(req: Request, res: Response, next: NextFunction) {
 
-
+        try {
+            const data = await await post.store(req.body);
+            res.status(200).send({ message: "ok", data });
+        } catch (error) {
+            logger.error(error);
+            res.status(500).send(error.message);
+        }
     }
 
-    async delete(req: Request, res: Response) {
-        return res.status(200).json('home');
+    public async show(req: Request, res: Response, next: NextFunction) {
+        try {
+            const data = await post.findById(req.params.id);
+            res.status(200).send({ message: "ok", data });
+        } catch (error) {
+            logger.error(error);
+            res.status(500).send(error);
+        }
     }
 
-    async show(req: Request, res: Response) {
-
+    public async update(req: Request, res: Response, next: NextFunction) {
+        try {
+            const { id } = req.params;
+            const data = await post.update(id, req.body);
+            res.status(200).send({ message: "ok", data });
+        } catch (error) {
+            logger.error(error);
+            res.status(500).send(error.message);
+        }
     }
 
-    async update(req: Request, res: Response) {
-
+    public async delete(req: Request, res: Response, next: NextFunction) {
+        try {
+            const data = await post.delete(req.params.id);
+            res.status(200).send({ message: "ok", data });
+        } catch (error) {
+            logger.error(error);
+            res.status(500).send(error.message);
+        }
     }
 }
