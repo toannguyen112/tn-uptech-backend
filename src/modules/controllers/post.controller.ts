@@ -4,6 +4,7 @@ import { PostService } from "../../services/post.service";
 import { logger } from '../../utils/logger';
 
 const post = new PostService();
+
 export class PostController extends BaseController {
 
     public async index(req: Request, res: Response, next: NextFunction) {
