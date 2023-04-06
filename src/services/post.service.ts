@@ -143,6 +143,11 @@ export class PostService {
                     required: false,
                 },
                 {
+                    model: models.Category,
+                    as: "category",
+                    required: false,
+                },
+                {
                     model: models.Ceo,
                     as: "ceo",
                     required: false,
@@ -180,6 +185,8 @@ export class PostService {
 
         return await models.Post.update({
             related: body.related,
+            ceo_id: body.ceo_id,
+            category_id: body.category_id,
             status: body.status,
             images: body.images,
             isFeatured: body.isFeatured,
@@ -187,7 +194,7 @@ export class PostService {
             banner: body.banner ? body.banner.id : null,
         }, { where: { id } },
         )
-            .then(async (res:any) => {
+            .then(async (res: any) => {
                 await this.handleUpdate({ post_id: id, lang: global.lang, body });
             });
     }

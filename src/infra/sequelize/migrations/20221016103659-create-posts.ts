@@ -28,6 +28,15 @@ module.exports = {
         allowNull: true,
       },
 
+      category_id: {
+        type: Sequelize.INTEGER,
+        references: {
+          model: "categories",
+          key: "id",
+        },
+        allowNull: true,
+      },
+
       related: {
         type: Sequelize.JSON,
         defaultValue: [],

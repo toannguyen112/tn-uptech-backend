@@ -18,6 +18,24 @@ module.exports = function (sequelize, DataTypes) {
                 },
             },
 
+            category_id: {
+                type: DataTypes.INTEGER,
+                references: {
+                    model: "categories",
+                    key: "id",
+                },
+                allowNull: true,
+            },
+
+            ceo_id: {
+                type: DataTypes.INTEGER,
+                references: {
+                    model: "ceos",
+                    key: "id",
+                },
+                allowNull: true,
+            },
+
             related: {
                 type: DataTypes.JSON,
                 defaultValue: [],
@@ -88,6 +106,11 @@ module.exports = function (sequelize, DataTypes) {
         Post.hasMany(models.PostTranslation, {
             as: "translations",
             foreignKey: "post_id"
+        });
+
+        Post.belongsTo(models.Category, {
+            as: 'category',
+            foreignKey: "category_id"
         });
     };
 

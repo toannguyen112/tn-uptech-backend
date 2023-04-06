@@ -17,7 +17,6 @@ export class PostDTO {
             createdAt: item.createdAt,
             updatedAt: item.updatedAt,
         }
-
     }
 
     static transformDetail = (item) => {
@@ -29,6 +28,8 @@ export class PostDTO {
             id: item.id,
             name: translationData.name || "",
             slug: translationData.slug || "",
+            ceo_id: item.ceo_id,
+            category_id: item.category_id,
             custom_slug: translationData.custom_slug || "",
             description: translationData.description || "",
             isFeatured: item.isFeatured || false,
