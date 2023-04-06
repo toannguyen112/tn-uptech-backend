@@ -1,0 +1,205 @@
+2023-04-06 07:58:38 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/services/categories.service.ts[0m:[93m104[0m:[93m35[0m - [91merror[0m[90m TS2304: [0mCannot find name 'Helper'.
+
+[7m104[0m                             slug: Helper.renderSlug(body.slug ? body.slug : body.name),
+[7m   [0m [91m                                  ~~~~~~[0m
+[96msrc/services/categories.service.ts[0m:[93m105[0m:[93m42[0m - [91merror[0m[90m TS2304: [0mCannot find name 'Helper'.
+
+[7m105[0m                             custom_slug: Helper.renderSlug(body.custom_slug ? body.custom_slug : body.name),
+[7m   [0m [91m                                         ~~~~~~[0m
+[96msrc/services/categories.service.ts[0m:[93m115[0m:[93m35[0m - [91merror[0m[90m TS2304: [0mCannot find name 'Helper'.
+
+[7m115[0m                             slug: Helper.renderSlug(body.slug ? `en-${body.slug}` : `en-${body.name}`),
+[7m   [0m [91m                                  ~~~~~~[0m
+[96msrc/services/categories.service.ts[0m:[93m116[0m:[93m42[0m - [91merror[0m[90m TS2304: [0mCannot find name 'Helper'.
+
+[7m116[0m                             custom_slug: Helper.renderSlug(body.custom_slug ? `en-${body.custom_slug}` : `en-${body.name}`),
+[7m   [0m [91m                                         ~~~~~~[0m
+[96msrc/services/categories.service.ts[0m:[93m122[0m:[93m25[0m - [91merror[0m[90m TS2304: [0mCannot find name 'logger'.
+
+[7m122[0m                         logger.error(JSON.stringify(error));
+[7m   [0m [91m                        ~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/services/categories.service.ts[0m:[93m104[0m:[93m35[0m - [91merror[0m[90m TS2304: [0mCannot find name 'Helper'.
+
+[7m104[0m                             slug: Helper.renderSlug(body.slug ? body.slug : body.name),
+[7m   [0m [91m                                  ~~~~~~[0m
+[96msrc/services/categories.service.ts[0m:[93m105[0m:[93m42[0m - [91merror[0m[90m TS2304: [0mCannot find name 'Helper'.
+
+[7m105[0m                             custom_slug: Helper.renderSlug(body.custom_slug ? body.custom_slug : body.name),
+[7m   [0m [91m                                         ~~~~~~[0m
+[96msrc/services/categories.service.ts[0m:[93m115[0m:[93m35[0m - [91merror[0m[90m TS2304: [0mCannot find name 'Helper'.
+
+[7m115[0m                             slug: Helper.renderSlug(body.slug ? `en-${body.slug}` : `en-${body.name}`),
+[7m   [0m [91m                                  ~~~~~~[0m
+[96msrc/services/categories.service.ts[0m:[93m116[0m:[93m42[0m - [91merror[0m[90m TS2304: [0mCannot find name 'Helper'.
+
+[7m116[0m                             custom_slug: Helper.renderSlug(body.custom_slug ? `en-${body.custom_slug}` : `en-${body.name}`),
+[7m   [0m [91m                                         ~~~~~~[0m
+[96msrc/services/categories.service.ts[0m:[93m122[0m:[93m25[0m - [91merror[0m[90m TS2304: [0mCannot find name 'logger'.
+
+[7m122[0m                         logger.error(JSON.stringify(error));
+[7m   [0m [91m                        ~~~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-06 08:03:00 error: {"name":"SequelizeEagerLoadingError"}
+2023-04-06 08:03:02 error: {"name":"SequelizeEagerLoadingError"}
+2023-04-06 08:03:03 error: {"name":"SequelizeEagerLoadingError"}
+2023-04-06 08:03:04 error: {"name":"SequelizeEagerLoadingError"}
+2023-04-06 08:03:05 error: {"name":"SequelizeEagerLoadingError"}
+2023-04-06 08:03:06 error: {"name":"SequelizeEagerLoadingError"}
+2023-04-06 08:03:10 error: {"name":"SequelizeEagerLoadingError"}
+2023-04-06 08:04:17 error: {"name":"SequelizeEagerLoadingError"}
+2023-04-06 08:04:20 error: {"name":"SequelizeEagerLoadingError"}
+2023-04-06 08:04:22 error: {"name":"SequelizeEagerLoadingError"}
+2023-04-06 08:04:24 error: {"name":"SequelizeEagerLoadingError"}
+2023-04-06 08:06:58 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/services/categories.service.ts[0m:[93m151[0m:[93m28[0m - [91merror[0m[90m TS2339: [0mProperty 'handleUpdate' does not exist on type 'CategoryService'.
+
+[7m151[0m                 await this.handleUpdate({ post_id: id, lang: global.lang, body });
+[7m   [0m [91m                           ~~~~~~~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/services/categories.service.ts[0m:[93m151[0m:[93m28[0m - [91merror[0m[90m TS2339: [0mProperty 'handleUpdate' does not exist on type 'CategoryService'.
+
+[7m151[0m                 await this.handleUpdate({ post_id: id, lang: global.lang, body });
+[7m   [0m [91m                           ~~~~~~~~~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-06 08:07:16 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/services/categories.service.ts[0m:[93m146[0m:[93m28[0m - [91merror[0m[90m TS2339: [0mProperty 'handleUpdate' does not exist on type 'CategoryService'.
+
+[7m146[0m                 await this.handleUpdate({ post_id: id, lang: global.lang, body });
+[7m   [0m [91m                           ~~~~~~~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/services/categories.service.ts[0m:[93m146[0m:[93m28[0m - [91merror[0m[90m TS2339: [0mProperty 'handleUpdate' does not exist on type 'CategoryService'.
+
+[7m146[0m                 await this.handleUpdate({ post_id: id, lang: global.lang, body });
+[7m   [0m [91m                           ~~~~~~~~~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-06 08:07:24 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/services/categories.service.ts[0m:[93m146[0m:[93m28[0m - [91merror[0m[90m TS2339: [0mProperty 'handleUpdate' does not exist on type 'CategoryService'.
+
+[7m146[0m                 await this.handleUpdate({ post_id: id, lang: global.lang, body });
+[7m   [0m [91m                           ~~~~~~~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/services/categories.service.ts[0m:[93m146[0m:[93m28[0m - [91merror[0m[90m TS2339: [0mProperty 'handleUpdate' does not exist on type 'CategoryService'.
+
+[7m146[0m                 await this.handleUpdate({ post_id: id, lang: global.lang, body });
+[7m   [0m [91m                           ~~~~~~~~~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-06 08:07:42 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/services/categories.service.ts[0m:[93m146[0m:[93m28[0m - [91merror[0m[90m TS2339: [0mProperty 'handleUpdate' does not exist on type 'CategoryService'.
+
+[7m146[0m                 await this.handleUpdate({ post_id: id, lang: global.lang, body });
+[7m   [0m [91m                           ~~~~~~~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/services/categories.service.ts[0m:[93m146[0m:[93m28[0m - [91merror[0m[90m TS2339: [0mProperty 'handleUpdate' does not exist on type 'CategoryService'.
+
+[7m146[0m                 await this.handleUpdate({ post_id: id, lang: global.lang, body });
+[7m   [0m [91m                           ~~~~~~~~~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-06 08:08:00 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/services/categories.service.ts[0m:[93m155[0m:[93m36[0m - [91merror[0m[90m TS18004: [0mNo value exists in scope for the shorthand property 'post_id'. Either declare one or provide an initializer.
+
+[7m155[0m                         { where: { post_id, locale: lang } });
+[7m   [0m [91m                                   ~~~~~~~[0m
+[96msrc/services/categories.service.ts[0m:[93m155[0m:[93m53[0m - [91merror[0m[90m TS2304: [0mCannot find name 'lang'.
+
+[7m155[0m                         { where: { post_id, locale: lang } });
+[7m   [0m [91m                                                    ~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/services/categories.service.ts[0m:[93m155[0m:[93m36[0m - [91merror[0m[90m TS18004: [0mNo value exists in scope for the shorthand property 'post_id'. Either declare one or provide an initializer.
+
+[7m155[0m                         { where: { post_id, locale: lang } });
+[7m   [0m [91m                                   ~~~~~~~[0m
+[96msrc/services/categories.service.ts[0m:[93m155[0m:[93m53[0m - [91merror[0m[90m TS2304: [0mCannot find name 'lang'.
+
+[7m155[0m                         { where: { post_id, locale: lang } });
+[7m   [0m [91m                                                    ~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-06 08:08:09 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/services/categories.service.ts[0m:[93m155[0m:[93m57[0m - [91merror[0m[90m TS2304: [0mCannot find name 'lang'.
+
+[7m155[0m                         { where: { post_id: id, locale: lang } });
+[7m   [0m [91m                                                        ~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/services/categories.service.ts[0m:[93m155[0m:[93m57[0m - [91merror[0m[90m TS2304: [0mCannot find name 'lang'.
+
+[7m155[0m                         { where: { post_id: id, locale: lang } });
+[7m   [0m [91m                                                        ~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)

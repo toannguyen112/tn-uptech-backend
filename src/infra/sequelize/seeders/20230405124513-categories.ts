@@ -16,25 +16,25 @@ module.exports = {
       await queryInterface.bulkInsert("category_translation", [
         {
           id: 1,
-          name: `Name Vi`,
+          name: `Website`,
           category_id: 1,
           locale: `vi`,
         },
         {
           id: 2,
-          name: `Name En`,
+          name: `Website`,
           category_id: 1,
           locale: `en`,
         },
         {
           id: 3,
-          name: `Name Vi`,
+          name: `Ứng dụng di động`,
           category_id: 2,
           locale: `vi`,
         },
         {
           id: 4,
-          name: `Name En`,
+          name: `Android`,
           category_id: 2,
           locale: `en`,
         },

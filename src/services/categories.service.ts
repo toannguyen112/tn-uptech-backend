@@ -1,8 +1,9 @@
 import models from "../infra/sequelize/models";
-import { Service } from 'typedi';
 import { ApiFeatures } from "../utils/ApiFeatures";
 import { CategoryDTO } from "../dtos/category.dtos";
 import { Op } from "sequelize";
+import Helper from "../utils/Helper";
+import { logger } from "../utils/logger";
 export class CategoryService {
 
     public getList = async (query) => {
@@ -87,9 +88,37 @@ export class CategoryService {
     }
 
     public store = async (body) => {
-        return await models.Category.create({
-            ...body,
-        });
+        return await models.Category.create({ ...body })
+            .then(async (category: any) => {
+
+                if (category) {
+                    const categoryId = category.id;
+                    try {
+
+                        const newItem = {
+                            ...body,
+                            slug: Helper.renderSlug(body.slug ? body.slug : body.name),
+                            custom_slug: Helper.renderSlug(body.custom_slug ? body.custom_slug : body.name),
+                        }
+
+                        await models.CategoryTranslation.create({
+                            ...newItem, category_id: categoryId,
+                            locale: 'vi'
+                        });
+
+                        await models.CategoryTranslation.create({
+                            ...newItem,
+                            slug: Helper.renderSlug(body.slug ? `en-${body.slug}` : `en-${body.name}`),
+                            custom_slug: Helper.renderSlug(body.custom_slug ? `en-${body.custom_slug}` : `en-${body.name}`),
+                            category_id: categoryId,
+                            locale: 'en'
+                        });
+
+                    } catch (error) {
+                        logger.error(JSON.stringify(error));
+                    }
+                }
+            });
     }
 
     public findById = async (id: string | number) => {
@@ -98,7 +127,7 @@ export class CategoryService {
             include: [
                 {
                     model: models.CategoryTranslation,
-                    as: "translation",
+                    as: "translations",
                     require: true,
                     where: { locale: global.lang, }
                 },
@@ -109,7 +138,22 @@ export class CategoryService {
     }
 
     public updateById = async (id, body) => {
-        return await models.Category.update({ ...body }, { where: { id } });
+        return await models.Category.update({
+            ...body
+        }, { where: { id } },
+        )
+            .then(async (res) => {
+                try {
+                    return await models.CategoryTranslation.update({
+                        ...body,
+                        slug: Helper.renderSlug(body.slug ? body.slug : body.name),
+                        custom_slug: Helper.renderSlug(body.custom_slug ? body.custom_slug : body.name),
+                    },
+                        { where: { post_id: id, locale: global.lang } });
+                } catch (error) {
+                    console.log(error);
+                }
+            });
     }
 
     public deleteById = async (id) => {

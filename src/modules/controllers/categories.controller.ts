@@ -32,7 +32,8 @@ export class CategoryController {
             const data = await category.findById(req.params.id);
             res.status(200).send({ message: "ok", data });
         } catch (error) {
-            logger.error(JSON.stringify(error));
+            console.log(error);
+            
             res.status(500).send(error.message);
         }
     }
