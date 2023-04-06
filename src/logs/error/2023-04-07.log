@@ -66,3 +66,47 @@ TSError: ⨯ Unable to compile TypeScript:
     at Module.require (node:internal/modules/cjs/loader:1093:19)
 2023-04-07 00:01:55 error: categories is not associated to posts!
 2023-04-07 00:02:02 error: categories is not associated to posts!
+2023-04-07 00:09:15 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/services/post.service.ts[0m:[93m109[0m:[93m13[0m - [91merror[0m[90m TS1117: [0mAn object literal cannot have multiple properties with the same name.
+
+[7m109[0m             thumbnail: body.thumbnail ? body.thumbnail.id : null,
+[7m   [0m [91m            ~~~~~~~~~[0m
+[96msrc/services/post.service.ts[0m:[93m110[0m:[93m13[0m - [91merror[0m[90m TS1117: [0mAn object literal cannot have multiple properties with the same name.
+
+[7m110[0m             banner: body.banner ? body.banner.id : null,
+[7m   [0m [91m            ~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/services/post.service.ts[0m:[93m109[0m:[93m13[0m - [91merror[0m[90m TS1117: [0mAn object literal cannot have multiple properties with the same name.
+
+[7m109[0m             thumbnail: body.thumbnail ? body.thumbnail.id : null,
+[7m   [0m [91m            ~~~~~~~~~[0m
+[96msrc/services/post.service.ts[0m:[93m110[0m:[93m13[0m - [91merror[0m[90m TS1117: [0mAn object literal cannot have multiple properties with the same name.
+
+[7m110[0m             banner: body.banner ? body.banner.id : null,
+[7m   [0m [91m            ~~~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-07 00:15:01 error: Incorrect integer value: '' for column 'category_id' at row 1
+2023-04-07 00:17:55 error: Incorrect integer value: '' for column 'category_id' at row 1
+2023-04-07 00:18:08 error: Incorrect integer value: '' for column 'category_id' at row 1
+2023-04-07 00:18:59 error: Incorrect integer value: '' for column 'category_id' at row 1
+2023-04-07 00:22:51 error: Incorrect integer value: '' for column 'ceo_id' at row 1
+2023-04-07 00:27:48 error: Incorrect integer value: '' for column 'ceo_id' at row 1
+2023-04-07 00:28:30 error: Incorrect integer value: '' for column 'category_id' at row 1
+2023-04-07 00:29:07 error: Incorrect integer value: '' for column 'category_id' at row 1
+2023-04-07 00:29:11 error: Incorrect integer value: '' for column 'category_id' at row 1
+2023-04-07 00:30:01 error: Incorrect integer value: '' for column 'category_id' at row 1
+2023-04-07 00:30:54 error: Cannot add or update a child row: a foreign key constraint fails (`tn-uptech-backend`.`posts`, CONSTRAINT `posts_ibfk_2` FOREIGN KEY (`ceo_id`) REFERENCES `ceos` (`id`))
+2023-04-07 00:33:24 error: Cannot add or update a child row: a foreign key constraint fails (`tn-uptech-backend`.`posts`, CONSTRAINT `posts_ibfk_2` FOREIGN KEY (`ceo_id`) REFERENCES `ceos` (`id`))
+2023-04-07 00:33:44 error: Cannot add or update a child row: a foreign key constraint fails (`tn-uptech-backend`.`posts`, CONSTRAINT `posts_ibfk_3` FOREIGN KEY (`category_id`) REFERENCES `categories` (`id`))
+2023-04-07 00:37:21 error: {"name":"SequelizeUniqueConstraintError","errors":[{"message":"slug must be unique","type":"unique violation","path":"slug","value":"vsvsvs","origin":"DB","instance":{"id":null,"name":"vsvsvs","description":"","content":"","slug":"vsvsvs","custom_slug":"vsvsvs","post_id":9,"locale":"vi"},"validatorKey":"not_unique","validatorName":null,"validatorArgs":[]}],"parent":{"code":"ER_DUP_ENTRY","errno":1062,"sqlState":"23000","sqlMessage":"Duplicate entry 'vsvsvs' for key 'post_translation.slug'","sql":"INSERT INTO `post_translation` (`id`,`post_id`,`locale`,`name`,`content`,`description`,`slug`,`custom_slug`) VALUES (DEFAULT,?,?,?,?,?,?,?);","parameters":[9,"vi","vsvsvs","","","vsvsvs","vsvsvs"]},"original":{"code":"ER_DUP_ENTRY","errno":1062,"sqlState":"23000","sqlMessage":"Duplicate entry 'vsvsvs' for key 'post_translation.slug'","sql":"INSERT INTO `post_translation` (`id`,`post_id`,`locale`,`name`,`content`,`description`,`slug`,`custom_slug`) VALUES (DEFAULT,?,?,?,?,?,?,?);","parameters":[9,"vi","vsvsvs","","","vsvsvs","vsvsvs"]},"fields":{"slug":"vsvsvs"},"sql":"INSERT INTO `post_translation` (`id`,`post_id`,`locale`,`name`,`content`,`description`,`slug`,`custom_slug`) VALUES (DEFAULT,?,?,?,?,?,?,?);"}

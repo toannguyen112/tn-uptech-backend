@@ -8,16 +8,13 @@ export class PostService {
 
     public getList = async (query) => {
         try {
-
             const conditions = {};
-
             const queryObject = {
                 status: query.status,
                 search: query.search,
             };
 
             const excludedFields = ["page", "page_size", "sort_field", "sort_order", "fields"];
-
             excludedFields.forEach((field) => delete queryObject[field]);
 
             const arrQueryObject = Object.entries(queryObject).map((item) => {
@@ -95,7 +92,12 @@ export class PostService {
     public store = async (body) => {
 
         return await models.Post.create({
-            ...body,
+            status: body.status,
+            ceo_id: body.ceo_id,
+            category_id: body.category_id,
+            isFeatured: body.isFeatured,
+            related: body.related,
+            images: body.images,
             thumbnail: body.thumbnail ? body.thumbnail.id : null,
             banner: body.banner ? body.banner.id : null,
         },
@@ -126,6 +128,7 @@ export class PostService {
                         });
 
                     } catch (error) {
+                        console.log(error);
                         logger.error(JSON.stringify(error));
                     }
                 }
@@ -184,12 +187,7 @@ export class PostService {
     public updateById = async (id, body) => {
 
         return await models.Post.update({
-            related: body.related,
-            ceo_id: body.ceo_id,
-            category_id: body.category_id,
-            status: body.status,
-            images: body.images,
-            isFeatured: body.isFeatured,
+            ...body,
             thumbnail: body.thumbnail ? body.thumbnail.id : null,
             banner: body.banner ? body.banner.id : null,
         }, { where: { id } },

@@ -11,11 +11,12 @@ module.exports = function (sequelize, DataTypes) {
             },
 
             thumbnail: {
-                type: DataTypes.STRING,
+                type: DataTypes.INTEGER,
                 references: {
                     model: "medias",
                     key: "id",
                 },
+                allowNull: true,
             },
 
             category_id: {
@@ -43,7 +44,7 @@ module.exports = function (sequelize, DataTypes) {
             },
 
             banner: {
-                type: DataTypes.STRING,
+                type: DataTypes.INTEGER,
                 references: {
                     model: "medias",
                     key: "id",
