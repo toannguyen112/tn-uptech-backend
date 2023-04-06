@@ -24,13 +24,13 @@ module.exports = {
       },
 
       name: {
-        allowNull: true,
         type: Sequelize.STRING,
+        allowNull: true,
       },
 
       description: {
+        type: Sequelize.TEXT('long'),
         allowNull: true,
-        type: Sequelize.STRING,
       },
 
       slug: {

@@ -8,6 +8,7 @@ export class CategoryDTO {
         return {
             id: item.id,
             name: translationData.name || "",
+            description: translationData.description || "",
             slug: item.slug || "",
             type: item.type || "",
             status: item.status,

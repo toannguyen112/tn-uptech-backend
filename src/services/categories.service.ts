@@ -55,7 +55,6 @@ export class CategoryService {
             queryTranslation = { locale: global.lang }
         }
 
-
         const objQuery = new ApiFeatures(query)
             .filter(conditions)
             .includes([
@@ -96,7 +95,7 @@ export class CategoryService {
             .then(async (category: any) => {
 
                 if (category) {
-                    const categoryId = category.id;
+
                     try {
 
                         const newItem = {
@@ -106,7 +105,7 @@ export class CategoryService {
                         }
 
                         await models.CategoryTranslation.create({
-                            ...newItem, category_id: categoryId,
+                            ...newItem, category_id: category.id,
                             locale: 'vi'
                         });
 
@@ -114,18 +113,19 @@ export class CategoryService {
                             ...newItem,
                             slug: Helper.renderSlug(body.slug ? `en-${body.slug}` : `en-${body.name}`),
                             custom_slug: Helper.renderSlug(body.custom_slug ? `en-${body.custom_slug}` : `en-${body.name}`),
-                            category_id: categoryId,
+                            category_id: category.id,
                             locale: 'en'
                         });
 
                     } catch (error) {
+                        console.log((error));
                         logger.error(JSON.stringify(error));
                     }
                 }
             });
     }
 
-    public findById = async (id: string | number) => {
+    public findById = async (id) => {
         const res = await models.Category.findOne({
             where: { id },
             include: [
@@ -141,7 +141,7 @@ export class CategoryService {
         return CategoryDTO.transform(res);
     }
 
-    public updateById = async (id, body) => {
+    public updateById = async (id, body: any) => {
         return await models.Category.update({
             ...body
         }, { where: { id } },
@@ -149,11 +149,11 @@ export class CategoryService {
             .then(async (res) => {
                 try {
                     return await models.CategoryTranslation.update({
-                        ...body,
+                        name: body.name,
+                        description: body.description,
                         slug: Helper.renderSlug(body.slug ? body.slug : body.name),
                         custom_slug: Helper.renderSlug(body.custom_slug ? body.custom_slug : body.name),
-                    },
-                        { where: { post_id: id, locale: global.lang } });
+                    }, { where: { category_id: id, locale: global.lang } });
                 } catch (error) {
                     console.log(error);
                 }
@@ -165,7 +165,7 @@ export class CategoryService {
     }
 
     public deleteMultipleIds = async (ids) => {
-        return await models.Category.destroy({ where: { id: ids } })
+        return await models.Category.destroy({ where: { id: ids } });
     }
 
 }

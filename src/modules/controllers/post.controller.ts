@@ -42,7 +42,7 @@ export class PostController extends BaseController {
     public async update(req: Request, res: Response, next: NextFunction) {
         try {
             const { id } = req.params;
-            const data = await post.update(id, req.body);
+            const data = await post.updateById(id, req.body);
             res.status(200).send({ message: "ok", data });
         } catch (error) {
             logger.error(error);
@@ -52,7 +52,7 @@ export class PostController extends BaseController {
 
     public async delete(req: Request, res: Response, next: NextFunction) {
         try {
-            const data = await post.delete(req.params.id);
+            const data = await post.deleteById(req.params.id);
             res.status(200).send({ message: "ok", data });
         } catch (error) {
             logger.error(error);

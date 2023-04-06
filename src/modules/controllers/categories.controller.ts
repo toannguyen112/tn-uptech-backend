@@ -54,6 +54,7 @@ export class CategoryController {
             const data = await category.updateById(id, req.body);
             res.status(200).send({ message: "ok", data });
         } catch (error) {
+            console.log(error);
             logger.error(JSON.stringify(error));
             res.status(500).send(error.message);
         }

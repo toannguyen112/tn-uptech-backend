@@ -176,7 +176,7 @@ export class PostService {
         return PostDTO.transformDetail(post);
     }
 
-    public update = async (id, body) => {
+    public updateById = async (id, body) => {
 
         return await models.Post.update({
             related: body.related,
@@ -187,13 +187,12 @@ export class PostService {
             banner: body.banner ? body.banner.id : null,
         }, { where: { id } },
         )
-            .then(async (res) => {
+            .then(async (res:any) => {
                 await this.handleUpdate({ post_id: id, lang: global.lang, body });
             });
     }
 
     public handleUpdate = async ({ post_id, lang = "vi", body }) => {
-
         try {
             return await models.PostTranslation.update({
                 name: body.name,
@@ -208,7 +207,11 @@ export class PostService {
         }
     }
 
-    public delete = async (id) => {
+    public deleteById = async (id) => {
         return await models.Post.destroy({ where: { id } });
+    }
+
+    public deleteMultipleIds = async (ids) => {
+        return await models.Post.destroy({ where: { id: ids } });
     }
 }
