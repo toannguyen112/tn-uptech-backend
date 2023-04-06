@@ -87,7 +87,11 @@ export class CategoryService {
         return result;
     }
 
-    public store = async (body) => {
+    public getListType = async (type: string) => {
+        return await models.Category.findAll({ where: { type } });
+    }
+
+    public store = async (body: any) => {
         return await models.Category.create({ ...body })
             .then(async (category: any) => {
 

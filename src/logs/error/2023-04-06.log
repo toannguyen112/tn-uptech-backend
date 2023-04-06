@@ -203,3 +203,179 @@ TSError: ⨯ Unable to compile TypeScript:
     at Module.load (node:internal/modules/cjs/loader:1069:32)
     at Function.Module._load (node:internal/modules/cjs/loader:904:12)
     at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-06 08:12:58 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/route/categories.route.ts[0m:[93m16[0m:[93m55[0m - [91merror[0m[90m TS2339: [0mProperty 'getCategoryTypeProejct' does not exist on type 'CategoryController'.
+
+[7m16[0m         this.router.get(`${this.path}`, this.category.getCategoryTypeProejct);
+[7m  [0m [91m                                                      ~~~~~~~~~~~~~~~~~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/route/categories.route.ts[0m:[93m16[0m:[93m55[0m - [91merror[0m[90m TS2339: [0mProperty 'getCategoryTypeProejct' does not exist on type 'CategoryController'.
+
+[7m16[0m         this.router.get(`${this.path}`, this.category.getCategoryTypeProejct);
+[7m  [0m [91m                                                      ~~~~~~~~~~~~~~~~~~~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-06 08:13:04 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/route/categories.route.ts[0m:[93m16[0m:[93m55[0m - [91merror[0m[90m TS2339: [0mProperty 'getCategoryTypeProject' does not exist on type 'CategoryController'.
+
+[7m16[0m         this.router.get(`${this.path}`, this.category.getCategoryTypeProject);
+[7m  [0m [91m                                                      ~~~~~~~~~~~~~~~~~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/route/categories.route.ts[0m:[93m16[0m:[93m55[0m - [91merror[0m[90m TS2339: [0mProperty 'getCategoryTypeProject' does not exist on type 'CategoryController'.
+
+[7m16[0m         this.router.get(`${this.path}`, this.category.getCategoryTypeProject);
+[7m  [0m [91m                                                      ~~~~~~~~~~~~~~~~~~~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-06 08:13:21 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/route/categories.route.ts[0m:[93m16[0m:[93m61[0m - [91merror[0m[90m TS2339: [0mProperty 'getCategoryType' does not exist on type 'CategoryController'.
+
+[7m16[0m         this.router.get(`${this.path}/:type`, this.category.getCategoryType);
+[7m  [0m [91m                                                            ~~~~~~~~~~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/route/categories.route.ts[0m:[93m16[0m:[93m61[0m - [91merror[0m[90m TS2339: [0mProperty 'getCategoryType' does not exist on type 'CategoryController'.
+
+[7m16[0m         this.router.get(`${this.path}/:type`, this.category.getCategoryType);
+[7m  [0m [91m                                                            ~~~~~~~~~~~~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-06 08:14:01 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/modules/controllers/categories.controller.ts[0m:[93m23[0m:[93m41[0m - [91merror[0m[90m TS2339: [0mProperty 'getType' does not exist on type 'CategoryService'.
+
+[7m23[0m             const data = await category.getType(req.query);
+[7m  [0m [91m                                        ~~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/modules/controllers/categories.controller.ts[0m:[93m23[0m:[93m41[0m - [91merror[0m[90m TS2339: [0mProperty 'getType' does not exist on type 'CategoryService'.
+
+[7m23[0m             const data = await category.getType(req.query);
+[7m  [0m [91m                                        ~~~~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-06 08:14:12 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/modules/controllers/categories.controller.ts[0m:[93m23[0m:[93m41[0m - [91merror[0m[90m TS2339: [0mProperty 'getListType' does not exist on type 'CategoryService'.
+
+[7m23[0m             const data = await category.getListType(req.query);
+[7m  [0m [91m                                        ~~~~~~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/modules/controllers/categories.controller.ts[0m:[93m23[0m:[93m41[0m - [91merror[0m[90m TS2339: [0mProperty 'getListType' does not exist on type 'CategoryService'.
+
+[7m23[0m             const data = await category.getListType(req.query);
+[7m  [0m [91m                                        ~~~~~~~~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-06 08:14:47 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/modules/controllers/categories.controller.ts[0m:[93m23[0m:[93m53[0m - [91merror[0m[90m TS2345: [0mArgument of type 'ParsedQs' is not assignable to parameter of type 'string'.
+
+[7m23[0m             const data = await category.getListType(req.query);
+[7m  [0m [91m                                                    ~~~~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/modules/controllers/categories.controller.ts[0m:[93m23[0m:[93m53[0m - [91merror[0m[90m TS2345: [0mArgument of type 'ParsedQs' is not assignable to parameter of type 'string'.
+
+[7m23[0m             const data = await category.getListType(req.query);
+[7m  [0m [91m                                                    ~~~~~~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-06 08:15:01 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/modules/controllers/categories.controller.ts[0m:[93m23[0m:[93m53[0m - [91merror[0m[90m TS2345: [0mArgument of type 'ParsedQs' is not assignable to parameter of type 'string'.
+
+[7m23[0m             const data = await category.getListType(req.query);
+[7m  [0m [91m                                                    ~~~~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/modules/controllers/categories.controller.ts[0m:[93m23[0m:[93m53[0m - [91merror[0m[90m TS2345: [0mArgument of type 'ParsedQs' is not assignable to parameter of type 'string'.
+
+[7m23[0m             const data = await category.getListType(req.query);
+[7m  [0m [91m                                                    ~~~~~~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-06 08:15:41 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/services/categories.service.ts[0m:[93m92[0m:[93m54[0m - [91merror[0m[90m TS2304: [0mCannot find name 'objQuery'.
+
+[7m92[0m         return await models.Category.findAndCountAll(objQuery);
+[7m  [0m [91m                                                     ~~~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/services/categories.service.ts[0m:[93m92[0m:[93m54[0m - [91merror[0m[90m TS2304: [0mCannot find name 'objQuery'.
+
+[7m92[0m         return await models.Category.findAndCountAll(objQuery);
+[7m  [0m [91m                                                     ~~~~~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)

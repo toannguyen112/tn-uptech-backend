@@ -17,6 +17,16 @@ export class CategoryController {
         }
     }
 
+    public async getCategoryType(req: Request, res: Response, next: NextFunction) {
+
+        try {
+            const data = await category.getListType(req.params.type);
+            res.status(200).send({ message: "ok", data });
+        } catch (error) {
+            res.status(500).send(error.message);
+        }
+    }
+
     public async create(req: Request, res: Response, next: NextFunction) {
         try {
             const data = await await category.store(req.body);
@@ -33,7 +43,7 @@ export class CategoryController {
             res.status(200).send({ message: "ok", data });
         } catch (error) {
             console.log(error);
-            
+
             res.status(500).send(error.message);
         }
     }
