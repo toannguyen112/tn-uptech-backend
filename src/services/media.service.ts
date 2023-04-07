@@ -8,7 +8,7 @@ export class MediaService {
 
     public async storeImage(
         image: any,
-        fodlerId: number = 0,
+        folder: number = 0,
         uploads: string = "uploads",
         disk: string = "storage",
     ): Promise<Media> {
@@ -18,7 +18,7 @@ export class MediaService {
         const file = {
             filename: image.filename,
             disk: diskPath,
-            folder_id: fodlerId,
+            folder_id: folder,
             path,
             extension: "",
             mime: image.mimetype,

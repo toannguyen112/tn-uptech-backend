@@ -1,9 +1,10 @@
 import { PostDTO } from "../dtos/post.dtos";
-import models from "../infra/sequelize/models";
 import { ApiFeatures } from "../utils/ApiFeatures";
 import { Op } from "sequelize";
-import Helper from "../utils/Helper";
 import { logger } from "../utils/logger";
+
+import models from "../infra/sequelize/models";
+import Helper from "../utils/Helper";
 export class PostService {
 
     public getList = async (query) => {
@@ -84,8 +85,10 @@ export class PostService {
             };
 
             return result;
+
         } catch (error) {
-            console.log(error.message);
+            console.log(error);
+            logger.error(JSON.stringify(error));
         }
     }
 

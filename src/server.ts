@@ -10,8 +10,10 @@ import { FolderRoute } from './route/folder.route';
 import { JobRoute } from './route/job.route';
 import { RoleRoute } from './route/role.route';
 import { CategoryRoute } from './route/categories.route';
+import { CommontRoute } from './route/common.route';
 
 const routers = [
+    new CommontRoute(),
     new FolderRoute(),
     new MediaRoute(),
     new ProjectRoute(),

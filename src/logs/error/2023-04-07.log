@@ -276,3 +276,513 @@ TSError: ⨯ Unable to compile TypeScript:
     at Module.load (node:internal/modules/cjs/loader:1069:32)
     at Function.Module._load (node:internal/modules/cjs/loader:904:12)
     at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-07 11:10:22 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/route/common.route.ts[0m:[93m14[0m:[93m46[0m - [91merror[0m[90m TS2339: [0mProperty 'post' does not exist on type 'CommontRoute'.
+
+[7m14[0m         this.router.get(`${this.path}`, this.post.index);
+[7m  [0m [91m                                             ~~~~[0m
+[96msrc/route/common.route.ts[0m:[93m15[0m:[93m54[0m - [91merror[0m[90m TS2339: [0mProperty 'post' does not exist on type 'CommontRoute'.
+
+[7m15[0m         this.router.post(`${this.path}/create`, this.post.create);
+[7m  [0m [91m                                                     ~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/route/common.route.ts[0m:[93m14[0m:[93m46[0m - [91merror[0m[90m TS2339: [0mProperty 'post' does not exist on type 'CommontRoute'.
+
+[7m14[0m         this.router.get(`${this.path}`, this.post.index);
+[7m  [0m [91m                                             ~~~~[0m
+[96msrc/route/common.route.ts[0m:[93m15[0m:[93m54[0m - [91merror[0m[90m TS2339: [0mProperty 'post' does not exist on type 'CommontRoute'.
+
+[7m15[0m         this.router.post(`${this.path}/create`, this.post.create);
+[7m  [0m [91m                                                     ~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-07 11:10:41 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/route/common.route.ts[0m:[93m14[0m:[93m46[0m - [91merror[0m[90m TS2339: [0mProperty 'common' does not exist on type 'CommontRoute'.
+
+[7m14[0m         this.router.get(`${this.path}`, this.common.index);
+[7m  [0m [91m                                             ~~~~~~[0m
+[96msrc/route/common.route.ts[0m:[93m15[0m:[93m54[0m - [91merror[0m[90m TS2339: [0mProperty 'common' does not exist on type 'CommontRoute'.
+
+[7m15[0m         this.router.post(`${this.path}/create`, this.common.create);
+[7m  [0m [91m                                                     ~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/route/common.route.ts[0m:[93m14[0m:[93m46[0m - [91merror[0m[90m TS2339: [0mProperty 'common' does not exist on type 'CommontRoute'.
+
+[7m14[0m         this.router.get(`${this.path}`, this.common.index);
+[7m  [0m [91m                                             ~~~~~~[0m
+[96msrc/route/common.route.ts[0m:[93m15[0m:[93m54[0m - [91merror[0m[90m TS2339: [0mProperty 'common' does not exist on type 'CommontRoute'.
+
+[7m15[0m         this.router.post(`${this.path}/create`, this.common.create);
+[7m  [0m [91m                                                     ~~~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-07 11:10:59 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/route/common.route.ts[0m:[93m14[0m:[93m46[0m - [91merror[0m[90m TS2339: [0mProperty 'commont' does not exist on type 'CommontRoute'.
+
+[7m14[0m         this.router.get(`${this.path}`, this.commont.index);
+[7m  [0m [91m                                             ~~~~~~~[0m
+[96msrc/route/common.route.ts[0m:[93m15[0m:[93m54[0m - [91merror[0m[90m TS2339: [0mProperty 'commont' does not exist on type 'CommontRoute'.
+
+[7m15[0m         this.router.post(`${this.path}/create`, this.commont.create);
+[7m  [0m [91m                                                     ~~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/route/common.route.ts[0m:[93m14[0m:[93m46[0m - [91merror[0m[90m TS2339: [0mProperty 'commont' does not exist on type 'CommontRoute'.
+
+[7m14[0m         this.router.get(`${this.path}`, this.commont.index);
+[7m  [0m [91m                                             ~~~~~~~[0m
+[96msrc/route/common.route.ts[0m:[93m15[0m:[93m54[0m - [91merror[0m[90m TS2339: [0mProperty 'commont' does not exist on type 'CommontRoute'.
+
+[7m15[0m         this.router.post(`${this.path}/create`, this.commont.create);
+[7m  [0m [91m                                                     ~~~~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-07 11:11:11 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/route/common.route.ts[0m:[93m14[0m:[93m46[0m - [91merror[0m[90m TS2339: [0mProperty 'commont' does not exist on type 'CommontRoute'.
+
+[7m14[0m         this.router.get(`${this.path}`, this.commont.index);
+[7m  [0m [91m                                             ~~~~~~~[0m
+[96msrc/route/common.route.ts[0m:[93m15[0m:[93m54[0m - [91merror[0m[90m TS2339: [0mProperty 'commont' does not exist on type 'CommontRoute'.
+
+[7m15[0m         this.router.post(`${this.path}/create`, this.commont.create);
+[7m  [0m [91m                                                     ~~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/route/common.route.ts[0m:[93m14[0m:[93m46[0m - [91merror[0m[90m TS2339: [0mProperty 'commont' does not exist on type 'CommontRoute'.
+
+[7m14[0m         this.router.get(`${this.path}`, this.commont.index);
+[7m  [0m [91m                                             ~~~~~~~[0m
+[96msrc/route/common.route.ts[0m:[93m15[0m:[93m54[0m - [91merror[0m[90m TS2339: [0mProperty 'commont' does not exist on type 'CommontRoute'.
+
+[7m15[0m         this.router.post(`${this.path}/create`, this.commont.create);
+[7m  [0m [91m                                                     ~~~~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-07 11:11:35 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/route/common.route.ts[0m:[93m14[0m:[93m46[0m - [91merror[0m[90m TS2339: [0mProperty 'commont' does not exist on type 'CommontRoute'.
+
+[7m14[0m         this.router.get(`${this.path}`, this.commont.index);
+[7m  [0m [91m                                             ~~~~~~~[0m
+[96msrc/route/common.route.ts[0m:[93m15[0m:[93m54[0m - [91merror[0m[90m TS2339: [0mProperty 'commont' does not exist on type 'CommontRoute'.
+
+[7m15[0m         this.router.post(`${this.path}/create`, this.commont.create);
+[7m  [0m [91m                                                     ~~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/route/common.route.ts[0m:[93m14[0m:[93m46[0m - [91merror[0m[90m TS2339: [0mProperty 'commont' does not exist on type 'CommontRoute'.
+
+[7m14[0m         this.router.get(`${this.path}`, this.commont.index);
+[7m  [0m [91m                                             ~~~~~~~[0m
+[96msrc/route/common.route.ts[0m:[93m15[0m:[93m54[0m - [91merror[0m[90m TS2339: [0mProperty 'commont' does not exist on type 'CommontRoute'.
+
+[7m15[0m         this.router.post(`${this.path}/create`, this.commont.create);
+[7m  [0m [91m                                                     ~~~~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-07 11:11:43 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/route/common.route.ts[0m:[93m14[0m:[93m46[0m - [91merror[0m[90m TS2339: [0mProperty 'commont' does not exist on type 'CommontRoute'.
+
+[7m14[0m         this.router.get(`${this.path}`, this.commont.index);
+[7m  [0m [91m                                             ~~~~~~~[0m
+[96msrc/route/common.route.ts[0m:[93m15[0m:[93m54[0m - [91merror[0m[90m TS2339: [0mProperty 'commont' does not exist on type 'CommontRoute'.
+
+[7m15[0m         this.router.post(`${this.path}/create`, this.commont.create);
+[7m  [0m [91m                                                     ~~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/route/common.route.ts[0m:[93m14[0m:[93m46[0m - [91merror[0m[90m TS2339: [0mProperty 'commont' does not exist on type 'CommontRoute'.
+
+[7m14[0m         this.router.get(`${this.path}`, this.commont.index);
+[7m  [0m [91m                                             ~~~~~~~[0m
+[96msrc/route/common.route.ts[0m:[93m15[0m:[93m54[0m - [91merror[0m[90m TS2339: [0mProperty 'commont' does not exist on type 'CommontRoute'.
+
+[7m15[0m         this.router.post(`${this.path}/create`, this.commont.create);
+[7m  [0m [91m                                                     ~~~~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-07 11:11:50 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/route/common.route.ts[0m:[93m14[0m:[93m46[0m - [91merror[0m[90m TS2339: [0mProperty 'commont' does not exist on type 'CommontRoute'.
+
+[7m14[0m         this.router.get(`${this.path}`, this.commont.index);
+[7m  [0m [91m                                             ~~~~~~~[0m
+[96msrc/route/common.route.ts[0m:[93m15[0m:[93m54[0m - [91merror[0m[90m TS2339: [0mProperty 'commont' does not exist on type 'CommontRoute'.
+
+[7m15[0m         this.router.post(`${this.path}/create`, this.commont.create);
+[7m  [0m [91m                                                     ~~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/route/common.route.ts[0m:[93m14[0m:[93m46[0m - [91merror[0m[90m TS2339: [0mProperty 'commont' does not exist on type 'CommontRoute'.
+
+[7m14[0m         this.router.get(`${this.path}`, this.commont.index);
+[7m  [0m [91m                                             ~~~~~~~[0m
+[96msrc/route/common.route.ts[0m:[93m15[0m:[93m54[0m - [91merror[0m[90m TS2339: [0mProperty 'commont' does not exist on type 'CommontRoute'.
+
+[7m15[0m         this.router.post(`${this.path}/create`, this.commont.create);
+[7m  [0m [91m                                                     ~~~~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-07 11:12:25 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/route/common.route.ts[0m:[93m14[0m:[93m46[0m - [91merror[0m[90m TS2339: [0mProperty 'commont' does not exist on type 'CommontRoute'.
+
+[7m14[0m         this.router.get(`${this.path}`, this.commont.index);
+[7m  [0m [91m                                             ~~~~~~~[0m
+[96msrc/route/common.route.ts[0m:[93m15[0m:[93m54[0m - [91merror[0m[90m TS2339: [0mProperty 'commont' does not exist on type 'CommontRoute'.
+
+[7m15[0m         this.router.post(`${this.path}/create`, this.commont.create);
+[7m  [0m [91m                                                     ~~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/route/common.route.ts[0m:[93m14[0m:[93m46[0m - [91merror[0m[90m TS2339: [0mProperty 'commont' does not exist on type 'CommontRoute'.
+
+[7m14[0m         this.router.get(`${this.path}`, this.commont.index);
+[7m  [0m [91m                                             ~~~~~~~[0m
+[96msrc/route/common.route.ts[0m:[93m15[0m:[93m54[0m - [91merror[0m[90m TS2339: [0mProperty 'commont' does not exist on type 'CommontRoute'.
+
+[7m15[0m         this.router.post(`${this.path}/create`, this.commont.create);
+[7m  [0m [91m                                                     ~~~~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-07 11:12:33 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/route/common.route.ts[0m:[93m14[0m:[93m46[0m - [91merror[0m[90m TS2339: [0mProperty 'commont' does not exist on type 'CommontRoute'.
+
+[7m14[0m         this.router.get(`${this.path}`, this.commont.index);
+[7m  [0m [91m                                             ~~~~~~~[0m
+[96msrc/route/common.route.ts[0m:[93m15[0m:[93m54[0m - [91merror[0m[90m TS2339: [0mProperty 'commont' does not exist on type 'CommontRoute'.
+
+[7m15[0m         this.router.post(`${this.path}/create`, this.commont.create);
+[7m  [0m [91m                                                     ~~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/route/common.route.ts[0m:[93m14[0m:[93m46[0m - [91merror[0m[90m TS2339: [0mProperty 'commont' does not exist on type 'CommontRoute'.
+
+[7m14[0m         this.router.get(`${this.path}`, this.commont.index);
+[7m  [0m [91m                                             ~~~~~~~[0m
+[96msrc/route/common.route.ts[0m:[93m15[0m:[93m54[0m - [91merror[0m[90m TS2339: [0mProperty 'commont' does not exist on type 'CommontRoute'.
+
+[7m15[0m         this.router.post(`${this.path}/create`, this.commont.create);
+[7m  [0m [91m                                                     ~~~~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-07 11:12:47 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/route/common.route.ts[0m:[93m14[0m:[93m46[0m - [91merror[0m[90m TS2339: [0mProperty 'commont' does not exist on type 'CommontRoute'.
+
+[7m14[0m         this.router.get(`${this.path}`, this.commont.index);
+[7m  [0m [91m                                             ~~~~~~~[0m
+[96msrc/route/common.route.ts[0m:[93m15[0m:[93m54[0m - [91merror[0m[90m TS2339: [0mProperty 'commont' does not exist on type 'CommontRoute'.
+
+[7m15[0m         this.router.post(`${this.path}/create`, this.commont.create);
+[7m  [0m [91m                                                     ~~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/route/common.route.ts[0m:[93m14[0m:[93m46[0m - [91merror[0m[90m TS2339: [0mProperty 'commont' does not exist on type 'CommontRoute'.
+
+[7m14[0m         this.router.get(`${this.path}`, this.commont.index);
+[7m  [0m [91m                                             ~~~~~~~[0m
+[96msrc/route/common.route.ts[0m:[93m15[0m:[93m54[0m - [91merror[0m[90m TS2339: [0mProperty 'commont' does not exist on type 'CommontRoute'.
+
+[7m15[0m         this.router.post(`${this.path}/create`, this.commont.create);
+[7m  [0m [91m                                                     ~~~~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-07 11:12:56 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/route/common.route.ts[0m:[93m14[0m:[93m46[0m - [91merror[0m[90m TS2339: [0mProperty 'commont' does not exist on type 'CommontRoute'.
+
+[7m14[0m         this.router.get(`${this.path}`, this.commont.index);
+[7m  [0m [91m                                             ~~~~~~~[0m
+[96msrc/route/common.route.ts[0m:[93m15[0m:[93m54[0m - [91merror[0m[90m TS2339: [0mProperty 'commont' does not exist on type 'CommontRoute'.
+
+[7m15[0m         this.router.post(`${this.path}/create`, this.commont.create);
+[7m  [0m [91m                                                     ~~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/route/common.route.ts[0m:[93m14[0m:[93m46[0m - [91merror[0m[90m TS2339: [0mProperty 'commont' does not exist on type 'CommontRoute'.
+
+[7m14[0m         this.router.get(`${this.path}`, this.commont.index);
+[7m  [0m [91m                                             ~~~~~~~[0m
+[96msrc/route/common.route.ts[0m:[93m15[0m:[93m54[0m - [91merror[0m[90m TS2339: [0mProperty 'commont' does not exist on type 'CommontRoute'.
+
+[7m15[0m         this.router.post(`${this.path}/create`, this.commont.create);
+[7m  [0m [91m                                                     ~~~~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-07 11:13:09 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/route/common.route.ts[0m:[93m14[0m:[93m46[0m - [91merror[0m[90m TS2339: [0mProperty 'commont' does not exist on type 'CommontRoute'.
+
+[7m14[0m         this.router.get(`${this.path}`, this.commont.index);
+[7m  [0m [91m                                             ~~~~~~~[0m
+[96msrc/route/common.route.ts[0m:[93m15[0m:[93m54[0m - [91merror[0m[90m TS2339: [0mProperty 'commont' does not exist on type 'CommontRoute'.
+
+[7m15[0m         this.router.post(`${this.path}/create`, this.commont.create);
+[7m  [0m [91m                                                     ~~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/route/common.route.ts[0m:[93m14[0m:[93m46[0m - [91merror[0m[90m TS2339: [0mProperty 'commont' does not exist on type 'CommontRoute'.
+
+[7m14[0m         this.router.get(`${this.path}`, this.commont.index);
+[7m  [0m [91m                                             ~~~~~~~[0m
+[96msrc/route/common.route.ts[0m:[93m15[0m:[93m54[0m - [91merror[0m[90m TS2339: [0mProperty 'commont' does not exist on type 'CommontRoute'.
+
+[7m15[0m         this.router.post(`${this.path}/create`, this.commont.create);
+[7m  [0m [91m                                                     ~~~~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-07 11:13:19 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/route/common.route.ts[0m:[93m14[0m:[93m46[0m - [91merror[0m[90m TS2339: [0mProperty 'commont' does not exist on type 'CommontRoute'.
+
+[7m14[0m         this.router.get(`${this.path}`, this.commont.index);
+[7m  [0m [91m                                             ~~~~~~~[0m
+[96msrc/route/common.route.ts[0m:[93m15[0m:[93m54[0m - [91merror[0m[90m TS2339: [0mProperty 'commont' does not exist on type 'CommontRoute'.
+
+[7m15[0m         this.router.post(`${this.path}/create`, this.commont.create);
+[7m  [0m [91m                                                     ~~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/route/common.route.ts[0m:[93m14[0m:[93m46[0m - [91merror[0m[90m TS2339: [0mProperty 'commont' does not exist on type 'CommontRoute'.
+
+[7m14[0m         this.router.get(`${this.path}`, this.commont.index);
+[7m  [0m [91m                                             ~~~~~~~[0m
+[96msrc/route/common.route.ts[0m:[93m15[0m:[93m54[0m - [91merror[0m[90m TS2339: [0mProperty 'commont' does not exist on type 'CommontRoute'.
+
+[7m15[0m         this.router.post(`${this.path}/create`, this.commont.create);
+[7m  [0m [91m                                                     ~~~~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-07 11:13:30 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/route/common.route.ts[0m:[93m14[0m:[93m46[0m - [91merror[0m[90m TS2339: [0mProperty 'commont' does not exist on type 'CommontRoute'.
+
+[7m14[0m         this.router.get(`${this.path}`, this.commont.index);
+[7m  [0m [91m                                             ~~~~~~~[0m
+[96msrc/route/common.route.ts[0m:[93m15[0m:[93m54[0m - [91merror[0m[90m TS2339: [0mProperty 'commont' does not exist on type 'CommontRoute'.
+
+[7m15[0m         this.router.post(`${this.path}/create`, this.commont.create);
+[7m  [0m [91m                                                     ~~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/route/common.route.ts[0m:[93m14[0m:[93m46[0m - [91merror[0m[90m TS2339: [0mProperty 'commont' does not exist on type 'CommontRoute'.
+
+[7m14[0m         this.router.get(`${this.path}`, this.commont.index);
+[7m  [0m [91m                                             ~~~~~~~[0m
+[96msrc/route/common.route.ts[0m:[93m15[0m:[93m54[0m - [91merror[0m[90m TS2339: [0mProperty 'commont' does not exist on type 'CommontRoute'.
+
+[7m15[0m         this.router.post(`${this.path}/create`, this.commont.create);
+[7m  [0m [91m                                                     ~~~~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-07 11:13:59 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/route/common.route.ts[0m:[93m14[0m:[93m46[0m - [91merror[0m[90m TS2339: [0mProperty 'commont' does not exist on type 'CommontRoute'.
+
+[7m14[0m         this.router.get(`${this.path}`, this.commont.index);
+[7m  [0m [91m                                             ~~~~~~~[0m
+[96msrc/route/common.route.ts[0m:[93m15[0m:[93m54[0m - [91merror[0m[90m TS2339: [0mProperty 'commont' does not exist on type 'CommontRoute'.
+
+[7m15[0m         this.router.post(`${this.path}/create`, this.commont.create);
+[7m  [0m [91m                                                     ~~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/route/common.route.ts[0m:[93m14[0m:[93m46[0m - [91merror[0m[90m TS2339: [0mProperty 'commont' does not exist on type 'CommontRoute'.
+
+[7m14[0m         this.router.get(`${this.path}`, this.commont.index);
+[7m  [0m [91m                                             ~~~~~~~[0m
+[96msrc/route/common.route.ts[0m:[93m15[0m:[93m54[0m - [91merror[0m[90m TS2339: [0mProperty 'commont' does not exist on type 'CommontRoute'.
+
+[7m15[0m         this.router.post(`${this.path}/create`, this.commont.create);
+[7m  [0m [91m                                                     ~~~~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-07 11:14:11 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/route/common.route.ts[0m:[93m14[0m:[93m46[0m - [91merror[0m[90m TS2339: [0mProperty 'commont' does not exist on type 'CommontRoute'.
+
+[7m14[0m         this.router.get(`${this.path}`, this.commont.index);
+[7m  [0m [91m                                             ~~~~~~~[0m
+[96msrc/route/common.route.ts[0m:[93m15[0m:[93m54[0m - [91merror[0m[90m TS2339: [0mProperty 'commont' does not exist on type 'CommontRoute'.
+
+[7m15[0m         this.router.post(`${this.path}/create`, this.commont.create);
+[7m  [0m [91m                                                     ~~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/route/common.route.ts[0m:[93m14[0m:[93m46[0m - [91merror[0m[90m TS2339: [0mProperty 'commont' does not exist on type 'CommontRoute'.
+
+[7m14[0m         this.router.get(`${this.path}`, this.commont.index);
+[7m  [0m [91m                                             ~~~~~~~[0m
+[96msrc/route/common.route.ts[0m:[93m15[0m:[93m54[0m - [91merror[0m[90m TS2339: [0mProperty 'commont' does not exist on type 'CommontRoute'.
+
+[7m15[0m         this.router.post(`${this.path}/create`, this.commont.create);
+[7m  [0m [91m                                                     ~~~~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-07 11:14:27 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/route/common.route.ts[0m:[93m14[0m:[93m46[0m - [91merror[0m[90m TS2339: [0mProperty 'commont' does not exist on type 'CommontRoute'.
+
+[7m14[0m         this.router.get(`${this.path}`, this.commont.index);
+[7m  [0m [91m                                             ~~~~~~~[0m
+[96msrc/route/common.route.ts[0m:[93m15[0m:[93m54[0m - [91merror[0m[90m TS2339: [0mProperty 'commont' does not exist on type 'CommontRoute'.
+
+[7m15[0m         this.router.post(`${this.path}/create`, this.commont.create);
+[7m  [0m [91m                                                     ~~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/route/common.route.ts[0m:[93m14[0m:[93m46[0m - [91merror[0m[90m TS2339: [0mProperty 'commont' does not exist on type 'CommontRoute'.
+
+[7m14[0m         this.router.get(`${this.path}`, this.commont.index);
+[7m  [0m [91m                                             ~~~~~~~[0m
+[96msrc/route/common.route.ts[0m:[93m15[0m:[93m54[0m - [91merror[0m[90m TS2339: [0mProperty 'commont' does not exist on type 'CommontRoute'.
+
+[7m15[0m         this.router.post(`${this.path}/create`, this.commont.create);
+[7m  [0m [91m                                                     ~~~~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
