@@ -12,6 +12,7 @@ export class FolderController extends BaseController {
       const getTreeFolder: Folder[] = await folder.index();
       this.success(res, getTreeFolder, "success");
     } catch (error) {
+      console.log(error);
       next(error);
     }
   }
@@ -19,18 +20,20 @@ export class FolderController extends BaseController {
   public getMedias = async (req: Request, res: Response, next: NextFunction) => {
     try {
       const folderId = req.body.folderId;
-      const data: Media[] = await folder.getMeidas(folderId);
+      const data: Media[] = await folder.getMedias(folderId);
       this.success(res, data, "success");
     } catch (error) {
+      console.log(error);
       next(error);
     }
   }
 
   public create = async (req: Request, res: Response, next: NextFunction) => {
     try {
-      const newfolder = await await folder.create(req.body);
-      this.success(res, newfolder, "success");
+      const newItem = await await folder.create(req.body);
+      this.success(res, newItem, "success");
     } catch (error) {
+      console.log(error);
       next(error);
     }
   }
@@ -40,6 +43,7 @@ export class FolderController extends BaseController {
       const data = await await folder.delete(req.params.id);
       this.success(res, data, "success");
     } catch (error) {
+      console.log(error);
       next(error);
     }
   }
