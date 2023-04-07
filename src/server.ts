@@ -11,8 +11,10 @@ import { JobRoute } from './route/job.route';
 import { RoleRoute } from './route/role.route';
 import { CategoryRoute } from './route/categories.route';
 import { CommontRoute } from './route/common.route';
+import { AdminRoute } from './route/admin.route';
 
 const routers = [
+    new AdminRoute(),
     new CommontRoute(),
     new FolderRoute(),
     new MediaRoute(),

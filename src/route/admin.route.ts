@@ -3,7 +3,7 @@ import { Router } from "express";
 import { Routes } from "../interface/routes.interface";
 import AdminController from "../modules/controllers/admin.controller";
 
-export class AminRoute implements Routes {
+export class AdminRoute implements Routes {
     public path = '/admins';
     public router = Router();
     public admin = new AdminController();

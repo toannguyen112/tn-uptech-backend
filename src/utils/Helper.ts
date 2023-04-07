@@ -23,7 +23,7 @@ export default class Helper {
     return dayjs(date).format(format);
   }
 
-  public static async emptyDirSync() {
+  public static async emptyDirSync(){
     try {
       await fs.emptyDirSync('./storage/uploads');
       console.log('success!')

@@ -12,6 +12,6 @@ export class CommontRoute implements Routes {
     }
 
     private initializeRoutes() {
-        this.router.get(`${this.path}`, this.commont.emptyDirSync);
+        this.router.get(`${this.path}/emptyDirSync`, this.commont.emptyDirSync);
     }
 }

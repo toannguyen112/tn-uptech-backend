@@ -786,3 +786,247 @@ TSError: ⨯ Unable to compile TypeScript:
     at Module.load (node:internal/modules/cjs/loader:1069:32)
     at Function.Module._load (node:internal/modules/cjs/loader:904:12)
     at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-07 11:31:49 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/modules/controllers/commont.controller.ts[0m:[93m12[0m:[93m17[0m - [91merror[0m[90m TS1345: [0mAn expression of type 'void' cannot be tested for truthiness.
+
+[7m12[0m             if (result) {
+[7m  [0m [91m                ~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/modules/controllers/commont.controller.ts[0m:[93m12[0m:[93m17[0m - [91merror[0m[90m TS1345: [0mAn expression of type 'void' cannot be tested for truthiness.
+
+[7m12[0m             if (result) {
+[7m  [0m [91m                ~~~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-07 11:31:57 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/modules/controllers/commont.controller.ts[0m:[93m13[0m:[93m17[0m - [91merror[0m[90m TS1345: [0mAn expression of type 'void' cannot be tested for truthiness.
+
+[7m13[0m             if (result) {
+[7m  [0m [91m                ~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/modules/controllers/commont.controller.ts[0m:[93m13[0m:[93m17[0m - [91merror[0m[90m TS1345: [0mAn expression of type 'void' cannot be tested for truthiness.
+
+[7m13[0m             if (result) {
+[7m  [0m [91m                ~~~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-07 11:32:06 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/utils/Helper.ts[0m:[93m26[0m:[93m39[0m - [91merror[0m[90m TS1064: [0mThe return type of an async function or method must be the global Promise<T> type. Did you mean to write 'Promise<void>'?
+
+[7m26[0m   public static async emptyDirSync(): void {
+[7m  [0m [91m                                      ~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/utils/Helper.ts[0m:[93m26[0m:[93m39[0m - [91merror[0m[90m TS1064: [0mThe return type of an async function or method must be the global Promise<T> type. Did you mean to write 'Promise<void>'?
+
+[7m26[0m   public static async emptyDirSync(): void {
+[7m  [0m [91m                                      ~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-07 11:38:25 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/modules/controllers/admin.controller.ts[0m:[93m40[0m:[93m32[0m - [91merror[0m[90m TS2304: [0mCannot find name 'banner'.
+
+[7m40[0m             const data = await banner.deleteById(req.params.id);
+[7m  [0m [91m                               ~~~~~~[0m
+[96msrc/modules/controllers/admin.controller.ts[0m:[93m50[0m:[93m32[0m - [91merror[0m[90m TS2304: [0mCannot find name 'banner'.
+
+[7m50[0m             const data = await banner.deleteMultipleIds(ids);
+[7m  [0m [91m                               ~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/modules/controllers/admin.controller.ts[0m:[93m40[0m:[93m32[0m - [91merror[0m[90m TS2304: [0mCannot find name 'banner'.
+
+[7m40[0m             const data = await banner.deleteById(req.params.id);
+[7m  [0m [91m                               ~~~~~~[0m
+[96msrc/modules/controllers/admin.controller.ts[0m:[93m50[0m:[93m32[0m - [91merror[0m[90m TS2304: [0mCannot find name 'banner'.
+
+[7m50[0m             const data = await banner.deleteMultipleIds(ids);
+[7m  [0m [91m                               ~~~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-07 11:38:32 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/modules/controllers/admin.controller.ts[0m:[93m40[0m:[93m32[0m - [91merror[0m[90m TS2304: [0mCannot find name 'admin'.
+
+[7m40[0m             const data = await admin.deleteById(req.params.id);
+[7m  [0m [91m                               ~~~~~[0m
+[96msrc/modules/controllers/admin.controller.ts[0m:[93m50[0m:[93m32[0m - [91merror[0m[90m TS2304: [0mCannot find name 'admin'.
+
+[7m50[0m             const data = await admin.deleteMultipleIds(ids);
+[7m  [0m [91m                               ~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/modules/controllers/admin.controller.ts[0m:[93m40[0m:[93m32[0m - [91merror[0m[90m TS2304: [0mCannot find name 'admin'.
+
+[7m40[0m             const data = await admin.deleteById(req.params.id);
+[7m  [0m [91m                               ~~~~~[0m
+[96msrc/modules/controllers/admin.controller.ts[0m:[93m50[0m:[93m32[0m - [91merror[0m[90m TS2304: [0mCannot find name 'admin'.
+
+[7m50[0m             const data = await admin.deleteMultipleIds(ids);
+[7m  [0m [91m                               ~~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-07 11:38:50 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/modules/controllers/admin.controller.ts[0m:[93m5[0m:[93m19[0m - [91merror[0m[90m TS2304: [0mCannot find name 'BannerService'.
+
+[7m5[0m const admin = new BannerService();
+[7m [0m [91m                  ~~~~~~~~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/modules/controllers/admin.controller.ts[0m:[93m5[0m:[93m19[0m - [91merror[0m[90m TS2304: [0mCannot find name 'BannerService'.
+
+[7m5[0m const admin = new BannerService();
+[7m [0m [91m                  ~~~~~~~~~~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-07 11:39:05 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/modules/controllers/admin.controller.ts[0m:[93m42[0m:[93m38[0m - [91merror[0m[90m TS2339: [0mProperty 'deleteById' does not exist on type 'AdminService'.
+
+[7m42[0m             const data = await admin.deleteById(req.params.id);
+[7m  [0m [91m                                     ~~~~~~~~~~[0m
+[96msrc/modules/controllers/admin.controller.ts[0m:[93m52[0m:[93m38[0m - [91merror[0m[90m TS2339: [0mProperty 'deleteMultipleIds' does not exist on type 'AdminService'.
+
+[7m52[0m             const data = await admin.deleteMultipleIds(ids);
+[7m  [0m [91m                                     ~~~~~~~~~~~~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/modules/controllers/admin.controller.ts[0m:[93m42[0m:[93m38[0m - [91merror[0m[90m TS2339: [0mProperty 'deleteById' does not exist on type 'AdminService'.
+
+[7m42[0m             const data = await admin.deleteById(req.params.id);
+[7m  [0m [91m                                     ~~~~~~~~~~[0m
+[96msrc/modules/controllers/admin.controller.ts[0m:[93m52[0m:[93m38[0m - [91merror[0m[90m TS2339: [0mProperty 'deleteMultipleIds' does not exist on type 'AdminService'.
+
+[7m52[0m             const data = await admin.deleteMultipleIds(ids);
+[7m  [0m [91m                                     ~~~~~~~~~~~~~~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-07 11:39:20 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/modules/controllers/admin.controller.ts[0m:[93m52[0m:[93m38[0m - [91merror[0m[90m TS2339: [0mProperty 'deleteMultipleIds' does not exist on type 'AdminService'.
+
+[7m52[0m             const data = await admin.deleteMultipleIds(ids);
+[7m  [0m [91m                                     ~~~~~~~~~~~~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/modules/controllers/admin.controller.ts[0m:[93m52[0m:[93m38[0m - [91merror[0m[90m TS2339: [0mProperty 'deleteMultipleIds' does not exist on type 'AdminService'.
+
+[7m52[0m             const data = await admin.deleteMultipleIds(ids);
+[7m  [0m [91m                                     ~~~~~~~~~~~~~~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-07 11:40:49 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/modules/controllers/admin.controller.ts[0m:[93m39[0m:[93m67[0m - [91merror[0m[90m TS1005: [0m',' expected.
+
+[7m39[0m             const data = await models.Admin.findOne({ where: { req.params.id } });
+[7m  [0m [91m                                                                  ~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/modules/controllers/admin.controller.ts[0m:[93m39[0m:[93m67[0m - [91merror[0m[90m TS1005: [0m',' expected.
+
+[7m39[0m             const data = await models.Admin.findOne({ where: { req.params.id } });
+[7m  [0m [91m                                                                  ~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-07 11:41:37 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/modules/controllers/admin.controller.ts[0m:[93m50[0m:[93m51[0m - [91merror[0m[90m TS18004: [0mNo value exists in scope for the shorthand property 'data'. Either declare one or provide an initializer.
+
+[7m50[0m             res.status(200).send({ message: "ok", data });
+[7m  [0m [91m                                                  ~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/modules/controllers/admin.controller.ts[0m:[93m50[0m:[93m51[0m - [91merror[0m[90m TS18004: [0mNo value exists in scope for the shorthand property 'data'. Either declare one or provide an initializer.
+
+[7m50[0m             res.status(200).send({ message: "ok", data });
+[7m  [0m [91m                                                  ~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
