@@ -1,9 +1,8 @@
 import models from "../infra/sequelize/models";
 import { Folder } from "../interface/folder.interface";
-import { Service } from 'typedi';
 import { Op } from "sequelize";
 import { Media } from "../interface/media.interface";
-@Service()
+
 export class FolderService {
 
     private attributes = [

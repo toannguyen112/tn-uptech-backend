@@ -110,3 +110,169 @@ TSError: ⨯ Unable to compile TypeScript:
 2023-04-07 00:33:24 error: Cannot add or update a child row: a foreign key constraint fails (`tn-uptech-backend`.`posts`, CONSTRAINT `posts_ibfk_2` FOREIGN KEY (`ceo_id`) REFERENCES `ceos` (`id`))
 2023-04-07 00:33:44 error: Cannot add or update a child row: a foreign key constraint fails (`tn-uptech-backend`.`posts`, CONSTRAINT `posts_ibfk_3` FOREIGN KEY (`category_id`) REFERENCES `categories` (`id`))
 2023-04-07 00:37:21 error: {"name":"SequelizeUniqueConstraintError","errors":[{"message":"slug must be unique","type":"unique violation","path":"slug","value":"vsvsvs","origin":"DB","instance":{"id":null,"name":"vsvsvs","description":"","content":"","slug":"vsvsvs","custom_slug":"vsvsvs","post_id":9,"locale":"vi"},"validatorKey":"not_unique","validatorName":null,"validatorArgs":[]}],"parent":{"code":"ER_DUP_ENTRY","errno":1062,"sqlState":"23000","sqlMessage":"Duplicate entry 'vsvsvs' for key 'post_translation.slug'","sql":"INSERT INTO `post_translation` (`id`,`post_id`,`locale`,`name`,`content`,`description`,`slug`,`custom_slug`) VALUES (DEFAULT,?,?,?,?,?,?,?);","parameters":[9,"vi","vsvsvs","","","vsvsvs","vsvsvs"]},"original":{"code":"ER_DUP_ENTRY","errno":1062,"sqlState":"23000","sqlMessage":"Duplicate entry 'vsvsvs' for key 'post_translation.slug'","sql":"INSERT INTO `post_translation` (`id`,`post_id`,`locale`,`name`,`content`,`description`,`slug`,`custom_slug`) VALUES (DEFAULT,?,?,?,?,?,?,?);","parameters":[9,"vi","vsvsvs","","","vsvsvs","vsvsvs"]},"fields":{"slug":"vsvsvs"},"sql":"INSERT INTO `post_translation` (`id`,`post_id`,`locale`,`name`,`content`,`description`,`slug`,`custom_slug`) VALUES (DEFAULT,?,?,?,?,?,?,?);"}
+2023-04-07 10:52:52 error: uncaughtException: Service with "MaybeConstructable<FolderService>" identifier was not found in the container. Register it before usage via explicitly calling the "Container.set" function or using the "@Service()" decorator.
+ServiceNotFoundError: Service with "MaybeConstructable<FolderService>" identifier was not found in the container. Register it before usage via explicitly calling the "Container.set" function or using the "@Service()" decorator.
+    at ContainerInstance.get (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/src/container-instance.class.ts:75:11)
+    at Function.get (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/src/container.class.ts:61:32)
+    at new FolderController (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/modules/controllers/folder.controller.ts:10:29)
+    at new FolderRoute (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/route/folder.route.ts:8:21)
+    at Object.<anonymous> (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/server.ts:15:5)
+    at Module._compile (node:internal/modules/cjs/loader:1191:14)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1618:23)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+2023-04-07 10:52:59 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/modules/controllers/folder.controller.ts[0m:[93m12[0m:[93m50[0m - [91merror[0m[90m TS2339: [0mProperty 'folder' does not exist on type 'FolderController'.
+
+[7m12[0m       const getTreeFolder: Folder[] = await this.folder.index();
+[7m  [0m [91m                                                 ~~~~~~[0m
+[96msrc/modules/controllers/folder.controller.ts[0m:[93m22[0m:[93m40[0m - [91merror[0m[90m TS2339: [0mProperty 'folder' does not exist on type 'FolderController'.
+
+[7m22[0m       const data: Media[] = await this.folder.getMeidas(folderId);
+[7m  [0m [91m                                       ~~~~~~[0m
+[96msrc/modules/controllers/folder.controller.ts[0m:[93m31[0m:[93m42[0m - [91merror[0m[90m TS2339: [0mProperty 'folder' does not exist on type 'FolderController'.
+
+[7m31[0m       const newfolder = await await this.folder.create(req.body);
+[7m  [0m [91m                                         ~~~~~~[0m
+[96msrc/modules/controllers/folder.controller.ts[0m:[93m40[0m:[93m37[0m - [91merror[0m[90m TS2339: [0mProperty 'folder' does not exist on type 'FolderController'.
+
+[7m40[0m       const data = await await this.folder.delete(req.params.id);
+[7m  [0m [91m                                    ~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/modules/controllers/folder.controller.ts[0m:[93m12[0m:[93m50[0m - [91merror[0m[90m TS2339: [0mProperty 'folder' does not exist on type 'FolderController'.
+
+[7m12[0m       const getTreeFolder: Folder[] = await this.folder.index();
+[7m  [0m [91m                                                 ~~~~~~[0m
+[96msrc/modules/controllers/folder.controller.ts[0m:[93m22[0m:[93m40[0m - [91merror[0m[90m TS2339: [0mProperty 'folder' does not exist on type 'FolderController'.
+
+[7m22[0m       const data: Media[] = await this.folder.getMeidas(folderId);
+[7m  [0m [91m                                       ~~~~~~[0m
+[96msrc/modules/controllers/folder.controller.ts[0m:[93m31[0m:[93m42[0m - [91merror[0m[90m TS2339: [0mProperty 'folder' does not exist on type 'FolderController'.
+
+[7m31[0m       const newfolder = await await this.folder.create(req.body);
+[7m  [0m [91m                                         ~~~~~~[0m
+[96msrc/modules/controllers/folder.controller.ts[0m:[93m40[0m:[93m37[0m - [91merror[0m[90m TS2339: [0mProperty 'folder' does not exist on type 'FolderController'.
+
+[7m40[0m       const data = await await this.folder.delete(req.params.id);
+[7m  [0m [91m                                    ~~~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-07 10:53:21 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/modules/controllers/folder.controller.ts[0m:[93m6[0m:[93m19[0m - [91merror[0m[90m TS2304: [0mCannot find name 'MediaService'.
+
+[7m6[0m const media = new MediaService();
+[7m [0m [91m                  ~~~~~~~~~~~~[0m
+[96msrc/modules/controllers/folder.controller.ts[0m:[93m11[0m:[93m50[0m - [91merror[0m[90m TS2339: [0mProperty 'folder' does not exist on type 'FolderController'.
+
+[7m11[0m       const getTreeFolder: Folder[] = await this.folder.index();
+[7m  [0m [91m                                                 ~~~~~~[0m
+[96msrc/modules/controllers/folder.controller.ts[0m:[93m21[0m:[93m40[0m - [91merror[0m[90m TS2339: [0mProperty 'folder' does not exist on type 'FolderController'.
+
+[7m21[0m       const data: Media[] = await this.folder.getMeidas(folderId);
+[7m  [0m [91m                                       ~~~~~~[0m
+[96msrc/modules/controllers/folder.controller.ts[0m:[93m30[0m:[93m42[0m - [91merror[0m[90m TS2339: [0mProperty 'folder' does not exist on type 'FolderController'.
+
+[7m30[0m       const newfolder = await await this.folder.create(req.body);
+[7m  [0m [91m                                         ~~~~~~[0m
+[96msrc/modules/controllers/folder.controller.ts[0m:[93m39[0m:[93m37[0m - [91merror[0m[90m TS2339: [0mProperty 'folder' does not exist on type 'FolderController'.
+
+[7m39[0m       const data = await await this.folder.delete(req.params.id);
+[7m  [0m [91m                                    ~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/modules/controllers/folder.controller.ts[0m:[93m6[0m:[93m19[0m - [91merror[0m[90m TS2304: [0mCannot find name 'MediaService'.
+
+[7m6[0m const media = new MediaService();
+[7m [0m [91m                  ~~~~~~~~~~~~[0m
+[96msrc/modules/controllers/folder.controller.ts[0m:[93m11[0m:[93m50[0m - [91merror[0m[90m TS2339: [0mProperty 'folder' does not exist on type 'FolderController'.
+
+[7m11[0m       const getTreeFolder: Folder[] = await this.folder.index();
+[7m  [0m [91m                                                 ~~~~~~[0m
+[96msrc/modules/controllers/folder.controller.ts[0m:[93m21[0m:[93m40[0m - [91merror[0m[90m TS2339: [0mProperty 'folder' does not exist on type 'FolderController'.
+
+[7m21[0m       const data: Media[] = await this.folder.getMeidas(folderId);
+[7m  [0m [91m                                       ~~~~~~[0m
+[96msrc/modules/controllers/folder.controller.ts[0m:[93m30[0m:[93m42[0m - [91merror[0m[90m TS2339: [0mProperty 'folder' does not exist on type 'FolderController'.
+
+[7m30[0m       const newfolder = await await this.folder.create(req.body);
+[7m  [0m [91m                                         ~~~~~~[0m
+[96msrc/modules/controllers/folder.controller.ts[0m:[93m39[0m:[93m37[0m - [91merror[0m[90m TS2339: [0mProperty 'folder' does not exist on type 'FolderController'.
+
+[7m39[0m       const data = await await this.folder.delete(req.params.id);
+[7m  [0m [91m                                    ~~~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-07 10:53:32 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/modules/controllers/folder.controller.ts[0m:[93m6[0m:[93m20[0m - [91merror[0m[90m TS2304: [0mCannot find name 'FolderService'.
+
+[7m6[0m const folder = new FolderService();
+[7m [0m [91m                   ~~~~~~~~~~~~~[0m
+[96msrc/modules/controllers/folder.controller.ts[0m:[93m11[0m:[93m50[0m - [91merror[0m[90m TS2339: [0mProperty 'folder' does not exist on type 'FolderController'.
+
+[7m11[0m       const getTreeFolder: Folder[] = await this.folder.index();
+[7m  [0m [91m                                                 ~~~~~~[0m
+[96msrc/modules/controllers/folder.controller.ts[0m:[93m21[0m:[93m40[0m - [91merror[0m[90m TS2339: [0mProperty 'folder' does not exist on type 'FolderController'.
+
+[7m21[0m       const data: Media[] = await this.folder.getMeidas(folderId);
+[7m  [0m [91m                                       ~~~~~~[0m
+[96msrc/modules/controllers/folder.controller.ts[0m:[93m30[0m:[93m42[0m - [91merror[0m[90m TS2339: [0mProperty 'folder' does not exist on type 'FolderController'.
+
+[7m30[0m       const newfolder = await await this.folder.create(req.body);
+[7m  [0m [91m                                         ~~~~~~[0m
+[96msrc/modules/controllers/folder.controller.ts[0m:[93m39[0m:[93m37[0m - [91merror[0m[90m TS2339: [0mProperty 'folder' does not exist on type 'FolderController'.
+
+[7m39[0m       const data = await await this.folder.delete(req.params.id);
+[7m  [0m [91m                                    ~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/modules/controllers/folder.controller.ts[0m:[93m6[0m:[93m20[0m - [91merror[0m[90m TS2304: [0mCannot find name 'FolderService'.
+
+[7m6[0m const folder = new FolderService();
+[7m [0m [91m                   ~~~~~~~~~~~~~[0m
+[96msrc/modules/controllers/folder.controller.ts[0m:[93m11[0m:[93m50[0m - [91merror[0m[90m TS2339: [0mProperty 'folder' does not exist on type 'FolderController'.
+
+[7m11[0m       const getTreeFolder: Folder[] = await this.folder.index();
+[7m  [0m [91m                                                 ~~~~~~[0m
+[96msrc/modules/controllers/folder.controller.ts[0m:[93m21[0m:[93m40[0m - [91merror[0m[90m TS2339: [0mProperty 'folder' does not exist on type 'FolderController'.
+
+[7m21[0m       const data: Media[] = await this.folder.getMeidas(folderId);
+[7m  [0m [91m                                       ~~~~~~[0m
+[96msrc/modules/controllers/folder.controller.ts[0m:[93m30[0m:[93m42[0m - [91merror[0m[90m TS2339: [0mProperty 'folder' does not exist on type 'FolderController'.
+
+[7m30[0m       const newfolder = await await this.folder.create(req.body);
+[7m  [0m [91m                                         ~~~~~~[0m
+[96msrc/modules/controllers/folder.controller.ts[0m:[93m39[0m:[93m37[0m - [91merror[0m[90m TS2339: [0mProperty 'folder' does not exist on type 'FolderController'.
+
+[7m39[0m       const data = await await this.folder.delete(req.params.id);
+[7m  [0m [91m                                    ~~~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
