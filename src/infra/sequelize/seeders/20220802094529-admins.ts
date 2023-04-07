@@ -5,6 +5,7 @@ module.exports = {
       {
         id: 1,
         username: `admin`,
+        email: `admin@gmail.com`,
         name: `admin`,
         password: `admin`,
       },

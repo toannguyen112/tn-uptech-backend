@@ -9,15 +9,13 @@ module.exports = {
         primaryKey: true,
         type: Sequelize.INTEGER
       },
-      perm_name: {
+
+      name: {
         type: Sequelize.STRING,
         unique: true,
         allowNull: false
       },
-      perm_description: {
-        type: Sequelize.STRING,
-        unique: false
-      },
+
       createdAt: {
         type: Sequelize.DATE,
         defaultValue: new Date(),

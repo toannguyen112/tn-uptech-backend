@@ -1,3 +1,5 @@
+import Helper from "../../../utils/Helper";
+
 module.exports = function (sequelize, DataTypes) {
     const Admin = sequelize.define(
         "admins",
@@ -42,11 +44,17 @@ module.exports = function (sequelize, DataTypes) {
             createdAt: {
                 type: DataTypes.DATE,
                 defaultValue: new Date(),
+                get() {
+                    return Helper.formatDayJs(this.getDataValue('createdAt'));
+                }
             },
 
             updatedAt: {
                 type: DataTypes.DATE,
                 defaultValue: new Date(),
+                get() {
+                    return Helper.formatDayJs(this.getDataValue('updatedAt'));
+                }
             },
         },
         {

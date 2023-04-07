@@ -8,10 +8,10 @@ export default class AdminController extends BaseController {
 
     async index(req: Request, res: Response) {
         try {
-            return res.status(200).json("");
+            const data = await admin.getList(req.query);
+            res.status(200).send({ message: "ok", data });
         } catch (error) {
-            console.log(error);
-            res.status(500).send(error);
+            res.status(500).send(error.message);
         }
     }
 
