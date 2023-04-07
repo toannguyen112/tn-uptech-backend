@@ -38,6 +38,7 @@ export class RoleService {
     }
 
     public store = async (body) => {
+        console.log(body);
         return await models.Role.create({ ...body });
     }
 
