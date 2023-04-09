@@ -63,5 +63,13 @@ module.exports = function (sequelize, DataTypes) {
         },
     );
 
+    Admin.associate = function (models) {
+        Admin.belongsToMany(models.Role, {
+            as: 'roles',
+            foreignKey: "admin_id",
+            through: models.AdminRole
+        });
+    };
+
     return Admin;
 };

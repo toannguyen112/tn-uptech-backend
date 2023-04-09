@@ -14,12 +14,20 @@ module.exports = {
         type: Sequelize.INTEGER,
         allowNull: false,
         onDelete: 'CASCADE',
+        references: {
+          model: "admins",
+          key: "id",
+        },
       },
 
       role_id: {
         type: Sequelize.INTEGER,
         allowNull: false,
         onDelete: 'CASCADE',
+        references: {
+          model: "roles",
+          key: "id",
+        },
       },
     }),
 

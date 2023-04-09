@@ -37,10 +37,17 @@ module.exports = function (sequelize, DataTypes) {
     );
 
     Role.associate = function (models) {
-        Role.belongsToMany(models.Permission, { 
+        Role.belongsToMany(models.Permission, {
             as: 'permissions',
             foreignKey: "role_id",
-            through: models.RolePermission });
+            through: models.RolePermission
+        });
+
+        Role.belongsToMany(models.Admin, {
+            as: 'admin',
+            foreignKey: "role_id",
+            through: models.AdminRole
+        });
     };
 
     return Role;

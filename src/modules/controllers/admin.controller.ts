@@ -35,7 +35,7 @@ export default class AdminController extends BaseController {
 
     async show(req: Request, res: Response) {
         try {
-            const data = await models.Admin.findOne({ where: { id: req.params.id } });
+            const data = await admin.findById({ where: { id: req.params.id } });
             res.status(200).send({ message: "ok", data });
         } catch (error) {
             console.log(error);
@@ -45,15 +45,12 @@ export default class AdminController extends BaseController {
 
     async update(req: Request, res: Response) {
         try {
-            await models.Admin.update({ ...req.body }, { where: { id: req.params.id } });
-            const data = await models.Admin.findAll({});
+           const data = await admin.update({ ...req.body }, { where: { id: req.params.id } });
             res.status(200).send({ message: "ok", data });
         } catch (error) {
             console.log(error);
             res.status(500).send(error);
         }
-
-
     }
 
     public async delete(req: Request, res: Response, next: NextFunction) {

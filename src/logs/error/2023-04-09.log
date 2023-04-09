@@ -1444,3 +1444,327 @@ TSError: ⨯ Unable to compile TypeScript:
     at Module.load (node:internal/modules/cjs/loader:1069:32)
     at Function.Module._load (node:internal/modules/cjs/loader:904:12)
     at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-09 21:23:22 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/infra/sequelize/models/admin.model.ts[0m:[93m66[0m:[93m5[0m - [91merror[0m[90m TS2304: [0mCannot find name 'Role'.
+
+[7m66[0m     Role.associate = function (models) {
+[7m  [0m [91m    ~~~~[0m
+[96msrc/infra/sequelize/models/admin.model.ts[0m:[93m67[0m:[93m9[0m - [91merror[0m[90m TS2304: [0mCannot find name 'Role'.
+
+[7m67[0m         Role.belongsToMany(models.Permission, {
+[7m  [0m [91m        ~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/infra/sequelize/models/admin.model.ts[0m:[93m66[0m:[93m5[0m - [91merror[0m[90m TS2304: [0mCannot find name 'Role'.
+
+[7m66[0m     Role.associate = function (models) {
+[7m  [0m [91m    ~~~~[0m
+[96msrc/infra/sequelize/models/admin.model.ts[0m:[93m67[0m:[93m9[0m - [91merror[0m[90m TS2304: [0mCannot find name 'Role'.
+
+[7m67[0m         Role.belongsToMany(models.Permission, {
+[7m  [0m [91m        ~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-09 21:23:45 error: uncaughtException: You have used the alias roles in two separate associations. Aliased associations must have unique aliases.
+SequelizeAssociationError: You have used the alias roles in two separate associations. Aliased associations must have unique aliases.
+    at new Association (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/sequelize/src/associations/base.js:107:13)
+    at new HasOne (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/sequelize/src/associations/has-one.js:19:5)
+    at BelongsToMany._injectAttributes (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/sequelize/src/associations/belongs-to-many.js:362:26)
+    at Function.belongsToMany (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/sequelize/src/associations/mixin.js:67:17)
+    at Function.Admin.associate (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/admin.model.ts:67:15)
+    at /Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:51:31
+    at Array.forEach (<anonymous>)
+    at createModels (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:49:25)
+    at Object.<anonymous> (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:63:16)
+    at Module._compile (node:internal/modules/cjs/loader:1191:14)
+2023-04-09 21:24:02 error: uncaughtException: You have used the alias roles in two separate associations. Aliased associations must have unique aliases.
+SequelizeAssociationError: You have used the alias roles in two separate associations. Aliased associations must have unique aliases.
+    at new Association (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/sequelize/src/associations/base.js:107:13)
+    at new HasOne (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/sequelize/src/associations/has-one.js:19:5)
+    at BelongsToMany._injectAttributes (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/sequelize/src/associations/belongs-to-many.js:362:26)
+    at Function.belongsToMany (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/sequelize/src/associations/mixin.js:67:17)
+    at Function.Admin.associate (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/admin.model.ts:67:15)
+    at /Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:51:31
+    at Array.forEach (<anonymous>)
+    at createModels (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:49:25)
+    at Object.<anonymous> (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:63:16)
+    at Module._compile (node:internal/modules/cjs/loader:1191:14)
+2023-04-09 21:25:42 error: uncaughtException: You have used the alias roles in two separate associations. Aliased associations must have unique aliases.
+SequelizeAssociationError: You have used the alias roles in two separate associations. Aliased associations must have unique aliases.
+    at new Association (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/sequelize/src/associations/base.js:107:13)
+    at new HasOne (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/sequelize/src/associations/has-one.js:19:5)
+    at BelongsToMany._injectAttributes (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/sequelize/src/associations/belongs-to-many.js:362:26)
+    at Function.belongsToMany (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/sequelize/src/associations/mixin.js:67:17)
+    at Function.Admin.associate (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/admin.model.ts:67:15)
+    at /Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:51:31
+    at Array.forEach (<anonymous>)
+    at createModels (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:49:25)
+    at Object.<anonymous> (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:63:16)
+    at Module._compile (node:internal/modules/cjs/loader:1191:14)
+2023-04-09 21:26:51 error: uncaughtException: You have used the alias roles in two separate associations. Aliased associations must have unique aliases.
+SequelizeAssociationError: You have used the alias roles in two separate associations. Aliased associations must have unique aliases.
+    at new Association (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/sequelize/src/associations/base.js:107:13)
+    at new HasOne (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/sequelize/src/associations/has-one.js:19:5)
+    at BelongsToMany._injectAttributes (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/sequelize/src/associations/belongs-to-many.js:362:26)
+    at Function.belongsToMany (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/sequelize/src/associations/mixin.js:67:17)
+    at Function.Admin.associate (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/admin.model.ts:67:15)
+    at /Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:51:31
+    at Array.forEach (<anonymous>)
+    at createModels (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:49:25)
+    at Object.<anonymous> (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:63:16)
+    at Module._compile (node:internal/modules/cjs/loader:1191:14)
+2023-04-09 21:28:03 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/infra/sequelize/models/role.model.ts[0m:[93m45[0m:[93m9[0m - [91merror[0m[90m TS2304: [0mCannot find name 'Permission'.
+
+[7m45[0m         Permission.belongsToMany(models.Role, {
+[7m  [0m [91m        ~~~~~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/infra/sequelize/models/role.model.ts[0m:[93m45[0m:[93m9[0m - [91merror[0m[90m TS2304: [0mCannot find name 'Permission'.
+
+[7m45[0m         Permission.belongsToMany(models.Role, {
+[7m  [0m [91m        ~~~~~~~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-09 21:28:30 error: uncaughtException: You have used the alias roles in two separate associations. Aliased associations must have unique aliases.
+SequelizeAssociationError: You have used the alias roles in two separate associations. Aliased associations must have unique aliases.
+    at new Association (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/sequelize/src/associations/base.js:107:13)
+    at new HasOne (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/sequelize/src/associations/has-one.js:19:5)
+    at BelongsToMany._injectAttributes (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/sequelize/src/associations/belongs-to-many.js:362:26)
+    at Function.belongsToMany (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/sequelize/src/associations/mixin.js:67:17)
+    at Function.Admin.associate (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/admin.model.ts:67:15)
+    at /Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:51:31
+    at Array.forEach (<anonymous>)
+    at createModels (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:49:25)
+    at Object.<anonymous> (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:63:16)
+    at Module._compile (node:internal/modules/cjs/loader:1191:14)
+2023-04-09 21:28:43 error: uncaughtException: You have used the alias roles in two separate associations. Aliased associations must have unique aliases.
+SequelizeAssociationError: You have used the alias roles in two separate associations. Aliased associations must have unique aliases.
+    at new Association (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/sequelize/src/associations/base.js:107:13)
+    at new HasOne (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/sequelize/src/associations/has-one.js:19:5)
+    at BelongsToMany._injectAttributes (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/sequelize/src/associations/belongs-to-many.js:362:26)
+    at Function.belongsToMany (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/sequelize/src/associations/mixin.js:67:17)
+    at Function.Admin.associate (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/admin.model.ts:67:15)
+    at /Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:51:31
+    at Array.forEach (<anonymous>)
+    at createModels (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:49:25)
+    at Object.<anonymous> (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:63:16)
+    at Module._compile (node:internal/modules/cjs/loader:1191:14)
+2023-04-09 21:29:08 error: uncaughtException: admins.belongsToMany(roles) requires through option, pass either a string or a model
+SequelizeAssociationError: admins.belongsToMany(roles) requires through option, pass either a string or a model
+    at new BelongsToMany (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/sequelize/src/associations/belongs-to-many.js:62:13)
+    at Function.belongsToMany (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/sequelize/src/associations/mixin.js:64:25)
+    at Function.Admin.associate (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/admin.model.ts:67:15)
+    at /Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:51:31
+    at Array.forEach (<anonymous>)
+    at createModels (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:49:25)
+    at Object.<anonymous> (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:63:16)
+    at Module._compile (node:internal/modules/cjs/loader:1191:14)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1618:23)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+2023-04-09 21:30:08 error: uncaughtException: admins.belongsToMany(roles) requires through option, pass either a string or a model
+SequelizeAssociationError: admins.belongsToMany(roles) requires through option, pass either a string or a model
+    at new BelongsToMany (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/sequelize/src/associations/belongs-to-many.js:62:13)
+    at Function.belongsToMany (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/sequelize/src/associations/mixin.js:64:25)
+    at Function.Admin.associate (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/admin.model.ts:67:15)
+    at /Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:51:31
+    at Array.forEach (<anonymous>)
+    at createModels (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:49:25)
+    at Object.<anonymous> (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:63:16)
+    at Module._compile (node:internal/modules/cjs/loader:1191:14)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1618:23)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+2023-04-09 21:30:58 error: uncaughtException: admins.belongsToMany(roles) requires through option, pass either a string or a model
+SequelizeAssociationError: admins.belongsToMany(roles) requires through option, pass either a string or a model
+    at new BelongsToMany (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/sequelize/src/associations/belongs-to-many.js:62:13)
+    at Function.belongsToMany (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/sequelize/src/associations/mixin.js:64:25)
+    at Function.Admin.associate (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/admin.model.ts:67:15)
+    at /Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:51:31
+    at Array.forEach (<anonymous>)
+    at createModels (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:49:25)
+    at Object.<anonymous> (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:63:16)
+    at Module._compile (node:internal/modules/cjs/loader:1191:14)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1618:23)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+2023-04-09 21:32:30 error: uncaughtException: admins.belongsToMany(roles) requires through option, pass either a string or a model
+SequelizeAssociationError: admins.belongsToMany(roles) requires through option, pass either a string or a model
+    at new BelongsToMany (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/sequelize/src/associations/belongs-to-many.js:62:13)
+    at Function.belongsToMany (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/sequelize/src/associations/mixin.js:64:25)
+    at Function.Admin.associate (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/admin.model.ts:67:15)
+    at /Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:51:31
+    at Array.forEach (<anonymous>)
+    at createModels (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:49:25)
+    at Object.<anonymous> (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:63:16)
+    at Module._compile (node:internal/modules/cjs/loader:1191:14)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1618:23)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+2023-04-09 21:32:46 error: uncaughtException: admins.belongsToMany(roles) requires through option, pass either a string or a model
+SequelizeAssociationError: admins.belongsToMany(roles) requires through option, pass either a string or a model
+    at new BelongsToMany (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/sequelize/src/associations/belongs-to-many.js:62:13)
+    at Function.belongsToMany (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/sequelize/src/associations/mixin.js:64:25)
+    at Function.Admin.associate (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/admin.model.ts:67:15)
+    at /Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:51:31
+    at Array.forEach (<anonymous>)
+    at createModels (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:49:25)
+    at Object.<anonymous> (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:63:16)
+    at Module._compile (node:internal/modules/cjs/loader:1191:14)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1618:23)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+2023-04-09 21:34:29 error: uncaughtException: admins.belongsToMany(roles) requires through option, pass either a string or a model
+SequelizeAssociationError: admins.belongsToMany(roles) requires through option, pass either a string or a model
+    at new BelongsToMany (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/sequelize/src/associations/belongs-to-many.js:62:13)
+    at Function.belongsToMany (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/sequelize/src/associations/mixin.js:64:25)
+    at Function.Admin.associate (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/admin.model.ts:67:15)
+    at /Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:51:31
+    at Array.forEach (<anonymous>)
+    at createModels (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:49:25)
+    at Object.<anonymous> (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:63:16)
+    at Module._compile (node:internal/modules/cjs/loader:1191:14)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1618:23)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+2023-04-09 21:36:34 error: uncaughtException: admins.belongsToMany(roles) requires through option, pass either a string or a model
+SequelizeAssociationError: admins.belongsToMany(roles) requires through option, pass either a string or a model
+    at new BelongsToMany (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/sequelize/src/associations/belongs-to-many.js:62:13)
+    at Function.belongsToMany (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/sequelize/src/associations/mixin.js:64:25)
+    at Function.Admin.associate (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/admin.model.ts:67:15)
+    at /Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:51:31
+    at Array.forEach (<anonymous>)
+    at createModels (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:49:25)
+    at Object.<anonymous> (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:63:16)
+    at Module._compile (node:internal/modules/cjs/loader:1191:14)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1618:23)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+2023-04-09 21:36:42 error: uncaughtException: admins.belongsToMany(roles) requires through option, pass either a string or a model
+SequelizeAssociationError: admins.belongsToMany(roles) requires through option, pass either a string or a model
+    at new BelongsToMany (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/sequelize/src/associations/belongs-to-many.js:62:13)
+    at Function.belongsToMany (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/sequelize/src/associations/mixin.js:64:25)
+    at Function.Admin.associate (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/admin.model.ts:67:15)
+    at /Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:51:31
+    at Array.forEach (<anonymous>)
+    at createModels (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:49:25)
+    at Object.<anonymous> (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:63:16)
+    at Module._compile (node:internal/modules/cjs/loader:1191:14)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1618:23)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+2023-04-09 21:36:59 error: uncaughtException: admins.belongsToMany(roles) requires through option, pass either a string or a model
+SequelizeAssociationError: admins.belongsToMany(roles) requires through option, pass either a string or a model
+    at new BelongsToMany (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/sequelize/src/associations/belongs-to-many.js:62:13)
+    at Function.belongsToMany (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/sequelize/src/associations/mixin.js:64:25)
+    at Function.Admin.associate (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/admin.model.ts:67:15)
+    at /Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:51:31
+    at Array.forEach (<anonymous>)
+    at createModels (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:49:25)
+    at Object.<anonymous> (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:63:16)
+    at Module._compile (node:internal/modules/cjs/loader:1191:14)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1618:23)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+2023-04-09 21:37:55 error: uncaughtException: admins.belongsToMany(roles) requires through option, pass either a string or a model
+SequelizeAssociationError: admins.belongsToMany(roles) requires through option, pass either a string or a model
+    at new BelongsToMany (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/sequelize/src/associations/belongs-to-many.js:62:13)
+    at Function.belongsToMany (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/sequelize/src/associations/mixin.js:64:25)
+    at Function.Admin.associate (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/admin.model.ts:67:15)
+    at /Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:51:31
+    at Array.forEach (<anonymous>)
+    at createModels (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:49:25)
+    at Object.<anonymous> (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:63:16)
+    at Module._compile (node:internal/modules/cjs/loader:1191:14)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1618:23)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+2023-04-09 21:49:57 error: uncaughtException: admins.belongsToMany(roles) requires through option, pass either a string or a model
+SequelizeAssociationError: admins.belongsToMany(roles) requires through option, pass either a string or a model
+    at new BelongsToMany (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/sequelize/src/associations/belongs-to-many.js:62:13)
+    at Function.belongsToMany (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/sequelize/src/associations/mixin.js:64:25)
+    at Function.Admin.associate (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/admin.model.ts:67:15)
+    at /Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:51:31
+    at Array.forEach (<anonymous>)
+    at createModels (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:49:25)
+    at Object.<anonymous> (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:63:16)
+    at Module._compile (node:internal/modules/cjs/loader:1191:14)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1618:23)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+2023-04-09 21:50:14 error: uncaughtException: admins.belongsToMany(roles) requires through option, pass either a string or a model
+SequelizeAssociationError: admins.belongsToMany(roles) requires through option, pass either a string or a model
+    at new BelongsToMany (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/sequelize/src/associations/belongs-to-many.js:62:13)
+    at Function.belongsToMany (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/sequelize/src/associations/mixin.js:64:25)
+    at Function.Admin.associate (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/admin.model.ts:67:15)
+    at /Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:51:31
+    at Array.forEach (<anonymous>)
+    at createModels (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:49:25)
+    at Object.<anonymous> (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:63:16)
+    at Module._compile (node:internal/modules/cjs/loader:1191:14)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1618:23)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+2023-04-09 21:50:27 error: uncaughtException: admins.belongsToMany(roles) requires through option, pass either a string or a model
+SequelizeAssociationError: admins.belongsToMany(roles) requires through option, pass either a string or a model
+    at new BelongsToMany (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/sequelize/src/associations/belongs-to-many.js:62:13)
+    at Function.belongsToMany (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/sequelize/src/associations/mixin.js:64:25)
+    at Function.Admin.associate (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/admin.model.ts:67:15)
+    at /Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:51:31
+    at Array.forEach (<anonymous>)
+    at createModels (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:49:25)
+    at Object.<anonymous> (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:63:16)
+    at Module._compile (node:internal/modules/cjs/loader:1191:14)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1618:23)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+2023-04-09 21:53:37 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/modules/controllers/admin.controller.ts[0m:[93m38[0m:[93m38[0m - [91merror[0m[90m TS2339: [0mProperty 'findOne' does not exist on type 'AdminService'.
+
+[7m38[0m             const data = await admin.findOne({ where: { id: req.params.id } });
+[7m  [0m [91m                                     ~~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/modules/controllers/admin.controller.ts[0m:[93m38[0m:[93m38[0m - [91merror[0m[90m TS2339: [0mProperty 'findOne' does not exist on type 'AdminService'.
+
+[7m38[0m             const data = await admin.findOne({ where: { id: req.params.id } });
+[7m  [0m [91m                                     ~~~~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-09 21:54:22 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/modules/controllers/admin.controller.ts[0m:[93m49[0m:[93m51[0m - [91merror[0m[90m TS18004: [0mNo value exists in scope for the shorthand property 'data'. Either declare one or provide an initializer.
+
+[7m49[0m             res.status(200).send({ message: "ok", data });
+[7m  [0m [91m                                                  ~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/modules/controllers/admin.controller.ts[0m:[93m49[0m:[93m51[0m - [91merror[0m[90m TS18004: [0mNo value exists in scope for the shorthand property 'data'. Either declare one or provide an initializer.
+
+[7m49[0m             res.status(200).send({ message: "ok", data });
+[7m  [0m [91m                                                  ~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)

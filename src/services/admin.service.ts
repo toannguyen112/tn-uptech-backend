@@ -44,11 +44,11 @@ export class AdminService {
             await models.Admin.create({ ...body }
                 ,
                 { transaction: t })
-                .then(async (role) => {
+                .then(async (admin) => {
                     for (const role of body.roles) {
                         try {
                             await models.AdminRole.create({
-                                role_id: role.id,
+                                role_id: admin.id,
                                 admin_id: body.id,
 
                             });
@@ -67,7 +67,18 @@ export class AdminService {
     }
 
     public findById = async (id) => {
-        return await models.Admin.findOne({ where: { id } });
+        try {
+            return await models.Admin.findOne({
+                where: { id },
+                include: {
+                    model: models.Role,
+                    as: "roles",
+                    required: false,
+                },
+            });
+        } catch (error) {
+            console.log(error);
+        }
     }
 
     public update = async (id, body) => {

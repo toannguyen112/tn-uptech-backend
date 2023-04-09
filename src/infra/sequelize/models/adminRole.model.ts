@@ -11,54 +11,20 @@ module.exports = function (sequelize, DataTypes) {
                 type: DataTypes.INTEGER,
             },
 
-            username: {
-                allowNull: false,
-                type: DataTypes.STRING,
-            },
-
-            name: {
-                allowNull: true,
-                type: DataTypes.STRING,
-            },
-
-            email: {
-                allowNull: true,
-                type: DataTypes.STRING,
-            },
-
-            password: {
-                allowNull: false,
-                type: DataTypes.STRING,
-            },
-
-            tokens: {
-                allowNull: true,
-                type: DataTypes.JSON,
-            },
-
-            phone: {
-                allowNull: true,
+            admin_id: {
                 type: DataTypes.INTEGER,
+                allowNull: false,
+                onDelete: 'CASCADE',
             },
 
-            createdAt: {
-                type: DataTypes.DATE,
-                defaultValue: new Date(),
-                get() {
-                    return Helper.formatDayJs(this.getDataValue('createdAt'));
-                }
-            },
-
-            updatedAt: {
-                type: DataTypes.DATE,
-                defaultValue: new Date(),
-                get() {
-                    return Helper.formatDayJs(this.getDataValue('updatedAt'));
-                }
+            role_id: {
+                type: DataTypes.INTEGER,
+                allowNull: false,
+                onDelete: 'CASCADE',
             },
         },
         {
-            timestamps: true,
+            timestamps: false,
             tableName: "admin_roles",
         },
     );
