@@ -279,3 +279,601 @@
 2023-04-09 15:31:25 info: [0mPOST /roles/create [32m200[0m 89.114 ms - 16[0m
 2023-04-09 15:31:25 info: [0mGET /roles?page=1&page_size=10 [32m200[0m 14.360 ms - 315[0m
 2023-04-09 15:31:25 info: [0mGET /roles?page=1&page_size=10 [36m304[0m 7.579 ms - -[0m
+2023-04-09 15:32:30 info: [0mGET /roles/show/1 [32m200[0m 106.870 ms - 103[0m
+2023-04-09 15:33:16 info: =================================
+2023-04-09 15:33:16 info: ======= ENV: development =======
+2023-04-09 15:33:16 info: 🚀 App listening on the port 8000
+2023-04-09 15:33:16 info: =================================
+2023-04-09 15:33:28 info: =================================
+2023-04-09 15:33:28 info: ======= ENV: development =======
+2023-04-09 15:33:28 info: 🚀 App listening on the port 8000
+2023-04-09 15:33:28 info: =================================
+2023-04-09 15:33:39 info: =================================
+2023-04-09 15:33:39 info: ======= ENV: development =======
+2023-04-09 15:33:39 info: 🚀 App listening on the port 8000
+2023-04-09 15:33:39 info: =================================
+2023-04-09 15:33:56 info: =================================
+2023-04-09 15:33:56 info: ======= ENV: development =======
+2023-04-09 15:33:56 info: 🚀 App listening on the port 8000
+2023-04-09 15:33:56 info: =================================
+2023-04-09 15:35:59 info: =================================
+2023-04-09 15:35:59 info: ======= ENV: development =======
+2023-04-09 15:35:59 info: 🚀 App listening on the port 8000
+2023-04-09 15:35:59 info: =================================
+2023-04-09 15:36:42 info: =================================
+2023-04-09 15:36:42 info: ======= ENV: development =======
+2023-04-09 15:36:42 info: 🚀 App listening on the port 8000
+2023-04-09 15:36:42 info: =================================
+2023-04-09 15:36:53 error: Unknown column 'permissions->role_permissions.permissionId' in 'field list'
+2023-04-09 15:36:53 info: [0mGET /roles/show/1 [31m500[0m 418.726 ms - -[0m
+2023-04-09 15:37:49 info: =================================
+2023-04-09 15:37:49 info: ======= ENV: development =======
+2023-04-09 15:37:49 info: 🚀 App listening on the port 8000
+2023-04-09 15:37:49 info: =================================
+2023-04-09 15:38:09 info: =================================
+2023-04-09 15:38:09 info: ======= ENV: development =======
+2023-04-09 15:38:09 info: 🚀 App listening on the port 8000
+2023-04-09 15:38:09 info: =================================
+2023-04-09 15:38:19 info: =================================
+2023-04-09 15:38:19 info: ======= ENV: development =======
+2023-04-09 15:38:19 info: 🚀 App listening on the port 8000
+2023-04-09 15:38:19 info: =================================
+2023-04-09 15:38:21 info: [0mGET /roles/show/1 [32m200[0m 163.606 ms - 120[0m
+2023-04-09 15:38:26 info: [0mGET /roles/show/3 [32m200[0m 22.846 ms - 28[0m
+2023-04-09 15:38:29 info: [0mGET /roles/show/2 [32m200[0m 5.270 ms - 115[0m
+2023-04-09 15:38:35 info: [0mGET /roles/show/11 [32m200[0m 23.555 ms - 391[0m
+2023-04-09 15:39:12 info: =================================
+2023-04-09 15:39:12 info: ======= ENV: development =======
+2023-04-09 15:39:12 info: 🚀 App listening on the port 8000
+2023-04-09 15:39:12 info: =================================
+2023-04-09 15:39:33 info: =================================
+2023-04-09 15:39:33 info: ======= ENV: development =======
+2023-04-09 15:39:33 info: 🚀 App listening on the port 8000
+2023-04-09 15:39:33 info: =================================
+2023-04-09 15:39:56 info: =================================
+2023-04-09 15:39:56 info: ======= ENV: development =======
+2023-04-09 15:39:56 info: 🚀 App listening on the port 8000
+2023-04-09 15:39:56 info: =================================
+2023-04-09 15:40:30 info: =================================
+2023-04-09 15:40:30 info: ======= ENV: development =======
+2023-04-09 15:40:30 info: 🚀 App listening on the port 8000
+2023-04-09 15:40:30 info: =================================
+2023-04-09 15:40:51 info: =================================
+2023-04-09 15:40:51 info: ======= ENV: development =======
+2023-04-09 15:40:51 info: 🚀 App listening on the port 8000
+2023-04-09 15:40:51 info: =================================
+2023-04-09 15:41:26 info: =================================
+2023-04-09 15:41:26 info: ======= ENV: development =======
+2023-04-09 15:41:26 info: 🚀 App listening on the port 8000
+2023-04-09 15:41:26 info: =================================
+2023-04-09 15:41:43 info: =================================
+2023-04-09 15:41:43 info: ======= ENV: development =======
+2023-04-09 15:41:43 info: 🚀 App listening on the port 8000
+2023-04-09 15:41:43 info: =================================
+2023-04-09 15:41:45 info: [0mGET /roles/show/11 [32m200[0m 175.897 ms - 341[0m
+2023-04-09 15:41:45 info: [0mGET /roles/show/11 [36m304[0m 14.406 ms - -[0m
+2023-04-09 15:41:47 info: [0mGET /roles/show/11 [36m304[0m 66.624 ms - -[0m
+2023-04-09 15:41:53 info: [0mGET /roles?page=1&page_size=10 [36m304[0m 102.213 ms - -[0m
+2023-04-09 15:41:53 info: [0mGET /roles?page=1&page_size=10 [36m304[0m 9.979 ms - -[0m
+2023-04-09 15:41:53 info: [0mGET /roles?page=1&page_size=10 [36m304[0m 9.708 ms - -[0m
+2023-04-09 15:41:55 info: [0mGET /permissions?id=11 [32m200[0m 105.779 ms - 876[0m
+2023-04-09 15:42:28 info: [0mGET /permissions?id=11 [36m304[0m 67.251 ms - -[0m
+2023-04-09 15:43:03 info: [0mGET /roles/show/11 [36m304[0m 666.682 ms - -[0m
+2023-04-09 15:43:03 info: [0mGET /permissions?id=11 [36m304[0m 489.677 ms - -[0m
+2023-04-09 15:43:11 info: [0mGET /permissions?id=11 [36m304[0m 15.032 ms - -[0m
+2023-04-09 15:43:11 info: [0mGET /roles/show/11 [36m304[0m 148.532 ms - -[0m
+2023-04-09 15:43:11 info: [0mGET /roles/show/11 [36m304[0m 31.468 ms - -[0m
+2023-04-09 15:44:05 info: [0mGET /roles/show/11 [36m304[0m 549.119 ms - -[0m
+2023-04-09 15:44:05 info: [0mGET /permissions?id=11 [36m304[0m 270.896 ms - -[0m
+2023-04-09 15:44:17 info: [0mGET /roles/show/11 [36m304[0m 86.569 ms - -[0m
+2023-04-09 15:44:17 info: [0mGET /permissions?id=11 [36m304[0m 64.840 ms - -[0m
+2023-04-09 15:44:17 info: [0mGET /roles/show/11 [36m304[0m 30.512 ms - -[0m
+2023-04-09 15:44:20 info: [0mGET /roles/show/11 [36m304[0m 19.323 ms - -[0m
+2023-04-09 15:44:20 info: [0mGET /permissions?id=11 [36m304[0m 22.695 ms - -[0m
+2023-04-09 15:44:35 info: [0mGET /roles/show/11 [36m304[0m 97.073 ms - -[0m
+2023-04-09 15:44:36 info: [0mGET /roles?page=1&page_size=10 [36m304[0m 127.379 ms - -[0m
+2023-04-09 15:44:36 info: [0mGET /roles?page=1&page_size=10 [36m304[0m 29.157 ms - -[0m
+2023-04-09 15:44:38 info: [0mGET /roles/show/11 [36m304[0m 54.043 ms - -[0m
+2023-04-09 15:44:38 info: [0mGET /permissions?id=11 [36m304[0m 57.105 ms - -[0m
+2023-04-09 15:44:40 info: [0mGET /roles/show/11 [36m304[0m 66.939 ms - -[0m
+2023-04-09 15:44:40 info: [0mGET /roles?page=1&page_size=10 [36m304[0m 73.695 ms - -[0m
+2023-04-09 15:44:40 info: [0mGET /roles?page=1&page_size=10 [36m304[0m 8.953 ms - -[0m
+2023-04-09 15:44:41 info: [0mGET /roles/show/1 [32m200[0m 23.799 ms - 70[0m
+2023-04-09 15:44:41 info: [0mGET /permissions?id=1 [32m200[0m 36.999 ms - 876[0m
+2023-04-09 15:57:34 info: [0mGET /roles/show/1 [36m304[0m 356.174 ms - -[0m
+2023-04-09 15:57:34 info: [0mGET /admins? [36m304[0m 325.954 ms - -[0m
+2023-04-09 15:57:34 info: [0mGET /admins?page=1&page_size=10 [36m304[0m 270.115 ms - -[0m
+2023-04-09 15:57:37 info: [0mGET /permissions? [36m304[0m 193.827 ms - -[0m
+2023-04-09 15:57:37 info: [0mGET /permissions?page=1&page_size=10 [36m304[0m 11.176 ms - -[0m
+2023-04-09 15:58:08 info: [0mGET /permissions?page=1&page_size=10 [36m304[0m 52.185 ms - -[0m
+2023-04-09 15:58:08 info: [0mGET /permissions? [36m304[0m 105.856 ms - -[0m
+2023-04-09 15:58:14 info: [0mGET /admins? [36m304[0m 12.655 ms - -[0m
+2023-04-09 15:58:14 info: [0mGET /admins?page=1&page_size=10 [36m304[0m 3.194 ms - -[0m
+2023-04-09 15:58:48 info: [0mGET /permissions? [36m304[0m 264.744 ms - -[0m
+2023-04-09 15:58:48 info: [0mGET /permissions?page=1&page_size=10 [36m304[0m 301.393 ms - -[0m
+2023-04-09 15:58:57 info: [0mOPTIONS /roles/create [32m204[0m 1.048 ms - 0[0m
+2023-04-09 15:58:57 info: [0mPOST /roles/create [32m200[0m 79.335 ms - 16[0m
+2023-04-09 15:58:57 info: [0mGET /permissions?page=1&page_size=10 [36m304[0m 18.043 ms - -[0m
+2023-04-09 15:58:57 info: [0mGET /permissions?page=1&page_size=10 [36m304[0m 5.589 ms - -[0m
+2023-04-09 15:59:04 info: [0mGET /roles? [32m200[0m 57.833 ms - 395[0m
+2023-04-09 15:59:05 info: [0mGET /roles?page=1&page_size=10 [32m200[0m 68.475 ms - 395[0m
+2023-04-09 15:59:11 info: [0mGET /roles/show/12 [32m200[0m 132.909 ms - 70[0m
+2023-04-09 15:59:11 info: [0mGET /permissions?id=12 [32m200[0m 124.936 ms - 876[0m
+2023-04-09 15:59:14 info: [0mOPTIONS /roles/update/12 [32m204[0m 0.183 ms - 0[0m
+2023-04-09 15:59:14 info: [0mPUT /roles/update/12 [32m200[0m 13.857 ms - 27[0m
+2023-04-09 15:59:14 info: [0mGET /roles/show/11 [36m304[0m 7.696 ms - -[0m
+2023-04-09 15:59:14 info: [0mGET /roles/show/1 [36m304[0m 7.297 ms - -[0m
+2023-04-09 15:59:14 info: [0mGET /roles/show/12 [36m304[0m 11.264 ms - -[0m
+2023-04-09 15:59:14 info: [0mGET /roles/show/11 [36m304[0m 7.508 ms - -[0m
+2023-04-09 15:59:20 info: [0mGET /roles/show/12 [36m304[0m 25.053 ms - -[0m
+2023-04-09 15:59:20 info: [0mGET /roles?page=1&page_size=10 [36m304[0m 18.830 ms - -[0m
+2023-04-09 15:59:20 info: [0mGET /roles?page=1&page_size=10 [36m304[0m 18.440 ms - -[0m
+2023-04-09 15:59:21 info: [0mGET /roles/show/11 [36m304[0m 27.720 ms - -[0m
+2023-04-09 15:59:21 info: [0mGET /permissions?id=11 [36m304[0m 33.798 ms - -[0m
+2023-04-09 15:59:22 info: [0mGET /roles/show/11 [36m304[0m 8.497 ms - -[0m
+2023-04-09 15:59:22 info: [0mGET /roles?page=1&page_size=10 [36m304[0m 13.591 ms - -[0m
+2023-04-09 15:59:22 info: [0mGET /roles?page=1&page_size=10 [36m304[0m 9.268 ms - -[0m
+2023-04-09 15:59:25 info: [0mGET /roles/show/12 [36m304[0m 12.141 ms - -[0m
+2023-04-09 15:59:25 info: [0mGET /permissions?id=12 [36m304[0m 16.231 ms - -[0m
+2023-04-09 15:59:51 info: [0mGET /permissions?id=12 [36m304[0m 597.973 ms - -[0m
+2023-04-09 15:59:51 info: [0mGET /roles/show/12 [36m304[0m 893.030 ms - -[0m
+2023-04-09 15:59:51 info: [0mGET /roles/show/12 [36m304[0m 92.309 ms - -[0m
+2023-04-09 16:00:25 info: =================================
+2023-04-09 16:00:25 info: ======= ENV: development =======
+2023-04-09 16:00:25 info: 🚀 App listening on the port 8000
+2023-04-09 16:00:25 info: =================================
+2023-04-09 16:00:39 info: =================================
+2023-04-09 16:00:39 info: ======= ENV: development =======
+2023-04-09 16:00:39 info: 🚀 App listening on the port 8000
+2023-04-09 16:00:39 info: =================================
+2023-04-09 16:00:51 info: =================================
+2023-04-09 16:00:51 info: ======= ENV: development =======
+2023-04-09 16:00:51 info: 🚀 App listening on the port 8000
+2023-04-09 16:00:51 info: =================================
+2023-04-09 16:01:19 info: =================================
+2023-04-09 16:01:19 info: ======= ENV: development =======
+2023-04-09 16:01:19 info: 🚀 App listening on the port 8000
+2023-04-09 16:01:19 info: =================================
+2023-04-09 16:01:46 info: [0mGET /permissions?id=12 [0m-[0m - ms - -[0m
+2023-04-09 16:01:46 info: [0mGET /roles/show/12 [0m-[0m - ms - -[0m
+2023-04-09 16:01:49 info: [0mGET /roles/show/12 [32m200[0m 121.395 ms - 70[0m
+2023-04-09 16:01:49 info: [0mGET /permissions?id=12 [32m200[0m 71.404 ms - 876[0m
+2023-04-09 16:01:58 info: [0mOPTIONS /roles/update/12 [32m204[0m 0.777 ms - 0[0m
+2023-04-09 16:01:58 info: [0mPUT /roles/update/12 [32m200[0m 182.984 ms - 16[0m
+2023-04-09 16:01:58 info: [0mGET /roles/show/12 [36m304[0m 7.967 ms - -[0m
+2023-04-09 16:03:29 info: =================================
+2023-04-09 16:03:29 info: ======= ENV: development =======
+2023-04-09 16:03:29 info: 🚀 App listening on the port 8000
+2023-04-09 16:03:29 info: =================================
+2023-04-09 16:03:32 info: [0mGET /roles/show/12 [36m304[0m 127.539 ms - -[0m
+2023-04-09 16:03:32 info: [0mGET /permissions?id=12 [36m304[0m 115.336 ms - -[0m
+2023-04-09 16:03:35 info: [0mOPTIONS /roles/update/12 [32m204[0m 1.126 ms - 0[0m
+2023-04-09 16:03:35 info: [0mPUT /roles/update/12 [32m200[0m 43.991 ms - 16[0m
+2023-04-09 16:03:35 info: [0mGET /roles/show/12 [36m304[0m 6.492 ms - -[0m
+2023-04-09 16:04:17 info: =================================
+2023-04-09 16:04:17 info: ======= ENV: development =======
+2023-04-09 16:04:17 info: 🚀 App listening on the port 8000
+2023-04-09 16:04:17 info: =================================
+2023-04-09 16:04:49 info: [0mGET /roles/show/12 [36m304[0m 133.891 ms - -[0m
+2023-04-09 16:04:49 info: [0mGET /permissions?id=12 [36m304[0m 101.922 ms - -[0m
+2023-04-09 16:04:53 info: [0mOPTIONS /roles/update/12 [32m204[0m 0.869 ms - 0[0m
+2023-04-09 16:04:53 info: [0mPUT /roles/update/12 [32m200[0m 39.604 ms - 16[0m
+2023-04-09 16:04:53 info: [0mGET /roles/show/12 [36m304[0m 5.516 ms - -[0m
+2023-04-09 16:05:22 info: =================================
+2023-04-09 16:05:22 info: ======= ENV: development =======
+2023-04-09 16:05:22 info: 🚀 App listening on the port 8000
+2023-04-09 16:05:22 info: =================================
+2023-04-09 16:05:31 info: [0mOPTIONS /roles/update/12 [32m204[0m 1.420 ms - 0[0m
+2023-04-09 16:05:31 info: [0mPUT /roles/update/12 [32m200[0m 98.457 ms - 16[0m
+2023-04-09 16:05:31 info: [0mGET /roles/show/12 [36m304[0m 37.062 ms - -[0m
+2023-04-09 16:05:49 info: [0mOPTIONS /roles/update/12 [32m204[0m 0.442 ms - 0[0m
+2023-04-09 16:05:49 info: [0mPUT /roles/update/12 [32m200[0m 38.901 ms - 16[0m
+2023-04-09 16:05:49 info: [0mGET /roles/show/12 [36m304[0m 7.085 ms - -[0m
+2023-04-09 16:07:42 info: =================================
+2023-04-09 16:07:42 info: ======= ENV: development =======
+2023-04-09 16:07:42 info: 🚀 App listening on the port 8000
+2023-04-09 16:07:42 info: =================================
+2023-04-09 16:09:25 info: [0mOPTIONS /roles/update/12 [32m204[0m 2.334 ms - 0[0m
+2023-04-09 16:09:26 info: [0mPUT /roles/update/12 [32m200[0m 203.034 ms - 16[0m
+2023-04-09 16:09:26 info: [0mGET /roles/show/12 [32m200[0m 42.668 ms - 72[0m
+2023-04-09 16:09:52 info: [0mOPTIONS /roles/update/12 [32m204[0m 0.530 ms - 0[0m
+2023-04-09 16:09:52 info: [0mPUT /roles/update/12 [32m200[0m 24.503 ms - 16[0m
+2023-04-09 16:09:53 info: [0mGET /roles/show/12 [36m304[0m 12.985 ms - -[0m
+2023-04-09 16:10:09 info: [0mOPTIONS /roles/update/12 [32m204[0m 1.074 ms - 0[0m
+2023-04-09 16:10:09 info: [0mPUT /roles/update/12 [32m200[0m 31.727 ms - 16[0m
+2023-04-09 16:10:09 info: [0mGET /roles/show/12 [36m304[0m 6.184 ms - -[0m
+2023-04-09 16:10:26 error: Cannot read properties of null (reading 'id')
+2023-04-09 16:10:26 info: [0mGET /roles/show/12 [31m500[0m 88.759 ms - 51[0m
+2023-04-09 16:10:26 info: [0mGET /roles?page=1&page_size=10 [32m200[0m 131.716 ms - 241[0m
+2023-04-09 16:10:26 info: [0mGET /roles?page=1&page_size=10 [36m304[0m 15.577 ms - -[0m
+2023-04-09 16:10:28 info: [0mGET /permissions? [36m304[0m 10.261 ms - -[0m
+2023-04-09 16:10:32 info: [0mOPTIONS /roles/create [32m204[0m 0.265 ms - 0[0m
+2023-04-09 16:10:32 info: [0mPOST /roles/create [32m200[0m 17.740 ms - 16[0m
+2023-04-09 16:10:32 info: [0mGET /roles?page=1&page_size=10 [32m200[0m 107.771 ms - 315[0m
+2023-04-09 16:10:32 info: [0mGET /roles?page=1&page_size=10 [36m304[0m 5.567 ms - -[0m
+2023-04-09 16:10:38 info: [0mGET /roles/show/13 [32m200[0m 33.214 ms - 341[0m
+2023-04-09 16:10:38 info: [0mGET /permissions?id=13 [32m200[0m 35.448 ms - 876[0m
+2023-04-09 16:10:40 info: [0mOPTIONS /roles/update/13 [32m204[0m 0.207 ms - 0[0m
+2023-04-09 16:10:40 info: [0mPUT /roles/update/13 [32m200[0m 18.774 ms - 16[0m
+2023-04-09 16:10:40 error: Cannot read properties of null (reading 'id')
+2023-04-09 16:10:40 info: [0mGET /roles/show/12 [31m500[0m 6.264 ms - 51[0m
+2023-04-09 16:10:40 info: [0mGET /roles/show/13 [32m200[0m 9.414 ms - 199[0m
+2023-04-09 16:11:00 info: [0mOPTIONS /roles/update/13 [32m204[0m 0.841 ms - 0[0m
+2023-04-09 16:11:00 info: [0mPUT /roles/update/13 [32m200[0m 34.560 ms - 16[0m
+2023-04-09 16:11:00 error: Cannot read properties of null (reading 'id')
+2023-04-09 16:11:00 info: [0mGET /roles/show/12 [31m500[0m 7.775 ms - 51[0m
+2023-04-09 16:11:00 info: [0mGET /roles/show/13 [32m200[0m 12.124 ms - 202[0m
+2023-04-09 16:11:19 info: [0mOPTIONS /roles/update/13 [32m204[0m 2.198 ms - 0[0m
+2023-04-09 16:11:19 info: [0mPUT /roles/update/13 [32m200[0m 63.169 ms - 16[0m
+2023-04-09 16:11:19 error: Cannot read properties of null (reading 'id')
+2023-04-09 16:11:19 info: [0mGET /roles/show/12 [31m500[0m 69.657 ms - 51[0m
+2023-04-09 16:11:19 info: [0mGET /roles/show/13 [32m200[0m 188.596 ms - 199[0m
+2023-04-09 16:12:46 info: =================================
+2023-04-09 16:12:46 info: ======= ENV: development =======
+2023-04-09 16:12:46 info: 🚀 App listening on the port 8000
+2023-04-09 16:12:46 info: =================================
+2023-04-09 16:13:11 info: [0mGET /permissions?id=13 [32m200[0m 113.077 ms - 876[0m
+2023-04-09 16:13:11 error: Cannot read properties of null (reading 'id')
+2023-04-09 16:13:11 info: [0mGET /roles/show/13 [31m500[0m 175.059 ms - 51[0m
+2023-04-09 16:13:12 error: Cannot read properties of null (reading 'id')
+2023-04-09 16:13:12 info: [0mGET /roles/show/13 [31m500[0m 147.703 ms - 51[0m
+2023-04-09 16:13:12 info: [0mGET /roles?page=1&page_size=10 [32m200[0m 153.399 ms - 241[0m
+2023-04-09 16:13:13 info: [0mGET /roles?page=1&page_size=10 [36m304[0m 10.420 ms - -[0m
+2023-04-09 16:13:14 info: [0mGET /roles?page=1&page_size=10 [36m304[0m 54.779 ms - -[0m
+2023-04-09 16:13:14 info: [0mGET /roles?page=1&page_size=10 [36m304[0m 55.410 ms - -[0m
+2023-04-09 16:13:14 info: [0mGET /roles?page=1&page_size=10 [36m304[0m 13.405 ms - -[0m
+2023-04-09 16:13:15 info: [0mGET /roles/show/1 [36m304[0m 112.129 ms - -[0m
+2023-04-09 16:13:15 info: [0mGET /permissions?id=1 [32m200[0m 112.984 ms - 876[0m
+2023-04-09 16:13:18 info: [0mOPTIONS /roles/update/1 [32m204[0m 0.315 ms - 0[0m
+2023-04-09 16:13:18 info: [0mPUT /roles/update/1 [32m200[0m 37.465 ms - 16[0m
+2023-04-09 16:13:18 info: [0mGET /roles/show/1 [36m304[0m 7.089 ms - -[0m
+2023-04-09 16:13:51 info: [0mGET /roles/show/1 [36m304[0m 81.823 ms - -[0m
+2023-04-09 16:14:00 info: [0mGET /roles/show/2 [32m200[0m 11.871 ms - 65[0m
+2023-04-09 16:14:27 info: [0mOPTIONS /roles/update/1 [32m204[0m 0.523 ms - 0[0m
+2023-04-09 16:14:27 info: [0mPUT /roles/update/1 [32m200[0m 43.184 ms - 16[0m
+2023-04-09 16:14:27 info: [0mGET /roles/show/1 [36m304[0m 6.906 ms - -[0m
+2023-04-09 16:14:47 info: [0mGET /roles/show/1 [36m304[0m 49.434 ms - -[0m
+2023-04-09 16:15:03 info: [0mGET /roles/show/1 [36m304[0m 98.320 ms - -[0m
+2023-04-09 16:15:03 info: [0mGET /roles?page=1&page_size=10 [36m304[0m 76.500 ms - -[0m
+2023-04-09 16:15:03 info: [0mGET /roles?page=1&page_size=10 [36m304[0m 5.984 ms - -[0m
+2023-04-09 16:15:03 info: [0mGET /permissions? [32m200[0m 26.524 ms - 876[0m
+2023-04-09 16:15:06 info: [0mOPTIONS /roles/create [32m204[0m 0.279 ms - 0[0m
+2023-04-09 16:15:06 info: [0mPOST /roles/create [32m200[0m 17.454 ms - 16[0m
+2023-04-09 16:15:07 info: [0mGET /roles?page=1&page_size=10 [32m200[0m 5.034 ms - 315[0m
+2023-04-09 16:15:07 info: [0mGET /roles?page=1&page_size=10 [36m304[0m 3.301 ms - -[0m
+2023-04-09 16:15:09 info: [0mGET /roles/show/3 [32m200[0m 8.167 ms - 328[0m
+2023-04-09 16:15:09 info: [0mGET /permissions?id=3 [32m200[0m 11.126 ms - 876[0m
+2023-04-09 16:15:37 info: [0mGET /roles?page=1&page_size=10 [36m304[0m 94.443 ms - -[0m
+2023-04-09 16:15:37 info: [0mGET /roles/show/3 [36m304[0m 128.850 ms - -[0m
+2023-04-09 16:15:37 info: [0mGET /roles?page=1&page_size=10 [36m304[0m 5.794 ms - -[0m
+2023-04-09 16:15:40 info: [0mGET /roles/show/1 [36m304[0m 12.369 ms - -[0m
+2023-04-09 16:15:40 info: [0mGET /permissions?id=1 [36m304[0m 7.953 ms - -[0m
+2023-04-09 16:15:44 info: [0mOPTIONS /roles/update/1 [32m204[0m 0.225 ms - 0[0m
+2023-04-09 16:15:44 info: [0mPUT /roles/update/1 [32m200[0m 35.217 ms - 16[0m
+2023-04-09 16:15:44 info: [0mGET /roles/show/1 [36m304[0m 5.205 ms - -[0m
+2023-04-09 16:15:44 info: [0mGET /roles/show/3 [36m304[0m 7.918 ms - -[0m
+2023-04-09 16:15:44 info: [0mGET /roles/show/1 [36m304[0m 3.560 ms - -[0m
+2023-04-09 16:16:29 info: =================================
+2023-04-09 16:16:29 info: ======= ENV: development =======
+2023-04-09 16:16:29 info: 🚀 App listening on the port 8000
+2023-04-09 16:16:29 info: =================================
+2023-04-09 16:17:21 info: [0mGET /roles/show/1 [36m304[0m 164.732 ms - -[0m
+2023-04-09 16:17:21 info: [0mGET /roles?page=1&page_size=10 [36m304[0m 117.411 ms - -[0m
+2023-04-09 16:17:21 info: [0mGET /roles?page=1&page_size=10 [36m304[0m 4.627 ms - -[0m
+2023-04-09 16:17:24 info: [0mGET /roles/show/3 [36m304[0m 11.346 ms - -[0m
+2023-04-09 16:17:24 info: [0mGET /permissions?id=3 [36m304[0m 18.905 ms - -[0m
+2023-04-09 16:17:26 info: [0mOPTIONS /roles/update/3 [32m204[0m 0.838 ms - 0[0m
+2023-04-09 16:17:26 info: [0mPUT /roles/update/3 [32m200[0m 28.722 ms - 16[0m
+2023-04-09 16:17:26 info: [0mGET /roles/show/1 [36m304[0m 6.084 ms - -[0m
+2023-04-09 16:17:26 info: [0mGET /roles/show/3 [32m200[0m 7.087 ms - 201[0m
+2023-04-09 16:17:26 info: [0mGET /roles/show/1 [36m304[0m 6.359 ms - -[0m
+2023-04-09 16:17:26 info: [0mGET /roles/show/3 [36m304[0m 6.953 ms - -[0m
+2023-04-09 16:19:06 info: =================================
+2023-04-09 16:19:06 info: ======= ENV: development =======
+2023-04-09 16:19:06 info: 🚀 App listening on the port 8000
+2023-04-09 16:19:06 info: =================================
+2023-04-09 16:19:11 info: [0mGET /roles?page=1&page_size=10 [36m304[0m 114.676 ms - -[0m
+2023-04-09 16:19:12 info: [0mGET /roles?page=1&page_size=10 [36m304[0m 35.815 ms - -[0m
+2023-04-09 16:19:12 info: [0mGET /roles?page=1&page_size=10 [36m304[0m 12.971 ms - -[0m
+2023-04-09 16:19:13 info: [0mGET /roles/show/3 [36m304[0m 29.504 ms - -[0m
+2023-04-09 16:19:14 info: [0mGET /permissions?id=3 [36m304[0m 53.113 ms - -[0m
+2023-04-09 16:19:20 info: [0mOPTIONS /roles/update/3 [32m204[0m 0.882 ms - 0[0m
+2023-04-09 16:19:20 info: [0mPUT /roles/update/3 [32m200[0m 79.871 ms - 16[0m
+2023-04-09 16:19:20 info: [0mGET /roles/show/3 [32m200[0m 6.862 ms - 200[0m
+2023-04-09 16:21:00 info: =================================
+2023-04-09 16:21:00 info: ======= ENV: development =======
+2023-04-09 16:21:00 info: 🚀 App listening on the port 8000
+2023-04-09 16:21:00 info: =================================
+2023-04-09 16:21:01 info: [0mGET /roles/show/3 [36m304[0m 166.802 ms - -[0m
+2023-04-09 16:21:01 info: [0mGET /permissions?id=3 [36m304[0m 129.951 ms - -[0m
+2023-04-09 16:21:03 info: [0mOPTIONS /roles/update/3 [32m204[0m 0.881 ms - 0[0m
+2023-04-09 16:21:03 info: [0mPUT /roles/update/3 [32m200[0m 65.641 ms - 16[0m
+2023-04-09 16:21:03 info: [0mGET /roles/show/3 [36m304[0m 19.163 ms - -[0m
+2023-04-09 16:21:07 info: [0mGET /roles/show/3 [36m304[0m 12.765 ms - -[0m
+2023-04-09 16:21:07 info: [0mGET /permissions?id=3 [36m304[0m 10.970 ms - -[0m
+2023-04-09 16:30:04 info: =================================
+2023-04-09 16:30:04 info: ======= ENV: development =======
+2023-04-09 16:30:04 info: 🚀 App listening on the port 8000
+2023-04-09 16:30:04 info: =================================
+2023-04-09 16:31:13 info: =================================
+2023-04-09 16:31:13 info: ======= ENV: development =======
+2023-04-09 16:31:13 info: 🚀 App listening on the port 8000
+2023-04-09 16:31:13 info: =================================
+2023-04-09 16:31:49 info: =================================
+2023-04-09 16:31:49 info: ======= ENV: development =======
+2023-04-09 16:31:49 info: 🚀 App listening on the port 8000
+2023-04-09 16:31:49 info: =================================
+2023-04-09 16:32:15 info: =================================
+2023-04-09 16:32:15 info: ======= ENV: development =======
+2023-04-09 16:32:15 info: 🚀 App listening on the port 8000
+2023-04-09 16:32:15 info: =================================
+2023-04-09 16:32:45 info: =================================
+2023-04-09 16:32:45 info: ======= ENV: development =======
+2023-04-09 16:32:45 info: 🚀 App listening on the port 8000
+2023-04-09 16:32:45 info: =================================
+2023-04-09 16:33:34 info: =================================
+2023-04-09 16:33:34 info: ======= ENV: development =======
+2023-04-09 16:33:34 info: 🚀 App listening on the port 8000
+2023-04-09 16:33:34 info: =================================
+2023-04-09 16:35:13 info: =================================
+2023-04-09 16:35:13 info: ======= ENV: development =======
+2023-04-09 16:35:13 info: 🚀 App listening on the port 8000
+2023-04-09 16:35:13 info: =================================
+2023-04-09 16:41:07 info: =================================
+2023-04-09 16:41:07 info: ======= ENV: development =======
+2023-04-09 16:41:07 info: 🚀 App listening on the port 8000
+2023-04-09 16:41:07 info: =================================
+2023-04-09 16:41:22 info: =================================
+2023-04-09 16:41:22 info: ======= ENV: development =======
+2023-04-09 16:41:22 info: 🚀 App listening on the port 8000
+2023-04-09 16:41:22 info: =================================
+2023-04-09 16:41:38 info: =================================
+2023-04-09 16:41:38 info: ======= ENV: development =======
+2023-04-09 16:41:38 info: 🚀 App listening on the port 8000
+2023-04-09 16:41:38 info: =================================
+2023-04-09 16:41:39 info: [0mGET /roles/show/3 [36m304[0m 168.001 ms - -[0m
+2023-04-09 16:41:39 info: [0mGET /permissions?id=3 [36m304[0m 332.865 ms - -[0m
+2023-04-09 16:41:42 info: [0mOPTIONS /roles/update/3 [32m204[0m 2.908 ms - 0[0m
+2023-04-09 16:41:42 info: [0mPUT /roles/update/3 [32m200[0m 116.943 ms - 16[0m
+2023-04-09 16:41:42 info: [0mGET /roles/show/3 [32m200[0m 14.231 ms - 63[0m
+2023-04-09 16:42:29 info: =================================
+2023-04-09 16:42:29 info: ======= ENV: development =======
+2023-04-09 16:42:29 info: 🚀 App listening on the port 8000
+2023-04-09 16:42:29 info: =================================
+2023-04-09 16:42:29 info: [0mGET /roles/show/3 [36m304[0m 153.692 ms - -[0m
+2023-04-09 16:42:29 info: [0mGET /roles?page=1&page_size=10 [32m200[0m 90.827 ms - 314[0m
+2023-04-09 16:42:29 info: [0mGET /roles?page=1&page_size=10 [36m304[0m 14.294 ms - -[0m
+2023-04-09 16:42:31 info: [0mGET /roles/show/1 [36m304[0m 12.794 ms - -[0m
+2023-04-09 16:42:31 info: [0mGET /permissions?id=1 [36m304[0m 20.208 ms - -[0m
+2023-04-09 16:42:34 info: [0mOPTIONS /roles/update/1 [32m204[0m 0.878 ms - 0[0m
+2023-04-09 16:42:34 info: [0mPUT /roles/update/1 [32m200[0m 85.097 ms - 16[0m
+2023-04-09 16:42:34 info: [0mGET /roles/show/3 [36m304[0m 7.332 ms - -[0m
+2023-04-09 16:42:34 info: [0mGET /roles/show/1 [36m304[0m 9.686 ms - -[0m
+2023-04-09 16:43:39 info: =================================
+2023-04-09 16:43:39 info: ======= ENV: development =======
+2023-04-09 16:43:39 info: 🚀 App listening on the port 8000
+2023-04-09 16:43:39 info: =================================
+2023-04-09 16:44:23 info: =================================
+2023-04-09 16:44:23 info: ======= ENV: development =======
+2023-04-09 16:44:23 info: 🚀 App listening on the port 8000
+2023-04-09 16:44:23 info: =================================
+2023-04-09 16:44:35 info: =================================
+2023-04-09 16:44:35 info: ======= ENV: development =======
+2023-04-09 16:44:35 info: 🚀 App listening on the port 8000
+2023-04-09 16:44:35 info: =================================
+2023-04-09 16:44:41 info: [0mOPTIONS /roles/update/1 [32m204[0m 2.630 ms - 0[0m
+2023-04-09 16:44:42 info: [0mPUT /roles/update/1 [32m200[0m 781.121 ms - 16[0m
+2023-04-09 16:44:42 info: [0mGET /roles/show/1 [36m304[0m 82.242 ms - -[0m
+2023-04-09 16:44:42 error: Cannot read properties of null (reading 'id')
+2023-04-09 16:44:42 info: [0mGET /roles/show/3 [31m500[0m 56.265 ms - 51[0m
+2023-04-09 16:45:38 info: =================================
+2023-04-09 16:45:38 info: ======= ENV: development =======
+2023-04-09 16:45:38 info: 🚀 App listening on the port 8000
+2023-04-09 16:45:38 info: =================================
+2023-04-09 16:47:33 info: =================================
+2023-04-09 16:47:33 info: ======= ENV: development =======
+2023-04-09 16:47:33 info: 🚀 App listening on the port 8000
+2023-04-09 16:47:33 info: =================================
+2023-04-09 16:47:41 info: [0mGET /roles/show/1 [36m304[0m 173.037 ms - -[0m
+2023-04-09 16:47:41 info: [0mGET /permissions?id=1 [36m304[0m 113.386 ms - -[0m
+2023-04-09 16:47:44 info: [0mOPTIONS /roles/update/1 [32m204[0m 1.282 ms - 0[0m
+2023-04-09 16:47:45 error: Cannot read properties of undefined (reading 'transaction')
+2023-04-09 16:47:45 info: [0mPUT /roles/update/1 [31m500[0m 19.096 ms - 59[0m
+2023-04-09 16:52:39 info: =================================
+2023-04-09 16:52:39 info: ======= ENV: development =======
+2023-04-09 16:52:39 info: 🚀 App listening on the port 8000
+2023-04-09 16:52:39 info: =================================
+2023-04-09 16:52:48 info: [0mGET /roles/show/1 [36m304[0m 512.741 ms - -[0m
+2023-04-09 16:52:48 info: [0mGET /permissions?id=1 [36m304[0m 337.078 ms - -[0m
+2023-04-09 16:52:50 info: [0mOPTIONS /roles/update/1 [32m204[0m 2.079 ms - 0[0m
+2023-04-09 16:52:50 info: [0mPUT /roles/update/1 [32m200[0m 67.054 ms - 16[0m
+2023-04-09 16:52:50 info: [0mGET /roles/show/1 [32m200[0m 15.943 ms - 345[0m
+2023-04-09 16:52:52 info: [0mPUT /roles/update/1 [32m200[0m 35.513 ms - 16[0m
+2023-04-09 16:52:53 info: [0mGET /roles/show/1 [32m200[0m 4.001 ms - 480[0m
+2023-04-09 16:52:59 info: [0mOPTIONS /roles/update/1 [32m204[0m 0.673 ms - 0[0m
+2023-04-09 16:52:59 info: [0mPUT /roles/update/1 [32m200[0m 26.486 ms - 16[0m
+2023-04-09 16:52:59 info: [0mGET /roles/show/1 [32m200[0m 20.448 ms - 481[0m
+2023-04-09 16:53:34 info: =================================
+2023-04-09 16:53:34 info: ======= ENV: development =======
+2023-04-09 16:53:34 info: 🚀 App listening on the port 8000
+2023-04-09 16:53:34 info: =================================
+2023-04-09 16:53:59 info: =================================
+2023-04-09 16:53:59 info: ======= ENV: development =======
+2023-04-09 16:53:59 info: 🚀 App listening on the port 8000
+2023-04-09 16:53:59 info: =================================
+2023-04-09 16:54:02 info: [0mGET /permissions?id=1 [36m304[0m 89.199 ms - -[0m
+2023-04-09 16:54:02 info: [0mGET /roles/show/1 [36m304[0m 149.487 ms - -[0m
+2023-04-09 16:54:05 info: [0mOPTIONS /roles/update/1 [32m204[0m 1.192 ms - 0[0m
+2023-04-09 16:54:05 info: [0mPUT /roles/update/1 [32m200[0m 87.649 ms - 16[0m
+2023-04-09 16:54:05 info: [0mGET /roles/show/1 [32m200[0m 20.536 ms - 486[0m
+2023-04-09 16:54:09 info: [0mPUT /roles/update/1 [32m200[0m 18.055 ms - 16[0m
+2023-04-09 16:54:09 info: [0mGET /roles/show/1 [32m200[0m 25.842 ms - 760[0m
+2023-04-09 16:54:14 info: [0mGET /roles/show/1 [36m304[0m 54.149 ms - -[0m
+2023-04-09 16:54:15 info: [0mGET /admins? [32m200[0m 692.610 ms - 251[0m
+2023-04-09 16:54:15 info: [0mGET /admins?page=1&page_size=10 [32m200[0m 49.939 ms - 251[0m
+2023-04-09 16:54:30 info: [0mGET /permissions?page=1&page_size=10 [32m200[0m 181.091 ms - 876[0m
+2023-04-09 16:54:30 info: [0mGET /permissions? [36m304[0m 265.047 ms - -[0m
+2023-04-09 16:54:50 info: [0mGET /permissions?page=1&page_size=10 [36m304[0m 96.040 ms - -[0m
+2023-04-09 16:54:50 info: [0mGET /permissions?page=1&page_size=10 [36m304[0m 26.148 ms - -[0m
+2023-04-09 16:54:50 info: [0mGET /permissions?page=1&page_size=10 [36m304[0m 16.120 ms - -[0m
+2023-04-09 16:55:02 info: [0mGET /permissions?page=1&page_size=10 [36m304[0m 90.229 ms - -[0m
+2023-04-09 16:55:03 info: [0mGET /permissions?page=1&page_size=10 [36m304[0m 26.268 ms - -[0m
+2023-04-09 16:55:03 info: [0mGET /permissions?page=1&page_size=10 [36m304[0m 18.768 ms - -[0m
+2023-04-09 16:55:10 info: [0mGET /roles? [32m200[0m 131.678 ms - 244[0m
+2023-04-09 16:55:10 info: [0mGET /roles?page=1&page_size=10 [32m200[0m 72.626 ms - 244[0m
+2023-04-09 16:55:13 info: [0mGET /permissions? [36m304[0m 25.402 ms - -[0m
+2023-04-09 16:55:13 info: [0mGET /permissions?page=1&page_size=10 [36m304[0m 23.124 ms - -[0m
+2023-04-09 16:55:15 info: [0mOPTIONS /folders/get-medias [32m204[0m 1.792 ms - 0[0m
+2023-04-09 16:55:15 info: [0mGET /folders [36m304[0m 74.952 ms - -[0m
+2023-04-09 16:55:15 info: [0mPOST /folders/get-medias [32m200[0m 123.940 ms - 31[0m
+2023-04-09 16:55:16 info: [0mGET /ceos? [32m200[0m 133.048 ms - 362[0m
+2023-04-09 16:55:16 info: [0mGET /ceos?page=1&page_size=10 [32m200[0m 31.625 ms - 362[0m
+2023-04-09 16:55:22 info: [0mGET /posts? [32m200[0m 267.212 ms - 472[0m
+2023-04-09 16:55:22 info: [0mGET /posts?page=1&page_size=10 [32m200[0m 129.547 ms - 472[0m
+2023-04-09 16:55:26 info: [0mGET /ceos?[object%20Object] [32m200[0m 36.144 ms - 362[0m
+2023-04-09 16:55:26 info: [0mGET /posts?[object%20Object] [32m200[0m 33.616 ms - 472[0m
+2023-04-09 16:55:26 info: [0mGET /categories?[object%20Object] [32m200[0m 84.177 ms - 356[0m
+2023-04-09 17:03:24 info: [0mGET /roles?page=1&page_size=10 [36m304[0m 44.530 ms - -[0m
+2023-04-09 17:03:24 info: [0mGET /roles? [36m304[0m 105.908 ms - -[0m
+2023-04-09 17:03:26 info: [0mGET /permissions? [36m304[0m 14.212 ms - -[0m
+2023-04-09 17:03:30 info: [0mGET /roles?page=1&page_size=10 [36m304[0m 7.860 ms - -[0m
+2023-04-09 17:03:30 info: [0mGET /roles?page=1&page_size=10 [36m304[0m 15.567 ms - -[0m
+2023-04-09 17:03:31 info: [0mGET /permissions? [36m304[0m 26.277 ms - -[0m
+2023-04-09 17:03:37 info: [0mGET /admins? [36m304[0m 80.017 ms - -[0m
+2023-04-09 17:03:37 info: [0mGET /admins?page=1&page_size=10 [36m304[0m 32.062 ms - -[0m
+2023-04-09 17:05:17 info: [0mGET /categories?[object%20Object] [36m304[0m 42.414 ms - -[0m
+2023-04-09 17:06:23 info: [0mGET /roles?[object%20Object] [32m200[0m 156.929 ms - 244[0m
+2023-04-09 17:08:19 info: [0mGET /permissions? [36m304[0m 314.583 ms - -[0m
+2023-04-09 17:08:19 info: [0mGET /permissions?page=1&page_size=10 [36m304[0m 223.317 ms - -[0m
+2023-04-09 17:08:42 info: [0mGET /roles? [36m304[0m 362.772 ms - -[0m
+2023-04-09 17:08:42 info: [0mGET /roles?page=1&page_size=10 [36m304[0m 237.641 ms - -[0m
+2023-04-09 17:08:48 info: [0mGET /permissions? [36m304[0m 28.772 ms - -[0m
+2023-04-09 17:08:55 info: [0mOPTIONS /roles/create [32m204[0m 0.509 ms - 0[0m
+2023-04-09 17:08:55 info: [0mPOST /roles/create [32m200[0m 58.615 ms - 16[0m
+2023-04-09 17:08:55 info: [0mGET /roles?page=1&page_size=10 [32m200[0m 8.612 ms - 317[0m
+2023-04-09 17:08:56 info: [0mGET /roles?page=1&page_size=10 [36m304[0m 29.835 ms - -[0m
+2023-04-09 17:08:58 info: [0mGET /roles/show/4 [32m200[0m 30.947 ms - 340[0m
+2023-04-09 17:08:58 info: [0mGET /permissions?id=4 [32m200[0m 41.369 ms - 876[0m
+2023-04-09 17:08:59 info: [0mGET /roles/show/4 [36m304[0m 7.762 ms - -[0m
+2023-04-09 17:08:59 info: [0mGET /roles?page=1&page_size=10 [36m304[0m 10.926 ms - -[0m
+2023-04-09 17:08:59 info: [0mGET /roles?page=1&page_size=10 [36m304[0m 30.037 ms - -[0m
+2023-04-09 17:09:01 info: [0mGET /admins? [36m304[0m 99.306 ms - -[0m
+2023-04-09 17:09:02 info: [0mGET /admins?page=1&page_size=10 [36m304[0m 79.494 ms - -[0m
+2023-04-09 17:09:08 info: [0mGET /roles?[object%20Object] [32m200[0m 31.225 ms - 317[0m
+2023-04-09 17:09:27 info: [0mGET /permissions?page=1&page_size=10 [36m304[0m 52.784 ms - -[0m
+2023-04-09 17:09:27 info: [0mGET /permissions? [36m304[0m 79.587 ms - -[0m
+2023-04-09 17:09:36 info: [0mGET /banners?page=1&page_size=10 [32m200[0m 49.754 ms - 308[0m
+2023-04-09 17:09:36 info: [0mGET /banners? [32m200[0m 97.532 ms - 308[0m
+2023-04-09 17:10:14 info: [0mOPTIONS /folders/get-medias [32m204[0m 3.955 ms - 0[0m
+2023-04-09 17:10:14 info: [0mPOST /folders/get-medias [32m200[0m 96.502 ms - 31[0m
+2023-04-09 17:10:14 info: [0mGET /folders [36m304[0m 85.788 ms - -[0m
+2023-04-09 17:12:07 info: [0mGET /banners?page=1&page_size=10 [36m304[0m 90.956 ms - -[0m
+2023-04-09 17:12:07 info: [0mGET /banners? [36m304[0m 206.645 ms - -[0m
+2023-04-09 17:12:10 info: [0mGET /projects?page=1&page_size=10 [32m200[0m 65.875 ms - 477[0m
+2023-04-09 17:12:10 info: [0mGET /projects? [32m200[0m 178.385 ms - 477[0m
+2023-04-09 17:12:14 info: [0mGET /categories? [32m200[0m 218.739 ms - 356[0m
+2023-04-09 17:12:14 info: [0mGET /categories?page=1&page_size=10 [32m200[0m 133.046 ms - 356[0m
+2023-04-09 17:12:24 info: [0mOPTIONS /categories/create [32m204[0m 0.670 ms - 0[0m
+2023-04-09 17:12:24 info: [0mPOST /categories/create [32m200[0m 67.697 ms - 16[0m
+2023-04-09 17:12:24 info: [0mGET /categories?page=1&page_size=10 [32m200[0m 19.753 ms - 487[0m
+2023-04-09 17:12:24 info: [0mGET /categories?page=1&page_size=10 [36m304[0m 6.515 ms - -[0m
+2023-04-09 17:12:28 info: [0mGET /categories/show/3 [32m200[0m 9.483 ms - 154[0m
+2023-04-09 17:12:31 info: [0mOPTIONS /categories/update/3 [32m204[0m 0.896 ms - 0[0m
+2023-04-09 17:12:31 info: [0mPUT /categories/update/3 [32m200[0m 19.326 ms - 27[0m
+2023-04-09 17:12:31 info: [0mGET /categories/show/3 [32m200[0m 4.536 ms - 157[0m
+2023-04-09 17:12:31 info: [0mGET /roles/show/4 [36m304[0m 5.604 ms - -[0m
+2023-04-09 17:12:33 info: [0mGET /categories/show/3 [36m304[0m 63.359 ms - -[0m
+2023-04-09 17:12:33 info: [0mGET /categories?page=1&page_size=10 [32m200[0m 40.094 ms - 490[0m
+2023-04-09 17:12:33 info: [0mGET /categories?page=1&page_size=10 [36m304[0m 12.302 ms - -[0m
+2023-04-09 17:12:36 info: [0mGET /categories/show/3 [36m304[0m 38.771 ms - -[0m
+2023-04-09 17:13:42 info: [0mGET /categories/show/3 [36m304[0m 114.577 ms - -[0m
+2023-04-09 17:13:42 info: [0mGET /permissions? [36m304[0m 91.123 ms - -[0m
+2023-04-09 17:13:42 info: [0mGET /permissions?page=1&page_size=10 [36m304[0m 59.154 ms - -[0m
+2023-04-09 17:13:53 info: [0mGET /roles? [32m200[0m 51.505 ms - 317[0m
+2023-04-09 17:13:53 info: [0mGET /roles?page=1&page_size=10 [36m304[0m 21.931 ms - -[0m
+2023-04-09 17:14:05 info: [0mGET /permissions? [36m304[0m 248.056 ms - -[0m
+2023-04-09 17:14:05 info: [0mGET /permissions?page=1&page_size=10 [36m304[0m 204.215 ms - -[0m
+2023-04-09 17:14:14 info: [0mGET /permissions?page=1&page_size=10 [36m304[0m 17.822 ms - -[0m
+2023-04-09 17:14:14 info: [0mGET /permissions?page=1&page_size=10 [36m304[0m 59.551 ms - -[0m
+2023-04-09 17:14:17 info: [0mGET /admins? [36m304[0m 98.000 ms - -[0m
+2023-04-09 17:14:17 info: [0mGET /admins?page=1&page_size=10 [36m304[0m 5.856 ms - -[0m
+2023-04-09 17:14:18 info: [0mGET /roles?[object%20Object] [36m304[0m 19.313 ms - -[0m
+2023-04-09 17:14:21 info: [0mGET /admins?page=1&page_size=10 [36m304[0m 45.838 ms - -[0m
+2023-04-09 17:14:21 info: [0mGET /admins?page=1&page_size=10 [36m304[0m 33.406 ms - -[0m
+2023-04-09 17:20:21 info: [0mGET /banners? [36m304[0m 369.704 ms - -[0m
+2023-04-09 17:20:21 info: [0mGET /banners?page=1&page_size=10 [36m304[0m 251.366 ms - -[0m
+2023-04-09 17:20:23 info: [0mGET /banners?page=1&page_size=10 [36m304[0m 38.615 ms - -[0m
+2023-04-09 17:20:23 info: [0mGET /banners?page=1&page_size=10 [36m304[0m 11.931 ms - -[0m
+2023-04-09 17:20:23 info: [0mGET /banners?page=1&page_size=10 [36m304[0m 19.223 ms - -[0m
+2023-04-09 17:20:24 info: [0mGET /projects? [36m304[0m 65.038 ms - -[0m
+2023-04-09 17:20:25 info: [0mGET /projects?page=1&page_size=10 [36m304[0m 20.419 ms - -[0m
+2023-04-09 17:20:26 info: [0mGET /posts?page=1&page_size=10 [36m304[0m 16.700 ms - -[0m
+2023-04-09 17:20:26 info: [0mGET /posts? [36m304[0m 88.995 ms - -[0m
+2023-04-09 17:20:28 info: [0mGET /categories? [32m200[0m 22.197 ms - 490[0m
+2023-04-09 17:20:28 info: [0mGET /categories?page=1&page_size=10 [36m304[0m 27.101 ms - -[0m
+2023-04-09 17:20:29 info: [0mGET /jobs? [32m200[0m 147.860 ms - 87[0m
+2023-04-09 17:20:29 info: [0mGET /jobs?page=1&page_size=10 [32m200[0m 77.214 ms - 87[0m
+2023-04-09 17:20:29 info: [0mGET /ceos? [36m304[0m 14.109 ms - -[0m
+2023-04-09 17:20:29 info: [0mGET /ceos?page=1&page_size=10 [36m304[0m 22.703 ms - -[0m
+2023-04-09 17:20:32 info: [0mGET /banners? [36m304[0m 16.987 ms - -[0m
+2023-04-09 17:20:32 info: [0mGET /banners?page=1&page_size=10 [36m304[0m 40.185 ms - -[0m
+2023-04-09 17:20:35 info: [0mGET /projects? [36m304[0m 15.213 ms - -[0m
+2023-04-09 17:20:35 info: [0mGET /projects?page=1&page_size=10 [36m304[0m 8.378 ms - -[0m
+2023-04-09 17:20:36 info: [0mGET /posts? [36m304[0m 8.012 ms - -[0m
+2023-04-09 17:20:37 info: [0mGET /posts?page=1&page_size=10 [36m304[0m 5.624 ms - -[0m
+2023-04-09 17:20:38 info: [0mGET /categories?[object%20Object] [32m200[0m 19.093 ms - 490[0m
+2023-04-09 17:20:38 info: [0mGET /posts?[object%20Object] [36m304[0m 29.737 ms - -[0m
+2023-04-09 17:20:38 info: [0mGET /ceos?[object%20Object] [36m304[0m 44.270 ms - -[0m
+2023-04-09 17:20:40 info: [0mGET /posts?page=1&page_size=10 [36m304[0m 10.414 ms - -[0m
+2023-04-09 17:20:40 info: [0mGET /posts?page=1&page_size=10 [36m304[0m 31.840 ms - -[0m
+2023-04-09 17:20:43 info: [0mGET /roles? [36m304[0m 58.547 ms - -[0m
+2023-04-09 17:20:43 info: [0mGET /roles?page=1&page_size=10 [36m304[0m 18.962 ms - -[0m
+2023-04-09 17:20:45 info: [0mGET /permissions? [36m304[0m 33.829 ms - -[0m
+2023-04-09 17:20:45 info: [0mGET /permissions?page=1&page_size=10 [36m304[0m 8.293 ms - -[0m
+2023-04-09 17:22:25 info: =================================
+2023-04-09 17:22:25 info: ======= ENV: development =======
+2023-04-09 17:22:25 info: 🚀 App listening on the port 8000
+2023-04-09 17:22:25 info: =================================
+2023-04-09 17:22:39 info: =================================
+2023-04-09 17:22:39 info: ======= ENV: development =======
+2023-04-09 17:22:39 info: 🚀 App listening on the port 8000
+2023-04-09 17:22:39 info: =================================
+2023-04-09 17:37:17 info: [0mGET /admins? [36m304[0m 262.513 ms - -[0m
+2023-04-09 17:37:17 info: [0mGET /admins?page=1&page_size=10 [36m304[0m 242.398 ms - -[0m
+2023-04-09 17:37:31 info: [0mGET /roles?[object%20Object] [36m304[0m 63.270 ms - -[0m
+2023-04-09 20:19:46 info: [0mGET /banners? [36m304[0m 221.344 ms - -[0m
+2023-04-09 20:19:46 info: [0mGET /banners?page=1&page_size=10 [36m304[0m 119.608 ms - -[0m
+2023-04-09 20:19:47 info: [0mGET /projects? [36m304[0m 59.355 ms - -[0m
+2023-04-09 20:19:47 info: [0mGET /projects?page=1&page_size=10 [36m304[0m 16.127 ms - -[0m
+2023-04-09 20:19:48 info: [0mGET /posts? [36m304[0m 38.890 ms - -[0m
+2023-04-09 20:19:48 info: [0mGET /posts?page=1&page_size=10 [36m304[0m 13.825 ms - -[0m
+2023-04-09 20:19:49 info: [0mGET /jobs? [36m304[0m 16.198 ms - -[0m
+2023-04-09 20:19:49 info: [0mGET /jobs?page=1&page_size=10 [36m304[0m 18.655 ms - -[0m
+2023-04-09 20:19:57 info: [0mGET /roles? [36m304[0m 166.805 ms - -[0m
+2023-04-09 20:19:57 info: [0mGET /roles?page=1&page_size=10 [36m304[0m 98.521 ms - -[0m
+2023-04-09 20:19:59 info: [0mGET /permissions? [36m304[0m 14.917 ms - -[0m
+2023-04-09 20:19:59 info: [0mGET /permissions?page=1&page_size=10 [36m304[0m 29.699 ms - -[0m
+2023-04-09 20:21:37 info: =================================
+2023-04-09 20:21:37 info: ======= ENV: development =======
+2023-04-09 20:21:37 info: 🚀 App listening on the port 8000
+2023-04-09 20:21:37 info: =================================
+2023-04-09 20:21:50 info: =================================
+2023-04-09 20:21:50 info: ======= ENV: development =======
+2023-04-09 20:21:50 info: 🚀 App listening on the port 8000
+2023-04-09 20:21:50 info: =================================
+2023-04-09 20:22:00 info: =================================
+2023-04-09 20:22:00 info: ======= ENV: development =======
+2023-04-09 20:22:00 info: 🚀 App listening on the port 8000
+2023-04-09 20:22:00 info: =================================
+2023-04-09 20:22:23 info: =================================
+2023-04-09 20:22:23 info: ======= ENV: development =======
+2023-04-09 20:22:23 info: 🚀 App listening on the port 8000
+2023-04-09 20:22:23 info: =================================
+2023-04-09 20:22:41 info: =================================
+2023-04-09 20:22:41 info: ======= ENV: development =======
+2023-04-09 20:22:41 info: 🚀 App listening on the port 8000
+2023-04-09 20:22:41 info: =================================
+2023-04-09 20:23:42 info: =================================
+2023-04-09 20:23:42 info: ======= ENV: development =======
+2023-04-09 20:23:42 info: 🚀 App listening on the port 8000
+2023-04-09 20:23:42 info: =================================

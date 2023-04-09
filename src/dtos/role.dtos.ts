@@ -6,6 +6,13 @@ export class RoleDTO {
             createdAt: item.createdAt,
             updatedAt: item.updatedAt,
         }
+    }
 
+    static transformDetail = (item) => {
+        return {
+            id: item.id,
+            name: item.name || "",
+            permissions: item.permissions || []
+        }
     }
 }

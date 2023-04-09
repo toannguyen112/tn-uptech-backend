@@ -33,36 +33,71 @@ export class RoleService {
 
             return result;
         } catch (error) {
-            console.log(error.message);
-        }
-    }
-
-    public store = async (body) => {
-        try {
-            return await models.Role.create({ ...body }).then(async (role) => {
-                for (const permission of body.permissions) {
-                    try {
-                        await models.RolePermission.create({
-                            role_id: role.id,
-                            permission_id: permission.id,
-
-                        });
-                    } catch (error) {
-                        console.log(error);
-                    }
-                }
-            });
-        } catch (error) {
             console.log(error);
         }
     }
 
+    public store = async (body) => {
+
+        const t = await models.sequelize.transaction();
+
+        try {
+            await models.Role.create({ ...body }
+                , { transaction: t }).then(async (role) => {
+                    for (const permission of body.permissions) {
+                        try {
+                            await models.RolePermission.create({
+                                role_id: role.id,
+                                permission_id: permission.id,
+
+                            });
+                        } catch (error) {
+                            console.log(error);
+                        }
+                    }
+                });
+
+            await t.commit();
+        } catch (error) {
+            console.log(error);
+            await t.rollback();
+        }
+    }
+
     public findById = async (id) => {
-        return await models.Role.findOne({ where: { id } });
+        const role = await models.Role.findOne({
+            where: { id },
+            include: [
+                {
+                    model: models.Permission,
+                    as: "permissions",
+                    required: false,
+                },
+            ]
+        });
+        return RoleDTO.transformDetail(role);
+
     }
 
     public update = async (id, body) => {
-        return await models.Role.update({ ...body }, { where: { id } });
+
+        const t = await models.sequelize.transaction();
+
+        try {
+            await models.Role.update({ name: body.name }, { where: { id } }, { transaction: t });
+
+            await models.RolePermission.destroy({ where: { role_id: id } }, { transaction: t });
+
+            for await (const permission of body.permissions) {
+                await models.RolePermission.create(
+                    { role_id: id, permission_id: permission.id },
+                    { transaction: t });
+            }
+            await t.commit();
+        } catch (error) {
+            console.log(error);
+            await t.rollback();
+        }
     }
 
     public delete = async (id) => {

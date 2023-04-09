@@ -9,13 +9,17 @@ module.exports = {
         autoIncrement: true,
         type: Sequelize.INTEGER,
       },
+
       role_id: {
         type: Sequelize.INTEGER,
         allowNull: false,
+        onDelete: 'CASCADE',
       },
+
       permission_id: {
         type: Sequelize.INTEGER,
         allowNull: false,
+        onDelete: 'CASCADE',
       },
     }),
 

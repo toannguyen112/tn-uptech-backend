@@ -36,7 +36,12 @@ module.exports = function (sequelize, DataTypes) {
         },
     );
 
-    Role.associate = function (models) { };
+    Role.associate = function (models) {
+        Role.belongsToMany(models.Permission, { 
+            as: 'permissions',
+            foreignKey: "role_id",
+            through: models.RolePermission });
+    };
 
     return Role;
 };
