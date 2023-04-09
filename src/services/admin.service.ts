@@ -37,7 +37,33 @@ export class AdminService {
     }
 
     public store = async (body) => {
-        return await models.Admin.create({ ...body });
+
+        const t = await models.sequelize.transaction();
+
+        try {
+            await models.Admin.create({ ...body }
+                ,
+                { transaction: t })
+                .then(async (role) => {
+                    for (const role of body.roles) {
+                        try {
+                            await models.AdminRole.create({
+                                role_id: role.id,
+                                admin_id: body.id,
+
+                            });
+                        } catch (error) {
+                            console.log(error);
+                        }
+                    }
+                });
+
+            await t.commit();
+        } catch (error) {
+            console.log(error);
+            await t.rollback();
+        }
+
     }
 
     public findById = async (id) => {

@@ -3,14 +3,12 @@ import models from "../infra/sequelize/models";
 import { ApiFeatures } from "../utils/ApiFeatures";
 import { Op } from "sequelize";
 import Helper from "../utils/Helper";
-
 export class JobService {
 
     public getList = async (query) => {
         try {
 
             const conditions = {};
-
             const queryObject = {
                 status: query.status,
                 search: query.search,

@@ -877,3 +877,420 @@
 2023-04-09 20:23:42 info: ======= ENV: development =======
 2023-04-09 20:23:42 info: 🚀 App listening on the port 8000
 2023-04-09 20:23:42 info: =================================
+2023-04-09 20:26:22 info: =================================
+2023-04-09 20:26:22 info: ======= ENV: development =======
+2023-04-09 20:26:22 info: 🚀 App listening on the port 8000
+2023-04-09 20:26:22 info: =================================
+2023-04-09 20:29:11 info: [0mGET /permissions?page=1&page_size=10 [36m304[0m 160.763 ms - -[0m
+2023-04-09 20:29:11 info: [0mGET /permissions?page=1&page_size=10 [36m304[0m 45.967 ms - -[0m
+2023-04-09 20:29:29 info: [0mOPTIONS /roles/update/1 [32m204[0m 0.680 ms - 0[0m
+2023-04-09 20:29:29 info: [0mPUT /roles/update/1 [32m200[0m 146.165 ms - 16[0m
+2023-04-09 20:29:31 info: [0mGET /permissions?page=1&page_size=10 [36m304[0m 10.698 ms - -[0m
+2023-04-09 20:29:31 info: [0mGET /permissions?page=1&page_size=10 [36m304[0m 7.849 ms - -[0m
+2023-04-09 20:29:34 info: [0mGET /permissions? [36m304[0m 24.160 ms - -[0m
+2023-04-09 20:29:45 info: [0mGET /permissions?page=1&page_size=10 [36m304[0m 36.349 ms - -[0m
+2023-04-09 20:29:45 info: [0mGET /permissions? [36m304[0m 76.610 ms - -[0m
+2023-04-09 20:29:48 info: [0mGET /permissions?page=1&page_size=10 [36m304[0m 8.601 ms - -[0m
+2023-04-09 20:29:48 info: [0mGET /permissions?page=1&page_size=10 [36m304[0m 6.092 ms - -[0m
+2023-04-09 20:30:02 info: [0mGET /admins? [36m304[0m 54.148 ms - -[0m
+2023-04-09 20:30:02 info: [0mGET /admins?page=1&page_size=10 [36m304[0m 20.866 ms - -[0m
+2023-04-09 20:30:03 info: [0mGET /roles?[object%20Object] [32m200[0m 10.687 ms - 234[0m
+2023-04-09 20:30:13 info: [0mGET /posts? [36m304[0m 139.345 ms - -[0m
+2023-04-09 20:30:13 info: [0mGET /posts?page=1&page_size=10 [36m304[0m 153.578 ms - -[0m
+2023-04-09 20:30:15 info: [0mGET /categories?[object%20Object] [32m200[0m 23.587 ms - 356[0m
+2023-04-09 20:30:15 info: [0mGET /ceos?[object%20Object] [36m304[0m 24.050 ms - -[0m
+2023-04-09 20:30:15 info: [0mGET /posts?[object%20Object] [36m304[0m 23.650 ms - -[0m
+2023-04-09 20:30:16 info: [0mGET /posts?page=1&page_size=10 [36m304[0m 31.355 ms - -[0m
+2023-04-09 20:30:16 info: [0mGET /posts?page=1&page_size=10 [36m304[0m 11.525 ms - -[0m
+2023-04-09 20:30:18 info: [0mGET /posts? [36m304[0m 21.404 ms - -[0m
+2023-04-09 20:30:43 info: [0mGET /categories? [32m200[0m 42.211 ms - 356[0m
+2023-04-09 20:30:43 info: [0mGET /categories?page=1&page_size=10 [32m200[0m 19.863 ms - 356[0m
+2023-04-09 20:30:51 info: [0mOPTIONS /categories/create [32m204[0m 0.167 ms - 0[0m
+2023-04-09 20:30:51 info: [0mPOST /categories/create [32m200[0m 15.249 ms - 16[0m
+2023-04-09 20:30:51 info: [0mGET /categories?page=1&page_size=10 [32m200[0m 9.359 ms - 494[0m
+2023-04-09 20:30:51 info: [0mGET /categories?page=1&page_size=10 [36m304[0m 3.843 ms - -[0m
+2023-04-09 20:30:55 info: [0mPOST /categories/create [32m200[0m 8.151 ms - 16[0m
+2023-04-09 20:30:55 info: [0mGET /categories?page=1&page_size=10 [32m200[0m 45.647 ms - 628[0m
+2023-04-09 20:30:55 info: [0mGET /categories?page=1&page_size=10 [36m304[0m 17.598 ms - -[0m
+2023-04-09 20:30:59 info: [0mGET /categories/show/4 [32m200[0m 10.529 ms - 157[0m
+2023-04-09 20:31:02 info: [0mOPTIONS /categories/update/4 [32m204[0m 0.168 ms - 0[0m
+2023-04-09 20:31:02 info: [0mPUT /categories/update/4 [32m200[0m 9.542 ms - 27[0m
+2023-04-09 20:31:02 info: [0mGET /categories/show/4 [32m200[0m 4.826 ms - 161[0m
+2023-04-09 20:31:04 info: [0mGET /categories/show/4 [36m304[0m 13.112 ms - -[0m
+2023-04-09 20:31:04 info: [0mGET /categories?page=1&page_size=10 [32m200[0m 16.195 ms - 632[0m
+2023-04-09 20:31:04 info: [0mGET /categories?page=1&page_size=10 [36m304[0m 43.768 ms - -[0m
+2023-04-09 20:31:05 info: [0mGET /categories/show/4 [36m304[0m 7.487 ms - -[0m
+2023-04-09 20:31:07 info: [0mOPTIONS /categories/update/4 [32m204[0m 0.170 ms - 0[0m
+2023-04-09 20:31:07 info: [0mPUT /categories/update/4 [32m200[0m 14.184 ms - 27[0m
+2023-04-09 20:31:07 info: [0mGET /categories/show/4 [32m200[0m 4.158 ms - 164[0m
+2023-04-09 20:31:07 info: [0mGET /categories/show/4 [36m304[0m 4.750 ms - -[0m
+2023-04-09 20:31:08 info: [0mGET /categories/show/4 [36m304[0m 8.807 ms - -[0m
+2023-04-09 20:31:08 info: [0mGET /categories?page=1&page_size=10 [32m200[0m 6.780 ms - 635[0m
+2023-04-09 20:31:08 info: [0mGET /categories?page=1&page_size=10 [36m304[0m 4.892 ms - -[0m
+2023-04-09 20:31:11 info: [0mGET /categories?status=Deactivated&page=1&page_size=10 [32m200[0m 7.861 ms - 87[0m
+2023-04-09 20:31:12 info: [0mGET /categories?page=1&page_size=10 [36m304[0m 6.386 ms - -[0m
+2023-04-09 20:31:30 info: [0mGET /roles? [32m200[0m 87.994 ms - 234[0m
+2023-04-09 20:31:30 info: [0mGET /roles?page=1&page_size=10 [32m200[0m 54.462 ms - 234[0m
+2023-04-09 20:31:32 info: [0mGET /permissions? [36m304[0m 6.470 ms - -[0m
+2023-04-09 20:31:32 info: [0mGET /permissions?page=1&page_size=10 [36m304[0m 7.150 ms - -[0m
+2023-04-09 20:33:37 info: [0mGET /roles?page=1&page_size=10 [36m304[0m 185.962 ms - -[0m
+2023-04-09 20:33:37 info: [0mGET /roles? [36m304[0m 233.056 ms - -[0m
+2023-04-09 20:33:38 info: [0mGET /permissions? [36m304[0m 10.575 ms - -[0m
+2023-04-09 20:33:46 info: [0mOPTIONS /roles/create [32m204[0m 0.485 ms - 0[0m
+2023-04-09 20:33:46 info: [0mPOST /roles/create [32m200[0m 33.117 ms - 16[0m
+2023-04-09 20:33:46 info: [0mGET /roles?page=1&page_size=10 [32m200[0m 34.119 ms - 307[0m
+2023-04-09 20:33:46 info: [0mGET /roles?page=1&page_size=10 [36m304[0m 6.814 ms - -[0m
+2023-04-09 20:33:48 info: [0mGET /roles/show/3 [32m200[0m 21.645 ms - 345[0m
+2023-04-09 20:33:48 info: [0mGET /permissions?id=3 [36m304[0m 23.227 ms - -[0m
+2023-04-09 20:33:49 info: [0mGET /roles/show/3 [36m304[0m 8.611 ms - -[0m
+2023-04-09 20:33:49 info: [0mGET /roles?page=1&page_size=10 [36m304[0m 12.176 ms - -[0m
+2023-04-09 20:33:50 info: [0mGET /roles?page=1&page_size=10 [36m304[0m 7.020 ms - -[0m
+2023-04-09 20:33:51 info: [0mGET /permissions? [36m304[0m 4.892 ms - -[0m
+2023-04-09 20:33:51 info: [0mGET /permissions?page=1&page_size=10 [36m304[0m 16.724 ms - -[0m
+2023-04-09 20:33:56 info: [0mGET /admins? [36m304[0m 18.563 ms - -[0m
+2023-04-09 20:33:56 info: [0mGET /admins?page=1&page_size=10 [36m304[0m 8.224 ms - -[0m
+2023-04-09 20:34:01 info: [0mGET /banners? [36m304[0m 77.573 ms - -[0m
+2023-04-09 20:34:01 info: [0mGET /banners?page=1&page_size=10 [36m304[0m 42.878 ms - -[0m
+2023-04-09 20:34:03 info: [0mGET /banners?page=1&page_size=10 [36m304[0m 5.362 ms - -[0m
+2023-04-09 20:34:03 info: [0mGET /banners?page=1&page_size=10 [36m304[0m 6.752 ms - -[0m
+2023-04-09 20:34:05 info: [0mOPTIONS /folders/get-medias [32m204[0m 0.387 ms - 0[0m
+2023-04-09 20:34:05 info: [0mPOST /folders/get-medias [32m200[0m 21.679 ms - 31[0m
+2023-04-09 20:34:05 info: [0mGET /folders [36m304[0m 37.147 ms - -[0m
+2023-04-09 20:34:06 info: [0mPOST /folders/get-medias [32m200[0m 2.632 ms - 31[0m
+2023-04-09 20:34:07 info: [0mPOST /folders/get-medias [32m200[0m 2.813 ms - 31[0m
+2023-04-09 20:34:11 info: [0mPOST /medias/create [32m200[0m 52.241 ms - 31[0m
+2023-04-09 20:34:11 info: [0mOPTIONS /folders/get-medias [32m204[0m 0.244 ms - 0[0m
+2023-04-09 20:34:11 info: [0mPOST /folders/get-medias [32m200[0m 4.607 ms - 312[0m
+2023-04-09 20:34:15 info: [0mOPTIONS /banners/create [32m204[0m 0.238 ms - 0[0m
+2023-04-09 20:34:15 info: [0mPOST /banners/create [32m200[0m 26.281 ms - 16[0m
+2023-04-09 20:34:15 info: [0mGET /banners?page=1&page_size=10 [32m200[0m 29.180 ms - 693[0m
+2023-04-09 20:34:16 info: [0mGET /banners?page=1&page_size=10 [36m304[0m 14.979 ms - -[0m
+2023-04-09 20:35:34 info: [0mGET /projects?page=1&page_size=10 [36m304[0m 73.641 ms - -[0m
+2023-04-09 20:35:34 info: [0mGET /projects? [36m304[0m 167.994 ms - -[0m
+2023-04-09 20:35:35 info: [0mGET /posts? [36m304[0m 8.763 ms - -[0m
+2023-04-09 20:35:35 info: [0mGET /posts?page=1&page_size=10 [36m304[0m 5.475 ms - -[0m
+2023-04-09 20:35:36 info: [0mGET /categories?[object%20Object] [32m200[0m 10.781 ms - 635[0m
+2023-04-09 20:35:36 info: [0mGET /ceos?[object%20Object] [36m304[0m 17.198 ms - -[0m
+2023-04-09 20:35:36 info: [0mGET /posts?[object%20Object] [36m304[0m 10.995 ms - -[0m
+2023-04-09 20:35:37 info: [0mGET /posts? [36m304[0m 6.909 ms - -[0m
+2023-04-09 20:35:37 info: [0mGET /posts?page=1&page_size=10 [36m304[0m 15.340 ms - -[0m
+2023-04-09 20:35:37 info: [0mGET /jobs?page=1&page_size=10 [36m304[0m 38.659 ms - -[0m
+2023-04-09 20:35:37 info: [0mGET /jobs? [36m304[0m 102.520 ms - -[0m
+2023-04-09 20:35:39 info: [0mGET /jobs?page=1&page_size=10 [36m304[0m 3.665 ms - -[0m
+2023-04-09 20:35:39 info: [0mGET /jobs?page=1&page_size=10 [36m304[0m 7.734 ms - -[0m
+2023-04-09 20:35:41 info: [0mGET /ceos? [36m304[0m 8.833 ms - -[0m
+2023-04-09 20:35:41 info: [0mGET /ceos?page=1&page_size=10 [36m304[0m 10.089 ms - -[0m
+2023-04-09 20:36:06 info: [0mGET /admins? [36m304[0m 238.850 ms - -[0m
+2023-04-09 20:36:06 info: [0mGET /admins?page=1&page_size=10 [36m304[0m 177.658 ms - -[0m
+2023-04-09 20:36:08 info: [0mGET /permissions? [36m304[0m 8.362 ms - -[0m
+2023-04-09 20:36:08 info: [0mGET /permissions?page=1&page_size=10 [36m304[0m 5.359 ms - -[0m
+2023-04-09 20:36:10 info: [0mGET /roles? [32m200[0m 11.474 ms - 307[0m
+2023-04-09 20:36:10 info: [0mGET /roles?page=1&page_size=10 [36m304[0m 20.022 ms - -[0m
+2023-04-09 20:36:12 info: [0mOPTIONS /folders/get-medias [32m204[0m 0.291 ms - 0[0m
+2023-04-09 20:36:12 info: [0mPOST /folders/get-medias [32m200[0m 13.002 ms - 31[0m
+2023-04-09 20:36:12 info: [0mGET /folders [36m304[0m 24.060 ms - -[0m
+2023-04-09 20:36:17 info: [0mGET /ceos? [36m304[0m 75.296 ms - -[0m
+2023-04-09 20:36:17 info: [0mGET /ceos?page=1&page_size=10 [36m304[0m 76.595 ms - -[0m
+2023-04-09 20:36:45 info: [0mGET /ceos?page=1&page_size=10 [36m304[0m 97.125 ms - -[0m
+2023-04-09 20:36:45 info: [0mGET /ceos?page=1&page_size=10 [36m304[0m 60.384 ms - -[0m
+2023-04-09 20:36:45 info: [0mGET /ceos?page=1&page_size=10 [36m304[0m 16.438 ms - -[0m
+2023-04-09 20:37:17 info: [0mGET /jobs?page=1&page_size=10 [36m304[0m 608.786 ms - -[0m
+2023-04-09 20:37:17 info: [0mGET /jobs? [36m304[0m 756.259 ms - -[0m
+2023-04-09 20:37:51 info: [0mGET /banners? [32m200[0m 128.656 ms - 693[0m
+2023-04-09 20:37:51 info: [0mGET /banners?page=1&page_size=10 [36m304[0m 51.060 ms - -[0m
+2023-04-09 20:37:54 info: [0mGET /banners?page=1&page_size=10&sort_field=id&sort_order=desc [32m200[0m 30.110 ms - 693[0m
+2023-04-09 20:37:55 info: [0mGET /banners?page=1&page_size=10&sort_field=id&sort_order=asc [32m200[0m 11.116 ms - 693[0m
+2023-04-09 20:37:59 info: [0mGET /banners?page=1&page_size=10&sort_field=createdAt&sort_order=desc [32m200[0m 13.048 ms - 693[0m
+2023-04-09 20:37:59 info: [0mGET /banners?page=1&page_size=10&sort_field=createdAt&sort_order=asc [32m200[0m 8.826 ms - 693[0m
+2023-04-09 20:38:00 info: [0mGET /banners?page=1&page_size=10&sort_field=createdAt&sort_order=desc [36m304[0m 11.070 ms - -[0m
+2023-04-09 20:38:00 info: [0mGET /banners?page=1&page_size=10&sort_field=createdAt&sort_order=asc [36m304[0m 6.335 ms - -[0m
+2023-04-09 20:38:00 info: [0mGET /banners?page=1&page_size=10&sort_field=createdAt&sort_order=desc [36m304[0m 8.899 ms - -[0m
+2023-04-09 20:38:02 info: [0mGET /banners?page=1&page_size=10&sort_field=createdAt&sort_order=asc [36m304[0m 13.792 ms - -[0m
+2023-04-09 20:38:06 info: [0mGET /banners?page=1&page_size=10&sort_field=createdAt&sort_order=desc [36m304[0m 8.859 ms - -[0m
+2023-04-09 20:38:06 info: [0mGET /banners?page=1&page_size=10&sort_field=createdAt&sort_order=asc [36m304[0m 8.326 ms - -[0m
+2023-04-09 20:38:08 info: [0mGET /banners?page=1&page_size=10&sort_field=createdAt&sort_order=desc [36m304[0m 9.166 ms - -[0m
+2023-04-09 20:38:08 info: [0mGET /banners?page=1&page_size=10&sort_field=createdAt&sort_order=asc [36m304[0m 9.505 ms - -[0m
+2023-04-09 20:38:21 info: [0mGET /banners?page=1&page_size=10&sort_field=updatedAt&sort_order=desc [32m200[0m 55.824 ms - 693[0m
+2023-04-09 20:38:26 info: [0mGET /banners?page=1&page_size=10&sort_field=name&sort_order=desc [32m200[0m 26.928 ms - 16[0m
+2023-04-09 20:38:28 info: [0mGET /banners?page=1&page_size=10&sort_field=name&sort_order=asc [32m200[0m 18.561 ms - 16[0m
+2023-04-09 20:38:31 info: [0mGET /banners?page=1&page_size=10&sort_field=name&sort_order=asc [36m304[0m 110.633 ms - -[0m
+2023-04-09 20:38:31 info: [0mGET /banners?page=1&page_size=10 [36m304[0m 87.053 ms - -[0m
+2023-04-09 20:38:31 info: [0mGET /banners?page=1&page_size=10 [36m304[0m 28.124 ms - -[0m
+2023-04-09 20:38:57 info: [0mGET /banners?page=1&page_size=10 [36m304[0m 256.493 ms - -[0m
+2023-04-09 20:38:57 info: [0mGET /banners?page=1&page_size=10 [36m304[0m 94.651 ms - -[0m
+2023-04-09 20:39:12 info: [0mGET /banners/show/1 [32m200[0m 100.116 ms - 203[0m
+2023-04-09 20:39:14 info: [0mGET /banners/show/1 [36m304[0m 57.177 ms - -[0m
+2023-04-09 20:39:14 info: [0mGET /banners?page=1&page_size=10 [36m304[0m 96.108 ms - -[0m
+2023-04-09 20:39:14 info: [0mGET /banners?page=1&page_size=10 [36m304[0m 27.137 ms - -[0m
+2023-04-09 20:39:23 info: [0mGET /projects? [36m304[0m 67.922 ms - -[0m
+2023-04-09 20:39:23 info: [0mGET /projects?page=1&page_size=10 [36m304[0m 57.700 ms - -[0m
+2023-04-09 20:39:26 info: [0mGET /posts?page=1&page_size=10 [36m304[0m 30.797 ms - -[0m
+2023-04-09 20:39:26 info: [0mGET /posts? [36m304[0m 137.663 ms - -[0m
+2023-04-09 20:39:27 info: [0mGET /ceos?[object%20Object] [36m304[0m 96.235 ms - -[0m
+2023-04-09 20:39:27 info: [0mGET /categories?[object%20Object] [36m304[0m 27.248 ms - -[0m
+2023-04-09 20:39:27 info: [0mGET /posts?[object%20Object] [36m304[0m 32.341 ms - -[0m
+2023-04-09 20:39:46 info: [0mOPTIONS /posts/create [32m204[0m 0.731 ms - 0[0m
+2023-04-09 20:39:47 info: [0mPOST /posts/create [32m200[0m 106.711 ms - 16[0m
+2023-04-09 20:39:47 info: [0mGET /posts?page=1&page_size=10 [32m200[0m 121.765 ms - 645[0m
+2023-04-09 20:39:47 info: [0mGET /posts?page=1&page_size=10 [36m304[0m 70.615 ms - -[0m
+2023-04-09 20:39:49 info: [0mGET /posts/show/3 [32m200[0m 53.695 ms - 294[0m
+2023-04-09 20:39:50 info: [0mGET /categories?[object%20Object] [36m304[0m 47.593 ms - -[0m
+2023-04-09 20:39:50 info: [0mGET /posts?[object%20Object] [32m200[0m 87.984 ms - 645[0m
+2023-04-09 20:39:50 info: [0mGET /ceos?[object%20Object] [36m304[0m 106.634 ms - -[0m
+2023-04-09 20:39:56 info: [0mOPTIONS /folders/get-medias [32m204[0m 2.971 ms - 0[0m
+2023-04-09 20:39:57 info: [0mGET /posts/show/3 [36m304[0m 44.726 ms - -[0m
+2023-04-09 20:39:57 info: [0mPOST /folders/get-medias [32m200[0m 55.735 ms - 31[0m
+2023-04-09 20:39:57 info: [0mGET /folders [36m304[0m 48.787 ms - -[0m
+2023-04-09 20:39:59 info: [0mGET /roles?page=1&page_size=10 [36m304[0m 175.827 ms - -[0m
+2023-04-09 20:39:59 info: [0mGET /roles? [36m304[0m 219.491 ms - -[0m
+2023-04-09 20:40:01 info: [0mGET /permissions? [36m304[0m 38.778 ms - -[0m
+2023-04-09 20:40:07 info: [0mOPTIONS /roles/create [32m204[0m 0.817 ms - 0[0m
+2023-04-09 20:40:07 info: [0mPOST /roles/create [32m200[0m 30.394 ms - 16[0m
+2023-04-09 20:40:07 info: [0mGET /roles?page=1&page_size=10 [32m200[0m 28.270 ms - 385[0m
+2023-04-09 20:40:07 info: [0mGET /roles?page=1&page_size=10 [36m304[0m 38.736 ms - -[0m
+2023-04-09 20:40:09 info: [0mGET /roles/show/4 [32m200[0m 88.891 ms - 343[0m
+2023-04-09 20:40:09 info: [0mGET /permissions?id=4 [36m304[0m 33.103 ms - -[0m
+2023-04-09 20:40:11 info: [0mGET /roles/show/4 [36m304[0m 17.253 ms - -[0m
+2023-04-09 20:40:11 info: [0mGET /roles?page=1&page_size=10 [36m304[0m 13.319 ms - -[0m
+2023-04-09 20:40:11 info: [0mGET /roles?page=1&page_size=10 [36m304[0m 31.465 ms - -[0m
+2023-04-09 20:40:13 info: [0mGET /permissions? [36m304[0m 53.807 ms - -[0m
+2023-04-09 20:40:13 info: [0mGET /permissions?page=1&page_size=10 [36m304[0m 48.288 ms - -[0m
+2023-04-09 20:40:19 info: [0mGET /admins?page=1&page_size=10 [36m304[0m 13.733 ms - -[0m
+2023-04-09 20:40:19 info: [0mGET /admins? [36m304[0m 61.843 ms - -[0m
+2023-04-09 20:40:20 info: [0mGET /roles?[object%20Object] [32m200[0m 19.783 ms - 385[0m
+2023-04-09 20:40:21 info: [0mGET /admins?page=1&page_size=10 [36m304[0m 41.538 ms - -[0m
+2023-04-09 20:40:21 info: [0mGET /admins?page=1&page_size=10 [36m304[0m 25.385 ms - -[0m
+2023-04-09 20:40:23 info: [0mGET /roles?[object%20Object] [36m304[0m 15.378 ms - -[0m
+2023-04-09 20:41:57 info: [0mGET /roles? [32m200[0m 136.280 ms - 385[0m
+2023-04-09 20:41:57 info: [0mGET /roles?page=1&page_size=10 [36m304[0m 60.183 ms - -[0m
+2023-04-09 20:42:08 info: [0mGET /permissions? [36m304[0m 137.080 ms - -[0m
+2023-04-09 20:42:08 info: [0mGET /permissions?page=1&page_size=10 [36m304[0m 102.410 ms - -[0m
+2023-04-09 20:42:27 info: [0mGET /jobs? [36m304[0m 141.533 ms - -[0m
+2023-04-09 20:42:27 info: [0mGET /jobs?page=1&page_size=10 [36m304[0m 86.512 ms - -[0m
+2023-04-09 20:42:34 info: [0mGET /posts? [32m200[0m 147.715 ms - 645[0m
+2023-04-09 20:42:34 info: [0mGET /posts?page=1&page_size=10 [36m304[0m 61.077 ms - -[0m
+2023-04-09 20:42:43 info: [0mGET /categories? [32m200[0m 88.263 ms - 635[0m
+2023-04-09 20:42:43 info: [0mGET /categories?page=1&page_size=10 [36m304[0m 79.914 ms - -[0m
+2023-04-09 20:42:43 info: [0mGET /posts? [36m304[0m 47.178 ms - -[0m
+2023-04-09 20:42:44 info: [0mGET /posts?page=1&page_size=10 [36m304[0m 73.985 ms - -[0m
+2023-04-09 20:42:45 info: [0mGET /projects? [36m304[0m 19.270 ms - -[0m
+2023-04-09 20:42:45 info: [0mGET /projects?page=1&page_size=10 [36m304[0m 24.500 ms - -[0m
+2023-04-09 20:42:46 info: [0mGET /posts? [36m304[0m 41.090 ms - -[0m
+2023-04-09 20:42:46 info: [0mGET /posts?page=1&page_size=10 [36m304[0m 21.163 ms - -[0m
+2023-04-09 20:42:47 info: [0mGET /categories?[object%20Object] [36m304[0m 105.137 ms - -[0m
+2023-04-09 20:42:47 info: [0mGET /ceos?[object%20Object] [36m304[0m 99.877 ms - -[0m
+2023-04-09 20:42:47 info: [0mGET /posts?[object%20Object] [36m304[0m 99.993 ms - -[0m
+2023-04-09 20:48:36 info: [0mGET /ceos?[object%20Object] [36m304[0m 199.950 ms - -[0m
+2023-04-09 20:48:36 info: [0mGET /posts?[object%20Object] [36m304[0m 178.997 ms - -[0m
+2023-04-09 20:48:36 info: [0mGET /categories?[object%20Object] [36m304[0m 307.893 ms - -[0m
+2023-04-09 20:49:53 info: [0mGET /ceos?[object%20Object] [36m304[0m 353.384 ms - -[0m
+2023-04-09 20:49:53 info: [0mGET /categories?[object%20Object] [36m304[0m 396.070 ms - -[0m
+2023-04-09 20:49:53 info: [0mGET /posts?[object%20Object] [36m304[0m 348.393 ms - -[0m
+2023-04-09 20:49:56 info: [0mGET /posts?page=1&page_size=10 [36m304[0m 169.991 ms - -[0m
+2023-04-09 20:49:56 info: [0mGET /posts?page=1&page_size=10 [36m304[0m 33.908 ms - -[0m
+2023-04-09 20:49:57 info: [0mGET /posts/show/1 [32m200[0m 38.507 ms - 307[0m
+2023-04-09 20:49:58 info: [0mGET /categories?[object%20Object] [36m304[0m 33.160 ms - -[0m
+2023-04-09 20:49:58 info: [0mGET /ceos?[object%20Object] [36m304[0m 73.130 ms - -[0m
+2023-04-09 20:49:58 info: [0mGET /posts?[object%20Object] [36m304[0m 73.049 ms - -[0m
+2023-04-09 20:50:50 info: [0mGET /categories?[object%20Object] [36m304[0m 416.482 ms - -[0m
+2023-04-09 20:50:50 info: [0mGET /posts?[object%20Object] [36m304[0m 188.218 ms - -[0m
+2023-04-09 20:50:50 info: [0mGET /ceos?[object%20Object] [36m304[0m 286.022 ms - -[0m
+2023-04-09 20:50:50 info: [0mGET /posts/show/1 [36m304[0m 10.286 ms - -[0m
+2023-04-09 20:50:50 info: [0mGET /categories?[object%20Object] [36m304[0m 22.524 ms - -[0m
+2023-04-09 20:50:50 info: [0mGET /ceos?[object%20Object] [36m304[0m 18.902 ms - -[0m
+2023-04-09 20:50:50 info: [0mGET /posts?[object%20Object] [36m304[0m 18.482 ms - -[0m
+2023-04-09 20:51:37 info: [0mGET /categories?[object%20Object] [36m304[0m 194.041 ms - -[0m
+2023-04-09 20:51:37 info: [0mGET /ceos?[object%20Object] [36m304[0m 142.444 ms - -[0m
+2023-04-09 20:51:37 info: [0mGET /posts?[object%20Object] [36m304[0m 132.964 ms - -[0m
+2023-04-09 20:51:38 info: [0mGET /posts/show/1 [36m304[0m 36.299 ms - -[0m
+2023-04-09 20:51:38 info: [0mGET /categories?[object%20Object] [36m304[0m 20.139 ms - -[0m
+2023-04-09 20:51:38 info: [0mGET /posts?[object%20Object] [36m304[0m 121.923 ms - -[0m
+2023-04-09 20:51:38 info: [0mGET /ceos?[object%20Object] [36m304[0m 138.022 ms - -[0m
+2023-04-09 20:51:43 info: [0mOPTIONS /posts/update/1 [32m204[0m 1.764 ms - 0[0m
+2023-04-09 20:51:43 info: [0mPUT /posts/update/1 [32m200[0m 76.361 ms - 16[0m
+2023-04-09 20:51:43 info: [0mGET /posts/show/1 [32m200[0m 22.676 ms - 317[0m
+2023-04-09 20:51:43 info: [0mGET /categories?[object%20Object] [36m304[0m 14.660 ms - -[0m
+2023-04-09 20:51:43 info: [0mGET /ceos?[object%20Object] [36m304[0m 15.574 ms - -[0m
+2023-04-09 20:51:43 info: [0mGET /posts?[object%20Object] [32m200[0m 20.093 ms - 645[0m
+2023-04-09 20:51:48 info: [0mOPTIONS /posts/update/1 [32m204[0m 0.963 ms - 0[0m
+2023-04-09 20:51:48 info: [0mPUT /posts/update/1 [32m200[0m 38.497 ms - 16[0m
+2023-04-09 20:51:48 info: [0mGET /posts/show/1 [32m200[0m 25.713 ms - 326[0m
+2023-04-09 20:51:49 info: [0mGET /posts?[object%20Object] [32m200[0m 32.108 ms - 645[0m
+2023-04-09 20:51:49 info: [0mGET /ceos?[object%20Object] [36m304[0m 32.131 ms - -[0m
+2023-04-09 20:51:49 info: [0mGET /categories?[object%20Object] [36m304[0m 51.482 ms - -[0m
+2023-04-09 20:51:52 info: [0mGET /categories?[object%20Object] [36m304[0m 83.652 ms - -[0m
+2023-04-09 20:51:52 info: [0mGET /ceos?[object%20Object] [36m304[0m 81.811 ms - -[0m
+2023-04-09 20:51:52 info: [0mGET /posts?[object%20Object] [36m304[0m 105.881 ms - -[0m
+2023-04-09 20:51:52 info: [0mGET /posts/show/1 [36m304[0m 46.448 ms - -[0m
+2023-04-09 20:51:53 info: [0mGET /categories?[object%20Object] [36m304[0m 30.503 ms - -[0m
+2023-04-09 20:51:53 info: [0mGET /ceos?[object%20Object] [36m304[0m 26.990 ms - -[0m
+2023-04-09 20:51:53 info: [0mGET /posts?[object%20Object] [36m304[0m 22.263 ms - -[0m
+2023-04-09 20:53:50 info: [0mGET /posts/show/1 [36m304[0m 544.754 ms - -[0m
+2023-04-09 20:53:50 info: [0mGET /categories?[object%20Object] [36m304[0m 1068.955 ms - -[0m
+2023-04-09 20:53:50 info: [0mGET /posts?[object%20Object] [36m304[0m 774.607 ms - -[0m
+2023-04-09 20:53:50 info: [0mGET /ceos?[object%20Object] [36m304[0m 816.323 ms - -[0m
+2023-04-09 20:53:51 info: [0mGET /categories?[object%20Object] [36m304[0m 55.559 ms - -[0m
+2023-04-09 20:53:51 info: [0mGET /ceos?[object%20Object] [36m304[0m 53.758 ms - -[0m
+2023-04-09 20:53:51 info: [0mGET /posts?[object%20Object] [36m304[0m 54.225 ms - -[0m
+2023-04-09 20:55:43 info: [0mGET /categories?[object%20Object] [36m304[0m 253.200 ms - -[0m
+2023-04-09 20:55:43 info: [0mGET /ceos?[object%20Object] [36m304[0m 215.555 ms - -[0m
+2023-04-09 20:55:43 info: [0mGET /posts?[object%20Object] [36m304[0m 110.801 ms - -[0m
+2023-04-09 20:55:43 info: [0mGET /posts/show/1 [36m304[0m 12.059 ms - -[0m
+2023-04-09 20:55:43 info: [0mGET /categories?[object%20Object] [36m304[0m 32.238 ms - -[0m
+2023-04-09 20:55:43 info: [0mGET /posts?[object%20Object] [36m304[0m 47.728 ms - -[0m
+2023-04-09 20:55:43 info: [0mGET /ceos?[object%20Object] [36m304[0m 54.756 ms - -[0m
+2023-04-09 20:56:20 info: [0mGET /posts/show/1 [36m304[0m 70.711 ms - -[0m
+2023-04-09 20:56:37 info: [0mGET /posts/show/1 [36m304[0m 77.742 ms - -[0m
+2023-04-09 20:56:38 info: [0mGET /categories?[object%20Object] [36m304[0m 123.228 ms - -[0m
+2023-04-09 20:56:38 info: [0mGET /ceos?[object%20Object] [36m304[0m 189.113 ms - -[0m
+2023-04-09 20:56:38 info: [0mGET /posts?[object%20Object] [36m304[0m 164.539 ms - -[0m
+2023-04-09 20:57:11 info: [0mGET /posts/show/1 [36m304[0m 71.715 ms - -[0m
+2023-04-09 20:57:11 info: [0mGET /categories?[object%20Object] [36m304[0m 302.580 ms - -[0m
+2023-04-09 20:57:11 info: [0mGET /posts?[object%20Object] [36m304[0m 270.042 ms - -[0m
+2023-04-09 20:57:11 info: [0mGET /ceos?[object%20Object] [36m304[0m 298.117 ms - -[0m
+2023-04-09 20:57:11 info: [0mGET /posts?[object%20Object] [36m304[0m 25.210 ms - -[0m
+2023-04-09 20:57:11 info: [0mGET /ceos?[object%20Object] [36m304[0m 34.020 ms - -[0m
+2023-04-09 20:57:11 info: [0mGET /categories?[object%20Object] [36m304[0m 38.203 ms - -[0m
+2023-04-09 20:57:28 info: [0mGET /posts?page=1&page_size=10 [32m200[0m 126.224 ms - 645[0m
+2023-04-09 20:57:28 info: [0mGET /posts/show/1 [36m304[0m 156.151 ms - -[0m
+2023-04-09 20:57:28 info: [0mGET /posts?page=1&page_size=10 [36m304[0m 19.632 ms - -[0m
+2023-04-09 20:57:28 info: [0mGET /posts? [32m200[0m 19.018 ms - 645[0m
+2023-04-09 20:57:29 info: [0mGET /ceos?[object%20Object] [36m304[0m 22.863 ms - -[0m
+2023-04-09 20:57:29 info: [0mGET /categories?[object%20Object] [36m304[0m 25.059 ms - -[0m
+2023-04-09 20:57:30 info: [0mGET /posts?[object%20Object] [36m304[0m 56.046 ms - -[0m
+2023-04-09 20:57:37 info: [0mOPTIONS /folders/get-medias [32m204[0m 1.620 ms - 0[0m
+2023-04-09 20:57:37 info: [0mPOST /folders/get-medias [32m200[0m 41.289 ms - 31[0m
+2023-04-09 20:57:37 info: [0mGET /folders [36m304[0m 62.225 ms - -[0m
+2023-04-09 20:57:38 info: [0mGET /projects? [36m304[0m 117.668 ms - -[0m
+2023-04-09 20:57:38 info: [0mGET /projects?page=1&page_size=10 [36m304[0m 62.634 ms - -[0m
+2023-04-09 20:57:42 info: [0mGET /banners?page=1&page_size=10 [36m304[0m 13.076 ms - -[0m
+2023-04-09 20:57:42 info: [0mGET /banners? [36m304[0m 95.871 ms - -[0m
+2023-04-09 20:57:47 info: [0mGET /banners?page=1&page_size=10 [36m304[0m 51.273 ms - -[0m
+2023-04-09 20:57:47 info: [0mGET /banners?page=1&page_size=10 [36m304[0m 71.864 ms - -[0m
+2023-04-09 20:57:48 info: [0mGET /projects? [36m304[0m 79.726 ms - -[0m
+2023-04-09 20:57:48 info: [0mGET /projects?page=1&page_size=10 [36m304[0m 26.133 ms - -[0m
+2023-04-09 20:57:53 info: [0mGET /roles? [36m304[0m 47.253 ms - -[0m
+2023-04-09 20:57:53 info: [0mGET /roles?page=1&page_size=10 [36m304[0m 18.302 ms - -[0m
+2023-04-09 20:57:56 info: [0mGET /permissions? [36m304[0m 46.148 ms - -[0m
+2023-04-09 20:57:57 info: [0mGET /roles?page=1&page_size=10 [36m304[0m 36.689 ms - -[0m
+2023-04-09 20:57:57 info: [0mGET /roles?page=1&page_size=10 [36m304[0m 5.465 ms - -[0m
+2023-04-09 20:57:59 info: [0mGET /admins? [36m304[0m 136.899 ms - -[0m
+2023-04-09 20:57:59 info: [0mGET /admins?page=1&page_size=10 [36m304[0m 78.578 ms - -[0m
+2023-04-09 20:57:59 info: [0mGET /roles?[object%20Object] [36m304[0m 19.689 ms - -[0m
+2023-04-09 20:58:00 info: [0mGET /admins?page=1&page_size=10 [36m304[0m 6.220 ms - -[0m
+2023-04-09 20:58:00 info: [0mGET /admins?page=1&page_size=10 [36m304[0m 10.858 ms - -[0m
+2023-04-09 21:00:07 info: [0mGET /posts? [36m304[0m 753.893 ms - -[0m
+2023-04-09 21:00:07 info: [0mGET /posts?page=1&page_size=10 [36m304[0m 708.659 ms - -[0m
+2023-04-09 21:00:10 info: [0mGET /ceos?[object%20Object] [36m304[0m 23.220 ms - -[0m
+2023-04-09 21:00:10 info: [0mGET /categories?[object%20Object] [36m304[0m 85.697 ms - -[0m
+2023-04-09 21:00:10 info: [0mGET /posts?[object%20Object] [36m304[0m 25.024 ms - -[0m
+2023-04-09 21:01:35 info: [0mGET /posts? [36m304[0m 327.168 ms - -[0m
+2023-04-09 21:01:35 info: [0mGET /posts?page=1&page_size=10 [36m304[0m 317.991 ms - -[0m
+2023-04-09 21:01:36 info: [0mGET /ceos?[object%20Object] [36m304[0m 30.278 ms - -[0m
+2023-04-09 21:01:36 info: [0mGET /categories?[object%20Object] [36m304[0m 62.137 ms - -[0m
+2023-04-09 21:01:36 info: [0mGET /posts?[object%20Object] [36m304[0m 64.704 ms - -[0m
+2023-04-09 21:01:47 info: [0mGET /admins? [36m304[0m 512.147 ms - -[0m
+2023-04-09 21:01:47 info: [0mGET /admins?page=1&page_size=10 [36m304[0m 469.337 ms - -[0m
+2023-04-09 21:02:25 info: =================================
+2023-04-09 21:02:25 info: ======= ENV: development =======
+2023-04-09 21:02:25 info: 🚀 App listening on the port 8000
+2023-04-09 21:02:25 info: =================================
+2023-04-09 21:03:28 info: =================================
+2023-04-09 21:03:28 info: ======= ENV: development =======
+2023-04-09 21:03:28 info: 🚀 App listening on the port 8000
+2023-04-09 21:03:28 info: =================================
+2023-04-09 21:03:46 info: =================================
+2023-04-09 21:03:46 info: ======= ENV: development =======
+2023-04-09 21:03:46 info: 🚀 App listening on the port 8000
+2023-04-09 21:03:46 info: =================================
+2023-04-09 21:04:05 info: =================================
+2023-04-09 21:04:05 info: ======= ENV: development =======
+2023-04-09 21:04:05 info: 🚀 App listening on the port 8000
+2023-04-09 21:04:05 info: =================================
+2023-04-09 21:05:21 info: =================================
+2023-04-09 21:05:21 info: ======= ENV: development =======
+2023-04-09 21:05:21 info: 🚀 App listening on the port 8000
+2023-04-09 21:05:21 info: =================================
+2023-04-09 21:05:42 info: =================================
+2023-04-09 21:05:42 info: ======= ENV: development =======
+2023-04-09 21:05:42 info: 🚀 App listening on the port 8000
+2023-04-09 21:05:42 info: =================================
+2023-04-09 21:05:50 info: =================================
+2023-04-09 21:05:50 info: ======= ENV: development =======
+2023-04-09 21:05:50 info: 🚀 App listening on the port 8000
+2023-04-09 21:05:50 info: =================================
+2023-04-09 21:06:00 info: =================================
+2023-04-09 21:06:00 info: ======= ENV: development =======
+2023-04-09 21:06:00 info: 🚀 App listening on the port 8000
+2023-04-09 21:06:00 info: =================================
+2023-04-09 21:06:10 info: =================================
+2023-04-09 21:06:10 info: ======= ENV: development =======
+2023-04-09 21:06:10 info: 🚀 App listening on the port 8000
+2023-04-09 21:06:10 info: =================================
+2023-04-09 21:06:22 info: =================================
+2023-04-09 21:06:22 info: ======= ENV: development =======
+2023-04-09 21:06:22 info: 🚀 App listening on the port 8000
+2023-04-09 21:06:22 info: =================================
+2023-04-09 21:06:54 info: [0mGET /roles?page=1&page_size=10 [32m200[0m 122.111 ms - 241[0m
+2023-04-09 21:06:54 info: [0mGET /roles? [32m200[0m 214.785 ms - 241[0m
+2023-04-09 21:06:58 info: [0mGET /admins? [36m304[0m 142.443 ms - -[0m
+2023-04-09 21:06:58 info: [0mGET /admins?page=1&page_size=10 [36m304[0m 59.204 ms - -[0m
+2023-04-09 21:06:58 info: [0mGET /roles?[object%20Object] [32m200[0m 17.814 ms - 241[0m
+2023-04-09 21:10:22 info: [0mGET /admins?page=1&page_size=10 [36m304[0m 757.045 ms - -[0m
+2023-04-09 21:10:22 info: [0mGET /admins?page=1&page_size=10 [36m304[0m 10.804 ms - -[0m
+2023-04-09 21:10:23 info: [0mGET /roles?[object%20Object] [36m304[0m 67.121 ms - -[0m
+2023-04-09 21:10:46 info: [0mGET /admins [32m200[0m 199.793 ms - 251[0m
+2023-04-09 21:11:41 info: [0mGET /roles?[object%20Object] [36m304[0m 102.212 ms - -[0m
+2023-04-09 21:11:46 info: [0mGET /roles?[object%20Object] [36m304[0m 60.178 ms - -[0m
+2023-04-09 21:11:49 info: [0mGET /roles?[object%20Object] [36m304[0m 34.210 ms - -[0m
+2023-04-09 21:12:15 info: [0mGET /roles?[object%20Object] [36m304[0m 167.930 ms - -[0m
+2023-04-09 21:12:15 info: [0mGET /roles?[object%20Object] [36m304[0m 14.487 ms - -[0m
+2023-04-09 21:12:28 info: [0mGET /roles?[object%20Object] [36m304[0m 56.244 ms - -[0m
+2023-04-09 21:12:28 info: [0mGET /roles?[object%20Object] [36m304[0m 8.999 ms - -[0m
+2023-04-09 21:12:53 info: [0mGET /admins/show/1 [32m200[0m 47.584 ms - 188[0m
+2023-04-09 21:13:09 info: [0mGET /roles?[object%20Object] [36m304[0m 49.888 ms - -[0m
+2023-04-09 21:13:15 info: [0mGET /roles?[object%20Object] [36m304[0m 74.542 ms - -[0m
+2023-04-09 21:13:20 info: [0mGET /roles?[object%20Object] [36m304[0m 25.237 ms - -[0m
+2023-04-09 21:13:22 info: [0mGET /roles?[object%20Object] [36m304[0m 52.578 ms - -[0m
+2023-04-09 21:13:23 info: [0mGET /roles?[object%20Object] [36m304[0m 27.460 ms - -[0m
+2023-04-09 21:13:25 info: [0mGET /roles?[object%20Object] [36m304[0m 133.369 ms - -[0m
+2023-04-09 21:13:25 info: [0mGET /roles?[object%20Object] [36m304[0m 5.754 ms - -[0m
+2023-04-09 21:13:44 info: [0mGET /roles?[object%20Object] [36m304[0m 138.556 ms - -[0m
+2023-04-09 21:13:44 info: [0mGET /roles?[object%20Object] [36m304[0m 3.419 ms - -[0m
+2023-04-09 21:13:56 info: [0mGET /roles?[object%20Object] [36m304[0m 68.257 ms - -[0m
+2023-04-09 21:13:56 info: [0mGET /admins/show/1 [36m304[0m 148.520 ms - -[0m
+2023-04-09 21:13:58 info: [0mGET /roles?[object%20Object] [36m304[0m 117.789 ms - -[0m
+2023-04-09 21:13:58 info: [0mGET /admins/show/1 [36m304[0m 4.460 ms - -[0m
+2023-04-09 21:13:58 info: [0mGET /roles?[object%20Object] [36m304[0m 15.823 ms - -[0m
+2023-04-09 21:14:30 info: [0mGET /admins/show/1 [36m304[0m 199.400 ms - -[0m
+2023-04-09 21:14:30 info: [0mGET /admins/show/1 [36m304[0m 48.086 ms - -[0m
+2023-04-09 21:14:30 info: [0mGET /roles?[object%20Object] [36m304[0m 44.116 ms - -[0m
+2023-04-09 21:14:59 info: [0mGET /admins/show/1 [36m304[0m 102.812 ms - -[0m
+2023-04-09 21:14:59 info: [0mGET /admins/show/1 [36m304[0m 15.696 ms - -[0m
+2023-04-09 21:14:59 info: [0mGET /roles?[object%20Object] [36m304[0m 168.694 ms - -[0m
+2023-04-09 21:15:17 info: [0mGET /admins/show/1 [36m304[0m 75.822 ms - -[0m
+2023-04-09 21:15:17 info: [0mGET /admins/show/1 [36m304[0m 6.288 ms - -[0m
+2023-04-09 21:15:18 info: [0mGET /roles?[object%20Object] [36m304[0m 93.289 ms - -[0m
+2023-04-09 21:15:19 info: [0mGET /admins/show/1 [36m304[0m 22.655 ms - -[0m
+2023-04-09 21:15:19 info: [0mGET /admins/show/1 [36m304[0m 12.809 ms - -[0m
+2023-04-09 21:15:20 info: [0mGET /roles?[object%20Object] [36m304[0m 25.787 ms - -[0m
+2023-04-09 21:15:49 info: =================================
+2023-04-09 21:15:49 info: ======= ENV: development =======
+2023-04-09 21:15:49 info: 🚀 App listening on the port 8000
+2023-04-09 21:15:49 info: =================================
+2023-04-09 21:16:47 info: =================================
+2023-04-09 21:16:47 info: ======= ENV: development =======
+2023-04-09 21:16:47 info: 🚀 App listening on the port 8000
+2023-04-09 21:16:47 info: =================================
+2023-04-09 21:17:09 info: =================================
+2023-04-09 21:17:09 info: ======= ENV: development =======
+2023-04-09 21:17:09 info: 🚀 App listening on the port 8000
+2023-04-09 21:17:09 info: =================================
+2023-04-09 21:17:17 info: =================================
+2023-04-09 21:17:17 info: ======= ENV: development =======
+2023-04-09 21:17:17 info: 🚀 App listening on the port 8000
+2023-04-09 21:17:17 info: =================================
+2023-04-09 21:17:46 info: =================================
+2023-04-09 21:17:46 info: ======= ENV: development =======
+2023-04-09 21:17:46 info: 🚀 App listening on the port 8000
+2023-04-09 21:17:46 info: =================================
