@@ -69,13 +69,14 @@ export class AdminService {
     public findById = async (id) => {
         try {
             return await models.Admin.findOne({
-                where: { id },
+                where: { id: id },
                 include: {
                     model: models.Role,
                     as: "roles",
                     required: false,
                 },
             });
+
         } catch (error) {
             console.log(error);
         }

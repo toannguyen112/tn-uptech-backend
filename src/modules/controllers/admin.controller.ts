@@ -35,7 +35,7 @@ export default class AdminController extends BaseController {
 
     async show(req: Request, res: Response) {
         try {
-            const data = await admin.findById({ where: { id: req.params.id } });
+            const data = await admin.findById(req.params.id);
             res.status(200).send({ message: "ok", data });
         } catch (error) {
             console.log(error);
