@@ -1,7 +1,7 @@
 
 module.exports = function (sequelize, DataTypes) {
-    const RolePermisson = sequelize.define(
-        "role_permission",
+    const RolePermission = sequelize.define(
+        "role_permissions",
         {
             id: {
                 type: DataTypes.INTEGER,
@@ -27,15 +27,12 @@ module.exports = function (sequelize, DataTypes) {
                 allowNull: true,
             },
 
-
         },
         {
-            timestamps: true,
-            tableName: "role_permission",
+            timestamps: false,
+            tableName: "role_permissions",
         },
     );
 
-    RolePermisson.associate = function (models) { };
-
-    return RolePermisson;
+    return RolePermission;
 };

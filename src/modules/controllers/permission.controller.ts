@@ -1,19 +1,20 @@
-import { Request, Response } from "express";
+import { NextFunction, Request, Response } from 'express';
 
-export default class PermissionController {
-    async index(req: Request, res: Response) {
+import { logger } from '../../utils/logger';
+import { PermissionService } from '../../services/permission.service';
 
-    }
+const permisstion = new PermissionService();
 
-    async create(req: Request, res: Response) {
+export class PermissionController {
 
-    }
+    public async index(req: Request, res: Response, next: NextFunction) {
 
-    async update(req: Request, res: Response) {
-
-    }
-
-    async delete(req: Request, res: Response) {
-       
+        try {
+            const data = await permisstion.getList(req.query);
+            res.status(200).send({ message: "ok", data });
+        } catch (error) {
+            logger.error(error);
+            res.status(500).send(error.message);
+        }
     }
 }

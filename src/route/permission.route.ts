@@ -1,12 +1,17 @@
-// import { Router } from "express";
-// import PermissionController from "../modules/controllers/permission.controller";
 
-// const route: Router = Router();
+import { Router } from "express";
+import { Routes } from "../interface/routes.interface";
+import { PermissionController } from "../modules/controllers/permission.controller";
+export class PermissionRoute implements Routes {
+    public path = '/permissions';
+    public router = Router();
+    public permission = new PermissionController();
 
-// route.get("/permission/index", new PermissionController().index);
-// route.post("/permission/create", new PermissionController().create);
-// route.delete("/permission/delete/:id", new PermissionController().delete);
-// route.put("/permission/update/:id", new PermissionController().update);
+    constructor() {
+        this.initializeRoutes();
+    }
 
-
-// export default route;
+    private initializeRoutes() {
+        this.router.get(`${this.path}`, this.permission.index);
+    }
+}

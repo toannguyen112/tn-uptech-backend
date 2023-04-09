@@ -12,9 +12,11 @@ import { RoleRoute } from './route/role.route';
 import { CategoryRoute } from './route/categories.route';
 import { CommontRoute } from './route/common.route';
 import { AdminRoute } from './route/admin.route';
+import { PermissionRoute } from './route/permission.route';
 
 const routers = [
     new AdminRoute(),
+    new PermissionRoute(),
     new CommontRoute(),
     new FolderRoute(),
     new MediaRoute(),

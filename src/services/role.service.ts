@@ -38,8 +38,23 @@ export class RoleService {
     }
 
     public store = async (body) => {
-        console.log(body);
-        return await models.Role.create({ ...body });
+        try {
+            return await models.Role.create({ ...body }).then(async (role) => {
+                for (const permission of body.permissions) {
+                    try {
+                        await models.RolePermission.create({
+                            role_id: role.id,
+                            permission_id: permission.id,
+
+                        });
+                    } catch (error) {
+                        console.log(error);
+                    }
+                }
+            });
+        } catch (error) {
+            console.log(error);
+        }
     }
 
     public findById = async (id) => {

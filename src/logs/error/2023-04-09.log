@@ -1,0 +1,793 @@
+2023-04-09 14:53:28 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/services/permission.service.ts[0m:[93m70[0m:[93m22[0m - [91merror[0m[90m TS2552: [0mCannot find name 'row'. Did you mean 'rows'?
+
+[7m70[0m                 data:row
+[7m  [0m [91m                     ~~~[0m
+
+  [96msrc/services/permission.service.ts[0m:[93m63[0m:[93m28[0m
+    [7m63[0m             const { count, rows }: any = await models.Permisstion.findAndCountAll(objQuery);
+    [7m  [0m [96m                           ~~~~[0m
+    'rows' is declared here.
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/services/permission.service.ts[0m:[93m70[0m:[93m22[0m - [91merror[0m[90m TS2552: [0mCannot find name 'row'. Did you mean 'rows'?
+
+[7m70[0m                 data:row
+[7m  [0m [91m                     ~~~[0m
+
+  [96msrc/services/permission.service.ts[0m:[93m63[0m:[93m28[0m
+    [7m63[0m             const { count, rows }: any = await models.Permisstion.findAndCountAll(objQuery);
+    [7m  [0m [96m                           ~~~~[0m
+    'rows' is declared here.
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-09 14:54:05 error: {}
+2023-04-09 15:04:06 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/modules/controllers/role.controller.ts[0m:[93m33[0m:[93m37[0m - [91merror[0m[90m TS2339: [0mProperty 'findById' does not exist on type 'RoleService'.
+
+[7m33[0m             const data = await role.findById(req.params.id);
+[7m  [0m [91m                                    ~~~~~~~~[0m
+[96msrc/modules/controllers/role.controller.ts[0m:[93m44[0m:[93m37[0m - [91merror[0m[90m TS2339: [0mProperty 'update' does not exist on type 'RoleService'.
+
+[7m44[0m             const data = await role.update(id, req.body);
+[7m  [0m [91m                                    ~~~~~~[0m
+[96msrc/modules/controllers/role.controller.ts[0m:[93m54[0m:[93m37[0m - [91merror[0m[90m TS2339: [0mProperty 'delete' does not exist on type 'RoleService'.
+
+[7m54[0m             const data = await role.delete(req.params.id);
+[7m  [0m [91m                                    ~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/modules/controllers/role.controller.ts[0m:[93m33[0m:[93m37[0m - [91merror[0m[90m TS2339: [0mProperty 'findById' does not exist on type 'RoleService'.
+
+[7m33[0m             const data = await role.findById(req.params.id);
+[7m  [0m [91m                                    ~~~~~~~~[0m
+[96msrc/modules/controllers/role.controller.ts[0m:[93m44[0m:[93m37[0m - [91merror[0m[90m TS2339: [0mProperty 'update' does not exist on type 'RoleService'.
+
+[7m44[0m             const data = await role.update(id, req.body);
+[7m  [0m [91m                                    ~~~~~~[0m
+[96msrc/modules/controllers/role.controller.ts[0m:[93m54[0m:[93m37[0m - [91merror[0m[90m TS2339: [0mProperty 'delete' does not exist on type 'RoleService'.
+
+[7m54[0m             const data = await role.delete(req.params.id);
+[7m  [0m [91m                                    ~~~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-09 15:04:12 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/modules/controllers/role.controller.ts[0m:[93m33[0m:[93m37[0m - [91merror[0m[90m TS2339: [0mProperty 'findById' does not exist on type 'RoleService'.
+
+[7m33[0m             const data = await role.findById(req.params.id);
+[7m  [0m [91m                                    ~~~~~~~~[0m
+[96msrc/modules/controllers/role.controller.ts[0m:[93m44[0m:[93m37[0m - [91merror[0m[90m TS2339: [0mProperty 'update' does not exist on type 'RoleService'.
+
+[7m44[0m             const data = await role.update(id, req.body);
+[7m  [0m [91m                                    ~~~~~~[0m
+[96msrc/modules/controllers/role.controller.ts[0m:[93m54[0m:[93m37[0m - [91merror[0m[90m TS2339: [0mProperty 'delete' does not exist on type 'RoleService'.
+
+[7m54[0m             const data = await role.delete(req.params.id);
+[7m  [0m [91m                                    ~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/modules/controllers/role.controller.ts[0m:[93m33[0m:[93m37[0m - [91merror[0m[90m TS2339: [0mProperty 'findById' does not exist on type 'RoleService'.
+
+[7m33[0m             const data = await role.findById(req.params.id);
+[7m  [0m [91m                                    ~~~~~~~~[0m
+[96msrc/modules/controllers/role.controller.ts[0m:[93m44[0m:[93m37[0m - [91merror[0m[90m TS2339: [0mProperty 'update' does not exist on type 'RoleService'.
+
+[7m44[0m             const data = await role.update(id, req.body);
+[7m  [0m [91m                                    ~~~~~~[0m
+[96msrc/modules/controllers/role.controller.ts[0m:[93m54[0m:[93m37[0m - [91merror[0m[90m TS2339: [0mProperty 'delete' does not exist on type 'RoleService'.
+
+[7m54[0m             const data = await role.delete(req.params.id);
+[7m  [0m [91m                                    ~~~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-09 15:04:21 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/modules/controllers/role.controller.ts[0m:[93m33[0m:[93m37[0m - [91merror[0m[90m TS2339: [0mProperty 'findById' does not exist on type 'RoleService'.
+
+[7m33[0m             const data = await role.findById(req.params.id);
+[7m  [0m [91m                                    ~~~~~~~~[0m
+[96msrc/modules/controllers/role.controller.ts[0m:[93m44[0m:[93m37[0m - [91merror[0m[90m TS2339: [0mProperty 'update' does not exist on type 'RoleService'.
+
+[7m44[0m             const data = await role.update(id, req.body);
+[7m  [0m [91m                                    ~~~~~~[0m
+[96msrc/modules/controllers/role.controller.ts[0m:[93m54[0m:[93m37[0m - [91merror[0m[90m TS2339: [0mProperty 'delete' does not exist on type 'RoleService'.
+
+[7m54[0m             const data = await role.delete(req.params.id);
+[7m  [0m [91m                                    ~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/modules/controllers/role.controller.ts[0m:[93m33[0m:[93m37[0m - [91merror[0m[90m TS2339: [0mProperty 'findById' does not exist on type 'RoleService'.
+
+[7m33[0m             const data = await role.findById(req.params.id);
+[7m  [0m [91m                                    ~~~~~~~~[0m
+[96msrc/modules/controllers/role.controller.ts[0m:[93m44[0m:[93m37[0m - [91merror[0m[90m TS2339: [0mProperty 'update' does not exist on type 'RoleService'.
+
+[7m44[0m             const data = await role.update(id, req.body);
+[7m  [0m [91m                                    ~~~~~~[0m
+[96msrc/modules/controllers/role.controller.ts[0m:[93m54[0m:[93m37[0m - [91merror[0m[90m TS2339: [0mProperty 'delete' does not exist on type 'RoleService'.
+
+[7m54[0m             const data = await role.delete(req.params.id);
+[7m  [0m [91m                                    ~~~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-09 15:04:30 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/modules/controllers/role.controller.ts[0m:[93m33[0m:[93m37[0m - [91merror[0m[90m TS2339: [0mProperty 'findById' does not exist on type 'RoleService'.
+
+[7m33[0m             const data = await role.findById(req.params.id);
+[7m  [0m [91m                                    ~~~~~~~~[0m
+[96msrc/modules/controllers/role.controller.ts[0m:[93m44[0m:[93m37[0m - [91merror[0m[90m TS2339: [0mProperty 'update' does not exist on type 'RoleService'.
+
+[7m44[0m             const data = await role.update(id, req.body);
+[7m  [0m [91m                                    ~~~~~~[0m
+[96msrc/modules/controllers/role.controller.ts[0m:[93m54[0m:[93m37[0m - [91merror[0m[90m TS2339: [0mProperty 'delete' does not exist on type 'RoleService'.
+
+[7m54[0m             const data = await role.delete(req.params.id);
+[7m  [0m [91m                                    ~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/modules/controllers/role.controller.ts[0m:[93m33[0m:[93m37[0m - [91merror[0m[90m TS2339: [0mProperty 'findById' does not exist on type 'RoleService'.
+
+[7m33[0m             const data = await role.findById(req.params.id);
+[7m  [0m [91m                                    ~~~~~~~~[0m
+[96msrc/modules/controllers/role.controller.ts[0m:[93m44[0m:[93m37[0m - [91merror[0m[90m TS2339: [0mProperty 'update' does not exist on type 'RoleService'.
+
+[7m44[0m             const data = await role.update(id, req.body);
+[7m  [0m [91m                                    ~~~~~~[0m
+[96msrc/modules/controllers/role.controller.ts[0m:[93m54[0m:[93m37[0m - [91merror[0m[90m TS2339: [0mProperty 'delete' does not exist on type 'RoleService'.
+
+[7m54[0m             const data = await role.delete(req.params.id);
+[7m  [0m [91m                                    ~~~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-09 15:04:44 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/modules/controllers/role.controller.ts[0m:[93m33[0m:[93m37[0m - [91merror[0m[90m TS2339: [0mProperty 'findById' does not exist on type 'RoleService'.
+
+[7m33[0m             const data = await role.findById(req.params.id);
+[7m  [0m [91m                                    ~~~~~~~~[0m
+[96msrc/modules/controllers/role.controller.ts[0m:[93m44[0m:[93m37[0m - [91merror[0m[90m TS2339: [0mProperty 'update' does not exist on type 'RoleService'.
+
+[7m44[0m             const data = await role.update(id, req.body);
+[7m  [0m [91m                                    ~~~~~~[0m
+[96msrc/modules/controllers/role.controller.ts[0m:[93m54[0m:[93m37[0m - [91merror[0m[90m TS2339: [0mProperty 'delete' does not exist on type 'RoleService'.
+
+[7m54[0m             const data = await role.delete(req.params.id);
+[7m  [0m [91m                                    ~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/modules/controllers/role.controller.ts[0m:[93m33[0m:[93m37[0m - [91merror[0m[90m TS2339: [0mProperty 'findById' does not exist on type 'RoleService'.
+
+[7m33[0m             const data = await role.findById(req.params.id);
+[7m  [0m [91m                                    ~~~~~~~~[0m
+[96msrc/modules/controllers/role.controller.ts[0m:[93m44[0m:[93m37[0m - [91merror[0m[90m TS2339: [0mProperty 'update' does not exist on type 'RoleService'.
+
+[7m44[0m             const data = await role.update(id, req.body);
+[7m  [0m [91m                                    ~~~~~~[0m
+[96msrc/modules/controllers/role.controller.ts[0m:[93m54[0m:[93m37[0m - [91merror[0m[90m TS2339: [0mProperty 'delete' does not exist on type 'RoleService'.
+
+[7m54[0m             const data = await role.delete(req.params.id);
+[7m  [0m [91m                                    ~~~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-09 15:04:57 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/services/role.service.ts[0m:[93m43[0m:[93m17[0m - [91merror[0m[90m TS1308: [0m'await' expressions are only allowed within async functions and at the top levels of modules.
+
+[7m43[0m                 await models.RolePermission.create({ body });
+[7m  [0m [91m                ~~~~~[0m
+
+  [96msrc/services/role.service.ts[0m:[93m42[0m:[93m38[0m
+    [7m42[0m             body.permisstion.forEach((permission: any) => {
+    [7m  [0m [96m                                     ~~~~~~~~~~~~~~~~~~~~~~[0m
+    Did you mean to mark this function as 'async'?
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/services/role.service.ts[0m:[93m43[0m:[93m17[0m - [91merror[0m[90m TS1308: [0m'await' expressions are only allowed within async functions and at the top levels of modules.
+
+[7m43[0m                 await models.RolePermission.create({ body });
+[7m  [0m [91m                ~~~~~[0m
+
+  [96msrc/services/role.service.ts[0m:[93m42[0m:[93m38[0m
+    [7m42[0m             body.permisstion.forEach((permission: any) => {
+    [7m  [0m [96m                                     ~~~~~~~~~~~~~~~~~~~~~~[0m
+    Did you mean to mark this function as 'async'?
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-09 15:13:28 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/services/role.service.ts[0m:[93m44[0m:[93m28[0m - [91merror[0m[90m TS2304: [0mCannot find name 'variable'.
+
+[7m44[0m                 for await (variable of iterable)
+[7m  [0m [91m                           ~~~~~~~~[0m
+[96msrc/services/role.service.ts[0m:[93m44[0m:[93m40[0m - [91merror[0m[90m TS2304: [0mCannot find name 'iterable'.
+
+[7m44[0m                 for await (variable of iterable)
+[7m  [0m [91m                                       ~~~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/services/role.service.ts[0m:[93m44[0m:[93m28[0m - [91merror[0m[90m TS2304: [0mCannot find name 'variable'.
+
+[7m44[0m                 for await (variable of iterable)
+[7m  [0m [91m                           ~~~~~~~~[0m
+[96msrc/services/role.service.ts[0m:[93m44[0m:[93m40[0m - [91merror[0m[90m TS2304: [0mCannot find name 'iterable'.
+
+[7m44[0m                 for await (variable of iterable)
+[7m  [0m [91m                                       ~~~~~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-09 15:13:46 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/services/role.service.ts[0m:[93m44[0m:[93m28[0m - [91merror[0m[90m TS2552: [0mCannot find name 'permission'. Did you mean 'permissions'?
+
+[7m44[0m                 for await (permission of permissions)
+[7m  [0m [91m                           ~~~~~~~~~~[0m
+
+  [96msrc/services/role.service.ts[0m:[93m43[0m:[93m23[0m
+    [7m43[0m                 const permissions = body.permisstion;
+    [7m  [0m [96m                      ~~~~~~~~~~~[0m
+    'permissions' is declared here.
+[96msrc/services/role.service.ts[0m:[93m47[0m:[93m40[0m - [91merror[0m[90m TS2552: [0mCannot find name 'permission'. Did you mean 'permissions'?
+
+[7m47[0m                         permission_id: permission.id,
+[7m  [0m [91m                                       ~~~~~~~~~~[0m
+
+  [96msrc/services/role.service.ts[0m:[93m43[0m:[93m23[0m
+    [7m43[0m                 const permissions = body.permisstion;
+    [7m  [0m [96m                      ~~~~~~~~~~~[0m
+    'permissions' is declared here.
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/services/role.service.ts[0m:[93m44[0m:[93m28[0m - [91merror[0m[90m TS2552: [0mCannot find name 'permission'. Did you mean 'permissions'?
+
+[7m44[0m                 for await (permission of permissions)
+[7m  [0m [91m                           ~~~~~~~~~~[0m
+
+  [96msrc/services/role.service.ts[0m:[93m43[0m:[93m23[0m
+    [7m43[0m                 const permissions = body.permisstion;
+    [7m  [0m [96m                      ~~~~~~~~~~~[0m
+    'permissions' is declared here.
+[96msrc/services/role.service.ts[0m:[93m47[0m:[93m40[0m - [91merror[0m[90m TS2552: [0mCannot find name 'permission'. Did you mean 'permissions'?
+
+[7m47[0m                         permission_id: permission.id,
+[7m  [0m [91m                                       ~~~~~~~~~~[0m
+
+  [96msrc/services/role.service.ts[0m:[93m43[0m:[93m23[0m
+    [7m43[0m                 const permissions = body.permisstion;
+    [7m  [0m [96m                      ~~~~~~~~~~~[0m
+    'permissions' is declared here.
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-09 15:13:52 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/services/role.service.ts[0m:[93m44[0m:[93m28[0m - [91merror[0m[90m TS2552: [0mCannot find name 'permission'. Did you mean 'permissions'?
+
+[7m44[0m                 for await (permission of permissions) {
+[7m  [0m [91m                           ~~~~~~~~~~[0m
+
+  [96msrc/services/role.service.ts[0m:[93m43[0m:[93m23[0m
+    [7m43[0m                 const permissions = body.permisstion;
+    [7m  [0m [96m                      ~~~~~~~~~~~[0m
+    'permissions' is declared here.
+[96msrc/services/role.service.ts[0m:[93m47[0m:[93m40[0m - [91merror[0m[90m TS2552: [0mCannot find name 'permission'. Did you mean 'permissions'?
+
+[7m47[0m                         permission_id: permission.id,
+[7m  [0m [91m                                       ~~~~~~~~~~[0m
+
+  [96msrc/services/role.service.ts[0m:[93m43[0m:[93m23[0m
+    [7m43[0m                 const permissions = body.permisstion;
+    [7m  [0m [96m                      ~~~~~~~~~~~[0m
+    'permissions' is declared here.
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/services/role.service.ts[0m:[93m44[0m:[93m28[0m - [91merror[0m[90m TS2552: [0mCannot find name 'permission'. Did you mean 'permissions'?
+
+[7m44[0m                 for await (permission of permissions) {
+[7m  [0m [91m                           ~~~~~~~~~~[0m
+
+  [96msrc/services/role.service.ts[0m:[93m43[0m:[93m23[0m
+    [7m43[0m                 const permissions = body.permisstion;
+    [7m  [0m [96m                      ~~~~~~~~~~~[0m
+    'permissions' is declared here.
+[96msrc/services/role.service.ts[0m:[93m47[0m:[93m40[0m - [91merror[0m[90m TS2552: [0mCannot find name 'permission'. Did you mean 'permissions'?
+
+[7m47[0m                         permission_id: permission.id,
+[7m  [0m [91m                                       ~~~~~~~~~~[0m
+
+  [96msrc/services/role.service.ts[0m:[93m43[0m:[93m23[0m
+    [7m43[0m                 const permissions = body.permisstion;
+    [7m  [0m [96m                      ~~~~~~~~~~~[0m
+    'permissions' is declared here.
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-09 15:14:08 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/services/role.service.ts[0m:[93m44[0m:[93m28[0m - [91merror[0m[90m TS2552: [0mCannot find name 'permission'. Did you mean 'permissions'?
+
+[7m44[0m                 for await (permission of body.permissions) {
+[7m  [0m [91m                           ~~~~~~~~~~[0m
+
+  [96msrc/services/role.service.ts[0m:[93m43[0m:[93m23[0m
+    [7m43[0m                 const permissions = body.permisstion;
+    [7m  [0m [96m                      ~~~~~~~~~~~[0m
+    'permissions' is declared here.
+[96msrc/services/role.service.ts[0m:[93m47[0m:[93m40[0m - [91merror[0m[90m TS2552: [0mCannot find name 'permission'. Did you mean 'permissions'?
+
+[7m47[0m                         permission_id: permission.id,
+[7m  [0m [91m                                       ~~~~~~~~~~[0m
+
+  [96msrc/services/role.service.ts[0m:[93m43[0m:[93m23[0m
+    [7m43[0m                 const permissions = body.permisstion;
+    [7m  [0m [96m                      ~~~~~~~~~~~[0m
+    'permissions' is declared here.
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/services/role.service.ts[0m:[93m44[0m:[93m28[0m - [91merror[0m[90m TS2552: [0mCannot find name 'permission'. Did you mean 'permissions'?
+
+[7m44[0m                 for await (permission of body.permissions) {
+[7m  [0m [91m                           ~~~~~~~~~~[0m
+
+  [96msrc/services/role.service.ts[0m:[93m43[0m:[93m23[0m
+    [7m43[0m                 const permissions = body.permisstion;
+    [7m  [0m [96m                      ~~~~~~~~~~~[0m
+    'permissions' is declared here.
+[96msrc/services/role.service.ts[0m:[93m47[0m:[93m40[0m - [91merror[0m[90m TS2552: [0mCannot find name 'permission'. Did you mean 'permissions'?
+
+[7m47[0m                         permission_id: permission.id,
+[7m  [0m [91m                                       ~~~~~~~~~~[0m
+
+  [96msrc/services/role.service.ts[0m:[93m43[0m:[93m23[0m
+    [7m43[0m                 const permissions = body.permisstion;
+    [7m  [0m [96m                      ~~~~~~~~~~~[0m
+    'permissions' is declared here.
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-09 15:14:25 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/services/role.service.ts[0m:[93m44[0m:[93m28[0m - [91merror[0m[90m TS2304: [0mCannot find name 'item'.
+
+[7m44[0m                 for await (item of body.permissions) {
+[7m  [0m [91m                           ~~~~[0m
+[96msrc/services/role.service.ts[0m:[93m47[0m:[93m40[0m - [91merror[0m[90m TS2304: [0mCannot find name 'item'.
+
+[7m47[0m                         permission_id: item.id,
+[7m  [0m [91m                                       ~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/services/role.service.ts[0m:[93m44[0m:[93m28[0m - [91merror[0m[90m TS2304: [0mCannot find name 'item'.
+
+[7m44[0m                 for await (item of body.permissions) {
+[7m  [0m [91m                           ~~~~[0m
+[96msrc/services/role.service.ts[0m:[93m47[0m:[93m40[0m - [91merror[0m[90m TS2304: [0mCannot find name 'item'.
+
+[7m47[0m                         permission_id: item.id,
+[7m  [0m [91m                                       ~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-09 15:14:39 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/services/role.service.ts[0m:[93m44[0m:[93m28[0m - [91merror[0m[90m TS2304: [0mCannot find name 'item'.
+
+[7m44[0m                 for await (item of permissions) {
+[7m  [0m [91m                           ~~~~[0m
+[96msrc/services/role.service.ts[0m:[93m47[0m:[93m40[0m - [91merror[0m[90m TS2304: [0mCannot find name 'item'.
+
+[7m47[0m                         permission_id: item.id,
+[7m  [0m [91m                                       ~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/services/role.service.ts[0m:[93m44[0m:[93m28[0m - [91merror[0m[90m TS2304: [0mCannot find name 'item'.
+
+[7m44[0m                 for await (item of permissions) {
+[7m  [0m [91m                           ~~~~[0m
+[96msrc/services/role.service.ts[0m:[93m47[0m:[93m40[0m - [91merror[0m[90m TS2304: [0mCannot find name 'item'.
+
+[7m47[0m                         permission_id: item.id,
+[7m  [0m [91m                                       ~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-09 15:14:46 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/services/role.service.ts[0m:[93m44[0m:[93m28[0m - [91merror[0m[90m TS2552: [0mCannot find name 'permission'. Did you mean 'permissions'?
+
+[7m44[0m                 for await (permission of permissions) {
+[7m  [0m [91m                           ~~~~~~~~~~[0m
+
+  [96msrc/services/role.service.ts[0m:[93m43[0m:[93m23[0m
+    [7m43[0m                 const permissions = body.permisstion;
+    [7m  [0m [96m                      ~~~~~~~~~~~[0m
+    'permissions' is declared here.
+[96msrc/services/role.service.ts[0m:[93m47[0m:[93m40[0m - [91merror[0m[90m TS2552: [0mCannot find name 'permission'. Did you mean 'permissions'?
+
+[7m47[0m                         permission_id: permission.id,
+[7m  [0m [91m                                       ~~~~~~~~~~[0m
+
+  [96msrc/services/role.service.ts[0m:[93m43[0m:[93m23[0m
+    [7m43[0m                 const permissions = body.permisstion;
+    [7m  [0m [96m                      ~~~~~~~~~~~[0m
+    'permissions' is declared here.
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/services/role.service.ts[0m:[93m44[0m:[93m28[0m - [91merror[0m[90m TS2552: [0mCannot find name 'permission'. Did you mean 'permissions'?
+
+[7m44[0m                 for await (permission of permissions) {
+[7m  [0m [91m                           ~~~~~~~~~~[0m
+
+  [96msrc/services/role.service.ts[0m:[93m43[0m:[93m23[0m
+    [7m43[0m                 const permissions = body.permisstion;
+    [7m  [0m [96m                      ~~~~~~~~~~~[0m
+    'permissions' is declared here.
+[96msrc/services/role.service.ts[0m:[93m47[0m:[93m40[0m - [91merror[0m[90m TS2552: [0mCannot find name 'permission'. Did you mean 'permissions'?
+
+[7m47[0m                         permission_id: permission.id,
+[7m  [0m [91m                                       ~~~~~~~~~~[0m
+
+  [96msrc/services/role.service.ts[0m:[93m43[0m:[93m23[0m
+    [7m43[0m                 const permissions = body.permisstion;
+    [7m  [0m [96m                      ~~~~~~~~~~~[0m
+    'permissions' is declared here.
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-09 15:15:32 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/services/role.service.ts[0m:[93m44[0m:[93m28[0m - [91merror[0m[90m TS2552: [0mCannot find name 'permission'. Did you mean 'permissions'?
+
+[7m44[0m                 for await (permission of permissions) {
+[7m  [0m [91m                           ~~~~~~~~~~[0m
+
+  [96msrc/services/role.service.ts[0m:[93m43[0m:[93m23[0m
+    [7m43[0m                 const permissions = body.permisstion;
+    [7m  [0m [96m                      ~~~~~~~~~~~[0m
+    'permissions' is declared here.
+[96msrc/services/role.service.ts[0m:[93m47[0m:[93m40[0m - [91merror[0m[90m TS2552: [0mCannot find name 'permission'. Did you mean 'permissions'?
+
+[7m47[0m                         permission_id: permission.id,
+[7m  [0m [91m                                       ~~~~~~~~~~[0m
+
+  [96msrc/services/role.service.ts[0m:[93m43[0m:[93m23[0m
+    [7m43[0m                 const permissions = body.permisstion;
+    [7m  [0m [96m                      ~~~~~~~~~~~[0m
+    'permissions' is declared here.
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/services/role.service.ts[0m:[93m44[0m:[93m28[0m - [91merror[0m[90m TS2552: [0mCannot find name 'permission'. Did you mean 'permissions'?
+
+[7m44[0m                 for await (permission of permissions) {
+[7m  [0m [91m                           ~~~~~~~~~~[0m
+
+  [96msrc/services/role.service.ts[0m:[93m43[0m:[93m23[0m
+    [7m43[0m                 const permissions = body.permisstion;
+    [7m  [0m [96m                      ~~~~~~~~~~~[0m
+    'permissions' is declared here.
+[96msrc/services/role.service.ts[0m:[93m47[0m:[93m40[0m - [91merror[0m[90m TS2552: [0mCannot find name 'permission'. Did you mean 'permissions'?
+
+[7m47[0m                         permission_id: permission.id,
+[7m  [0m [91m                                       ~~~~~~~~~~[0m
+
+  [96msrc/services/role.service.ts[0m:[93m43[0m:[93m23[0m
+    [7m43[0m                 const permissions = body.permisstion;
+    [7m  [0m [96m                      ~~~~~~~~~~~[0m
+    'permissions' is declared here.
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-09 15:16:57 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/services/role.service.ts[0m:[93m44[0m:[93m28[0m - [91merror[0m[90m TS2552: [0mCannot find name 'permission'. Did you mean 'permissions'?
+
+[7m44[0m                 for await (permission of permissions) {
+[7m  [0m [91m                           ~~~~~~~~~~[0m
+
+  [96msrc/services/role.service.ts[0m:[93m43[0m:[93m23[0m
+    [7m43[0m                 const permissions = body.permisstion;
+    [7m  [0m [96m                      ~~~~~~~~~~~[0m
+    'permissions' is declared here.
+[96msrc/services/role.service.ts[0m:[93m47[0m:[93m40[0m - [91merror[0m[90m TS2552: [0mCannot find name 'permission'. Did you mean 'permissions'?
+
+[7m47[0m                         permission_id: permission.id,
+[7m  [0m [91m                                       ~~~~~~~~~~[0m
+
+  [96msrc/services/role.service.ts[0m:[93m43[0m:[93m23[0m
+    [7m43[0m                 const permissions = body.permisstion;
+    [7m  [0m [96m                      ~~~~~~~~~~~[0m
+    'permissions' is declared here.
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/services/role.service.ts[0m:[93m44[0m:[93m28[0m - [91merror[0m[90m TS2552: [0mCannot find name 'permission'. Did you mean 'permissions'?
+
+[7m44[0m                 for await (permission of permissions) {
+[7m  [0m [91m                           ~~~~~~~~~~[0m
+
+  [96msrc/services/role.service.ts[0m:[93m43[0m:[93m23[0m
+    [7m43[0m                 const permissions = body.permisstion;
+    [7m  [0m [96m                      ~~~~~~~~~~~[0m
+    'permissions' is declared here.
+[96msrc/services/role.service.ts[0m:[93m47[0m:[93m40[0m - [91merror[0m[90m TS2552: [0mCannot find name 'permission'. Did you mean 'permissions'?
+
+[7m47[0m                         permission_id: permission.id,
+[7m  [0m [91m                                       ~~~~~~~~~~[0m
+
+  [96msrc/services/role.service.ts[0m:[93m43[0m:[93m23[0m
+    [7m43[0m                 const permissions = body.permisstion;
+    [7m  [0m [96m                      ~~~~~~~~~~~[0m
+    'permissions' is declared here.
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-09 15:17:06 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/services/role.service.ts[0m:[93m44[0m:[93m28[0m - [91merror[0m[90m TS2552: [0mCannot find name 'permission'. Did you mean 'permissions'?
+
+[7m44[0m                 for await (permission of permissions) {
+[7m  [0m [91m                           ~~~~~~~~~~[0m
+
+  [96msrc/services/role.service.ts[0m:[93m43[0m:[93m23[0m
+    [7m43[0m                 const permissions = body.permisstions;
+    [7m  [0m [96m                      ~~~~~~~~~~~[0m
+    'permissions' is declared here.
+[96msrc/services/role.service.ts[0m:[93m47[0m:[93m40[0m - [91merror[0m[90m TS2552: [0mCannot find name 'permission'. Did you mean 'permissions'?
+
+[7m47[0m                         permission_id: permission.id,
+[7m  [0m [91m                                       ~~~~~~~~~~[0m
+
+  [96msrc/services/role.service.ts[0m:[93m43[0m:[93m23[0m
+    [7m43[0m                 const permissions = body.permisstions;
+    [7m  [0m [96m                      ~~~~~~~~~~~[0m
+    'permissions' is declared here.
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/services/role.service.ts[0m:[93m44[0m:[93m28[0m - [91merror[0m[90m TS2552: [0mCannot find name 'permission'. Did you mean 'permissions'?
+
+[7m44[0m                 for await (permission of permissions) {
+[7m  [0m [91m                           ~~~~~~~~~~[0m
+
+  [96msrc/services/role.service.ts[0m:[93m43[0m:[93m23[0m
+    [7m43[0m                 const permissions = body.permisstions;
+    [7m  [0m [96m                      ~~~~~~~~~~~[0m
+    'permissions' is declared here.
+[96msrc/services/role.service.ts[0m:[93m47[0m:[93m40[0m - [91merror[0m[90m TS2552: [0mCannot find name 'permission'. Did you mean 'permissions'?
+
+[7m47[0m                         permission_id: permission.id,
+[7m  [0m [91m                                       ~~~~~~~~~~[0m
+
+  [96msrc/services/role.service.ts[0m:[93m43[0m:[93m23[0m
+    [7m43[0m                 const permissions = body.permisstions;
+    [7m  [0m [96m                      ~~~~~~~~~~~[0m
+    'permissions' is declared here.
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-09 15:17:16 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/services/role.service.ts[0m:[93m43[0m:[93m28[0m - [91merror[0m[90m TS2304: [0mCannot find name 'permission'.
+
+[7m43[0m                 for await (permission of body.permisstions) {
+[7m  [0m [91m                           ~~~~~~~~~~[0m
+[96msrc/services/role.service.ts[0m:[93m46[0m:[93m40[0m - [91merror[0m[90m TS2304: [0mCannot find name 'permission'.
+
+[7m46[0m                         permission_id: permission.id,
+[7m  [0m [91m                                       ~~~~~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/services/role.service.ts[0m:[93m43[0m:[93m28[0m - [91merror[0m[90m TS2304: [0mCannot find name 'permission'.
+
+[7m43[0m                 for await (permission of body.permisstions) {
+[7m  [0m [91m                           ~~~~~~~~~~[0m
+[96msrc/services/role.service.ts[0m:[93m46[0m:[93m40[0m - [91merror[0m[90m TS2304: [0mCannot find name 'permission'.
+
+[7m46[0m                         permission_id: permission.id,
+[7m  [0m [91m                                       ~~~~~~~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-09 15:17:51 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/services/role.service.ts[0m:[93m43[0m:[93m28[0m - [91merror[0m[90m TS2304: [0mCannot find name 'permission'.
+
+[7m43[0m                 for await (permission in body.permisstions) {
+[7m  [0m [91m                           ~~~~~~~~~~[0m
+[96msrc/services/role.service.ts[0m:[93m46[0m:[93m40[0m - [91merror[0m[90m TS2304: [0mCannot find name 'permission'.
+
+[7m46[0m                         permission_id: permission.id,
+[7m  [0m [91m                                       ~~~~~~~~~~[0m
+[96msrc/services/role.service.ts[0m:[93m43[0m:[93m39[0m - [91merror[0m[90m TS1005: [0m'of' expected.
+
+[7m43[0m                 for await (permission in body.permisstions) {
+[7m  [0m [91m                                      ~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/services/role.service.ts[0m:[93m43[0m:[93m28[0m - [91merror[0m[90m TS2304: [0mCannot find name 'permission'.
+
+[7m43[0m                 for await (permission in body.permisstions) {
+[7m  [0m [91m                           ~~~~~~~~~~[0m
+[96msrc/services/role.service.ts[0m:[93m46[0m:[93m40[0m - [91merror[0m[90m TS2304: [0mCannot find name 'permission'.
+
+[7m46[0m                         permission_id: permission.id,
+[7m  [0m [91m                                       ~~~~~~~~~~[0m
+[96msrc/services/role.service.ts[0m:[93m43[0m:[93m39[0m - [91merror[0m[90m TS1005: [0m'of' expected.
+
+[7m43[0m                 for await (permission in body.permisstions) {
+[7m  [0m [91m                                      ~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-09 15:18:09 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/services/role.service.ts[0m:[93m43[0m:[93m28[0m - [91merror[0m[90m TS2304: [0mCannot find name 'permission'.
+
+[7m43[0m                 for await (permission of body.permisstions) {
+[7m  [0m [91m                           ~~~~~~~~~~[0m
+[96msrc/services/role.service.ts[0m:[93m46[0m:[93m40[0m - [91merror[0m[90m TS2304: [0mCannot find name 'permission'.
+
+[7m46[0m                         permission_id: permission.id,
+[7m  [0m [91m                                       ~~~~~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/services/role.service.ts[0m:[93m43[0m:[93m28[0m - [91merror[0m[90m TS2304: [0mCannot find name 'permission'.
+
+[7m43[0m                 for await (permission of body.permisstions) {
+[7m  [0m [91m                           ~~~~~~~~~~[0m
+[96msrc/services/role.service.ts[0m:[93m46[0m:[93m40[0m - [91merror[0m[90m TS2304: [0mCannot find name 'permission'.
+
+[7m46[0m                         permission_id: permission.id,
+[7m  [0m [91m                                       ~~~~~~~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
