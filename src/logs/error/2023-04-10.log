@@ -1,0 +1,374 @@
+2023-04-10 10:18:04 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/route/admin.route.ts[0m:[93m17[0m:[93m60[0m - [91merror[0m[90m TS2551: [0mProperty 'create' does not exist on type 'AdminController'. Did you mean 'created'?
+
+[7m17[0m         this.router.post(`${this.path}/create`, this.admin.create);
+[7m  [0m [91m                                                           ~~~~~~[0m
+
+  [96msrc/modules/controllers/base.controller.ts[0m:[93m17[0m:[93m12[0m
+    [7m17[0m     public created(res: express.Response, data?: object) {
+    [7m  [0m [96m           ~~~~~~~[0m
+    'created' is declared here.
+[96msrc/route/admin.route.ts[0m:[93m18[0m:[93m60[0m - [91merror[0m[90m TS2551: [0mProperty 'create' does not exist on type 'AdminController'. Did you mean 'created'?
+
+[7m18[0m         this.router.post(`${this.path}/create`, this.admin.create);
+[7m  [0m [91m                                                           ~~~~~~[0m
+
+  [96msrc/modules/controllers/base.controller.ts[0m:[93m17[0m:[93m12[0m
+    [7m17[0m     public created(res: express.Response, data?: object) {
+    [7m  [0m [96m           ~~~~~~~[0m
+    'created' is declared here.
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/route/admin.route.ts[0m:[93m17[0m:[93m60[0m - [91merror[0m[90m TS2551: [0mProperty 'create' does not exist on type 'AdminController'. Did you mean 'created'?
+
+[7m17[0m         this.router.post(`${this.path}/create`, this.admin.create);
+[7m  [0m [91m                                                           ~~~~~~[0m
+
+  [96msrc/modules/controllers/base.controller.ts[0m:[93m17[0m:[93m12[0m
+    [7m17[0m     public created(res: express.Response, data?: object) {
+    [7m  [0m [96m           ~~~~~~~[0m
+    'created' is declared here.
+[96msrc/route/admin.route.ts[0m:[93m18[0m:[93m60[0m - [91merror[0m[90m TS2551: [0mProperty 'create' does not exist on type 'AdminController'. Did you mean 'created'?
+
+[7m18[0m         this.router.post(`${this.path}/create`, this.admin.create);
+[7m  [0m [91m                                                           ~~~~~~[0m
+
+  [96msrc/modules/controllers/base.controller.ts[0m:[93m17[0m:[93m12[0m
+    [7m17[0m     public created(res: express.Response, data?: object) {
+    [7m  [0m [96m           ~~~~~~~[0m
+    'created' is declared here.
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-10 10:18:17 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/route/admin.route.ts[0m:[93m17[0m:[93m60[0m - [91merror[0m[90m TS2551: [0mProperty 'create' does not exist on type 'AdminController'. Did you mean 'created'?
+
+[7m17[0m         this.router.post(`${this.path}/create`, this.admin.create);
+[7m  [0m [91m                                                           ~~~~~~[0m
+
+  [96msrc/modules/controllers/base.controller.ts[0m:[93m17[0m:[93m12[0m
+    [7m17[0m     public created(res: express.Response, data?: object) {
+    [7m  [0m [96m           ~~~~~~~[0m
+    'created' is declared here.
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/route/admin.route.ts[0m:[93m17[0m:[93m60[0m - [91merror[0m[90m TS2551: [0mProperty 'create' does not exist on type 'AdminController'. Did you mean 'created'?
+
+[7m17[0m         this.router.post(`${this.path}/create`, this.admin.create);
+[7m  [0m [91m                                                           ~~~~~~[0m
+
+  [96msrc/modules/controllers/base.controller.ts[0m:[93m17[0m:[93m12[0m
+    [7m17[0m     public created(res: express.Response, data?: object) {
+    [7m  [0m [96m           ~~~~~~~[0m
+    'created' is declared here.
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-10 10:18:37 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/route/admin.route.ts[0m:[93m17[0m:[93m60[0m - [91merror[0m[90m TS2339: [0mProperty 'store' does not exist on type 'AdminController'.
+
+[7m17[0m         this.router.post(`${this.path}/create`, this.admin.store);
+[7m  [0m [91m                                                           ~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/route/admin.route.ts[0m:[93m17[0m:[93m60[0m - [91merror[0m[90m TS2339: [0mProperty 'store' does not exist on type 'AdminController'.
+
+[7m17[0m         this.router.post(`${this.path}/create`, this.admin.store);
+[7m  [0m [91m                                                           ~~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-10 10:19:43 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/route/admin.route.ts[0m:[93m17[0m:[93m60[0m - [91merror[0m[90m TS2551: [0mProperty 'create' does not exist on type 'AdminController'. Did you mean 'created'?
+
+[7m17[0m         this.router.post(`${this.path}/create`, this.admin.create);
+[7m  [0m [91m                                                           ~~~~~~[0m
+
+  [96msrc/modules/controllers/base.controller.ts[0m:[93m17[0m:[93m12[0m
+    [7m17[0m     public created(res: express.Response, data?: object) {
+    [7m  [0m [96m           ~~~~~~~[0m
+    'created' is declared here.
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/route/admin.route.ts[0m:[93m17[0m:[93m60[0m - [91merror[0m[90m TS2551: [0mProperty 'create' does not exist on type 'AdminController'. Did you mean 'created'?
+
+[7m17[0m         this.router.post(`${this.path}/create`, this.admin.create);
+[7m  [0m [91m                                                           ~~~~~~[0m
+
+  [96msrc/modules/controllers/base.controller.ts[0m:[93m17[0m:[93m12[0m
+    [7m17[0m     public created(res: express.Response, data?: object) {
+    [7m  [0m [96m           ~~~~~~~[0m
+    'created' is declared here.
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-10 10:29:51 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/services/admin.service.ts[0m:[93m104[0m:[93m17[0m - [91merror[0m[90m TS1005: [0m',' expected.
+
+[7m104[0m                 { transaction: t })
+[7m   [0m [91m                ~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/services/admin.service.ts[0m:[93m104[0m:[93m17[0m - [91merror[0m[90m TS1005: [0m',' expected.
+
+[7m104[0m                 { transaction: t })
+[7m   [0m [91m                ~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-10 10:36:04 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/modules/controllers/admin.controller.ts[0m:[93m57[0m:[93m45[0m - [91merror[0m[90m TS2304: [0mCannot find name 'id'.
+
+[7m57[0m             const data = await admin.update(id,req.body);
+[7m  [0m [91m                                            ~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/modules/controllers/admin.controller.ts[0m:[93m57[0m:[93m45[0m - [91merror[0m[90m TS2304: [0mCannot find name 'id'.
+
+[7m57[0m             const data = await admin.update(id,req.body);
+[7m  [0m [91m                                            ~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-10 10:36:28 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/modules/controllers/admin.controller.ts[0m:[93m57[0m:[93m38[0m - [91merror[0m[90m TS2554: [0mExpected 2 arguments, but got 1.
+
+[7m57[0m             const data = await admin.update({...req.body,id:req.params.id});
+[7m  [0m [91m                                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+  [96msrc/services/admin.service.ts[0m:[93m90[0m:[93m32[0m
+    [7m90[0m     public update = async (id, body) => {
+    [7m  [0m [96m                               ~~~~[0m
+    An argument for 'body' was not provided.
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/modules/controllers/admin.controller.ts[0m:[93m57[0m:[93m38[0m - [91merror[0m[90m TS2554: [0mExpected 2 arguments, but got 1.
+
+[7m57[0m             const data = await admin.update({...req.body,id:req.params.id});
+[7m  [0m [91m                                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+  [96msrc/services/admin.service.ts[0m:[93m90[0m:[93m32[0m
+    [7m90[0m     public update = async (id, body) => {
+    [7m  [0m [96m                               ~~~~[0m
+    An argument for 'body' was not provided.
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-10 10:36:36 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/services/admin.service.ts[0m:[93m103[0m:[93m28[0m - [91merror[0m[90m TS18004: [0mNo value exists in scope for the shorthand property 'id'. Either declare one or provide an initializer.
+
+[7m103[0m                 { where: { id } },
+[7m   [0m [91m                           ~~[0m
+[96msrc/services/admin.service.ts[0m:[93m108[0m:[93m46[0m - [91merror[0m[90m TS2304: [0mCannot find name 'id'.
+
+[7m108[0m                         { where: { admin_id: id } },
+[7m   [0m [91m                                             ~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/services/admin.service.ts[0m:[93m103[0m:[93m28[0m - [91merror[0m[90m TS18004: [0mNo value exists in scope for the shorthand property 'id'. Either declare one or provide an initializer.
+
+[7m103[0m                 { where: { id } },
+[7m   [0m [91m                           ~~[0m
+[96msrc/services/admin.service.ts[0m:[93m108[0m:[93m46[0m - [91merror[0m[90m TS2304: [0mCannot find name 'id'.
+
+[7m108[0m                         { where: { admin_id: id } },
+[7m   [0m [91m                                             ~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-10 11:11:45 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/services/admin.service.ts[0m:[93m85[0m:[93m20[0m - [91merror[0m[90m TS2304: [0mCannot find name 'AdminDTO'.
+
+[7m85[0m             return AdminDTO.transformDetail(admin);
+[7m  [0m [91m                   ~~~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/services/admin.service.ts[0m:[93m85[0m:[93m20[0m - [91merror[0m[90m TS2304: [0mCannot find name 'AdminDTO'.
+
+[7m85[0m             return AdminDTO.transformDetail(admin);
+[7m  [0m [91m                   ~~~~~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-10 11:12:09 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/services/admin.service.ts[0m:[93m85[0m:[93m20[0m - [91merror[0m[90m TS2304: [0mCannot find name 'AdminDTO'.
+
+[7m85[0m             return AdminDTO.transformDetail(admin);
+[7m  [0m [91m                   ~~~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/services/admin.service.ts[0m:[93m85[0m:[93m20[0m - [91merror[0m[90m TS2304: [0mCannot find name 'AdminDTO'.
+
+[7m85[0m             return AdminDTO.transformDetail(admin);
+[7m  [0m [91m                   ~~~~~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-10 11:12:37 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/services/admin.service.ts[0m:[93m85[0m:[93m20[0m - [91merror[0m[90m TS2304: [0mCannot find name 'AdminDTO'.
+
+[7m85[0m             return AdminDTO.transformDetail(admin);
+[7m  [0m [91m                   ~~~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/services/admin.service.ts[0m:[93m85[0m:[93m20[0m - [91merror[0m[90m TS2304: [0mCannot find name 'AdminDTO'.
+
+[7m85[0m             return AdminDTO.transformDetail(admin);
+[7m  [0m [91m                   ~~~~~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-10 11:12:55 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/services/admin.service.ts[0m:[93m85[0m:[93m20[0m - [91merror[0m[90m TS2304: [0mCannot find name 'AdminDTO'.
+
+[7m85[0m             return AdminDTO.transformDetail(admin);
+[7m  [0m [91m                   ~~~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/services/admin.service.ts[0m:[93m85[0m:[93m20[0m - [91merror[0m[90m TS2304: [0mCannot find name 'AdminDTO'.
+
+[7m85[0m             return AdminDTO.transformDetail(admin);
+[7m  [0m [91m                   ~~~~~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-10 11:13:09 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/services/admin.service.ts[0m:[93m85[0m:[93m20[0m - [91merror[0m[90m TS2304: [0mCannot find name 'AdminDTO'.
+
+[7m85[0m             return AdminDTO.transformDetail(admin);
+[7m  [0m [91m                   ~~~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/services/admin.service.ts[0m:[93m85[0m:[93m20[0m - [91merror[0m[90m TS2304: [0mCannot find name 'AdminDTO'.
+
+[7m85[0m             return AdminDTO.transformDetail(admin);
+[7m  [0m [91m                   ~~~~~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-10 11:13:29 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/services/admin.service.ts[0m:[93m85[0m:[93m20[0m - [91merror[0m[90m TS2304: [0mCannot find name 'AdminDTO'.
+
+[7m85[0m             return AdminDTO.transformDetail(admin);
+[7m  [0m [91m                   ~~~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/services/admin.service.ts[0m:[93m85[0m:[93m20[0m - [91merror[0m[90m TS2304: [0mCannot find name 'AdminDTO'.
+
+[7m85[0m             return AdminDTO.transformDetail(admin);
+[7m  [0m [91m                   ~~~~~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)

@@ -1,3 +1,4 @@
+import { AdminDTO } from "../dtos/admin.dtos";
 import models from "../infra/sequelize/models";
 import { ApiFeatures } from "../utils/ApiFeatures";
 
@@ -36,29 +37,34 @@ export class AdminService {
         }
     }
 
-    public store = async (body) => {
+    public create = async (body) => {
 
         const t = await models.sequelize.transaction();
 
+        const newItem = {
+            username: body.username,
+            name: body.name,
+            email: body.email,
+            password: body.password,
+        }
+
         try {
-            await models.Admin.create({ ...body }
-                ,
+            await models.Admin.create(newItem,
                 { transaction: t })
                 .then(async (admin) => {
-                    for (const role of body.roles) {
+                    for (const roleId of body.roles) {
                         try {
                             await models.AdminRole.create({
-                                role_id: admin.id,
-                                admin_id: body.id,
+                                role_id: Number(roleId),
+                                admin_id: Number(admin.id),
 
-                            });
+                            }, { transaction: t });
                         } catch (error) {
                             console.log(error);
                         }
                     }
+                    await t.commit();
                 });
-
-            await t.commit();
         } catch (error) {
             console.log(error);
             await t.rollback();
@@ -68,7 +74,7 @@ export class AdminService {
 
     public findById = async (id) => {
         try {
-            return await models.Admin.findOne({
+            const admin = await models.Admin.findOne({
                 where: { id: id },
                 include: {
                     model: models.Role,
@@ -77,13 +83,52 @@ export class AdminService {
                 },
             });
 
+            return AdminDTO.transformDetail(admin);
+
         } catch (error) {
             console.log(error);
         }
     }
 
-    public update = async (id, body) => {
-        return await models.Admin.update({ ...body }, { where: { id } });
+    public update = async (body) => {
+
+        const t = await models.sequelize.transaction();
+        const id = body.id;
+
+        const newItem = {
+            username: body.username,
+            name: body.name,
+            email: body.email,
+            password: body.password,
+        }
+
+        try {
+            await models.Admin.update({ ...newItem },
+                { where: { id } },
+                { transaction: t })
+
+            await models.AdminRole.destroy(
+                { where: { admin_id: id } },
+                { transaction: t });
+
+            for (const role of body.roles) {
+                try {
+                    await models.AdminRole.create({
+                        role_id: role,
+                        admin_id: id,
+
+                    }, { transaction: t });
+                } catch (error) {
+                    console.log(error);
+                }
+            }
+
+            await t.commit();
+
+        } catch (error) {
+            console.log(error);
+            await t.rollback();
+        }
     }
 
     public deleteById = async (id) => {

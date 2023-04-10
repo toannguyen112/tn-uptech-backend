@@ -14,8 +14,10 @@ export class AdminRoute implements Routes {
 
     private initializeRoutes() {
         this.router.get(`${this.path}`, this.admin.index);
+        this.router.post(`${this.path}/create`, this.admin.create);
         this.router.post(`${this.path}/login`, this.admin.login);
         this.router.get(`${this.path}/show/:id`, this.admin.show);
+        this.router.post(`${this.path}/delete/:id`, this.admin.delete);
         this.router.put(`${this.path}/update/:id`, this.admin.update);
     }
 }

@@ -1,4 +1,4 @@
-export class JobDTO {
+export class AdminDTO {
     static transform = (item) => {
 
         return {
@@ -7,7 +7,18 @@ export class JobDTO {
             createdAt: item.createdAt,
             updatedAt: item.updatedAt,
         }
+    }
 
+    static transformDetail = (item) => {
+
+        return {
+            id: item.id,
+            name: item.name || "",
+            username: item.name || "",
+            password: item.password || "",
+            email: item.email || "",
+            roles: item.roles.map((item) => item.id) || [],
+        }
     }
 
 }
