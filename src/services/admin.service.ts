@@ -37,6 +37,27 @@ export class AdminService {
         }
     }
 
+    public login = async (body) => {
+
+        const admin = await models.Admin.findOne({
+            where: {
+                username: body.username,
+                password: body.password,
+            },
+            include: {
+                model: models.Role,
+                as: "roles",
+                required: false,
+            },
+        })
+
+        if (!admin) {
+            throw new Error("Tài khoản mật khẩu chưa đúng");
+        }
+
+        return AdminDTO.transformDetail(admin);
+    }
+
     public create = async (body) => {
 
         const t = await models.sequelize.transaction();

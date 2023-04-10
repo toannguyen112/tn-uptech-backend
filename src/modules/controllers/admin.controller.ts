@@ -16,10 +16,10 @@ export default class AdminController extends BaseController {
 
     async login(req: Request, res: Response) {
         try {
-            return res.status(200).json("");
+            const data = await admin.login({ ...req.body });
+            res.status(200).send({ message: "ok", data });
         } catch (error) {
-            console.log(error);
-            res.status(500).send(error);
+            res.status(500).send({ message: error.message, data: null })
         }
     }
 
@@ -54,7 +54,7 @@ export default class AdminController extends BaseController {
 
     async update(req: Request, res: Response) {
         try {
-            const data = await admin.update({...req.body,id:req.params.id});
+            const data = await admin.update({ ...req.body, id: req.params.id });
             res.status(200).send({ message: "ok", data });
         } catch (error) {
             console.log(error);
