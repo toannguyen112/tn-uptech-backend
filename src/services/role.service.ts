@@ -50,7 +50,8 @@ export class RoleService {
                                 role_id: role.id,
                                 permission_id: permission.id,
 
-                            });
+                            },
+                            { transaction: t });
                         } catch (error) {
                             console.log(error);
                         }
