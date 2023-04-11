@@ -5,63 +5,53 @@ import Helper from "../utils/Helper";
 export class AdminService {
 
     public getList = async (query) => {
-        try {
+        const conditions = {};
+        const queryObject = { search: query.search };
 
-            const conditions = {};
-            const queryObject = { search: query.search };
+        const excludedFields = ["page", "page_size", "sort_field", "sort_order", "fields"];
 
-            const excludedFields = ["page", "page_size", "sort_field", "sort_order", "fields"];
+        excludedFields.forEach((field) => delete queryObject[field]);
 
-            excludedFields.forEach((field) => delete queryObject[field]);
+        const objQuery = new ApiFeatures(query)
+            .filter(conditions)
+            .sort(query.sort_field || "createdAt", query.sort_order || "DESC")
+            .paginate()
+            .paranoid()
+            .getObjQuery();
 
-            const objQuery = new ApiFeatures(query)
-                .filter(conditions)
-                .sort(query.sort_field || "createdAt", query.sort_order || "DESC")
-                .paginate()
-                .paranoid()
-                .getObjQuery();
+        const { count, rows }: any = await models.Admin.findAndCountAll(objQuery);
 
-            const { count, rows }: any = await models.Admin.findAndCountAll(objQuery);
+        const result = {
+            page: Number(query?.page) * 1,
+            pageSize: Number(query?.page_size) * 1,
+            pageCount: Math.ceil(count / Number(query?.page_size) * 1),
+            totalItems: count || 0,
+            data: rows,
+        };
 
-            const result = {
-                page: Number(query?.page) * 1,
-                pageSize: Number(query?.page_size) * 1,
-                pageCount: Math.ceil(count / Number(query?.page_size) * 1),
-                totalItems: count || 0,
-                data: rows,
-            };
-
-            return result;
-        } catch (error) {
-            console.log(error);
-        }
+        return result;
     }
 
     public login = async (body) => {
-        try {
-            const foundAdmin = await models.Admin.findOne({ where: { username: body.username } });
+        const foundAdmin = await models.Admin.findOne({ where: { username: body.username } });
 
-            if (!foundAdmin) {
-                throw new Error("Name of admin is not correct");
-            }
-
-            const isMatch: boolean = body.password === foundAdmin.password;
-
-            if (isMatch) {
-
-                const token = Helper.generateToken(foundAdmin, 'admin');
-
-                return {
-                    data: foundAdmin,
-                    token: token,
-                }
-            }
-
-            throw new Error("Password is not correct");
-
-        } catch (error) {
-            console.log(error);
+        if (!foundAdmin) {
+            throw new Error("Name is not correct");
         }
+
+        const isMatch: boolean = body.password === foundAdmin.password;
+
+        if (isMatch) {
+
+            const token = Helper.generateToken(foundAdmin, 'admin');
+
+            return {
+                data: foundAdmin,
+                token,
+            }
+        }
+
+        throw new Error("Password is not correct");
     }
 
 
@@ -101,49 +91,39 @@ export class AdminService {
     }
 
     public findById = async (id) => {
-        try {
-            const admin = await models.Admin.findOne({
-                where: { id: id },
+        const admin = await models.Admin.findOne({
+            where: { id: id },
+            include: {
+                model: models.Role,
+                as: "roles",
+                required: false,
                 include: {
-                    model: models.Role,
-                    as: "roles",
+                    model: models.Permission,
+                    as: "permissions",
                     required: false,
-                    include: {
-                        model: models.Permission,
-                        as: "permissions",
-                        required: false,
-                    },
                 },
-            });
+            },
+        });
 
-            return AdminDTO.transformDetail(admin);
-
-        } catch (error) {
-            console.log(error);
-        }
+        return AdminDTO.transformDetail(admin);
     }
 
     public profile = async (id) => {
-        try {
-            const admin = await models.Admin.findOne({
-                where: { id },
+        const admin = await models.Admin.findOne({
+            where: { id },
+            include: {
+                model: models.Role,
+                as: "roles",
+                required: false,
                 include: {
-                    model: models.Role,
-                    as: "roles",
+                    model: models.Permission,
+                    as: "permissions",
                     required: false,
-                    include: {
-                        model: models.Permission,
-                        as: "permissions",
-                        required: false,
-                    },
                 },
-            });
+            },
+        });
 
-            return AdminDTO.transformProfile(admin);
-
-        } catch (error) {
-            console.log(error);
-        }
+        return AdminDTO.transformProfile(admin);
     }
 
     public update = async (body) => {

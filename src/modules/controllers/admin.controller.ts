@@ -28,7 +28,7 @@ export default class AdminController extends BaseController {
             return res.status(200).json("");
         } catch (error) {
             console.log(error);
-            res.status(500).send(error);
+            res.status(500).send({ message: error.message, data: null })
         }
     }
 
@@ -38,7 +38,7 @@ export default class AdminController extends BaseController {
             res.status(200).send({ message: "ok", data });
         } catch (error) {
             console.log(error);
-            res.status(500).send(error);
+            res.status(500).send({ message: error.message, data: null })
         }
     }
 
@@ -46,10 +46,9 @@ export default class AdminController extends BaseController {
         const { id } = req.admin;
         try {
             const data = await admin.profile(id);
-            return res.status(200).json({ message: "OK", data });
-
+            res.status(200).send({ message: "ok", data });
         } catch (error) {
-            res.status(500);
+            res.status(500).send({ message: error.message, data: null })
         }
     }
 
@@ -60,7 +59,7 @@ export default class AdminController extends BaseController {
             res.status(200).send({ message: "Logout successfully" });
         } catch (error) {
             console.log(error);
-            res.status(500);
+            res.status(500).send({ message: error.message, data: null })
         }
     }
 
@@ -70,7 +69,7 @@ export default class AdminController extends BaseController {
             res.status(200).send({ message: "ok", data });
         } catch (error) {
             console.log(error);
-            res.status(500).send(error);
+            res.status(500).send({ message: error.message, data: null })
         }
     }
 
@@ -80,7 +79,7 @@ export default class AdminController extends BaseController {
             res.status(200).send({ message: "ok", data });
         } catch (error) {
             console.log(error);
-            res.status(500).send(error);
+            res.status(500).send({ message: error.message, data: null })
         }
     }
 
