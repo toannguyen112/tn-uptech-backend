@@ -23,7 +23,23 @@ export default class Helper {
     return dayjs(date).format(format);
   }
 
-  public static async emptyDirSync(){
+  public static generateToken(model: any, dataObject: any = 'admin') {
+
+    const  saveObjectToken = { admin: { id: model.id, name: model.name, role_id: model.role_id } }
+
+    const token: string = jwt.sign(
+      saveObjectToken,
+      process.env.SERVER_JWT_SECRET,
+      { expiresIn: process.env.SERVER_JWT_TIMEOUT }
+    );
+
+    model.tokens = model.tokens ? model.tokens.concat({ token }) : [{ token }];
+    model.save();
+
+    return token;
+  }
+
+  public static async emptyDirSync() {
     try {
       await fs.emptyDirSync('./storage/uploads');
       console.log('success!')

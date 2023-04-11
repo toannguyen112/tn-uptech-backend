@@ -42,6 +42,28 @@ export default class AdminController extends BaseController {
         }
     }
 
+    async profile(req, res: Response) {
+        const { id } = req.admin;
+        try {
+            const data = await admin.profile(id);
+            return res.status(200).json({ message: "OK", data });
+
+        } catch (error) {
+            res.status(500);
+        }
+    }
+
+    async logout(req, res): Promise<any> {
+        try {
+            req.admin.tokens = req.admin.tokens.filter((item: any) => { return item.token !== req.token; });
+            await req.admin.save();
+            res.status(200).send({ message: "Logout successfully" });
+        } catch (error) {
+            console.log(error);
+            res.status(500);
+        }
+    }
+
     async create(req: Request, res: Response) {
         try {
             const data = await admin.create({ ...req.body });

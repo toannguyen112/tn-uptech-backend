@@ -1,0 +1,910 @@
+2023-04-11 00:20:03 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/services/admin.service.ts[0m:[93m39[0m:[93m12[0m - [91merror[0m[90m TS2300: [0mDuplicate identifier 'login'.
+
+[7m39[0m     public login = async (body) => {
+[7m  [0m [91m           ~~~~~[0m
+[96msrc/services/admin.service.ts[0m:[93m63[0m:[93m12[0m - [91merror[0m[90m TS2300: [0mDuplicate identifier 'login'.
+
+[7m63[0m     public login(req: Request, res: Response): Promise<any> {
+[7m  [0m [91m           ~~~~~[0m
+[96msrc/services/admin.service.ts[0m:[93m63[0m:[93m12[0m - [91merror[0m[90m TS2300: [0mDuplicate identifier 'login'.
+
+[7m63[0m     public login(req: Request, res: Response): Promise<any> {
+[7m  [0m [91m           ~~~~~[0m
+[96msrc/services/admin.service.ts[0m:[93m63[0m:[93m23[0m - [91merror[0m[90m TS2304: [0mCannot find name 'Request'.
+
+[7m63[0m     public login(req: Request, res: Response): Promise<any> {
+[7m  [0m [91m                      ~~~~~~~[0m
+[96msrc/services/admin.service.ts[0m:[93m63[0m:[93m37[0m - [91merror[0m[90m TS2304: [0mCannot find name 'Response'.
+
+[7m63[0m     public login(req: Request, res: Response): Promise<any> {
+[7m  [0m [91m                                    ~~~~~~~~[0m
+[96msrc/services/admin.service.ts[0m:[93m65[0m:[93m32[0m - [91merror[0m[90m TS1308: [0m'await' expressions are only allowed within async functions and at the top levels of modules.
+
+[7m65[0m             const foundAdmin = await Admin.findOne({ where: { username: req.body.username } });
+[7m  [0m [91m                               ~~~~~[0m
+
+  [96msrc/services/admin.service.ts[0m:[93m63[0m:[93m12[0m
+    [7m63[0m     public login(req: Request, res: Response): Promise<any> {
+    [7m  [0m [96m           ~~~~~[0m
+    Did you mean to mark this function as 'async'?
+[96msrc/services/admin.service.ts[0m:[93m65[0m:[93m38[0m - [91merror[0m[90m TS2304: [0mCannot find name 'Admin'.
+
+[7m65[0m             const foundAdmin = await Admin.findOne({ where: { username: req.body.username } });
+[7m  [0m [91m                                     ~~~~~[0m
+[96msrc/services/admin.service.ts[0m:[93m73[0m:[93m31[0m - [91merror[0m[90m TS2304: [0mCannot find name 'Helper'.
+
+[7m73[0m                 const token = Helper.generateToken(foundAdmin, 'admin');
+[7m  [0m [91m                              ~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/services/admin.service.ts[0m:[93m39[0m:[93m12[0m - [91merror[0m[90m TS2300: [0mDuplicate identifier 'login'.
+
+[7m39[0m     public login = async (body) => {
+[7m  [0m [91m           ~~~~~[0m
+[96msrc/services/admin.service.ts[0m:[93m63[0m:[93m12[0m - [91merror[0m[90m TS2300: [0mDuplicate identifier 'login'.
+
+[7m63[0m     public login(req: Request, res: Response): Promise<any> {
+[7m  [0m [91m           ~~~~~[0m
+[96msrc/services/admin.service.ts[0m:[93m63[0m:[93m12[0m - [91merror[0m[90m TS2300: [0mDuplicate identifier 'login'.
+
+[7m63[0m     public login(req: Request, res: Response): Promise<any> {
+[7m  [0m [91m           ~~~~~[0m
+[96msrc/services/admin.service.ts[0m:[93m63[0m:[93m23[0m - [91merror[0m[90m TS2304: [0mCannot find name 'Request'.
+
+[7m63[0m     public login(req: Request, res: Response): Promise<any> {
+[7m  [0m [91m                      ~~~~~~~[0m
+[96msrc/services/admin.service.ts[0m:[93m63[0m:[93m37[0m - [91merror[0m[90m TS2304: [0mCannot find name 'Response'.
+
+[7m63[0m     public login(req: Request, res: Response): Promise<any> {
+[7m  [0m [91m                                    ~~~~~~~~[0m
+[96msrc/services/admin.service.ts[0m:[93m65[0m:[93m32[0m - [91merror[0m[90m TS1308: [0m'await' expressions are only allowed within async functions and at the top levels of modules.
+
+[7m65[0m             const foundAdmin = await Admin.findOne({ where: { username: req.body.username } });
+[7m  [0m [91m                               ~~~~~[0m
+
+  [96msrc/services/admin.service.ts[0m:[93m63[0m:[93m12[0m
+    [7m63[0m     public login(req: Request, res: Response): Promise<any> {
+    [7m  [0m [96m           ~~~~~[0m
+    Did you mean to mark this function as 'async'?
+[96msrc/services/admin.service.ts[0m:[93m65[0m:[93m38[0m - [91merror[0m[90m TS2304: [0mCannot find name 'Admin'.
+
+[7m65[0m             const foundAdmin = await Admin.findOne({ where: { username: req.body.username } });
+[7m  [0m [91m                                     ~~~~~[0m
+[96msrc/services/admin.service.ts[0m:[93m73[0m:[93m31[0m - [91merror[0m[90m TS2304: [0mCannot find name 'Helper'.
+
+[7m73[0m                 const token = Helper.generateToken(foundAdmin, 'admin');
+[7m  [0m [91m                              ~~~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-11 00:20:41 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/services/admin.service.ts[0m:[93m39[0m:[93m12[0m - [91merror[0m[90m TS2300: [0mDuplicate identifier 'login'.
+
+[7m39[0m     public login = async (body) => {
+[7m  [0m [91m           ~~~~~[0m
+[96msrc/services/admin.service.ts[0m:[93m63[0m:[93m12[0m - [91merror[0m[90m TS2300: [0mDuplicate identifier 'login'.
+
+[7m63[0m     public login(req: Request, res: Response): Promise<any> {
+[7m  [0m [91m           ~~~~~[0m
+[96msrc/services/admin.service.ts[0m:[93m63[0m:[93m12[0m - [91merror[0m[90m TS2300: [0mDuplicate identifier 'login'.
+
+[7m63[0m     public login(req: Request, res: Response): Promise<any> {
+[7m  [0m [91m           ~~~~~[0m
+[96msrc/services/admin.service.ts[0m:[93m63[0m:[93m23[0m - [91merror[0m[90m TS2304: [0mCannot find name 'Request'.
+
+[7m63[0m     public login(req: Request, res: Response): Promise<any> {
+[7m  [0m [91m                      ~~~~~~~[0m
+[96msrc/services/admin.service.ts[0m:[93m63[0m:[93m37[0m - [91merror[0m[90m TS2304: [0mCannot find name 'Response'.
+
+[7m63[0m     public login(req: Request, res: Response): Promise<any> {
+[7m  [0m [91m                                    ~~~~~~~~[0m
+[96msrc/services/admin.service.ts[0m:[93m65[0m:[93m32[0m - [91merror[0m[90m TS1308: [0m'await' expressions are only allowed within async functions and at the top levels of modules.
+
+[7m65[0m             const foundAdmin = await Admin.findOne({ where: { username: req.body.username } });
+[7m  [0m [91m                               ~~~~~[0m
+
+  [96msrc/services/admin.service.ts[0m:[93m63[0m:[93m12[0m
+    [7m63[0m     public login(req: Request, res: Response): Promise<any> {
+    [7m  [0m [96m           ~~~~~[0m
+    Did you mean to mark this function as 'async'?
+[96msrc/services/admin.service.ts[0m:[93m65[0m:[93m38[0m - [91merror[0m[90m TS2304: [0mCannot find name 'Admin'.
+
+[7m65[0m             const foundAdmin = await Admin.findOne({ where: { username: req.body.username } });
+[7m  [0m [91m                                     ~~~~~[0m
+[96msrc/services/admin.service.ts[0m:[93m73[0m:[93m31[0m - [91merror[0m[90m TS2304: [0mCannot find name 'Helper'.
+
+[7m73[0m                 const token = Helper.generateToken(foundAdmin, 'admin');
+[7m  [0m [91m                              ~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/services/admin.service.ts[0m:[93m39[0m:[93m12[0m - [91merror[0m[90m TS2300: [0mDuplicate identifier 'login'.
+
+[7m39[0m     public login = async (body) => {
+[7m  [0m [91m           ~~~~~[0m
+[96msrc/services/admin.service.ts[0m:[93m63[0m:[93m12[0m - [91merror[0m[90m TS2300: [0mDuplicate identifier 'login'.
+
+[7m63[0m     public login(req: Request, res: Response): Promise<any> {
+[7m  [0m [91m           ~~~~~[0m
+[96msrc/services/admin.service.ts[0m:[93m63[0m:[93m12[0m - [91merror[0m[90m TS2300: [0mDuplicate identifier 'login'.
+
+[7m63[0m     public login(req: Request, res: Response): Promise<any> {
+[7m  [0m [91m           ~~~~~[0m
+[96msrc/services/admin.service.ts[0m:[93m63[0m:[93m23[0m - [91merror[0m[90m TS2304: [0mCannot find name 'Request'.
+
+[7m63[0m     public login(req: Request, res: Response): Promise<any> {
+[7m  [0m [91m                      ~~~~~~~[0m
+[96msrc/services/admin.service.ts[0m:[93m63[0m:[93m37[0m - [91merror[0m[90m TS2304: [0mCannot find name 'Response'.
+
+[7m63[0m     public login(req: Request, res: Response): Promise<any> {
+[7m  [0m [91m                                    ~~~~~~~~[0m
+[96msrc/services/admin.service.ts[0m:[93m65[0m:[93m32[0m - [91merror[0m[90m TS1308: [0m'await' expressions are only allowed within async functions and at the top levels of modules.
+
+[7m65[0m             const foundAdmin = await Admin.findOne({ where: { username: req.body.username } });
+[7m  [0m [91m                               ~~~~~[0m
+
+  [96msrc/services/admin.service.ts[0m:[93m63[0m:[93m12[0m
+    [7m63[0m     public login(req: Request, res: Response): Promise<any> {
+    [7m  [0m [96m           ~~~~~[0m
+    Did you mean to mark this function as 'async'?
+[96msrc/services/admin.service.ts[0m:[93m65[0m:[93m38[0m - [91merror[0m[90m TS2304: [0mCannot find name 'Admin'.
+
+[7m65[0m             const foundAdmin = await Admin.findOne({ where: { username: req.body.username } });
+[7m  [0m [91m                                     ~~~~~[0m
+[96msrc/services/admin.service.ts[0m:[93m73[0m:[93m31[0m - [91merror[0m[90m TS2304: [0mCannot find name 'Helper'.
+
+[7m73[0m                 const token = Helper.generateToken(foundAdmin, 'admin');
+[7m  [0m [91m                              ~~~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-11 00:21:07 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/services/admin.service.ts[0m:[93m39[0m:[93m12[0m - [91merror[0m[90m TS2300: [0mDuplicate identifier 'login'.
+
+[7m39[0m     public login = async (body) => {
+[7m  [0m [91m           ~~~~~[0m
+[96msrc/services/admin.service.ts[0m:[93m63[0m:[93m12[0m - [91merror[0m[90m TS2300: [0mDuplicate identifier 'login'.
+
+[7m63[0m     public login(req: Request, res: Response): Promise<any> {
+[7m  [0m [91m           ~~~~~[0m
+[96msrc/services/admin.service.ts[0m:[93m63[0m:[93m12[0m - [91merror[0m[90m TS2300: [0mDuplicate identifier 'login'.
+
+[7m63[0m     public login(req: Request, res: Response): Promise<any> {
+[7m  [0m [91m           ~~~~~[0m
+[96msrc/services/admin.service.ts[0m:[93m63[0m:[93m23[0m - [91merror[0m[90m TS2304: [0mCannot find name 'Request'.
+
+[7m63[0m     public login(req: Request, res: Response): Promise<any> {
+[7m  [0m [91m                      ~~~~~~~[0m
+[96msrc/services/admin.service.ts[0m:[93m63[0m:[93m37[0m - [91merror[0m[90m TS2304: [0mCannot find name 'Response'.
+
+[7m63[0m     public login(req: Request, res: Response): Promise<any> {
+[7m  [0m [91m                                    ~~~~~~~~[0m
+[96msrc/services/admin.service.ts[0m:[93m65[0m:[93m32[0m - [91merror[0m[90m TS1308: [0m'await' expressions are only allowed within async functions and at the top levels of modules.
+
+[7m65[0m             const foundAdmin = await Admin.findOne({ where: { username: req.body.username } });
+[7m  [0m [91m                               ~~~~~[0m
+
+  [96msrc/services/admin.service.ts[0m:[93m63[0m:[93m12[0m
+    [7m63[0m     public login(req: Request, res: Response): Promise<any> {
+    [7m  [0m [96m           ~~~~~[0m
+    Did you mean to mark this function as 'async'?
+[96msrc/services/admin.service.ts[0m:[93m65[0m:[93m38[0m - [91merror[0m[90m TS2304: [0mCannot find name 'Admin'.
+
+[7m65[0m             const foundAdmin = await Admin.findOne({ where: { username: req.body.username } });
+[7m  [0m [91m                                     ~~~~~[0m
+[96msrc/services/admin.service.ts[0m:[93m73[0m:[93m31[0m - [91merror[0m[90m TS2304: [0mCannot find name 'Helper'.
+
+[7m73[0m                 const token = Helper.generateToken(foundAdmin, 'admin');
+[7m  [0m [91m                              ~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/services/admin.service.ts[0m:[93m39[0m:[93m12[0m - [91merror[0m[90m TS2300: [0mDuplicate identifier 'login'.
+
+[7m39[0m     public login = async (body) => {
+[7m  [0m [91m           ~~~~~[0m
+[96msrc/services/admin.service.ts[0m:[93m63[0m:[93m12[0m - [91merror[0m[90m TS2300: [0mDuplicate identifier 'login'.
+
+[7m63[0m     public login(req: Request, res: Response): Promise<any> {
+[7m  [0m [91m           ~~~~~[0m
+[96msrc/services/admin.service.ts[0m:[93m63[0m:[93m12[0m - [91merror[0m[90m TS2300: [0mDuplicate identifier 'login'.
+
+[7m63[0m     public login(req: Request, res: Response): Promise<any> {
+[7m  [0m [91m           ~~~~~[0m
+[96msrc/services/admin.service.ts[0m:[93m63[0m:[93m23[0m - [91merror[0m[90m TS2304: [0mCannot find name 'Request'.
+
+[7m63[0m     public login(req: Request, res: Response): Promise<any> {
+[7m  [0m [91m                      ~~~~~~~[0m
+[96msrc/services/admin.service.ts[0m:[93m63[0m:[93m37[0m - [91merror[0m[90m TS2304: [0mCannot find name 'Response'.
+
+[7m63[0m     public login(req: Request, res: Response): Promise<any> {
+[7m  [0m [91m                                    ~~~~~~~~[0m
+[96msrc/services/admin.service.ts[0m:[93m65[0m:[93m32[0m - [91merror[0m[90m TS1308: [0m'await' expressions are only allowed within async functions and at the top levels of modules.
+
+[7m65[0m             const foundAdmin = await Admin.findOne({ where: { username: req.body.username } });
+[7m  [0m [91m                               ~~~~~[0m
+
+  [96msrc/services/admin.service.ts[0m:[93m63[0m:[93m12[0m
+    [7m63[0m     public login(req: Request, res: Response): Promise<any> {
+    [7m  [0m [96m           ~~~~~[0m
+    Did you mean to mark this function as 'async'?
+[96msrc/services/admin.service.ts[0m:[93m65[0m:[93m38[0m - [91merror[0m[90m TS2304: [0mCannot find name 'Admin'.
+
+[7m65[0m             const foundAdmin = await Admin.findOne({ where: { username: req.body.username } });
+[7m  [0m [91m                                     ~~~~~[0m
+[96msrc/services/admin.service.ts[0m:[93m73[0m:[93m31[0m - [91merror[0m[90m TS2304: [0mCannot find name 'Helper'.
+
+[7m73[0m                 const token = Helper.generateToken(foundAdmin, 'admin');
+[7m  [0m [91m                              ~~~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-11 00:21:23 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/services/admin.service.ts[0m:[93m39[0m:[93m12[0m - [91merror[0m[90m TS2300: [0mDuplicate identifier 'login'.
+
+[7m39[0m     public login = async (body) => {
+[7m  [0m [91m           ~~~~~[0m
+[96msrc/services/admin.service.ts[0m:[93m63[0m:[93m12[0m - [91merror[0m[90m TS2300: [0mDuplicate identifier 'login'.
+
+[7m63[0m     public login(req: Request, res: Response): Promise<any> {
+[7m  [0m [91m           ~~~~~[0m
+[96msrc/services/admin.service.ts[0m:[93m63[0m:[93m12[0m - [91merror[0m[90m TS2300: [0mDuplicate identifier 'login'.
+
+[7m63[0m     public login(req: Request, res: Response): Promise<any> {
+[7m  [0m [91m           ~~~~~[0m
+[96msrc/services/admin.service.ts[0m:[93m63[0m:[93m23[0m - [91merror[0m[90m TS2304: [0mCannot find name 'Request'.
+
+[7m63[0m     public login(req: Request, res: Response): Promise<any> {
+[7m  [0m [91m                      ~~~~~~~[0m
+[96msrc/services/admin.service.ts[0m:[93m63[0m:[93m37[0m - [91merror[0m[90m TS2304: [0mCannot find name 'Response'.
+
+[7m63[0m     public login(req: Request, res: Response): Promise<any> {
+[7m  [0m [91m                                    ~~~~~~~~[0m
+[96msrc/services/admin.service.ts[0m:[93m65[0m:[93m32[0m - [91merror[0m[90m TS1308: [0m'await' expressions are only allowed within async functions and at the top levels of modules.
+
+[7m65[0m             const foundAdmin = await Admin.findOne({ where: { username: req.body.username } });
+[7m  [0m [91m                               ~~~~~[0m
+
+  [96msrc/services/admin.service.ts[0m:[93m63[0m:[93m12[0m
+    [7m63[0m     public login(req: Request, res: Response): Promise<any> {
+    [7m  [0m [96m           ~~~~~[0m
+    Did you mean to mark this function as 'async'?
+[96msrc/services/admin.service.ts[0m:[93m65[0m:[93m38[0m - [91merror[0m[90m TS2304: [0mCannot find name 'Admin'.
+
+[7m65[0m             const foundAdmin = await Admin.findOne({ where: { username: req.body.username } });
+[7m  [0m [91m                                     ~~~~~[0m
+[96msrc/services/admin.service.ts[0m:[93m73[0m:[93m31[0m - [91merror[0m[90m TS2304: [0mCannot find name 'Helper'.
+
+[7m73[0m                 const token = Helper.generateToken(foundAdmin, 'admin');
+[7m  [0m [91m                              ~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/services/admin.service.ts[0m:[93m39[0m:[93m12[0m - [91merror[0m[90m TS2300: [0mDuplicate identifier 'login'.
+
+[7m39[0m     public login = async (body) => {
+[7m  [0m [91m           ~~~~~[0m
+[96msrc/services/admin.service.ts[0m:[93m63[0m:[93m12[0m - [91merror[0m[90m TS2300: [0mDuplicate identifier 'login'.
+
+[7m63[0m     public login(req: Request, res: Response): Promise<any> {
+[7m  [0m [91m           ~~~~~[0m
+[96msrc/services/admin.service.ts[0m:[93m63[0m:[93m12[0m - [91merror[0m[90m TS2300: [0mDuplicate identifier 'login'.
+
+[7m63[0m     public login(req: Request, res: Response): Promise<any> {
+[7m  [0m [91m           ~~~~~[0m
+[96msrc/services/admin.service.ts[0m:[93m63[0m:[93m23[0m - [91merror[0m[90m TS2304: [0mCannot find name 'Request'.
+
+[7m63[0m     public login(req: Request, res: Response): Promise<any> {
+[7m  [0m [91m                      ~~~~~~~[0m
+[96msrc/services/admin.service.ts[0m:[93m63[0m:[93m37[0m - [91merror[0m[90m TS2304: [0mCannot find name 'Response'.
+
+[7m63[0m     public login(req: Request, res: Response): Promise<any> {
+[7m  [0m [91m                                    ~~~~~~~~[0m
+[96msrc/services/admin.service.ts[0m:[93m65[0m:[93m32[0m - [91merror[0m[90m TS1308: [0m'await' expressions are only allowed within async functions and at the top levels of modules.
+
+[7m65[0m             const foundAdmin = await Admin.findOne({ where: { username: req.body.username } });
+[7m  [0m [91m                               ~~~~~[0m
+
+  [96msrc/services/admin.service.ts[0m:[93m63[0m:[93m12[0m
+    [7m63[0m     public login(req: Request, res: Response): Promise<any> {
+    [7m  [0m [96m           ~~~~~[0m
+    Did you mean to mark this function as 'async'?
+[96msrc/services/admin.service.ts[0m:[93m65[0m:[93m38[0m - [91merror[0m[90m TS2304: [0mCannot find name 'Admin'.
+
+[7m65[0m             const foundAdmin = await Admin.findOne({ where: { username: req.body.username } });
+[7m  [0m [91m                                     ~~~~~[0m
+[96msrc/services/admin.service.ts[0m:[93m73[0m:[93m31[0m - [91merror[0m[90m TS2304: [0mCannot find name 'Helper'.
+
+[7m73[0m                 const token = Helper.generateToken(foundAdmin, 'admin');
+[7m  [0m [91m                              ~~~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-11 00:21:50 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/services/admin.service.ts[0m:[93m39[0m:[93m12[0m - [91merror[0m[90m TS2300: [0mDuplicate identifier 'login'.
+
+[7m39[0m     public login = async (body) => {
+[7m  [0m [91m           ~~~~~[0m
+[96msrc/services/admin.service.ts[0m:[93m63[0m:[93m12[0m - [91merror[0m[90m TS2300: [0mDuplicate identifier 'login'.
+
+[7m63[0m     public login(body): Promise<any> {
+[7m  [0m [91m           ~~~~~[0m
+[96msrc/services/admin.service.ts[0m:[93m63[0m:[93m12[0m - [91merror[0m[90m TS2300: [0mDuplicate identifier 'login'.
+
+[7m63[0m     public login(body): Promise<any> {
+[7m  [0m [91m           ~~~~~[0m
+[96msrc/services/admin.service.ts[0m:[93m65[0m:[93m32[0m - [91merror[0m[90m TS1308: [0m'await' expressions are only allowed within async functions and at the top levels of modules.
+
+[7m65[0m             const foundAdmin = await Admin.findOne({ where: { username: req.body.username } });
+[7m  [0m [91m                               ~~~~~[0m
+
+  [96msrc/services/admin.service.ts[0m:[93m63[0m:[93m12[0m
+    [7m63[0m     public login(body): Promise<any> {
+    [7m  [0m [96m           ~~~~~[0m
+    Did you mean to mark this function as 'async'?
+[96msrc/services/admin.service.ts[0m:[93m65[0m:[93m38[0m - [91merror[0m[90m TS2304: [0mCannot find name 'Admin'.
+
+[7m65[0m             const foundAdmin = await Admin.findOne({ where: { username: req.body.username } });
+[7m  [0m [91m                                     ~~~~~[0m
+[96msrc/services/admin.service.ts[0m:[93m65[0m:[93m73[0m - [91merror[0m[90m TS2304: [0mCannot find name 'req'.
+
+[7m65[0m             const foundAdmin = await Admin.findOne({ where: { username: req.body.username } });
+[7m  [0m [91m                                                                        ~~~[0m
+[96msrc/services/admin.service.ts[0m:[93m67[0m:[93m37[0m - [91merror[0m[90m TS2304: [0mCannot find name 'res'.
+
+[7m67[0m             if (!foundAdmin) return res.status(500).send("Name of admin is not correct");
+[7m  [0m [91m                                    ~~~[0m
+[96msrc/services/admin.service.ts[0m:[93m69[0m:[93m38[0m - [91merror[0m[90m TS2304: [0mCannot find name 'req'.
+
+[7m69[0m             const isMatch: boolean = req.body.password === foundAdmin.password;
+[7m  [0m [91m                                     ~~~[0m
+[96msrc/services/admin.service.ts[0m:[93m73[0m:[93m31[0m - [91merror[0m[90m TS2304: [0mCannot find name 'Helper'.
+
+[7m73[0m                 const token = Helper.generateToken(foundAdmin, 'admin');
+[7m  [0m [91m                              ~~~~~~[0m
+[96msrc/services/admin.service.ts[0m:[93m75[0m:[93m24[0m - [91merror[0m[90m TS2304: [0mCannot find name 'res'.
+
+[7m75[0m                 return res.status(200).json({
+[7m  [0m [91m                       ~~~[0m
+[96msrc/services/admin.service.ts[0m:[93m82[0m:[93m20[0m - [91merror[0m[90m TS2304: [0mCannot find name 'res'.
+
+[7m82[0m             return res.status(500).send("Password is not correct");
+[7m  [0m [91m                   ~~~[0m
+[96msrc/services/admin.service.ts[0m:[93m86[0m:[93m13[0m - [91merror[0m[90m TS2304: [0mCannot find name 'res'.
+
+[7m86[0m             res.status(500);
+[7m  [0m [91m            ~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/services/admin.service.ts[0m:[93m39[0m:[93m12[0m - [91merror[0m[90m TS2300: [0mDuplicate identifier 'login'.
+
+[7m39[0m     public login = async (body) => {
+[7m  [0m [91m           ~~~~~[0m
+[96msrc/services/admin.service.ts[0m:[93m63[0m:[93m12[0m - [91merror[0m[90m TS2300: [0mDuplicate identifier 'login'.
+
+[7m63[0m     public login(body): Promise<any> {
+[7m  [0m [91m           ~~~~~[0m
+[96msrc/services/admin.service.ts[0m:[93m63[0m:[93m12[0m - [91merror[0m[90m TS2300: [0mDuplicate identifier 'login'.
+
+[7m63[0m     public login(body): Promise<any> {
+[7m  [0m [91m           ~~~~~[0m
+[96msrc/services/admin.service.ts[0m:[93m65[0m:[93m32[0m - [91merror[0m[90m TS1308: [0m'await' expressions are only allowed within async functions and at the top levels of modules.
+
+[7m65[0m             const foundAdmin = await Admin.findOne({ where: { username: req.body.username } });
+[7m  [0m [91m                               ~~~~~[0m
+
+  [96msrc/services/admin.service.ts[0m:[93m63[0m:[93m12[0m
+    [7m63[0m     public login(body): Promise<any> {
+    [7m  [0m [96m           ~~~~~[0m
+    Did you mean to mark this function as 'async'?
+[96msrc/services/admin.service.ts[0m:[93m65[0m:[93m38[0m - [91merror[0m[90m TS2304: [0mCannot find name 'Admin'.
+
+[7m65[0m             const foundAdmin = await Admin.findOne({ where: { username: req.body.username } });
+[7m  [0m [91m                                     ~~~~~[0m
+[96msrc/services/admin.service.ts[0m:[93m65[0m:[93m73[0m - [91merror[0m[90m TS2304: [0mCannot find name 'req'.
+
+[7m65[0m             const foundAdmin = await Admin.findOne({ where: { username: req.body.username } });
+[7m  [0m [91m                                                                        ~~~[0m
+[96msrc/services/admin.service.ts[0m:[93m67[0m:[93m37[0m - [91merror[0m[90m TS2304: [0mCannot find name 'res'.
+
+[7m67[0m             if (!foundAdmin) return res.status(500).send("Name of admin is not correct");
+[7m  [0m [91m                                    ~~~[0m
+[96msrc/services/admin.service.ts[0m:[93m69[0m:[93m38[0m - [91merror[0m[90m TS2304: [0mCannot find name 'req'.
+
+[7m69[0m             const isMatch: boolean = req.body.password === foundAdmin.password;
+[7m  [0m [91m                                     ~~~[0m
+[96msrc/services/admin.service.ts[0m:[93m73[0m:[93m31[0m - [91merror[0m[90m TS2304: [0mCannot find name 'Helper'.
+
+[7m73[0m                 const token = Helper.generateToken(foundAdmin, 'admin');
+[7m  [0m [91m                              ~~~~~~[0m
+[96msrc/services/admin.service.ts[0m:[93m75[0m:[93m24[0m - [91merror[0m[90m TS2304: [0mCannot find name 'res'.
+
+[7m75[0m                 return res.status(200).json({
+[7m  [0m [91m                       ~~~[0m
+[96msrc/services/admin.service.ts[0m:[93m82[0m:[93m20[0m - [91merror[0m[90m TS2304: [0mCannot find name 'res'.
+
+[7m82[0m             return res.status(500).send("Password is not correct");
+[7m  [0m [91m                   ~~~[0m
+[96msrc/services/admin.service.ts[0m:[93m86[0m:[93m13[0m - [91merror[0m[90m TS2304: [0mCannot find name 'res'.
+
+[7m86[0m             res.status(500);
+[7m  [0m [91m            ~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-11 00:22:16 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/services/admin.service.ts[0m:[93m65[0m:[93m38[0m - [91merror[0m[90m TS2304: [0mCannot find name 'modelsAdmin'.
+
+[7m65[0m             const foundAdmin = await modelsAdmin.findOne({ where: { username: req.body.username } });
+[7m  [0m [91m                                     ~~~~~~~~~~~[0m
+[96msrc/services/admin.service.ts[0m:[93m65[0m:[93m79[0m - [91merror[0m[90m TS2304: [0mCannot find name 'req'.
+
+[7m65[0m             const foundAdmin = await modelsAdmin.findOne({ where: { username: req.body.username } });
+[7m  [0m [91m                                                                              ~~~[0m
+[96msrc/services/admin.service.ts[0m:[93m67[0m:[93m37[0m - [91merror[0m[90m TS2304: [0mCannot find name 'res'.
+
+[7m67[0m             if (!foundAdmin) return res.status(500).send("Name of admin is not correct");
+[7m  [0m [91m                                    ~~~[0m
+[96msrc/services/admin.service.ts[0m:[93m69[0m:[93m38[0m - [91merror[0m[90m TS2304: [0mCannot find name 'req'.
+
+[7m69[0m             const isMatch: boolean = req.body.password === foundAdmin.password;
+[7m  [0m [91m                                     ~~~[0m
+[96msrc/services/admin.service.ts[0m:[93m73[0m:[93m31[0m - [91merror[0m[90m TS2304: [0mCannot find name 'Helper'.
+
+[7m73[0m                 const token = Helper.generateToken(foundAdmin, 'admin');
+[7m  [0m [91m                              ~~~~~~[0m
+[96msrc/services/admin.service.ts[0m:[93m75[0m:[93m24[0m - [91merror[0m[90m TS2304: [0mCannot find name 'res'.
+
+[7m75[0m                 return res.status(200).json({
+[7m  [0m [91m                       ~~~[0m
+[96msrc/services/admin.service.ts[0m:[93m82[0m:[93m20[0m - [91merror[0m[90m TS2304: [0mCannot find name 'res'.
+
+[7m82[0m             return res.status(500).send("Password is not correct");
+[7m  [0m [91m                   ~~~[0m
+[96msrc/services/admin.service.ts[0m:[93m86[0m:[93m13[0m - [91merror[0m[90m TS2304: [0mCannot find name 'res'.
+
+[7m86[0m             res.status(500);
+[7m  [0m [91m            ~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/services/admin.service.ts[0m:[93m65[0m:[93m38[0m - [91merror[0m[90m TS2304: [0mCannot find name 'modelsAdmin'.
+
+[7m65[0m             const foundAdmin = await modelsAdmin.findOne({ where: { username: req.body.username } });
+[7m  [0m [91m                                     ~~~~~~~~~~~[0m
+[96msrc/services/admin.service.ts[0m:[93m65[0m:[93m79[0m - [91merror[0m[90m TS2304: [0mCannot find name 'req'.
+
+[7m65[0m             const foundAdmin = await modelsAdmin.findOne({ where: { username: req.body.username } });
+[7m  [0m [91m                                                                              ~~~[0m
+[96msrc/services/admin.service.ts[0m:[93m67[0m:[93m37[0m - [91merror[0m[90m TS2304: [0mCannot find name 'res'.
+
+[7m67[0m             if (!foundAdmin) return res.status(500).send("Name of admin is not correct");
+[7m  [0m [91m                                    ~~~[0m
+[96msrc/services/admin.service.ts[0m:[93m69[0m:[93m38[0m - [91merror[0m[90m TS2304: [0mCannot find name 'req'.
+
+[7m69[0m             const isMatch: boolean = req.body.password === foundAdmin.password;
+[7m  [0m [91m                                     ~~~[0m
+[96msrc/services/admin.service.ts[0m:[93m73[0m:[93m31[0m - [91merror[0m[90m TS2304: [0mCannot find name 'Helper'.
+
+[7m73[0m                 const token = Helper.generateToken(foundAdmin, 'admin');
+[7m  [0m [91m                              ~~~~~~[0m
+[96msrc/services/admin.service.ts[0m:[93m75[0m:[93m24[0m - [91merror[0m[90m TS2304: [0mCannot find name 'res'.
+
+[7m75[0m                 return res.status(200).json({
+[7m  [0m [91m                       ~~~[0m
+[96msrc/services/admin.service.ts[0m:[93m82[0m:[93m20[0m - [91merror[0m[90m TS2304: [0mCannot find name 'res'.
+
+[7m82[0m             return res.status(500).send("Password is not correct");
+[7m  [0m [91m                   ~~~[0m
+[96msrc/services/admin.service.ts[0m:[93m86[0m:[93m13[0m - [91merror[0m[90m TS2304: [0mCannot find name 'res'.
+
+[7m86[0m             res.status(500);
+[7m  [0m [91m            ~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-11 00:22:52 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/services/admin.service.ts[0m:[93m78[0m:[93m24[0m - [91merror[0m[90m TS2304: [0mCannot find name 'res'.
+
+[7m78[0m                 return res.status(200).json({
+[7m  [0m [91m                       ~~~[0m
+[96msrc/services/admin.service.ts[0m:[93m85[0m:[93m20[0m - [91merror[0m[90m TS2304: [0mCannot find name 'res'.
+
+[7m85[0m             return res.status(500).send("Password is not correct");
+[7m  [0m [91m                   ~~~[0m
+[96msrc/services/admin.service.ts[0m:[93m89[0m:[93m13[0m - [91merror[0m[90m TS2304: [0mCannot find name 'res'.
+
+[7m89[0m             res.status(500);
+[7m  [0m [91m            ~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/services/admin.service.ts[0m:[93m78[0m:[93m24[0m - [91merror[0m[90m TS2304: [0mCannot find name 'res'.
+
+[7m78[0m                 return res.status(200).json({
+[7m  [0m [91m                       ~~~[0m
+[96msrc/services/admin.service.ts[0m:[93m85[0m:[93m20[0m - [91merror[0m[90m TS2304: [0mCannot find name 'res'.
+
+[7m85[0m             return res.status(500).send("Password is not correct");
+[7m  [0m [91m                   ~~~[0m
+[96msrc/services/admin.service.ts[0m:[93m89[0m:[93m13[0m - [91merror[0m[90m TS2304: [0mCannot find name 'res'.
+
+[7m89[0m             res.status(500);
+[7m  [0m [91m            ~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-11 00:23:43 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/services/admin.service.ts[0m:[93m84[0m:[93m20[0m - [91merror[0m[90m TS2304: [0mCannot find name 'res'.
+
+[7m84[0m             return res.status(500).send("Password is not correct");
+[7m  [0m [91m                   ~~~[0m
+[96msrc/services/admin.service.ts[0m:[93m88[0m:[93m13[0m - [91merror[0m[90m TS2304: [0mCannot find name 'res'.
+
+[7m88[0m             res.status(500);
+[7m  [0m [91m            ~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/services/admin.service.ts[0m:[93m84[0m:[93m20[0m - [91merror[0m[90m TS2304: [0mCannot find name 'res'.
+
+[7m84[0m             return res.status(500).send("Password is not correct");
+[7m  [0m [91m                   ~~~[0m
+[96msrc/services/admin.service.ts[0m:[93m88[0m:[93m13[0m - [91merror[0m[90m TS2304: [0mCannot find name 'res'.
+
+[7m88[0m             res.status(500);
+[7m  [0m [91m            ~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-11 00:26:29 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/services/admin.service.ts[0m:[93m67[0m:[93m24[0m - [91merror[0m[90m TS2304: [0mCannot find name 'Request'.
+
+[7m67[0m      async logout(req: Request, res: Response): Promise<any> {
+[7m  [0m [91m                       ~~~~~~~[0m
+[96msrc/services/admin.service.ts[0m:[93m67[0m:[93m38[0m - [91merror[0m[90m TS2304: [0mCannot find name 'Response'.
+
+[7m67[0m      async logout(req: Request, res: Response): Promise<any> {
+[7m  [0m [91m                                     ~~~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/services/admin.service.ts[0m:[93m67[0m:[93m24[0m - [91merror[0m[90m TS2304: [0mCannot find name 'Request'.
+
+[7m67[0m      async logout(req: Request, res: Response): Promise<any> {
+[7m  [0m [91m                       ~~~~~~~[0m
+[96msrc/services/admin.service.ts[0m:[93m67[0m:[93m38[0m - [91merror[0m[90m TS2304: [0mCannot find name 'Response'.
+
+[7m67[0m      async logout(req: Request, res: Response): Promise<any> {
+[7m  [0m [91m                                     ~~~~~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-11 00:26:45 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/modules/controllers/admin.controller.ts[0m:[93m49[0m:[93m11[0m - [91merror[0m[90m TS2339: [0mProperty 'admin' does not exist on type 'Request<ParamsDictionary, any, any, ParsedQs, Record<string, any>>'.
+
+[7m49[0m       req.admin.tokens = req.admin.tokens.filter((item: any) => { return item.token !== req.token; });
+[7m  [0m [91m          ~~~~~[0m
+[96msrc/modules/controllers/admin.controller.ts[0m:[93m49[0m:[93m30[0m - [91merror[0m[90m TS2339: [0mProperty 'admin' does not exist on type 'Request<ParamsDictionary, any, any, ParsedQs, Record<string, any>>'.
+
+[7m49[0m       req.admin.tokens = req.admin.tokens.filter((item: any) => { return item.token !== req.token; });
+[7m  [0m [91m                             ~~~~~[0m
+[96msrc/modules/controllers/admin.controller.ts[0m:[93m49[0m:[93m93[0m - [91merror[0m[90m TS2339: [0mProperty 'token' does not exist on type 'Request<ParamsDictionary, any, any, ParsedQs, Record<string, any>>'.
+
+[7m49[0m       req.admin.tokens = req.admin.tokens.filter((item: any) => { return item.token !== req.token; });
+[7m  [0m [91m                                                                                            ~~~~~[0m
+[96msrc/modules/controllers/admin.controller.ts[0m:[93m50[0m:[93m17[0m - [91merror[0m[90m TS2339: [0mProperty 'admin' does not exist on type 'Request<ParamsDictionary, any, any, ParsedQs, Record<string, any>>'.
+
+[7m50[0m       await req.admin.save();
+[7m  [0m [91m                ~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/modules/controllers/admin.controller.ts[0m:[93m49[0m:[93m11[0m - [91merror[0m[90m TS2339: [0mProperty 'admin' does not exist on type 'Request<ParamsDictionary, any, any, ParsedQs, Record<string, any>>'.
+
+[7m49[0m       req.admin.tokens = req.admin.tokens.filter((item: any) => { return item.token !== req.token; });
+[7m  [0m [91m          ~~~~~[0m
+[96msrc/modules/controllers/admin.controller.ts[0m:[93m49[0m:[93m30[0m - [91merror[0m[90m TS2339: [0mProperty 'admin' does not exist on type 'Request<ParamsDictionary, any, any, ParsedQs, Record<string, any>>'.
+
+[7m49[0m       req.admin.tokens = req.admin.tokens.filter((item: any) => { return item.token !== req.token; });
+[7m  [0m [91m                             ~~~~~[0m
+[96msrc/modules/controllers/admin.controller.ts[0m:[93m49[0m:[93m93[0m - [91merror[0m[90m TS2339: [0mProperty 'token' does not exist on type 'Request<ParamsDictionary, any, any, ParsedQs, Record<string, any>>'.
+
+[7m49[0m       req.admin.tokens = req.admin.tokens.filter((item: any) => { return item.token !== req.token; });
+[7m  [0m [91m                                                                                            ~~~~~[0m
+[96msrc/modules/controllers/admin.controller.ts[0m:[93m50[0m:[93m17[0m - [91merror[0m[90m TS2339: [0mProperty 'admin' does not exist on type 'Request<ParamsDictionary, any, any, ParsedQs, Record<string, any>>'.
+
+[7m50[0m       await req.admin.save();
+[7m  [0m [91m                ~~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-11 00:31:47 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/route/admin.route.ts[0m:[93m19[0m:[93m49[0m - [91merror[0m[90m TS2304: [0mCannot find name 'adminAuth'.
+
+[7m19[0m         this.router.post(`${this.path}/logout`, adminAuth, this.admin.logout);
+[7m  [0m [91m                                                ~~~~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/route/admin.route.ts[0m:[93m19[0m:[93m49[0m - [91merror[0m[90m TS2304: [0mCannot find name 'adminAuth'.
+
+[7m19[0m         this.router.post(`${this.path}/logout`, adminAuth, this.admin.logout);
+[7m  [0m [91m                                                ~~~~~~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-11 01:11:15 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/services/admin.service.ts[0m:[93m129[0m:[93m30[0m - [91merror[0m[90m TS2304: [0mCannot find name 'id'.
+
+[7m129[0m                 where: { id: id },
+[7m   [0m [91m                             ~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/services/admin.service.ts[0m:[93m129[0m:[93m30[0m - [91merror[0m[90m TS2304: [0mCannot find name 'id'.
+
+[7m129[0m                 where: { id: id },
+[7m   [0m [91m                             ~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-11 01:11:29 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/services/admin.service.ts[0m:[93m129[0m:[93m30[0m - [91merror[0m[90m TS2304: [0mCannot find name 'id'.
+
+[7m129[0m                 where: { id: id },
+[7m   [0m [91m                             ~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/services/admin.service.ts[0m:[93m129[0m:[93m30[0m - [91merror[0m[90m TS2304: [0mCannot find name 'id'.
+
+[7m129[0m                 where: { id: id },
+[7m   [0m [91m                             ~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-11 01:13:22 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/modules/controllers/admin.controller.ts[0m:[93m48[0m:[93m27[0m - [91merror[0m[90m TS2552: [0mCannot find name 'Admin'. Did you mean 'admin'?
+
+[7m48[0m       const admin = await Admin.findOne({
+[7m  [0m [91m                          ~~~~~[0m
+
+  [96msrc/modules/controllers/admin.controller.ts[0m:[93m48[0m:[93m13[0m
+    [7m48[0m       const admin = await Admin.findOne({
+    [7m  [0m [96m            ~~~~~[0m
+    'admin' is declared here.
+[96msrc/modules/controllers/admin.controller.ts[0m:[93m50[0m:[93m18[0m - [91merror[0m[90m TS2304: [0mCannot find name 'Role'.
+
+[7m50[0m           model: Role,
+[7m  [0m [91m                 ~~~~[0m
+[96msrc/modules/controllers/admin.controller.ts[0m:[93m51[0m:[93m21[0m - [91merror[0m[90m TS2304: [0mCannot find name 'Permission'.
+
+[7m51[0m           include: [Permission]
+[7m  [0m [91m                    ~~~~~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/modules/controllers/admin.controller.ts[0m:[93m48[0m:[93m27[0m - [91merror[0m[90m TS2552: [0mCannot find name 'Admin'. Did you mean 'admin'?
+
+[7m48[0m       const admin = await Admin.findOne({
+[7m  [0m [91m                          ~~~~~[0m
+
+  [96msrc/modules/controllers/admin.controller.ts[0m:[93m48[0m:[93m13[0m
+    [7m48[0m       const admin = await Admin.findOne({
+    [7m  [0m [96m            ~~~~~[0m
+    'admin' is declared here.
+[96msrc/modules/controllers/admin.controller.ts[0m:[93m50[0m:[93m18[0m - [91merror[0m[90m TS2304: [0mCannot find name 'Role'.
+
+[7m50[0m           model: Role,
+[7m  [0m [91m                 ~~~~[0m
+[96msrc/modules/controllers/admin.controller.ts[0m:[93m51[0m:[93m21[0m - [91merror[0m[90m TS2304: [0mCannot find name 'Permission'.
+
+[7m51[0m           include: [Permission]
+[7m  [0m [91m                    ~~~~~~~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-11 01:13:28 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/modules/controllers/admin.controller.ts[0m:[93m48[0m:[93m33[0m - [91merror[0m[90m TS2448: [0mBlock-scoped variable 'admin' used before its declaration.
+
+[7m48[0m             const admin = await admin.profile({
+[7m  [0m [91m                                ~~~~~[0m
+
+  [96msrc/modules/controllers/admin.controller.ts[0m:[93m48[0m:[93m19[0m
+    [7m48[0m             const admin = await admin.profile({
+    [7m  [0m [96m                  ~~~~~[0m
+    'admin' is declared here.
+[96msrc/modules/controllers/admin.controller.ts[0m:[93m50[0m:[93m28[0m - [91merror[0m[90m TS2304: [0mCannot find name 'Role'.
+
+[7m50[0m                     model: Role,
+[7m  [0m [91m                           ~~~~[0m
+[96msrc/modules/controllers/admin.controller.ts[0m:[93m51[0m:[93m31[0m - [91merror[0m[90m TS2304: [0mCannot find name 'Permission'.
+
+[7m51[0m                     include: [Permission]
+[7m  [0m [91m                              ~~~~~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/modules/controllers/admin.controller.ts[0m:[93m48[0m:[93m33[0m - [91merror[0m[90m TS2448: [0mBlock-scoped variable 'admin' used before its declaration.
+
+[7m48[0m             const admin = await admin.profile({
+[7m  [0m [91m                                ~~~~~[0m
+
+  [96msrc/modules/controllers/admin.controller.ts[0m:[93m48[0m:[93m19[0m
+    [7m48[0m             const admin = await admin.profile({
+    [7m  [0m [96m                  ~~~~~[0m
+    'admin' is declared here.
+[96msrc/modules/controllers/admin.controller.ts[0m:[93m50[0m:[93m28[0m - [91merror[0m[90m TS2304: [0mCannot find name 'Role'.
+
+[7m50[0m                     model: Role,
+[7m  [0m [91m                           ~~~~[0m
+[96msrc/modules/controllers/admin.controller.ts[0m:[93m51[0m:[93m31[0m - [91merror[0m[90m TS2304: [0mCannot find name 'Permission'.
+
+[7m51[0m                     include: [Permission]
+[7m  [0m [91m                              ~~~~~~~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-11 01:13:46 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/modules/controllers/admin.controller.ts[0m:[93m48[0m:[93m33[0m - [91merror[0m[90m TS2448: [0mBlock-scoped variable 'admin' used before its declaration.
+
+[7m48[0m             const admin = await admin.profile(id);
+[7m  [0m [91m                                ~~~~~[0m
+
+  [96msrc/modules/controllers/admin.controller.ts[0m:[93m48[0m:[93m19[0m
+    [7m48[0m             const admin = await admin.profile(id);
+    [7m  [0m [96m                  ~~~~~[0m
+    'admin' is declared here.
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/modules/controllers/admin.controller.ts[0m:[93m48[0m:[93m33[0m - [91merror[0m[90m TS2448: [0mBlock-scoped variable 'admin' used before its declaration.
+
+[7m48[0m             const admin = await admin.profile(id);
+[7m  [0m [91m                                ~~~~~[0m
+
+  [96msrc/modules/controllers/admin.controller.ts[0m:[93m48[0m:[93m19[0m
+    [7m48[0m             const admin = await admin.profile(id);
+    [7m  [0m [96m                  ~~~~~[0m
+    'admin' is declared here.
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-11 01:13:53 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/modules/controllers/admin.controller.ts[0m:[93m48[0m:[93m46[0m - [91merror[0m[90m TS2554: [0mExpected 0 arguments, but got 1.
+
+[7m48[0m             const data = await admin.profile(id);
+[7m  [0m [91m                                             ~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/modules/controllers/admin.controller.ts[0m:[93m48[0m:[93m46[0m - [91merror[0m[90m TS2554: [0mExpected 0 arguments, but got 1.
+
+[7m48[0m             const data = await admin.profile(id);
+[7m  [0m [91m                                             ~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)

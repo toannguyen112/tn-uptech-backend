@@ -14,6 +14,10 @@ module.exports = function (sequelize, DataTypes) {
                 type: DataTypes.STRING,
             },
 
+            value: {
+                type: DataTypes.STRING,
+            },
+
             createdAt: {
                 type: DataTypes.DATE,
                 defaultValue: new Date(),

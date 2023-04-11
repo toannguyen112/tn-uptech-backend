@@ -5,43 +5,53 @@ module.exports = {
       await queryInterface.bulkInsert("permissions", [
         {
           id: 1,
-          name: "Tổng quan"
+          name: "Tổng quan",
+          value: "dasboard",
         },
         {
           id: 2,
-          name: "Bài viết"
+          name: "Bài viết",
+          value: "posts",
         },
         {
           id: 3,
-          name: "Dự án"
+          name: "Dự án",
+          value: "projects",
         },
         {
           id: 4,
-          name: "Ceo"
+          name: "Ceo",
+          value: "ceos",
         },
         {
           id: 5,
-          name: "Quản lí file"
+          name: "Quản lí file",
+          value: "files",
         },
         {
           id: 6,
-          name: "Tuyển dụng"
+          name: "Tuyển dụng",
+          value: "jobs",
         },
         {
           id: 7,
-          name: "Danh mục"
+          name: "Danh mục",
+          value: "categories",
         },
         {
           id: 8,
-          name: "Banner"
+          name: "Banner",
+          value: "banners",
         },
         {
           id: 9,
-          name: "Vai trò"
+          name: "Vai trò",
+          value: "roles",
         },
         {
           id: 10,
-          name: "Tài khoản"
+          name: "Tài khoản",
+          value: "accounts",
         },
       ]);
 

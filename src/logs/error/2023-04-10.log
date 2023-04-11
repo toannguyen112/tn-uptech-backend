@@ -372,3 +372,99 @@ TSError: ⨯ Unable to compile TypeScript:
     at Module.load (node:internal/modules/cjs/loader:1069:32)
     at Function.Module._load (node:internal/modules/cjs/loader:904:12)
     at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-10 20:06:40 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/services/admin.service.ts[0m:[93m117[0m:[93m30[0m - [91merror[0m[90m TS2304: [0mCannot find name 'id'.
+
+[7m117[0m                 where: { id: id },
+[7m   [0m [91m                             ~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/services/admin.service.ts[0m:[93m117[0m:[93m30[0m - [91merror[0m[90m TS2304: [0mCannot find name 'id'.
+
+[7m117[0m                 where: { id: id },
+[7m   [0m [91m                             ~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-10 21:15:09 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/dtos/admin.dtos.ts[0m:[93m27[0m:[93m57[0m - [91merror[0m[90m TS2304: [0mCannot find name 'oldArray'.
+
+[7m27[0m         var newArray = Array.prototype.concat.apply([], oldArray);
+[7m  [0m [91m                                                        ~~~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/dtos/admin.dtos.ts[0m:[93m27[0m:[93m57[0m - [91merror[0m[90m TS2304: [0mCannot find name 'oldArray'.
+
+[7m27[0m         var newArray = Array.prototype.concat.apply([], oldArray);
+[7m  [0m [91m                                                        ~~~~~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-10 21:15:21 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/dtos/admin.dtos.ts[0m:[93m27[0m:[93m57[0m - [91merror[0m[90m TS2304: [0mCannot find name 'oldArray'.
+
+[7m27[0m         var newArray = Array.prototype.concat.apply([], oldArray);
+[7m  [0m [91m                                                        ~~~~~~~~[0m
+[96msrc/dtos/admin.dtos.ts[0m:[93m34[0m:[93m13[0m - [91merror[0m[90m TS18004: [0mNo value exists in scope for the shorthand property 'permissions'. Either declare one or provide an initializer.
+
+[7m34[0m             permissions
+[7m  [0m [91m            ~~~~~~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/dtos/admin.dtos.ts[0m:[93m27[0m:[93m57[0m - [91merror[0m[90m TS2304: [0mCannot find name 'oldArray'.
+
+[7m27[0m         var newArray = Array.prototype.concat.apply([], oldArray);
+[7m  [0m [91m                                                        ~~~~~~~~[0m
+[96msrc/dtos/admin.dtos.ts[0m:[93m34[0m:[93m13[0m - [91merror[0m[90m TS18004: [0mNo value exists in scope for the shorthand property 'permissions'. Either declare one or provide an initializer.
+
+[7m34[0m             permissions
+[7m  [0m [91m            ~~~~~~~~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-10 21:15:29 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/dtos/admin.dtos.ts[0m:[93m29[0m:[93m57[0m - [91merror[0m[90m TS2304: [0mCannot find name 'oldArray'.
+
+[7m29[0m         var newArray = Array.prototype.concat.apply([], oldArray);
+[7m  [0m [91m                                                        ~~~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/dtos/admin.dtos.ts[0m:[93m29[0m:[93m57[0m - [91merror[0m[90m TS2304: [0mCannot find name 'oldArray'.
+
+[7m29[0m         var newArray = Array.prototype.concat.apply([], oldArray);
+[7m  [0m [91m                                                        ~~~~~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)

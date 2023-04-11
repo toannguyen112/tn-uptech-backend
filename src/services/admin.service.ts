@@ -1,7 +1,7 @@
 import { AdminDTO } from "../dtos/admin.dtos";
 import models from "../infra/sequelize/models";
 import { ApiFeatures } from "../utils/ApiFeatures";
-
+import Helper from "../utils/Helper";
 export class AdminService {
 
     public getList = async (query) => {
@@ -38,25 +38,32 @@ export class AdminService {
     }
 
     public login = async (body) => {
+        try {
+            const foundAdmin = await models.Admin.findOne({ where: { username: body.username } });
 
-        const admin = await models.Admin.findOne({
-            where: {
-                username: body.username,
-                password: body.password,
-            },
-            include: {
-                model: models.Role,
-                as: "roles",
-                required: false,
-            },
-        })
+            if (!foundAdmin) {
+                throw new Error("Name of admin is not correct");
+            }
 
-        if (!admin) {
-            throw new Error("Tài khoản mật khẩu chưa đúng");
+            const isMatch: boolean = body.password === foundAdmin.password;
+
+            if (isMatch) {
+
+                const token = Helper.generateToken(foundAdmin, 'admin');
+
+                return {
+                    data: foundAdmin,
+                    token: token,
+                }
+            }
+
+            throw new Error("Password is not correct");
+
+        } catch (error) {
+            console.log(error);
         }
-
-        return AdminDTO.transformDetail(admin);
     }
+
 
     public create = async (body) => {
 
@@ -101,10 +108,38 @@ export class AdminService {
                     model: models.Role,
                     as: "roles",
                     required: false,
+                    include: {
+                        model: models.Permission,
+                        as: "permissions",
+                        required: false,
+                    },
                 },
             });
 
             return AdminDTO.transformDetail(admin);
+
+        } catch (error) {
+            console.log(error);
+        }
+    }
+
+    public profile = async (id) => {
+        try {
+            const admin = await models.Admin.findOne({
+                where: { id },
+                include: {
+                    model: models.Role,
+                    as: "roles",
+                    required: false,
+                    include: {
+                        model: models.Permission,
+                        as: "permissions",
+                        required: false,
+                    },
+                },
+            });
+
+            return AdminDTO.transformProfile(admin);
 
         } catch (error) {
             console.log(error);
