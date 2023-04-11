@@ -12,7 +12,7 @@ export class AdminDTO {
         return {
             id: item.id,
             name: item.name || "",
-            username: item.name || "",
+            username: item.username || "",
             password: item.password || "",
             email: item.email || "",
             roles: item.roles.map((item) => item.id) || [],
@@ -27,7 +27,7 @@ export class AdminDTO {
         return {
             id: item.id,
             name: item.name || "",
-            username: item.name || "",
+            username: item.username || "",
             password: item.password || "",
             email: item.email || "",
             permissions: unique
