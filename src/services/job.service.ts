@@ -95,16 +95,12 @@ export class JobService {
 
                     await models.JobTranslation.create({
                         ...body,
-                        slug: Helper.renderSlug(body.slug ? body.slug : body.name),
-                        custom_slug: Helper.renderSlug(body.custom_slug ? body.custom_slug : body.name),
                         job_id: jobId,
                         locale: 'vi'
                     });
 
                     await models.JobTranslation.create({
                         ...body,
-                        slug: Helper.renderSlug(body.slug ? body.slug : body.name),
-                        custom_slug: Helper.renderSlug(body.custom_slug ? body.custom_slug : body.name),
                         job_id: jobId,
                         locale: 'en'
                     });

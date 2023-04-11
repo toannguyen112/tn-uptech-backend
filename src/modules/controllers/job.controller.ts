@@ -11,19 +11,18 @@ export class JobController {
             const data = await job.getList(req.query);
             res.status(200).send({ message: "ok", data });
         } catch (error) {
-            console.log(error.message);
-            res.status(500).send(error.message);
+            console.log(error);
+            res.status(500).send(error);
         }
     }
 
     public async create(req: Request, res: Response, next: NextFunction) {
-
         try {
             const data = await await job.store(req.body);
             res.status(200).send({ message: "ok", data });
         } catch (error) {
-            console.log(error.message);
-            res.status(500).send(error.message);
+            console.log(error);
+            res.status(500).send(error);
         }
     }
 
