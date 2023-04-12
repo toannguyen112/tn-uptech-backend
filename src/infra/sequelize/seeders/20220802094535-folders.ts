@@ -15,7 +15,7 @@ module.exports = {
       {
         id: 3,
         parent_id: 1,
-        label: `Folder Document`,
+        label: `Folder Media`,
       },
     ]);
   },

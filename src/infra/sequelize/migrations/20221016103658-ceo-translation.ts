@@ -10,11 +10,6 @@ module.exports = {
         type: Sequelize.INTEGER,
       },
 
-      slug: {
-        allowNull: true,
-        type: Sequelize.STRING,
-      },
-
       ceo_id: {
         type: Sequelize.INTEGER,
         onDelete: 'CASCADE',
@@ -80,6 +75,55 @@ module.exports = {
       education: {
         allowNull: true,
         type: Sequelize.TEXT('long'),
+      },
+
+      // seo
+
+      slug: {
+        type: Sequelize.STRING,
+        unique: true,
+        allowNull: true,
+      },
+
+      custom_slug: {
+        type: Sequelize.STRING,
+        unique: true,
+        allowNull: true,
+      },
+
+      meta_title: {
+        type: Sequelize.STRING,
+        allowNull: true,
+      },
+
+      meta_description: {
+        type: Sequelize.STRING,
+        allowNull: true,
+      },
+
+      meta_keyword: {
+        type: Sequelize.STRING,
+        allowNull: true,
+      },
+
+      meta_robots: {
+        type: Sequelize.STRING,
+        allowNull: true,
+      },
+
+      canonica_link: {
+        type: Sequelize.STRING,
+        allowNull: true,
+      },
+
+      meta_image: {
+        type: Sequelize.STRING,
+        allowNull: true,
+      },
+
+      meta_viewport: {
+        type: Sequelize.STRING,
+        allowNull: true,
       },
     }),
 
