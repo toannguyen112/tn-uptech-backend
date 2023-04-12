@@ -40,6 +40,8 @@ module.exports = {
         allowNull: true,
       },
 
+      // seo
+
       slug: {
         type: Sequelize.STRING,
         unique: true,
@@ -49,6 +51,41 @@ module.exports = {
       custom_slug: {
         type: Sequelize.STRING,
         unique: true,
+        allowNull: true,
+      },
+
+      meta_title: {
+        type: Sequelize.STRING,
+        allowNull: true,
+      },
+
+      meta_description: {
+        type: Sequelize.STRING,
+        allowNull: true,
+      },
+
+      meta_keyword: {
+        type: Sequelize.STRING,
+        allowNull: true,
+      },
+
+      meta_robots: {
+        type: Sequelize.STRING,
+        allowNull: true,
+      },
+
+      canonica_link: {
+        type: Sequelize.STRING,
+        allowNull: true,
+      },
+
+      meta_image: {
+        type: Sequelize.STRING,
+        allowNull: true,
+      },
+
+      meta_viewport: {
+        type: Sequelize.STRING,
         allowNull: true,
       },
 
