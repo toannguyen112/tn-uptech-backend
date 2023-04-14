@@ -28,8 +28,6 @@ export class ProjectDTO {
         return {
             id: item.id,
             name: translationData.name || "",
-            slug: translationData.slug || "",
-            custom_slug: translationData.custom_slug || "",
             description: translationData.description || "",
             isFeatured: item.isFeatured || false,
             status: item.status || 'inactive',
@@ -37,6 +35,19 @@ export class ProjectDTO {
             thumbnail: item.image || null,
             banner: item.banner_image || null,
             related: item.related || [],
+
+            // seo 
+
+            slug: translationData.slug || "",
+            custom_slug: translationData.custom_slug || "",
+            meta_title: translationData.meta_title || "",
+            meta_description: translationData.meta_description || "",
+            meta_keyword: translationData.meta_keyword || "",
+            meta_robots: translationData.meta_robots || "",
+            canonica_link: translationData.canonica_link || "",
+            meta_image: translationData.meta_image || "",
+            meta_viewport: translationData.meta_viewport || "",
+
             createdAt: item.createdAt,
             updatedAt: item.updatedAt,
         }

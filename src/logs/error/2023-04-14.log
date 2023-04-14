@@ -1,0 +1,193 @@
+2023-04-14 17:36:58 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/services/post.service.ts[0m:[93m118[0m:[93m29[0m - [91merror[0m[90m TS1117: [0mAn object literal cannot have multiple properties with the same name.
+
+[7m118[0m                             slug: Helper.renderSlug(body.slug ? body.slug : body.name),
+[7m   [0m [91m                            ~~~~[0m
+[96msrc/services/post.service.ts[0m:[93m119[0m:[93m29[0m - [91merror[0m[90m TS1117: [0mAn object literal cannot have multiple properties with the same name.
+
+[7m119[0m                             custom_slug: Helper.renderSlug(body.custom_slug ? body.custom_slug : body.name),
+[7m   [0m [91m                            ~~~~~~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/services/post.service.ts[0m:[93m118[0m:[93m29[0m - [91merror[0m[90m TS1117: [0mAn object literal cannot have multiple properties with the same name.
+
+[7m118[0m                             slug: Helper.renderSlug(body.slug ? body.slug : body.name),
+[7m   [0m [91m                            ~~~~[0m
+[96msrc/services/post.service.ts[0m:[93m119[0m:[93m29[0m - [91merror[0m[90m TS1117: [0mAn object literal cannot have multiple properties with the same name.
+
+[7m119[0m                             custom_slug: Helper.renderSlug(body.custom_slug ? body.custom_slug : body.name),
+[7m   [0m [91m                            ~~~~~~~~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-14 17:37:24 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/services/post.service.ts[0m:[93m119[0m:[93m29[0m - [91merror[0m[90m TS1117: [0mAn object literal cannot have multiple properties with the same name.
+
+[7m119[0m                             custom_slug: Helper.renderSlug(body.custom_slug ? body.custom_slug : body.name),
+[7m   [0m [91m                            ~~~~~~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/services/post.service.ts[0m:[93m119[0m:[93m29[0m - [91merror[0m[90m TS1117: [0mAn object literal cannot have multiple properties with the same name.
+
+[7m119[0m                             custom_slug: Helper.renderSlug(body.custom_slug ? body.custom_slug : body.name),
+[7m   [0m [91m                            ~~~~~~~~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-14 17:54:37 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/dtos/post.dtos.ts[0m:[93m45[0m:[93m13[0m - [91merror[0m[90m TS1117: [0mAn object literal cannot have multiple properties with the same name.
+
+[7m45[0m             custom_slug: translationData.custom_slug || "",
+[7m  [0m [91m            ~~~~~~~~~~~[0m
+[96msrc/dtos/post.dtos.ts[0m:[93m46[0m:[93m13[0m - [91merror[0m[90m TS1117: [0mAn object literal cannot have multiple properties with the same name.
+
+[7m46[0m             description: translationData.description || "",
+[7m  [0m [91m            ~~~~~~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/dtos/post.dtos.ts[0m:[93m45[0m:[93m13[0m - [91merror[0m[90m TS1117: [0mAn object literal cannot have multiple properties with the same name.
+
+[7m45[0m             custom_slug: translationData.custom_slug || "",
+[7m  [0m [91m            ~~~~~~~~~~~[0m
+[96msrc/dtos/post.dtos.ts[0m:[93m46[0m:[93m13[0m - [91merror[0m[90m TS1117: [0mAn object literal cannot have multiple properties with the same name.
+
+[7m46[0m             description: translationData.description || "",
+[7m  [0m [91m            ~~~~~~~~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-14 17:55:03 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/dtos/post.dtos.ts[0m:[93m46[0m:[93m13[0m - [91merror[0m[90m TS1117: [0mAn object literal cannot have multiple properties with the same name.
+
+[7m46[0m             slug: translationData.slug || "",
+[7m  [0m [91m            ~~~~[0m
+[96msrc/dtos/post.dtos.ts[0m:[93m47[0m:[93m13[0m - [91merror[0m[90m TS1117: [0mAn object literal cannot have multiple properties with the same name.
+
+[7m47[0m             custom_slug: translationData.custom_slug || "",
+[7m  [0m [91m            ~~~~~~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/dtos/post.dtos.ts[0m:[93m46[0m:[93m13[0m - [91merror[0m[90m TS1117: [0mAn object literal cannot have multiple properties with the same name.
+
+[7m46[0m             slug: translationData.slug || "",
+[7m  [0m [91m            ~~~~[0m
+[96msrc/dtos/post.dtos.ts[0m:[93m47[0m:[93m13[0m - [91merror[0m[90m TS1117: [0mAn object literal cannot have multiple properties with the same name.
+
+[7m47[0m             custom_slug: translationData.custom_slug || "",
+[7m  [0m [91m            ~~~~~~~~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-14 18:15:01 error: {"name":"SequelizeUniqueConstraintError","errors":[{"message":"slug must be unique","type":"unique violation","path":"slug","value":"name-test-1-en","origin":"DB","instance":null,"validatorKey":"not_unique","validatorName":null,"validatorArgs":[]}],"parent":{"code":"ER_DUP_ENTRY","errno":1062,"sqlState":"23000","sqlMessage":"Duplicate entry 'name-test-1-en' for key 'post_translation.slug'","sql":"UPDATE `post_translation` SET `name`=?,`content`=?,`description`=?,`slug`=?,`custom_slug`=? WHERE `post_id` = ? AND `locale` = ?","parameters":["Name En","content en","description en","name-test-1-en","name-en","1","vi"]},"original":{"code":"ER_DUP_ENTRY","errno":1062,"sqlState":"23000","sqlMessage":"Duplicate entry 'name-test-1-en' for key 'post_translation.slug'","sql":"UPDATE `post_translation` SET `name`=?,`content`=?,`description`=?,`slug`=?,`custom_slug`=? WHERE `post_id` = ? AND `locale` = ?","parameters":["Name En","content en","description en","name-test-1-en","name-en","1","vi"]},"fields":{"slug":"name-test-1-en"},"sql":"UPDATE `post_translation` SET `name`=?,`content`=?,`description`=?,`slug`=?,`custom_slug`=? WHERE `post_id` = ? AND `locale` = ?"}
+2023-04-14 18:23:45 error: Incorrect datetime value: 'Invalid date' for column 'createdAt' at row 1
+2023-04-14 18:24:03 error: Incorrect datetime value: 'Invalid date' for column 'createdAt' at row 1
+2023-04-14 18:27:15 error: {"name":"SequelizeUniqueConstraintError","errors":[{"message":"PRIMARY must be unique","type":"unique violation","path":"PRIMARY","value":"3","origin":"DB","instance":null,"validatorKey":"not_unique","validatorName":null,"validatorArgs":[]}],"parent":{"code":"ER_DUP_ENTRY","errno":1062,"sqlState":"23000","sqlMessage":"Duplicate entry '3' for key 'post_translation.PRIMARY'","sql":"UPDATE `post_translation` SET `name`=?,`description`=?,`content`=?,`custom_slug`=?,`meta_title`=?,`meta_description`=?,`canonica_link`=?,`meta_robots`=?,`meta_image`=?,`locale`=?,`id`=?,`slug`=?,`meta_keyword`=?,`meta_viewport`=? WHERE `post_id` = ? AND `locale` = ?","parameters":["test","test","<p>test</p>","test","test","test","test","test","test","vi",3,"test","","","3","vi"]},"original":{"code":"ER_DUP_ENTRY","errno":1062,"sqlState":"23000","sqlMessage":"Duplicate entry '3' for key 'post_translation.PRIMARY'","sql":"UPDATE `post_translation` SET `name`=?,`description`=?,`content`=?,`custom_slug`=?,`meta_title`=?,`meta_description`=?,`canonica_link`=?,`meta_robots`=?,`meta_image`=?,`locale`=?,`id`=?,`slug`=?,`meta_keyword`=?,`meta_viewport`=? WHERE `post_id` = ? AND `locale` = ?","parameters":["test","test","<p>test</p>","test","test","test","test","test","test","vi",3,"test","","","3","vi"]},"fields":{"PRIMARY":"3"},"sql":"UPDATE `post_translation` SET `name`=?,`description`=?,`content`=?,`custom_slug`=?,`meta_title`=?,`meta_description`=?,`canonica_link`=?,`meta_robots`=?,`meta_image`=?,`locale`=?,`id`=?,`slug`=?,`meta_keyword`=?,`meta_viewport`=? WHERE `post_id` = ? AND `locale` = ?"}
+2023-04-14 18:28:02 error: {"name":"SequelizeUniqueConstraintError","errors":[{"message":"PRIMARY must be unique","type":"unique violation","path":"PRIMARY","value":"3","origin":"DB","instance":null,"validatorKey":"not_unique","validatorName":null,"validatorArgs":[]}],"parent":{"code":"ER_DUP_ENTRY","errno":1062,"sqlState":"23000","sqlMessage":"Duplicate entry '3' for key 'post_translation.PRIMARY'","sql":"UPDATE `post_translation` SET `name`=?,`description`=?,`content`=?,`custom_slug`=?,`meta_title`=?,`meta_description`=?,`canonica_link`=?,`meta_robots`=?,`meta_image`=?,`locale`=?,`id`=?,`slug`=?,`meta_keyword`=?,`meta_viewport`=? WHERE `post_id` = ? AND `locale` = ?","parameters":["test","test","<p>test</p>","test","test","test","test","test","test","vi",3,"test","","","3","vi"]},"original":{"code":"ER_DUP_ENTRY","errno":1062,"sqlState":"23000","sqlMessage":"Duplicate entry '3' for key 'post_translation.PRIMARY'","sql":"UPDATE `post_translation` SET `name`=?,`description`=?,`content`=?,`custom_slug`=?,`meta_title`=?,`meta_description`=?,`canonica_link`=?,`meta_robots`=?,`meta_image`=?,`locale`=?,`id`=?,`slug`=?,`meta_keyword`=?,`meta_viewport`=? WHERE `post_id` = ? AND `locale` = ?","parameters":["test","test","<p>test</p>","test","test","test","test","test","test","vi",3,"test","","","3","vi"]},"fields":{"PRIMARY":"3"},"sql":"UPDATE `post_translation` SET `name`=?,`description`=?,`content`=?,`custom_slug`=?,`meta_title`=?,`meta_description`=?,`canonica_link`=?,`meta_robots`=?,`meta_image`=?,`locale`=?,`id`=?,`slug`=?,`meta_keyword`=?,`meta_viewport`=? WHERE `post_id` = ? AND `locale` = ?"}
+2023-04-14 18:30:32 error: {"name":"SequelizeUniqueConstraintError","errors":[{"message":"PRIMARY must be unique","type":"unique violation","path":"PRIMARY","value":"3","origin":"DB","instance":null,"validatorKey":"not_unique","validatorName":null,"validatorArgs":[]}],"parent":{"code":"ER_DUP_ENTRY","errno":1062,"sqlState":"23000","sqlMessage":"Duplicate entry '3' for key 'post_translation.PRIMARY'","sql":"UPDATE `post_translation` SET `name`=?,`description`=?,`content`=?,`custom_slug`=?,`meta_title`=?,`meta_description`=?,`canonica_link`=?,`meta_robots`=?,`meta_image`=?,`locale`=?,`id`=?,`slug`=?,`meta_keyword`=?,`meta_viewport`=? WHERE `post_id` = ? AND `locale` = ?","parameters":["test","test","<p>test</p>","test","test","testvvsvsvs","","","","vi",3,"test","","","3","vi"]},"original":{"code":"ER_DUP_ENTRY","errno":1062,"sqlState":"23000","sqlMessage":"Duplicate entry '3' for key 'post_translation.PRIMARY'","sql":"UPDATE `post_translation` SET `name`=?,`description`=?,`content`=?,`custom_slug`=?,`meta_title`=?,`meta_description`=?,`canonica_link`=?,`meta_robots`=?,`meta_image`=?,`locale`=?,`id`=?,`slug`=?,`meta_keyword`=?,`meta_viewport`=? WHERE `post_id` = ? AND `locale` = ?","parameters":["test","test","<p>test</p>","test","test","testvvsvsvs","","","","vi",3,"test","","","3","vi"]},"fields":{"PRIMARY":"3"},"sql":"UPDATE `post_translation` SET `name`=?,`description`=?,`content`=?,`custom_slug`=?,`meta_title`=?,`meta_description`=?,`canonica_link`=?,`meta_robots`=?,`meta_image`=?,`locale`=?,`id`=?,`slug`=?,`meta_keyword`=?,`meta_viewport`=? WHERE `post_id` = ? AND `locale` = ?"}
+2023-04-14 18:30:39 error: {"name":"SequelizeUniqueConstraintError","errors":[{"message":"PRIMARY must be unique","type":"unique violation","path":"PRIMARY","value":"3","origin":"DB","instance":null,"validatorKey":"not_unique","validatorName":null,"validatorArgs":[]}],"parent":{"code":"ER_DUP_ENTRY","errno":1062,"sqlState":"23000","sqlMessage":"Duplicate entry '3' for key 'post_translation.PRIMARY'","sql":"UPDATE `post_translation` SET `name`=?,`description`=?,`content`=?,`custom_slug`=?,`meta_title`=?,`meta_description`=?,`canonica_link`=?,`meta_robots`=?,`meta_image`=?,`locale`=?,`id`=?,`slug`=?,`meta_keyword`=?,`meta_viewport`=? WHERE `post_id` = ? AND `locale` = ?","parameters":["test","test","<p>test</p>","test","test","testvsvsvs","","","","vi",3,"test","","","3","vi"]},"original":{"code":"ER_DUP_ENTRY","errno":1062,"sqlState":"23000","sqlMessage":"Duplicate entry '3' for key 'post_translation.PRIMARY'","sql":"UPDATE `post_translation` SET `name`=?,`description`=?,`content`=?,`custom_slug`=?,`meta_title`=?,`meta_description`=?,`canonica_link`=?,`meta_robots`=?,`meta_image`=?,`locale`=?,`id`=?,`slug`=?,`meta_keyword`=?,`meta_viewport`=? WHERE `post_id` = ? AND `locale` = ?","parameters":["test","test","<p>test</p>","test","test","testvsvsvs","","","","vi",3,"test","","","3","vi"]},"fields":{"PRIMARY":"3"},"sql":"UPDATE `post_translation` SET `name`=?,`description`=?,`content`=?,`custom_slug`=?,`meta_title`=?,`meta_description`=?,`canonica_link`=?,`meta_robots`=?,`meta_image`=?,`locale`=?,`id`=?,`slug`=?,`meta_keyword`=?,`meta_viewport`=? WHERE `post_id` = ? AND `locale` = ?"}
+2023-04-14 18:31:13 error: {"name":"SequelizeUniqueConstraintError","errors":[{"message":"PRIMARY must be unique","type":"unique violation","path":"PRIMARY","value":"4","origin":"DB","instance":null,"validatorKey":"not_unique","validatorName":null,"validatorArgs":[]}],"parent":{"code":"ER_DUP_ENTRY","errno":1062,"sqlState":"23000","sqlMessage":"Duplicate entry '4' for key 'post_translation.PRIMARY'","sql":"UPDATE `post_translation` SET `name`=?,`description`=?,`content`=?,`custom_slug`=?,`meta_title`=?,`meta_description`=?,`canonica_link`=?,`meta_robots`=?,`meta_image`=?,`locale`=?,`id`=?,`slug`=?,`meta_keyword`=?,`meta_viewport`=? WHERE `post_id` = ? AND `locale` = ?","parameters":["bai viet test","bai viet test","<p>bai viet test</p>","bai-viet-test","bai viet test","bai viet test","","bai viet test","","vi",4,"bai-viet-test","","","4","vi"]},"original":{"code":"ER_DUP_ENTRY","errno":1062,"sqlState":"23000","sqlMessage":"Duplicate entry '4' for key 'post_translation.PRIMARY'","sql":"UPDATE `post_translation` SET `name`=?,`description`=?,`content`=?,`custom_slug`=?,`meta_title`=?,`meta_description`=?,`canonica_link`=?,`meta_robots`=?,`meta_image`=?,`locale`=?,`id`=?,`slug`=?,`meta_keyword`=?,`meta_viewport`=? WHERE `post_id` = ? AND `locale` = ?","parameters":["bai viet test","bai viet test","<p>bai viet test</p>","bai-viet-test","bai viet test","bai viet test","","bai viet test","","vi",4,"bai-viet-test","","","4","vi"]},"fields":{"PRIMARY":"4"},"sql":"UPDATE `post_translation` SET `name`=?,`description`=?,`content`=?,`custom_slug`=?,`meta_title`=?,`meta_description`=?,`canonica_link`=?,`meta_robots`=?,`meta_image`=?,`locale`=?,`id`=?,`slug`=?,`meta_keyword`=?,`meta_viewport`=? WHERE `post_id` = ? AND `locale` = ?"}
+2023-04-14 18:31:17 error: {"name":"SequelizeUniqueConstraintError","errors":[{"message":"PRIMARY must be unique","type":"unique violation","path":"PRIMARY","value":"4","origin":"DB","instance":null,"validatorKey":"not_unique","validatorName":null,"validatorArgs":[]}],"parent":{"code":"ER_DUP_ENTRY","errno":1062,"sqlState":"23000","sqlMessage":"Duplicate entry '4' for key 'post_translation.PRIMARY'","sql":"UPDATE `post_translation` SET `name`=?,`description`=?,`content`=?,`custom_slug`=?,`meta_title`=?,`meta_description`=?,`canonica_link`=?,`meta_robots`=?,`meta_image`=?,`locale`=?,`id`=?,`slug`=?,`meta_keyword`=?,`meta_viewport`=? WHERE `post_id` = ? AND `locale` = ?","parameters":["bai viet test","bai viet test","<p>bai viet test</p>","bai-viet-test","bai viet test","bai viet test","","bai viet test","","vi",4,"bai-viet-test","","","4","vi"]},"original":{"code":"ER_DUP_ENTRY","errno":1062,"sqlState":"23000","sqlMessage":"Duplicate entry '4' for key 'post_translation.PRIMARY'","sql":"UPDATE `post_translation` SET `name`=?,`description`=?,`content`=?,`custom_slug`=?,`meta_title`=?,`meta_description`=?,`canonica_link`=?,`meta_robots`=?,`meta_image`=?,`locale`=?,`id`=?,`slug`=?,`meta_keyword`=?,`meta_viewport`=? WHERE `post_id` = ? AND `locale` = ?","parameters":["bai viet test","bai viet test","<p>bai viet test</p>","bai-viet-test","bai viet test","bai viet test","","bai viet test","","vi",4,"bai-viet-test","","","4","vi"]},"fields":{"PRIMARY":"4"},"sql":"UPDATE `post_translation` SET `name`=?,`description`=?,`content`=?,`custom_slug`=?,`meta_title`=?,`meta_description`=?,`canonica_link`=?,`meta_robots`=?,`meta_image`=?,`locale`=?,`id`=?,`slug`=?,`meta_keyword`=?,`meta_viewport`=? WHERE `post_id` = ? AND `locale` = ?"}
+2023-04-14 18:31:21 error: {"name":"SequelizeUniqueConstraintError","errors":[{"message":"PRIMARY must be unique","type":"unique violation","path":"PRIMARY","value":"4","origin":"DB","instance":null,"validatorKey":"not_unique","validatorName":null,"validatorArgs":[]}],"parent":{"code":"ER_DUP_ENTRY","errno":1062,"sqlState":"23000","sqlMessage":"Duplicate entry '4' for key 'post_translation.PRIMARY'","sql":"UPDATE `post_translation` SET `name`=?,`description`=?,`content`=?,`custom_slug`=?,`meta_title`=?,`meta_description`=?,`canonica_link`=?,`meta_robots`=?,`meta_image`=?,`locale`=?,`id`=?,`slug`=?,`meta_keyword`=?,`meta_viewport`=? WHERE `post_id` = ? AND `locale` = ?","parameters":["bai viet test","bai viet test","<p>bai viet test</p>","bai-viet-test","bai viet test","bai viet test1211","","","","vi",4,"bai-viet-test","","","4","vi"]},"original":{"code":"ER_DUP_ENTRY","errno":1062,"sqlState":"23000","sqlMessage":"Duplicate entry '4' for key 'post_translation.PRIMARY'","sql":"UPDATE `post_translation` SET `name`=?,`description`=?,`content`=?,`custom_slug`=?,`meta_title`=?,`meta_description`=?,`canonica_link`=?,`meta_robots`=?,`meta_image`=?,`locale`=?,`id`=?,`slug`=?,`meta_keyword`=?,`meta_viewport`=? WHERE `post_id` = ? AND `locale` = ?","parameters":["bai viet test","bai viet test","<p>bai viet test</p>","bai-viet-test","bai viet test","bai viet test1211","","","","vi",4,"bai-viet-test","","","4","vi"]},"fields":{"PRIMARY":"4"},"sql":"UPDATE `post_translation` SET `name`=?,`description`=?,`content`=?,`custom_slug`=?,`meta_title`=?,`meta_description`=?,`canonica_link`=?,`meta_robots`=?,`meta_image`=?,`locale`=?,`id`=?,`slug`=?,`meta_keyword`=?,`meta_viewport`=? WHERE `post_id` = ? AND `locale` = ?"}
+2023-04-14 18:31:55 error: {"name":"SequelizeUniqueConstraintError","errors":[{"message":"PRIMARY must be unique","type":"unique violation","path":"PRIMARY","value":"4","origin":"DB","instance":null,"validatorKey":"not_unique","validatorName":null,"validatorArgs":[]}],"parent":{"code":"ER_DUP_ENTRY","errno":1062,"sqlState":"23000","sqlMessage":"Duplicate entry '4' for key 'post_translation.PRIMARY'","sql":"UPDATE `post_translation` SET `name`=?,`description`=?,`content`=?,`custom_slug`=?,`meta_title`=?,`meta_description`=?,`canonica_link`=?,`meta_robots`=?,`meta_image`=?,`locale`=?,`id`=?,`slug`=?,`meta_keyword`=?,`meta_viewport`=? WHERE `post_id` = ? AND `locale` = ?","parameters":["bai viet test","bai viet test","<p>bai viet test</p>","bai-viet-test","bai viet test","bai viet test","","","","vi",4,"bai-viet-test","","","4","vi"]},"original":{"code":"ER_DUP_ENTRY","errno":1062,"sqlState":"23000","sqlMessage":"Duplicate entry '4' for key 'post_translation.PRIMARY'","sql":"UPDATE `post_translation` SET `name`=?,`description`=?,`content`=?,`custom_slug`=?,`meta_title`=?,`meta_description`=?,`canonica_link`=?,`meta_robots`=?,`meta_image`=?,`locale`=?,`id`=?,`slug`=?,`meta_keyword`=?,`meta_viewport`=? WHERE `post_id` = ? AND `locale` = ?","parameters":["bai viet test","bai viet test","<p>bai viet test</p>","bai-viet-test","bai viet test","bai viet test","","","","vi",4,"bai-viet-test","","","4","vi"]},"fields":{"PRIMARY":"4"},"sql":"UPDATE `post_translation` SET `name`=?,`description`=?,`content`=?,`custom_slug`=?,`meta_title`=?,`meta_description`=?,`canonica_link`=?,`meta_robots`=?,`meta_image`=?,`locale`=?,`id`=?,`slug`=?,`meta_keyword`=?,`meta_viewport`=? WHERE `post_id` = ? AND `locale` = ?"}
+2023-04-14 18:36:42 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/services/post.service.ts[0m:[93m209[0m:[93m29[0m - [91merror[0m[90m TS2304: [0mCannot find name 'translationData'.
+
+[7m209[0m                 meta_title: translationData.meta_title || "",
+[7m   [0m [91m                            ~~~~~~~~~~~~~~~[0m
+[96msrc/services/post.service.ts[0m:[93m210[0m:[93m35[0m - [91merror[0m[90m TS2304: [0mCannot find name 'translationData'.
+
+[7m210[0m                 meta_description: translationData.meta_description || "",
+[7m   [0m [91m                                  ~~~~~~~~~~~~~~~[0m
+[96msrc/services/post.service.ts[0m:[93m211[0m:[93m31[0m - [91merror[0m[90m TS2304: [0mCannot find name 'translationData'.
+
+[7m211[0m                 meta_keyword: translationData.meta_keyword || "",
+[7m   [0m [91m                              ~~~~~~~~~~~~~~~[0m
+[96msrc/services/post.service.ts[0m:[93m212[0m:[93m30[0m - [91merror[0m[90m TS2304: [0mCannot find name 'translationData'.
+
+[7m212[0m                 meta_robots: translationData.meta_robots || "",
+[7m   [0m [91m                             ~~~~~~~~~~~~~~~[0m
+[96msrc/services/post.service.ts[0m:[93m213[0m:[93m32[0m - [91merror[0m[90m TS2304: [0mCannot find name 'translationData'.
+
+[7m213[0m                 canonica_link: translationData.canonica_link || "",
+[7m   [0m [91m                               ~~~~~~~~~~~~~~~[0m
+[96msrc/services/post.service.ts[0m:[93m214[0m:[93m29[0m - [91merror[0m[90m TS2304: [0mCannot find name 'translationData'.
+
+[7m214[0m                 meta_image: translationData.meta_image || "",
+[7m   [0m [91m                            ~~~~~~~~~~~~~~~[0m
+[96msrc/services/post.service.ts[0m:[93m215[0m:[93m32[0m - [91merror[0m[90m TS2304: [0mCannot find name 'translationData'.
+
+[7m215[0m                 meta_viewport: translationData.meta_viewport || "",
+[7m   [0m [91m                               ~~~~~~~~~~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/services/post.service.ts[0m:[93m209[0m:[93m29[0m - [91merror[0m[90m TS2304: [0mCannot find name 'translationData'.
+
+[7m209[0m                 meta_title: translationData.meta_title || "",
+[7m   [0m [91m                            ~~~~~~~~~~~~~~~[0m
+[96msrc/services/post.service.ts[0m:[93m210[0m:[93m35[0m - [91merror[0m[90m TS2304: [0mCannot find name 'translationData'.
+
+[7m210[0m                 meta_description: translationData.meta_description || "",
+[7m   [0m [91m                                  ~~~~~~~~~~~~~~~[0m
+[96msrc/services/post.service.ts[0m:[93m211[0m:[93m31[0m - [91merror[0m[90m TS2304: [0mCannot find name 'translationData'.
+
+[7m211[0m                 meta_keyword: translationData.meta_keyword || "",
+[7m   [0m [91m                              ~~~~~~~~~~~~~~~[0m
+[96msrc/services/post.service.ts[0m:[93m212[0m:[93m30[0m - [91merror[0m[90m TS2304: [0mCannot find name 'translationData'.
+
+[7m212[0m                 meta_robots: translationData.meta_robots || "",
+[7m   [0m [91m                             ~~~~~~~~~~~~~~~[0m
+[96msrc/services/post.service.ts[0m:[93m213[0m:[93m32[0m - [91merror[0m[90m TS2304: [0mCannot find name 'translationData'.
+
+[7m213[0m                 canonica_link: translationData.canonica_link || "",
+[7m   [0m [91m                               ~~~~~~~~~~~~~~~[0m
+[96msrc/services/post.service.ts[0m:[93m214[0m:[93m29[0m - [91merror[0m[90m TS2304: [0mCannot find name 'translationData'.
+
+[7m214[0m                 meta_image: translationData.meta_image || "",
+[7m   [0m [91m                            ~~~~~~~~~~~~~~~[0m
+[96msrc/services/post.service.ts[0m:[93m215[0m:[93m32[0m - [91merror[0m[90m TS2304: [0mCannot find name 'translationData'.
+
+[7m215[0m                 meta_viewport: translationData.meta_viewport || "",
+[7m   [0m [91m                               ~~~~~~~~~~~~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
