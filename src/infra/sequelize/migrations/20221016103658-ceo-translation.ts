@@ -81,13 +81,11 @@ module.exports = {
 
       slug: {
         type: Sequelize.STRING,
-        unique: true,
         allowNull: true,
       },
 
       custom_slug: {
         type: Sequelize.STRING,
-        unique: true,
         allowNull: true,
       },
 

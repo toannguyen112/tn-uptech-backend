@@ -17,24 +17,28 @@ module.exports = {
         {
           id: 1,
           name: `Website`,
+          slug: `website`,
           category_id: 1,
           locale: `vi`,
         },
         {
           id: 2,
           name: `Website`,
+          slug: `website`,
           category_id: 1,
           locale: `en`,
         },
         {
           id: 3,
           name: `Ứng dụng di động`,
+          slug: `android`,
           category_id: 2,
           locale: `vi`,
         },
         {
           id: 4,
           name: `Android`,
+          slug: `android`,
           category_id: 2,
           locale: `en`,
         },

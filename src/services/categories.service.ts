@@ -87,7 +87,29 @@ export class CategoryService {
     }
 
     public getListType = async (type: string) => {
-        return await models.Category.findAll({ where: { type } });
+        const rows = await models.Category.findAll({
+            where: { type }, include: {
+                model: models.CategoryTranslation,
+                as: "translations",
+                require: true,
+                where: { locale: global.lang }
+            },
+        });
+
+        const transformData = rows.map((item) => {
+
+            if (!item.translations.length) return {};
+
+            const translationData = item.translations[0];
+
+            return {
+                id: item.id,
+                name: translationData.name || "",
+                slug: translationData.slug || "",
+            }
+        });
+
+        return transformData;
     }
 
     public store = async (body: any) => {

@@ -607,3 +607,108 @@ TSError: ⨯ Unable to compile TypeScript:
 2023-04-17 21:34:44 error: {}
 2023-04-17 21:34:58 error: {}
 2023-04-17 21:37:23 error: {"name":"SequelizeUniqueConstraintError","errors":[{"message":"custom_slug must be unique","type":"unique violation","path":"custom_slug","value":"name-vi","origin":"DB","instance":null,"validatorKey":"not_unique","validatorName":null,"validatorArgs":[]}],"parent":{"code":"ER_DUP_ENTRY","errno":1062,"sqlState":"23000","sqlMessage":"Duplicate entry 'name-vi' for key 'post_translation.custom_slug'","sql":"UPDATE `post_translation` SET `name`=?,`content`=?,`description`=?,`meta_title`=?,`meta_description`=?,`meta_keyword`=?,`meta_robots`=?,`canonica_link`=?,`meta_image`=?,`meta_viewport`=?,`slug`=?,`custom_slug`=? WHERE `post_id` = ? AND `locale` = ?","parameters":["Name Vi","content vi","description vi","","","","","","","","name-test-2-vi","name-vi","2","vi"]},"original":{"code":"ER_DUP_ENTRY","errno":1062,"sqlState":"23000","sqlMessage":"Duplicate entry 'name-vi' for key 'post_translation.custom_slug'","sql":"UPDATE `post_translation` SET `name`=?,`content`=?,`description`=?,`meta_title`=?,`meta_description`=?,`meta_keyword`=?,`meta_robots`=?,`canonica_link`=?,`meta_image`=?,`meta_viewport`=?,`slug`=?,`custom_slug`=? WHERE `post_id` = ? AND `locale` = ?","parameters":["Name Vi","content vi","description vi","","","","","","","","name-test-2-vi","name-vi","2","vi"]},"fields":{"custom_slug":"name-vi"},"sql":"UPDATE `post_translation` SET `name`=?,`content`=?,`description`=?,`meta_title`=?,`meta_description`=?,`meta_keyword`=?,`meta_robots`=?,`canonica_link`=?,`meta_image`=?,`meta_viewport`=?,`slug`=?,`custom_slug`=? WHERE `post_id` = ? AND `locale` = ?"}
+2023-04-17 21:38:53 error: {"name":"SequelizeUniqueConstraintError","errors":[{"message":"slug must be unique","type":"unique violation","path":"slug","value":"name-test-1-en","origin":"DB","instance":null,"validatorKey":"not_unique","validatorName":null,"validatorArgs":[]}],"parent":{"code":"ER_DUP_ENTRY","errno":1062,"sqlState":"23000","sqlMessage":"Duplicate entry 'name-test-1-en' for key 'post_translation.slug'","sql":"UPDATE `post_translation` SET `name`=?,`content`=?,`description`=?,`meta_title`=?,`meta_description`=?,`meta_keyword`=?,`meta_robots`=?,`canonica_link`=?,`meta_image`=?,`meta_viewport`=?,`slug`=?,`custom_slug`=? WHERE `post_id` = ? AND `locale` = ?","parameters":["Name En","content en","description en","Name En","Name En","","Name En","Name En","Name En","","name-test-1-en","name-en","1","vi"]},"original":{"code":"ER_DUP_ENTRY","errno":1062,"sqlState":"23000","sqlMessage":"Duplicate entry 'name-test-1-en' for key 'post_translation.slug'","sql":"UPDATE `post_translation` SET `name`=?,`content`=?,`description`=?,`meta_title`=?,`meta_description`=?,`meta_keyword`=?,`meta_robots`=?,`canonica_link`=?,`meta_image`=?,`meta_viewport`=?,`slug`=?,`custom_slug`=? WHERE `post_id` = ? AND `locale` = ?","parameters":["Name En","content en","description en","Name En","Name En","","Name En","Name En","Name En","","name-test-1-en","name-en","1","vi"]},"fields":{"slug":"name-test-1-en"},"sql":"UPDATE `post_translation` SET `name`=?,`content`=?,`description`=?,`meta_title`=?,`meta_description`=?,`meta_keyword`=?,`meta_robots`=?,`canonica_link`=?,`meta_image`=?,`meta_viewport`=?,`slug`=?,`custom_slug`=? WHERE `post_id` = ? AND `locale` = ?"}
+2023-04-17 21:54:54 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/services/categories.service.ts[0m:[93m95[0m:[93m24[0m - [91merror[0m[90m TS2304: [0mCannot find name 'queryTranslation'.
+
+[7m95[0m                 where: queryTranslation
+[7m  [0m [91m                       ~~~~~~~~~~~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/services/categories.service.ts[0m:[93m95[0m:[93m24[0m - [91merror[0m[90m TS2304: [0mCannot find name 'queryTranslation'.
+
+[7m95[0m                 where: queryTranslation
+[7m  [0m [91m                       ~~~~~~~~~~~~~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-17 21:55:18 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/services/categories.service.ts[0m:[93m99[0m:[93m31[0m - [91merror[0m[90m TS2304: [0mCannot find name 'rows'.
+
+[7m99[0m         const transformData = rows.map((item) => {
+[7m  [0m [91m                              ~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/services/categories.service.ts[0m:[93m99[0m:[93m31[0m - [91merror[0m[90m TS2304: [0mCannot find name 'rows'.
+
+[7m99[0m         const transformData = rows.map((item) => {
+[7m  [0m [91m                              ~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-17 21:56:02 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/services/categories.service.ts[0m:[93m102[0m:[93m19[0m - [91merror[0m[90m TS2304: [0mCannot find name 'translationData'.
+
+[7m102[0m             name: translationData.name || "",
+[7m   [0m [91m                  ~~~~~~~~~~~~~~~[0m
+[96msrc/services/categories.service.ts[0m:[93m103[0m:[93m26[0m - [91merror[0m[90m TS2304: [0mCannot find name 'translationData'.
+
+[7m103[0m             description: translationData.description || "",
+[7m   [0m [91m                         ~~~~~~~~~~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/services/categories.service.ts[0m:[93m102[0m:[93m19[0m - [91merror[0m[90m TS2304: [0mCannot find name 'translationData'.
+
+[7m102[0m             name: translationData.name || "",
+[7m   [0m [91m                  ~~~~~~~~~~~~~~~[0m
+[96msrc/services/categories.service.ts[0m:[93m103[0m:[93m26[0m - [91merror[0m[90m TS2304: [0mCannot find name 'translationData'.
+
+[7m103[0m             description: translationData.description || "",
+[7m   [0m [91m                         ~~~~~~~~~~~~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-17 21:56:16 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/services/categories.service.ts[0m:[93m102[0m:[93m19[0m - [91merror[0m[90m TS2304: [0mCannot find name 'translationData'.
+
+[7m102[0m             name: translationData.name || "",
+[7m   [0m [91m                  ~~~~~~~~~~~~~~~[0m
+[96msrc/services/categories.service.ts[0m:[93m103[0m:[93m26[0m - [91merror[0m[90m TS2304: [0mCannot find name 'translationData'.
+
+[7m103[0m             description: translationData.description || "",
+[7m   [0m [91m                         ~~~~~~~~~~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/services/categories.service.ts[0m:[93m102[0m:[93m19[0m - [91merror[0m[90m TS2304: [0mCannot find name 'translationData'.
+
+[7m102[0m             name: translationData.name || "",
+[7m   [0m [91m                  ~~~~~~~~~~~~~~~[0m
+[96msrc/services/categories.service.ts[0m:[93m103[0m:[93m26[0m - [91merror[0m[90m TS2304: [0mCannot find name 'translationData'.
+
+[7m103[0m             description: translationData.description || "",
+[7m   [0m [91m                         ~~~~~~~~~~~~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
