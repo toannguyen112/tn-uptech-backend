@@ -30,7 +30,22 @@ module.exports = {
         allowNull: false,
       },
 
-      content: {
+      address_work: {
+        type: Sequelize.STRING,
+        allowNull: true,
+      },
+
+      location: {
+        type: Sequelize.STRING,
+        allowNull: true,
+      },
+
+      required: {
+        type: Sequelize.TEXT('long'),
+        allowNull: true,
+      },
+
+      benefit: {
         type: Sequelize.TEXT('long'),
         allowNull: true,
       },

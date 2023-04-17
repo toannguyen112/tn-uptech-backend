@@ -10,15 +10,6 @@ module.exports = {
         type: Sequelize.INTEGER,
       },
 
-      thumbnail: {
-        type: Sequelize.INTEGER,
-        references: {
-          model: "medias",
-          key: "id",
-        },
-        allowNull: true,
-      },
-
       ceo_id: {
         type: Sequelize.INTEGER,
         references: {
@@ -29,21 +20,6 @@ module.exports = {
       },
 
       related: {
-        type: Sequelize.JSON,
-        defaultValue: [],
-        allowNull: true,
-      },
-
-      banner: {
-        type: Sequelize.INTEGER,
-        references: {
-          model: "medias",
-          key: "id",
-        },
-        allowNull: true,
-      },
-
-      images: {
         type: Sequelize.JSON,
         defaultValue: [],
         allowNull: true,
@@ -64,7 +40,7 @@ module.exports = {
         defaultValue: 0
       },
 
-      post_at: {
+      expried_date: {
         type: Sequelize.DATE,
       },
 

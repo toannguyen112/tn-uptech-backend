@@ -29,8 +29,22 @@ module.exports = function (sequelize, DataTypes) {
                 allowNull: false,
             },
 
-            content: {
+            location: {
+                type: DataTypes.STRING,
+            },
+
+            benefit: {
                 type: DataTypes.TEXT('long'),
+                allowNull: true,
+            },
+
+            required: {
+                type: DataTypes.TEXT('long'),
+                allowNull: true,
+            },
+
+            address_work: {
+                type: DataTypes.STRING,
                 allowNull: true,
             },
 
@@ -48,6 +62,41 @@ module.exports = function (sequelize, DataTypes) {
             custom_slug: {
                 type: DataTypes.STRING,
                 unique: true,
+                allowNull: true,
+            },
+
+            meta_title: {
+                type: DataTypes.STRING,
+                allowNull: true,
+            },
+
+            meta_description: {
+                type: DataTypes.STRING,
+                allowNull: true,
+            },
+
+            meta_keyword: {
+                type: DataTypes.STRING,
+                allowNull: true,
+            },
+
+            meta_robots: {
+                type: DataTypes.STRING,
+                allowNull: true,
+            },
+
+            canonica_link: {
+                type: DataTypes.STRING,
+                allowNull: true,
+            },
+
+            meta_image: {
+                type: DataTypes.STRING,
+                allowNull: true,
+            },
+
+            meta_viewport: {
+                type: DataTypes.STRING,
                 allowNull: true,
             },
         },

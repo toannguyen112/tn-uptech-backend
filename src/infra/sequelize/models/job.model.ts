@@ -31,7 +31,7 @@ module.exports = function (sequelize, DataTypes) {
                 defaultValue: 0
             },
 
-            post_at: {
+            expried_date: {
                 type: DataTypes.DATE,
             },
 

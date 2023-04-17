@@ -86,23 +86,19 @@ export class JobService {
 
     public getListFeatured = async () => {
         try {
+            const rows = await models.Job.findAll({
+                where: { isFeatured: true },
+                include: {
+                    model: models.JobTranslation,
+                    as: "translations",
+                    where: { locale: global.lang }
+                },
+            });
 
-            try {
+            return rows.map((item) => {
+                return JobDTO.transformClient(item);
+            })
 
-                const jobs = await models.Job.findAll({
-                    where: { isFeatured: true },
-                    include: {
-                        model: models.JobTranslation,
-                        as: "translations",
-                        where: { locale: global.lang }
-                    },
-                });
-
-                return jobs;
-
-            } catch (error) {
-                console.log(error);
-            }
         } catch (error) {
             console.log(error.message);
         }
@@ -111,25 +107,39 @@ export class JobService {
 
     public store = async (body) => {
 
-        return await models.Job.create({ ...body })
-            .then(async (job: any) => {
+        const t = await models.sequelize.transaction();
 
-                if (job) {
-                    const jobId = job.id;
+        const newItem = JobDTO.transformSave(body);
 
-                    await models.JobTranslation.create({
-                        ...body,
-                        job_id: jobId,
-                        locale: 'vi'
-                    });
+        try {
 
-                    await models.JobTranslation.create({
-                        ...body,
-                        job_id: jobId,
-                        locale: 'en'
-                    });
-                }
-            });
+            return await models.Job.create({ ...newItem }, { transaction: t })
+                .then(async (job: any) => {
+
+                    if (job) {
+                        const jobId = job.id;
+
+                        await models.JobTranslation.create({
+                            ...newItem,
+                            job_id: jobId,
+                            locale: 'vi'
+                        },
+                            { transaction: t });
+
+                        await models.JobTranslation.create({
+                            ...newItem,
+                            job_id: jobId,
+                            locale: 'en'
+                        },
+                            { transaction: t });
+                    }
+
+                    await t.commit();
+                });
+        } catch (error) {
+            console.log(error);
+            await t.rollback();
+        }
     }
 
     public findById = async (id) => {
@@ -154,31 +164,40 @@ export class JobService {
 
     public update = async (id, body) => {
 
-        return await models.Job.update({
-            related: body.related,
-            status: body.status
-        }, { where: { id } },)
-            .then(async (res) => {
-                if (res) {
-                    await this.handleUpdate({ job_id: id, lang: global.lang, body });
-                    await this.handleUpdate({ job_id: id, lang: global.lang, body });
-                }
-            });
+        const newItem = JobDTO.transformSave(body);
+
+        console.log(newItem);
+
+
+        const t = await models.sequelize.transaction();
+        try {
+
+            return await models.Job.update({
+                ...newItem,
+            }, { where: { id } }, { transaction: t })
+                .then(async (res) => {
+                    if (res) {
+                        await this.handleUpdate(id, global.lang, newItem);
+                    }
+
+                    await t.commit();
+                });
+
+        } catch (error) {
+            console.log(error);
+            await t.rollback();
+        }
     }
 
-    public handleUpdate = async ({ job_id, lang = "vi", body }) => {
+    public handleUpdate = async (job_id, lang = "vi", body) => {
 
         try {
             return await models.JobTranslation.update({
-                name: body.name,
-                content: body.content,
-                description: body.description,
-                slug: Helper.renderSlug(body.slug ? body.slug : body.name),
-                custom_slug: Helper.renderSlug(body.custom_slug ? body.custom_slug : body.name),
+                ...body,
             },
                 { where: { job_id, locale: lang } });
         } catch (error) {
-            console.log(error.message);
+            console.log(error);
         }
     }
 

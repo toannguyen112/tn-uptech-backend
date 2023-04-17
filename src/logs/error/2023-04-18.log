@@ -1,0 +1,1110 @@
+2023-04-18 00:04:12 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/services/job.service.ts[0m:[93m116[0m:[93m36[0m - [91merror[0m[90m TS2554: [0mExpected 0 arguments, but got 1.
+
+[7m116[0m             expried_date: Date.now(body.expried_date),
+[7m   [0m [91m                                   ~~~~~~~~~~~~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/services/job.service.ts[0m:[93m116[0m:[93m36[0m - [91merror[0m[90m TS2554: [0mExpected 0 arguments, but got 1.
+
+[7m116[0m             expried_date: Date.now(body.expried_date),
+[7m   [0m [91m                                   ~~~~~~~~~~~~~~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-18 00:18:18 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/services/job.service.ts[0m:[93m181[0m:[93m19[0m - [91merror[0m[90m TS2304: [0mCannot find name 't'.
+
+[7m181[0m             await t.rollback();
+[7m   [0m [91m                  ~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/services/job.service.ts[0m:[93m181[0m:[93m19[0m - [91merror[0m[90m TS2304: [0mCannot find name 't'.
+
+[7m181[0m             await t.rollback();
+[7m   [0m [91m                  ~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-18 00:20:22 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/services/job.service.ts[0m:[93m195[0m:[93m17[0m - [91merror[0m[90m TS1005: [0m',' expected.
+
+[7m195[0m                 slug: Helper.renderSlug(body.slug ? body.slug : body.name),
+[7m   [0m [91m                ~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/services/job.service.ts[0m:[93m195[0m:[93m17[0m - [91merror[0m[90m TS1005: [0m',' expected.
+
+[7m195[0m                 slug: Helper.renderSlug(body.slug ? body.slug : body.name),
+[7m   [0m [91m                ~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-18 00:40:11 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/modules/controllers/job.controller.ts[0m:[93m63[0m:[93m36[0m - [91merror[0m[90m TS2339: [0mProperty 'deleteById' does not exist on type 'JobService'.
+
+[7m63[0m             const data = await job.deleteById(req.params.id);
+[7m  [0m [91m                                   ~~~~~~~~~~[0m
+[96msrc/modules/controllers/job.controller.ts[0m:[93m74[0m:[93m36[0m - [91merror[0m[90m TS2339: [0mProperty 'deleteMultipleIds' does not exist on type 'JobService'.
+
+[7m74[0m             const data = await job.deleteMultipleIds(ids);
+[7m  [0m [91m                                   ~~~~~~~~~~~~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/modules/controllers/job.controller.ts[0m:[93m63[0m:[93m36[0m - [91merror[0m[90m TS2339: [0mProperty 'deleteById' does not exist on type 'JobService'.
+
+[7m63[0m             const data = await job.deleteById(req.params.id);
+[7m  [0m [91m                                   ~~~~~~~~~~[0m
+[96msrc/modules/controllers/job.controller.ts[0m:[93m74[0m:[93m36[0m - [91merror[0m[90m TS2339: [0mProperty 'deleteMultipleIds' does not exist on type 'JobService'.
+
+[7m74[0m             const data = await job.deleteMultipleIds(ids);
+[7m  [0m [91m                                   ~~~~~~~~~~~~~~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-18 00:41:04 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/services/job.service.ts[0m:[93m194[0m:[93m82[0m - [91merror[0m[90m TS2345: [0mArgument of type '{ job_id: any; lang: any; newItem: { name: any; status: any; description: any; expried_date: any; address_work: any; location: any; isFeatured: any; required: any; benefit: any; custom_slug: any; meta_title: any; ... 6 more ...; slug: any; }; }' is not assignable to parameter of type '{ job_id: any; lang?: string; body: any; }'.
+  Object literal may only specify known properties, and 'newItem' does not exist in type '{ job_id: any; lang?: string; body: any; }'.
+
+[7m194[0m                         await this.handleUpdate({ job_id: id, lang: global.lang, newItem });
+[7m   [0m [91m                                                                                 ~~~~~~~[0m
+[96msrc/services/job.service.ts[0m:[93m195[0m:[93m82[0m - [91merror[0m[90m TS2345: [0mArgument of type '{ job_id: any; lang: any; newItem: { name: any; status: any; description: any; expried_date: any; address_work: any; location: any; isFeatured: any; required: any; benefit: any; custom_slug: any; meta_title: any; ... 6 more ...; slug: any; }; }' is not assignable to parameter of type '{ job_id: any; lang?: string; body: any; }'.
+  Object literal may only specify known properties, and 'newItem' does not exist in type '{ job_id: any; lang?: string; body: any; }'.
+
+[7m195[0m                         await this.handleUpdate({ job_id: id, lang: global.lang, newItem });
+[7m   [0m [91m                                                                                 ~~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/services/job.service.ts[0m:[93m194[0m:[93m82[0m - [91merror[0m[90m TS2345: [0mArgument of type '{ job_id: any; lang: any; newItem: { name: any; status: any; description: any; expried_date: any; address_work: any; location: any; isFeatured: any; required: any; benefit: any; custom_slug: any; meta_title: any; ... 6 more ...; slug: any; }; }' is not assignable to parameter of type '{ job_id: any; lang?: string; body: any; }'.
+  Object literal may only specify known properties, and 'newItem' does not exist in type '{ job_id: any; lang?: string; body: any; }'.
+
+[7m194[0m                         await this.handleUpdate({ job_id: id, lang: global.lang, newItem });
+[7m   [0m [91m                                                                                 ~~~~~~~[0m
+[96msrc/services/job.service.ts[0m:[93m195[0m:[93m82[0m - [91merror[0m[90m TS2345: [0mArgument of type '{ job_id: any; lang: any; newItem: { name: any; status: any; description: any; expried_date: any; address_work: any; location: any; isFeatured: any; required: any; benefit: any; custom_slug: any; meta_title: any; ... 6 more ...; slug: any; }; }' is not assignable to parameter of type '{ job_id: any; lang?: string; body: any; }'.
+  Object literal may only specify known properties, and 'newItem' does not exist in type '{ job_id: any; lang?: string; body: any; }'.
+
+[7m195[0m                         await this.handleUpdate({ job_id: id, lang: global.lang, newItem });
+[7m   [0m [91m                                                                                 ~~~~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-18 00:41:22 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/services/job.service.ts[0m:[93m194[0m:[93m82[0m - [91merror[0m[90m TS2345: [0mArgument of type '{ job_id: any; lang: any; newItem: { name: any; status: any; description: any; expried_date: any; address_work: any; location: any; isFeatured: any; required: any; benefit: any; custom_slug: any; meta_title: any; ... 6 more ...; slug: any; }; }' is not assignable to parameter of type '{ job_id: any; lang?: string; body: any; }'.
+  Object literal may only specify known properties, and 'newItem' does not exist in type '{ job_id: any; lang?: string; body: any; }'.
+
+[7m194[0m                         await this.handleUpdate({ job_id: id, lang: global.lang, newItem });
+[7m   [0m [91m                                                                                 ~~~~~~~[0m
+[96msrc/services/job.service.ts[0m:[93m195[0m:[93m82[0m - [91merror[0m[90m TS2345: [0mArgument of type '{ job_id: any; lang: any; newItem: { name: any; status: any; description: any; expried_date: any; address_work: any; location: any; isFeatured: any; required: any; benefit: any; custom_slug: any; meta_title: any; ... 6 more ...; slug: any; }; }' is not assignable to parameter of type '{ job_id: any; lang?: string; body: any; }'.
+  Object literal may only specify known properties, and 'newItem' does not exist in type '{ job_id: any; lang?: string; body: any; }'.
+
+[7m195[0m                         await this.handleUpdate({ job_id: id, lang: global.lang, newItem });
+[7m   [0m [91m                                                                                 ~~~~~~~[0m
+[96msrc/services/job.service.ts[0m:[93m211[0m:[93m20[0m - [91merror[0m[90m TS2304: [0mCannot find name 'body'.
+
+[7m211[0m                 ...body,
+[7m   [0m [91m                   ~~~~[0m
+[96msrc/services/job.service.ts[0m:[93m212[0m:[93m41[0m - [91merror[0m[90m TS2304: [0mCannot find name 'body'.
+
+[7m212[0m                 slug: Helper.renderSlug(body.slug ? body.slug : body.name),
+[7m   [0m [91m                                        ~~~~[0m
+[96msrc/services/job.service.ts[0m:[93m212[0m:[93m53[0m - [91merror[0m[90m TS2304: [0mCannot find name 'body'.
+
+[7m212[0m                 slug: Helper.renderSlug(body.slug ? body.slug : body.name),
+[7m   [0m [91m                                                    ~~~~[0m
+[96msrc/services/job.service.ts[0m:[93m212[0m:[93m65[0m - [91merror[0m[90m TS2304: [0mCannot find name 'body'.
+
+[7m212[0m                 slug: Helper.renderSlug(body.slug ? body.slug : body.name),
+[7m   [0m [91m                                                                ~~~~[0m
+[96msrc/services/job.service.ts[0m:[93m213[0m:[93m48[0m - [91merror[0m[90m TS2304: [0mCannot find name 'body'.
+
+[7m213[0m                 custom_slug: Helper.renderSlug(body.custom_slug ? body.custom_slug : body.name),
+[7m   [0m [91m                                               ~~~~[0m
+[96msrc/services/job.service.ts[0m:[93m213[0m:[93m67[0m - [91merror[0m[90m TS2304: [0mCannot find name 'body'.
+
+[7m213[0m                 custom_slug: Helper.renderSlug(body.custom_slug ? body.custom_slug : body.name),
+[7m   [0m [91m                                                                  ~~~~[0m
+[96msrc/services/job.service.ts[0m:[93m213[0m:[93m86[0m - [91merror[0m[90m TS2304: [0mCannot find name 'body'.
+
+[7m213[0m                 custom_slug: Helper.renderSlug(body.custom_slug ? body.custom_slug : body.name),
+[7m   [0m [91m                                                                                     ~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/services/job.service.ts[0m:[93m194[0m:[93m82[0m - [91merror[0m[90m TS2345: [0mArgument of type '{ job_id: any; lang: any; newItem: { name: any; status: any; description: any; expried_date: any; address_work: any; location: any; isFeatured: any; required: any; benefit: any; custom_slug: any; meta_title: any; ... 6 more ...; slug: any; }; }' is not assignable to parameter of type '{ job_id: any; lang?: string; body: any; }'.
+  Object literal may only specify known properties, and 'newItem' does not exist in type '{ job_id: any; lang?: string; body: any; }'.
+
+[7m194[0m                         await this.handleUpdate({ job_id: id, lang: global.lang, newItem });
+[7m   [0m [91m                                                                                 ~~~~~~~[0m
+[96msrc/services/job.service.ts[0m:[93m195[0m:[93m82[0m - [91merror[0m[90m TS2345: [0mArgument of type '{ job_id: any; lang: any; newItem: { name: any; status: any; description: any; expried_date: any; address_work: any; location: any; isFeatured: any; required: any; benefit: any; custom_slug: any; meta_title: any; ... 6 more ...; slug: any; }; }' is not assignable to parameter of type '{ job_id: any; lang?: string; body: any; }'.
+  Object literal may only specify known properties, and 'newItem' does not exist in type '{ job_id: any; lang?: string; body: any; }'.
+
+[7m195[0m                         await this.handleUpdate({ job_id: id, lang: global.lang, newItem });
+[7m   [0m [91m                                                                                 ~~~~~~~[0m
+[96msrc/services/job.service.ts[0m:[93m211[0m:[93m20[0m - [91merror[0m[90m TS2304: [0mCannot find name 'body'.
+
+[7m211[0m                 ...body,
+[7m   [0m [91m                   ~~~~[0m
+[96msrc/services/job.service.ts[0m:[93m212[0m:[93m41[0m - [91merror[0m[90m TS2304: [0mCannot find name 'body'.
+
+[7m212[0m                 slug: Helper.renderSlug(body.slug ? body.slug : body.name),
+[7m   [0m [91m                                        ~~~~[0m
+[96msrc/services/job.service.ts[0m:[93m212[0m:[93m53[0m - [91merror[0m[90m TS2304: [0mCannot find name 'body'.
+
+[7m212[0m                 slug: Helper.renderSlug(body.slug ? body.slug : body.name),
+[7m   [0m [91m                                                    ~~~~[0m
+[96msrc/services/job.service.ts[0m:[93m212[0m:[93m65[0m - [91merror[0m[90m TS2304: [0mCannot find name 'body'.
+
+[7m212[0m                 slug: Helper.renderSlug(body.slug ? body.slug : body.name),
+[7m   [0m [91m                                                                ~~~~[0m
+[96msrc/services/job.service.ts[0m:[93m213[0m:[93m48[0m - [91merror[0m[90m TS2304: [0mCannot find name 'body'.
+
+[7m213[0m                 custom_slug: Helper.renderSlug(body.custom_slug ? body.custom_slug : body.name),
+[7m   [0m [91m                                               ~~~~[0m
+[96msrc/services/job.service.ts[0m:[93m213[0m:[93m67[0m - [91merror[0m[90m TS2304: [0mCannot find name 'body'.
+
+[7m213[0m                 custom_slug: Helper.renderSlug(body.custom_slug ? body.custom_slug : body.name),
+[7m   [0m [91m                                                                  ~~~~[0m
+[96msrc/services/job.service.ts[0m:[93m213[0m:[93m86[0m - [91merror[0m[90m TS2304: [0mCannot find name 'body'.
+
+[7m213[0m                 custom_slug: Helper.renderSlug(body.custom_slug ? body.custom_slug : body.name),
+[7m   [0m [91m                                                                                     ~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-18 00:42:02 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/services/job.service.ts[0m:[93m195[0m:[93m82[0m - [91merror[0m[90m TS2345: [0mArgument of type '{ job_id: any; lang: any; newItem: { name: any; status: any; description: any; expried_date: any; address_work: any; location: any; isFeatured: any; required: any; benefit: any; custom_slug: any; meta_title: any; ... 6 more ...; slug: any; }; }' is not assignable to parameter of type '{ job_id: any; lang?: string; body: any; }'.
+  Object literal may only specify known properties, and 'newItem' does not exist in type '{ job_id: any; lang?: string; body: any; }'.
+
+[7m195[0m                         await this.handleUpdate({ job_id: id, lang: global.lang, newItem });
+[7m   [0m [91m                                                                                 ~~~~~~~[0m
+[96msrc/services/job.service.ts[0m:[93m196[0m:[93m82[0m - [91merror[0m[90m TS2345: [0mArgument of type '{ job_id: any; lang: any; newItem: { name: any; status: any; description: any; expried_date: any; address_work: any; location: any; isFeatured: any; required: any; benefit: any; custom_slug: any; meta_title: any; ... 6 more ...; slug: any; }; }' is not assignable to parameter of type '{ job_id: any; lang?: string; body: any; }'.
+  Object literal may only specify known properties, and 'newItem' does not exist in type '{ job_id: any; lang?: string; body: any; }'.
+
+[7m196[0m                         await this.handleUpdate({ job_id: id, lang: global.lang, newItem });
+[7m   [0m [91m                                                                                 ~~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/services/job.service.ts[0m:[93m195[0m:[93m82[0m - [91merror[0m[90m TS2345: [0mArgument of type '{ job_id: any; lang: any; newItem: { name: any; status: any; description: any; expried_date: any; address_work: any; location: any; isFeatured: any; required: any; benefit: any; custom_slug: any; meta_title: any; ... 6 more ...; slug: any; }; }' is not assignable to parameter of type '{ job_id: any; lang?: string; body: any; }'.
+  Object literal may only specify known properties, and 'newItem' does not exist in type '{ job_id: any; lang?: string; body: any; }'.
+
+[7m195[0m                         await this.handleUpdate({ job_id: id, lang: global.lang, newItem });
+[7m   [0m [91m                                                                                 ~~~~~~~[0m
+[96msrc/services/job.service.ts[0m:[93m196[0m:[93m82[0m - [91merror[0m[90m TS2345: [0mArgument of type '{ job_id: any; lang: any; newItem: { name: any; status: any; description: any; expried_date: any; address_work: any; location: any; isFeatured: any; required: any; benefit: any; custom_slug: any; meta_title: any; ... 6 more ...; slug: any; }; }' is not assignable to parameter of type '{ job_id: any; lang?: string; body: any; }'.
+  Object literal may only specify known properties, and 'newItem' does not exist in type '{ job_id: any; lang?: string; body: any; }'.
+
+[7m196[0m                         await this.handleUpdate({ job_id: id, lang: global.lang, newItem });
+[7m   [0m [91m                                                                                 ~~~~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-18 00:42:28 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/services/job.service.ts[0m:[93m195[0m:[93m82[0m - [91merror[0m[90m TS2345: [0mArgument of type '{ job_id: any; lang: any; newItem: { name: any; status: any; description: any; expried_date: any; address_work: any; location: any; isFeatured: any; required: any; benefit: any; custom_slug: any; meta_title: any; ... 6 more ...; slug: any; }; }' is not assignable to parameter of type '{ job_id: any; lang?: string; body: any; }'.
+  Object literal may only specify known properties, and 'newItem' does not exist in type '{ job_id: any; lang?: string; body: any; }'.
+
+[7m195[0m                         await this.handleUpdate({ job_id: id, lang: global.lang, newItem });
+[7m   [0m [91m                                                                                 ~~~~~~~[0m
+[96msrc/services/job.service.ts[0m:[93m196[0m:[93m82[0m - [91merror[0m[90m TS2345: [0mArgument of type '{ job_id: any; lang: any; newItem: { name: any; status: any; description: any; expried_date: any; address_work: any; location: any; isFeatured: any; required: any; benefit: any; custom_slug: any; meta_title: any; ... 6 more ...; slug: any; }; }' is not assignable to parameter of type '{ job_id: any; lang?: string; body: any; }'.
+  Object literal may only specify known properties, and 'newItem' does not exist in type '{ job_id: any; lang?: string; body: any; }'.
+
+[7m196[0m                         await this.handleUpdate({ job_id: id, lang: global.lang, newItem });
+[7m   [0m [91m                                                                                 ~~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/services/job.service.ts[0m:[93m195[0m:[93m82[0m - [91merror[0m[90m TS2345: [0mArgument of type '{ job_id: any; lang: any; newItem: { name: any; status: any; description: any; expried_date: any; address_work: any; location: any; isFeatured: any; required: any; benefit: any; custom_slug: any; meta_title: any; ... 6 more ...; slug: any; }; }' is not assignable to parameter of type '{ job_id: any; lang?: string; body: any; }'.
+  Object literal may only specify known properties, and 'newItem' does not exist in type '{ job_id: any; lang?: string; body: any; }'.
+
+[7m195[0m                         await this.handleUpdate({ job_id: id, lang: global.lang, newItem });
+[7m   [0m [91m                                                                                 ~~~~~~~[0m
+[96msrc/services/job.service.ts[0m:[93m196[0m:[93m82[0m - [91merror[0m[90m TS2345: [0mArgument of type '{ job_id: any; lang: any; newItem: { name: any; status: any; description: any; expried_date: any; address_work: any; location: any; isFeatured: any; required: any; benefit: any; custom_slug: any; meta_title: any; ... 6 more ...; slug: any; }; }' is not assignable to parameter of type '{ job_id: any; lang?: string; body: any; }'.
+  Object literal may only specify known properties, and 'newItem' does not exist in type '{ job_id: any; lang?: string; body: any; }'.
+
+[7m196[0m                         await this.handleUpdate({ job_id: id, lang: global.lang, newItem });
+[7m   [0m [91m                                                                                 ~~~~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-18 00:43:33 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/services/job.service.ts[0m:[93m195[0m:[93m82[0m - [91merror[0m[90m TS2345: [0mArgument of type '{ job_id: any; lang: any; newItem: { name: any; status: any; description: any; expried_date: any; address_work: any; location: any; isFeatured: any; required: any; benefit: any; custom_slug: any; meta_title: any; ... 6 more ...; slug: any; }; }' is not assignable to parameter of type '{ job_id: any; lang?: string; body: any; }'.
+  Object literal may only specify known properties, and 'newItem' does not exist in type '{ job_id: any; lang?: string; body: any; }'.
+
+[7m195[0m                         await this.handleUpdate({ job_id: id, lang: global.lang, newItem });
+[7m   [0m [91m                                                                                 ~~~~~~~[0m
+[96msrc/services/job.service.ts[0m:[93m196[0m:[93m82[0m - [91merror[0m[90m TS2345: [0mArgument of type '{ job_id: any; lang: any; newItem: { name: any; status: any; description: any; expried_date: any; address_work: any; location: any; isFeatured: any; required: any; benefit: any; custom_slug: any; meta_title: any; ... 6 more ...; slug: any; }; }' is not assignable to parameter of type '{ job_id: any; lang?: string; body: any; }'.
+  Object literal may only specify known properties, and 'newItem' does not exist in type '{ job_id: any; lang?: string; body: any; }'.
+
+[7m196[0m                         await this.handleUpdate({ job_id: id, lang: global.lang, newItem });
+[7m   [0m [91m                                                                                 ~~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/services/job.service.ts[0m:[93m195[0m:[93m82[0m - [91merror[0m[90m TS2345: [0mArgument of type '{ job_id: any; lang: any; newItem: { name: any; status: any; description: any; expried_date: any; address_work: any; location: any; isFeatured: any; required: any; benefit: any; custom_slug: any; meta_title: any; ... 6 more ...; slug: any; }; }' is not assignable to parameter of type '{ job_id: any; lang?: string; body: any; }'.
+  Object literal may only specify known properties, and 'newItem' does not exist in type '{ job_id: any; lang?: string; body: any; }'.
+
+[7m195[0m                         await this.handleUpdate({ job_id: id, lang: global.lang, newItem });
+[7m   [0m [91m                                                                                 ~~~~~~~[0m
+[96msrc/services/job.service.ts[0m:[93m196[0m:[93m82[0m - [91merror[0m[90m TS2345: [0mArgument of type '{ job_id: any; lang: any; newItem: { name: any; status: any; description: any; expried_date: any; address_work: any; location: any; isFeatured: any; required: any; benefit: any; custom_slug: any; meta_title: any; ... 6 more ...; slug: any; }; }' is not assignable to parameter of type '{ job_id: any; lang?: string; body: any; }'.
+  Object literal may only specify known properties, and 'newItem' does not exist in type '{ job_id: any; lang?: string; body: any; }'.
+
+[7m196[0m                         await this.handleUpdate({ job_id: id, lang: global.lang, newItem });
+[7m   [0m [91m                                                                                 ~~~~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-18 00:47:47 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/services/job.service.ts[0m:[93m168[0m:[93m13[0m - [91merror[0m[90m TS1005: [0m',' expected.
+
+[7m168[0m             description: body.description
+[7m   [0m [91m            ~~~~~~~~~~~[0m
+[96msrc/services/job.service.ts[0m:[93m169[0m:[93m13[0m - [91merror[0m[90m TS1005: [0m',' expected.
+
+[7m169[0m             expried_date: body.expried_date
+[7m   [0m [91m            ~~~~~~~~~~~~[0m
+[96msrc/services/job.service.ts[0m:[93m170[0m:[93m13[0m - [91merror[0m[90m TS1005: [0m',' expected.
+
+[7m170[0m             address_work: body.address_work
+[7m   [0m [91m            ~~~~~~~~~~~~[0m
+[96msrc/services/job.service.ts[0m:[93m171[0m:[93m13[0m - [91merror[0m[90m TS1005: [0m',' expected.
+
+[7m171[0m             location: body.location
+[7m   [0m [91m            ~~~~~~~~[0m
+[96msrc/services/job.service.ts[0m:[93m172[0m:[93m13[0m - [91merror[0m[90m TS1005: [0m',' expected.
+
+[7m172[0m             isFeatured: body.isFeatured
+[7m   [0m [91m            ~~~~~~~~~~[0m
+[96msrc/services/job.service.ts[0m:[93m173[0m:[93m13[0m - [91merror[0m[90m TS1005: [0m',' expected.
+
+[7m173[0m             required:body.required
+[7m   [0m [91m            ~~~~~~~~[0m
+[96msrc/services/job.service.ts[0m:[93m174[0m:[93m13[0m - [91merror[0m[90m TS1005: [0m',' expected.
+
+[7m174[0m             benefit: body.benefit
+[7m   [0m [91m            ~~~~~~~[0m
+[96msrc/services/job.service.ts[0m:[93m175[0m:[93m13[0m - [91merror[0m[90m TS1005: [0m',' expected.
+
+[7m175[0m             custom_slug: body.custom_slug
+[7m   [0m [91m            ~~~~~~~~~~~[0m
+[96msrc/services/job.service.ts[0m:[93m176[0m:[93m13[0m - [91merror[0m[90m TS1005: [0m',' expected.
+
+[7m176[0m             meta_title: body.meta_title
+[7m   [0m [91m            ~~~~~~~~~~[0m
+[96msrc/services/job.service.ts[0m:[93m177[0m:[93m13[0m - [91merror[0m[90m TS1005: [0m',' expected.
+
+[7m177[0m             meta_description: body.meta_description
+[7m   [0m [91m            ~~~~~~~~~~~~~~~~[0m
+[96msrc/services/job.service.ts[0m:[93m178[0m:[93m13[0m - [91merror[0m[90m TS1005: [0m',' expected.
+
+[7m178[0m             canonica_link: body.canonica_link
+[7m   [0m [91m            ~~~~~~~~~~~~~[0m
+[96msrc/services/job.service.ts[0m:[93m179[0m:[93m13[0m - [91merror[0m[90m TS1005: [0m',' expected.
+
+[7m179[0m             meta_robots: body.meta_robots
+[7m   [0m [91m            ~~~~~~~~~~~[0m
+[96msrc/services/job.service.ts[0m:[93m180[0m:[93m13[0m - [91merror[0m[90m TS1005: [0m',' expected.
+
+[7m180[0m             meta_image: body.meta_image
+[7m   [0m [91m            ~~~~~~~~~~[0m
+[96msrc/services/job.service.ts[0m:[93m181[0m:[93m13[0m - [91merror[0m[90m TS1005: [0m',' expected.
+
+[7m181[0m             related: body.related
+[7m   [0m [91m            ~~~~~~~[0m
+[96msrc/services/job.service.ts[0m:[93m182[0m:[93m13[0m - [91merror[0m[90m TS1005: [0m',' expected.
+
+[7m182[0m             locale: body.locale
+[7m   [0m [91m            ~~~~~~[0m
+[96msrc/services/job.service.ts[0m:[93m183[0m:[93m13[0m - [91merror[0m[90m TS1005: [0m',' expected.
+
+[7m183[0m             id: body.id
+[7m   [0m [91m            ~~[0m
+[96msrc/services/job.service.ts[0m:[93m184[0m:[93m13[0m - [91merror[0m[90m TS1005: [0m',' expected.
+
+[7m184[0m             slug: body.slug
+[7m   [0m [91m            ~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/services/job.service.ts[0m:[93m168[0m:[93m13[0m - [91merror[0m[90m TS1005: [0m',' expected.
+
+[7m168[0m             description: body.description
+[7m   [0m [91m            ~~~~~~~~~~~[0m
+[96msrc/services/job.service.ts[0m:[93m169[0m:[93m13[0m - [91merror[0m[90m TS1005: [0m',' expected.
+
+[7m169[0m             expried_date: body.expried_date
+[7m   [0m [91m            ~~~~~~~~~~~~[0m
+[96msrc/services/job.service.ts[0m:[93m170[0m:[93m13[0m - [91merror[0m[90m TS1005: [0m',' expected.
+
+[7m170[0m             address_work: body.address_work
+[7m   [0m [91m            ~~~~~~~~~~~~[0m
+[96msrc/services/job.service.ts[0m:[93m171[0m:[93m13[0m - [91merror[0m[90m TS1005: [0m',' expected.
+
+[7m171[0m             location: body.location
+[7m   [0m [91m            ~~~~~~~~[0m
+[96msrc/services/job.service.ts[0m:[93m172[0m:[93m13[0m - [91merror[0m[90m TS1005: [0m',' expected.
+
+[7m172[0m             isFeatured: body.isFeatured
+[7m   [0m [91m            ~~~~~~~~~~[0m
+[96msrc/services/job.service.ts[0m:[93m173[0m:[93m13[0m - [91merror[0m[90m TS1005: [0m',' expected.
+
+[7m173[0m             required:body.required
+[7m   [0m [91m            ~~~~~~~~[0m
+[96msrc/services/job.service.ts[0m:[93m174[0m:[93m13[0m - [91merror[0m[90m TS1005: [0m',' expected.
+
+[7m174[0m             benefit: body.benefit
+[7m   [0m [91m            ~~~~~~~[0m
+[96msrc/services/job.service.ts[0m:[93m175[0m:[93m13[0m - [91merror[0m[90m TS1005: [0m',' expected.
+
+[7m175[0m             custom_slug: body.custom_slug
+[7m   [0m [91m            ~~~~~~~~~~~[0m
+[96msrc/services/job.service.ts[0m:[93m176[0m:[93m13[0m - [91merror[0m[90m TS1005: [0m',' expected.
+
+[7m176[0m             meta_title: body.meta_title
+[7m   [0m [91m            ~~~~~~~~~~[0m
+[96msrc/services/job.service.ts[0m:[93m177[0m:[93m13[0m - [91merror[0m[90m TS1005: [0m',' expected.
+
+[7m177[0m             meta_description: body.meta_description
+[7m   [0m [91m            ~~~~~~~~~~~~~~~~[0m
+[96msrc/services/job.service.ts[0m:[93m178[0m:[93m13[0m - [91merror[0m[90m TS1005: [0m',' expected.
+
+[7m178[0m             canonica_link: body.canonica_link
+[7m   [0m [91m            ~~~~~~~~~~~~~[0m
+[96msrc/services/job.service.ts[0m:[93m179[0m:[93m13[0m - [91merror[0m[90m TS1005: [0m',' expected.
+
+[7m179[0m             meta_robots: body.meta_robots
+[7m   [0m [91m            ~~~~~~~~~~~[0m
+[96msrc/services/job.service.ts[0m:[93m180[0m:[93m13[0m - [91merror[0m[90m TS1005: [0m',' expected.
+
+[7m180[0m             meta_image: body.meta_image
+[7m   [0m [91m            ~~~~~~~~~~[0m
+[96msrc/services/job.service.ts[0m:[93m181[0m:[93m13[0m - [91merror[0m[90m TS1005: [0m',' expected.
+
+[7m181[0m             related: body.related
+[7m   [0m [91m            ~~~~~~~[0m
+[96msrc/services/job.service.ts[0m:[93m182[0m:[93m13[0m - [91merror[0m[90m TS1005: [0m',' expected.
+
+[7m182[0m             locale: body.locale
+[7m   [0m [91m            ~~~~~~[0m
+[96msrc/services/job.service.ts[0m:[93m183[0m:[93m13[0m - [91merror[0m[90m TS1005: [0m',' expected.
+
+[7m183[0m             id: body.id
+[7m   [0m [91m            ~~[0m
+[96msrc/services/job.service.ts[0m:[93m184[0m:[93m13[0m - [91merror[0m[90m TS1005: [0m',' expected.
+
+[7m184[0m             slug: body.slug
+[7m   [0m [91m            ~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-18 00:48:13 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/services/job.service.ts[0m:[93m194[0m:[93m49[0m - [91merror[0m[90m TS2304: [0mCannot find name 'job_id'.
+
+[7m194[0m                         await this.handleUpdate(job_id: id, lang: global.lang, newItem);
+[7m   [0m [91m                                                ~~~~~~[0m
+[96msrc/services/job.service.ts[0m:[93m194[0m:[93m57[0m - [91merror[0m[90m TS2554: [0mExpected 1 arguments, but got 5.
+
+[7m194[0m                         await this.handleUpdate(job_id: id, lang: global.lang, newItem);
+[7m   [0m [91m                                                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+[96msrc/services/job.service.ts[0m:[93m194[0m:[93m61[0m - [91merror[0m[90m TS2304: [0mCannot find name 'lang'.
+
+[7m194[0m                         await this.handleUpdate(job_id: id, lang: global.lang, newItem);
+[7m   [0m [91m                                                            ~~~~[0m
+[96msrc/services/job.service.ts[0m:[93m195[0m:[93m49[0m - [91merror[0m[90m TS2304: [0mCannot find name 'job_id'.
+
+[7m195[0m                         await this.handleUpdate(job_id: id, lang: global.lang, newItem);
+[7m   [0m [91m                                                ~~~~~~[0m
+[96msrc/services/job.service.ts[0m:[93m195[0m:[93m57[0m - [91merror[0m[90m TS2554: [0mExpected 1 arguments, but got 5.
+
+[7m195[0m                         await this.handleUpdate(job_id: id, lang: global.lang, newItem);
+[7m   [0m [91m                                                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+[96msrc/services/job.service.ts[0m:[93m195[0m:[93m61[0m - [91merror[0m[90m TS2304: [0mCannot find name 'lang'.
+
+[7m195[0m                         await this.handleUpdate(job_id: id, lang: global.lang, newItem);
+[7m   [0m [91m                                                            ~~~~[0m
+[96msrc/services/job.service.ts[0m:[93m194[0m:[93m55[0m - [91merror[0m[90m TS1005: [0m',' expected.
+
+[7m194[0m                         await this.handleUpdate(job_id: id, lang: global.lang, newItem);
+[7m   [0m [91m                                                      ~[0m
+[96msrc/services/job.service.ts[0m:[93m194[0m:[93m65[0m - [91merror[0m[90m TS1005: [0m',' expected.
+
+[7m194[0m                         await this.handleUpdate(job_id: id, lang: global.lang, newItem);
+[7m   [0m [91m                                                                ~[0m
+[96msrc/services/job.service.ts[0m:[93m195[0m:[93m55[0m - [91merror[0m[90m TS1005: [0m',' expected.
+
+[7m195[0m                         await this.handleUpdate(job_id: id, lang: global.lang, newItem);
+[7m   [0m [91m                                                      ~[0m
+[96msrc/services/job.service.ts[0m:[93m195[0m:[93m65[0m - [91merror[0m[90m TS1005: [0m',' expected.
+
+[7m195[0m                         await this.handleUpdate(job_id: id, lang: global.lang, newItem);
+[7m   [0m [91m                                                                ~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/services/job.service.ts[0m:[93m194[0m:[93m49[0m - [91merror[0m[90m TS2304: [0mCannot find name 'job_id'.
+
+[7m194[0m                         await this.handleUpdate(job_id: id, lang: global.lang, newItem);
+[7m   [0m [91m                                                ~~~~~~[0m
+[96msrc/services/job.service.ts[0m:[93m194[0m:[93m57[0m - [91merror[0m[90m TS2554: [0mExpected 1 arguments, but got 5.
+
+[7m194[0m                         await this.handleUpdate(job_id: id, lang: global.lang, newItem);
+[7m   [0m [91m                                                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+[96msrc/services/job.service.ts[0m:[93m194[0m:[93m61[0m - [91merror[0m[90m TS2304: [0mCannot find name 'lang'.
+
+[7m194[0m                         await this.handleUpdate(job_id: id, lang: global.lang, newItem);
+[7m   [0m [91m                                                            ~~~~[0m
+[96msrc/services/job.service.ts[0m:[93m195[0m:[93m49[0m - [91merror[0m[90m TS2304: [0mCannot find name 'job_id'.
+
+[7m195[0m                         await this.handleUpdate(job_id: id, lang: global.lang, newItem);
+[7m   [0m [91m                                                ~~~~~~[0m
+[96msrc/services/job.service.ts[0m:[93m195[0m:[93m57[0m - [91merror[0m[90m TS2554: [0mExpected 1 arguments, but got 5.
+
+[7m195[0m                         await this.handleUpdate(job_id: id, lang: global.lang, newItem);
+[7m   [0m [91m                                                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+[96msrc/services/job.service.ts[0m:[93m195[0m:[93m61[0m - [91merror[0m[90m TS2304: [0mCannot find name 'lang'.
+
+[7m195[0m                         await this.handleUpdate(job_id: id, lang: global.lang, newItem);
+[7m   [0m [91m                                                            ~~~~[0m
+[96msrc/services/job.service.ts[0m:[93m194[0m:[93m55[0m - [91merror[0m[90m TS1005: [0m',' expected.
+
+[7m194[0m                         await this.handleUpdate(job_id: id, lang: global.lang, newItem);
+[7m   [0m [91m                                                      ~[0m
+[96msrc/services/job.service.ts[0m:[93m194[0m:[93m65[0m - [91merror[0m[90m TS1005: [0m',' expected.
+
+[7m194[0m                         await this.handleUpdate(job_id: id, lang: global.lang, newItem);
+[7m   [0m [91m                                                                ~[0m
+[96msrc/services/job.service.ts[0m:[93m195[0m:[93m55[0m - [91merror[0m[90m TS1005: [0m',' expected.
+
+[7m195[0m                         await this.handleUpdate(job_id: id, lang: global.lang, newItem);
+[7m   [0m [91m                                                      ~[0m
+[96msrc/services/job.service.ts[0m:[93m195[0m:[93m65[0m - [91merror[0m[90m TS1005: [0m',' expected.
+
+[7m195[0m                         await this.handleUpdate(job_id: id, lang: global.lang, newItem);
+[7m   [0m [91m                                                                ~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-18 00:48:19 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/services/job.service.ts[0m:[93m194[0m:[93m49[0m - [91merror[0m[90m TS2304: [0mCannot find name 'job_id'.
+
+[7m194[0m                         await this.handleUpdate(job_id: id, lang: global.lang, newItem);
+[7m   [0m [91m                                                ~~~~~~[0m
+[96msrc/services/job.service.ts[0m:[93m194[0m:[93m61[0m - [91merror[0m[90m TS2304: [0mCannot find name 'lang'.
+
+[7m194[0m                         await this.handleUpdate(job_id: id, lang: global.lang, newItem);
+[7m   [0m [91m                                                            ~~~~[0m
+[96msrc/services/job.service.ts[0m:[93m194[0m:[93m67[0m - [91merror[0m[90m TS2554: [0mExpected 3 arguments, but got 5.
+
+[7m194[0m                         await this.handleUpdate(job_id: id, lang: global.lang, newItem);
+[7m   [0m [91m                                                                  ~~~~~~~~~~~~~~~~~~~~[0m
+[96msrc/services/job.service.ts[0m:[93m195[0m:[93m49[0m - [91merror[0m[90m TS2304: [0mCannot find name 'job_id'.
+
+[7m195[0m                         await this.handleUpdate(job_id: id, lang: global.lang, newItem);
+[7m   [0m [91m                                                ~~~~~~[0m
+[96msrc/services/job.service.ts[0m:[93m195[0m:[93m61[0m - [91merror[0m[90m TS2304: [0mCannot find name 'lang'.
+
+[7m195[0m                         await this.handleUpdate(job_id: id, lang: global.lang, newItem);
+[7m   [0m [91m                                                            ~~~~[0m
+[96msrc/services/job.service.ts[0m:[93m195[0m:[93m67[0m - [91merror[0m[90m TS2554: [0mExpected 3 arguments, but got 5.
+
+[7m195[0m                         await this.handleUpdate(job_id: id, lang: global.lang, newItem);
+[7m   [0m [91m                                                                  ~~~~~~~~~~~~~~~~~~~~[0m
+[96msrc/services/job.service.ts[0m:[93m194[0m:[93m55[0m - [91merror[0m[90m TS1005: [0m',' expected.
+
+[7m194[0m                         await this.handleUpdate(job_id: id, lang: global.lang, newItem);
+[7m   [0m [91m                                                      ~[0m
+[96msrc/services/job.service.ts[0m:[93m194[0m:[93m65[0m - [91merror[0m[90m TS1005: [0m',' expected.
+
+[7m194[0m                         await this.handleUpdate(job_id: id, lang: global.lang, newItem);
+[7m   [0m [91m                                                                ~[0m
+[96msrc/services/job.service.ts[0m:[93m195[0m:[93m55[0m - [91merror[0m[90m TS1005: [0m',' expected.
+
+[7m195[0m                         await this.handleUpdate(job_id: id, lang: global.lang, newItem);
+[7m   [0m [91m                                                      ~[0m
+[96msrc/services/job.service.ts[0m:[93m195[0m:[93m65[0m - [91merror[0m[90m TS1005: [0m',' expected.
+
+[7m195[0m                         await this.handleUpdate(job_id: id, lang: global.lang, newItem);
+[7m   [0m [91m                                                                ~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/services/job.service.ts[0m:[93m194[0m:[93m49[0m - [91merror[0m[90m TS2304: [0mCannot find name 'job_id'.
+
+[7m194[0m                         await this.handleUpdate(job_id: id, lang: global.lang, newItem);
+[7m   [0m [91m                                                ~~~~~~[0m
+[96msrc/services/job.service.ts[0m:[93m194[0m:[93m61[0m - [91merror[0m[90m TS2304: [0mCannot find name 'lang'.
+
+[7m194[0m                         await this.handleUpdate(job_id: id, lang: global.lang, newItem);
+[7m   [0m [91m                                                            ~~~~[0m
+[96msrc/services/job.service.ts[0m:[93m194[0m:[93m67[0m - [91merror[0m[90m TS2554: [0mExpected 3 arguments, but got 5.
+
+[7m194[0m                         await this.handleUpdate(job_id: id, lang: global.lang, newItem);
+[7m   [0m [91m                                                                  ~~~~~~~~~~~~~~~~~~~~[0m
+[96msrc/services/job.service.ts[0m:[93m195[0m:[93m49[0m - [91merror[0m[90m TS2304: [0mCannot find name 'job_id'.
+
+[7m195[0m                         await this.handleUpdate(job_id: id, lang: global.lang, newItem);
+[7m   [0m [91m                                                ~~~~~~[0m
+[96msrc/services/job.service.ts[0m:[93m195[0m:[93m61[0m - [91merror[0m[90m TS2304: [0mCannot find name 'lang'.
+
+[7m195[0m                         await this.handleUpdate(job_id: id, lang: global.lang, newItem);
+[7m   [0m [91m                                                            ~~~~[0m
+[96msrc/services/job.service.ts[0m:[93m195[0m:[93m67[0m - [91merror[0m[90m TS2554: [0mExpected 3 arguments, but got 5.
+
+[7m195[0m                         await this.handleUpdate(job_id: id, lang: global.lang, newItem);
+[7m   [0m [91m                                                                  ~~~~~~~~~~~~~~~~~~~~[0m
+[96msrc/services/job.service.ts[0m:[93m194[0m:[93m55[0m - [91merror[0m[90m TS1005: [0m',' expected.
+
+[7m194[0m                         await this.handleUpdate(job_id: id, lang: global.lang, newItem);
+[7m   [0m [91m                                                      ~[0m
+[96msrc/services/job.service.ts[0m:[93m194[0m:[93m65[0m - [91merror[0m[90m TS1005: [0m',' expected.
+
+[7m194[0m                         await this.handleUpdate(job_id: id, lang: global.lang, newItem);
+[7m   [0m [91m                                                                ~[0m
+[96msrc/services/job.service.ts[0m:[93m195[0m:[93m55[0m - [91merror[0m[90m TS1005: [0m',' expected.
+
+[7m195[0m                         await this.handleUpdate(job_id: id, lang: global.lang, newItem);
+[7m   [0m [91m                                                      ~[0m
+[96msrc/services/job.service.ts[0m:[93m195[0m:[93m65[0m - [91merror[0m[90m TS1005: [0m',' expected.
+
+[7m195[0m                         await this.handleUpdate(job_id: id, lang: global.lang, newItem);
+[7m   [0m [91m                                                                ~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-18 00:57:43 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/utils/Helper.ts[0m:[93m78[0m:[93m16[0m - [91merror[0m[90m TS2393: [0mDuplicate function implementation.
+
+[7m78[0m   static async hashPassword(password: string = "123", number: number = 8) {
+[7m  [0m [91m               ~~~~~~~~~~~~[0m
+[96msrc/utils/Helper.ts[0m:[93m82[0m:[93m16[0m - [91merror[0m[90m TS2393: [0mDuplicate function implementation.
+
+[7m82[0m   static async hashPassword(password: string = "123", number: number = 8) {
+[7m  [0m [91m               ~~~~~~~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/utils/Helper.ts[0m:[93m78[0m:[93m16[0m - [91merror[0m[90m TS2393: [0mDuplicate function implementation.
+
+[7m78[0m   static async hashPassword(password: string = "123", number: number = 8) {
+[7m  [0m [91m               ~~~~~~~~~~~~[0m
+[96msrc/utils/Helper.ts[0m:[93m82[0m:[93m16[0m - [91merror[0m[90m TS2393: [0mDuplicate function implementation.
+
+[7m82[0m   static async hashPassword(password: string = "123", number: number = 8) {
+[7m  [0m [91m               ~~~~~~~~~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-18 00:57:48 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/utils/Helper.ts[0m:[93m78[0m:[93m16[0m - [91merror[0m[90m TS2393: [0mDuplicate function implementation.
+
+[7m78[0m   static async hashPassword(password: string = "123", number: number = 8) {
+[7m  [0m [91m               ~~~~~~~~~~~~[0m
+[96msrc/utils/Helper.ts[0m:[93m82[0m:[93m16[0m - [91merror[0m[90m TS2393: [0mDuplicate function implementation.
+
+[7m82[0m   static async hashPassword(password: string = "123", number: number = 8) {
+[7m  [0m [91m               ~~~~~~~~~~~~[0m
+[96msrc/utils/Helper.ts[0m:[93m84[0m:[93m13[0m - [91merror[0m[90m TS2304: [0mCannot find name 'translationData'.
+
+[7m84[0m       slug: translationData.slug || "",
+[7m  [0m [91m            ~~~~~~~~~~~~~~~[0m
+[96msrc/utils/Helper.ts[0m:[93m85[0m:[93m20[0m - [91merror[0m[90m TS2304: [0mCannot find name 'translationData'.
+
+[7m85[0m       custom_slug: translationData.custom_slug || "",
+[7m  [0m [91m                   ~~~~~~~~~~~~~~~[0m
+[96msrc/utils/Helper.ts[0m:[93m86[0m:[93m19[0m - [91merror[0m[90m TS2304: [0mCannot find name 'translationData'.
+
+[7m86[0m       meta_title: translationData.meta_title || "",
+[7m  [0m [91m                  ~~~~~~~~~~~~~~~[0m
+[96msrc/utils/Helper.ts[0m:[93m87[0m:[93m25[0m - [91merror[0m[90m TS2304: [0mCannot find name 'translationData'.
+
+[7m87[0m       meta_description: translationData.meta_description || "",
+[7m  [0m [91m                        ~~~~~~~~~~~~~~~[0m
+[96msrc/utils/Helper.ts[0m:[93m88[0m:[93m21[0m - [91merror[0m[90m TS2304: [0mCannot find name 'translationData'.
+
+[7m88[0m       meta_keyword: translationData.meta_keyword || "",
+[7m  [0m [91m                    ~~~~~~~~~~~~~~~[0m
+[96msrc/utils/Helper.ts[0m:[93m89[0m:[93m20[0m - [91merror[0m[90m TS2304: [0mCannot find name 'translationData'.
+
+[7m89[0m       meta_robots: translationData.meta_robots || "",
+[7m  [0m [91m                   ~~~~~~~~~~~~~~~[0m
+[96msrc/utils/Helper.ts[0m:[93m90[0m:[93m22[0m - [91merror[0m[90m TS2304: [0mCannot find name 'translationData'.
+
+[7m90[0m       canonica_link: translationData.canonica_link || "",
+[7m  [0m [91m                     ~~~~~~~~~~~~~~~[0m
+[96msrc/utils/Helper.ts[0m:[93m91[0m:[93m19[0m - [91merror[0m[90m TS2304: [0mCannot find name 'translationData'.
+
+[7m91[0m       meta_image: translationData.meta_image || "",
+[7m  [0m [91m                  ~~~~~~~~~~~~~~~[0m
+[96msrc/utils/Helper.ts[0m:[93m92[0m:[93m22[0m - [91merror[0m[90m TS2304: [0mCannot find name 'translationData'.
+
+[7m92[0m       meta_viewport: translationData.meta_viewport || "",
+[7m  [0m [91m                     ~~~~~~~~~~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/utils/Helper.ts[0m:[93m78[0m:[93m16[0m - [91merror[0m[90m TS2393: [0mDuplicate function implementation.
+
+[7m78[0m   static async hashPassword(password: string = "123", number: number = 8) {
+[7m  [0m [91m               ~~~~~~~~~~~~[0m
+[96msrc/utils/Helper.ts[0m:[93m82[0m:[93m16[0m - [91merror[0m[90m TS2393: [0mDuplicate function implementation.
+
+[7m82[0m   static async hashPassword(password: string = "123", number: number = 8) {
+[7m  [0m [91m               ~~~~~~~~~~~~[0m
+[96msrc/utils/Helper.ts[0m:[93m84[0m:[93m13[0m - [91merror[0m[90m TS2304: [0mCannot find name 'translationData'.
+
+[7m84[0m       slug: translationData.slug || "",
+[7m  [0m [91m            ~~~~~~~~~~~~~~~[0m
+[96msrc/utils/Helper.ts[0m:[93m85[0m:[93m20[0m - [91merror[0m[90m TS2304: [0mCannot find name 'translationData'.
+
+[7m85[0m       custom_slug: translationData.custom_slug || "",
+[7m  [0m [91m                   ~~~~~~~~~~~~~~~[0m
+[96msrc/utils/Helper.ts[0m:[93m86[0m:[93m19[0m - [91merror[0m[90m TS2304: [0mCannot find name 'translationData'.
+
+[7m86[0m       meta_title: translationData.meta_title || "",
+[7m  [0m [91m                  ~~~~~~~~~~~~~~~[0m
+[96msrc/utils/Helper.ts[0m:[93m87[0m:[93m25[0m - [91merror[0m[90m TS2304: [0mCannot find name 'translationData'.
+
+[7m87[0m       meta_description: translationData.meta_description || "",
+[7m  [0m [91m                        ~~~~~~~~~~~~~~~[0m
+[96msrc/utils/Helper.ts[0m:[93m88[0m:[93m21[0m - [91merror[0m[90m TS2304: [0mCannot find name 'translationData'.
+
+[7m88[0m       meta_keyword: translationData.meta_keyword || "",
+[7m  [0m [91m                    ~~~~~~~~~~~~~~~[0m
+[96msrc/utils/Helper.ts[0m:[93m89[0m:[93m20[0m - [91merror[0m[90m TS2304: [0mCannot find name 'translationData'.
+
+[7m89[0m       meta_robots: translationData.meta_robots || "",
+[7m  [0m [91m                   ~~~~~~~~~~~~~~~[0m
+[96msrc/utils/Helper.ts[0m:[93m90[0m:[93m22[0m - [91merror[0m[90m TS2304: [0mCannot find name 'translationData'.
+
+[7m90[0m       canonica_link: translationData.canonica_link || "",
+[7m  [0m [91m                     ~~~~~~~~~~~~~~~[0m
+[96msrc/utils/Helper.ts[0m:[93m91[0m:[93m19[0m - [91merror[0m[90m TS2304: [0mCannot find name 'translationData'.
+
+[7m91[0m       meta_image: translationData.meta_image || "",
+[7m  [0m [91m                  ~~~~~~~~~~~~~~~[0m
+[96msrc/utils/Helper.ts[0m:[93m92[0m:[93m22[0m - [91merror[0m[90m TS2304: [0mCannot find name 'translationData'.
+
+[7m92[0m       meta_viewport: translationData.meta_viewport || "",
+[7m  [0m [91m                     ~~~~~~~~~~~~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-18 00:57:52 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/utils/Helper.ts[0m:[93m78[0m:[93m16[0m - [91merror[0m[90m TS2393: [0mDuplicate function implementation.
+
+[7m78[0m   static async hashPassword(password: string = "123", number: number = 8) {
+[7m  [0m [91m               ~~~~~~~~~~~~[0m
+[96msrc/utils/Helper.ts[0m:[93m82[0m:[93m16[0m - [91merror[0m[90m TS2393: [0mDuplicate function implementation.
+
+[7m82[0m   static async hashPassword(password: string = "123", number: number = 8) {
+[7m  [0m [91m               ~~~~~~~~~~~~[0m
+[96msrc/utils/Helper.ts[0m:[93m84[0m:[93m13[0m - [91merror[0m[90m TS2304: [0mCannot find name 'item'.
+
+[7m84[0m       slug: item.slug || "",
+[7m  [0m [91m            ~~~~[0m
+[96msrc/utils/Helper.ts[0m:[93m85[0m:[93m20[0m - [91merror[0m[90m TS2304: [0mCannot find name 'item'.
+
+[7m85[0m       custom_slug: item.custom_slug || "",
+[7m  [0m [91m                   ~~~~[0m
+[96msrc/utils/Helper.ts[0m:[93m86[0m:[93m19[0m - [91merror[0m[90m TS2304: [0mCannot find name 'item'.
+
+[7m86[0m       meta_title: item.meta_title || "",
+[7m  [0m [91m                  ~~~~[0m
+[96msrc/utils/Helper.ts[0m:[93m87[0m:[93m25[0m - [91merror[0m[90m TS2304: [0mCannot find name 'item'.
+
+[7m87[0m       meta_description: item.meta_description || "",
+[7m  [0m [91m                        ~~~~[0m
+[96msrc/utils/Helper.ts[0m:[93m88[0m:[93m21[0m - [91merror[0m[90m TS2304: [0mCannot find name 'item'.
+
+[7m88[0m       meta_keyword: item.meta_keyword || "",
+[7m  [0m [91m                    ~~~~[0m
+[96msrc/utils/Helper.ts[0m:[93m89[0m:[93m20[0m - [91merror[0m[90m TS2304: [0mCannot find name 'item'.
+
+[7m89[0m       meta_robots: item.meta_robots || "",
+[7m  [0m [91m                   ~~~~[0m
+[96msrc/utils/Helper.ts[0m:[93m90[0m:[93m22[0m - [91merror[0m[90m TS2304: [0mCannot find name 'item'.
+
+[7m90[0m       canonica_link: item.canonica_link || "",
+[7m  [0m [91m                     ~~~~[0m
+[96msrc/utils/Helper.ts[0m:[93m91[0m:[93m19[0m - [91merror[0m[90m TS2304: [0mCannot find name 'item'.
+
+[7m91[0m       meta_image: item.meta_image || "",
+[7m  [0m [91m                  ~~~~[0m
+[96msrc/utils/Helper.ts[0m:[93m92[0m:[93m22[0m - [91merror[0m[90m TS2304: [0mCannot find name 'item'.
+
+[7m92[0m       meta_viewport: item.meta_viewport || "",
+[7m  [0m [91m                     ~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/utils/Helper.ts[0m:[93m78[0m:[93m16[0m - [91merror[0m[90m TS2393: [0mDuplicate function implementation.
+
+[7m78[0m   static async hashPassword(password: string = "123", number: number = 8) {
+[7m  [0m [91m               ~~~~~~~~~~~~[0m
+[96msrc/utils/Helper.ts[0m:[93m82[0m:[93m16[0m - [91merror[0m[90m TS2393: [0mDuplicate function implementation.
+
+[7m82[0m   static async hashPassword(password: string = "123", number: number = 8) {
+[7m  [0m [91m               ~~~~~~~~~~~~[0m
+[96msrc/utils/Helper.ts[0m:[93m84[0m:[93m13[0m - [91merror[0m[90m TS2304: [0mCannot find name 'item'.
+
+[7m84[0m       slug: item.slug || "",
+[7m  [0m [91m            ~~~~[0m
+[96msrc/utils/Helper.ts[0m:[93m85[0m:[93m20[0m - [91merror[0m[90m TS2304: [0mCannot find name 'item'.
+
+[7m85[0m       custom_slug: item.custom_slug || "",
+[7m  [0m [91m                   ~~~~[0m
+[96msrc/utils/Helper.ts[0m:[93m86[0m:[93m19[0m - [91merror[0m[90m TS2304: [0mCannot find name 'item'.
+
+[7m86[0m       meta_title: item.meta_title || "",
+[7m  [0m [91m                  ~~~~[0m
+[96msrc/utils/Helper.ts[0m:[93m87[0m:[93m25[0m - [91merror[0m[90m TS2304: [0mCannot find name 'item'.
+
+[7m87[0m       meta_description: item.meta_description || "",
+[7m  [0m [91m                        ~~~~[0m
+[96msrc/utils/Helper.ts[0m:[93m88[0m:[93m21[0m - [91merror[0m[90m TS2304: [0mCannot find name 'item'.
+
+[7m88[0m       meta_keyword: item.meta_keyword || "",
+[7m  [0m [91m                    ~~~~[0m
+[96msrc/utils/Helper.ts[0m:[93m89[0m:[93m20[0m - [91merror[0m[90m TS2304: [0mCannot find name 'item'.
+
+[7m89[0m       meta_robots: item.meta_robots || "",
+[7m  [0m [91m                   ~~~~[0m
+[96msrc/utils/Helper.ts[0m:[93m90[0m:[93m22[0m - [91merror[0m[90m TS2304: [0mCannot find name 'item'.
+
+[7m90[0m       canonica_link: item.canonica_link || "",
+[7m  [0m [91m                     ~~~~[0m
+[96msrc/utils/Helper.ts[0m:[93m91[0m:[93m19[0m - [91merror[0m[90m TS2304: [0mCannot find name 'item'.
+
+[7m91[0m       meta_image: item.meta_image || "",
+[7m  [0m [91m                  ~~~~[0m
+[96msrc/utils/Helper.ts[0m:[93m92[0m:[93m22[0m - [91merror[0m[90m TS2304: [0mCannot find name 'item'.
+
+[7m92[0m       meta_viewport: item.meta_viewport || "",
+[7m  [0m [91m                     ~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-18 00:59:05 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/dtos/job.dtos.ts[0m:[93m61[0m:[93m23[0m - [91merror[0m[90m TS2339: [0mProperty 'Seo' does not exist on type 'typeof Helper'.
+
+[7m61[0m             ...Helper.Seo(item)
+[7m  [0m [91m                      ~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/dtos/job.dtos.ts[0m:[93m61[0m:[93m23[0m - [91merror[0m[90m TS2339: [0mProperty 'Seo' does not exist on type 'typeof Helper'.
+
+[7m61[0m             ...Helper.Seo(item)
+[7m  [0m [91m                      ~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-18 01:07:18 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/dtos/job.dtos.ts[0m:[93m59[0m:[93m19[0m - [91merror[0m[90m TS1005: [0m',' expected.
+
+[7m59[0m             Helper.FieldsSeo(item)
+[7m  [0m [91m                  ~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/dtos/job.dtos.ts[0m:[93m59[0m:[93m19[0m - [91merror[0m[90m TS1005: [0m',' expected.
+
+[7m59[0m             Helper.FieldsSeo(item)
+[7m  [0m [91m                  ~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-18 01:14:23 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/dtos/job.dtos.ts[0m:[93m46[0m:[93m16[0m - [91merror[0m[90m TS1109: [0mExpression expected.
+
+[7m46[0m             ....Helper.FieldsSeo(item)
+[7m  [0m [91m               ~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/dtos/job.dtos.ts[0m:[93m46[0m:[93m16[0m - [91merror[0m[90m TS1109: [0mExpression expected.
+
+[7m46[0m             ....Helper.FieldsSeo(item)
+[7m  [0m [91m               ~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-18 01:14:56 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/utils/Helper.ts[0m:[93m73[0m:[93m9[0m - [91merror[0m[90m TS2304: [0mCannot find name 'custom_slug'.
+
+[7m73[0m         custom_slug: item.custom_slug || "",
+[7m  [0m [91m        ~~~~~~~~~~~[0m
+[96msrc/utils/Helper.ts[0m:[93m74[0m:[93m11[0m - [91merror[0m[90m TS2304: [0mCannot find name 'meta_title'.
+
+[7m74[0m           meta_title: item.meta_title || "",
+[7m  [0m [91m          ~~~~~~~~~~[0m
+[96msrc/utils/Helper.ts[0m:[93m75[0m:[93m13[0m - [91merror[0m[90m TS2304: [0mCannot find name 'meta_description'.
+
+[7m75[0m             meta_description: item.meta_description || "",
+[7m  [0m [91m            ~~~~~~~~~~~~~~~~[0m
+[96msrc/utils/Helper.ts[0m:[93m76[0m:[93m15[0m - [91merror[0m[90m TS2304: [0mCannot find name 'meta_keyword'.
+
+[7m76[0m               meta_keyword: item.meta_keyword || "",
+[7m  [0m [91m              ~~~~~~~~~~~~[0m
+[96msrc/utils/Helper.ts[0m:[93m77[0m:[93m17[0m - [91merror[0m[90m TS2304: [0mCannot find name 'meta_robots'.
+
+[7m77[0m                 meta_robots: item.meta_robots || "",
+[7m  [0m [91m                ~~~~~~~~~~~[0m
+[96msrc/utils/Helper.ts[0m:[93m78[0m:[93m19[0m - [91merror[0m[90m TS2304: [0mCannot find name 'canonica_link'.
+
+[7m78[0m                   canonica_link: item.canonica_link || "",
+[7m  [0m [91m                  ~~~~~~~~~~~~~[0m
+[96msrc/utils/Helper.ts[0m:[93m79[0m:[93m21[0m - [91merror[0m[90m TS2304: [0mCannot find name 'meta_image'.
+
+[7m79[0m                     meta_image: item.meta_image || "",
+[7m  [0m [91m                    ~~~~~~~~~~[0m
+[96msrc/utils/Helper.ts[0m:[93m80[0m:[93m23[0m - [91merror[0m[90m TS2304: [0mCannot find name 'meta_viewport'.
+
+[7m80[0m                       meta_viewport: item.meta_viewport || "",
+[7m  [0m [91m                      ~~~~~~~~~~~~~[0m
+[96msrc/utils/Helper.ts[0m:[93m73[0m:[93m20[0m - [91merror[0m[90m TS1005: [0m';' expected.
+
+[7m73[0m         custom_slug: item.custom_slug || "",
+[7m  [0m [91m                   ~[0m
+[96msrc/utils/Helper.ts[0m:[93m74[0m:[93m21[0m - [91merror[0m[90m TS1005: [0m';' expected.
+
+[7m74[0m           meta_title: item.meta_title || "",
+[7m  [0m [91m                    ~[0m
+[96msrc/utils/Helper.ts[0m:[93m75[0m:[93m29[0m - [91merror[0m[90m TS1005: [0m';' expected.
+
+[7m75[0m             meta_description: item.meta_description || "",
+[7m  [0m [91m                            ~[0m
+[96msrc/utils/Helper.ts[0m:[93m76[0m:[93m27[0m - [91merror[0m[90m TS1005: [0m';' expected.
+
+[7m76[0m               meta_keyword: item.meta_keyword || "",
+[7m  [0m [91m                          ~[0m
+[96msrc/utils/Helper.ts[0m:[93m77[0m:[93m28[0m - [91merror[0m[90m TS1005: [0m';' expected.
+
+[7m77[0m                 meta_robots: item.meta_robots || "",
+[7m  [0m [91m                           ~[0m
+[96msrc/utils/Helper.ts[0m:[93m78[0m:[93m32[0m - [91merror[0m[90m TS1005: [0m';' expected.
+
+[7m78[0m                   canonica_link: item.canonica_link || "",
+[7m  [0m [91m                               ~[0m
+[96msrc/utils/Helper.ts[0m:[93m79[0m:[93m31[0m - [91merror[0m[90m TS1005: [0m';' expected.
+
+[7m79[0m                     meta_image: item.meta_image || "",
+[7m  [0m [91m                              ~[0m
+[96msrc/utils/Helper.ts[0m:[93m80[0m:[93m36[0m - [91merror[0m[90m TS1005: [0m';' expected.
+
+[7m80[0m                       meta_viewport: item.meta_viewport || "",
+[7m  [0m [91m                                   ~[0m
+[96msrc/utils/Helper.ts[0m:[93m81[0m:[93m5[0m - [91merror[0m[90m TS1109: [0mExpression expected.
+
+[7m81[0m     }
+[7m  [0m [91m    ~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/utils/Helper.ts[0m:[93m73[0m:[93m9[0m - [91merror[0m[90m TS2304: [0mCannot find name 'custom_slug'.
+
+[7m73[0m         custom_slug: item.custom_slug || "",
+[7m  [0m [91m        ~~~~~~~~~~~[0m
+[96msrc/utils/Helper.ts[0m:[93m74[0m:[93m11[0m - [91merror[0m[90m TS2304: [0mCannot find name 'meta_title'.
+
+[7m74[0m           meta_title: item.meta_title || "",
+[7m  [0m [91m          ~~~~~~~~~~[0m
+[96msrc/utils/Helper.ts[0m:[93m75[0m:[93m13[0m - [91merror[0m[90m TS2304: [0mCannot find name 'meta_description'.
+
+[7m75[0m             meta_description: item.meta_description || "",
+[7m  [0m [91m            ~~~~~~~~~~~~~~~~[0m
+[96msrc/utils/Helper.ts[0m:[93m76[0m:[93m15[0m - [91merror[0m[90m TS2304: [0mCannot find name 'meta_keyword'.
+
+[7m76[0m               meta_keyword: item.meta_keyword || "",
+[7m  [0m [91m              ~~~~~~~~~~~~[0m
+[96msrc/utils/Helper.ts[0m:[93m77[0m:[93m17[0m - [91merror[0m[90m TS2304: [0mCannot find name 'meta_robots'.
+
+[7m77[0m                 meta_robots: item.meta_robots || "",
+[7m  [0m [91m                ~~~~~~~~~~~[0m
+[96msrc/utils/Helper.ts[0m:[93m78[0m:[93m19[0m - [91merror[0m[90m TS2304: [0mCannot find name 'canonica_link'.
+
+[7m78[0m                   canonica_link: item.canonica_link || "",
+[7m  [0m [91m                  ~~~~~~~~~~~~~[0m
+[96msrc/utils/Helper.ts[0m:[93m79[0m:[93m21[0m - [91merror[0m[90m TS2304: [0mCannot find name 'meta_image'.
+
+[7m79[0m                     meta_image: item.meta_image || "",
+[7m  [0m [91m                    ~~~~~~~~~~[0m
+[96msrc/utils/Helper.ts[0m:[93m80[0m:[93m23[0m - [91merror[0m[90m TS2304: [0mCannot find name 'meta_viewport'.
+
+[7m80[0m                       meta_viewport: item.meta_viewport || "",
+[7m  [0m [91m                      ~~~~~~~~~~~~~[0m
+[96msrc/utils/Helper.ts[0m:[93m73[0m:[93m20[0m - [91merror[0m[90m TS1005: [0m';' expected.
+
+[7m73[0m         custom_slug: item.custom_slug || "",
+[7m  [0m [91m                   ~[0m
+[96msrc/utils/Helper.ts[0m:[93m74[0m:[93m21[0m - [91merror[0m[90m TS1005: [0m';' expected.
+
+[7m74[0m           meta_title: item.meta_title || "",
+[7m  [0m [91m                    ~[0m
+[96msrc/utils/Helper.ts[0m:[93m75[0m:[93m29[0m - [91merror[0m[90m TS1005: [0m';' expected.
+
+[7m75[0m             meta_description: item.meta_description || "",
+[7m  [0m [91m                            ~[0m
+[96msrc/utils/Helper.ts[0m:[93m76[0m:[93m27[0m - [91merror[0m[90m TS1005: [0m';' expected.
+
+[7m76[0m               meta_keyword: item.meta_keyword || "",
+[7m  [0m [91m                          ~[0m
+[96msrc/utils/Helper.ts[0m:[93m77[0m:[93m28[0m - [91merror[0m[90m TS1005: [0m';' expected.
+
+[7m77[0m                 meta_robots: item.meta_robots || "",
+[7m  [0m [91m                           ~[0m
+[96msrc/utils/Helper.ts[0m:[93m78[0m:[93m32[0m - [91merror[0m[90m TS1005: [0m';' expected.
+
+[7m78[0m                   canonica_link: item.canonica_link || "",
+[7m  [0m [91m                               ~[0m
+[96msrc/utils/Helper.ts[0m:[93m79[0m:[93m31[0m - [91merror[0m[90m TS1005: [0m';' expected.
+
+[7m79[0m                     meta_image: item.meta_image || "",
+[7m  [0m [91m                              ~[0m
+[96msrc/utils/Helper.ts[0m:[93m80[0m:[93m36[0m - [91merror[0m[90m TS1005: [0m';' expected.
+
+[7m80[0m                       meta_viewport: item.meta_viewport || "",
+[7m  [0m [91m                                   ~[0m
+[96msrc/utils/Helper.ts[0m:[93m81[0m:[93m5[0m - [91merror[0m[90m TS1109: [0mExpression expected.
+
+[7m81[0m     }
+[7m  [0m [91m    ~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)

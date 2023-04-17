@@ -25,7 +25,7 @@ export default class Helper {
 
   public static generateToken(model: any, dataObject: any = 'admin') {
 
-    const  saveObjectToken = { admin: { id: model.id, name: model.name, role_id: model.role_id } }
+    const saveObjectToken = { admin: { id: model.id, name: model.name, role_id: model.role_id } }
 
     const token: string = jwt.sign(
       saveObjectToken,
@@ -52,18 +52,6 @@ export default class Helper {
     return `<div>${data}</div>`;
   }
 
-  static queryNumberChildren(prop: number) {
-    const includes = [];
-    for (let index = 0; index < prop; index++) {
-      includes.push({
-        model: models.Folder,
-        as: "children",
-      })
-    }
-
-    return includes;
-  }
-
   static renderSlug(slug: string) {
     return slug.toString()
       .normalize('NFD')
@@ -77,6 +65,20 @@ export default class Helper {
 
   static async hashPassword(password: string = "123", number: number = 8) {
     return await bcrypt.hash(password, number);
+  }
+
+  static  FieldsSeo(item) {
+    return {
+      slug: item.slug || "",
+      custom_slug: item.custom_slug || "",
+      meta_title: item.meta_title || "",
+      meta_description: item.meta_description || "",
+      meta_keyword: item.meta_keyword || "",
+      meta_robots: item.meta_robots || "",
+      canonica_link: item.canonica_link || "",
+      meta_image: item.meta_image || "",
+      meta_viewport: item.meta_viewport || "",
+    }
   }
 
 }
