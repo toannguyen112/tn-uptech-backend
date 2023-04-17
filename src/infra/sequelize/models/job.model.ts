@@ -1,6 +1,5 @@
 import Helper from "../../../utils/Helper";
 
-
 module.exports = function (sequelize, DataTypes) {
     const Job = sequelize.define(
         "jobs",
@@ -25,6 +24,15 @@ module.exports = function (sequelize, DataTypes) {
             status: {
                 type: DataTypes.STRING,
                 defaultValue: 'active'
+            },
+
+            view: {
+                type: DataTypes.INTEGER,
+                defaultValue: 0
+            },
+
+            post_at: {
+                type: DataTypes.DATE,
             },
 
             createdAt: {

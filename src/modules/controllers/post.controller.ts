@@ -18,6 +18,17 @@ export class PostController extends BaseController {
         }
     }
 
+    public async getListOutstanding(req: Request, res: Response, next: NextFunction) {
+
+        try {
+            const data = await post.getListOutstanding();
+            res.status(200).send({ message: "ok", data });
+        } catch (error) {
+            logger.error(error);
+            res.status(500).send(error.message);
+        }
+    }
+
     public async create(req: Request, res: Response, next: NextFunction) {
 
         try {

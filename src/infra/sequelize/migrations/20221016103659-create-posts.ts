@@ -73,6 +73,11 @@ module.exports = {
         defaultValue: 0
       },
 
+      posted_at: {
+        type: Sequelize.DATE,
+        defaultValue: new Date(),
+      },
+
       createdAt: {
         type: Sequelize.DATE,
         defaultValue: new Date(),

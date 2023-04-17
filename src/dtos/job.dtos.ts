@@ -1,8 +1,6 @@
 export class JobDTO {
     static transform = (item) => {
-
         if (!item.translations.length) return {};
-
         const translationData = item.translations[0];
 
         return {
@@ -29,6 +27,8 @@ export class JobDTO {
             id: item.id,
             name: translationData.name || "",
             slug: translationData.slug || "",
+            view: item.view || "",
+            post_at: item.post_at || "",
             custom_slug: translationData.custom_slug || "",
             description: translationData.description || "",
             isFeatured: item.isFeatured || false,
@@ -37,6 +37,7 @@ export class JobDTO {
             thumbnail: item.image || null,
             banner: item.banner_image || null,
             related: item.related || [],
+
             createdAt: item.createdAt,
             updatedAt: item.updatedAt,
         }

@@ -63,6 +63,17 @@ export class PostService {
                         required: false,
                     },
                     {
+                        model: models.Category,
+                        as: "category",
+                        required: false,
+                        include: {
+                            model: models.CategoryTranslation,
+                            as: "translations",
+                            required: true,
+                            where: { locale: global.lang }
+                        }
+                    },
+                    {
                         model: models.PostTranslation,
                         as: "translations",
                         required: true,
@@ -92,50 +103,100 @@ export class PostService {
         }
     }
 
+    public getListOutstanding = async () => {
+        try {
+
+            const posts = await models.Post.findAll({
+                where: { isFeatured: true },
+                include: [
+                    {
+                        model: models.Media,
+                        as: "image",
+                        required: false,
+                    },
+                    {
+                        model: models.Category,
+                        as: "category",
+                        required: false,
+                        include: {
+                            model: models.CategoryTranslation,
+                            as: "translations",
+                            required: true,
+                            where: { locale: global.lang }
+                        }
+                    },
+                    {
+                        model: models.PostTranslation,
+                        as: "translations",
+                        required: true,
+                        where: { locale: global.lang }
+                    },
+                ]
+            });
+
+            return posts;
+
+        } catch (error) {
+            console.log(error);
+            logger.error(JSON.stringify(error));
+        }
+    }
+
+
     public store = async (body) => {
 
-        return await models.Post.create({
-            status: body.status,
-            ceo_id: body.ceo_id,
-            category_id: body.category_id,
-            isFeatured: body.isFeatured,
-            related: body.related,
-            images: body.images,
-            thumbnail: body.thumbnail ? body.thumbnail.id : null,
-            banner: body.banner ? body.banner.id : null,
-        },
-        )
-            .then(async (post: any) => {
+        const t = await models.sequelize.transaction();
 
-                if (post) {
-                    const postId = post.id;
-                    try {
+        try {
+            return await models.Post.create({
+                status: body.status,
+                ceo_id: body.ceo_id,
+                category_id: body.category_id,
+                isFeatured: body.isFeatured,
+                related: body.related,
+                images: body.images,
+                thumbnail: body.thumbnail ? body.thumbnail.id : null,
+                banner: body.banner ? body.banner.id : null,
+            },
+            )
+                .then(async (post: any) => {
 
-                        const newItem = {
-                            ...body,
-                            slug: Helper.renderSlug(body.slug ? body.slug : body.name),
-                            custom_slug: Helper.renderSlug(body.custom_slug ? body.custom_slug : body.name),
+                    if (post) {
+                        const postId = post.id;
+                        try {
+
+                            const newItem = {
+                                ...body,
+                                slug: Helper.renderSlug(body.slug ? body.slug : body.name),
+                                custom_slug: Helper.renderSlug(body.custom_slug ? body.custom_slug : body.name),
+                            }
+
+                            await models.PostTranslation.create({
+                                ...newItem, post_id: postId,
+                                locale: 'vi'
+                            });
+
+                            await models.PostTranslation.create({
+                                ...newItem,
+                                slug: Helper.renderSlug(body.slug ? `en-${body.slug}` : `en-${body.name}`),
+                                custom_slug: Helper.renderSlug(body.custom_slug ? `en-${body.custom_slug}` : `en-${body.name}`),
+                                post_id: postId,
+                                locale: 'en'
+                            });
+
+                        } catch (error) {
+                            console.log(error);
+                            logger.error(JSON.stringify(error));
                         }
-
-                        await models.PostTranslation.create({
-                            ...newItem, post_id: postId,
-                            locale: 'vi'
-                        });
-
-                        await models.PostTranslation.create({
-                            ...newItem,
-                            slug: Helper.renderSlug(body.slug ? `en-${body.slug}` : `en-${body.name}`),
-                            custom_slug: Helper.renderSlug(body.custom_slug ? `en-${body.custom_slug}` : `en-${body.name}`),
-                            post_id: postId,
-                            locale: 'en'
-                        });
-
-                    } catch (error) {
-                        console.log(error);
-                        logger.error(JSON.stringify(error));
                     }
-                }
-            });
+
+                    await t.commit();
+                    
+                });
+        } catch (error) {
+         console.log(error);
+            await t.rollback();   
+        }
     }
 
     public findById = async (id) => {
@@ -152,6 +213,12 @@ export class PostService {
                     model: models.Category,
                     as: "category",
                     required: false,
+                    include: {
+                        model: models.CategoryTranslation,
+                        as: "translations",
+                        required: true,
+                        where: { locale: global.lang }
+                    }
                 },
                 {
                     model: models.Ceo,
@@ -206,13 +273,13 @@ export class PostService {
                 name: body.name,
                 content: body.content,
                 description: body.description,
-                meta_title: body.meta_title ,
-                meta_description: body.meta_description ,
-                meta_keyword: body.meta_keyword ,
-                meta_robots: body.meta_robots ,
-                canonica_link: body.canonica_link ,
-                meta_image: body.meta_image ,
-                meta_viewport: body.meta_viewport ,
+                meta_title: body.meta_title,
+                meta_description: body.meta_description,
+                meta_keyword: body.meta_keyword,
+                meta_robots: body.meta_robots,
+                canonica_link: body.canonica_link,
+                meta_image: body.meta_image,
+                meta_viewport: body.meta_viewport,
                 slug: Helper.renderSlug(body.slug ? body.slug : body.name),
                 custom_slug: Helper.renderSlug(body.custom_slug ? body.custom_slug : body.name),
             },

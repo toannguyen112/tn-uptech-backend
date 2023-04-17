@@ -87,7 +87,7 @@ export class JobService {
 
     public store = async (body) => {
 
-        return await models.Job.create(body)
+        return await models.Job.create({ ...body })
             .then(async (job: any) => {
 
                 if (job) {

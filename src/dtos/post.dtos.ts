@@ -4,10 +4,13 @@ export class PostDTO {
         if (!item.translations.length) return {};
 
         const translationData = item.translations[0];
+        const category = item.category.translations[0];
 
         return {
             id: item.id,
             name: translationData.name || "",
+            category: category,
+            category_name: category.name || "",
             slug: item.slug || "",
             description: translationData.description || "",
             isFeatured: item.isFeatured,
@@ -23,15 +26,17 @@ export class PostDTO {
 
         if (!item) return {};
         const translationData = item.translations[0];
+        const category = item.category ? item.category.translations[0] : null;
 
         return {
             id: item.id,
             name: translationData.name || "",
             ceo_id: item.ceo_id,
+
             category_id: item.category_id,
+            category,
 
             description: translationData.description || "",
-
             isFeatured: item.isFeatured || false,
             status: item.status || 'inactive',
             content: translationData.content || "",
