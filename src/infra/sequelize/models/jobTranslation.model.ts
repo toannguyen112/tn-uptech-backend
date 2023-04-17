@@ -55,13 +55,11 @@ module.exports = function (sequelize, DataTypes) {
 
             slug: {
                 type: DataTypes.STRING,
-                unique: true,
                 allowNull: true,
             },
 
             custom_slug: {
                 type: DataTypes.STRING,
-                unique: true,
                 allowNull: true,
             },
 

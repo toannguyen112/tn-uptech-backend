@@ -2,7 +2,7 @@ import Helper from "../utils/Helper";
 
 export class JobDTO {
     static transform = (item) => {
-        
+
         if (!item.translations.length) return {};
         const translationData = item.translations[0];
 
@@ -57,6 +57,28 @@ export class JobDTO {
             expried_date: item.expried_date ? Helper.formatDayJs(item.expried_date, "YYYY/MM/DD") : null,
             benefit: translationData.benefit || "",
             related: item.related || [],
+
+            ...Helper.FieldsSeo(translationData)
+
+        }
+    }
+
+    static transformDetailsClient = (item) => {
+
+        if (!item) return {};
+        const translationData = item.translations[0];
+
+        return {
+            id: item.id,
+            name: translationData.name || "",
+            description: translationData.description || "",
+            required: translationData.required || "",
+            address_work: translationData.address_work || "",
+            location: translationData.location || "",
+            view: item.view || 0,
+            status: item.status || 'inactive',
+            expried_date: item.expried_date ? Helper.formatDayJs(item.expried_date, "YYYY/MM/DD") : null,
+            benefit: translationData.benefit || "",
 
             ...Helper.FieldsSeo(translationData)
 

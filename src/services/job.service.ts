@@ -2,7 +2,7 @@ import { JobDTO } from "../dtos/job.dtos";
 import models from "../infra/sequelize/models";
 import { ApiFeatures } from "../utils/ApiFeatures";
 import { Op } from "sequelize";
-import Helper from "../utils/Helper";
+
 export class JobService {
 
     public getList = async (query) => {
@@ -162,12 +162,15 @@ export class JobService {
         return JobDTO.transformDetail(job);
     }
 
+    public findByIdClient = async (slug) => {
+
+        return;
+
+    }
+
     public update = async (id, body) => {
 
         const newItem = JobDTO.transformSave(body);
-
-        console.log(newItem);
-
 
         const t = await models.sequelize.transaction();
         try {

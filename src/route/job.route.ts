@@ -16,6 +16,7 @@ export class JobRoute implements Routes {
         this.router.get(`${this.path}`, this.job.index);
         this.router.get(`${this.path}/getListFeatured`, this.job.getListFeatured);
         this.router.post(`${this.path}/create`, this.job.create);
+        this.router.get(`${this.path}/find/:slug`, this.job.getDetails);
         this.router.get(`${this.path}/show/:id`, this.job.show);
         this.router.put(`${this.path}/update/:id`, this.job.update);
         this.router.delete(`${this.path}/delete/:id(\\d+)`, this.job.delete);

@@ -47,6 +47,16 @@ export class JobController {
         }
     }
 
+    public async getDetails(req: Request, res: Response, next: NextFunction) {
+        try {
+            const data = await job.findByIdClient(req.params.slug);
+            res.status(200).send({ message: "ok", data });
+        } catch (error) {
+            console.log(error.message);
+            res.status(500).send(error.message);
+        }
+    }
+
     public async update(req: Request, res: Response, next: NextFunction) {
         try {
             const { id } = req.params;
