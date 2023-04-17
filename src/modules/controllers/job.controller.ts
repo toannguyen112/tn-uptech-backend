@@ -26,6 +26,17 @@ export class JobController {
         }
     }
 
+      public async getListFeatured(req: Request, res: Response, next: NextFunction) {
+
+        try {
+            const data = await job.getListFeatured();
+            res.status(200).send({ message: "ok", data });
+        } catch (error) {
+            console.log(error);
+            res.status(500).send(error);
+        }
+    }
+
     public async show(req: Request, res: Response, next: NextFunction) {
         try {
             const data = await job.findById(req.params.id);

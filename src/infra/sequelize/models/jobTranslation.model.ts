@@ -58,7 +58,7 @@ module.exports = function (sequelize, DataTypes) {
     );
 
     JobTranslation.associate = function (models) {
-        JobTranslation.belongsTo(models.Post, {
+        JobTranslation.belongsTo(models.Job, {
             as: "job",
             foreignKey: "job_id",
         });

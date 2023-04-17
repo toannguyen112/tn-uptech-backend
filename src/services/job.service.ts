@@ -47,11 +47,11 @@ export class JobService {
             if (query.search) {
                 queryTranslation = {
                     name: { [Op.like]: `%${query.search}%` },
-                    locale: "vi"
+                    locale: global.lang
                 }
             }
             else {
-                queryTranslation = { locale: "vi" }
+                queryTranslation = { locale: global.lang }
             }
 
             const objQuery = new ApiFeatures(query)
@@ -60,7 +60,6 @@ export class JobService {
                     {
                         model: models.JobTranslation,
                         as: "translations",
-                        required: true,
                         where: queryTranslation
                     },
                 ])
@@ -84,6 +83,31 @@ export class JobService {
             console.log(error.message);
         }
     }
+
+    public getListFeatured = async () => {
+        try {
+
+            try {
+
+                const jobs = await models.Job.findAll({
+                    where: { isFeatured: true },
+                    include: {
+                        model: models.JobTranslation,
+                        as: "translations",
+                        where: { locale: global.lang }
+                    },
+                });
+
+                return jobs;
+
+            } catch (error) {
+                console.log(error);
+            }
+        } catch (error) {
+            console.log(error.message);
+        }
+    }
+
 
     public store = async (body) => {
 
@@ -118,7 +142,7 @@ export class JobService {
                     as: "translations",
                     required: true,
                     where: {
-                        locale: "vi",
+                        locale: global.lang,
                         job_id: id
                     }
                 },
@@ -136,8 +160,8 @@ export class JobService {
         }, { where: { id } },)
             .then(async (res) => {
                 if (res) {
-                    await this.handleUpdate({ job_id: id, lang: "vi", body });
-                    await this.handleUpdate({ job_id: id, lang: "en", body });
+                    await this.handleUpdate({ job_id: id, lang: global.lang, body });
+                    await this.handleUpdate({ job_id: id, lang: global.lang, body });
                 }
             });
     }

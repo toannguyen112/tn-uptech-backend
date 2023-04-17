@@ -712,3 +712,179 @@ TSError: ⨯ Unable to compile TypeScript:
     at Module.load (node:internal/modules/cjs/loader:1069:32)
     at Function.Module._load (node:internal/modules/cjs/loader:904:12)
     at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-17 22:52:25 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/route/job.route.ts[0m:[93m17[0m:[93m63[0m - [91merror[0m[90m TS2339: [0mProperty 'listFeatured' does not exist on type 'JobController'.
+
+[7m17[0m         this.router.get(`${this.path}/listFeatured`, this.job.listFeatured);
+[7m  [0m [91m                                                              ~~~~~~~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/route/job.route.ts[0m:[93m17[0m:[93m63[0m - [91merror[0m[90m TS2339: [0mProperty 'listFeatured' does not exist on type 'JobController'.
+
+[7m17[0m         this.router.get(`${this.path}/listFeatured`, this.job.listFeatured);
+[7m  [0m [91m                                                              ~~~~~~~~~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-17 22:53:18 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/modules/controllers/job.controller.ts[0m:[93m32[0m:[93m36[0m - [91merror[0m[90m TS2339: [0mProperty 'getListFeatured' does not exist on type 'JobService'.
+
+[7m32[0m             const data = await job.getListFeatured();
+[7m  [0m [91m                                   ~~~~~~~~~~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/modules/controllers/job.controller.ts[0m:[93m32[0m:[93m36[0m - [91merror[0m[90m TS2339: [0mProperty 'getListFeatured' does not exist on type 'JobService'.
+
+[7m32[0m             const data = await job.getListFeatured();
+[7m  [0m [91m                                   ~~~~~~~~~~~~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-17 22:53:59 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/services/job.service.ts[0m:[93m94[0m:[93m54[0m - [91merror[0m[90m TS2304: [0mCannot find name 'queryObject'.
+
+[7m94[0m             excludedFields.forEach((field) => delete queryObject[field]);
+[7m  [0m [91m                                                     ~~~~~~~~~~~[0m
+[96msrc/services/job.service.ts[0m:[93m96[0m:[93m51[0m - [91merror[0m[90m TS2304: [0mCannot find name 'queryObject'.
+
+[7m96[0m             const arrQueryObject = Object.entries(queryObject).map((item) => {
+[7m  [0m [91m                                                  ~~~~~~~~~~~[0m
+[96msrc/services/job.service.ts[0m:[93m109[0m:[93m29[0m - [91merror[0m[90m TS2304: [0mCannot find name 'conditions'.
+
+[7m109[0m                             conditions["status"] = {
+[7m   [0m [91m                            ~~~~~~~~~~[0m
+[96msrc/services/job.service.ts[0m:[93m122[0m:[93m17[0m - [91merror[0m[90m TS2304: [0mCannot find name 'query'.
+
+[7m122[0m             if (query.search) {
+[7m   [0m [91m                ~~~~~[0m
+[96msrc/services/job.service.ts[0m:[93m124[0m:[93m44[0m - [91merror[0m[90m TS2304: [0mCannot find name 'query'.
+
+[7m124[0m                     name: { [Op.like]: `%${query.search}%` },
+[7m   [0m [91m                                           ~~~~~[0m
+[96msrc/services/job.service.ts[0m:[93m132[0m:[93m46[0m - [91merror[0m[90m TS2304: [0mCannot find name 'query'.
+
+[7m132[0m             const objQuery = new ApiFeatures(query)
+[7m   [0m [91m                                             ~~~~~[0m
+[96msrc/services/job.service.ts[0m:[93m133[0m:[93m25[0m - [91merror[0m[90m TS2304: [0mCannot find name 'conditions'.
+
+[7m133[0m                 .filter(conditions)
+[7m   [0m [91m                        ~~~~~~~~~~[0m
+[96msrc/services/job.service.ts[0m:[93m142[0m:[93m23[0m - [91merror[0m[90m TS2304: [0mCannot find name 'query'.
+
+[7m142[0m                 .sort(query.sort_field || "createdAt", query.sort_order || "DESC")
+[7m   [0m [91m                      ~~~~~[0m
+[96msrc/services/job.service.ts[0m:[93m142[0m:[93m56[0m - [91merror[0m[90m TS2304: [0mCannot find name 'query'.
+
+[7m142[0m                 .sort(query.sort_field || "createdAt", query.sort_order || "DESC")
+[7m   [0m [91m                                                       ~~~~~[0m
+[96msrc/services/job.service.ts[0m:[93m150[0m:[93m30[0m - [91merror[0m[90m TS2304: [0mCannot find name 'query'.
+
+[7m150[0m                 page: Number(query?.page) * 1,
+[7m   [0m [91m                             ~~~~~[0m
+[96msrc/services/job.service.ts[0m:[93m151[0m:[93m34[0m - [91merror[0m[90m TS2304: [0mCannot find name 'query'.
+
+[7m151[0m                 pageSize: Number(query?.page_size) * 1,
+[7m   [0m [91m                                 ~~~~~[0m
+[96msrc/services/job.service.ts[0m:[93m152[0m:[93m53[0m - [91merror[0m[90m TS2304: [0mCannot find name 'query'.
+
+[7m152[0m                 pageCount: Math.ceil(count / Number(query?.page_size) * 1),
+[7m   [0m [91m                                                    ~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/services/job.service.ts[0m:[93m94[0m:[93m54[0m - [91merror[0m[90m TS2304: [0mCannot find name 'queryObject'.
+
+[7m94[0m             excludedFields.forEach((field) => delete queryObject[field]);
+[7m  [0m [91m                                                     ~~~~~~~~~~~[0m
+[96msrc/services/job.service.ts[0m:[93m96[0m:[93m51[0m - [91merror[0m[90m TS2304: [0mCannot find name 'queryObject'.
+
+[7m96[0m             const arrQueryObject = Object.entries(queryObject).map((item) => {
+[7m  [0m [91m                                                  ~~~~~~~~~~~[0m
+[96msrc/services/job.service.ts[0m:[93m109[0m:[93m29[0m - [91merror[0m[90m TS2304: [0mCannot find name 'conditions'.
+
+[7m109[0m                             conditions["status"] = {
+[7m   [0m [91m                            ~~~~~~~~~~[0m
+[96msrc/services/job.service.ts[0m:[93m122[0m:[93m17[0m - [91merror[0m[90m TS2304: [0mCannot find name 'query'.
+
+[7m122[0m             if (query.search) {
+[7m   [0m [91m                ~~~~~[0m
+[96msrc/services/job.service.ts[0m:[93m124[0m:[93m44[0m - [91merror[0m[90m TS2304: [0mCannot find name 'query'.
+
+[7m124[0m                     name: { [Op.like]: `%${query.search}%` },
+[7m   [0m [91m                                           ~~~~~[0m
+[96msrc/services/job.service.ts[0m:[93m132[0m:[93m46[0m - [91merror[0m[90m TS2304: [0mCannot find name 'query'.
+
+[7m132[0m             const objQuery = new ApiFeatures(query)
+[7m   [0m [91m                                             ~~~~~[0m
+[96msrc/services/job.service.ts[0m:[93m133[0m:[93m25[0m - [91merror[0m[90m TS2304: [0mCannot find name 'conditions'.
+
+[7m133[0m                 .filter(conditions)
+[7m   [0m [91m                        ~~~~~~~~~~[0m
+[96msrc/services/job.service.ts[0m:[93m142[0m:[93m23[0m - [91merror[0m[90m TS2304: [0mCannot find name 'query'.
+
+[7m142[0m                 .sort(query.sort_field || "createdAt", query.sort_order || "DESC")
+[7m   [0m [91m                      ~~~~~[0m
+[96msrc/services/job.service.ts[0m:[93m142[0m:[93m56[0m - [91merror[0m[90m TS2304: [0mCannot find name 'query'.
+
+[7m142[0m                 .sort(query.sort_field || "createdAt", query.sort_order || "DESC")
+[7m   [0m [91m                                                       ~~~~~[0m
+[96msrc/services/job.service.ts[0m:[93m150[0m:[93m30[0m - [91merror[0m[90m TS2304: [0mCannot find name 'query'.
+
+[7m150[0m                 page: Number(query?.page) * 1,
+[7m   [0m [91m                             ~~~~~[0m
+[96msrc/services/job.service.ts[0m:[93m151[0m:[93m34[0m - [91merror[0m[90m TS2304: [0mCannot find name 'query'.
+
+[7m151[0m                 pageSize: Number(query?.page_size) * 1,
+[7m   [0m [91m                                 ~~~~~[0m
+[96msrc/services/job.service.ts[0m:[93m152[0m:[93m53[0m - [91merror[0m[90m TS2304: [0mCannot find name 'query'.
+
+[7m152[0m                 pageCount: Math.ceil(count / Number(query?.page_size) * 1),
+[7m   [0m [91m                                                    ~~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-17 22:54:25 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/services/job.service.ts[0m:[93m125[0m:[93m17[0m - [91merror[0m[90m TS2304: [0mCannot find name 'logger'.
+
+[7m125[0m                 logger.error(JSON.stringify(error));
+[7m   [0m [91m                ~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/services/job.service.ts[0m:[93m125[0m:[93m17[0m - [91merror[0m[90m TS2304: [0mCannot find name 'logger'.
+
+[7m125[0m                 logger.error(JSON.stringify(error));
+[7m   [0m [91m                ~~~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
