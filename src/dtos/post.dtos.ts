@@ -1,16 +1,24 @@
 export class PostDTO {
     static transform = (item) => {
 
+        let category = null;
+        let category_name = "";
+
         if (!item.translations.length) return {};
 
+
         const translationData = item.translations[0];
-        const category = item.category.translations[0];
+
+        if (item.category && item.category.translations.length) {
+            category = item.category.translations[0];
+            category_name = category.name || "";
+        }
 
         return {
             id: item.id,
             name: translationData.name || "",
-            category: category,
-            category_name: category.name || "",
+            category,
+            category_name,
             slug: item.slug || "",
             description: translationData.description || "",
             isFeatured: item.isFeatured,

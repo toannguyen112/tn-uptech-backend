@@ -69,7 +69,7 @@ export class PostService {
                         include: {
                             model: models.CategoryTranslation,
                             as: "translations",
-                            required: true,
+                            required: false,
                             where: { locale: global.lang }
                         }
                     },
@@ -191,11 +191,11 @@ export class PostService {
                     }
 
                     await t.commit();
-                    
+
                 });
         } catch (error) {
-         console.log(error);
-            await t.rollback();   
+            console.log(error);
+            await t.rollback();
         }
     }
 
