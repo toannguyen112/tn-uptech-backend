@@ -2,6 +2,7 @@ import Helper from "../utils/Helper";
 
 export class JobDTO {
     static transform = (item) => {
+        
         if (!item.translations.length) return {};
         const translationData = item.translations[0];
 
@@ -9,8 +10,8 @@ export class JobDTO {
             id: item.id,
             name: translationData.name || "",
             slug: translationData.slug || "",
+            expried_date: item.expried_date ? Helper.formatDayJs(item.expried_date) : null,
             description: translationData.description || "",
-
             isFeatured: item.isFeatured,
             status: item.status,
 
@@ -21,6 +22,7 @@ export class JobDTO {
     }
 
     static transformClient = (item) => {
+
         if (!item.translations.length) return {};
         const translationData = item.translations[0];
 
@@ -28,7 +30,7 @@ export class JobDTO {
             id: item.id,
             name: translationData.name || "",
             slug: translationData.slug || "",
-            expried_date: item.expried_date || null,
+            expried_date: item.expried_date ? Helper.formatDayJs(item.expried_date, "YYYY/MM/DD") : null,
             description: translationData.description || "",
             status: item.status,
             required: translationData.required || "",
