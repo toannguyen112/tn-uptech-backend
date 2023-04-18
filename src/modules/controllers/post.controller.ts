@@ -18,10 +18,10 @@ export class PostController extends BaseController {
         }
     }
 
-    public async getListOutstanding(req: Request, res: Response, next: NextFunction) {
+    public async getListFeatured(req: Request, res: Response, next: NextFunction) {
 
         try {
-            const data = await post.getListOutstanding();
+            const data = await post.getListFeatured();
             res.status(200).send({ message: "ok", data });
         } catch (error) {
             logger.error(error);

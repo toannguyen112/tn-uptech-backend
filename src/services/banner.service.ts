@@ -92,6 +92,17 @@ export class BannerService {
         }
     }
 
+    public getListBannerClient = async () => {
+
+        try {
+            const banners = await models.Banner.findAll({});
+            return banners;
+
+        } catch (error) {
+            console.log(error);
+        }
+    }
+
     public store = async (body) => {
 
         return await models.Banner.create({
@@ -120,9 +131,7 @@ export class BannerService {
     public findById = async (id: string | number) => {
 
         const banner = await models.Banner.findOne({
-            where: {
-                id: id,
-            },
+            where: { id},
             include: [
                 {
                     model: models.Media,

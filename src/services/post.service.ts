@@ -103,10 +103,10 @@ export class PostService {
         }
     }
 
-    public getListOutstanding = async () => {
+    public getListFeatured = async () => {
         try {
 
-            const posts = await models.Post.findAll({
+            const rows = await models.Post.findAll({
                 where: { isFeatured: true },
                 include: [
                     {
@@ -134,7 +134,9 @@ export class PostService {
                 ]
             });
 
-            return posts;
+            return rows.map((item: any) => {
+                return PostDTO.transform(item);
+            });
 
         } catch (error) {
             console.log(error);

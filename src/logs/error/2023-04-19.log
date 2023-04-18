@@ -1,0 +1,540 @@
+2023-04-19 00:18:15 error: uncaughtException: banners.hasMany called with something that's not a subclass of Sequelize.Model
+Error: banners.hasMany called with something that's not a subclass of Sequelize.Model
+    at Function.hasMany (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/sequelize/src/associations/mixin.js:18:13)
+    at Function.Banner.associate (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/banner.model.ts:61:16)
+    at /Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:51:31
+    at Array.forEach (<anonymous>)
+    at createModels (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:49:25)
+    at Object.<anonymous> (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:63:16)
+    at Module._compile (node:internal/modules/cjs/loader:1191:14)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1618:23)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+2023-04-19 00:18:28 error: uncaughtException: banners.hasMany called with something that's not a subclass of Sequelize.Model
+Error: banners.hasMany called with something that's not a subclass of Sequelize.Model
+    at Function.hasMany (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/sequelize/src/associations/mixin.js:18:13)
+    at Function.Banner.associate (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/banner.model.ts:61:16)
+    at /Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:51:31
+    at Array.forEach (<anonymous>)
+    at createModels (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:49:25)
+    at Object.<anonymous> (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:63:16)
+    at Module._compile (node:internal/modules/cjs/loader:1191:14)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1618:23)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+2023-04-19 00:18:48 error: uncaughtException: banners.hasMany called with something that's not a subclass of Sequelize.Model
+Error: banners.hasMany called with something that's not a subclass of Sequelize.Model
+    at Function.hasMany (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/sequelize/src/associations/mixin.js:18:13)
+    at Function.Banner.associate (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/banner.model.ts:61:16)
+    at /Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:51:31
+    at Array.forEach (<anonymous>)
+    at createModels (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:49:25)
+    at Object.<anonymous> (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:63:16)
+    at Module._compile (node:internal/modules/cjs/loader:1191:14)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1618:23)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+2023-04-19 00:18:59 error: uncaughtException: banners.hasMany called with something that's not a subclass of Sequelize.Model
+Error: banners.hasMany called with something that's not a subclass of Sequelize.Model
+    at Function.hasMany (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/sequelize/src/associations/mixin.js:18:13)
+    at Function.Banner.associate (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/banner.model.ts:61:16)
+    at /Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:51:31
+    at Array.forEach (<anonymous>)
+    at createModels (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:49:25)
+    at Object.<anonymous> (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:63:16)
+    at Module._compile (node:internal/modules/cjs/loader:1191:14)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1618:23)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+2023-04-19 00:19:12 error: uncaughtException: banners.hasMany called with something that's not a subclass of Sequelize.Model
+Error: banners.hasMany called with something that's not a subclass of Sequelize.Model
+    at Function.hasMany (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/sequelize/src/associations/mixin.js:18:13)
+    at Function.Banner.associate (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/banner.model.ts:61:16)
+    at /Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:51:31
+    at Array.forEach (<anonymous>)
+    at createModels (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:49:25)
+    at Object.<anonymous> (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:63:16)
+    at Module._compile (node:internal/modules/cjs/loader:1191:14)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1618:23)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+2023-04-19 00:19:26 error: uncaughtException: banners.hasMany called with something that's not a subclass of Sequelize.Model
+Error: banners.hasMany called with something that's not a subclass of Sequelize.Model
+    at Function.hasMany (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/sequelize/src/associations/mixin.js:18:13)
+    at Function.Banner.associate (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/banner.model.ts:61:16)
+    at /Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:51:31
+    at Array.forEach (<anonymous>)
+    at createModels (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:49:25)
+    at Object.<anonymous> (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:63:16)
+    at Module._compile (node:internal/modules/cjs/loader:1191:14)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1618:23)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+2023-04-19 00:19:48 error: uncaughtException: banners.hasMany called with something that's not a subclass of Sequelize.Model
+Error: banners.hasMany called with something that's not a subclass of Sequelize.Model
+    at Function.hasMany (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/sequelize/src/associations/mixin.js:18:13)
+    at Function.Banner.associate (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/banner.model.ts:61:16)
+    at /Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:51:31
+    at Array.forEach (<anonymous>)
+    at createModels (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:49:25)
+    at Object.<anonymous> (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:63:16)
+    at Module._compile (node:internal/modules/cjs/loader:1191:14)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1618:23)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+2023-04-19 00:19:56 error: uncaughtException: banners.hasMany called with something that's not a subclass of Sequelize.Model
+Error: banners.hasMany called with something that's not a subclass of Sequelize.Model
+    at Function.hasMany (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/sequelize/src/associations/mixin.js:18:13)
+    at Function.Banner.associate (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/banner.model.ts:61:16)
+    at /Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:51:31
+    at Array.forEach (<anonymous>)
+    at createModels (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:49:25)
+    at Object.<anonymous> (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:63:16)
+    at Module._compile (node:internal/modules/cjs/loader:1191:14)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1618:23)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+2023-04-19 00:20:08 error: uncaughtException: banners.hasMany called with something that's not a subclass of Sequelize.Model
+Error: banners.hasMany called with something that's not a subclass of Sequelize.Model
+    at Function.hasMany (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/sequelize/src/associations/mixin.js:18:13)
+    at Function.Banner.associate (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/banner.model.ts:61:16)
+    at /Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:51:31
+    at Array.forEach (<anonymous>)
+    at createModels (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:49:25)
+    at Object.<anonymous> (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:63:16)
+    at Module._compile (node:internal/modules/cjs/loader:1191:14)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1618:23)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+2023-04-19 00:20:27 error: uncaughtException: banners.hasMany called with something that's not a subclass of Sequelize.Model
+Error: banners.hasMany called with something that's not a subclass of Sequelize.Model
+    at Function.hasMany (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/sequelize/src/associations/mixin.js:18:13)
+    at Function.Banner.associate (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/banner.model.ts:61:16)
+    at /Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:51:31
+    at Array.forEach (<anonymous>)
+    at createModels (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:49:25)
+    at Object.<anonymous> (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:63:16)
+    at Module._compile (node:internal/modules/cjs/loader:1191:14)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1618:23)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+2023-04-19 00:20:43 error: uncaughtException: banners.hasMany called with something that's not a subclass of Sequelize.Model
+Error: banners.hasMany called with something that's not a subclass of Sequelize.Model
+    at Function.hasMany (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/sequelize/src/associations/mixin.js:18:13)
+    at Function.Banner.associate (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/banner.model.ts:61:16)
+    at /Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:51:31
+    at Array.forEach (<anonymous>)
+    at createModels (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:49:25)
+    at Object.<anonymous> (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:63:16)
+    at Module._compile (node:internal/modules/cjs/loader:1191:14)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1618:23)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+2023-04-19 00:21:03 error: uncaughtException: banners.hasMany called with something that's not a subclass of Sequelize.Model
+Error: banners.hasMany called with something that's not a subclass of Sequelize.Model
+    at Function.hasMany (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/sequelize/src/associations/mixin.js:18:13)
+    at Function.Banner.associate (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/banner.model.ts:61:16)
+    at /Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:51:31
+    at Array.forEach (<anonymous>)
+    at createModels (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:49:25)
+    at Object.<anonymous> (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:63:16)
+    at Module._compile (node:internal/modules/cjs/loader:1191:14)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1618:23)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+2023-04-19 00:21:11 error: uncaughtException: banners.hasMany called with something that's not a subclass of Sequelize.Model
+Error: banners.hasMany called with something that's not a subclass of Sequelize.Model
+    at Function.hasMany (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/sequelize/src/associations/mixin.js:18:13)
+    at Function.Banner.associate (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/banner.model.ts:61:16)
+    at /Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:51:31
+    at Array.forEach (<anonymous>)
+    at createModels (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:49:25)
+    at Object.<anonymous> (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:63:16)
+    at Module._compile (node:internal/modules/cjs/loader:1191:14)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1618:23)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+2023-04-19 00:21:19 error: uncaughtException: banners.hasMany called with something that's not a subclass of Sequelize.Model
+Error: banners.hasMany called with something that's not a subclass of Sequelize.Model
+    at Function.hasMany (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/sequelize/src/associations/mixin.js:18:13)
+    at Function.Banner.associate (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/banner.model.ts:61:16)
+    at /Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:51:31
+    at Array.forEach (<anonymous>)
+    at createModels (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:49:25)
+    at Object.<anonymous> (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:63:16)
+    at Module._compile (node:internal/modules/cjs/loader:1191:14)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1618:23)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+2023-04-19 00:21:25 error: uncaughtException: banners.hasMany called with something that's not a subclass of Sequelize.Model
+Error: banners.hasMany called with something that's not a subclass of Sequelize.Model
+    at Function.hasMany (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/sequelize/src/associations/mixin.js:18:13)
+    at Function.Banner.associate (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/banner.model.ts:61:16)
+    at /Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:51:31
+    at Array.forEach (<anonymous>)
+    at createModels (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:49:25)
+    at Object.<anonymous> (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:63:16)
+    at Module._compile (node:internal/modules/cjs/loader:1191:14)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1618:23)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+2023-04-19 00:21:32 error: uncaughtException: banners.hasMany called with something that's not a subclass of Sequelize.Model
+Error: banners.hasMany called with something that's not a subclass of Sequelize.Model
+    at Function.hasMany (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/sequelize/src/associations/mixin.js:18:13)
+    at Function.Banner.associate (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/banner.model.ts:61:16)
+    at /Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:51:31
+    at Array.forEach (<anonymous>)
+    at createModels (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:49:25)
+    at Object.<anonymous> (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:63:16)
+    at Module._compile (node:internal/modules/cjs/loader:1191:14)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1618:23)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+2023-04-19 00:21:41 error: uncaughtException: banners.hasMany called with something that's not a subclass of Sequelize.Model
+Error: banners.hasMany called with something that's not a subclass of Sequelize.Model
+    at Function.hasMany (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/sequelize/src/associations/mixin.js:18:13)
+    at Function.Banner.associate (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/banner.model.ts:61:16)
+    at /Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:51:31
+    at Array.forEach (<anonymous>)
+    at createModels (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:49:25)
+    at Object.<anonymous> (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:63:16)
+    at Module._compile (node:internal/modules/cjs/loader:1191:14)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1618:23)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+2023-04-19 00:21:57 error: uncaughtException: banners.hasMany called with something that's not a subclass of Sequelize.Model
+Error: banners.hasMany called with something that's not a subclass of Sequelize.Model
+    at Function.hasMany (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/sequelize/src/associations/mixin.js:18:13)
+    at Function.Banner.associate (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/banner.model.ts:61:16)
+    at /Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:51:31
+    at Array.forEach (<anonymous>)
+    at createModels (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:49:25)
+    at Object.<anonymous> (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:63:16)
+    at Module._compile (node:internal/modules/cjs/loader:1191:14)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1618:23)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+2023-04-19 00:22:08 error: uncaughtException: banners.hasMany called with something that's not a subclass of Sequelize.Model
+Error: banners.hasMany called with something that's not a subclass of Sequelize.Model
+    at Function.hasMany (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/sequelize/src/associations/mixin.js:18:13)
+    at Function.Banner.associate (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/banner.model.ts:61:16)
+    at /Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:51:31
+    at Array.forEach (<anonymous>)
+    at createModels (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:49:25)
+    at Object.<anonymous> (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:63:16)
+    at Module._compile (node:internal/modules/cjs/loader:1191:14)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1618:23)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+2023-04-19 00:22:16 error: uncaughtException: banners.hasMany called with something that's not a subclass of Sequelize.Model
+Error: banners.hasMany called with something that's not a subclass of Sequelize.Model
+    at Function.hasMany (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/sequelize/src/associations/mixin.js:18:13)
+    at Function.Banner.associate (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/banner.model.ts:61:16)
+    at /Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:51:31
+    at Array.forEach (<anonymous>)
+    at createModels (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:49:25)
+    at Object.<anonymous> (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:63:16)
+    at Module._compile (node:internal/modules/cjs/loader:1191:14)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1618:23)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+2023-04-19 00:22:29 error: uncaughtException: banners.hasMany called with something that's not a subclass of Sequelize.Model
+Error: banners.hasMany called with something that's not a subclass of Sequelize.Model
+    at Function.hasMany (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/sequelize/src/associations/mixin.js:18:13)
+    at Function.Banner.associate (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/banner.model.ts:61:16)
+    at /Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:51:31
+    at Array.forEach (<anonymous>)
+    at createModels (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:49:25)
+    at Object.<anonymous> (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:63:16)
+    at Module._compile (node:internal/modules/cjs/loader:1191:14)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1618:23)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+2023-04-19 00:24:13 error: uncaughtException: banners.hasMany called with something that's not a subclass of Sequelize.Model
+Error: banners.hasMany called with something that's not a subclass of Sequelize.Model
+    at Function.hasMany (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/sequelize/src/associations/mixin.js:18:13)
+    at Function.Banner.associate (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/banner.model.ts:61:16)
+    at /Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:51:31
+    at Array.forEach (<anonymous>)
+    at createModels (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:49:25)
+    at Object.<anonymous> (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:63:16)
+    at Module._compile (node:internal/modules/cjs/loader:1191:14)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1618:23)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+2023-04-19 00:25:17 error: uncaughtException: banners.hasMany called with something that's not a subclass of Sequelize.Model
+Error: banners.hasMany called with something that's not a subclass of Sequelize.Model
+    at Function.hasMany (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/sequelize/src/associations/mixin.js:18:13)
+    at Function.Banner.associate (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/banner.model.ts:61:16)
+    at /Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:51:31
+    at Array.forEach (<anonymous>)
+    at createModels (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:49:25)
+    at Object.<anonymous> (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:63:16)
+    at Module._compile (node:internal/modules/cjs/loader:1191:14)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1618:23)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+2023-04-19 00:25:33 error: uncaughtException: banners.hasMany called with something that's not a subclass of Sequelize.Model
+Error: banners.hasMany called with something that's not a subclass of Sequelize.Model
+    at Function.hasMany (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/sequelize/src/associations/mixin.js:18:13)
+    at Function.Banner.associate (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/banner.model.ts:61:16)
+    at /Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:51:31
+    at Array.forEach (<anonymous>)
+    at createModels (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:49:25)
+    at Object.<anonymous> (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:63:16)
+    at Module._compile (node:internal/modules/cjs/loader:1191:14)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1618:23)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+2023-04-19 00:25:44 error: uncaughtException: banners.hasMany called with something that's not a subclass of Sequelize.Model
+Error: banners.hasMany called with something that's not a subclass of Sequelize.Model
+    at Function.hasMany (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/sequelize/src/associations/mixin.js:18:13)
+    at Function.Banner.associate (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/banner.model.ts:61:16)
+    at /Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:51:31
+    at Array.forEach (<anonymous>)
+    at createModels (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:49:25)
+    at Object.<anonymous> (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:63:16)
+    at Module._compile (node:internal/modules/cjs/loader:1191:14)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1618:23)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+2023-04-19 00:25:54 error: uncaughtException: banners.hasMany called with something that's not a subclass of Sequelize.Model
+Error: banners.hasMany called with something that's not a subclass of Sequelize.Model
+    at Function.hasMany (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/sequelize/src/associations/mixin.js:18:13)
+    at Function.Banner.associate (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/banner.model.ts:61:16)
+    at /Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:51:31
+    at Array.forEach (<anonymous>)
+    at createModels (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:49:25)
+    at Object.<anonymous> (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:63:16)
+    at Module._compile (node:internal/modules/cjs/loader:1191:14)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1618:23)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+2023-04-19 00:26:02 error: uncaughtException: banners.hasMany called with something that's not a subclass of Sequelize.Model
+Error: banners.hasMany called with something that's not a subclass of Sequelize.Model
+    at Function.hasMany (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/sequelize/src/associations/mixin.js:18:13)
+    at Function.Banner.associate (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/banner.model.ts:61:16)
+    at /Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:51:31
+    at Array.forEach (<anonymous>)
+    at createModels (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:49:25)
+    at Object.<anonymous> (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:63:16)
+    at Module._compile (node:internal/modules/cjs/loader:1191:14)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1618:23)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+2023-04-19 00:26:10 error: uncaughtException: banners.hasMany called with something that's not a subclass of Sequelize.Model
+Error: banners.hasMany called with something that's not a subclass of Sequelize.Model
+    at Function.hasMany (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/sequelize/src/associations/mixin.js:18:13)
+    at Function.Banner.associate (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/banner.model.ts:61:16)
+    at /Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:51:31
+    at Array.forEach (<anonymous>)
+    at createModels (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:49:25)
+    at Object.<anonymous> (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:63:16)
+    at Module._compile (node:internal/modules/cjs/loader:1191:14)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1618:23)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+2023-04-19 00:26:15 error: uncaughtException: banners.hasMany called with something that's not a subclass of Sequelize.Model
+Error: banners.hasMany called with something that's not a subclass of Sequelize.Model
+    at Function.hasMany (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/sequelize/src/associations/mixin.js:18:13)
+    at Function.Banner.associate (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/banner.model.ts:61:16)
+    at /Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:51:31
+    at Array.forEach (<anonymous>)
+    at createModels (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:49:25)
+    at Object.<anonymous> (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:63:16)
+    at Module._compile (node:internal/modules/cjs/loader:1191:14)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1618:23)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+2023-04-19 00:26:29 error: uncaughtException: banners.hasMany called with something that's not a subclass of Sequelize.Model
+Error: banners.hasMany called with something that's not a subclass of Sequelize.Model
+    at Function.hasMany (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/sequelize/src/associations/mixin.js:18:13)
+    at Function.Banner.associate (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/banner.model.ts:61:16)
+    at /Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:51:31
+    at Array.forEach (<anonymous>)
+    at createModels (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:49:25)
+    at Object.<anonymous> (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:63:16)
+    at Module._compile (node:internal/modules/cjs/loader:1191:14)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1618:23)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+2023-04-19 00:28:09 error: uncaughtException: banners.hasMany called with something that's not a subclass of Sequelize.Model
+Error: banners.hasMany called with something that's not a subclass of Sequelize.Model
+    at Function.hasMany (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/sequelize/src/associations/mixin.js:18:13)
+    at Function.Banner.associate (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/banner.model.ts:61:16)
+    at /Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:51:31
+    at Array.forEach (<anonymous>)
+    at createModels (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:49:25)
+    at Object.<anonymous> (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:63:16)
+    at Module._compile (node:internal/modules/cjs/loader:1191:14)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1618:23)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+2023-04-19 00:29:02 error: uncaughtException: banners.hasMany called with something that's not a subclass of Sequelize.Model
+Error: banners.hasMany called with something that's not a subclass of Sequelize.Model
+    at Function.hasMany (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/sequelize/src/associations/mixin.js:18:13)
+    at Function.Banner.associate (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/banner.model.ts:61:16)
+    at /Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:51:31
+    at Array.forEach (<anonymous>)
+    at createModels (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:49:25)
+    at Object.<anonymous> (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:63:16)
+    at Module._compile (node:internal/modules/cjs/loader:1191:14)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1618:23)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+2023-04-19 00:29:11 error: uncaughtException: banners.hasMany called with something that's not a subclass of Sequelize.Model
+Error: banners.hasMany called with something that's not a subclass of Sequelize.Model
+    at Function.hasMany (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/sequelize/src/associations/mixin.js:18:13)
+    at Function.Banner.associate (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/banner.model.ts:61:16)
+    at /Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:51:31
+    at Array.forEach (<anonymous>)
+    at createModels (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:49:25)
+    at Object.<anonymous> (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:63:16)
+    at Module._compile (node:internal/modules/cjs/loader:1191:14)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1618:23)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+2023-04-19 00:29:18 error: uncaughtException: banners.hasMany called with something that's not a subclass of Sequelize.Model
+Error: banners.hasMany called with something that's not a subclass of Sequelize.Model
+    at Function.hasMany (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/sequelize/src/associations/mixin.js:18:13)
+    at Function.Banner.associate (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/banner.model.ts:61:16)
+    at /Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:51:31
+    at Array.forEach (<anonymous>)
+    at createModels (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:49:25)
+    at Object.<anonymous> (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:63:16)
+    at Module._compile (node:internal/modules/cjs/loader:1191:14)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1618:23)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+2023-04-19 00:29:28 error: uncaughtException: banners.hasMany called with something that's not a subclass of Sequelize.Model
+Error: banners.hasMany called with something that's not a subclass of Sequelize.Model
+    at Function.hasMany (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/sequelize/src/associations/mixin.js:18:13)
+    at Function.Banner.associate (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/banner.model.ts:61:16)
+    at /Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:51:31
+    at Array.forEach (<anonymous>)
+    at createModels (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:49:25)
+    at Object.<anonymous> (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:63:16)
+    at Module._compile (node:internal/modules/cjs/loader:1191:14)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1618:23)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+2023-04-19 00:29:44 error: uncaughtException: banners.hasMany called with something that's not a subclass of Sequelize.Model
+Error: banners.hasMany called with something that's not a subclass of Sequelize.Model
+    at Function.hasMany (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/sequelize/src/associations/mixin.js:18:13)
+    at Function.Banner.associate (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/banner.model.ts:61:16)
+    at /Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:51:31
+    at Array.forEach (<anonymous>)
+    at createModels (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:49:25)
+    at Object.<anonymous> (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:63:16)
+    at Module._compile (node:internal/modules/cjs/loader:1191:14)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1618:23)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+2023-04-19 00:29:58 error: uncaughtException: banners.hasMany called with something that's not a subclass of Sequelize.Model
+Error: banners.hasMany called with something that's not a subclass of Sequelize.Model
+    at Function.hasMany (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/sequelize/src/associations/mixin.js:18:13)
+    at Function.Banner.associate (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/banner.model.ts:61:16)
+    at /Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:51:31
+    at Array.forEach (<anonymous>)
+    at createModels (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:49:25)
+    at Object.<anonymous> (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:63:16)
+    at Module._compile (node:internal/modules/cjs/loader:1191:14)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1618:23)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+2023-04-19 00:31:12 error: uncaughtException: banners.hasMany called with something that's not a subclass of Sequelize.Model
+Error: banners.hasMany called with something that's not a subclass of Sequelize.Model
+    at Function.hasMany (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/sequelize/src/associations/mixin.js:18:13)
+    at Function.Banner.associate (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/banner.model.ts:61:16)
+    at /Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:51:31
+    at Array.forEach (<anonymous>)
+    at createModels (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:49:25)
+    at Object.<anonymous> (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:63:16)
+    at Module._compile (node:internal/modules/cjs/loader:1191:14)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1618:23)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+2023-04-19 00:31:32 error: uncaughtException: banners.hasMany called with something that's not a subclass of Sequelize.Model
+Error: banners.hasMany called with something that's not a subclass of Sequelize.Model
+    at Function.hasMany (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/sequelize/src/associations/mixin.js:18:13)
+    at Function.Banner.associate (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/banner.model.ts:61:16)
+    at /Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:51:31
+    at Array.forEach (<anonymous>)
+    at createModels (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:49:25)
+    at Object.<anonymous> (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:63:16)
+    at Module._compile (node:internal/modules/cjs/loader:1191:14)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1618:23)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+2023-04-19 00:33:54 error: uncaughtException: branchs.hasMany called with something that's not a subclass of Sequelize.Model
+Error: branchs.hasMany called with something that's not a subclass of Sequelize.Model
+    at Function.hasMany (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/sequelize/src/associations/mixin.js:18:13)
+    at Function.Branch.associate (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/branchTranslation.model.ts:37:16)
+    at /Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:51:31
+    at Array.forEach (<anonymous>)
+    at createModels (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:49:25)
+    at Object.<anonymous> (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:63:16)
+    at Module._compile (node:internal/modules/cjs/loader:1191:14)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1618:23)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+2023-04-19 00:34:05 error: uncaughtException: branchs.hasMany called with something that's not a subclass of Sequelize.Model
+Error: branchs.hasMany called with something that's not a subclass of Sequelize.Model
+    at Function.hasMany (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/sequelize/src/associations/mixin.js:18:13)
+    at Function.Branch.associate (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/branchTranslation.model.ts:37:16)
+    at /Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:51:31
+    at Array.forEach (<anonymous>)
+    at createModels (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:49:25)
+    at Object.<anonymous> (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:63:16)
+    at Module._compile (node:internal/modules/cjs/loader:1191:14)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1618:23)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+2023-04-19 00:34:15 error: uncaughtException: branchs.hasMany called with something that's not a subclass of Sequelize.Model
+Error: branchs.hasMany called with something that's not a subclass of Sequelize.Model
+    at Function.hasMany (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/sequelize/src/associations/mixin.js:18:13)
+    at Function.Branch.associate (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/branchTranslation.model.ts:41:16)
+    at /Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:51:31
+    at Array.forEach (<anonymous>)
+    at createModels (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:49:25)
+    at Object.<anonymous> (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:63:16)
+    at Module._compile (node:internal/modules/cjs/loader:1191:14)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1618:23)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+2023-04-19 00:34:56 error: uncaughtException: branchs.hasMany called with something that's not a subclass of Sequelize.Model
+Error: branchs.hasMany called with something that's not a subclass of Sequelize.Model
+    at Function.hasMany (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/sequelize/src/associations/mixin.js:18:13)
+    at Function.Branch.associate (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/branchTranslation.model.ts:49:16)
+    at /Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:51:31
+    at Array.forEach (<anonymous>)
+    at createModels (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:49:25)
+    at Object.<anonymous> (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:63:16)
+    at Module._compile (node:internal/modules/cjs/loader:1191:14)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1618:23)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+2023-04-19 00:35:20 error: uncaughtException: branchs.hasMany called with something that's not a subclass of Sequelize.Model
+Error: branchs.hasMany called with something that's not a subclass of Sequelize.Model
+    at Function.hasMany (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/sequelize/src/associations/mixin.js:18:13)
+    at Function.Branch.associate (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/branchTranslation.model.ts:49:16)
+    at /Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:51:31
+    at Array.forEach (<anonymous>)
+    at createModels (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:49:25)
+    at Object.<anonymous> (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:63:16)
+    at Module._compile (node:internal/modules/cjs/loader:1191:14)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1618:23)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+2023-04-19 00:35:34 error: uncaughtException: branchs.hasMany called with something that's not a subclass of Sequelize.Model
+Error: branchs.hasMany called with something that's not a subclass of Sequelize.Model
+    at Function.hasMany (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/sequelize/src/associations/mixin.js:18:13)
+    at Function.BranchTranslation.associate (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/branchTranslation.model.ts:49:27)
+    at /Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:51:31
+    at Array.forEach (<anonymous>)
+    at createModels (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:49:25)
+    at Object.<anonymous> (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:63:16)
+    at Module._compile (node:internal/modules/cjs/loader:1191:14)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1618:23)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)

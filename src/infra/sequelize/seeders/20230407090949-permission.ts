@@ -53,6 +53,11 @@ module.exports = {
           name: "Tài khoản",
           value: "accounts",
         },
+        {
+          id: 11,
+          name: "Lĩnh vực",
+          value: "branchs",
+        },
       ]);
 
     } catch (error) {

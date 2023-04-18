@@ -14,6 +14,7 @@ export class BannerRoute implements Routes {
 
     private initializeRoutes() {
         this.router.get(`${this.path}`, this.banner.index);
+        this.router.get(`${this.path}/getListBanner`, this.banner.getListBanner);
         this.router.post(`${this.path}/create`, this.banner.create);
         this.router.get(`${this.path}/show/:id`, this.banner.show);
         this.router.put(`${this.path}/update/:id`, this.banner.update);

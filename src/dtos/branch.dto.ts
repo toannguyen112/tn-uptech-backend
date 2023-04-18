@@ -1,4 +1,4 @@
-export class BannerDTO {
+export class BranchDTO {
     static transform = (item) => {
 
         if (!item.translations.length) return {};
@@ -7,8 +7,6 @@ export class BannerDTO {
         return {
             id: item.id,
             name: translationData.name || "",
-            status: item.status || 'inactive',
-            thumbnail: item.image || null,
             createdAt: item.createdAt,
             updatedAt: item.updatedAt,
         }
@@ -17,14 +15,12 @@ export class BannerDTO {
 
     static transformDetail = (item) => {
 
-        if (!item) return {};
+        if (!item.translations.length) return {};
         const translationData = item.translations[0];
 
         return {
             id: item.id,
             name: translationData.name || "",
-            createdAt: item.createdAt,
-            updatedAt: item.updatedAt,
         }
     }
 }

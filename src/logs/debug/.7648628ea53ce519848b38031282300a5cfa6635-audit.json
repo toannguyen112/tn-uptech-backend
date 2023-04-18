@@ -129,6 +129,11 @@
             "date": 1681750806007,
             "name": "/Users/toannguyen/Documents/Source/tn-uptech-backend/src/logs/debug/2023-04-18.log",
             "hash": "4285b05e9b7f193e9cf5d561b64a6df343eb03b0af9458bed0886714675520c0"
+        },
+        {
+            "date": 1681837470191,
+            "name": "/Users/toannguyen/Documents/Source/tn-uptech-backend/src/logs/debug/2023-04-19.log",
+            "hash": "b863f89b213c45f431b4f03ca47165a113d636310d5326bc18b6d0be83924f98"
         }
     ],
     "hashType": "sha256"
