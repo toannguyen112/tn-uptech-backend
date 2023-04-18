@@ -131,7 +131,7 @@ export class BannerService {
     public findById = async (id: string | number) => {
 
         const banner = await models.Banner.findOne({
-            where: { id},
+            where: { id },
             include: [
                 {
                     model: models.Media,
@@ -171,8 +171,8 @@ export class BannerService {
         try {
             return await models.BannerTranslation.update({
                 name: body.name,
-                content: body.content,
                 description: body.description,
+                sub_name: body.sub_name,
             },
                 {
                     where: {
