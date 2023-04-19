@@ -33,6 +33,7 @@ export class JobDTO {
             expried_date: item.expried_date ? Helper.formatDayJs(item.expried_date, "YYYY/MM/DD") : null,
             description: translationData.description || "",
             status: item.status,
+            location: translationData.location,
             required: translationData.required || "",
             benefit: translationData.benefit || "",
         }
@@ -57,6 +58,33 @@ export class JobDTO {
             expried_date: item.expried_date ? Helper.formatDayJs(item.expried_date, "YYYY/MM/DD") : null,
             benefit: translationData.benefit || "",
             related: item.related || [],
+
+            ...Helper.FieldsSeo(translationData)
+
+        }
+    }
+
+    static transformDetailClient = (item) => {
+
+        if (!item) return {};
+        const translationData = item.translations[0];
+
+        return {
+            id: item.id,
+            name: translationData.name || "",
+            description: translationData.description || "",
+            required: translationData.required || "",
+            isFeatured: item.isFeatured || false,
+            address_work: translationData.address_work || "",
+            location: translationData.location || "",
+            view: item.view || 0,
+            status: item.status || 'inactive',
+            expried_date: item.expried_date ? Helper.formatDayJs(item.expried_date, "YYYY/MM/DD") : null,
+            benefit: translationData.benefit || "",
+            
+            related: item.jobRelated.map((item) => {
+                return this.transformClient(item)
+            }) || [],
 
             ...Helper.FieldsSeo(translationData)
 

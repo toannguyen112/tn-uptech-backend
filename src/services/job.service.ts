@@ -162,10 +162,43 @@ export class JobService {
         return JobDTO.transformDetail(job);
     }
 
-    public findByIdClient = async (slug) => {
+    public findByIdClient = async (id) => {
 
-        return;
+        const job = await models.Job.findOne({
+            where: { id },
+            include: [
+                {
+                    model: models.JobTranslation,
+                    as: "translations",
+                    required: true,
+                    where: {
+                        locale: global.lang,
+                        job_id: id
+                    }
+                },
+            ]
+        });
 
+        let jobRelated = [];
+
+        if (job.related && job.related.length) {
+            jobRelated = await models.Job.findAll({
+                where: { id: [...job.related] },
+                include: [
+                    {
+                        model: models.JobTranslation,
+                        as: "translations",
+                        required: true,
+                        where: {
+                            locale: global.lang,
+                            job_id: id
+                        }
+                    },
+                ]
+            });
+        }
+
+        return JobDTO.transformDetailClient({ ...job, jobRelated });
     }
 
     public update = async (id, body) => {

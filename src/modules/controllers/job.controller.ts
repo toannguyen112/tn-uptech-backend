@@ -26,7 +26,7 @@ export class JobController {
         }
     }
 
-      public async getListFeatured(req: Request, res: Response, next: NextFunction) {
+    public async getListFeatured(req: Request, res: Response, next: NextFunction) {
 
         try {
             const data = await job.getListFeatured();
@@ -47,9 +47,9 @@ export class JobController {
         }
     }
 
-    public async getDetails(req: Request, res: Response, next: NextFunction) {
+    public async findByIdClient(req: Request, res: Response, next: NextFunction) {
         try {
-            const data = await job.findByIdClient(req.params.slug);
+            const data = await job.findByIdClient(req.params.id);
             res.status(200).send({ message: "ok", data });
         } catch (error) {
             console.log(error.message);
