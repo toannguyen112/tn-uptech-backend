@@ -99,10 +99,7 @@ export class ProjectService {
             ...body,
             thumbnail: body.thumbnail ? body.thumbnail.id : null,
             banner: body.banner ? body.banner.id : null,
-        },
-            {
-                individualHooks: true,
-            }
+        },{ individualHooks: true }
         )
             .then(async (project: any) => {
 
@@ -131,7 +128,7 @@ export class ProjectService {
     public findById = async (id: string | number) => {
 
         const project = await models.Project.findOne({
-            where: {id},
+            where: { id },
             include: [
                 {
                     model: models.Media,
@@ -184,13 +181,13 @@ export class ProjectService {
                 name: body.name,
                 content: body.content,
                 description: body.description,
-                meta_title: body.meta_title ,
-                meta_description: body.meta_description ,
-                meta_keyword: body.meta_keyword ,
-                meta_robots: body.meta_robots ,
-                canonica_link: body.canonica_link ,
-                meta_image: body.meta_image ,
-                meta_viewport: body.meta_viewport ,
+                meta_title: body.meta_title,
+                meta_description: body.meta_description,
+                meta_keyword: body.meta_keyword,
+                meta_robots: body.meta_robots,
+                canonica_link: body.canonica_link,
+                meta_image: body.meta_image,
+                meta_viewport: body.meta_viewport,
                 slug: Helper.renderSlug(body.slug ? body.slug : body.name),
                 custom_slug: Helper.renderSlug(body.custom_slug ? body.custom_slug : body.name),
             },

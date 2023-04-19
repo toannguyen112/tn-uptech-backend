@@ -1,0 +1,44 @@
+2023-04-20 02:42:29 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/route/branch.route.ts[0m:[93m16[0m:[93m67[0m - [91merror[0m[90m TS2339: [0mProperty 'getListBranch' does not exist on type 'BranchController'.
+
+[7m16[0m         this.router.get(`${this.path}/getListBranch`, this.branch.getListBranch);
+[7m  [0m [91m                                                                  ~~~~~~~~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/route/branch.route.ts[0m:[93m16[0m:[93m67[0m - [91merror[0m[90m TS2339: [0mProperty 'getListBranch' does not exist on type 'BranchController'.
+
+[7m16[0m         this.router.get(`${this.path}/getListBranch`, this.branch.getListBranch);
+[7m  [0m [91m                                                                  ~~~~~~~~~~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-20 02:43:12 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/modules/controllers/branch.controller.ts[0m:[93m20[0m:[93m39[0m - [91merror[0m[90m TS2339: [0mProperty 'getListBranch' does not exist on type 'BranchService'.
+
+[7m20[0m             const data = await branch.getListBranch();
+[7m  [0m [91m                                      ~~~~~~~~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/modules/controllers/branch.controller.ts[0m:[93m20[0m:[93m39[0m - [91merror[0m[90m TS2339: [0mProperty 'getListBranch' does not exist on type 'BranchService'.
+
+[7m20[0m             const data = await branch.getListBranch();
+[7m  [0m [91m                                      ~~~~~~~~~~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)

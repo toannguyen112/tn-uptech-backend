@@ -63,7 +63,31 @@ export class BranchService {
         }
     }
 
+    public getListBranch = async () => {
+        try {
+            const rows = await models.Branch.findAll({
+                include: [
+                    {
+                        model: models.BranchTranslation,
+                        as: "translations",
+                        required: true,
+                        where: { locale: global.lang }
+                    },
+                ]
+            });
+
+            return rows.map((item: any) => {
+                return BranchDTO.transform(item);
+            });
+
+        } catch (error) {
+            console.log(error);
+        }
+    }
+
     public store = async (body) => {
+
+        const t = await models.sequelize.transaction();
 
         return await models.Branch.create({
             ...body,
@@ -108,6 +132,8 @@ export class BranchService {
     }
 
     public updateById = async (id: string, body) => {
+
+        const t = await models.sequelize.transaction();
 
         return await models.Branch.update({
             status: body.status,

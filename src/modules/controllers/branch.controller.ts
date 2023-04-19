@@ -14,6 +14,16 @@ export class BranchController {
         }
     }
 
+    public async getListBranch(req: Request, res: Response, next: NextFunction) {
+
+        try {
+            const data = await branch.getListBranch();
+            res.status(200).send({ message: "ok", data });
+        } catch (error) {
+            res.status(500).send(error.message);
+        }
+    }
+
     public async create(req: Request, res: Response, next: NextFunction) {
 
         try {

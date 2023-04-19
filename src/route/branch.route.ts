@@ -13,6 +13,7 @@ export class BranchRoute implements Routes {
 
     private initializeRoutes() {
         this.router.get(`${this.path}`, this.branch.index);
+        this.router.get(`${this.path}/getListBranch`, this.branch.getListBranch);
         this.router.post(`${this.path}/create`, this.branch.create);
         this.router.get(`${this.path}/show/:id`, this.branch.show);
         this.router.put(`${this.path}/update/:id`, this.branch.update);
