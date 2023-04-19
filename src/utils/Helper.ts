@@ -42,7 +42,7 @@ export default class Helper {
   public static async emptyDirSync() {
     try {
       await fs.emptyDirSync('./storage/uploads');
-      console.log('success!')
+      console.log('success!');
     } catch (err) {
       console.error(err)
     }

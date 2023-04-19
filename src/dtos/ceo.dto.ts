@@ -2,6 +2,25 @@ export class CeoDTO {
     static transform = (item) => {
 
         if (!item.translations.length) return {};
+        const translationData = item.translations[0];
+
+        return {
+            id: item.id,
+            title: translationData.title || "",
+            name: translationData.name || "",
+            slug: item.slug || "",
+            status: item.status || 'inactive',
+            thumbnail: item.image,
+            
+            createdAt: item.createdAt,
+            updatedAt: item.updatedAt,
+        }
+
+    }
+
+    static transformClient = (item: any) => {
+
+        if (!item.translations.length) return {};
 
         const translationData = item.translations[0];
 
@@ -9,10 +28,6 @@ export class CeoDTO {
             id: item.id,
             name: translationData.name || "",
             slug: item.slug || "",
-            status: item.status || 'inactive',
-            thumbnail: item.image,
-            createdAt: item.createdAt,
-            updatedAt: item.updatedAt,
         }
 
     }
@@ -24,6 +39,7 @@ export class CeoDTO {
 
         return {
             id: item.id,
+            title: translationData.title || "",
             name: translationData.name || "",
             slug: translationData.slug || "",
             custom_slug: translationData.custom_slug || "",
@@ -32,6 +48,7 @@ export class CeoDTO {
             detail: translationData.detail || "",
             thumbnail: item.image || null,
             related: item.related || [],
+
             createdAt: item.createdAt,
             updatedAt: item.updatedAt,
         }

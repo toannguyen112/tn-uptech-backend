@@ -15,6 +15,7 @@ module.exports = {
     await queryInterface.bulkInsert("ceo_translation", [
       {
         id: 1,
+        title: `Ceo`,
         name: `Hứa Thiện Vương Vi`,
         date: "13/02/1980",
         phone: "0908 363 923",
@@ -40,6 +41,7 @@ Dù cho đang trong thời kỳ kinh tế không ổn định; nhưng mục tiê
       },
       {
         id: 2,
+        title: `Ceo`,
         name: `Hứa Thiện Vương En`,
         date: "13/02/1980",
         phone: "0908 363 923",
@@ -65,6 +67,7 @@ Dù cho đang trong thời kỳ kinh tế không ổn định; nhưng mục tiê
       },
       {
         id: 3,
+        title: `Ceo`,
         name: `Hứa Thiện Vương Vi`,
         date: "13/02/1980",
         phone: "0908 363 923",
@@ -90,6 +93,7 @@ Dù cho đang trong thời kỳ kinh tế không ổn định; nhưng mục tiê
       },
       {
         id: 4,
+        title: `Ceo`,
         name: `Hứa Thiện Vương En`,
         date: "13/02/1980",
         phone: "0908 363 923",

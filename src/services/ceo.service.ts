@@ -1,6 +1,7 @@
 import { CeoDTO } from "../dtos/ceo.dto";
 import models from "../infra/sequelize/models";
 import { ApiFeatures } from "../utils/ApiFeatures";
+import { logger } from "../utils/logger";
 
 import Helper from "../utils/Helper";
 import { Op } from "sequelize";
@@ -89,8 +90,39 @@ export class CeoService {
             };
 
             return result;
+
         } catch (error) {
             console.log(error);
+        }
+    }
+
+    public getListCeo = async () => {
+        try {
+
+            const rows = await models.Ceo.findAll({
+                where: { status: "active" },
+                include: [
+                    {
+                        model: models.Media,
+                        as: "image",
+                        required: false,
+                    },
+                    {
+                        model: models.CeoTranslation,
+                        as: "translations",
+                        required: true,
+                        where: {locale: global.lang}
+                    },
+                ]
+            });
+
+            return rows.map((item: any) => {
+                return CeoDTO.transform(item);
+            });
+
+        } catch (error) {
+            console.log(error);
+            logger.error(JSON.stringify(error));
         }
     }
 
@@ -127,7 +159,7 @@ export class CeoService {
     public findById = async (id: string | number) => {
 
         const ceo = await models.Ceo.findOne({
-            where: {id},
+            where: { id },
             include: [
                 {
                     model: models.Media,

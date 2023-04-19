@@ -29,6 +29,10 @@ module.exports = function (sequelize, DataTypes) {
                 type: DataTypes.STRING,
             },
 
+            title: {
+                type: DataTypes.STRING,
+            },
+
             description: {
                 type: DataTypes.TEXT('long'),
             },
