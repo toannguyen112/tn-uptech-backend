@@ -8,10 +8,10 @@ export class CeoDTO {
             id: item.id,
             title: translationData.title || "",
             name: translationData.name || "",
-            slug: item.slug || "",
+            slug: translationData.slug || "",
             status: item.status || 'inactive',
             thumbnail: item.image,
-            
+
             createdAt: item.createdAt,
             updatedAt: item.updatedAt,
         }
@@ -39,15 +39,22 @@ export class CeoDTO {
 
         return {
             id: item.id,
-            title: translationData.title || "",
             name: translationData.name || "",
-            slug: translationData.slug || "",
-            custom_slug: translationData.custom_slug || "",
+            title: translationData.title || "",
             description: translationData.description || "",
-            status: item.status || 'inactive',
             detail: translationData.detail || "",
+            date: translationData.date || "",
+            phone: translationData.phone || "",
+            email: translationData.email || "",
+            position: translationData.position || "",
+            work_at: translationData.work_at || "",
+            lang: translationData.lang || "",
+            address: translationData.address || "",
+            social: translationData.social || "",
+            education: translationData.education || "",
+
+            status: item.status || 'inactive',
             thumbnail: item.image || null,
-            related: item.related || [],
 
             createdAt: item.createdAt,
             updatedAt: item.updatedAt,

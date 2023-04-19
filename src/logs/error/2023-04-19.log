@@ -893,3 +893,597 @@ TSError: ⨯ Unable to compile TypeScript:
     at Function.Module._load (node:internal/modules/cjs/loader:904:12)
     at Module.require (node:internal/modules/cjs/loader:1093:19)
 2023-04-19 12:48:44 error: {"name":"SequelizeDatabaseError","parent":{"code":"ER_BAD_FIELD_ERROR","errno":1054,"sqlState":"42S22","sqlMessage":"Unknown column 'ceos.isFeatured' in 'where clause'","sql":"SELECT `ceos`.`id`, `ceos`.`status`, `ceos`.`thumbnail`, `ceos`.`createdAt`, `ceos`.`updatedAt`, `image`.`id` AS `image.id`, `image`.`filename` AS `image.filename`, `image`.`disk` AS `image.disk`, `image`.`folder_id` AS `image.folder_id`, `image`.`path` AS `image.path`, `image`.`extension` AS `image.extension`, `image`.`mime` AS `image.mime`, `image`.`size` AS `image.size`, `image`.`width` AS `image.width`, `image`.`height` AS `image.height`, `image`.`alt` AS `image.alt`, `image`.`creator` AS `image.creator`, `image`.`editor` AS `image.editor`, `image`.`createdAt` AS `image.createdAt`, `image`.`updatedAt` AS `image.updatedAt`, `translations`.`id` AS `translations.id`, `translations`.`ceo_id` AS `translations.ceo_id`, `translations`.`locale` AS `translations.locale`, `translations`.`name` AS `translations.name`, `translations`.`description` AS `translations.description`, `translations`.`detail` AS `translations.detail`, `translations`.`date` AS `translations.date`, `translations`.`phone` AS `translations.phone`, `translations`.`email` AS `translations.email`, `translations`.`position` AS `translations.position`, `translations`.`work_at` AS `translations.work_at`, `translations`.`lang` AS `translations.lang`, `translations`.`address` AS `translations.address`, `translations`.`social` AS `translations.social`, `translations`.`education` AS `translations.education`, `translations`.`slug` AS `translations.slug`, `translations`.`custom_slug` AS `translations.custom_slug`, `translations`.`meta_title` AS `translations.meta_title`, `translations`.`meta_description` AS `translations.meta_description`, `translations`.`meta_keyword` AS `translations.meta_keyword`, `translations`.`meta_robots` AS `translations.meta_robots`, `translations`.`canonica_link` AS `translations.canonica_link`, `translations`.`meta_image` AS `translations.meta_image`, `translations`.`meta_viewport` AS `translations.meta_viewport` FROM `ceos` AS `ceos` LEFT OUTER JOIN `medias` AS `image` ON `ceos`.`thumbnail` = `image`.`id` INNER JOIN `ceo_translation` AS `translations` ON `ceos`.`id` = `translations`.`ceo_id` AND `translations`.`locale` = 'en' WHERE `ceos`.`isFeatured` = true AND `ceos`.`status` = true;"},"original":{"code":"ER_BAD_FIELD_ERROR","errno":1054,"sqlState":"42S22","sqlMessage":"Unknown column 'ceos.isFeatured' in 'where clause'","sql":"SELECT `ceos`.`id`, `ceos`.`status`, `ceos`.`thumbnail`, `ceos`.`createdAt`, `ceos`.`updatedAt`, `image`.`id` AS `image.id`, `image`.`filename` AS `image.filename`, `image`.`disk` AS `image.disk`, `image`.`folder_id` AS `image.folder_id`, `image`.`path` AS `image.path`, `image`.`extension` AS `image.extension`, `image`.`mime` AS `image.mime`, `image`.`size` AS `image.size`, `image`.`width` AS `image.width`, `image`.`height` AS `image.height`, `image`.`alt` AS `image.alt`, `image`.`creator` AS `image.creator`, `image`.`editor` AS `image.editor`, `image`.`createdAt` AS `image.createdAt`, `image`.`updatedAt` AS `image.updatedAt`, `translations`.`id` AS `translations.id`, `translations`.`ceo_id` AS `translations.ceo_id`, `translations`.`locale` AS `translations.locale`, `translations`.`name` AS `translations.name`, `translations`.`description` AS `translations.description`, `translations`.`detail` AS `translations.detail`, `translations`.`date` AS `translations.date`, `translations`.`phone` AS `translations.phone`, `translations`.`email` AS `translations.email`, `translations`.`position` AS `translations.position`, `translations`.`work_at` AS `translations.work_at`, `translations`.`lang` AS `translations.lang`, `translations`.`address` AS `translations.address`, `translations`.`social` AS `translations.social`, `translations`.`education` AS `translations.education`, `translations`.`slug` AS `translations.slug`, `translations`.`custom_slug` AS `translations.custom_slug`, `translations`.`meta_title` AS `translations.meta_title`, `translations`.`meta_description` AS `translations.meta_description`, `translations`.`meta_keyword` AS `translations.meta_keyword`, `translations`.`meta_robots` AS `translations.meta_robots`, `translations`.`canonica_link` AS `translations.canonica_link`, `translations`.`meta_image` AS `translations.meta_image`, `translations`.`meta_viewport` AS `translations.meta_viewport` FROM `ceos` AS `ceos` LEFT OUTER JOIN `medias` AS `image` ON `ceos`.`thumbnail` = `image`.`id` INNER JOIN `ceo_translation` AS `translations` ON `ceos`.`id` = `translations`.`ceo_id` AND `translations`.`locale` = 'en' WHERE `ceos`.`isFeatured` = true AND `ceos`.`status` = true;"},"sql":"SELECT `ceos`.`id`, `ceos`.`status`, `ceos`.`thumbnail`, `ceos`.`createdAt`, `ceos`.`updatedAt`, `image`.`id` AS `image.id`, `image`.`filename` AS `image.filename`, `image`.`disk` AS `image.disk`, `image`.`folder_id` AS `image.folder_id`, `image`.`path` AS `image.path`, `image`.`extension` AS `image.extension`, `image`.`mime` AS `image.mime`, `image`.`size` AS `image.size`, `image`.`width` AS `image.width`, `image`.`height` AS `image.height`, `image`.`alt` AS `image.alt`, `image`.`creator` AS `image.creator`, `image`.`editor` AS `image.editor`, `image`.`createdAt` AS `image.createdAt`, `image`.`updatedAt` AS `image.updatedAt`, `translations`.`id` AS `translations.id`, `translations`.`ceo_id` AS `translations.ceo_id`, `translations`.`locale` AS `translations.locale`, `translations`.`name` AS `translations.name`, `translations`.`description` AS `translations.description`, `translations`.`detail` AS `translations.detail`, `translations`.`date` AS `translations.date`, `translations`.`phone` AS `translations.phone`, `translations`.`email` AS `translations.email`, `translations`.`position` AS `translations.position`, `translations`.`work_at` AS `translations.work_at`, `translations`.`lang` AS `translations.lang`, `translations`.`address` AS `translations.address`, `translations`.`social` AS `translations.social`, `translations`.`education` AS `translations.education`, `translations`.`slug` AS `translations.slug`, `translations`.`custom_slug` AS `translations.custom_slug`, `translations`.`meta_title` AS `translations.meta_title`, `translations`.`meta_description` AS `translations.meta_description`, `translations`.`meta_keyword` AS `translations.meta_keyword`, `translations`.`meta_robots` AS `translations.meta_robots`, `translations`.`canonica_link` AS `translations.canonica_link`, `translations`.`meta_image` AS `translations.meta_image`, `translations`.`meta_viewport` AS `translations.meta_viewport` FROM `ceos` AS `ceos` LEFT OUTER JOIN `medias` AS `image` ON `ceos`.`thumbnail` = `image`.`id` INNER JOIN `ceo_translation` AS `translations` ON `ceos`.`id` = `translations`.`ceo_id` AND `translations`.`locale` = 'en' WHERE `ceos`.`isFeatured` = true AND `ceos`.`status` = true;","parameters":{}}
+2023-04-19 17:58:19 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/dtos/ceo.dto.ts[0m:[93m43[0m:[93m23[0m - [91merror[0m[90m TS2304: [0mCannot find name 'DataTypes'.
+
+[7m43[0m                 type: DataTypes.STRING,
+[7m  [0m [91m                      ~~~~~~~~~[0m
+[96msrc/dtos/ceo.dto.ts[0m:[93m47[0m:[93m23[0m - [91merror[0m[90m TS2304: [0mCannot find name 'DataTypes'.
+
+[7m47[0m                 type: DataTypes.STRING,
+[7m  [0m [91m                      ~~~~~~~~~[0m
+[96msrc/dtos/ceo.dto.ts[0m:[93m51[0m:[93m23[0m - [91merror[0m[90m TS2304: [0mCannot find name 'DataTypes'.
+
+[7m51[0m                 type: DataTypes.TEXT('long'),
+[7m  [0m [91m                      ~~~~~~~~~[0m
+[96msrc/dtos/ceo.dto.ts[0m:[93m55[0m:[93m23[0m - [91merror[0m[90m TS2304: [0mCannot find name 'DataTypes'.
+
+[7m55[0m                 type: DataTypes.TEXT('long'),
+[7m  [0m [91m                      ~~~~~~~~~[0m
+[96msrc/dtos/ceo.dto.ts[0m:[93m59[0m:[93m23[0m - [91merror[0m[90m TS2304: [0mCannot find name 'DataTypes'.
+
+[7m59[0m                 type: DataTypes.STRING,
+[7m  [0m [91m                      ~~~~~~~~~[0m
+[96msrc/dtos/ceo.dto.ts[0m:[93m63[0m:[93m23[0m - [91merror[0m[90m TS2304: [0mCannot find name 'DataTypes'.
+
+[7m63[0m                 type: DataTypes.STRING,
+[7m  [0m [91m                      ~~~~~~~~~[0m
+[96msrc/dtos/ceo.dto.ts[0m:[93m67[0m:[93m23[0m - [91merror[0m[90m TS2304: [0mCannot find name 'DataTypes'.
+
+[7m67[0m                 type: DataTypes.STRING,
+[7m  [0m [91m                      ~~~~~~~~~[0m
+[96msrc/dtos/ceo.dto.ts[0m:[93m71[0m:[93m23[0m - [91merror[0m[90m TS2304: [0mCannot find name 'DataTypes'.
+
+[7m71[0m                 type: DataTypes.STRING,
+[7m  [0m [91m                      ~~~~~~~~~[0m
+[96msrc/dtos/ceo.dto.ts[0m:[93m75[0m:[93m23[0m - [91merror[0m[90m TS2304: [0mCannot find name 'DataTypes'.
+
+[7m75[0m                 type: DataTypes.STRING,
+[7m  [0m [91m                      ~~~~~~~~~[0m
+[96msrc/dtos/ceo.dto.ts[0m:[93m80[0m:[93m23[0m - [91merror[0m[90m TS2304: [0mCannot find name 'DataTypes'.
+
+[7m80[0m                 type: DataTypes.STRING,
+[7m  [0m [91m                      ~~~~~~~~~[0m
+[96msrc/dtos/ceo.dto.ts[0m:[93m85[0m:[93m23[0m - [91merror[0m[90m TS2304: [0mCannot find name 'DataTypes'.
+
+[7m85[0m                 type: DataTypes.STRING,
+[7m  [0m [91m                      ~~~~~~~~~[0m
+[96msrc/dtos/ceo.dto.ts[0m:[93m90[0m:[93m23[0m - [91merror[0m[90m TS2304: [0mCannot find name 'DataTypes'.
+
+[7m90[0m                 type: DataTypes.STRING,
+[7m  [0m [91m                      ~~~~~~~~~[0m
+[96msrc/dtos/ceo.dto.ts[0m:[93m96[0m:[93m13[0m - [91merror[0m[90m TS1117: [0mAn object literal cannot have multiple properties with the same name.
+
+[7m96[0m             description: translationData.description || "",
+[7m  [0m [91m            ~~~~~~~~~~~[0m
+[96msrc/dtos/ceo.dto.ts[0m:[93m98[0m:[93m13[0m - [91merror[0m[90m TS1117: [0mAn object literal cannot have multiple properties with the same name.
+
+[7m98[0m             detail: translationData.detail || "",
+[7m  [0m [91m            ~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/dtos/ceo.dto.ts[0m:[93m43[0m:[93m23[0m - [91merror[0m[90m TS2304: [0mCannot find name 'DataTypes'.
+
+[7m43[0m                 type: DataTypes.STRING,
+[7m  [0m [91m                      ~~~~~~~~~[0m
+[96msrc/dtos/ceo.dto.ts[0m:[93m47[0m:[93m23[0m - [91merror[0m[90m TS2304: [0mCannot find name 'DataTypes'.
+
+[7m47[0m                 type: DataTypes.STRING,
+[7m  [0m [91m                      ~~~~~~~~~[0m
+[96msrc/dtos/ceo.dto.ts[0m:[93m51[0m:[93m23[0m - [91merror[0m[90m TS2304: [0mCannot find name 'DataTypes'.
+
+[7m51[0m                 type: DataTypes.TEXT('long'),
+[7m  [0m [91m                      ~~~~~~~~~[0m
+[96msrc/dtos/ceo.dto.ts[0m:[93m55[0m:[93m23[0m - [91merror[0m[90m TS2304: [0mCannot find name 'DataTypes'.
+
+[7m55[0m                 type: DataTypes.TEXT('long'),
+[7m  [0m [91m                      ~~~~~~~~~[0m
+[96msrc/dtos/ceo.dto.ts[0m:[93m59[0m:[93m23[0m - [91merror[0m[90m TS2304: [0mCannot find name 'DataTypes'.
+
+[7m59[0m                 type: DataTypes.STRING,
+[7m  [0m [91m                      ~~~~~~~~~[0m
+[96msrc/dtos/ceo.dto.ts[0m:[93m63[0m:[93m23[0m - [91merror[0m[90m TS2304: [0mCannot find name 'DataTypes'.
+
+[7m63[0m                 type: DataTypes.STRING,
+[7m  [0m [91m                      ~~~~~~~~~[0m
+[96msrc/dtos/ceo.dto.ts[0m:[93m67[0m:[93m23[0m - [91merror[0m[90m TS2304: [0mCannot find name 'DataTypes'.
+
+[7m67[0m                 type: DataTypes.STRING,
+[7m  [0m [91m                      ~~~~~~~~~[0m
+[96msrc/dtos/ceo.dto.ts[0m:[93m71[0m:[93m23[0m - [91merror[0m[90m TS2304: [0mCannot find name 'DataTypes'.
+
+[7m71[0m                 type: DataTypes.STRING,
+[7m  [0m [91m                      ~~~~~~~~~[0m
+[96msrc/dtos/ceo.dto.ts[0m:[93m75[0m:[93m23[0m - [91merror[0m[90m TS2304: [0mCannot find name 'DataTypes'.
+
+[7m75[0m                 type: DataTypes.STRING,
+[7m  [0m [91m                      ~~~~~~~~~[0m
+[96msrc/dtos/ceo.dto.ts[0m:[93m80[0m:[93m23[0m - [91merror[0m[90m TS2304: [0mCannot find name 'DataTypes'.
+
+[7m80[0m                 type: DataTypes.STRING,
+[7m  [0m [91m                      ~~~~~~~~~[0m
+[96msrc/dtos/ceo.dto.ts[0m:[93m85[0m:[93m23[0m - [91merror[0m[90m TS2304: [0mCannot find name 'DataTypes'.
+
+[7m85[0m                 type: DataTypes.STRING,
+[7m  [0m [91m                      ~~~~~~~~~[0m
+[96msrc/dtos/ceo.dto.ts[0m:[93m90[0m:[93m23[0m - [91merror[0m[90m TS2304: [0mCannot find name 'DataTypes'.
+
+[7m90[0m                 type: DataTypes.STRING,
+[7m  [0m [91m                      ~~~~~~~~~[0m
+[96msrc/dtos/ceo.dto.ts[0m:[93m96[0m:[93m13[0m - [91merror[0m[90m TS1117: [0mAn object literal cannot have multiple properties with the same name.
+
+[7m96[0m             description: translationData.description || "",
+[7m  [0m [91m            ~~~~~~~~~~~[0m
+[96msrc/dtos/ceo.dto.ts[0m:[93m98[0m:[93m13[0m - [91merror[0m[90m TS1117: [0mAn object literal cannot have multiple properties with the same name.
+
+[7m98[0m             detail: translationData.detail || "",
+[7m  [0m [91m            ~~~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-19 18:00:04 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/dtos/ceo.dto.ts[0m:[93m40[0m:[93m16[0m - [91merror[0m[90m TS2695: [0mLeft side of comma operator is unused and has no side effects.
+
+[7m40[0m         return {
+[7m  [0m [91m               ~[0m
+[7m41[0m             id: item.id,
+[7m  [0m [91m~~~~~~~~~~~~~~~~~~~~~~~~[0m
+[7m42[0m             name: translationData.name || "",
+[7m  [0m [91m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+[7m43[0m             title: translationData.title, || "",
+[7m  [0m [91m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+[96msrc/dtos/ceo.dto.ts[0m:[93m44[0m:[93m13[0m - [91merror[0m[90m TS2304: [0mCannot find name 'description'.
+
+[7m44[0m             description: translationData.description, || "",
+[7m  [0m [91m            ~~~~~~~~~~~[0m
+[96msrc/dtos/ceo.dto.ts[0m:[93m45[0m:[93m17[0m - [91merror[0m[90m TS2304: [0mCannot find name 'detail'.
+
+[7m45[0m                 detail: translationData.detail, || "",
+[7m  [0m [91m                ~~~~~~[0m
+[96msrc/dtos/ceo.dto.ts[0m:[93m46[0m:[93m21[0m - [91merror[0m[90m TS2552: [0mCannot find name 'date'. Did you mean 'Date'?
+
+[7m46[0m                     date: translationData.date, || "",
+[7m  [0m [91m                    ~~~~[0m
+
+  [96mnode_modules/typescript/lib/lib.es5.d.ts[0m:[93m933[0m:[93m13[0m
+    [7m933[0m declare var Date: DateConstructor;
+    [7m   [0m [96m            ~~~~[0m
+    'Date' is declared here.
+[96msrc/dtos/ceo.dto.ts[0m:[93m47[0m:[93m25[0m - [91merror[0m[90m TS2304: [0mCannot find name 'phone'.
+
+[7m47[0m                         phone: translationData.phone, || "",
+[7m  [0m [91m                        ~~~~~[0m
+[96msrc/dtos/ceo.dto.ts[0m:[93m48[0m:[93m29[0m - [91merror[0m[90m TS2304: [0mCannot find name 'email'.
+
+[7m48[0m                             email: translationData.email, || "",
+[7m  [0m [91m                            ~~~~~[0m
+[96msrc/dtos/ceo.dto.ts[0m:[93m49[0m:[93m33[0m - [91merror[0m[90m TS2304: [0mCannot find name 'position'.
+
+[7m49[0m                                 position: translationData.position, || "",
+[7m  [0m [91m                                ~~~~~~~~[0m
+[96msrc/dtos/ceo.dto.ts[0m:[93m50[0m:[93m37[0m - [91merror[0m[90m TS2304: [0mCannot find name 'work_at'.
+
+[7m50[0m                                     work_at: translationData.work_at, || "",
+[7m  [0m [91m                                    ~~~~~~~[0m
+[96msrc/dtos/ceo.dto.ts[0m:[93m51[0m:[93m41[0m - [91merror[0m[90m TS2304: [0mCannot find name 'lang'.
+
+[7m51[0m                                         lang: translationData.lang, || "",
+[7m  [0m [91m                                        ~~~~[0m
+[96msrc/dtos/ceo.dto.ts[0m:[93m52[0m:[93m45[0m - [91merror[0m[90m TS2304: [0mCannot find name 'address'.
+
+[7m52[0m                                             address: translationData.address, || "",
+[7m  [0m [91m                                            ~~~~~~~[0m
+[96msrc/dtos/ceo.dto.ts[0m:[93m53[0m:[93m49[0m - [91merror[0m[90m TS2304: [0mCannot find name 'social'.
+
+[7m53[0m                                                 social: translationData.social, || "",
+[7m  [0m [91m                                                ~~~~~~[0m
+[96msrc/dtos/ceo.dto.ts[0m:[93m54[0m:[93m53[0m - [91merror[0m[90m TS2304: [0mCannot find name 'custom_slug'.
+
+[7m54[0m                                                     custom_slug: translationData.custom_slug, || "",
+[7m  [0m [91m                                                    ~~~~~~~~~~~[0m
+[96msrc/dtos/ceo.dto.ts[0m:[93m55[0m:[93m57[0m - [91merror[0m[90m TS2304: [0mCannot find name 'status'.
+
+[7m55[0m                                                         status: item.status || 'status,ctive',
+[7m  [0m [91m                                                        ~~~~~~[0m
+[96msrc/dtos/ceo.dto.ts[0m:[93m56[0m:[93m61[0m - [91merror[0m[90m TS2304: [0mCannot find name 'thumbnail'.
+
+[7m56[0m                                                             thumbnail: item.image thumbnail,| null,
+[7m  [0m [91m                                                            ~~~~~~~~~[0m
+[96msrc/dtos/ceo.dto.ts[0m:[93m56[0m:[93m83[0m - [91merror[0m[90m TS2304: [0mCannot find name 'thumbnail'.
+
+[7m56[0m                                                             thumbnail: item.image thumbnail,| null,
+[7m  [0m [91m                                                                                  ~~~~~~~~~[0m
+[96msrc/dtos/ceo.dto.ts[0m:[93m56[0m:[93m83[0m - [91merror[0m[90m TS2695: [0mLeft side of comma operator is unused and has no side effects.
+
+[7m56[0m                                                             thumbnail: item.image thumbnail,| null,
+[7m  [0m [91m                                                                                  ~~~~~~~~~[0m
+[96msrc/dtos/ceo.dto.ts[0m:[93m56[0m:[93m83[0m - [91merror[0m[90m TS2695: [0mLeft side of comma operator is unused and has no side effects.
+
+[7m56[0m                                                             thumbnail: item.image thumbnail,| null,
+[7m  [0m [91m                                                                                  ~~~~~~~~~~~~~~~~[0m
+[96msrc/dtos/ceo.dto.ts[0m:[93m56[0m:[93m95[0m - [91merror[0m[90m TS2531: [0mObject is possibly 'null'.
+
+[7m56[0m                                                             thumbnail: item.image thumbnail,| null,
+[7m  [0m [91m                                                                                              ~~~~[0m
+[96msrc/dtos/ceo.dto.ts[0m:[93m57[0m:[93m65[0m - [91merror[0m[90m TS2304: [0mCannot find name 'related'.
+
+[7m57[0m                                                                 related: item.related, || [],
+[7m  [0m [91m                                                                ~~~~~~~[0m
+[96msrc/dtos/ceo.dto.ts[0m:[93m59[0m:[93m69[0m - [91merror[0m[90m TS2304: [0mCannot find name 'createdAt'.
+
+[7m59[0m                                                                     createdAt: item.createdAt,
+[7m  [0m [91m                                                                    ~~~~~~~~~[0m
+[96msrc/dtos/ceo.dto.ts[0m:[93m60[0m:[93m73[0m - [91merror[0m[90m TS2304: [0mCannot find name 'updatedAt'.
+
+[7m60[0m                                                                         updatedAt: item.updatedAt,
+[7m  [0m [91m                                                                        ~~~~~~~~~[0m
+[96msrc/dtos/ceo.dto.ts[0m:[93m43[0m:[93m43[0m - [91merror[0m[90m TS1136: [0mProperty assignment expected.
+
+[7m43[0m             title: translationData.title, || "",
+[7m  [0m [91m                                          ~~[0m
+[96msrc/dtos/ceo.dto.ts[0m:[93m44[0m:[93m24[0m - [91merror[0m[90m TS1005: [0m';' expected.
+
+[7m44[0m             description: translationData.description, || "",
+[7m  [0m [91m                       ~[0m
+[96msrc/dtos/ceo.dto.ts[0m:[93m44[0m:[93m55[0m - [91merror[0m[90m TS1109: [0mExpression expected.
+
+[7m44[0m             description: translationData.description, || "",
+[7m  [0m [91m                                                      ~~[0m
+[96msrc/dtos/ceo.dto.ts[0m:[93m45[0m:[93m23[0m - [91merror[0m[90m TS1005: [0m';' expected.
+
+[7m45[0m                 detail: translationData.detail, || "",
+[7m  [0m [91m                      ~[0m
+[96msrc/dtos/ceo.dto.ts[0m:[93m45[0m:[93m49[0m - [91merror[0m[90m TS1109: [0mExpression expected.
+
+[7m45[0m                 detail: translationData.detail, || "",
+[7m  [0m [91m                                                ~~[0m
+[96msrc/dtos/ceo.dto.ts[0m:[93m46[0m:[93m25[0m - [91merror[0m[90m TS1005: [0m';' expected.
+
+[7m46[0m                     date: translationData.date, || "",
+[7m  [0m [91m                        ~[0m
+[96msrc/dtos/ceo.dto.ts[0m:[93m46[0m:[93m49[0m - [91merror[0m[90m TS1109: [0mExpression expected.
+
+[7m46[0m                     date: translationData.date, || "",
+[7m  [0m [91m                                                ~~[0m
+[96msrc/dtos/ceo.dto.ts[0m:[93m47[0m:[93m30[0m - [91merror[0m[90m TS1005: [0m';' expected.
+
+[7m47[0m                         phone: translationData.phone, || "",
+[7m  [0m [91m                             ~[0m
+[96msrc/dtos/ceo.dto.ts[0m:[93m47[0m:[93m55[0m - [91merror[0m[90m TS1109: [0mExpression expected.
+
+[7m47[0m                         phone: translationData.phone, || "",
+[7m  [0m [91m                                                      ~~[0m
+[96msrc/dtos/ceo.dto.ts[0m:[93m48[0m:[93m34[0m - [91merror[0m[90m TS1005: [0m';' expected.
+
+[7m48[0m                             email: translationData.email, || "",
+[7m  [0m [91m                                 ~[0m
+[96msrc/dtos/ceo.dto.ts[0m:[93m48[0m:[93m59[0m - [91merror[0m[90m TS1109: [0mExpression expected.
+
+[7m48[0m                             email: translationData.email, || "",
+[7m  [0m [91m                                                          ~~[0m
+[96msrc/dtos/ceo.dto.ts[0m:[93m49[0m:[93m41[0m - [91merror[0m[90m TS1005: [0m';' expected.
+
+[7m49[0m                                 position: translationData.position, || "",
+[7m  [0m [91m                                        ~[0m
+[96msrc/dtos/ceo.dto.ts[0m:[93m49[0m:[93m69[0m - [91merror[0m[90m TS1109: [0mExpression expected.
+
+[7m49[0m                                 position: translationData.position, || "",
+[7m  [0m [91m                                                                    ~~[0m
+[96msrc/dtos/ceo.dto.ts[0m:[93m50[0m:[93m44[0m - [91merror[0m[90m TS1005: [0m';' expected.
+
+[7m50[0m                                     work_at: translationData.work_at, || "",
+[7m  [0m [91m                                           ~[0m
+[96msrc/dtos/ceo.dto.ts[0m:[93m50[0m:[93m71[0m - [91merror[0m[90m TS1109: [0mExpression expected.
+
+[7m50[0m                                     work_at: translationData.work_at, || "",
+[7m  [0m [91m                                                                      ~~[0m
+[96msrc/dtos/ceo.dto.ts[0m:[93m51[0m:[93m45[0m - [91merror[0m[90m TS1005: [0m';' expected.
+
+[7m51[0m                                         lang: translationData.lang, || "",
+[7m  [0m [91m                                            ~[0m
+[96msrc/dtos/ceo.dto.ts[0m:[93m51[0m:[93m69[0m - [91merror[0m[90m TS1109: [0mExpression expected.
+
+[7m51[0m                                         lang: translationData.lang, || "",
+[7m  [0m [91m                                                                    ~~[0m
+[96msrc/dtos/ceo.dto.ts[0m:[93m52[0m:[93m52[0m - [91merror[0m[90m TS1005: [0m';' expected.
+
+[7m52[0m                                             address: translationData.address, || "",
+[7m  [0m [91m                                                   ~[0m
+[96msrc/dtos/ceo.dto.ts[0m:[93m52[0m:[93m79[0m - [91merror[0m[90m TS1109: [0mExpression expected.
+
+[7m52[0m                                             address: translationData.address, || "",
+[7m  [0m [91m                                                                              ~~[0m
+[96msrc/dtos/ceo.dto.ts[0m:[93m53[0m:[93m55[0m - [91merror[0m[90m TS1005: [0m';' expected.
+
+[7m53[0m                                                 social: translationData.social, || "",
+[7m  [0m [91m                                                      ~[0m
+[96msrc/dtos/ceo.dto.ts[0m:[93m53[0m:[93m81[0m - [91merror[0m[90m TS1109: [0mExpression expected.
+
+[7m53[0m                                                 social: translationData.social, || "",
+[7m  [0m [91m                                                                                ~~[0m
+[96msrc/dtos/ceo.dto.ts[0m:[93m54[0m:[93m64[0m - [91merror[0m[90m TS1005: [0m';' expected.
+
+[7m54[0m                                                     custom_slug: translationData.custom_slug, || "",
+[7m  [0m [91m                                                               ~[0m
+[96msrc/dtos/ceo.dto.ts[0m:[93m54[0m:[93m95[0m - [91merror[0m[90m TS1109: [0mExpression expected.
+
+[7m54[0m                                                     custom_slug: translationData.custom_slug, || "",
+[7m  [0m [91m                                                                                              ~~[0m
+[96msrc/dtos/ceo.dto.ts[0m:[93m55[0m:[93m63[0m - [91merror[0m[90m TS1005: [0m';' expected.
+
+[7m55[0m                                                         status: item.status || 'status,ctive',
+[7m  [0m [91m                                                              ~[0m
+[96msrc/dtos/ceo.dto.ts[0m:[93m56[0m:[93m70[0m - [91merror[0m[90m TS1005: [0m';' expected.
+
+[7m56[0m                                                             thumbnail: item.image thumbnail,| null,
+[7m  [0m [91m                                                                     ~[0m
+[96msrc/dtos/ceo.dto.ts[0m:[93m56[0m:[93m83[0m - [91merror[0m[90m TS1005: [0m';' expected.
+
+[7m56[0m                                                             thumbnail: item.image thumbnail,| null,
+[7m  [0m [91m                                                                                  ~~~~~~~~~[0m
+[96msrc/dtos/ceo.dto.ts[0m:[93m56[0m:[93m93[0m - [91merror[0m[90m TS1109: [0mExpression expected.
+
+[7m56[0m                                                             thumbnail: item.image thumbnail,| null,
+[7m  [0m [91m                                                                                            ~[0m
+[96msrc/dtos/ceo.dto.ts[0m:[93m57[0m:[93m72[0m - [91merror[0m[90m TS1005: [0m';' expected.
+
+[7m57[0m                                                                 related: item.related, || [],
+[7m  [0m [91m                                                                       ~[0m
+[96msrc/dtos/ceo.dto.ts[0m:[93m57[0m:[93m88[0m - [91merror[0m[90m TS1109: [0mExpression expected.
+
+[7m57[0m                                                                 related: item.related, || [],
+[7m  [0m [91m                                                                                       ~~[0m
+[96msrc/dtos/ceo.dto.ts[0m:[93m59[0m:[93m78[0m - [91merror[0m[90m TS1005: [0m';' expected.
+
+[7m59[0m                                                                     createdAt: item.createdAt,
+[7m  [0m [91m                                                                             ~[0m
+[96msrc/dtos/ceo.dto.ts[0m:[93m60[0m:[93m82[0m - [91merror[0m[90m TS1005: [0m';' expected.
+
+[7m60[0m                                                                         updatedAt: item.updatedAt,
+[7m  [0m [91m                                                                                 ~[0m
+[96msrc/dtos/ceo.dto.ts[0m:[93m61[0m:[93m9[0m - [91merror[0m[90m TS1109: [0mExpression expected.
+
+[7m61[0m         }
+[7m  [0m [91m        ~[0m
+[96msrc/dtos/ceo.dto.ts[0m:[93m63[0m:[93m1[0m - [91merror[0m[90m TS1128: [0mDeclaration or statement expected.
+
+[7m63[0m }
+[7m  [0m [91m~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/dtos/ceo.dto.ts[0m:[93m40[0m:[93m16[0m - [91merror[0m[90m TS2695: [0mLeft side of comma operator is unused and has no side effects.
+
+[7m40[0m         return {
+[7m  [0m [91m               ~[0m
+[7m41[0m             id: item.id,
+[7m  [0m [91m~~~~~~~~~~~~~~~~~~~~~~~~[0m
+[7m42[0m             name: translationData.name || "",
+[7m  [0m [91m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+[7m43[0m             title: translationData.title, || "",
+[7m  [0m [91m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+[96msrc/dtos/ceo.dto.ts[0m:[93m44[0m:[93m13[0m - [91merror[0m[90m TS2304: [0mCannot find name 'description'.
+
+[7m44[0m             description: translationData.description, || "",
+[7m  [0m [91m            ~~~~~~~~~~~[0m
+[96msrc/dtos/ceo.dto.ts[0m:[93m45[0m:[93m17[0m - [91merror[0m[90m TS2304: [0mCannot find name 'detail'.
+
+[7m45[0m                 detail: translationData.detail, || "",
+[7m  [0m [91m                ~~~~~~[0m
+[96msrc/dtos/ceo.dto.ts[0m:[93m46[0m:[93m21[0m - [91merror[0m[90m TS2552: [0mCannot find name 'date'. Did you mean 'Date'?
+
+[7m46[0m                     date: translationData.date, || "",
+[7m  [0m [91m                    ~~~~[0m
+
+  [96mnode_modules/typescript/lib/lib.es5.d.ts[0m:[93m933[0m:[93m13[0m
+    [7m933[0m declare var Date: DateConstructor;
+    [7m   [0m [96m            ~~~~[0m
+    'Date' is declared here.
+[96msrc/dtos/ceo.dto.ts[0m:[93m47[0m:[93m25[0m - [91merror[0m[90m TS2304: [0mCannot find name 'phone'.
+
+[7m47[0m                         phone: translationData.phone, || "",
+[7m  [0m [91m                        ~~~~~[0m
+[96msrc/dtos/ceo.dto.ts[0m:[93m48[0m:[93m29[0m - [91merror[0m[90m TS2304: [0mCannot find name 'email'.
+
+[7m48[0m                             email: translationData.email, || "",
+[7m  [0m [91m                            ~~~~~[0m
+[96msrc/dtos/ceo.dto.ts[0m:[93m49[0m:[93m33[0m - [91merror[0m[90m TS2304: [0mCannot find name 'position'.
+
+[7m49[0m                                 position: translationData.position, || "",
+[7m  [0m [91m                                ~~~~~~~~[0m
+[96msrc/dtos/ceo.dto.ts[0m:[93m50[0m:[93m37[0m - [91merror[0m[90m TS2304: [0mCannot find name 'work_at'.
+
+[7m50[0m                                     work_at: translationData.work_at, || "",
+[7m  [0m [91m                                    ~~~~~~~[0m
+[96msrc/dtos/ceo.dto.ts[0m:[93m51[0m:[93m41[0m - [91merror[0m[90m TS2304: [0mCannot find name 'lang'.
+
+[7m51[0m                                         lang: translationData.lang, || "",
+[7m  [0m [91m                                        ~~~~[0m
+[96msrc/dtos/ceo.dto.ts[0m:[93m52[0m:[93m45[0m - [91merror[0m[90m TS2304: [0mCannot find name 'address'.
+
+[7m52[0m                                             address: translationData.address, || "",
+[7m  [0m [91m                                            ~~~~~~~[0m
+[96msrc/dtos/ceo.dto.ts[0m:[93m53[0m:[93m49[0m - [91merror[0m[90m TS2304: [0mCannot find name 'social'.
+
+[7m53[0m                                                 social: translationData.social, || "",
+[7m  [0m [91m                                                ~~~~~~[0m
+[96msrc/dtos/ceo.dto.ts[0m:[93m54[0m:[93m53[0m - [91merror[0m[90m TS2304: [0mCannot find name 'custom_slug'.
+
+[7m54[0m                                                     custom_slug: translationData.custom_slug, || "",
+[7m  [0m [91m                                                    ~~~~~~~~~~~[0m
+[96msrc/dtos/ceo.dto.ts[0m:[93m55[0m:[93m57[0m - [91merror[0m[90m TS2304: [0mCannot find name 'status'.
+
+[7m55[0m                                                         status: item.status || 'status,ctive',
+[7m  [0m [91m                                                        ~~~~~~[0m
+[96msrc/dtos/ceo.dto.ts[0m:[93m56[0m:[93m61[0m - [91merror[0m[90m TS2304: [0mCannot find name 'thumbnail'.
+
+[7m56[0m                                                             thumbnail: item.image thumbnail,| null,
+[7m  [0m [91m                                                            ~~~~~~~~~[0m
+[96msrc/dtos/ceo.dto.ts[0m:[93m56[0m:[93m83[0m - [91merror[0m[90m TS2304: [0mCannot find name 'thumbnail'.
+
+[7m56[0m                                                             thumbnail: item.image thumbnail,| null,
+[7m  [0m [91m                                                                                  ~~~~~~~~~[0m
+[96msrc/dtos/ceo.dto.ts[0m:[93m56[0m:[93m83[0m - [91merror[0m[90m TS2695: [0mLeft side of comma operator is unused and has no side effects.
+
+[7m56[0m                                                             thumbnail: item.image thumbnail,| null,
+[7m  [0m [91m                                                                                  ~~~~~~~~~[0m
+[96msrc/dtos/ceo.dto.ts[0m:[93m56[0m:[93m83[0m - [91merror[0m[90m TS2695: [0mLeft side of comma operator is unused and has no side effects.
+
+[7m56[0m                                                             thumbnail: item.image thumbnail,| null,
+[7m  [0m [91m                                                                                  ~~~~~~~~~~~~~~~~[0m
+[96msrc/dtos/ceo.dto.ts[0m:[93m56[0m:[93m95[0m - [91merror[0m[90m TS2531: [0mObject is possibly 'null'.
+
+[7m56[0m                                                             thumbnail: item.image thumbnail,| null,
+[7m  [0m [91m                                                                                              ~~~~[0m
+[96msrc/dtos/ceo.dto.ts[0m:[93m57[0m:[93m65[0m - [91merror[0m[90m TS2304: [0mCannot find name 'related'.
+
+[7m57[0m                                                                 related: item.related, || [],
+[7m  [0m [91m                                                                ~~~~~~~[0m
+[96msrc/dtos/ceo.dto.ts[0m:[93m59[0m:[93m69[0m - [91merror[0m[90m TS2304: [0mCannot find name 'createdAt'.
+
+[7m59[0m                                                                     createdAt: item.createdAt,
+[7m  [0m [91m                                                                    ~~~~~~~~~[0m
+[96msrc/dtos/ceo.dto.ts[0m:[93m60[0m:[93m73[0m - [91merror[0m[90m TS2304: [0mCannot find name 'updatedAt'.
+
+[7m60[0m                                                                         updatedAt: item.updatedAt,
+[7m  [0m [91m                                                                        ~~~~~~~~~[0m
+[96msrc/dtos/ceo.dto.ts[0m:[93m43[0m:[93m43[0m - [91merror[0m[90m TS1136: [0mProperty assignment expected.
+
+[7m43[0m             title: translationData.title, || "",
+[7m  [0m [91m                                          ~~[0m
+[96msrc/dtos/ceo.dto.ts[0m:[93m44[0m:[93m24[0m - [91merror[0m[90m TS1005: [0m';' expected.
+
+[7m44[0m             description: translationData.description, || "",
+[7m  [0m [91m                       ~[0m
+[96msrc/dtos/ceo.dto.ts[0m:[93m44[0m:[93m55[0m - [91merror[0m[90m TS1109: [0mExpression expected.
+
+[7m44[0m             description: translationData.description, || "",
+[7m  [0m [91m                                                      ~~[0m
+[96msrc/dtos/ceo.dto.ts[0m:[93m45[0m:[93m23[0m - [91merror[0m[90m TS1005: [0m';' expected.
+
+[7m45[0m                 detail: translationData.detail, || "",
+[7m  [0m [91m                      ~[0m
+[96msrc/dtos/ceo.dto.ts[0m:[93m45[0m:[93m49[0m - [91merror[0m[90m TS1109: [0mExpression expected.
+
+[7m45[0m                 detail: translationData.detail, || "",
+[7m  [0m [91m                                                ~~[0m
+[96msrc/dtos/ceo.dto.ts[0m:[93m46[0m:[93m25[0m - [91merror[0m[90m TS1005: [0m';' expected.
+
+[7m46[0m                     date: translationData.date, || "",
+[7m  [0m [91m                        ~[0m
+[96msrc/dtos/ceo.dto.ts[0m:[93m46[0m:[93m49[0m - [91merror[0m[90m TS1109: [0mExpression expected.
+
+[7m46[0m                     date: translationData.date, || "",
+[7m  [0m [91m                                                ~~[0m
+[96msrc/dtos/ceo.dto.ts[0m:[93m47[0m:[93m30[0m - [91merror[0m[90m TS1005: [0m';' expected.
+
+[7m47[0m                         phone: translationData.phone, || "",
+[7m  [0m [91m                             ~[0m
+[96msrc/dtos/ceo.dto.ts[0m:[93m47[0m:[93m55[0m - [91merror[0m[90m TS1109: [0mExpression expected.
+
+[7m47[0m                         phone: translationData.phone, || "",
+[7m  [0m [91m                                                      ~~[0m
+[96msrc/dtos/ceo.dto.ts[0m:[93m48[0m:[93m34[0m - [91merror[0m[90m TS1005: [0m';' expected.
+
+[7m48[0m                             email: translationData.email, || "",
+[7m  [0m [91m                                 ~[0m
+[96msrc/dtos/ceo.dto.ts[0m:[93m48[0m:[93m59[0m - [91merror[0m[90m TS1109: [0mExpression expected.
+
+[7m48[0m                             email: translationData.email, || "",
+[7m  [0m [91m                                                          ~~[0m
+[96msrc/dtos/ceo.dto.ts[0m:[93m49[0m:[93m41[0m - [91merror[0m[90m TS1005: [0m';' expected.
+
+[7m49[0m                                 position: translationData.position, || "",
+[7m  [0m [91m                                        ~[0m
+[96msrc/dtos/ceo.dto.ts[0m:[93m49[0m:[93m69[0m - [91merror[0m[90m TS1109: [0mExpression expected.
+
+[7m49[0m                                 position: translationData.position, || "",
+[7m  [0m [91m                                                                    ~~[0m
+[96msrc/dtos/ceo.dto.ts[0m:[93m50[0m:[93m44[0m - [91merror[0m[90m TS1005: [0m';' expected.
+
+[7m50[0m                                     work_at: translationData.work_at, || "",
+[7m  [0m [91m                                           ~[0m
+[96msrc/dtos/ceo.dto.ts[0m:[93m50[0m:[93m71[0m - [91merror[0m[90m TS1109: [0mExpression expected.
+
+[7m50[0m                                     work_at: translationData.work_at, || "",
+[7m  [0m [91m                                                                      ~~[0m
+[96msrc/dtos/ceo.dto.ts[0m:[93m51[0m:[93m45[0m - [91merror[0m[90m TS1005: [0m';' expected.
+
+[7m51[0m                                         lang: translationData.lang, || "",
+[7m  [0m [91m                                            ~[0m
+[96msrc/dtos/ceo.dto.ts[0m:[93m51[0m:[93m69[0m - [91merror[0m[90m TS1109: [0mExpression expected.
+
+[7m51[0m                                         lang: translationData.lang, || "",
+[7m  [0m [91m                                                                    ~~[0m
+[96msrc/dtos/ceo.dto.ts[0m:[93m52[0m:[93m52[0m - [91merror[0m[90m TS1005: [0m';' expected.
+
+[7m52[0m                                             address: translationData.address, || "",
+[7m  [0m [91m                                                   ~[0m
+[96msrc/dtos/ceo.dto.ts[0m:[93m52[0m:[93m79[0m - [91merror[0m[90m TS1109: [0mExpression expected.
+
+[7m52[0m                                             address: translationData.address, || "",
+[7m  [0m [91m                                                                              ~~[0m
+[96msrc/dtos/ceo.dto.ts[0m:[93m53[0m:[93m55[0m - [91merror[0m[90m TS1005: [0m';' expected.
+
+[7m53[0m                                                 social: translationData.social, || "",
+[7m  [0m [91m                                                      ~[0m
+[96msrc/dtos/ceo.dto.ts[0m:[93m53[0m:[93m81[0m - [91merror[0m[90m TS1109: [0mExpression expected.
+
+[7m53[0m                                                 social: translationData.social, || "",
+[7m  [0m [91m                                                                                ~~[0m
+[96msrc/dtos/ceo.dto.ts[0m:[93m54[0m:[93m64[0m - [91merror[0m[90m TS1005: [0m';' expected.
+
+[7m54[0m                                                     custom_slug: translationData.custom_slug, || "",
+[7m  [0m [91m                                                               ~[0m
+[96msrc/dtos/ceo.dto.ts[0m:[93m54[0m:[93m95[0m - [91merror[0m[90m TS1109: [0mExpression expected.
+
+[7m54[0m                                                     custom_slug: translationData.custom_slug, || "",
+[7m  [0m [91m                                                                                              ~~[0m
+[96msrc/dtos/ceo.dto.ts[0m:[93m55[0m:[93m63[0m - [91merror[0m[90m TS1005: [0m';' expected.
+
+[7m55[0m                                                         status: item.status || 'status,ctive',
+[7m  [0m [91m                                                              ~[0m
+[96msrc/dtos/ceo.dto.ts[0m:[93m56[0m:[93m70[0m - [91merror[0m[90m TS1005: [0m';' expected.
+
+[7m56[0m                                                             thumbnail: item.image thumbnail,| null,
+[7m  [0m [91m                                                                     ~[0m
+[96msrc/dtos/ceo.dto.ts[0m:[93m56[0m:[93m83[0m - [91merror[0m[90m TS1005: [0m';' expected.
+
+[7m56[0m                                                             thumbnail: item.image thumbnail,| null,
+[7m  [0m [91m                                                                                  ~~~~~~~~~[0m
+[96msrc/dtos/ceo.dto.ts[0m:[93m56[0m:[93m93[0m - [91merror[0m[90m TS1109: [0mExpression expected.
+
+[7m56[0m                                                             thumbnail: item.image thumbnail,| null,
+[7m  [0m [91m                                                                                            ~[0m
+[96msrc/dtos/ceo.dto.ts[0m:[93m57[0m:[93m72[0m - [91merror[0m[90m TS1005: [0m';' expected.
+
+[7m57[0m                                                                 related: item.related, || [],
+[7m  [0m [91m                                                                       ~[0m
+[96msrc/dtos/ceo.dto.ts[0m:[93m57[0m:[93m88[0m - [91merror[0m[90m TS1109: [0mExpression expected.
+
+[7m57[0m                                                                 related: item.related, || [],
+[7m  [0m [91m                                                                                       ~~[0m
+[96msrc/dtos/ceo.dto.ts[0m:[93m59[0m:[93m78[0m - [91merror[0m[90m TS1005: [0m';' expected.
+
+[7m59[0m                                                                     createdAt: item.createdAt,
+[7m  [0m [91m                                                                             ~[0m
+[96msrc/dtos/ceo.dto.ts[0m:[93m60[0m:[93m82[0m - [91merror[0m[90m TS1005: [0m';' expected.
+
+[7m60[0m                                                                         updatedAt: item.updatedAt,
+[7m  [0m [91m                                                                                 ~[0m
+[96msrc/dtos/ceo.dto.ts[0m:[93m61[0m:[93m9[0m - [91merror[0m[90m TS1109: [0mExpression expected.
+
+[7m61[0m         }
+[7m  [0m [91m        ~[0m
+[96msrc/dtos/ceo.dto.ts[0m:[93m63[0m:[93m1[0m - [91merror[0m[90m TS1128: [0mDeclaration or statement expected.
+
+[7m63[0m }
+[7m  [0m [91m~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
