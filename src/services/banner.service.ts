@@ -95,8 +95,19 @@ export class BannerService {
     public getListBannerClient = async () => {
 
         try {
-            const banners = await models.Banner.findAll({});
-            return banners;
+            const rows = await models.Banner.findAll({
+                include: [
+                    {
+                        model: models.BannerTranslation,
+                        as: "translations",
+                        required: true,
+                        locale: global.lang,
+                    },
+                ]
+            });
+            return rows.map((item) => {
+                return BannerDTO.transform(item)
+            });
 
         } catch (error) {
             console.log(error);

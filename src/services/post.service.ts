@@ -160,6 +160,9 @@ export class PostService {
                 thumbnail: body.thumbnail ? body.thumbnail.id : null,
                 banner: body.banner ? body.banner.id : null,
             },
+            {
+                individualHooks: true
+            }
             )
                 .then(async (post: any) => {
 
@@ -262,7 +265,7 @@ export class PostService {
             ...body,
             thumbnail: body.thumbnail ? body.thumbnail.id : null,
             banner: body.banner ? body.banner.id : null,
-        }, { where: { id } },
+        }, { where: { id }, individualHooks: true },
         )
             .then(async (res: any) => {
                 await this.handleUpdate({ post_id: id, lang: global.lang, body });
@@ -282,10 +285,8 @@ export class PostService {
                 canonica_link: body.canonica_link,
                 meta_image: body.meta_image,
                 meta_viewport: body.meta_viewport,
-                slug: Helper.renderSlug(body.slug ? body.slug : body.name),
-                custom_slug: Helper.renderSlug(body.custom_slug ? body.custom_slug : body.name),
             },
-                { where: { post_id, locale: lang } });
+                { where: { post_id, locale: lang }, individualHooks: true });
         } catch (error) {
             logger.error(JSON.stringify(error));
         }

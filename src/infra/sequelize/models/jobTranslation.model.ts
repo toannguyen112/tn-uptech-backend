@@ -1,3 +1,4 @@
+import Helper from "../../../utils/Helper";
 
 module.exports = function (sequelize, DataTypes) {
     const JobTranslation = sequelize.define(
@@ -110,6 +111,10 @@ module.exports = function (sequelize, DataTypes) {
             foreignKey: "job_id",
         });
     }
+
+    JobTranslation.beforeSave(async (job, options) => {
+        job.slug = Helper.renderSlug(job.name);
+    });
 
     return JobTranslation;
 };

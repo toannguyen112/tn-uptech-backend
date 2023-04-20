@@ -1,0 +1,9 @@
+2023-04-21 00:00:49 info: [0mOPTIONS /admins/profile [32m204[0m 2.881 ms - 0[0m
+2023-04-21 00:00:50 info: [0mGET /categories?[object%20Object] [32m200[0m 807.041 ms - 372[0m
+2023-04-21 00:00:50 info: [0mGET /posts?[object%20Object] [32m200[0m 799.755 ms - 554[0m
+2023-04-21 00:00:50 info: [0mGET /ceos?[object%20Object] [32m200[0m 801.944 ms - 701[0m
+2023-04-21 00:00:50 info: [0mGET /admins/profile [36m304[0m 998.067 ms - -[0m
+2023-04-21 00:00:50 info: [0mGET /posts/show/1 [32m200[0m 138.519 ms - 419[0m
+2023-04-21 00:00:50 info: [0mGET /categories?[object%20Object] [36m304[0m 29.371 ms - -[0m
+2023-04-21 00:00:50 info: [0mGET /ceos?[object%20Object] [36m304[0m 29.349 ms - -[0m
+2023-04-21 00:00:50 info: [0mGET /posts?[object%20Object] [36m304[0m 65.377 ms - -[0m

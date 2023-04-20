@@ -1,3 +1,4 @@
+import Helper from "../../../utils/Helper";
 
 module.exports = function (sequelize, DataTypes) {
     const ProjectTranslation = sequelize.define(
@@ -98,6 +99,10 @@ module.exports = function (sequelize, DataTypes) {
             foreignKey: "project_id",
         });
     }
+
+    ProjectTranslation.beforeSave(async (project, options) => {
+        project.slug = Helper.renderSlug(project.name);
+    });
 
     return ProjectTranslation;
 };

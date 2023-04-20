@@ -10,7 +10,7 @@ export class ProjectDTO {
             name: translationData.name || "",
             slug: item.slug || "",
             description: translationData.description || "",
-            isFeatured: item.isFeatured,
+            isFeatured: item.isFeatured ? "Hoạt động" : "Ẩn",
             status: item.status,
             content: translationData.content || "",
             thumbnail: item.image,

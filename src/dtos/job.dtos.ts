@@ -77,7 +77,7 @@ export class JobDTO {
             isFeatured: item.isFeatured || false,
             address_work: translationData.address_work || "",
             location: translationData.location || "",
-            view: item.view || 0,
+            view: item.view,
             status: item.status || 'inactive',
             expried_date: item.expried_date ? Helper.formatDayJs(item.expried_date, "YYYY/MM/DD") : null,
             benefit: translationData.benefit || "",

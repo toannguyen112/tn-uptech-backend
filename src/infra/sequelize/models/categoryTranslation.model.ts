@@ -1,3 +1,4 @@
+import Helper from "../../../utils/Helper";
 
 module.exports = function (sequelize, DataTypes) {
     const CategoryTranslation = sequelize.define(
@@ -50,6 +51,10 @@ module.exports = function (sequelize, DataTypes) {
             foreignKey: "category_id",
         });
     }
+
+    CategoryTranslation.beforeSave(async (category, options) => {
+        category.slug = Helper.renderSlug(category.name);
+    });
 
     return CategoryTranslation;
 };

@@ -42,3 +42,281 @@ TSError: ⨯ Unable to compile TypeScript:
     at Module.load (node:internal/modules/cjs/loader:1069:32)
     at Function.Module._load (node:internal/modules/cjs/loader:904:12)
     at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-20 23:26:52 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/infra/sequelize/models/jobTranslation.model.ts[0m:[93m114[0m:[93m5[0m - [91merror[0m[90m TS2304: [0mCannot find name 'Job'.
+
+[7m114[0m     Job.beforeSave(async (job, options) => {
+[7m   [0m [91m    ~~~[0m
+[96msrc/infra/sequelize/models/jobTranslation.model.ts[0m:[93m115[0m:[93m20[0m - [91merror[0m[90m TS2304: [0mCannot find name 'Helper'.
+
+[7m115[0m         job.slug = Helper.renderSlug(job.name);
+[7m   [0m [91m                   ~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/infra/sequelize/models/jobTranslation.model.ts[0m:[93m114[0m:[93m5[0m - [91merror[0m[90m TS2304: [0mCannot find name 'Job'.
+
+[7m114[0m     Job.beforeSave(async (job, options) => {
+[7m   [0m [91m    ~~~[0m
+[96msrc/infra/sequelize/models/jobTranslation.model.ts[0m:[93m115[0m:[93m20[0m - [91merror[0m[90m TS2304: [0mCannot find name 'Helper'.
+
+[7m115[0m         job.slug = Helper.renderSlug(job.name);
+[7m   [0m [91m                   ~~~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-20 23:26:57 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/infra/sequelize/models/jobTranslation.model.ts[0m:[93m115[0m:[93m20[0m - [91merror[0m[90m TS2304: [0mCannot find name 'Helper'.
+
+[7m115[0m         job.slug = Helper.renderSlug(job.name);
+[7m   [0m [91m                   ~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/infra/sequelize/models/jobTranslation.model.ts[0m:[93m115[0m:[93m20[0m - [91merror[0m[90m TS2304: [0mCannot find name 'Helper'.
+
+[7m115[0m         job.slug = Helper.renderSlug(job.name);
+[7m   [0m [91m                   ~~~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-20 23:33:29 error: uncaughtException: JobTranslation.beforceSave is not a function
+TypeError: JobTranslation.beforceSave is not a function
+    at module.exports (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/jobTranslation.model.ts:115:20)
+    at /Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:38:63
+    at Array.map (<anonymous>)
+    at createModels (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:37:10)
+    at Object.<anonymous> (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:63:16)
+    at Module._compile (node:internal/modules/cjs/loader:1191:14)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1618:23)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+2023-04-20 23:35:18 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/infra/sequelize/models/postTranslation.model.ts[0m:[93m102[0m:[93m5[0m - [91merror[0m[90m TS2552: [0mCannot find name 'JobTranslation'. Did you mean 'PostTranslation'?
+
+[7m102[0m     JobTranslation.beforeSave(async (job, options) => {
+[7m   [0m [91m    ~~~~~~~~~~~~~~[0m
+
+  [96msrc/infra/sequelize/models/postTranslation.model.ts[0m:[93m3[0m:[93m11[0m
+    [7m3[0m     const PostTranslation = sequelize.define(
+    [7m [0m [96m          ~~~~~~~~~~~~~~~[0m
+    'PostTranslation' is declared here.
+[96msrc/infra/sequelize/models/postTranslation.model.ts[0m:[93m103[0m:[93m20[0m - [91merror[0m[90m TS2304: [0mCannot find name 'Helper'.
+
+[7m103[0m         job.slug = Helper.renderSlug(job.name);
+[7m   [0m [91m                   ~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/infra/sequelize/models/postTranslation.model.ts[0m:[93m102[0m:[93m5[0m - [91merror[0m[90m TS2552: [0mCannot find name 'JobTranslation'. Did you mean 'PostTranslation'?
+
+[7m102[0m     JobTranslation.beforeSave(async (job, options) => {
+[7m   [0m [91m    ~~~~~~~~~~~~~~[0m
+
+  [96msrc/infra/sequelize/models/postTranslation.model.ts[0m:[93m3[0m:[93m11[0m
+    [7m3[0m     const PostTranslation = sequelize.define(
+    [7m [0m [96m          ~~~~~~~~~~~~~~~[0m
+    'PostTranslation' is declared here.
+[96msrc/infra/sequelize/models/postTranslation.model.ts[0m:[93m103[0m:[93m20[0m - [91merror[0m[90m TS2304: [0mCannot find name 'Helper'.
+
+[7m103[0m         job.slug = Helper.renderSlug(job.name);
+[7m   [0m [91m                   ~~~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-20 23:36:51 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/infra/sequelize/models/ceoTranslation.model.ts[0m:[93m144[0m:[93m5[0m - [91merror[0m[90m TS2552: [0mCannot find name 'JobTranslation'. Did you mean 'CeoTranslation'?
+
+[7m144[0m     JobTranslation.beforeSave(async (job, options) => {
+[7m   [0m [91m    ~~~~~~~~~~~~~~[0m
+
+  [96msrc/infra/sequelize/models/ceoTranslation.model.ts[0m:[93m3[0m:[93m11[0m
+    [7m3[0m     const CeoTranslation = sequelize.define(
+    [7m [0m [96m          ~~~~~~~~~~~~~~[0m
+    'CeoTranslation' is declared here.
+[96msrc/infra/sequelize/models/ceoTranslation.model.ts[0m:[93m145[0m:[93m20[0m - [91merror[0m[90m TS2304: [0mCannot find name 'Helper'.
+
+[7m145[0m         job.slug = Helper.renderSlug(job.name);
+[7m   [0m [91m                   ~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/infra/sequelize/models/ceoTranslation.model.ts[0m:[93m144[0m:[93m5[0m - [91merror[0m[90m TS2552: [0mCannot find name 'JobTranslation'. Did you mean 'CeoTranslation'?
+
+[7m144[0m     JobTranslation.beforeSave(async (job, options) => {
+[7m   [0m [91m    ~~~~~~~~~~~~~~[0m
+
+  [96msrc/infra/sequelize/models/ceoTranslation.model.ts[0m:[93m3[0m:[93m11[0m
+    [7m3[0m     const CeoTranslation = sequelize.define(
+    [7m [0m [96m          ~~~~~~~~~~~~~~[0m
+    'CeoTranslation' is declared here.
+[96msrc/infra/sequelize/models/ceoTranslation.model.ts[0m:[93m145[0m:[93m20[0m - [91merror[0m[90m TS2304: [0mCannot find name 'Helper'.
+
+[7m145[0m         job.slug = Helper.renderSlug(job.name);
+[7m   [0m [91m                   ~~~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-20 23:38:07 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/infra/sequelize/models/categoryTranslation.model.ts[0m:[93m54[0m:[93m5[0m - [91merror[0m[90m TS2304: [0mCannot find name 'CeoTranslation'.
+
+[7m54[0m     CeoTranslation.beforeSave(async (ceo, options) => {
+[7m  [0m [91m    ~~~~~~~~~~~~~~[0m
+[96msrc/infra/sequelize/models/categoryTranslation.model.ts[0m:[93m55[0m:[93m20[0m - [91merror[0m[90m TS2304: [0mCannot find name 'Helper'.
+
+[7m55[0m         ceo.slug = Helper.renderSlug(ceo.name);
+[7m  [0m [91m                   ~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/infra/sequelize/models/categoryTranslation.model.ts[0m:[93m54[0m:[93m5[0m - [91merror[0m[90m TS2304: [0mCannot find name 'CeoTranslation'.
+
+[7m54[0m     CeoTranslation.beforeSave(async (ceo, options) => {
+[7m  [0m [91m    ~~~~~~~~~~~~~~[0m
+[96msrc/infra/sequelize/models/categoryTranslation.model.ts[0m:[93m55[0m:[93m20[0m - [91merror[0m[90m TS2304: [0mCannot find name 'Helper'.
+
+[7m55[0m         ceo.slug = Helper.renderSlug(ceo.name);
+[7m  [0m [91m                   ~~~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-20 23:38:11 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/infra/sequelize/models/categoryTranslation.model.ts[0m:[93m55[0m:[93m20[0m - [91merror[0m[90m TS2304: [0mCannot find name 'Helper'.
+
+[7m55[0m         ceo.slug = Helper.renderSlug(ceo.name);
+[7m  [0m [91m                   ~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/infra/sequelize/models/categoryTranslation.model.ts[0m:[93m55[0m:[93m20[0m - [91merror[0m[90m TS2304: [0mCannot find name 'Helper'.
+
+[7m55[0m         ceo.slug = Helper.renderSlug(ceo.name);
+[7m  [0m [91m                   ~~~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-20 23:40:10 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/infra/sequelize/models/projectTranslation.model.ts[0m:[93m102[0m:[93m5[0m - [91merror[0m[90m TS2304: [0mCannot find name 'PostTranslation'.
+
+[7m102[0m     PostTranslation.beforeSave(async (post, options) => {
+[7m   [0m [91m    ~~~~~~~~~~~~~~~[0m
+[96msrc/infra/sequelize/models/projectTranslation.model.ts[0m:[93m103[0m:[93m21[0m - [91merror[0m[90m TS2304: [0mCannot find name 'Helper'.
+
+[7m103[0m         post.slug = Helper.renderSlug(post.name);
+[7m   [0m [91m                    ~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/infra/sequelize/models/projectTranslation.model.ts[0m:[93m102[0m:[93m5[0m - [91merror[0m[90m TS2304: [0mCannot find name 'PostTranslation'.
+
+[7m102[0m     PostTranslation.beforeSave(async (post, options) => {
+[7m   [0m [91m    ~~~~~~~~~~~~~~~[0m
+[96msrc/infra/sequelize/models/projectTranslation.model.ts[0m:[93m103[0m:[93m21[0m - [91merror[0m[90m TS2304: [0mCannot find name 'Helper'.
+
+[7m103[0m         post.slug = Helper.renderSlug(post.name);
+[7m   [0m [91m                    ~~~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-20 23:47:22 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/services/post.service.ts[0m:[93m163[0m:[93m17[0m - [91merror[0m[90m TS2304: [0mCannot find name 'individualHooks'.
+
+[7m163[0m                 individualHooks: true
+[7m   [0m [91m                ~~~~~~~~~~~~~~~[0m
+[96msrc/services/post.service.ts[0m:[93m163[0m:[93m32[0m - [91merror[0m[90m TS1005: [0m',' expected.
+
+[7m163[0m                 individualHooks: true
+[7m   [0m [91m                               ~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/services/post.service.ts[0m:[93m163[0m:[93m17[0m - [91merror[0m[90m TS2304: [0mCannot find name 'individualHooks'.
+
+[7m163[0m                 individualHooks: true
+[7m   [0m [91m                ~~~~~~~~~~~~~~~[0m
+[96msrc/services/post.service.ts[0m:[93m163[0m:[93m32[0m - [91merror[0m[90m TS1005: [0m',' expected.
+
+[7m163[0m                 individualHooks: true
+[7m   [0m [91m                               ~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-20 23:51:07 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/services/banner.service.ts[0m:[93m104[0m:[93m32[0m - [91merror[0m[90m TS2304: [0mCannot find name 'queryTranslation'.
+
+[7m104[0m                         where: queryTranslation
+[7m   [0m [91m                               ~~~~~~~~~~~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/services/banner.service.ts[0m:[93m104[0m:[93m32[0m - [91merror[0m[90m TS2304: [0mCannot find name 'queryTranslation'.
+
+[7m104[0m                         where: queryTranslation
+[7m   [0m [91m                               ~~~~~~~~~~~~~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)

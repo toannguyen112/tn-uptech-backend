@@ -104,7 +104,6 @@ export class JobService {
         }
     }
 
-
     public store = async (body) => {
 
         const t = await models.sequelize.transaction();
@@ -183,7 +182,11 @@ export class JobService {
 
         if (job.related && job.related.length) {
             jobRelated = await models.Job.findAll({
-                where: { id: [...job.related] },
+                where: {
+                    id: {
+                        [Op.in]: job.related
+                    }
+                },
                 include: [
                     {
                         model: models.JobTranslation,
@@ -206,11 +209,17 @@ export class JobService {
         const newItem = JobDTO.transformSave(body);
 
         const t = await models.sequelize.transaction();
+
         try {
 
             return await models.Job.update({
                 ...newItem,
-            }, { where: { id } }, { transaction: t })
+            }, {
+                where: { id },
+                individualHooks: true
+            },
+
+                { transaction: t })
                 .then(async (res) => {
                     if (res) {
                         await this.handleUpdate(id, global.lang, newItem);
@@ -231,7 +240,12 @@ export class JobService {
             return await models.JobTranslation.update({
                 ...body,
             },
-                { where: { job_id, locale: lang } });
+
+                {
+                    where: { job_id, locale: lang },
+                    individualHooks: true,
+                },
+            );
         } catch (error) {
             console.log(error);
         }

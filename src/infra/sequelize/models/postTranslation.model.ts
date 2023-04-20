@@ -1,3 +1,4 @@
+import Helper from "../../../utils/Helper";
 
 module.exports = function (sequelize, DataTypes) {
     const PostTranslation = sequelize.define(
@@ -98,6 +99,10 @@ module.exports = function (sequelize, DataTypes) {
             foreignKey: "post_id",
         });
     }
+
+    PostTranslation.beforeSave(async (post, options) => {
+        post.slug = Helper.renderSlug(post.name);
+    });
 
     return PostTranslation;
 };

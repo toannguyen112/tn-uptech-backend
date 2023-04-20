@@ -1,3 +1,4 @@
+import Helper from "../../../utils/Helper";
 
 module.exports = function (sequelize, DataTypes) {
     const CeoTranslation = sequelize.define(
@@ -140,6 +141,10 @@ module.exports = function (sequelize, DataTypes) {
             foreignKey: "ceo_id",
         });
     }
+
+    CeoTranslation.beforeSave(async (ceo, options) => {
+        ceo.slug = Helper.renderSlug(ceo.name);
+    });
 
     return CeoTranslation;
 };
