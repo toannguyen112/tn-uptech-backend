@@ -9,12 +9,12 @@ module.exports = {
       },
       {
         id: 2,
-        parent_id: 1,
+        parent_id: 0,
         label: `Folder Document`,
       },
       {
         id: 3,
-        parent_id: 1,
+        parent_id: 0,
         label: `Folder Media`,
       },
     ]);

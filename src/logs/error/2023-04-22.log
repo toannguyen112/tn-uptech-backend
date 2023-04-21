@@ -1,0 +1,200 @@
+2023-04-22 00:06:51 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/modules/controllers/service.controller.ts[0m:[93m6[0m:[93m21[0m - [91merror[0m[90m TS2304: [0mCannot find name 'ServiceService'.
+
+[7m6[0m const service = new ServiceService();
+[7m [0m [91m                    ~~~~~~~~~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/modules/controllers/service.controller.ts[0m:[93m6[0m:[93m21[0m - [91merror[0m[90m TS2304: [0mCannot find name 'ServiceService'.
+
+[7m6[0m const service = new ServiceService();
+[7m [0m [91m                    ~~~~~~~~~~~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-22 00:06:58 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/modules/controllers/service.controller.ts[0m:[93m6[0m:[93m21[0m - [91merror[0m[90m TS2304: [0mCannot find name 'ServiceService'.
+
+[7m6[0m const service = new ServiceService();
+[7m [0m [91m                    ~~~~~~~~~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/modules/controllers/service.controller.ts[0m:[93m6[0m:[93m21[0m - [91merror[0m[90m TS2304: [0mCannot find name 'ServiceService'.
+
+[7m6[0m const service = new ServiceService();
+[7m [0m [91m                    ~~~~~~~~~~~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-22 00:08:36 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/modules/controllers/service.controller.ts[0m:[93m25[0m:[93m40[0m - [91merror[0m[90m TS2339: [0mProperty 'getListFeatured' does not exist on type 'ServiceService'.
+
+[7m25[0m             const data = await service.getListFeatured();
+[7m  [0m [91m                                       ~~~~~~~~~~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/modules/controllers/service.controller.ts[0m:[93m25[0m:[93m40[0m - [91merror[0m[90m TS2339: [0mProperty 'getListFeatured' does not exist on type 'ServiceService'.
+
+[7m25[0m             const data = await service.getListFeatured();
+[7m  [0m [91m                                       ~~~~~~~~~~~~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-22 00:09:02 error: {"name":"SequelizeDatabaseError","parent":{"code":"ER_BAD_FIELD_ERROR","errno":1054,"sqlState":"42S22","sqlMessage":"Unknown column 'services.createdAt' in 'field list'","sql":"SELECT `services`.*, `translations`.`id` AS `translations.id`, `translations`.`service_id` AS `translations.service_id`, `translations`.`name` AS `translations.name`, `translations`.`slug` AS `translations.slug`, `translations`.`post_id` AS `translations.post_id` FROM (SELECT `services`.`id`, `services`.`createdAt`, `services`.`updatedAt`, `services`.`service_id` FROM `services` AS `services` WHERE ( SELECT `post_id` FROM `service_translation` AS `translations` WHERE (`translations`.`locale` = 'en' AND `translations`.`post_id` = `services`.`id`) LIMIT 1 ) IS NOT NULL ORDER BY `services`.`createdAt` DESC LIMIT 0, 10) AS `services` INNER JOIN `service_translation` AS `translations` ON `services`.`id` = `translations`.`post_id` AND `translations`.`locale` = 'en' ORDER BY `services`.`createdAt` DESC;"},"original":{"code":"ER_BAD_FIELD_ERROR","errno":1054,"sqlState":"42S22","sqlMessage":"Unknown column 'services.createdAt' in 'field list'","sql":"SELECT `services`.*, `translations`.`id` AS `translations.id`, `translations`.`service_id` AS `translations.service_id`, `translations`.`name` AS `translations.name`, `translations`.`slug` AS `translations.slug`, `translations`.`post_id` AS `translations.post_id` FROM (SELECT `services`.`id`, `services`.`createdAt`, `services`.`updatedAt`, `services`.`service_id` FROM `services` AS `services` WHERE ( SELECT `post_id` FROM `service_translation` AS `translations` WHERE (`translations`.`locale` = 'en' AND `translations`.`post_id` = `services`.`id`) LIMIT 1 ) IS NOT NULL ORDER BY `services`.`createdAt` DESC LIMIT 0, 10) AS `services` INNER JOIN `service_translation` AS `translations` ON `services`.`id` = `translations`.`post_id` AND `translations`.`locale` = 'en' ORDER BY `services`.`createdAt` DESC;"},"sql":"SELECT `services`.*, `translations`.`id` AS `translations.id`, `translations`.`service_id` AS `translations.service_id`, `translations`.`name` AS `translations.name`, `translations`.`slug` AS `translations.slug`, `translations`.`post_id` AS `translations.post_id` FROM (SELECT `services`.`id`, `services`.`createdAt`, `services`.`updatedAt`, `services`.`service_id` FROM `services` AS `services` WHERE ( SELECT `post_id` FROM `service_translation` AS `translations` WHERE (`translations`.`locale` = 'en' AND `translations`.`post_id` = `services`.`id`) LIMIT 1 ) IS NOT NULL ORDER BY `services`.`createdAt` DESC LIMIT 0, 10) AS `services` INNER JOIN `service_translation` AS `translations` ON `services`.`id` = `translations`.`post_id` AND `translations`.`locale` = 'en' ORDER BY `services`.`createdAt` DESC;","parameters":{}}
+2023-04-22 00:10:00 error: {"name":"SequelizeDatabaseError","parent":{"code":"ER_BAD_FIELD_ERROR","errno":1054,"sqlState":"42S22","sqlMessage":"Unknown column 'translations.post_id' in 'on clause'","sql":"SELECT count(`services`.`id`) AS `count` FROM `services` AS `services` INNER JOIN `service_translation` AS `translations` ON `services`.`id` = `translations`.`post_id` AND `translations`.`locale` = 'en';"},"original":{"code":"ER_BAD_FIELD_ERROR","errno":1054,"sqlState":"42S22","sqlMessage":"Unknown column 'translations.post_id' in 'on clause'","sql":"SELECT count(`services`.`id`) AS `count` FROM `services` AS `services` INNER JOIN `service_translation` AS `translations` ON `services`.`id` = `translations`.`post_id` AND `translations`.`locale` = 'en';"},"sql":"SELECT count(`services`.`id`) AS `count` FROM `services` AS `services` INNER JOIN `service_translation` AS `translations` ON `services`.`id` = `translations`.`post_id` AND `translations`.`locale` = 'en';","parameters":{}}
+2023-04-22 00:10:32 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/infra/sequelize/models/service.model.ts[0m:[93m14[0m:[93m23[0m - [91merror[0m[90m TS2552: [0mCannot find name 'Sequelize'. Did you mean 'sequelize'?
+
+[7m14[0m                 type: Sequelize.INTEGER,
+[7m  [0m [91m                      ~~~~~~~~~[0m
+
+  [96msrc/infra/sequelize/models/service.model.ts[0m:[93m3[0m:[93m28[0m
+    [7m3[0m module.exports = function (sequelize, DataTypes) {
+    [7m [0m [96m                           ~~~~~~~~~[0m
+    'sequelize' is declared here.
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/infra/sequelize/models/service.model.ts[0m:[93m14[0m:[93m23[0m - [91merror[0m[90m TS2552: [0mCannot find name 'Sequelize'. Did you mean 'sequelize'?
+
+[7m14[0m                 type: Sequelize.INTEGER,
+[7m  [0m [91m                      ~~~~~~~~~[0m
+
+  [96msrc/infra/sequelize/models/service.model.ts[0m:[93m3[0m:[93m28[0m
+    [7m3[0m module.exports = function (sequelize, DataTypes) {
+    [7m [0m [96m                           ~~~~~~~~~[0m
+    'sequelize' is declared here.
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-22 00:11:07 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/infra/sequelize/models/service.model.ts[0m:[93m14[0m:[93m23[0m - [91merror[0m[90m TS2552: [0mCannot find name 'Sequelize'. Did you mean 'sequelize'?
+
+[7m14[0m                 type: Sequelize.INTEGER,
+[7m  [0m [91m                      ~~~~~~~~~[0m
+
+  [96msrc/infra/sequelize/models/service.model.ts[0m:[93m3[0m:[93m28[0m
+    [7m3[0m module.exports = function (sequelize, DataTypes) {
+    [7m [0m [96m                           ~~~~~~~~~[0m
+    'sequelize' is declared here.
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/infra/sequelize/models/service.model.ts[0m:[93m14[0m:[93m23[0m - [91merror[0m[90m TS2552: [0mCannot find name 'Sequelize'. Did you mean 'sequelize'?
+
+[7m14[0m                 type: Sequelize.INTEGER,
+[7m  [0m [91m                      ~~~~~~~~~[0m
+
+  [96msrc/infra/sequelize/models/service.model.ts[0m:[93m3[0m:[93m28[0m
+    [7m3[0m module.exports = function (sequelize, DataTypes) {
+    [7m [0m [96m                           ~~~~~~~~~[0m
+    'sequelize' is declared here.
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-22 00:11:28 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/infra/sequelize/models/service.model.ts[0m:[93m14[0m:[93m23[0m - [91merror[0m[90m TS2552: [0mCannot find name 'Sequelize'. Did you mean 'sequelize'?
+
+[7m14[0m                 type: Sequelize.INTEGER,
+[7m  [0m [91m                      ~~~~~~~~~[0m
+
+  [96msrc/infra/sequelize/models/service.model.ts[0m:[93m3[0m:[93m28[0m
+    [7m3[0m module.exports = function (sequelize, DataTypes) {
+    [7m [0m [96m                           ~~~~~~~~~[0m
+    'sequelize' is declared here.
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/infra/sequelize/models/service.model.ts[0m:[93m14[0m:[93m23[0m - [91merror[0m[90m TS2552: [0mCannot find name 'Sequelize'. Did you mean 'sequelize'?
+
+[7m14[0m                 type: Sequelize.INTEGER,
+[7m  [0m [91m                      ~~~~~~~~~[0m
+
+  [96msrc/infra/sequelize/models/service.model.ts[0m:[93m3[0m:[93m28[0m
+    [7m3[0m module.exports = function (sequelize, DataTypes) {
+    [7m [0m [96m                           ~~~~~~~~~[0m
+    'sequelize' is declared here.
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-22 00:12:31 error: {"name":"SequelizeDatabaseError","parent":{"code":"ER_BAD_FIELD_ERROR","errno":1054,"sqlState":"42S22","sqlMessage":"Unknown column 'services.createdAt' in 'field list'","sql":"SELECT `services`.*, `translations`.`id` AS `translations.id`, `translations`.`service_id` AS `translations.service_id`, `translations`.`name` AS `translations.name`, `translations`.`slug` AS `translations.slug`, `translations`.`post_id` AS `translations.post_id` FROM (SELECT `services`.`id`, `services`.`parent_id`, `services`.`createdAt`, `services`.`updatedAt`, `services`.`service_id` FROM `services` AS `services` WHERE ( SELECT `post_id` FROM `service_translation` AS `translations` WHERE (`translations`.`locale` = 'en' AND `translations`.`post_id` = `services`.`id`) LIMIT 1 ) IS NOT NULL ORDER BY `services`.`createdAt` DESC LIMIT 0, 10) AS `services` INNER JOIN `service_translation` AS `translations` ON `services`.`id` = `translations`.`post_id` AND `translations`.`locale` = 'en' ORDER BY `services`.`createdAt` DESC;"},"original":{"code":"ER_BAD_FIELD_ERROR","errno":1054,"sqlState":"42S22","sqlMessage":"Unknown column 'services.createdAt' in 'field list'","sql":"SELECT `services`.*, `translations`.`id` AS `translations.id`, `translations`.`service_id` AS `translations.service_id`, `translations`.`name` AS `translations.name`, `translations`.`slug` AS `translations.slug`, `translations`.`post_id` AS `translations.post_id` FROM (SELECT `services`.`id`, `services`.`parent_id`, `services`.`createdAt`, `services`.`updatedAt`, `services`.`service_id` FROM `services` AS `services` WHERE ( SELECT `post_id` FROM `service_translation` AS `translations` WHERE (`translations`.`locale` = 'en' AND `translations`.`post_id` = `services`.`id`) LIMIT 1 ) IS NOT NULL ORDER BY `services`.`createdAt` DESC LIMIT 0, 10) AS `services` INNER JOIN `service_translation` AS `translations` ON `services`.`id` = `translations`.`post_id` AND `translations`.`locale` = 'en' ORDER BY `services`.`createdAt` DESC;"},"sql":"SELECT `services`.*, `translations`.`id` AS `translations.id`, `translations`.`service_id` AS `translations.service_id`, `translations`.`name` AS `translations.name`, `translations`.`slug` AS `translations.slug`, `translations`.`post_id` AS `translations.post_id` FROM (SELECT `services`.`id`, `services`.`parent_id`, `services`.`createdAt`, `services`.`updatedAt`, `services`.`service_id` FROM `services` AS `services` WHERE ( SELECT `post_id` FROM `service_translation` AS `translations` WHERE (`translations`.`locale` = 'en' AND `translations`.`post_id` = `services`.`id`) LIMIT 1 ) IS NOT NULL ORDER BY `services`.`createdAt` DESC LIMIT 0, 10) AS `services` INNER JOIN `service_translation` AS `translations` ON `services`.`id` = `translations`.`post_id` AND `translations`.`locale` = 'en' ORDER BY `services`.`createdAt` DESC;","parameters":{}}
+2023-04-22 00:15:01 error: {"name":"SequelizeDatabaseError","parent":{"code":"ER_BAD_FIELD_ERROR","errno":1054,"sqlState":"42S22","sqlMessage":"Unknown column 'services.service_id' in 'field list'","sql":"SELECT `services`.*, `translations`.`id` AS `translations.id`, `translations`.`service_id` AS `translations.service_id`, `translations`.`name` AS `translations.name`, `translations`.`slug` AS `translations.slug`, `translations`.`post_id` AS `translations.post_id` FROM (SELECT `services`.`id`, `services`.`parent_id`, `services`.`createdAt`, `services`.`updatedAt`, `services`.`service_id` FROM `services` AS `services` WHERE ( SELECT `post_id` FROM `service_translation` AS `translations` WHERE (`translations`.`locale` = 'en' AND `translations`.`post_id` = `services`.`id`) LIMIT 1 ) IS NOT NULL ORDER BY `services`.`createdAt` DESC LIMIT 0, 10) AS `services` INNER JOIN `service_translation` AS `translations` ON `services`.`id` = `translations`.`post_id` AND `translations`.`locale` = 'en' ORDER BY `services`.`createdAt` DESC;"},"original":{"code":"ER_BAD_FIELD_ERROR","errno":1054,"sqlState":"42S22","sqlMessage":"Unknown column 'services.service_id' in 'field list'","sql":"SELECT `services`.*, `translations`.`id` AS `translations.id`, `translations`.`service_id` AS `translations.service_id`, `translations`.`name` AS `translations.name`, `translations`.`slug` AS `translations.slug`, `translations`.`post_id` AS `translations.post_id` FROM (SELECT `services`.`id`, `services`.`parent_id`, `services`.`createdAt`, `services`.`updatedAt`, `services`.`service_id` FROM `services` AS `services` WHERE ( SELECT `post_id` FROM `service_translation` AS `translations` WHERE (`translations`.`locale` = 'en' AND `translations`.`post_id` = `services`.`id`) LIMIT 1 ) IS NOT NULL ORDER BY `services`.`createdAt` DESC LIMIT 0, 10) AS `services` INNER JOIN `service_translation` AS `translations` ON `services`.`id` = `translations`.`post_id` AND `translations`.`locale` = 'en' ORDER BY `services`.`createdAt` DESC;"},"sql":"SELECT `services`.*, `translations`.`id` AS `translations.id`, `translations`.`service_id` AS `translations.service_id`, `translations`.`name` AS `translations.name`, `translations`.`slug` AS `translations.slug`, `translations`.`post_id` AS `translations.post_id` FROM (SELECT `services`.`id`, `services`.`parent_id`, `services`.`createdAt`, `services`.`updatedAt`, `services`.`service_id` FROM `services` AS `services` WHERE ( SELECT `post_id` FROM `service_translation` AS `translations` WHERE (`translations`.`locale` = 'en' AND `translations`.`post_id` = `services`.`id`) LIMIT 1 ) IS NOT NULL ORDER BY `services`.`createdAt` DESC LIMIT 0, 10) AS `services` INNER JOIN `service_translation` AS `translations` ON `services`.`id` = `translations`.`post_id` AND `translations`.`locale` = 'en' ORDER BY `services`.`createdAt` DESC;","parameters":{}}
+2023-04-22 00:19:32 error: {"name":"SequelizeDatabaseError","parent":{"code":"ER_BAD_FIELD_ERROR","errno":1054,"sqlState":"42S22","sqlMessage":"Unknown column 'translations.post_id' in 'on clause'","sql":"SELECT count(`services`.`id`) AS `count` FROM `services` AS `services` INNER JOIN `service_translation` AS `translations` ON `services`.`id` = `translations`.`post_id` AND `translations`.`locale` = 'en';"},"original":{"code":"ER_BAD_FIELD_ERROR","errno":1054,"sqlState":"42S22","sqlMessage":"Unknown column 'translations.post_id' in 'on clause'","sql":"SELECT count(`services`.`id`) AS `count` FROM `services` AS `services` INNER JOIN `service_translation` AS `translations` ON `services`.`id` = `translations`.`post_id` AND `translations`.`locale` = 'en';"},"sql":"SELECT count(`services`.`id`) AS `count` FROM `services` AS `services` INNER JOIN `service_translation` AS `translations` ON `services`.`id` = `translations`.`post_id` AND `translations`.`locale` = 'en';","parameters":{}}
+2023-04-22 00:21:39 error: {"name":"SequelizeDatabaseError","parent":{"code":"ER_BAD_FIELD_ERROR","errno":1054,"sqlState":"42S22","sqlMessage":"Unknown column 'services.service_id' in 'field list'","sql":"SELECT `services`.*, `translations`.`id` AS `translations.id`, `translations`.`service_id` AS `translations.service_id`, `translations`.`name` AS `translations.name`, `translations`.`slug` AS `translations.slug`, `translations`.`custom_slug` AS `translations.custom_slug`, `translations`.`meta_title` AS `translations.meta_title`, `translations`.`meta_description` AS `translations.meta_description`, `translations`.`meta_keyword` AS `translations.meta_keyword`, `translations`.`meta_robots` AS `translations.meta_robots`, `translations`.`canonica_link` AS `translations.canonica_link`, `translations`.`meta_image` AS `translations.meta_image`, `translations`.`meta_viewport` AS `translations.meta_viewport` FROM (SELECT `services`.`id`, `services`.`parent_id`, `services`.`createdAt`, `services`.`updatedAt`, `services`.`service_id` FROM `services` AS `services` WHERE ( SELECT `service_id` FROM `service_translation` AS `translations` WHERE (`translations`.`locale` = 'en' AND `translations`.`service_id` = `services`.`id`) LIMIT 1 ) IS NOT NULL ORDER BY `services`.`createdAt` DESC LIMIT 0, 10) AS `services` INNER JOIN `service_translation` AS `translations` ON `services`.`id` = `translations`.`service_id` AND `translations`.`locale` = 'en' ORDER BY `services`.`createdAt` DESC;"},"original":{"code":"ER_BAD_FIELD_ERROR","errno":1054,"sqlState":"42S22","sqlMessage":"Unknown column 'services.service_id' in 'field list'","sql":"SELECT `services`.*, `translations`.`id` AS `translations.id`, `translations`.`service_id` AS `translations.service_id`, `translations`.`name` AS `translations.name`, `translations`.`slug` AS `translations.slug`, `translations`.`custom_slug` AS `translations.custom_slug`, `translations`.`meta_title` AS `translations.meta_title`, `translations`.`meta_description` AS `translations.meta_description`, `translations`.`meta_keyword` AS `translations.meta_keyword`, `translations`.`meta_robots` AS `translations.meta_robots`, `translations`.`canonica_link` AS `translations.canonica_link`, `translations`.`meta_image` AS `translations.meta_image`, `translations`.`meta_viewport` AS `translations.meta_viewport` FROM (SELECT `services`.`id`, `services`.`parent_id`, `services`.`createdAt`, `services`.`updatedAt`, `services`.`service_id` FROM `services` AS `services` WHERE ( SELECT `service_id` FROM `service_translation` AS `translations` WHERE (`translations`.`locale` = 'en' AND `translations`.`service_id` = `services`.`id`) LIMIT 1 ) IS NOT NULL ORDER BY `services`.`createdAt` DESC LIMIT 0, 10) AS `services` INNER JOIN `service_translation` AS `translations` ON `services`.`id` = `translations`.`service_id` AND `translations`.`locale` = 'en' ORDER BY `services`.`createdAt` DESC;"},"sql":"SELECT `services`.*, `translations`.`id` AS `translations.id`, `translations`.`service_id` AS `translations.service_id`, `translations`.`name` AS `translations.name`, `translations`.`slug` AS `translations.slug`, `translations`.`custom_slug` AS `translations.custom_slug`, `translations`.`meta_title` AS `translations.meta_title`, `translations`.`meta_description` AS `translations.meta_description`, `translations`.`meta_keyword` AS `translations.meta_keyword`, `translations`.`meta_robots` AS `translations.meta_robots`, `translations`.`canonica_link` AS `translations.canonica_link`, `translations`.`meta_image` AS `translations.meta_image`, `translations`.`meta_viewport` AS `translations.meta_viewport` FROM (SELECT `services`.`id`, `services`.`parent_id`, `services`.`createdAt`, `services`.`updatedAt`, `services`.`service_id` FROM `services` AS `services` WHERE ( SELECT `service_id` FROM `service_translation` AS `translations` WHERE (`translations`.`locale` = 'en' AND `translations`.`service_id` = `services`.`id`) LIMIT 1 ) IS NOT NULL ORDER BY `services`.`createdAt` DESC LIMIT 0, 10) AS `services` INNER JOIN `service_translation` AS `translations` ON `services`.`id` = `translations`.`service_id` AND `translations`.`locale` = 'en' ORDER BY `services`.`createdAt` DESC;","parameters":{}}
+2023-04-22 00:23:48 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/infra/sequelize/models/serviceTranslation.model.ts[0m:[93m26[0m:[93m23[0m - [91merror[0m[90m TS2552: [0mCannot find name 'Sequelize'. Did you mean 'sequelize'?
+
+[7m26[0m                 type: Sequelize.STRING,
+[7m  [0m [91m                      ~~~~~~~~~[0m
+
+  [96msrc/infra/sequelize/models/serviceTranslation.model.ts[0m:[93m3[0m:[93m28[0m
+    [7m3[0m module.exports = function (sequelize, DataTypes) {
+    [7m [0m [96m                           ~~~~~~~~~[0m
+    'sequelize' is declared here.
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/infra/sequelize/models/serviceTranslation.model.ts[0m:[93m26[0m:[93m23[0m - [91merror[0m[90m TS2552: [0mCannot find name 'Sequelize'. Did you mean 'sequelize'?
+
+[7m26[0m                 type: Sequelize.STRING,
+[7m  [0m [91m                      ~~~~~~~~~[0m
+
+  [96msrc/infra/sequelize/models/serviceTranslation.model.ts[0m:[93m3[0m:[93m28[0m
+    [7m3[0m module.exports = function (sequelize, DataTypes) {
+    [7m [0m [96m                           ~~~~~~~~~[0m
+    'sequelize' is declared here.
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)

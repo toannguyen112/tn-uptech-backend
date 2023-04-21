@@ -107,7 +107,7 @@ export class PostService {
         try {
 
             const rows = await models.Post.findAll({
-                where: { isFeatured: true },
+                where: { isFeatured: true,status: 'active' },
                 include: [
                     {
                         model: models.Media,

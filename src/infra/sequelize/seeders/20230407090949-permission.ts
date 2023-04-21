@@ -58,6 +58,11 @@ module.exports = {
           name: "Lĩnh vực",
           value: "branchs",
         },
+        {
+          id: 12,
+          name: "Dịch vụ",
+          value: "services",
+        },
       ]);
 
     } catch (error) {

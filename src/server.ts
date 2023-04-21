@@ -14,9 +14,11 @@ import { CommontRoute } from './route/common.route';
 import { AdminRoute } from './route/admin.route';
 import { PermissionRoute } from './route/permission.route';
 import { BranchRoute } from './route/branch.route';
+import { ServiceRoute } from './route/service.route';
 
 const routers = [
     new AdminRoute(),
+    new ServiceRoute(),
     new BranchRoute(),
     new PermissionRoute(),
     new CommontRoute(),
