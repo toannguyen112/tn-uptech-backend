@@ -101,7 +101,9 @@ export class BannerService {
                         model: models.BannerTranslation,
                         as: "translations",
                         required: true,
-                        locale: global.lang,
+                        where: {
+                            locale: global.lang
+                        },
                     },
                 ]
             });

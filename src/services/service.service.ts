@@ -8,6 +8,7 @@ import Helper from "../utils/Helper";
 import { ServiceDTO } from "../dtos/service.dtos";
 export class ServiceService {
 
+
     public getList = async (query) => {
         try {
             const conditions = {};
@@ -68,21 +69,49 @@ export class ServiceService {
 
         try {
             const rows = await models.Service.findAll({
+                where: {
+                    parent_id: 0
+                },
                 include: [
                     {
                         model: models.ServiceTranslation,
                         as: "translations",
                         required: true,
-                        locale: global.lang,
+                        where: {
+                            locale: "vi",
+                        },
                     },
                     {
                         model: models.Service,
                         as: "children",
+                        include: [
+                            {
+                                model: models.ServiceTranslation,
+                                as: "translations",
+                                required: true,
+                                where: {
+                                    locale: "vi"
+                                },
+                            },
+                        ]
                     }
                 ]
             });
+
             return rows.map((item) => {
-                return item
+                // return item;
+                return {
+                    key: item.id,
+                    label: item.translations[0].name,
+                    slug: item.translations[0].slug,
+                    children: item.children.map((item) => {
+                        return {
+                            key: item.id,
+                            label: item.translations[0].name,
+                            slug: item.translations[0].slug,
+                        }
+                    })
+                }
             });
 
         } catch (error) {
@@ -96,14 +125,7 @@ export class ServiceService {
 
         try {
             return await models.Service.create({
-                status: body.status,
-                ceo_id: body.ceo_id,
-                category_id: body.category_id,
-                isFeatured: body.isFeatured,
-                related: body.related,
-                images: body.images,
-                thumbnail: body.thumbnail ? body.thumbnail.id : null,
-                banner: body.banner ? body.banner.id : null,
+                ...body
             },
                 { individualHooks: true }
             )

@@ -89,6 +89,10 @@ module.exports = function (sequelize, DataTypes) {
         });
     }
 
+    ServiceTranslation.beforeCreate(async (service, options) => {
+        service.slug = Helper.renderSlug(service.name);
+    });
+
     ServiceTranslation.beforeSave(async (service, options) => {
         service.slug = Helper.renderSlug(service.name);
     });

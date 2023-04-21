@@ -1,5 +1,3 @@
-
-
 module.exports = function (sequelize, DataTypes) {
     const Folder = sequelize.define(
         "folders",
