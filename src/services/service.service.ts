@@ -64,6 +64,32 @@ export class ServiceService {
         }
     }
 
+    public getNav = async () => {
+
+        try {
+            const rows = await models.Service.findAll({
+                include: [
+                    {
+                        model: models.ServiceTranslation,
+                        as: "translations",
+                        required: true,
+                        locale: global.lang,
+                    },
+                    {
+                        model: models.Service,
+                        as: "children",
+                    }
+                ]
+            });
+            return rows.map((item) => {
+                return item
+            });
+
+        } catch (error) {
+            console.log(error);
+        }
+    }
+
     public store = async (body) => {
 
         const t = await models.sequelize.transaction();

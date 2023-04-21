@@ -42,6 +42,9 @@ module.exports = function (sequelize, DataTypes) {
             as: "translations",
             foreignKey: "service_id"
         });
+
+        Service.belongsTo(Service, { as: 'parent', foreignKey: 'parent_id' })
+        Service.hasMany(Service, { as: 'children', foreignKey: 'parent_id' })
     };
 
     return Service;
