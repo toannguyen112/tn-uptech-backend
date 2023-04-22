@@ -8,10 +8,12 @@ import Helper from "../utils/Helper";
 import { ServiceDTO } from "../dtos/service.dtos";
 export class ServiceService {
 
-
     public getList = async (query) => {
         try {
-            const conditions = {};
+            const conditions = {
+                parent_id: 0
+            };
+
             const queryObject = {
                 status: query.status,
                 search: query.search,
@@ -46,6 +48,8 @@ export class ServiceService {
                 .paginate()
                 .paranoid()
                 .getObjQuery();
+
+            console.log(objQuery);
 
             const { count, rows }: any = await models.Service.findAndCountAll(objQuery);
 
