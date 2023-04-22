@@ -99,7 +99,7 @@ export class ProjectService {
             ...body,
             thumbnail: body.thumbnail ? body.thumbnail.id : null,
             banner: body.banner ? body.banner.id : null,
-        },{ individualHooks: true }
+        }, { individualHooks: true }
         )
             .then(async (project: any) => {
 
@@ -136,6 +136,36 @@ export class ProjectService {
                     required: false,
                 },
                 {
+                    model: models.Branch,
+                    as: "branchs",
+                    required: false,
+                    include: [
+                        {
+                            model: models.BranchTranslation,
+                            as: "translations",
+                            required: true,
+                            where: {
+                                locale: global.lang,
+                            }
+                        }
+                    ]
+                },
+                {
+                    model: models.Service,
+                    as: "services",
+                    required: false,
+                    include: [
+                        {
+                            model: models.ServiceTranslation,
+                            as: "translations",
+                            required: true,
+                            where: {
+                                locale: global.lang,
+                            }
+                        }
+                    ]
+                },
+                {
                     model: models.Media,
                     as: "banner_image",
                     required: false,
@@ -146,7 +176,6 @@ export class ProjectService {
                     required: true,
                     where: {
                         locale: global.lang,
-                        project_id: id,
                     }
                 },
             ]

@@ -36,6 +36,14 @@ export class ProjectDTO {
             banner: item.banner_image || null,
             related: item.related || [],
 
+            branchs: item.branchs.map((item)=>{
+                return item.id
+            }) || [],
+
+            services: item.services.map((item)=>{
+                return item.id
+            }) || [],
+
             // seo 
 
             slug: translationData.slug || "",

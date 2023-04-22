@@ -330,3 +330,211 @@ TSError: ⨯ Unable to compile TypeScript:
     at Module.load (node:internal/modules/cjs/loader:1069:32)
     at Function.Module._load (node:internal/modules/cjs/loader:904:12)
     at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-22 18:18:54 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/services/project.service.ts[0m:[93m143[0m:[93m25[0m - [91merror[0m[90m TS2552: [0mCannot find name 'model'. Did you mean 'models'?
+
+[7m143[0m                         model: models.BranchTranslation,
+[7m   [0m [91m                        ~~~~~[0m
+[96msrc/services/project.service.ts[0m:[93m144[0m:[93m25[0m - [91merror[0m[90m TS2304: [0mCannot find name 'as'.
+
+[7m144[0m                         as: "translations",
+[7m   [0m [91m                        ~~[0m
+[96msrc/services/project.service.ts[0m:[93m145[0m:[93m25[0m - [91merror[0m[90m TS2552: [0mCannot find name 'required'. Did you mean 'require'?
+
+[7m145[0m                         required: true,
+[7m   [0m [91m                        ~~~~~~~~[0m
+
+  [96mnode_modules/@types/node/globals.d.ts[0m:[93m33[0m:[93m13[0m
+    [7m33[0m declare var require: NodeRequire;
+    [7m  [0m [96m            ~~~~~~~[0m
+    'require' is declared here.
+[96msrc/services/project.service.ts[0m:[93m146[0m:[93m25[0m - [91merror[0m[90m TS2304: [0mCannot find name 'where'.
+
+[7m146[0m                         where: {
+[7m   [0m [91m                        ~~~~~[0m
+[96msrc/services/project.service.ts[0m:[93m143[0m:[93m30[0m - [91merror[0m[90m TS1005: [0m',' expected.
+
+[7m143[0m                         model: models.BranchTranslation,
+[7m   [0m [91m                             ~[0m
+[96msrc/services/project.service.ts[0m:[93m144[0m:[93m27[0m - [91merror[0m[90m TS1005: [0m',' expected.
+
+[7m144[0m                         as: "translations",
+[7m   [0m [91m                          ~[0m
+[96msrc/services/project.service.ts[0m:[93m145[0m:[93m33[0m - [91merror[0m[90m TS1005: [0m',' expected.
+
+[7m145[0m                         required: true,
+[7m   [0m [91m                                ~[0m
+[96msrc/services/project.service.ts[0m:[93m146[0m:[93m30[0m - [91merror[0m[90m TS1005: [0m',' expected.
+
+[7m146[0m                         where: {
+[7m   [0m [91m                             ~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/services/project.service.ts[0m:[93m143[0m:[93m25[0m - [91merror[0m[90m TS2552: [0mCannot find name 'model'. Did you mean 'models'?
+
+[7m143[0m                         model: models.BranchTranslation,
+[7m   [0m [91m                        ~~~~~[0m
+[96msrc/services/project.service.ts[0m:[93m144[0m:[93m25[0m - [91merror[0m[90m TS2304: [0mCannot find name 'as'.
+
+[7m144[0m                         as: "translations",
+[7m   [0m [91m                        ~~[0m
+[96msrc/services/project.service.ts[0m:[93m145[0m:[93m25[0m - [91merror[0m[90m TS2552: [0mCannot find name 'required'. Did you mean 'require'?
+
+[7m145[0m                         required: true,
+[7m   [0m [91m                        ~~~~~~~~[0m
+
+  [96mnode_modules/@types/node/globals.d.ts[0m:[93m33[0m:[93m13[0m
+    [7m33[0m declare var require: NodeRequire;
+    [7m  [0m [96m            ~~~~~~~[0m
+    'require' is declared here.
+[96msrc/services/project.service.ts[0m:[93m146[0m:[93m25[0m - [91merror[0m[90m TS2304: [0mCannot find name 'where'.
+
+[7m146[0m                         where: {
+[7m   [0m [91m                        ~~~~~[0m
+[96msrc/services/project.service.ts[0m:[93m143[0m:[93m30[0m - [91merror[0m[90m TS1005: [0m',' expected.
+
+[7m143[0m                         model: models.BranchTranslation,
+[7m   [0m [91m                             ~[0m
+[96msrc/services/project.service.ts[0m:[93m144[0m:[93m27[0m - [91merror[0m[90m TS1005: [0m',' expected.
+
+[7m144[0m                         as: "translations",
+[7m   [0m [91m                          ~[0m
+[96msrc/services/project.service.ts[0m:[93m145[0m:[93m33[0m - [91merror[0m[90m TS1005: [0m',' expected.
+
+[7m145[0m                         required: true,
+[7m   [0m [91m                                ~[0m
+[96msrc/services/project.service.ts[0m:[93m146[0m:[93m30[0m - [91merror[0m[90m TS1005: [0m',' expected.
+
+[7m146[0m                         where: {
+[7m   [0m [91m                             ~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-22 18:42:31 error: uncaughtException: You have used the alias branchs in two separate associations. Aliased associations must have unique aliases.
+SequelizeAssociationError: You have used the alias branchs in two separate associations. Aliased associations must have unique aliases.
+    at new Association (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/sequelize/src/associations/base.js:107:13)
+    at new BelongsToMany (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/sequelize/src/associations/belongs-to-many.js:59:5)
+    at Function.belongsToMany (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/sequelize/src/associations/mixin.js:64:25)
+    at Function.Project.associate (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/project.model.ts:95:17)
+    at /Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:51:31
+    at Array.forEach (<anonymous>)
+    at createModels (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:49:25)
+    at Object.<anonymous> (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:63:16)
+    at Module._compile (node:internal/modules/cjs/loader:1191:14)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1618:23)
+2023-04-22 18:42:47 error: uncaughtException: projects.belongsToMany(services) requires through option, pass either a string or a model
+SequelizeAssociationError: projects.belongsToMany(services) requires through option, pass either a string or a model
+    at new BelongsToMany (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/sequelize/src/associations/belongs-to-many.js:62:13)
+    at Function.belongsToMany (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/sequelize/src/associations/mixin.js:64:25)
+    at Function.Project.associate (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/project.model.ts:95:17)
+    at /Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:51:31
+    at Array.forEach (<anonymous>)
+    at createModels (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:49:25)
+    at Object.<anonymous> (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:63:16)
+    at Module._compile (node:internal/modules/cjs/loader:1191:14)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1618:23)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+2023-04-22 18:43:14 error: uncaughtException: projects.belongsToMany(services) requires through option, pass either a string or a model
+SequelizeAssociationError: projects.belongsToMany(services) requires through option, pass either a string or a model
+    at new BelongsToMany (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/sequelize/src/associations/belongs-to-many.js:62:13)
+    at Function.belongsToMany (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/sequelize/src/associations/mixin.js:64:25)
+    at Function.Project.associate (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/project.model.ts:95:17)
+    at /Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:51:31
+    at Array.forEach (<anonymous>)
+    at createModels (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:49:25)
+    at Object.<anonymous> (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:63:16)
+    at Module._compile (node:internal/modules/cjs/loader:1191:14)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1618:23)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+2023-04-22 18:43:24 error: uncaughtException: projects.belongsToMany(services) requires through option, pass either a string or a model
+SequelizeAssociationError: projects.belongsToMany(services) requires through option, pass either a string or a model
+    at new BelongsToMany (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/sequelize/src/associations/belongs-to-many.js:62:13)
+    at Function.belongsToMany (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/sequelize/src/associations/mixin.js:64:25)
+    at Function.Project.associate (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/project.model.ts:95:17)
+    at /Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:51:31
+    at Array.forEach (<anonymous>)
+    at createModels (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:49:25)
+    at Object.<anonymous> (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:63:16)
+    at Module._compile (node:internal/modules/cjs/loader:1191:14)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1618:23)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+2023-04-22 18:43:35 error: uncaughtException: projects.belongsToMany(services) requires through option, pass either a string or a model
+SequelizeAssociationError: projects.belongsToMany(services) requires through option, pass either a string or a model
+    at new BelongsToMany (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/sequelize/src/associations/belongs-to-many.js:62:13)
+    at Function.belongsToMany (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/sequelize/src/associations/mixin.js:64:25)
+    at Function.Project.associate (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/project.model.ts:95:17)
+    at /Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:51:31
+    at Array.forEach (<anonymous>)
+    at createModels (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:49:25)
+    at Object.<anonymous> (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:63:16)
+    at Module._compile (node:internal/modules/cjs/loader:1191:14)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1618:23)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+2023-04-22 18:50:21 error: uncaughtException: projects.belongsToMany(services) requires through option, pass either a string or a model
+SequelizeAssociationError: projects.belongsToMany(services) requires through option, pass either a string or a model
+    at new BelongsToMany (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/sequelize/src/associations/belongs-to-many.js:62:13)
+    at Function.belongsToMany (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/sequelize/src/associations/mixin.js:64:25)
+    at Function.Project.associate (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/project.model.ts:95:17)
+    at /Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:51:31
+    at Array.forEach (<anonymous>)
+    at createModels (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:49:25)
+    at Object.<anonymous> (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:63:16)
+    at Module._compile (node:internal/modules/cjs/loader:1191:14)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1618:23)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+2023-04-22 18:50:38 error: uncaughtException: projects.belongsToMany(services) requires through option, pass either a string or a model
+SequelizeAssociationError: projects.belongsToMany(services) requires through option, pass either a string or a model
+    at new BelongsToMany (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/sequelize/src/associations/belongs-to-many.js:62:13)
+    at Function.belongsToMany (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/sequelize/src/associations/mixin.js:64:25)
+    at Function.Project.associate (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/project.model.ts:95:17)
+    at /Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:51:31
+    at Array.forEach (<anonymous>)
+    at createModels (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:49:25)
+    at Object.<anonymous> (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:63:16)
+    at Module._compile (node:internal/modules/cjs/loader:1191:14)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1618:23)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+2023-04-22 18:51:10 error: uncaughtException: projects.belongsToMany(services) requires through option, pass either a string or a model
+SequelizeAssociationError: projects.belongsToMany(services) requires through option, pass either a string or a model
+    at new BelongsToMany (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/sequelize/src/associations/belongs-to-many.js:62:13)
+    at Function.belongsToMany (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/sequelize/src/associations/mixin.js:64:25)
+    at Function.Project.associate (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/project.model.ts:95:17)
+    at /Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:51:31
+    at Array.forEach (<anonymous>)
+    at createModels (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:49:25)
+    at Object.<anonymous> (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:63:16)
+    at Module._compile (node:internal/modules/cjs/loader:1191:14)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1618:23)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+2023-04-22 18:51:16 error: uncaughtException: projects.belongsToMany(services) requires through option, pass either a string or a model
+SequelizeAssociationError: projects.belongsToMany(services) requires through option, pass either a string or a model
+    at new BelongsToMany (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/sequelize/src/associations/belongs-to-many.js:62:13)
+    at Function.belongsToMany (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/sequelize/src/associations/mixin.js:64:25)
+    at Function.Project.associate (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/project.model.ts:95:17)
+    at /Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:51:31
+    at Array.forEach (<anonymous>)
+    at createModels (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:49:25)
+    at Object.<anonymous> (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:63:16)
+    at Module._compile (node:internal/modules/cjs/loader:1191:14)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1618:23)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+2023-04-22 18:51:34 error: uncaughtException: projects.belongsToMany(services) requires through option, pass either a string or a model
+SequelizeAssociationError: projects.belongsToMany(services) requires through option, pass either a string or a model
+    at new BelongsToMany (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/sequelize/src/associations/belongs-to-many.js:62:13)
+    at Function.belongsToMany (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/sequelize/src/associations/mixin.js:64:25)
+    at Function.Project.associate (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/project.model.ts:95:17)
+    at /Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:51:31
+    at Array.forEach (<anonymous>)
+    at createModels (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:49:25)
+    at Object.<anonymous> (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:63:16)
+    at Module._compile (node:internal/modules/cjs/loader:1191:14)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1618:23)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)

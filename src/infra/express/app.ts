@@ -7,7 +7,7 @@ import express from 'express';
 import helmet from 'helmet';
 import hpp from 'hpp';
 import morgan from 'morgan';
-import { NODE_ENV, PORT, LOG_FORMAT, ORIGIN, CREDENTIALS } from '../../config';
+import { NODE_ENV, PORT, LOG_FORMAT } from '../../config';
 import { logger, stream } from "../../utils/logger";
 import { Routes } from "../../interface/routes.interface";
 import { LangMiddleware } from '../../middlewares/lang.middleware';

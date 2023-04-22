@@ -86,6 +86,18 @@ module.exports = function (sequelize, DataTypes) {
             foreignKey: "project_id"
         });
 
+        Project.belongsToMany(models.Branch, {
+            as: 'branchs',
+            foreignKey: "project_id",
+            through: models.ProjectBranch
+        });
+
+        Project.belongsToMany(models.Service, {
+            as: 'services',
+            foreignKey: "project_id",
+            through: models.ProjectService
+        });
+
     };
 
     return Project;

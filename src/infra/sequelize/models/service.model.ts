@@ -45,6 +45,12 @@ module.exports = function (sequelize, DataTypes) {
 
         Service.belongsTo(Service, { as: 'parent', foreignKey: 'parent_id' })
         Service.hasMany(Service, { as: 'children', foreignKey: 'parent_id' })
+
+        Service.belongsToMany(models.Project, {
+            as: 'projects',
+            foreignKey: "service_id",
+            through: models.ProjectService
+        });
     };
 
     return Service;
