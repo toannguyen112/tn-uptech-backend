@@ -185,6 +185,20 @@ export class ServiceService {
                         service_id: id
                     }
                 },
+                {
+                    model: models.Service,
+                    as: "children",
+                    include: [
+                        {
+                            model: models.ServiceTranslation,
+                            as: "translations",
+                            required: true,
+                            where: {
+                                locale: global.lang,
+                            },
+                        },
+                    ]
+                }
             ]
         });
 
