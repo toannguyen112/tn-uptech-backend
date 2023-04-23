@@ -2,9 +2,7 @@
 import { ApiFeatures } from "../utils/ApiFeatures";
 import { Op } from "sequelize";
 import { logger } from "../utils/logger";
-
 import models from "../infra/sequelize/models";
-import Helper from "../utils/Helper";
 import { ServiceDTO } from "../dtos/service.dtos";
 export class ServiceService {
 
@@ -74,12 +72,17 @@ export class ServiceService {
                 where: { parent_id: 0 },
                 include: [
                     {
+                        model: models.Media,
+                        as: "image",
+                        required: false,
+                    },
+                    {
                         model: models.ServiceTranslation,
                         as: "translations",
                         required: true,
                         where: {
-                            locale: "vi",
-                        },
+                            locale: global.lang,
+                        }
                     },
                     {
                         model: models.Service,
@@ -90,8 +93,13 @@ export class ServiceService {
                                 as: "translations",
                                 required: true,
                                 where: {
-                                    locale: "vi"
+                                    locale: global.lang,
                                 },
+                            },
+                            {
+                                model: models.Media,
+                                as: "image",
+                                required: false,
                             },
                         ]
                     }
@@ -136,7 +144,8 @@ export class ServiceService {
                             }
 
                             await models.ServiceTranslation.create({
-                                ...newItem, service_id: serviceId,
+                                ...newItem,
+                                service_id: serviceId,
                                 locale: 'vi'
                             },
                                 { transaction: t });
@@ -148,7 +157,7 @@ export class ServiceService {
                             },
                                 { transaction: t });
 
-                                await models.ServiceTranslation.create({
+                            await models.ServiceTranslation.create({
                                 ...newItem,
                                 service_id: serviceId,
                                 locale: 'ja'
@@ -177,6 +186,11 @@ export class ServiceService {
             where: { id },
             include: [
                 {
+                    model: models.Media,
+                    as: "image",
+                    required: false,
+                },
+                {
                     model: models.ServiceTranslation,
                     as: "translations",
                     required: true,
@@ -196,6 +210,11 @@ export class ServiceService {
                             where: {
                                 locale: global.lang,
                             },
+                        },
+                        {
+                            model: models.Media,
+                            as: "image",
+                            required: false,
                         },
                     ]
                 }
@@ -218,11 +237,13 @@ export class ServiceService {
     }
 
     public handleUpdate = async ({ service_id, lang = "vi", body }) => {
+
         try {
             return await models.ServiceTranslation.update({
                 name: body.name,
 
                 meta_title: body.meta_title,
+                custom_slug: body.custom_slug,
                 meta_description: body.meta_description,
                 meta_keyword: body.meta_keyword,
                 meta_robots: body.meta_robots,

@@ -52,6 +52,11 @@ module.exports = function (sequelize, DataTypes) {
             foreignKey: "service_id"
         });
 
+        Service.belongsTo(models.Media, {
+            as: 'image',
+            foreignKey: "thumbnail"
+        });
+
         Service.belongsTo(Service, { as: 'parent', foreignKey: 'parent_id' })
         Service.hasMany(Service, { as: 'children', foreignKey: 'parent_id' })
 
