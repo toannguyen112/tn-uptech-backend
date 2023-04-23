@@ -4,7 +4,7 @@ import { Op } from "sequelize";
 import { logger } from "../utils/logger";
 
 import models from "../infra/sequelize/models";
-import Helper from "../utils/Helper";
+
 export class PostService {
 
     public getList = async (query) => {
@@ -107,7 +107,7 @@ export class PostService {
         try {
 
             const rows = await models.Post.findAll({
-                where: { isFeatured: true,status: 'active' },
+                where: { isFeatured: true, status: 'active' },
                 include: [
                     {
                         model: models.Media,
@@ -159,10 +159,7 @@ export class PostService {
                 images: body.images,
                 thumbnail: body.thumbnail ? body.thumbnail.id : null,
                 banner: body.banner ? body.banner.id : null,
-            },
-            {
-                individualHooks: true
-            }
+            }, { individualHooks: true },{ transaction: t }
             )
                 .then(async (post: any) => {
 
@@ -170,24 +167,17 @@ export class PostService {
                         const postId = post.id;
                         try {
 
-                            const newItem = {
+                            await models.PostTranslation.create({
                                 ...body,
-                                slug: Helper.renderSlug(body.slug ? body.slug : body.name),
-                                custom_slug: Helper.renderSlug(body.custom_slug ? body.custom_slug : body.name),
-                            }
-
-                            await models.PostTranslation.create({
-                                ...newItem, post_id: postId,
+                                post_id: postId,
                                 locale: 'vi'
-                            });
+                            },{ transaction: t });
 
                             await models.PostTranslation.create({
-                                ...newItem,
-                                slug: Helper.renderSlug(body.slug ? `en-${body.slug}` : `en-${body.name}`),
-                                custom_slug: Helper.renderSlug(body.custom_slug ? `en-${body.custom_slug}` : `en-${body.name}`),
+                                ...body,
                                 post_id: postId,
                                 locale: 'en'
-                            });
+                            },{ transaction: t });
 
                         } catch (error) {
                             console.log(error);

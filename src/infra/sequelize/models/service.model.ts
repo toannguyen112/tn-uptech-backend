@@ -15,6 +15,15 @@ module.exports = function (sequelize, DataTypes) {
                 defaultValue: 0
             },
 
+            thumbnail: {
+                type: DataTypes.INTEGER,
+                references: {
+                    model: "medias",
+                    key: "id",
+                },
+                allowNull: true,
+            },
+
             createdAt: {
                 type: DataTypes.DATE,
                 defaultValue: new Date(),

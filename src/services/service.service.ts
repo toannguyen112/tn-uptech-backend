@@ -49,8 +49,6 @@ export class ServiceService {
                 .paranoid()
                 .getObjQuery();
 
-            console.log(objQuery);
-
             const { count, rows }: any = await models.Service.findAndCountAll(objQuery);
 
             const result = {
@@ -135,7 +133,6 @@ export class ServiceService {
 
                             const newItem = {
                                 ...body,
-                                custom_slug: Helper.renderSlug(body.custom_slug ? body.custom_slug : body.name),
                             }
 
                             await models.ServiceTranslation.create({
@@ -146,9 +143,15 @@ export class ServiceService {
 
                             await models.ServiceTranslation.create({
                                 ...newItem,
-                                custom_slug: Helper.renderSlug(body.custom_slug ? `en-${body.custom_slug}` : `en-${body.name}`),
                                 service_id: serviceId,
                                 locale: 'en'
+                            },
+                                { transaction: t });
+
+                                await models.ServiceTranslation.create({
+                                ...newItem,
+                                service_id: serviceId,
+                                locale: 'ja'
                             },
                                 { transaction: t });
 

@@ -10,6 +10,15 @@ module.exports = {
         type: Sequelize.INTEGER,
       },
 
+      thumbnail: {
+        type: Sequelize.INTEGER,
+        references: {
+          model: "medias",
+          key: "id",
+        },
+        allowNull: true,
+      },
+
       parent_id: {
         type: Sequelize.INTEGER,
         defaultValue: 0

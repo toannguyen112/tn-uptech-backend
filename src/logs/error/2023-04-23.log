@@ -1,0 +1,61 @@
+2023-04-23 12:44:52 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/dtos/service.dtos.ts[0m:[93m24[0m:[93m17[0m - [91merror[0m[90m TS2304: [0mCannot find name 'key'.
+
+[7m24[0m                 key: item.id,
+[7m  [0m [91m                ~~~[0m
+[96msrc/dtos/service.dtos.ts[0m:[93m24[0m:[93m20[0m - [91merror[0m[90m TS1005: [0m']' expected.
+
+[7m24[0m                 key: item.id,
+[7m  [0m [91m                   ~[0m
+[96msrc/dtos/service.dtos.ts[0m:[93m33[0m:[93m13[0m - [91merror[0m[90m TS1136: [0mProperty assignment expected.
+
+[7m33[0m             ]
+[7m  [0m [91m            ~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/dtos/service.dtos.ts[0m:[93m24[0m:[93m17[0m - [91merror[0m[90m TS2304: [0mCannot find name 'key'.
+
+[7m24[0m                 key: item.id,
+[7m  [0m [91m                ~~~[0m
+[96msrc/dtos/service.dtos.ts[0m:[93m24[0m:[93m20[0m - [91merror[0m[90m TS1005: [0m']' expected.
+
+[7m24[0m                 key: item.id,
+[7m  [0m [91m                   ~[0m
+[96msrc/dtos/service.dtos.ts[0m:[93m33[0m:[93m13[0m - [91merror[0m[90m TS1136: [0mProperty assignment expected.
+
+[7m33[0m             ]
+[7m  [0m [91m            ~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-23 13:00:37 error: [POST] /folders/get-medias >> StatusCode:: 500, Message:: WHERE parameter "folder_id" has invalid "undefined" value
+2023-04-23 13:10:09 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/dtos/service.dtos.ts[0m:[93m34[0m:[93m24[0m - [91merror[0m[90m TS2304: [0mCannot find name 'Helper'.
+
+[7m34[0m                     ...Helper.FieldsSeo(translationData)
+[7m  [0m [91m                       ~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/dtos/service.dtos.ts[0m:[93m34[0m:[93m24[0m - [91merror[0m[90m TS2304: [0mCannot find name 'Helper'.
+
+[7m34[0m                     ...Helper.FieldsSeo(translationData)
+[7m  [0m [91m                       ~~~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
