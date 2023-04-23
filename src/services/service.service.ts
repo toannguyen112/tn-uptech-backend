@@ -73,9 +73,7 @@ export class ServiceService {
 
         try {
             const rows = await models.Service.findAll({
-                where: {
-                    parent_id: 0
-                },
+                where: { parent_id: 0 },
                 include: [
                     {
                         model: models.ServiceTranslation,
@@ -127,10 +125,7 @@ export class ServiceService {
         const t = await models.sequelize.transaction();
 
         try {
-            return await models.Service.create({
-                ...body
-            },
-                { individualHooks: true }
+            return await models.Service.create({ ...body }, { individualHooks: true }
             )
                 .then(async (service: any) => {
 
@@ -146,18 +141,21 @@ export class ServiceService {
                             await models.ServiceTranslation.create({
                                 ...newItem, service_id: serviceId,
                                 locale: 'vi'
-                            });
+                            },
+                                { transaction: t });
 
                             await models.ServiceTranslation.create({
                                 ...newItem,
                                 custom_slug: Helper.renderSlug(body.custom_slug ? `en-${body.custom_slug}` : `en-${body.name}`),
                                 service_id: serviceId,
                                 locale: 'en'
-                            });
+                            },
+                                { transaction: t });
 
                         } catch (error) {
                             console.log(error);
                             logger.error(JSON.stringify(error));
+                            await t.rollback();
                         }
                     }
 
@@ -206,9 +204,10 @@ export class ServiceService {
 
     public updateById = async (id, body) => {
 
-        return await models.Service.update({
-            ...body,
-        }, { where: { id }, individualHooks: true },
+        const t = await models.sequelize.transaction();
+
+        return await models.Service.update({ ...body },
+            { where: { id }, individualHooks: true },
         )
             .then(async (res: any) => {
                 await this.handleUpdate({ service_id: id, lang: global.lang, body });
@@ -219,6 +218,7 @@ export class ServiceService {
         try {
             return await models.ServiceTranslation.update({
                 name: body.name,
+
                 meta_title: body.meta_title,
                 meta_description: body.meta_description,
                 meta_keyword: body.meta_keyword,
