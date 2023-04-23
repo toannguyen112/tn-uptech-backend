@@ -20,8 +20,15 @@ export class ServiceDTO {
         const translationData = item.translations[0];
 
         return {
-            id: item.id,
-            name: translationData.name || "",
+            key: item.id,
+            label: translationData.name || "",
+            children: item.children.map((item) => {
+                return {
+                    key: item.id,
+                    label: item.translations[0].name,
+                    slug: item.translations[0].slug,
+                }
+            }),
 
             // seo 
             slug: translationData.slug || "",

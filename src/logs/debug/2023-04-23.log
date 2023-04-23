@@ -1,0 +1,7 @@
+2023-04-23 01:09:46 info: [0mOPTIONS /admins/profile [32m204[0m 11.238 ms - 0[0m
+2023-04-23 01:09:47 info: [0mGET /banners? [36m304[0m 242.391 ms - -[0m
+2023-04-23 01:09:47 info: [0mGET /banners?page=1&page_size=10 [36m304[0m 189.520 ms - -[0m
+2023-04-23 01:09:47 info: [0mGET /admins/profile [36m304[0m 304.114 ms - -[0m
+2023-04-23 01:09:47 info: [0mGET /services? [36m304[0m 23.780 ms - -[0m
+2023-04-23 01:09:47 info: [0mGET /admins/profile [36m304[0m 45.548 ms - -[0m
+2023-04-23 01:09:48 info: [0mGET /services?page=1&page_size=10 [36m304[0m 23.213 ms - -[0m

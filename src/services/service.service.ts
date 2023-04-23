@@ -103,7 +103,6 @@ export class ServiceService {
             });
 
             return rows.map((item) => {
-                // return item;
                 return {
                     key: item.id,
                     label: item.translations[0].name,
