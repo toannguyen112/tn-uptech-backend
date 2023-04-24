@@ -31,8 +31,8 @@ module.exports = function (sequelize, DataTypes) {
 
     BranchTranslation.associate = function (models) {
 
-        BranchTranslation.hasMany(models.BranchTranslation, {
-            as: "translations",
+        BranchTranslation.belongsTo(models.Branch, {
+            as: "branch",
             foreignKey: "branch_id"
         });
 

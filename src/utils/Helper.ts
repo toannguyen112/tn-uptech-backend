@@ -23,6 +23,19 @@ export default class Helper {
     return dayjs(date).format(format);
   }
 
+  // public static getNodesFlatten = (nodes: any) => {
+
+  //   let children: any = [];
+  //   nodes.map((m: any) => {
+  //     if (m.children && m.children.length) {
+  //       children = [...children, ...m.children];
+  //     }
+  //     return m;
+  //   });
+
+  //   return nodes.concat(children.length ? getNodesFlatten(children) : children);
+  // };
+
   public static generateToken(model: any, dataObject: any = 'admin') {
 
     const saveObjectToken = { admin: { id: model.id, name: model.name, role_id: model.role_id } }
@@ -67,7 +80,7 @@ export default class Helper {
     return await bcrypt.hash(password, number);
   }
 
-  static  FieldsSeo(item) {
+  static FieldsSeo(item) {
     return {
       slug: item.slug || "",
       custom_slug: item.custom_slug || "",

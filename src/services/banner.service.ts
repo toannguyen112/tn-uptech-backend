@@ -118,26 +118,27 @@ export class BannerService {
 
     public store = async (body) => {
 
-        return await models.Banner.create({
+        const banner = await models.Banner.create({
             ...body,
             thumbnail: body.thumbnail ? body.thumbnail.id : null,
-        }).then(async (banner: any) => {
+        });
 
-            if (banner) {
-                const bannerId = banner.id;
+        await models.BannerTranslation.create({
+            ...body,
+            banner_id: banner.id,
+            locale: 'vi'
+        });
 
-                await models.BannerTranslation.create({
-                    ...body,
-                    banner_id: bannerId,
-                    locale: 'vi'
-                });
+        await models.BannerTranslation.create({
+            ...body,
+            banner_id: banner.id,
+            locale: 'en'
+        });
 
-                await models.BannerTranslation.create({
-                    ...body,
-                    banner_id: bannerId,
-                    locale: 'en'
-                });
-            }
+        await models.BannerTranslation.create({
+            ...body,
+            banner_id: banner.id,
+            locale: 'ja'
         });
     }
 

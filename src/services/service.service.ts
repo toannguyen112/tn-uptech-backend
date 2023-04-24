@@ -131,49 +131,39 @@ export class ServiceService {
         const t = await models.sequelize.transaction();
 
         try {
-            return await models.Service.create({ ...body }, { individualHooks: true }
+            const service = await models.Service.create(
+                { ...body },
+                { individualHooks: true },
+                { transaction: t }
             )
-                .then(async (service: any) => {
 
-                    if (service) {
-                        const serviceId = service.id;
-                        try {
+            const serviceId = service.id;
 
-                            const newItem = {
-                                ...body,
-                            }
+            const newItem = {
+                ...body,
+            }
 
-                            await models.ServiceTranslation.create({
-                                ...newItem,
-                                service_id: serviceId,
-                                locale: 'vi'
-                            },
-                                { transaction: t });
+            await models.ServiceTranslation.create({
+                ...newItem,
+                service_id: serviceId,
+                locale: 'vi'
+            },
+                { transaction: t });
 
-                            await models.ServiceTranslation.create({
-                                ...newItem,
-                                service_id: serviceId,
-                                locale: 'en'
-                            },
-                                { transaction: t });
+            await models.ServiceTranslation.create({
+                ...newItem,
+                service_id: serviceId,
+                locale: 'en'
+            },
+                { transaction: t });
 
-                            await models.ServiceTranslation.create({
-                                ...newItem,
-                                service_id: serviceId,
-                                locale: 'ja'
-                            },
-                                { transaction: t });
+            await models.ServiceTranslation.create({
+                ...newItem,
+                service_id: serviceId,
+                locale: 'ja'
+            },
+                { transaction: t });
 
-                        } catch (error) {
-                            console.log(error);
-                            logger.error(JSON.stringify(error));
-                            await t.rollback();
-                        }
-                    }
-
-                    await t.commit();
-
-                });
         } catch (error) {
             console.log(error);
             await t.rollback();
@@ -199,25 +189,6 @@ export class ServiceService {
                         service_id: id
                     }
                 },
-                {
-                    model: models.Service,
-                    as: "children",
-                    include: [
-                        {
-                            model: models.ServiceTranslation,
-                            as: "translations",
-                            required: true,
-                            where: {
-                                locale: global.lang,
-                            },
-                        },
-                        {
-                            model: models.Media,
-                            as: "image",
-                            required: false,
-                        },
-                    ]
-                }
             ]
         });
 
@@ -228,7 +199,10 @@ export class ServiceService {
 
         const t = await models.sequelize.transaction();
 
-        return await models.Service.update({ ...body },
+        return await models.Service.update({
+            ...body,
+            thumbnail: body.thumbnail ? body.thumbnail.id : null,
+        },
             { where: { id }, individualHooks: true },
         )
             .then(async (res: any) => {

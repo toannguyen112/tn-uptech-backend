@@ -12,6 +12,7 @@ module.exports = {
 
       banner_id: {
         type: Sequelize.INTEGER,
+        onDelete: 'CASCADE',
         references: {
           model: "banners",
           key: "id",

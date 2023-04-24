@@ -89,26 +89,21 @@ export class BranchService {
 
         const t = await models.sequelize.transaction();
 
-        return await models.Branch.create({
-            ...body,
-        }).then(async (branch: any) => {
+        try {
 
-            if (branch) {
-                const branchId = branch.id;
+            const branch = await models.Branch.create({ ...body }, { transaction: t });
 
-                await models.BranchTranslation.create({
-                    ...body,
-                    branch_id: branchId,
-                    locale: 'vi'
-                });
+            await models.BranchTranslation.create({ ...body, branch_id: branch.id, locale: "vi" }, { transaction: t });
+            await models.BranchTranslation.create({ ...body, branch_id: branch.id, locale: "en" }, { transaction: t });
+            await models.BranchTranslation.create({ ...body, branch_id: branch.id, locale: "ja" }, { transaction: t });
 
-                await models.BranchTranslation.create({
-                    ...body,
-                    branch_id: branchId,
-                    locale: 'en'
-                });
-            }
-        });
+            await t.commit();
+            return branch;
+
+        } catch (error) {
+            console.log(error);
+            await t.rollback();
+        }
     }
 
     public findById = async (id: string | number) => {

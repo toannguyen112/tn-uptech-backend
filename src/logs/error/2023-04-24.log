@@ -1,0 +1,425 @@
+2023-04-24 18:45:12 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/services/branch.service.ts[0m:[93m99[0m:[93m32[0m - [91merror[0m[90m TS2552: [0mCannot find name 'branchId'. Did you mean 'BranchDTO'?
+
+[7m99[0m                     branch_id: branchId,
+[7m  [0m [91m                               ~~~~~~~~[0m
+[96msrc/services/branch.service.ts[0m:[93m105[0m:[93m32[0m - [91merror[0m[90m TS2552: [0mCannot find name 'branchId'. Did you mean 'BranchDTO'?
+
+[7m105[0m                     branch_id: branchId,
+[7m   [0m [91m                               ~~~~~~~~[0m
+[96msrc/services/branch.service.ts[0m:[93m111[0m:[93m32[0m - [91merror[0m[90m TS2552: [0mCannot find name 'branchId'. Did you mean 'BranchDTO'?
+
+[7m111[0m                     branch_id: branchId,
+[7m   [0m [91m                               ~~~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/services/branch.service.ts[0m:[93m99[0m:[93m32[0m - [91merror[0m[90m TS2552: [0mCannot find name 'branchId'. Did you mean 'BranchDTO'?
+
+[7m99[0m                     branch_id: branchId,
+[7m  [0m [91m                               ~~~~~~~~[0m
+[96msrc/services/branch.service.ts[0m:[93m105[0m:[93m32[0m - [91merror[0m[90m TS2552: [0mCannot find name 'branchId'. Did you mean 'BranchDTO'?
+
+[7m105[0m                     branch_id: branchId,
+[7m   [0m [91m                               ~~~~~~~~[0m
+[96msrc/services/branch.service.ts[0m:[93m111[0m:[93m32[0m - [91merror[0m[90m TS2552: [0mCannot find name 'branchId'. Did you mean 'BranchDTO'?
+
+[7m111[0m                     branch_id: branchId,
+[7m   [0m [91m                               ~~~~~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-24 18:46:51 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/services/branch.service.ts[0m:[93m107[0m:[93m5[0m - [91merror[0m[90m TS1472: [0m'catch' or 'finally' expected.
+
+[7m107[0m     }
+[7m   [0m [91m    ~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/services/branch.service.ts[0m:[93m107[0m:[93m5[0m - [91merror[0m[90m TS1472: [0m'catch' or 'finally' expected.
+
+[7m107[0m     }
+[7m   [0m [91m    ~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-24 19:14:30 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/modules/controllers/branch.controller.ts[0m:[93m39[0m:[93m39[0m - [91merror[0m[90m TS2339: [0mProperty 'findById' does not exist on type 'BranchService'.
+
+[7m39[0m             const data = await branch.findById(req.params.id);
+[7m  [0m [91m                                      ~~~~~~~~[0m
+[96msrc/modules/controllers/branch.controller.ts[0m:[93m49[0m:[93m39[0m - [91merror[0m[90m TS2339: [0mProperty 'updateById' does not exist on type 'BranchService'.
+
+[7m49[0m             const data = await branch.updateById(id, req.body);
+[7m  [0m [91m                                      ~~~~~~~~~~[0m
+[96msrc/modules/controllers/branch.controller.ts[0m:[93m58[0m:[93m39[0m - [91merror[0m[90m TS2339: [0mProperty 'deleteById' does not exist on type 'BranchService'.
+
+[7m58[0m             const data = await branch.deleteById(req.params.id);
+[7m  [0m [91m                                      ~~~~~~~~~~[0m
+[96msrc/modules/controllers/branch.controller.ts[0m:[93m68[0m:[93m39[0m - [91merror[0m[90m TS2339: [0mProperty 'deleteMultipleIds' does not exist on type 'BranchService'.
+
+[7m68[0m             const data = await branch.deleteMultipleIds(ids);
+[7m  [0m [91m                                      ~~~~~~~~~~~~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/modules/controllers/branch.controller.ts[0m:[93m39[0m:[93m39[0m - [91merror[0m[90m TS2339: [0mProperty 'findById' does not exist on type 'BranchService'.
+
+[7m39[0m             const data = await branch.findById(req.params.id);
+[7m  [0m [91m                                      ~~~~~~~~[0m
+[96msrc/modules/controllers/branch.controller.ts[0m:[93m49[0m:[93m39[0m - [91merror[0m[90m TS2339: [0mProperty 'updateById' does not exist on type 'BranchService'.
+
+[7m49[0m             const data = await branch.updateById(id, req.body);
+[7m  [0m [91m                                      ~~~~~~~~~~[0m
+[96msrc/modules/controllers/branch.controller.ts[0m:[93m58[0m:[93m39[0m - [91merror[0m[90m TS2339: [0mProperty 'deleteById' does not exist on type 'BranchService'.
+
+[7m58[0m             const data = await branch.deleteById(req.params.id);
+[7m  [0m [91m                                      ~~~~~~~~~~[0m
+[96msrc/modules/controllers/branch.controller.ts[0m:[93m68[0m:[93m39[0m - [91merror[0m[90m TS2339: [0mProperty 'deleteMultipleIds' does not exist on type 'BranchService'.
+
+[7m68[0m             const data = await branch.deleteMultipleIds(ids);
+[7m  [0m [91m                                      ~~~~~~~~~~~~~~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-24 19:43:49 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/services/branch.service.ts[0m:[93m105[0m:[93m20[0m - [91merror[0m[90m TS2304: [0mCannot find name 'data'.
+
+[7m105[0m             return data;
+[7m   [0m [91m                   ~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/services/branch.service.ts[0m:[93m105[0m:[93m20[0m - [91merror[0m[90m TS2304: [0mCannot find name 'data'.
+
+[7m105[0m             return data;
+[7m   [0m [91m                   ~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-24 19:44:25 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/services/branch.service.ts[0m:[93m97[0m:[93m19[0m - [91merror[0m[90m TS2304: [0mCannot find name 'budget'.
+
+[7m97[0m             await budget.createItem(item1);
+[7m  [0m [91m                  ~~~~~~[0m
+[96msrc/services/branch.service.ts[0m:[93m97[0m:[93m37[0m - [91merror[0m[90m TS2304: [0mCannot find name 'item1'.
+
+[7m97[0m             await budget.createItem(item1);
+[7m  [0m [91m                                    ~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/services/branch.service.ts[0m:[93m97[0m:[93m19[0m - [91merror[0m[90m TS2304: [0mCannot find name 'budget'.
+
+[7m97[0m             await budget.createItem(item1);
+[7m  [0m [91m                  ~~~~~~[0m
+[96msrc/services/branch.service.ts[0m:[93m97[0m:[93m37[0m - [91merror[0m[90m TS2304: [0mCannot find name 'item1'.
+
+[7m97[0m             await budget.createItem(item1);
+[7m  [0m [91m                                    ~~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-24 19:44:48 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/services/branch.service.ts[0m:[93m97[0m:[93m19[0m - [91merror[0m[90m TS2304: [0mCannot find name 'budget'.
+
+[7m97[0m             await budget.createBranchTranslation({..body, locale: "vi" });
+[7m  [0m [91m                  ~~~~~~[0m
+[96msrc/services/branch.service.ts[0m:[93m98[0m:[93m19[0m - [91merror[0m[90m TS2304: [0mCannot find name 'budget'.
+
+[7m98[0m             await budget.createBranchTranslation({..body, locale: "vi" });
+[7m  [0m [91m                  ~~~~~~[0m
+[96msrc/services/branch.service.ts[0m:[93m97[0m:[93m51[0m - [91merror[0m[90m TS1003: [0mIdentifier expected.
+
+[7m97[0m             await budget.createBranchTranslation({..body, locale: "vi" });
+[7m  [0m [91m                                                  ~[0m
+[96msrc/services/branch.service.ts[0m:[93m97[0m:[93m52[0m - [91merror[0m[90m TS1003: [0mIdentifier expected.
+
+[7m97[0m             await budget.createBranchTranslation({..body, locale: "vi" });
+[7m  [0m [91m                                                   ~[0m
+[96msrc/services/branch.service.ts[0m:[93m98[0m:[93m51[0m - [91merror[0m[90m TS1003: [0mIdentifier expected.
+
+[7m98[0m             await budget.createBranchTranslation({..body, locale: "vi" });
+[7m  [0m [91m                                                  ~[0m
+[96msrc/services/branch.service.ts[0m:[93m98[0m:[93m52[0m - [91merror[0m[90m TS1003: [0mIdentifier expected.
+
+[7m98[0m             await budget.createBranchTranslation({..body, locale: "vi" });
+[7m  [0m [91m                                                   ~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/services/branch.service.ts[0m:[93m97[0m:[93m19[0m - [91merror[0m[90m TS2304: [0mCannot find name 'budget'.
+
+[7m97[0m             await budget.createBranchTranslation({..body, locale: "vi" });
+[7m  [0m [91m                  ~~~~~~[0m
+[96msrc/services/branch.service.ts[0m:[93m98[0m:[93m19[0m - [91merror[0m[90m TS2304: [0mCannot find name 'budget'.
+
+[7m98[0m             await budget.createBranchTranslation({..body, locale: "vi" });
+[7m  [0m [91m                  ~~~~~~[0m
+[96msrc/services/branch.service.ts[0m:[93m97[0m:[93m51[0m - [91merror[0m[90m TS1003: [0mIdentifier expected.
+
+[7m97[0m             await budget.createBranchTranslation({..body, locale: "vi" });
+[7m  [0m [91m                                                  ~[0m
+[96msrc/services/branch.service.ts[0m:[93m97[0m:[93m52[0m - [91merror[0m[90m TS1003: [0mIdentifier expected.
+
+[7m97[0m             await budget.createBranchTranslation({..body, locale: "vi" });
+[7m  [0m [91m                                                   ~[0m
+[96msrc/services/branch.service.ts[0m:[93m98[0m:[93m51[0m - [91merror[0m[90m TS1003: [0mIdentifier expected.
+
+[7m98[0m             await budget.createBranchTranslation({..body, locale: "vi" });
+[7m  [0m [91m                                                  ~[0m
+[96msrc/services/branch.service.ts[0m:[93m98[0m:[93m52[0m - [91merror[0m[90m TS1003: [0mIdentifier expected.
+
+[7m98[0m             await budget.createBranchTranslation({..body, locale: "vi" });
+[7m  [0m [91m                                                   ~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-24 20:06:39 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/modules/controllers/banner.controller.ts[0m:[93m39[0m:[93m39[0m - [91merror[0m[90m TS2339: [0mProperty 'findById' does not exist on type 'BannerService'.
+
+[7m39[0m             const data = await banner.findById(req.params.id);
+[7m  [0m [91m                                      ~~~~~~~~[0m
+[96msrc/modules/controllers/banner.controller.ts[0m:[93m49[0m:[93m39[0m - [91merror[0m[90m TS2339: [0mProperty 'updateById' does not exist on type 'BannerService'.
+
+[7m49[0m             const data = await banner.updateById(id, req.body);
+[7m  [0m [91m                                      ~~~~~~~~~~[0m
+[96msrc/modules/controllers/banner.controller.ts[0m:[93m58[0m:[93m39[0m - [91merror[0m[90m TS2339: [0mProperty 'deleteById' does not exist on type 'BannerService'.
+
+[7m58[0m             const data = await banner.deleteById(req.params.id);
+[7m  [0m [91m                                      ~~~~~~~~~~[0m
+[96msrc/modules/controllers/banner.controller.ts[0m:[93m68[0m:[93m39[0m - [91merror[0m[90m TS2339: [0mProperty 'deleteMultipleIds' does not exist on type 'BannerService'.
+
+[7m68[0m             const data = await banner.deleteMultipleIds(ids);
+[7m  [0m [91m                                      ~~~~~~~~~~~~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/modules/controllers/banner.controller.ts[0m:[93m39[0m:[93m39[0m - [91merror[0m[90m TS2339: [0mProperty 'findById' does not exist on type 'BannerService'.
+
+[7m39[0m             const data = await banner.findById(req.params.id);
+[7m  [0m [91m                                      ~~~~~~~~[0m
+[96msrc/modules/controllers/banner.controller.ts[0m:[93m49[0m:[93m39[0m - [91merror[0m[90m TS2339: [0mProperty 'updateById' does not exist on type 'BannerService'.
+
+[7m49[0m             const data = await banner.updateById(id, req.body);
+[7m  [0m [91m                                      ~~~~~~~~~~[0m
+[96msrc/modules/controllers/banner.controller.ts[0m:[93m58[0m:[93m39[0m - [91merror[0m[90m TS2339: [0mProperty 'deleteById' does not exist on type 'BannerService'.
+
+[7m58[0m             const data = await banner.deleteById(req.params.id);
+[7m  [0m [91m                                      ~~~~~~~~~~[0m
+[96msrc/modules/controllers/banner.controller.ts[0m:[93m68[0m:[93m39[0m - [91merror[0m[90m TS2339: [0mProperty 'deleteMultipleIds' does not exist on type 'BannerService'.
+
+[7m68[0m             const data = await banner.deleteMultipleIds(ids);
+[7m  [0m [91m                                      ~~~~~~~~~~~~~~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-24 20:06:50 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/modules/controllers/banner.controller.ts[0m:[93m39[0m:[93m39[0m - [91merror[0m[90m TS2339: [0mProperty 'findById' does not exist on type 'BannerService'.
+
+[7m39[0m             const data = await banner.findById(req.params.id);
+[7m  [0m [91m                                      ~~~~~~~~[0m
+[96msrc/modules/controllers/banner.controller.ts[0m:[93m49[0m:[93m39[0m - [91merror[0m[90m TS2339: [0mProperty 'updateById' does not exist on type 'BannerService'.
+
+[7m49[0m             const data = await banner.updateById(id, req.body);
+[7m  [0m [91m                                      ~~~~~~~~~~[0m
+[96msrc/modules/controllers/banner.controller.ts[0m:[93m58[0m:[93m39[0m - [91merror[0m[90m TS2339: [0mProperty 'deleteById' does not exist on type 'BannerService'.
+
+[7m58[0m             const data = await banner.deleteById(req.params.id);
+[7m  [0m [91m                                      ~~~~~~~~~~[0m
+[96msrc/modules/controllers/banner.controller.ts[0m:[93m68[0m:[93m39[0m - [91merror[0m[90m TS2339: [0mProperty 'deleteMultipleIds' does not exist on type 'BannerService'.
+
+[7m68[0m             const data = await banner.deleteMultipleIds(ids);
+[7m  [0m [91m                                      ~~~~~~~~~~~~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/modules/controllers/banner.controller.ts[0m:[93m39[0m:[93m39[0m - [91merror[0m[90m TS2339: [0mProperty 'findById' does not exist on type 'BannerService'.
+
+[7m39[0m             const data = await banner.findById(req.params.id);
+[7m  [0m [91m                                      ~~~~~~~~[0m
+[96msrc/modules/controllers/banner.controller.ts[0m:[93m49[0m:[93m39[0m - [91merror[0m[90m TS2339: [0mProperty 'updateById' does not exist on type 'BannerService'.
+
+[7m49[0m             const data = await banner.updateById(id, req.body);
+[7m  [0m [91m                                      ~~~~~~~~~~[0m
+[96msrc/modules/controllers/banner.controller.ts[0m:[93m58[0m:[93m39[0m - [91merror[0m[90m TS2339: [0mProperty 'deleteById' does not exist on type 'BannerService'.
+
+[7m58[0m             const data = await banner.deleteById(req.params.id);
+[7m  [0m [91m                                      ~~~~~~~~~~[0m
+[96msrc/modules/controllers/banner.controller.ts[0m:[93m68[0m:[93m39[0m - [91merror[0m[90m TS2339: [0mProperty 'deleteMultipleIds' does not exist on type 'BannerService'.
+
+[7m68[0m             const data = await banner.deleteMultipleIds(ids);
+[7m  [0m [91m                                      ~~~~~~~~~~~~~~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-24 20:11:26 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/modules/controllers/service.controller.ts[0m:[93m46[0m:[93m40[0m - [91merror[0m[90m TS2339: [0mProperty 'findById' does not exist on type 'ServiceService'.
+
+[7m46[0m             const data = await service.findById(req.params.id);
+[7m  [0m [91m                                       ~~~~~~~~[0m
+[96msrc/modules/controllers/service.controller.ts[0m:[93m57[0m:[93m40[0m - [91merror[0m[90m TS2339: [0mProperty 'updateById' does not exist on type 'ServiceService'.
+
+[7m57[0m             const data = await service.updateById(id, req.body);
+[7m  [0m [91m                                       ~~~~~~~~~~[0m
+[96msrc/modules/controllers/service.controller.ts[0m:[93m67[0m:[93m40[0m - [91merror[0m[90m TS2339: [0mProperty 'deleteById' does not exist on type 'ServiceService'.
+
+[7m67[0m             const data = await service.deleteById(req.params.id);
+[7m  [0m [91m                                       ~~~~~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/modules/controllers/service.controller.ts[0m:[93m46[0m:[93m40[0m - [91merror[0m[90m TS2339: [0mProperty 'findById' does not exist on type 'ServiceService'.
+
+[7m46[0m             const data = await service.findById(req.params.id);
+[7m  [0m [91m                                       ~~~~~~~~[0m
+[96msrc/modules/controllers/service.controller.ts[0m:[93m57[0m:[93m40[0m - [91merror[0m[90m TS2339: [0mProperty 'updateById' does not exist on type 'ServiceService'.
+
+[7m57[0m             const data = await service.updateById(id, req.body);
+[7m  [0m [91m                                       ~~~~~~~~~~[0m
+[96msrc/modules/controllers/service.controller.ts[0m:[93m67[0m:[93m40[0m - [91merror[0m[90m TS2339: [0mProperty 'deleteById' does not exist on type 'ServiceService'.
+
+[7m67[0m             const data = await service.deleteById(req.params.id);
+[7m  [0m [91m                                       ~~~~~~~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-24 20:13:44 error: Incorrect integer value: '[object Object]' for column 'thumbnail' at row 1
+2023-04-24 20:22:57 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/utils/Helper.ts[0m:[93m28[0m:[93m17[0m - [91merror[0m[90m TS2389: [0mFunction implementation name must be 'getNodesFlatten'.
+
+[7m28[0m   public static generateToken(model: any, dataObject: any = 'admin') {
+[7m  [0m [91m                ~~~~~~~~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/utils/Helper.ts[0m:[93m28[0m:[93m17[0m - [91merror[0m[90m TS2389: [0mFunction implementation name must be 'getNodesFlatten'.
+
+[7m28[0m   public static generateToken(model: any, dataObject: any = 'admin') {
+[7m  [0m [91m                ~~~~~~~~~~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-24 20:23:24 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/utils/Helper.ts[0m:[93m26[0m:[93m9[0m - [91merror[0m[90m TS1248: [0mA class member cannot have the 'const' keyword.
+
+[7m26[0m   const getNodesFlatten = (nodes: any) => {
+[7m  [0m [91m        ~~~~~~~~~~~~~~~[0m
+[96msrc/utils/Helper.ts[0m:[93m36[0m:[93m43[0m - [91merror[0m[90m TS2663: [0mCannot find name 'getNodesFlatten'. Did you mean the instance member 'this.getNodesFlatten'?
+
+[7m36[0m     return nodes.concat(children.length ? getNodesFlatten(children) : children);
+[7m  [0m [91m                                          ~~~~~~~~~~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/utils/Helper.ts[0m:[93m26[0m:[93m9[0m - [91merror[0m[90m TS1248: [0mA class member cannot have the 'const' keyword.
+
+[7m26[0m   const getNodesFlatten = (nodes: any) => {
+[7m  [0m [91m        ~~~~~~~~~~~~~~~[0m
+[96msrc/utils/Helper.ts[0m:[93m36[0m:[93m43[0m - [91merror[0m[90m TS2663: [0mCannot find name 'getNodesFlatten'. Did you mean the instance member 'this.getNodesFlatten'?
+
+[7m36[0m     return nodes.concat(children.length ? getNodesFlatten(children) : children);
+[7m  [0m [91m                                          ~~~~~~~~~~~~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-24 20:23:29 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/utils/Helper.ts[0m:[93m36[0m:[93m43[0m - [91merror[0m[90m TS2662: [0mCannot find name 'getNodesFlatten'. Did you mean the static member 'Helper.getNodesFlatten'?
+
+[7m36[0m     return nodes.concat(children.length ? getNodesFlatten(children) : children);
+[7m  [0m [91m                                          ~~~~~~~~~~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/utils/Helper.ts[0m:[93m36[0m:[93m43[0m - [91merror[0m[90m TS2662: [0mCannot find name 'getNodesFlatten'. Did you mean the static member 'Helper.getNodesFlatten'?
+
+[7m36[0m     return nodes.concat(children.length ? getNodesFlatten(children) : children);
+[7m  [0m [91m                                          ~~~~~~~~~~~~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
