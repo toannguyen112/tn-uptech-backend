@@ -63,6 +63,16 @@ module.exports = {
           role_id: 1,
           permission_id: 12,
         },
+        {
+          id: 13,
+          role_id: 1,
+          permission_id: 13,
+        },
+        {
+          id: 14,
+          role_id: 1,
+          permission_id: 14,
+        },
 
       ]);
     } catch (error) {

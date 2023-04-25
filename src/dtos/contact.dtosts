@@ -1,0 +1,24 @@
+export class ContactDTO {
+    static transform = (item) => {
+
+        return {
+            id: item.id,
+            name: item.name || "",
+            status: item.status,
+            thumbnail: item.image,
+            createdAt: item.createdAt,
+            updatedAt: item.updatedAt,
+        }
+    }
+
+    static transformDetail = (item) => {
+        return {
+            id: item.id,
+            name: item.name || "",
+            status: item.status,
+            thumbnail: item.image,
+            createdAt: item.createdAt,
+            updatedAt: item.updatedAt,
+        }
+    }
+}

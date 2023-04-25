@@ -118,28 +118,28 @@ export class BannerService {
 
     public store = async (body) => {
 
-        const banner = await models.Banner.create({
-            ...body,
-            thumbnail: body.thumbnail ? body.thumbnail.id : null,
-        });
+        const t = await models.sequelize.transaction();
 
-        await models.BannerTranslation.create({
-            ...body,
-            banner_id: banner.id,
-            locale: 'vi'
-        });
+        try {
+            const banner = await models.Banner.create({
+                ...body,
+                thumbnail: body.thumbnail ? body.thumbnail.id : null,
+            }, { transaction: t })
+                ;
 
-        await models.BannerTranslation.create({
-            ...body,
-            banner_id: banner.id,
-            locale: 'en'
-        });
+            const langs = ['vi', 'en', 'ja'];
 
-        await models.BannerTranslation.create({
-            ...body,
-            banner_id: banner.id,
-            locale: 'ja'
-        });
+            langs.forEach(async (lang) => {
+                await models.BannerTranslation.create({
+                    ...body,
+                    banner_id: banner.id,
+                    locale: lang
+                }, { transaction: t });
+            });
+
+        } catch (error) {
+            console.log(error);
+        }
     }
 
     public findById = async (id: string | number) => {
@@ -172,8 +172,7 @@ export class BannerService {
         return await models.Banner.update({
             status: body.status,
             thumbnail: body.thumbnail ? body.thumbnail.id : null,
-        },
-            { where: { id } },
+        }, { where: { id } },
         )
             .then(async (res) => {
                 await this.handleUpdate({ banner_id: id, lang: global.lang, body });

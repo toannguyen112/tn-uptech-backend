@@ -16,6 +16,8 @@ import { PermissionRoute } from './route/permission.route';
 import { BranchRoute } from './route/branch.route';
 import { ServiceRoute } from './route/service.route';
 import { LogsRoute } from './route/logs.route';
+import { ContactRoute } from './route/contact.route ';
+import { RecruitmentsRoute } from './route/recruitments.route ';
 
 const routers = [
     new LogsRoute(),
@@ -34,6 +36,8 @@ const routers = [
     new LocaleRoute(),
     new RoleRoute(),
     new JobRoute(),
+    new ContactRoute(),
+    new RecruitmentsRoute(),
 ];
 
 const app = new App([...routers]);

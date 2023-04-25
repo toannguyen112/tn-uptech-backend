@@ -63,6 +63,16 @@ module.exports = {
           name: "Dịch vụ",
           value: "services",
         },
+        {
+          id: 13,
+          name: "Liên hệ",
+          value: "contacts",
+        },
+        {
+          id: 14,
+          name: "Ứng tuyển",
+          value: "recruitments",
+        },
       ]);
 
     } catch (error) {

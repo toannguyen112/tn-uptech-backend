@@ -1,0 +1,178 @@
+2023-04-25 17:42:15 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/services/banner.service.ts[0m:[93m125[0m:[93m9[0m - [91merror[0m[90m TS1182: [0mA destructuring declaration must have an initializer.
+
+[7m125[0m         { transaction: t };
+[7m   [0m [91m        ~~~~~~~~~~~~~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/services/banner.service.ts[0m:[93m125[0m:[93m9[0m - [91merror[0m[90m TS1182: [0mA destructuring declaration must have an initializer.
+
+[7m125[0m         { transaction: t };
+[7m   [0m [91m        ~~~~~~~~~~~~~~~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-25 17:42:23 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/services/banner.service.ts[0m:[93m121[0m:[93m15[0m - [91merror[0m[90m TS2451: [0mCannot redeclare block-scoped variable 't'.
+
+[7m121[0m         const t = await models.sequelize.transaction();
+[7m   [0m [91m              ~[0m
+[96msrc/services/banner.service.ts[0m:[93m127[0m:[93m24[0m - [91merror[0m[90m TS2451: [0mCannot redeclare block-scoped variable 't'.
+
+[7m127[0m         { transaction: t };
+[7m   [0m [91m                       ~[0m
+[96msrc/services/banner.service.ts[0m:[93m127[0m:[93m9[0m - [91merror[0m[90m TS1182: [0mA destructuring declaration must have an initializer.
+
+[7m127[0m         { transaction: t };
+[7m   [0m [91m        ~~~~~~~~~~~~~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/services/banner.service.ts[0m:[93m121[0m:[93m15[0m - [91merror[0m[90m TS2451: [0mCannot redeclare block-scoped variable 't'.
+
+[7m121[0m         const t = await models.sequelize.transaction();
+[7m   [0m [91m              ~[0m
+[96msrc/services/banner.service.ts[0m:[93m127[0m:[93m24[0m - [91merror[0m[90m TS2451: [0mCannot redeclare block-scoped variable 't'.
+
+[7m127[0m         { transaction: t };
+[7m   [0m [91m                       ~[0m
+[96msrc/services/banner.service.ts[0m:[93m127[0m:[93m9[0m - [91merror[0m[90m TS1182: [0mA destructuring declaration must have an initializer.
+
+[7m127[0m         { transaction: t };
+[7m   [0m [91m        ~~~~~~~~~~~~~~~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-25 17:42:35 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/services/banner.service.ts[0m:[93m126[0m:[93m30[0m - [91merror[0m[90m TS1009: [0mTrailing comma not allowed.
+
+[7m126[0m         },{ transaction: t }),
+[7m   [0m [91m                             ~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/services/banner.service.ts[0m:[93m126[0m:[93m30[0m - [91merror[0m[90m TS1009: [0mTrailing comma not allowed.
+
+[7m126[0m         },{ transaction: t }),
+[7m   [0m [91m                             ~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-25 17:43:25 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/services/banner.service.ts[0m:[93m131[0m:[93m9[0m - [91merror[0m[90m TS2552: [0mCannot find name 'array'. Did you mean 'Array'?
+
+[7m131[0m         array.forEach(element => {
+[7m   [0m [91m        ~~~~~[0m
+
+  [96mnode_modules/typescript/lib/lib.es5.d.ts[0m:[93m1470[0m:[93m13[0m
+    [7m1470[0m declare var Array: ArrayConstructor;
+    [7m    [0m [96m            ~~~~~[0m
+    'Array' is declared here.
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/services/banner.service.ts[0m:[93m131[0m:[93m9[0m - [91merror[0m[90m TS2552: [0mCannot find name 'array'. Did you mean 'Array'?
+
+[7m131[0m         array.forEach(element => {
+[7m   [0m [91m        ~~~~~[0m
+
+  [96mnode_modules/typescript/lib/lib.es5.d.ts[0m:[93m1470[0m:[93m13[0m
+    [7m1470[0m declare var Array: ArrayConstructor;
+    [7m    [0m [96m            ~~~~~[0m
+    'Array' is declared here.
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-25 17:43:45 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/services/banner.service.ts[0m:[93m132[0m:[93m13[0m - [91merror[0m[90m TS1308: [0m'await' expressions are only allowed within async functions and at the top levels of modules.
+
+[7m132[0m             await models.BannerTranslation.create({
+[7m   [0m [91m            ~~~~~[0m
+
+  [96msrc/services/banner.service.ts[0m:[93m131[0m:[93m22[0m
+    [7m131[0m         lang.forEach(element => {
+    [7m   [0m [96m                     ~~~~~~~~~~~~[0m
+    Did you mean to mark this function as 'async'?
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/services/banner.service.ts[0m:[93m132[0m:[93m13[0m - [91merror[0m[90m TS1308: [0m'await' expressions are only allowed within async functions and at the top levels of modules.
+
+[7m132[0m             await models.BannerTranslation.create({
+[7m   [0m [91m            ~~~~~[0m
+
+  [96msrc/services/banner.service.ts[0m:[93m131[0m:[93m22[0m
+    [7m131[0m         lang.forEach(element => {
+    [7m   [0m [96m                     ~~~~~~~~~~~~[0m
+    Did you mean to mark this function as 'async'?
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-25 17:47:26 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/services/banner.service.ts[0m:[93m141[0m:[93m13[0m - [91merror[0m[90m TS2552: [0mCannot find name 'error'. Did you mean 'Error'?
+
+[7m141[0m console.log(error);
+[7m   [0m [91m            ~~~~~[0m
+
+  [96mnode_modules/typescript/lib/lib.es5.d.ts[0m:[93m1039[0m:[93m13[0m
+    [7m1039[0m declare var Error: ErrorConstructor;
+    [7m    [0m [96m            ~~~~~[0m
+    'Error' is declared here.
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/services/banner.service.ts[0m:[93m141[0m:[93m13[0m - [91merror[0m[90m TS2552: [0mCannot find name 'error'. Did you mean 'Error'?
+
+[7m141[0m console.log(error);
+[7m   [0m [91m            ~~~~~[0m
+
+  [96mnode_modules/typescript/lib/lib.es5.d.ts[0m:[93m1039[0m:[93m13[0m
+    [7m1039[0m declare var Error: ErrorConstructor;
+    [7m    [0m [96m            ~~~~~[0m
+    'Error' is declared here.
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)

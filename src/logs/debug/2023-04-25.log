@@ -6,3 +6,237 @@
 2023-04-25 17:37:37 info: [0mGET /ceos/getlistCeo [32m200[0m 106.863 ms - 329[0m
 2023-04-25 17:37:38 info: [0mGET /services/nav [32m200[0m 75.840 ms - 557[0m
 2023-04-25 17:37:38 info: [0mGET /posts/getListFeatured [32m200[0m 94.773 ms - 519[0m
+2023-04-25 17:42:50 info: =================================
+2023-04-25 17:42:50 info: ======= ENV: development =======
+2023-04-25 17:42:50 info: 🚀 App listening on the port 8000
+2023-04-25 17:42:50 info: =================================
+2023-04-25 17:43:34 info: =================================
+2023-04-25 17:43:34 info: ======= ENV: development =======
+2023-04-25 17:43:34 info: 🚀 App listening on the port 8000
+2023-04-25 17:43:34 info: =================================
+2023-04-25 17:44:33 info: =================================
+2023-04-25 17:44:33 info: ======= ENV: development =======
+2023-04-25 17:44:33 info: 🚀 App listening on the port 8000
+2023-04-25 17:44:33 info: =================================
+2023-04-25 17:44:49 info: =================================
+2023-04-25 17:44:49 info: ======= ENV: development =======
+2023-04-25 17:44:49 info: 🚀 App listening on the port 8000
+2023-04-25 17:44:49 info: =================================
+2023-04-25 17:45:12 info: [0mOPTIONS /admins/login [32m204[0m 3.877 ms - 0[0m
+2023-04-25 17:45:13 info: [0mPOST /admins/login [32m200[0m 414.014 ms - 560[0m
+2023-04-25 17:45:14 info: [0mOPTIONS /admins/profile [32m204[0m 0.689 ms - 0[0m
+2023-04-25 17:45:14 info: [0mGET /admins/profile [36m304[0m 84.795 ms - -[0m
+2023-04-25 17:45:16 info: [0mGET /banners? [32m200[0m 231.950 ms - 308[0m
+2023-04-25 17:45:16 info: [0mGET /admins/profile [36m304[0m 323.794 ms - -[0m
+2023-04-25 17:45:16 info: [0mGET /banners?page=1&page_size=10 [32m200[0m 71.724 ms - 308[0m
+2023-04-25 17:45:20 info: [0mOPTIONS /admins/profile [32m204[0m 1.208 ms - 0[0m
+2023-04-25 17:45:20 info: [0mGET /admins/profile [36m304[0m 80.729 ms - -[0m
+2023-04-25 17:46:03 info: [0mOPTIONS /banners/create [32m204[0m 1.214 ms - 0[0m
+2023-04-25 17:46:03 info: [0mPOST /banners/create [32m200[0m 126.750 ms - 16[0m
+2023-04-25 17:46:04 info: [0mOPTIONS /admins/profile [32m204[0m 1.713 ms - 0[0m
+2023-04-25 17:46:04 info: [0mGET /banners?page=1&page_size=10 [32m200[0m 175.124 ms - 308[0m
+2023-04-25 17:46:04 info: [0mGET /admins/profile [36m304[0m 246.863 ms - -[0m
+2023-04-25 17:46:04 info: [0mGET /banners?page=1&page_size=10 [32m200[0m 59.145 ms - 308[0m
+2023-04-25 17:46:24 info: [0mOPTIONS /admins/profile [32m204[0m 2.528 ms - 0[0m
+2023-04-25 17:46:24 info: [0mGET /admins/profile [36m304[0m 121.042 ms - -[0m
+2023-04-25 17:46:32 info: [0mOPTIONS /banners/create [32m204[0m 1.905 ms - 0[0m
+2023-04-25 17:46:32 info: [0mPOST /banners/create [32m200[0m 57.630 ms - 16[0m
+2023-04-25 17:46:33 info: [0mOPTIONS /admins/profile [32m204[0m 1.232 ms - 0[0m
+2023-04-25 17:46:34 info: [0mGET /banners?page=1&page_size=10 [36m304[0m 181.611 ms - -[0m
+2023-04-25 17:46:34 info: [0mGET /admins/profile [36m304[0m 194.044 ms - -[0m
+2023-04-25 17:46:34 info: [0mGET /banners?page=1&page_size=10 [36m304[0m 93.475 ms - -[0m
+2023-04-25 17:47:48 info: =================================
+2023-04-25 17:47:48 info: ======= ENV: development =======
+2023-04-25 17:47:48 info: 🚀 App listening on the port 8000
+2023-04-25 17:47:48 info: =================================
+2023-04-25 17:47:57 info: [0mOPTIONS /admins/profile [32m204[0m 4.206 ms - 0[0m
+2023-04-25 17:47:57 info: [0mGET /admins/profile [36m304[0m 334.209 ms - -[0m
+2023-04-25 17:48:02 info: [0mOPTIONS /banners/create [32m204[0m 0.323 ms - 0[0m
+2023-04-25 17:48:02 info: [0mPOST /banners/create [32m200[0m 111.864 ms - 16[0m
+2023-04-25 17:48:03 info: [0mOPTIONS /admins/profile [32m204[0m 1.148 ms - 0[0m
+2023-04-25 17:48:03 info: [0mGET /admins/profile [36m304[0m 107.169 ms - -[0m
+2023-04-25 17:48:03 info: [0mGET /banners?page=1&page_size=10 [36m304[0m 203.349 ms - -[0m
+2023-04-25 17:48:03 info: [0mGET /banners?page=1&page_size=10 [36m304[0m 42.759 ms - -[0m
+2023-04-25 17:49:20 info: =================================
+2023-04-25 17:49:20 info: ======= ENV: development =======
+2023-04-25 17:49:20 info: 🚀 App listening on the port 8000
+2023-04-25 17:49:20 info: =================================
+2023-04-25 17:49:25 info: [0mOPTIONS /admins/profile [32m204[0m 5.954 ms - 0[0m
+2023-04-25 17:49:26 info: [0mGET /admins/profile [36m304[0m 222.333 ms - -[0m
+2023-04-25 17:49:26 info: [0mGET /services/nav [36m304[0m 200.897 ms - -[0m
+2023-04-25 17:49:29 info: [0mGET /services/show/1 [32m200[0m 10.876 ms - 259[0m
+2023-04-25 17:49:29 info: [0mGET /services/show/4 [32m200[0m 17.411 ms - 220[0m
+2023-04-25 17:49:30 info: [0mGET /services/show/5 [32m200[0m 4.939 ms - 236[0m
+2023-04-25 17:49:31 info: [0mGET /services/show/2 [32m200[0m 4.950 ms - 255[0m
+2023-04-25 17:49:31 info: [0mGET /services/show/3 [32m200[0m 5.473 ms - 248[0m
+2023-04-25 17:50:32 info: =================================
+2023-04-25 17:50:32 info: ======= ENV: development =======
+2023-04-25 17:50:32 info: 🚀 App listening on the port 8000
+2023-04-25 17:50:32 info: =================================
+2023-04-25 17:50:55 info: =================================
+2023-04-25 17:50:55 info: ======= ENV: development =======
+2023-04-25 17:50:55 info: 🚀 App listening on the port 8000
+2023-04-25 17:50:55 info: =================================
+2023-04-25 17:51:14 info: [0mOPTIONS /admins/profile [32m204[0m 5.389 ms - 0[0m
+2023-04-25 17:51:14 info: [0mGET /admins/profile [36m304[0m 426.421 ms - -[0m
+2023-04-25 17:51:27 info: [0mOPTIONS /admins/profile [32m204[0m 0.588 ms - 0[0m
+2023-04-25 17:51:27 info: [0mGET /admins/profile [36m304[0m 49.722 ms - -[0m
+2023-04-25 17:51:34 info: [0mOPTIONS /admins/profile [32m204[0m 0.696 ms - 0[0m
+2023-04-25 17:51:34 info: [0mGET /admins/profile [36m304[0m 191.399 ms - -[0m
+2023-04-25 17:51:44 info: [0mOPTIONS /admins/profile [32m204[0m 0.775 ms - 0[0m
+2023-04-25 17:51:44 info: [0mGET /admins/profile [36m304[0m 162.790 ms - -[0m
+2023-04-25 17:51:48 info: [0mGET /admins/profile [36m304[0m 61.200 ms - -[0m
+2023-04-25 17:52:04 info: [0mOPTIONS /admins/profile [32m204[0m 0.960 ms - 0[0m
+2023-04-25 17:52:04 info: [0mGET /admins/profile [36m304[0m 198.168 ms - -[0m
+2023-04-25 17:52:05 info: [0mGET /admins/profile [36m304[0m 26.863 ms - -[0m
+2023-04-25 17:52:05 info: [0mGET /services/nav [36m304[0m 57.076 ms - -[0m
+2023-04-25 17:52:11 info: [0mOPTIONS /admins/profile [32m204[0m 3.044 ms - 0[0m
+2023-04-25 17:52:11 info: [0mGET /admins/profile [36m304[0m 45.837 ms - -[0m
+2023-04-25 17:52:11 info: [0mGET /services/nav [36m304[0m 32.678 ms - -[0m
+2023-04-25 17:52:22 info: [0mOPTIONS /admins/profile [32m204[0m 0.854 ms - 0[0m
+2023-04-25 17:52:22 info: [0mGET /admins/profile [36m304[0m 46.780 ms - -[0m
+2023-04-25 17:52:22 info: [0mGET /services/nav [36m304[0m 56.566 ms - -[0m
+2023-04-25 17:52:32 info: [0mOPTIONS /admins/profile [32m204[0m 0.705 ms - 0[0m
+2023-04-25 17:52:33 info: [0mGET /admins/profile [36m304[0m 196.896 ms - -[0m
+2023-04-25 17:52:33 info: [0mGET /services/nav [36m304[0m 191.665 ms - -[0m
+2023-04-25 17:52:37 info: [0mGET /services/nav [36m304[0m 79.399 ms - -[0m
+2023-04-25 17:52:37 info: [0mGET /admins/profile [36m304[0m 150.752 ms - -[0m
+2023-04-25 17:52:44 info: [0mOPTIONS /admins/profile [32m204[0m 0.494 ms - 0[0m
+2023-04-25 17:52:44 info: [0mGET /admins/profile [36m304[0m 36.881 ms - -[0m
+2023-04-25 17:52:44 info: [0mGET /services/nav [36m304[0m 27.006 ms - -[0m
+2023-04-25 17:52:48 info: [0mGET /services/nav [36m304[0m 20.506 ms - -[0m
+2023-04-25 17:52:48 info: [0mGET /admins/profile [36m304[0m 33.781 ms - -[0m
+2023-04-25 17:52:55 info: [0mOPTIONS /admins/profile [32m204[0m 1.317 ms - 0[0m
+2023-04-25 17:52:55 info: [0mGET /admins/profile [36m304[0m 44.402 ms - -[0m
+2023-04-25 17:52:55 info: [0mGET /services/nav [36m304[0m 46.731 ms - -[0m
+2023-04-25 17:53:03 info: [0mOPTIONS /admins/profile [32m204[0m 0.850 ms - 0[0m
+2023-04-25 17:53:03 info: [0mGET /services/nav [32m200[0m 162.119 ms - 501[0m
+2023-04-25 17:53:03 info: [0mGET /admins/profile [36m304[0m 110.509 ms - -[0m
+2023-04-25 17:53:04 info: [0mGET /admins/profile [36m304[0m 73.466 ms - -[0m
+2023-04-25 17:53:04 info: [0mGET /services/nav [32m200[0m 78.589 ms - 557[0m
+2023-04-25 17:53:12 info: [0mOPTIONS /admins/profile [32m204[0m 0.812 ms - 0[0m
+2023-04-25 17:53:13 info: [0mGET /services/nav [32m200[0m 50.030 ms - 501[0m
+2023-04-25 17:53:13 info: [0mGET /admins/profile [36m304[0m 79.551 ms - -[0m
+2023-04-25 17:53:14 info: [0mGET /admins/profile [36m304[0m 12.407 ms - -[0m
+2023-04-25 17:53:14 info: [0mGET /services/nav [32m200[0m 14.498 ms - 557[0m
+2023-04-25 17:53:58 info: [0mOPTIONS /admins/profile [32m204[0m 0.479 ms - 0[0m
+2023-04-25 17:53:59 info: [0mGET /admins/profile [33m401[0m 219.595 ms - 39[0m
+2023-04-25 17:53:59 info: [0mGET /services/nav [36m304[0m 239.967 ms - -[0m
+2023-04-25 17:55:35 info: [0mOPTIONS /admins/login [32m204[0m 0.835 ms - 0[0m
+2023-04-25 17:55:35 info: [0mPOST /admins/login [32m200[0m 123.545 ms - 560[0m
+2023-04-25 17:55:36 info: [0mOPTIONS /admins/profile [32m204[0m 0.441 ms - 0[0m
+2023-04-25 17:55:36 info: [0mGET /admins/profile [36m304[0m 93.063 ms - -[0m
+2023-04-25 17:56:38 info: =================================
+2023-04-25 17:56:38 info: ======= ENV: development =======
+2023-04-25 17:56:38 info: 🚀 App listening on the port 8000
+2023-04-25 17:56:38 info: =================================
+2023-04-25 17:56:47 info: [0mOPTIONS /admins/profile [32m204[0m 2.682 ms - 0[0m
+2023-04-25 17:56:47 info: [0mGET /admins/profile [33m401[0m 150.154 ms - 39[0m
+2023-04-25 17:56:53 info: [0mOPTIONS /admins/login [32m204[0m 0.757 ms - 0[0m
+2023-04-25 17:56:53 info: [0mPOST /admins/login [32m200[0m 61.841 ms - 560[0m
+2023-04-25 17:56:53 info: [0mOPTIONS /admins/profile [32m204[0m 0.153 ms - 0[0m
+2023-04-25 17:56:53 info: [0mGET /admins/profile [32m200[0m 74.959 ms - 261[0m
+2023-04-25 17:56:57 info: [0mGET /admins? [32m200[0m 105.287 ms - 432[0m
+2023-04-25 17:56:57 info: [0mGET /admins/profile [36m304[0m 136.166 ms - -[0m
+2023-04-25 17:56:57 info: [0mGET /admins?page=1&page_size=10 [32m200[0m 76.439 ms - 432[0m
+2023-04-25 17:57:00 info: [0mOPTIONS /admins/profile [32m204[0m 5.475 ms - 0[0m
+2023-04-25 17:57:00 info: [0mGET /roles? [32m200[0m 100.237 ms - 241[0m
+2023-04-25 17:57:00 info: [0mGET /admins/profile [36m304[0m 223.336 ms - -[0m
+2023-04-25 17:57:00 info: [0mGET /roles?page=1&page_size=10 [32m200[0m 96.506 ms - 241[0m
+2023-04-25 17:57:02 info: [0mGET /admins/profile [36m304[0m 27.433 ms - -[0m
+2023-04-25 17:57:02 info: [0mGET /roles/show/1 [32m200[0m 50.855 ms - -[0m
+2023-04-25 17:57:02 info: [0mGET /permissions?id=1 [32m200[0m 40.820 ms - -[0m
+2023-04-25 17:57:30 info: [0mOPTIONS /admins/profile [32m204[0m 0.711 ms - 0[0m
+2023-04-25 17:57:30 info: [0mGET /admins/profile [36m304[0m 108.839 ms - -[0m
+2023-04-25 17:57:30 info: [0mGET /roles/show/1 [36m304[0m 165.213 ms - -[0m
+2023-04-25 17:57:30 info: [0mGET /permissions?id=1 [36m304[0m 203.263 ms - -[0m
+2023-04-25 17:57:55 info: [0mGET /roles/show/1 [36m304[0m 79.577 ms - -[0m
+2023-04-25 17:57:55 info: [0mGET /roles/show/1 [36m304[0m 41.240 ms - -[0m
+2023-04-25 17:57:55 info: [0mGET /permissions?id=1 [36m304[0m 123.634 ms - -[0m
+2023-04-25 18:00:39 info: =================================
+2023-04-25 18:00:39 info: ======= ENV: development =======
+2023-04-25 18:00:39 info: 🚀 App listening on the port 8000
+2023-04-25 18:00:39 info: =================================
+2023-04-25 18:01:23 info: [0mOPTIONS /admins/login [32m204[0m 1.770 ms - 0[0m
+2023-04-25 18:01:23 info: [0mPOST /admins/login [32m200[0m 162.272 ms - 560[0m
+2023-04-25 18:01:23 info: [0mOPTIONS /admins/profile [32m204[0m 1.057 ms - 0[0m
+2023-04-25 18:01:24 info: [0mGET /admins/profile [32m200[0m 108.319 ms - 268[0m
+2023-04-25 18:01:29 info: [0mGET /services/nav [36m304[0m 221.658 ms - -[0m
+2023-04-25 18:01:31 info: [0mOPTIONS /admins/profile [32m204[0m 0.829 ms - 0[0m
+2023-04-25 18:01:31 info: [0mGET /admins/profile [36m304[0m 67.953 ms - -[0m
+2023-04-25 18:02:10 info: =================================
+2023-04-25 18:02:10 info: ======= ENV: development =======
+2023-04-25 18:02:10 info: 🚀 App listening on the port 8000
+2023-04-25 18:02:10 info: =================================
+2023-04-25 18:02:20 info: =================================
+2023-04-25 18:02:20 info: ======= ENV: development =======
+2023-04-25 18:02:20 info: 🚀 App listening on the port 8000
+2023-04-25 18:02:20 info: =================================
+2023-04-25 18:02:45 info: =================================
+2023-04-25 18:02:45 info: ======= ENV: development =======
+2023-04-25 18:02:45 info: 🚀 App listening on the port 8000
+2023-04-25 18:02:45 info: =================================
+2023-04-25 18:03:01 info: =================================
+2023-04-25 18:03:01 info: ======= ENV: development =======
+2023-04-25 18:03:01 info: 🚀 App listening on the port 8000
+2023-04-25 18:03:01 info: =================================
+2023-04-25 18:03:19 info: =================================
+2023-04-25 18:03:19 info: ======= ENV: development =======
+2023-04-25 18:03:19 info: 🚀 App listening on the port 8000
+2023-04-25 18:03:19 info: =================================
+2023-04-25 18:03:27 info: =================================
+2023-04-25 18:03:27 info: ======= ENV: development =======
+2023-04-25 18:03:27 info: 🚀 App listening on the port 8000
+2023-04-25 18:03:27 info: =================================
+2023-04-25 18:04:12 info: =================================
+2023-04-25 18:04:12 info: ======= ENV: development =======
+2023-04-25 18:04:12 info: 🚀 App listening on the port 8000
+2023-04-25 18:04:12 info: =================================
+2023-04-25 18:04:58 info: =================================
+2023-04-25 18:04:58 info: ======= ENV: development =======
+2023-04-25 18:04:58 info: 🚀 App listening on the port 8000
+2023-04-25 18:04:58 info: =================================
+2023-04-25 18:05:54 info: =================================
+2023-04-25 18:05:54 info: ======= ENV: development =======
+2023-04-25 18:05:54 info: 🚀 App listening on the port 8000
+2023-04-25 18:05:54 info: =================================
+2023-04-25 18:06:28 info: =================================
+2023-04-25 18:06:28 info: ======= ENV: development =======
+2023-04-25 18:06:28 info: 🚀 App listening on the port 8000
+2023-04-25 18:06:28 info: =================================
+2023-04-25 18:06:58 info: =================================
+2023-04-25 18:06:58 info: ======= ENV: development =======
+2023-04-25 18:06:58 info: 🚀 App listening on the port 8000
+2023-04-25 18:06:58 info: =================================
+2023-04-25 18:07:07 info: =================================
+2023-04-25 18:07:07 info: ======= ENV: development =======
+2023-04-25 18:07:07 info: 🚀 App listening on the port 8000
+2023-04-25 18:07:07 info: =================================
+2023-04-25 18:07:29 info: =================================
+2023-04-25 18:07:29 info: ======= ENV: development =======
+2023-04-25 18:07:29 info: 🚀 App listening on the port 8000
+2023-04-25 18:07:29 info: =================================
+2023-04-25 18:08:40 info: =================================
+2023-04-25 18:08:40 info: ======= ENV: development =======
+2023-04-25 18:08:40 info: 🚀 App listening on the port 8000
+2023-04-25 18:08:40 info: =================================
+2023-04-25 18:08:56 info: =================================
+2023-04-25 18:08:56 info: ======= ENV: development =======
+2023-04-25 18:08:56 info: 🚀 App listening on the port 8000
+2023-04-25 18:08:56 info: =================================
+2023-04-25 18:09:09 info: =================================
+2023-04-25 18:09:09 info: ======= ENV: development =======
+2023-04-25 18:09:09 info: 🚀 App listening on the port 8000
+2023-04-25 18:09:09 info: =================================
+2023-04-25 18:09:23 info: =================================
+2023-04-25 18:09:23 info: ======= ENV: development =======
+2023-04-25 18:09:23 info: 🚀 App listening on the port 8000
+2023-04-25 18:09:23 info: =================================
+2023-04-25 18:10:00 info: =================================
+2023-04-25 18:10:00 info: ======= ENV: development =======
+2023-04-25 18:10:00 info: 🚀 App listening on the port 8000
+2023-04-25 18:10:00 info: =================================
+2023-04-25 18:10:19 info: =================================
+2023-04-25 18:10:19 info: ======= ENV: development =======
+2023-04-25 18:10:19 info: 🚀 App listening on the port 8000
+2023-04-25 18:10:19 info: =================================
