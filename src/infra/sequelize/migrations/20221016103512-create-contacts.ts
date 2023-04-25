@@ -10,33 +10,40 @@ module.exports = {
         type: Sequelize.INTEGER,
       },
 
-      data: {
-        type: Sequelize.TEXT,
-        allowNull: true,
+      name: {
+        type: Sequelize.STRING,
+      },
+
+      email: {
+        type: Sequelize.STRING,
+      },
+
+      phone: {
+        type: Sequelize.STRING,
+      },
+
+      note: {
+        type: Sequelize.STRING,
+      },
+
+      detail: {
+        type: Sequelize.STRING,
       },
 
       type: {
         type: Sequelize.STRING,
-        allowNull: true,
-      },
-
-      user_agent: {
-        type: Sequelize.STRING,
-        allowNull: true,
-      },
-
-      ip_address: {
-        type: Sequelize.STRING,
-        allowNull: true,
-      },
-
-      request_url: {
-        type: Sequelize.STRING,
-        allowNull: true,
       },
 
       status: {
         type: Sequelize.STRING,
+      },
+
+      file: {
+        type: Sequelize.INTEGER,
+        references: {
+          model: "medias",
+          key: "id",
+        },
         allowNull: true,
       },
 
