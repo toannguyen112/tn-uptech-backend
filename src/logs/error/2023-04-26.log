@@ -76,3 +76,339 @@ Error: Naming collision between attribute 'file' and association 'file' on model
     at Object.<anonymous> (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:63:16)
     at Module._compile (node:internal/modules/cjs/loader:1191:14)
     at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1618:23)
+2023-04-26 12:15:32 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/services/contact.service.ts[0m:[93m78[0m:[93m47[0m - [91merror[0m[90m TS2304: [0mCannot find name 'ContactDTO'.
+
+[7m78[0m                 data: rows.map((item: any) => ContactDTO.transform(item)),
+[7m  [0m [91m                                              ~~~~~~~~~~[0m
+[96msrc/services/contact.service.ts[0m:[93m115[0m:[93m16[0m - [91merror[0m[90m TS2304: [0mCannot find name 'ContactDTO'.
+
+[7m115[0m         return ContactDTO.transformDetail(post);
+[7m   [0m [91m               ~~~~~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/services/contact.service.ts[0m:[93m78[0m:[93m47[0m - [91merror[0m[90m TS2304: [0mCannot find name 'ContactDTO'.
+
+[7m78[0m                 data: rows.map((item: any) => ContactDTO.transform(item)),
+[7m  [0m [91m                                              ~~~~~~~~~~[0m
+[96msrc/services/contact.service.ts[0m:[93m115[0m:[93m16[0m - [91merror[0m[90m TS2304: [0mCannot find name 'ContactDTO'.
+
+[7m115[0m         return ContactDTO.transformDetail(post);
+[7m   [0m [91m               ~~~~~~~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-26 12:16:16 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/services/contact.service.ts[0m:[93m127[0m:[93m28[0m - [91merror[0m[90m TS2339: [0mProperty 'handleUpdate' does not exist on type 'ContactService'.
+
+[7m127[0m                 await this.handleUpdate({ post_id: id, lang: global.lang, body });
+[7m   [0m [91m                           ~~~~~~~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/services/contact.service.ts[0m:[93m127[0m:[93m28[0m - [91merror[0m[90m TS2339: [0mProperty 'handleUpdate' does not exist on type 'ContactService'.
+
+[7m127[0m                 await this.handleUpdate({ post_id: id, lang: global.lang, body });
+[7m   [0m [91m                           ~~~~~~~~~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-26 12:24:06 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/route/contact.route .ts[0m:[93m17[0m:[93m63[0m - [91merror[0m[90m TS2339: [0mProperty 'show' does not exist on type 'ContactController'.
+
+[7m17[0m         this.router.get(`${this.path}/show/:id`, this.contact.show);
+[7m  [0m [91m                                                              ~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/route/contact.route .ts[0m:[93m17[0m:[93m63[0m - [91merror[0m[90m TS2339: [0mProperty 'show' does not exist on type 'ContactController'.
+
+[7m17[0m         this.router.get(`${this.path}/show/:id`, this.contact.show);
+[7m  [0m [91m                                                              ~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-26 12:24:59 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/route/contact.route .ts[0m:[93m4[0m:[93m8[0m - [91merror[0m[90m TS2613: [0mModule '"/Users/toannguyen/Documents/Source/tn-uptech-backend/src/modules/controllers/contact.controller"' has no default export. Did you mean to use 'import { ContactController } from "/Users/toannguyen/Documents/Source/tn-uptech-backend/src/modules/controllers/contact.controller"' instead?
+
+[7m4[0m import ContactController from "../modules/controllers/contact.controller";
+[7m [0m [91m       ~~~~~~~~~~~~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/route/contact.route .ts[0m:[93m4[0m:[93m8[0m - [91merror[0m[90m TS2613: [0mModule '"/Users/toannguyen/Documents/Source/tn-uptech-backend/src/modules/controllers/contact.controller"' has no default export. Did you mean to use 'import { ContactController } from "/Users/toannguyen/Documents/Source/tn-uptech-backend/src/modules/controllers/contact.controller"' instead?
+
+[7m4[0m import ContactController from "../modules/controllers/contact.controller";
+[7m [0m [91m       ~~~~~~~~~~~~~~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-26 12:25:19 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/route/contact.route .ts[0m:[93m4[0m:[93m8[0m - [91merror[0m[90m TS2613: [0mModule '"/Users/toannguyen/Documents/Source/tn-uptech-backend/src/modules/controllers/contact.controller"' has no default export. Did you mean to use 'import { ContactController } from "/Users/toannguyen/Documents/Source/tn-uptech-backend/src/modules/controllers/contact.controller"' instead?
+
+[7m4[0m import ContactController from "../modules/controllers/contact.controller";
+[7m [0m [91m       ~~~~~~~~~~~~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/route/contact.route .ts[0m:[93m4[0m:[93m8[0m - [91merror[0m[90m TS2613: [0mModule '"/Users/toannguyen/Documents/Source/tn-uptech-backend/src/modules/controllers/contact.controller"' has no default export. Did you mean to use 'import { ContactController } from "/Users/toannguyen/Documents/Source/tn-uptech-backend/src/modules/controllers/contact.controller"' instead?
+
+[7m4[0m import ContactController from "../modules/controllers/contact.controller";
+[7m [0m [91m       ~~~~~~~~~~~~~~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-26 12:25:28 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/route/contact.route .ts[0m:[93m4[0m:[93m8[0m - [91merror[0m[90m TS2613: [0mModule '"/Users/toannguyen/Documents/Source/tn-uptech-backend/src/modules/controllers/contact.controller"' has no default export. Did you mean to use 'import { ContactController } from "/Users/toannguyen/Documents/Source/tn-uptech-backend/src/modules/controllers/contact.controller"' instead?
+
+[7m4[0m import ContactController from "../modules/controllers/contact.controller";
+[7m [0m [91m       ~~~~~~~~~~~~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/route/contact.route .ts[0m:[93m4[0m:[93m8[0m - [91merror[0m[90m TS2613: [0mModule '"/Users/toannguyen/Documents/Source/tn-uptech-backend/src/modules/controllers/contact.controller"' has no default export. Did you mean to use 'import { ContactController } from "/Users/toannguyen/Documents/Source/tn-uptech-backend/src/modules/controllers/contact.controller"' instead?
+
+[7m4[0m import ContactController from "../modules/controllers/contact.controller";
+[7m [0m [91m       ~~~~~~~~~~~~~~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-26 12:25:57 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/route/contact.route .ts[0m:[93m4[0m:[93m8[0m - [91merror[0m[90m TS2613: [0mModule '"/Users/toannguyen/Documents/Source/tn-uptech-backend/src/modules/controllers/contact.controller"' has no default export. Did you mean to use 'import { ContactController } from "/Users/toannguyen/Documents/Source/tn-uptech-backend/src/modules/controllers/contact.controller"' instead?
+
+[7m4[0m import ContactController from "../modules/controllers/contact.controller";
+[7m [0m [91m       ~~~~~~~~~~~~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/route/contact.route .ts[0m:[93m4[0m:[93m8[0m - [91merror[0m[90m TS2613: [0mModule '"/Users/toannguyen/Documents/Source/tn-uptech-backend/src/modules/controllers/contact.controller"' has no default export. Did you mean to use 'import { ContactController } from "/Users/toannguyen/Documents/Source/tn-uptech-backend/src/modules/controllers/contact.controller"' instead?
+
+[7m4[0m import ContactController from "../modules/controllers/contact.controller";
+[7m [0m [91m       ~~~~~~~~~~~~~~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-26 12:26:44 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/modules/controllers/recruitment.controller.ts[0m:[93m33[0m:[93m44[0m - [91merror[0m[90m TS2339: [0mProperty 'findById' does not exist on type 'ContactService'.
+
+[7m33[0m                 const data = await contact.findById(id);
+[7m  [0m [91m                                           ~~~~~~~~[0m
+[96msrc/modules/controllers/recruitment.controller.ts[0m:[93m46[0m:[93m40[0m - [91merror[0m[90m TS2339: [0mProperty 'updateById' does not exist on type 'ContactService'.
+
+[7m46[0m             const data = await contact.updateById(id, req.body);
+[7m  [0m [91m                                       ~~~~~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/modules/controllers/recruitment.controller.ts[0m:[93m33[0m:[93m44[0m - [91merror[0m[90m TS2339: [0mProperty 'findById' does not exist on type 'ContactService'.
+
+[7m33[0m                 const data = await contact.findById(id);
+[7m  [0m [91m                                           ~~~~~~~~[0m
+[96msrc/modules/controllers/recruitment.controller.ts[0m:[93m46[0m:[93m40[0m - [91merror[0m[90m TS2339: [0mProperty 'updateById' does not exist on type 'ContactService'.
+
+[7m46[0m             const data = await contact.updateById(id, req.body);
+[7m  [0m [91m                                       ~~~~~~~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-26 12:28:03 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/modules/controllers/recruitment.controller.ts[0m:[93m33[0m:[93m44[0m - [91merror[0m[90m TS2339: [0mProperty 'findById' does not exist on type 'ContactService'.
+
+[7m33[0m                 const data = await contact.findById(id);
+[7m  [0m [91m                                           ~~~~~~~~[0m
+[96msrc/modules/controllers/recruitment.controller.ts[0m:[93m46[0m:[93m40[0m - [91merror[0m[90m TS2339: [0mProperty 'updateById' does not exist on type 'ContactService'.
+
+[7m46[0m             const data = await contact.updateById(id, req.body);
+[7m  [0m [91m                                       ~~~~~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/modules/controllers/recruitment.controller.ts[0m:[93m33[0m:[93m44[0m - [91merror[0m[90m TS2339: [0mProperty 'findById' does not exist on type 'ContactService'.
+
+[7m33[0m                 const data = await contact.findById(id);
+[7m  [0m [91m                                           ~~~~~~~~[0m
+[96msrc/modules/controllers/recruitment.controller.ts[0m:[93m46[0m:[93m40[0m - [91merror[0m[90m TS2339: [0mProperty 'updateById' does not exist on type 'ContactService'.
+
+[7m46[0m             const data = await contact.updateById(id, req.body);
+[7m  [0m [91m                                       ~~~~~~~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-26 12:28:50 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/route/recruitments.route .ts[0m:[93m16[0m:[93m46[0m - [91merror[0m[90m TS2339: [0mProperty 'post' does not exist on type 'RecruitmentsRoute'.
+
+[7m16[0m         this.router.get(`${this.path}`, this.post.index);
+[7m  [0m [91m                                             ~~~~[0m
+[96msrc/route/recruitments.route .ts[0m:[93m17[0m:[93m54[0m - [91merror[0m[90m TS2339: [0mProperty 'post' does not exist on type 'RecruitmentsRoute'.
+
+[7m17[0m         this.router.post(`${this.path}/create`, this.post.create);
+[7m  [0m [91m                                                     ~~~~[0m
+[96msrc/route/recruitments.route .ts[0m:[93m18[0m:[93m55[0m - [91merror[0m[90m TS2339: [0mProperty 'post' does not exist on type 'RecruitmentsRoute'.
+
+[7m18[0m         this.router.get(`${this.path}/show/:id`, this.post.show);
+[7m  [0m [91m                                                      ~~~~[0m
+[96msrc/route/recruitments.route .ts[0m:[93m19[0m:[93m57[0m - [91merror[0m[90m TS2339: [0mProperty 'post' does not exist on type 'RecruitmentsRoute'.
+
+[7m19[0m         this.router.put(`${this.path}/update/:id`, this.post.update);
+[7m  [0m [91m                                                        ~~~~[0m
+[96msrc/route/recruitments.route .ts[0m:[93m20[0m:[93m66[0m - [91merror[0m[90m TS2339: [0mProperty 'post' does not exist on type 'RecruitmentsRoute'.
+
+[7m20[0m         this.router.delete(`${this.path}/delete/:id(\\d+)`, this.post.delete);
+[7m  [0m [91m                                                                 ~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/route/recruitments.route .ts[0m:[93m16[0m:[93m46[0m - [91merror[0m[90m TS2339: [0mProperty 'post' does not exist on type 'RecruitmentsRoute'.
+
+[7m16[0m         this.router.get(`${this.path}`, this.post.index);
+[7m  [0m [91m                                             ~~~~[0m
+[96msrc/route/recruitments.route .ts[0m:[93m17[0m:[93m54[0m - [91merror[0m[90m TS2339: [0mProperty 'post' does not exist on type 'RecruitmentsRoute'.
+
+[7m17[0m         this.router.post(`${this.path}/create`, this.post.create);
+[7m  [0m [91m                                                     ~~~~[0m
+[96msrc/route/recruitments.route .ts[0m:[93m18[0m:[93m55[0m - [91merror[0m[90m TS2339: [0mProperty 'post' does not exist on type 'RecruitmentsRoute'.
+
+[7m18[0m         this.router.get(`${this.path}/show/:id`, this.post.show);
+[7m  [0m [91m                                                      ~~~~[0m
+[96msrc/route/recruitments.route .ts[0m:[93m19[0m:[93m57[0m - [91merror[0m[90m TS2339: [0mProperty 'post' does not exist on type 'RecruitmentsRoute'.
+
+[7m19[0m         this.router.put(`${this.path}/update/:id`, this.post.update);
+[7m  [0m [91m                                                        ~~~~[0m
+[96msrc/route/recruitments.route .ts[0m:[93m20[0m:[93m66[0m - [91merror[0m[90m TS2339: [0mProperty 'post' does not exist on type 'RecruitmentsRoute'.
+
+[7m20[0m         this.router.delete(`${this.path}/delete/:id(\\d+)`, this.post.delete);
+[7m  [0m [91m                                                                 ~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-26 12:29:00 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/modules/controllers/recruitment.controller.ts[0m:[93m33[0m:[93m44[0m - [91merror[0m[90m TS2339: [0mProperty 'findById' does not exist on type 'ContactService'.
+
+[7m33[0m                 const data = await contact.findById(id);
+[7m  [0m [91m                                           ~~~~~~~~[0m
+[96msrc/modules/controllers/recruitment.controller.ts[0m:[93m46[0m:[93m40[0m - [91merror[0m[90m TS2339: [0mProperty 'updateById' does not exist on type 'ContactService'.
+
+[7m46[0m             const data = await contact.updateById(id, req.body);
+[7m  [0m [91m                                       ~~~~~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/modules/controllers/recruitment.controller.ts[0m:[93m33[0m:[93m44[0m - [91merror[0m[90m TS2339: [0mProperty 'findById' does not exist on type 'ContactService'.
+
+[7m33[0m                 const data = await contact.findById(id);
+[7m  [0m [91m                                           ~~~~~~~~[0m
+[96msrc/modules/controllers/recruitment.controller.ts[0m:[93m46[0m:[93m40[0m - [91merror[0m[90m TS2339: [0mProperty 'updateById' does not exist on type 'ContactService'.
+
+[7m46[0m             const data = await contact.updateById(id, req.body);
+[7m  [0m [91m                                       ~~~~~~~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-26 12:29:17 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/route/recruitments.route .ts[0m:[93m4[0m:[93m1[0m - [91merror[0m[90m TS2304: [0mCannot find name 'x'.
+
+[7m4[0m x
+[7m [0m [91m~[0m
+[96msrc/route/recruitments.route .ts[0m:[93m9[0m:[93m30[0m - [91merror[0m[90m TS2304: [0mCannot find name 'RecruitmentController'.
+
+[7m9[0m     public recruitment = new RecruitmentController();
+[7m [0m [91m                             ~~~~~~~~~~~~~~~~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/route/recruitments.route .ts[0m:[93m4[0m:[93m1[0m - [91merror[0m[90m TS2304: [0mCannot find name 'x'.
+
+[7m4[0m x
+[7m [0m [91m~[0m
+[96msrc/route/recruitments.route .ts[0m:[93m9[0m:[93m30[0m - [91merror[0m[90m TS2304: [0mCannot find name 'RecruitmentController'.
+
+[7m9[0m     public recruitment = new RecruitmentController();
+[7m [0m [91m                             ~~~~~~~~~~~~~~~~~~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)

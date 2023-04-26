@@ -1,20 +1,70 @@
-import { Request, Response } from "express";
+import { NextFunction, Request, Response } from 'express';
+import { ContactService } from '../../services/contact.service';
 
-export default class ContactController {
+const contact = new ContactService();
 
-    async index(req: Request, res: Response) {
+export class ContactController {
 
+    public async index(req: Request, res: Response, next: NextFunction) {
+
+        try {
+            const data = await contact.index(req.query);
+            res.status(200).send({ message: "ok", data });
+        } catch (error) {
+            console.log(error);
+            res.status(500).send(error);
+        }
     }
 
-    async create(req: Request, res: Response) {
-
+    public async create(req: Request, res: Response, next: NextFunction) {
+        try {
+            const data = await await contact.store(req.body);
+            res.status(200).send({ message: "ok", data });
+        } catch (error) {
+            console.log(error);
+            res.status(500).send(error);
+        }
     }
 
-    async update(req: Request, res: Response) {
-
+    public async show(req: Request, res: Response, next: NextFunction) {
+        try {
+            const data = await contact.show(req.params.id);
+            res.status(200).send({ message: "ok", data });
+        } catch (error) {
+            console.log(error.message);
+            res.status(500).send(error.message);
+        }
     }
 
-    async delete(req: Request, res: Response) {
+    public async update(req: Request, res: Response, next: NextFunction) {
+        try {
+            const { id } = req.params;
+            const data = await contact.update(id, req.body);
+            res.status(200).send({ message: "ok", data });
+        } catch (error) {
+            console.log(error.message);
+            res.status(500).send(error.message);
+        }
+    }
 
+    public async delete(req: Request, res: Response, next: NextFunction) {
+        try {
+            const data = await contact.deleteById(req.params.id);
+            res.status(200).send({ message: "ok", data });
+        } catch (error) {
+            console.log(error.message);
+            res.status(500).send(error.message);
+        }
+    }
+
+    public deleteMultipleIds = async (req: Request, res: Response, next: NextFunction) => {
+        try {
+            const { ids } = req.body;
+            const data = await contact.deleteMultipleIds(ids);
+            res.status(200).send({ message: "ok", data });
+        } catch (error) {
+            console.log(error.message);
+            res.status(500).send(error.message);
+        }
     }
 }

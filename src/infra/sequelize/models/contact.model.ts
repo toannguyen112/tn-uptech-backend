@@ -41,11 +41,11 @@ module.exports = function (sequelize, DataTypes) {
             },
 
             type: {
-                type: DataTypes.STRING,
+                type: DataTypes.ENUM(['contact', 'recruitment']),
             },
 
             status: {
-                type: DataTypes.STRING,
+                type: DataTypes.ENUM(['active', 'inactive']),
             },
 
             createdAt: {

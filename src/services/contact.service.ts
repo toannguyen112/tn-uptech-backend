@@ -1,9 +1,10 @@
-import { PostDTO } from "../dtos/post.dtos";
+
 import { ApiFeatures } from "../utils/ApiFeatures";
 import { Op } from "sequelize";
 import { logger } from "../utils/logger";
 
 import models from "../infra/sequelize/models";
+import { ContactDTO } from "../dtos/contact.dtos";
 
 export class ContactService {
 
@@ -42,18 +43,6 @@ export class ContactService {
                 }
             }
 
-            let queryTranslation = {};
-
-            if (query.search) {
-                queryTranslation = {
-                    name: { [Op.like]: `%${query.search}%` },
-                    locale: global.lang
-                }
-            }
-            else {
-                queryTranslation = { locale: global.lang }
-            }
-
             const objQuery = new ApiFeatures(query)
                 .filter(conditions)
                 .includes([
@@ -75,7 +64,7 @@ export class ContactService {
                 pageSize: Number(query?.page_size) * 1,
                 pageCount: Math.ceil(count / Number(query?.page_size) * 1),
                 totalItems: count || 0,
-                data: rows.map((item: any) => PostDTO.transform(item)),
+                data: rows.map((item: any) => ContactDTO.transform(item)),
             };
 
             return result;
@@ -91,17 +80,16 @@ export class ContactService {
         return;
 
         try {
-            const banner = await models.Contact.create({ ...body });
-            ;
+            const data = await models.Contact.create({ ...body });;
         } catch (error) {
             console.log(error);
         }
 
     }
 
-    public findById = async (id) => {
+    public show = async (id) => {
 
-        const post = await models.Contact.findOne({
+        const data = await models.Contact.findOne({
             where: { id },
             include: [
                 {
@@ -112,40 +100,11 @@ export class ContactService {
             ]
         });
 
-        return PostDTO.transformDetail(post);
+        return ContactDTO.transformDetail(data);
     }
 
-    public updateById = async (id, body) => {
-
-        return await models.Contact.update({
-            ...body,
-            thumbnail: body.thumbnail ? body.thumbnail.id : null,
-            banner: body.banner ? body.banner.id : null,
-        }, { where: { id }, individualHooks: true },
-        )
-            .then(async (res: any) => {
-                await this.handleUpdate({ post_id: id, lang: global.lang, body });
-            });
-    }
-
-    public handleUpdate = async ({ post_id, lang = "vi", body }) => {
-        try {
-            return await models.PostTranslation.update({
-                name: body.name,
-                content: body.content,
-                description: body.description,
-                meta_title: body.meta_title,
-                meta_description: body.meta_description,
-                meta_keyword: body.meta_keyword,
-                meta_robots: body.meta_robots,
-                canonica_link: body.canonica_link,
-                meta_image: body.meta_image,
-                meta_viewport: body.meta_viewport,
-            },
-                { where: { post_id, locale: lang }, individualHooks: true });
-        } catch (error) {
-            logger.error(JSON.stringify(error));
-        }
+    public update = async (id, body) => {
+        return await models.Contact.update({ ...body }, { where: { id }, })
     }
 
     public deleteById = async (id) => {
