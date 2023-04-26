@@ -38,7 +38,7 @@ module.exports = {
         type: Sequelize.STRING,
       },
 
-      file: {
+      file_id: {
         type: Sequelize.INTEGER,
         references: {
           model: "medias",

@@ -1,0 +1,78 @@
+2023-04-26 11:40:43 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/infra/sequelize/models/contact.model.ts[0m:[93m52[0m:[93m23[0m - [91merror[0m[90m TS2552: [0mCannot find name 'Sequelize'. Did you mean 'sequelize'?
+
+[7m52[0m                 type: Sequelize.DATE,
+[7m  [0m [91m                      ~~~~~~~~~[0m
+
+  [96msrc/infra/sequelize/models/contact.model.ts[0m:[93m3[0m:[93m28[0m
+    [7m3[0m module.exports = function (sequelize, DataTypes) {
+    [7m [0m [96m                           ~~~~~~~~~[0m
+    'sequelize' is declared here.
+[96msrc/infra/sequelize/models/contact.model.ts[0m:[93m57[0m:[93m23[0m - [91merror[0m[90m TS2552: [0mCannot find name 'Sequelize'. Did you mean 'sequelize'?
+
+[7m57[0m                 type: Sequelize.DATE,
+[7m  [0m [91m                      ~~~~~~~~~[0m
+
+  [96msrc/infra/sequelize/models/contact.model.ts[0m:[93m3[0m:[93m28[0m
+    [7m3[0m module.exports = function (sequelize, DataTypes) {
+    [7m [0m [96m                           ~~~~~~~~~[0m
+    'sequelize' is declared here.
+[96msrc/infra/sequelize/models/contact.model.ts[0m:[93m61[0m:[93m13[0m - [91merror[0m[90m TS1117: [0mAn object literal cannot have multiple properties with the same name.
+
+[7m61[0m             createdAt: {
+[7m  [0m [91m            ~~~~~~~~~[0m
+[96msrc/infra/sequelize/models/contact.model.ts[0m:[93m69[0m:[93m13[0m - [91merror[0m[90m TS1117: [0mAn object literal cannot have multiple properties with the same name.
+
+[7m69[0m             updatedAt: {
+[7m  [0m [91m            ~~~~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/infra/sequelize/models/contact.model.ts[0m:[93m52[0m:[93m23[0m - [91merror[0m[90m TS2552: [0mCannot find name 'Sequelize'. Did you mean 'sequelize'?
+
+[7m52[0m                 type: Sequelize.DATE,
+[7m  [0m [91m                      ~~~~~~~~~[0m
+
+  [96msrc/infra/sequelize/models/contact.model.ts[0m:[93m3[0m:[93m28[0m
+    [7m3[0m module.exports = function (sequelize, DataTypes) {
+    [7m [0m [96m                           ~~~~~~~~~[0m
+    'sequelize' is declared here.
+[96msrc/infra/sequelize/models/contact.model.ts[0m:[93m57[0m:[93m23[0m - [91merror[0m[90m TS2552: [0mCannot find name 'Sequelize'. Did you mean 'sequelize'?
+
+[7m57[0m                 type: Sequelize.DATE,
+[7m  [0m [91m                      ~~~~~~~~~[0m
+
+  [96msrc/infra/sequelize/models/contact.model.ts[0m:[93m3[0m:[93m28[0m
+    [7m3[0m module.exports = function (sequelize, DataTypes) {
+    [7m [0m [96m                           ~~~~~~~~~[0m
+    'sequelize' is declared here.
+[96msrc/infra/sequelize/models/contact.model.ts[0m:[93m61[0m:[93m13[0m - [91merror[0m[90m TS1117: [0mAn object literal cannot have multiple properties with the same name.
+
+[7m61[0m             createdAt: {
+[7m  [0m [91m            ~~~~~~~~~[0m
+[96msrc/infra/sequelize/models/contact.model.ts[0m:[93m69[0m:[93m13[0m - [91merror[0m[90m TS1117: [0mAn object literal cannot have multiple properties with the same name.
+
+[7m69[0m             updatedAt: {
+[7m  [0m [91m            ~~~~~~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-26 11:40:53 error: uncaughtException: Naming collision between attribute 'file' and association 'file' on model contacts. To remedy this, change either foreignKey or as in your association definition
+Error: Naming collision between attribute 'file' and association 'file' on model contacts. To remedy this, change either foreignKey or as in your association definition
+    at Object.checkNamingCollision (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/sequelize/src/associations/helpers.js:5:11)
+    at BelongsTo._injectAttributes (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/sequelize/src/associations/belongs-to.js:103:13)
+    at Function.<anonymous> (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/sequelize/src/associations/mixin.js:108:17)
+    at Function.Contact.associate (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/contact.model.ts:74:17)
+    at /Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:51:31
+    at Array.forEach (<anonymous>)
+    at createModels (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:49:25)
+    at Object.<anonymous> (/Users/toannguyen/Documents/Source/tn-uptech-backend/src/infra/sequelize/models/index.ts:63:16)
+    at Module._compile (node:internal/modules/cjs/loader:1191:14)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1618:23)

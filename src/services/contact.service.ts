@@ -87,7 +87,15 @@ export class ContactService {
     }
 
     public store = async (body) => {
+        console.log(body);
+        return;
 
+        try {
+            const banner = await models.Contact.create({...body});
+            ;
+        } catch (error) {
+            console.log(error);
+        }
 
     }
 
