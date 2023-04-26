@@ -11,6 +11,15 @@ module.exports = function (sequelize, DataTypes) {
                 type: DataTypes.INTEGER,
             },
 
+            file_id: {
+                type: DataTypes.INTEGER,
+                references: {
+                    model: "medias",
+                    key: "id",
+                },
+                allowNull: true,
+            },
+
             name: {
                 type: DataTypes.STRING,
             },
@@ -37,15 +46,6 @@ module.exports = function (sequelize, DataTypes) {
 
             status: {
                 type: DataTypes.STRING,
-            },
-
-            file_id: {
-                type: DataTypes.INTEGER,
-                references: {
-                    model: "medias",
-                    key: "id",
-                },
-                allowNull: true,
             },
 
             createdAt: {

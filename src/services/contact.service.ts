@@ -68,7 +68,7 @@ export class ContactService {
                 .paranoid()
                 .getObjQuery();
 
-            const { count, rows }: any = await models.Post.findAndCountAll(objQuery);
+            const { count, rows }: any = await models.Contact.findAndCountAll(objQuery);
 
             const result = {
                 page: Number(query?.page) * 1,
@@ -91,7 +91,7 @@ export class ContactService {
         return;
 
         try {
-            const banner = await models.Contact.create({...body});
+            const banner = await models.Contact.create({ ...body });
             ;
         } catch (error) {
             console.log(error);
@@ -101,7 +101,7 @@ export class ContactService {
 
     public findById = async (id) => {
 
-        const post = await models.Post.findOne({
+        const post = await models.Contact.findOne({
             where: { id },
             include: [
                 {
@@ -117,7 +117,7 @@ export class ContactService {
 
     public updateById = async (id, body) => {
 
-        return await models.Post.update({
+        return await models.Contact.update({
             ...body,
             thumbnail: body.thumbnail ? body.thumbnail.id : null,
             banner: body.banner ? body.banner.id : null,
@@ -149,10 +149,10 @@ export class ContactService {
     }
 
     public deleteById = async (id) => {
-        return await models.Post.destroy({ where: { id } });
+        return await models.Contact.destroy({ where: { id } });
     }
 
     public deleteMultipleIds = async (ids) => {
-        return await models.Post.destroy({ where: { id: ids } });
+        return await models.Contact.destroy({ where: { id: ids } });
     }
 }

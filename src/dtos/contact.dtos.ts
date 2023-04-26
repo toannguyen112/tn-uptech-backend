@@ -5,7 +5,7 @@ export class ContactDTO {
             id: item.id,
             name: item.name || "",
             status: item.status,
-            thumbnail: item.image,
+            
             createdAt: item.createdAt,
             updatedAt: item.updatedAt,
         }
@@ -16,7 +16,7 @@ export class ContactDTO {
             id: item.id,
             name: item.name || "",
             status: item.status,
-            thumbnail: item.image,
+            file: item.file,
             createdAt: item.createdAt,
             updatedAt: item.updatedAt,
         }
