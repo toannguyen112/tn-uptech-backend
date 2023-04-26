@@ -111,9 +111,11 @@ export class ServiceService {
                     key: item.id,
                     label: item.translations[0].name,
                     slug: item.translations[0].slug,
+                    thumbnail: item.image ? item.image.path : "",
                     children: item.children.map((item) => {
                         return {
                             key: item.id,
+                            thumbnail: item.image ? item.image.path : "",
                             label: item.translations[0].name,
                             slug: item.translations[0].slug,
                         }

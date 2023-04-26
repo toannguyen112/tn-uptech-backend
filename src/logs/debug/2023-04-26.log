@@ -1070,3 +1070,103 @@
 2023-04-26 20:39:04 info: [0mGET /banners [36m304[0m 52.396 ms - -[0m
 2023-04-26 20:39:15 info: [0mOPTIONS /contacts/create [32m204[0m 0.955 ms - 0[0m
 2023-04-26 20:39:15 info: [0mPOST /contacts/create [32m200[0m 35.947 ms - 178[0m
+2023-04-26 20:41:28 info: [0mGET /ceos/getlistCeo [32m200[0m 947.417 ms - 329[0m
+2023-04-26 20:41:29 info: [0mGET /services/nav [36m304[0m 148.280 ms - -[0m
+2023-04-26 20:41:29 info: [0mGET /posts/getListFeatured [36m304[0m 118.335 ms - -[0m
+2023-04-26 20:44:02 info: [0mGET /services/nav [36m304[0m 243.551 ms - -[0m
+2023-04-26 20:44:02 info: [0mGET /posts/getListFeatured [36m304[0m 322.006 ms - -[0m
+2023-04-26 20:44:08 info: [0mGET /posts/getListFeatured [36m304[0m 111.267 ms - -[0m
+2023-04-26 20:44:08 info: [0mGET /services/nav [36m304[0m 160.842 ms - -[0m
+2023-04-26 20:44:15 info: [0mGET /services/nav [36m304[0m 186.867 ms - -[0m
+2023-04-26 20:44:15 info: [0mGET /posts/getListFeatured [36m304[0m 219.929 ms - -[0m
+2023-04-26 20:44:50 info: [0mGET /services/nav [32m200[0m 148.104 ms - 501[0m
+2023-04-26 20:45:21 info: [0mGET /services/nav [32m200[0m 202.175 ms - 557[0m
+2023-04-26 20:45:21 info: [0mGET /posts/getListFeatured [36m304[0m 215.471 ms - -[0m
+2023-04-26 20:45:21 info: [0mGET /services/nav [36m304[0m 123.671 ms - -[0m
+2023-04-26 20:45:31 info: [0mGET /services/nav [36m304[0m 244.753 ms - -[0m
+2023-04-26 20:45:31 info: [0mGET /posts/getListFeatured [36m304[0m 204.898 ms - -[0m
+2023-04-26 20:45:31 info: [0mGET /services/nav [36m304[0m 64.334 ms - -[0m
+2023-04-26 20:46:53 info: [0mGET /posts/getListFeatured [36m304[0m 225.840 ms - -[0m
+2023-04-26 20:46:53 info: [0mGET /services/nav [36m304[0m 292.905 ms - -[0m
+2023-04-26 20:46:53 info: [0mGET /services/nav [36m304[0m 38.608 ms - -[0m
+2023-04-26 20:47:47 info: [0mGET /posts/getListFeatured [36m304[0m 76.419 ms - -[0m
+2023-04-26 20:47:47 info: [0mGET /services/nav [36m304[0m 228.533 ms - -[0m
+2023-04-26 20:47:47 info: [0mGET /services/nav [36m304[0m 97.991 ms - -[0m
+2023-04-26 20:49:27 info: =================================
+2023-04-26 20:49:27 info: ======= ENV: development =======
+2023-04-26 20:49:27 info: 🚀 App listening on the port 8000
+2023-04-26 20:49:27 info: =================================
+2023-04-26 20:49:50 info: =================================
+2023-04-26 20:49:50 info: ======= ENV: development =======
+2023-04-26 20:49:50 info: 🚀 App listening on the port 8000
+2023-04-26 20:49:50 info: =================================
+2023-04-26 20:49:50 info: [0mOPTIONS /admins/profile [32m204[0m 3.120 ms - 0[0m
+2023-04-26 20:49:51 info: [0mGET /admins/profile [36m304[0m 1071.265 ms - -[0m
+2023-04-26 20:49:51 info: [0mGET /contacts?page=1&page_size=10 [32m200[0m 722.286 ms - 966[0m
+2023-04-26 20:49:52 info: [0mGET /contacts?page=1&page_size=10 [36m304[0m 54.229 ms - -[0m
+2023-04-26 20:49:52 info: [0mGET /services/nav [32m200[0m 33.600 ms - 637[0m
+2023-04-26 20:50:11 info: [0mGET /contacts?status=spam&page=1&page_size=10 [32m200[0m 34.574 ms - 87[0m
+2023-04-26 20:50:12 info: [0mGET /contacts?page=1&page_size=10 [36m304[0m 12.601 ms - -[0m
+2023-04-26 20:50:13 info: [0mGET /contacts?status=close&page=1&page_size=10 [36m304[0m 11.262 ms - -[0m
+2023-04-26 20:50:14 info: [0mGET /contacts?page=1&page_size=10 [36m304[0m 18.436 ms - -[0m
+2023-04-26 20:50:20 info: [0mGET /contacts?status=spam&page=1&page_size=10 [36m304[0m 21.445 ms - -[0m
+2023-04-26 20:50:21 info: [0mGET /contacts?page=1&page_size=10 [36m304[0m 20.990 ms - -[0m
+2023-04-26 20:50:22 info: [0mGET /contacts?status=new&page=1&page_size=10 [32m200[0m 15.886 ms - 966[0m
+2023-04-26 20:50:22 info: [0mGET /contacts?page=1&page_size=10 [36m304[0m 13.726 ms - -[0m
+2023-04-26 20:50:26 info: [0mOPTIONS /admins/profile [32m204[0m 1.146 ms - 0[0m
+2023-04-26 20:50:27 info: [0mGET /contacts/show/3 [32m200[0m 73.699 ms - 137[0m
+2023-04-26 20:50:27 info: [0mGET /admins/profile [36m304[0m 128.004 ms - -[0m
+2023-04-26 20:50:29 info: [0mOPTIONS /contacts/update/3 [32m204[0m 0.210 ms - 0[0m
+2023-04-26 20:50:29 info: [0mPUT /contacts/update/3 [32m200[0m 56.527 ms - 27[0m
+2023-04-26 20:50:29 info: [0mGET /contacts/show/3 [32m200[0m 9.452 ms - 140[0m
+2023-04-26 20:50:31 info: [0mGET /contacts/show/3 [36m304[0m 98.253 ms - -[0m
+2023-04-26 20:50:31 info: [0mGET /contacts?page=1&page_size=10 [32m200[0m 133.312 ms - 969[0m
+2023-04-26 20:50:31 info: [0mGET /admins/profile [36m304[0m 158.209 ms - -[0m
+2023-04-26 20:50:31 info: [0mGET /contacts?page=1&page_size=10 [36m304[0m 10.897 ms - -[0m
+2023-04-26 20:50:35 info: [0mGET /contacts?status=unread&page=1&page_size=10 [32m200[0m 9.765 ms - 217[0m
+2023-04-26 20:50:42 info: [0mOPTIONS /admins/profile [32m204[0m 0.746 ms - 0[0m
+2023-04-26 20:50:42 info: [0mGET /services/nav [32m200[0m 95.940 ms - 693[0m
+2023-04-26 20:50:42 info: [0mGET /admins/profile [36m304[0m 122.203 ms - -[0m
+2023-04-26 20:50:43 info: [0mGET /services/show/1 [36m304[0m 78.596 ms - -[0m
+2023-04-26 20:50:44 info: [0mOPTIONS /folders/get-medias [32m204[0m 0.506 ms - 0[0m
+2023-04-26 20:50:44 info: [0mPOST /folders/get-medias [32m200[0m 20.722 ms - 31[0m
+2023-04-26 20:50:44 info: [0mGET /folders [36m304[0m 42.307 ms - -[0m
+2023-04-26 20:50:48 info: [0mPOST /medias/create [32m200[0m 30.474 ms - 31[0m
+2023-04-26 20:50:48 info: [0mPOST /folders/get-medias [32m200[0m 5.280 ms - 298[0m
+2023-04-26 20:50:49 info: [0mOPTIONS /services/update/1 [32m204[0m 0.199 ms - 0[0m
+2023-04-26 20:50:50 info: [0mPUT /services/update/1 [32m200[0m 24.599 ms - 16[0m
+2023-04-26 20:50:50 info: [0mGET /services/nav [32m200[0m 10.537 ms - 985[0m
+2023-04-26 20:50:55 info: [0mOPTIONS /admins/profile [32m204[0m 0.729 ms - 0[0m
+2023-04-26 20:50:55 info: [0mGET /services/nav [36m304[0m 111.375 ms - -[0m
+2023-04-26 20:50:55 info: [0mGET /admins/profile [36m304[0m 137.296 ms - -[0m
+2023-04-26 20:50:56 info: [0mGET /services/show/1 [32m200[0m 9.862 ms - 553[0m
+2023-04-26 20:51:01 info: [0mGET /services/nav [32m200[0m 44.944 ms - 900[0m
+2023-04-26 20:51:40 info: =================================
+2023-04-26 20:51:40 info: ======= ENV: development =======
+2023-04-26 20:51:40 info: 🚀 App listening on the port 8000
+2023-04-26 20:51:40 info: =================================
+2023-04-26 20:52:16 info: [0mGET /services/nav [32m200[0m 609.667 ms - 16[0m
+2023-04-26 20:52:16 info: [0mGET /posts/getListFeatured [36m304[0m 651.564 ms - -[0m
+2023-04-26 20:52:17 info: [0mGET /services/nav [36m304[0m 53.670 ms - -[0m
+2023-04-26 20:52:21 info: [0mGET /services/nav [36m304[0m 39.380 ms - -[0m
+2023-04-26 20:53:18 info: =================================
+2023-04-26 20:53:18 info: ======= ENV: development =======
+2023-04-26 20:53:18 info: 🚀 App listening on the port 8000
+2023-04-26 20:53:18 info: =================================
+2023-04-26 20:53:19 info: [0mGET /services/nav [32m200[0m 231.073 ms - 659[0m
+2023-04-26 20:53:20 info: [0mGET /services/nav [36m304[0m 36.383 ms - -[0m
+2023-04-26 20:53:25 info: [0mGET /services/nav [32m200[0m 28.718 ms - 744[0m
+2023-04-26 20:53:25 info: [0mGET /posts/getListFeatured [36m304[0m 184.298 ms - -[0m
+2023-04-26 20:53:25 info: [0mGET /services/nav [36m304[0m 172.596 ms - -[0m
+2023-04-26 20:53:32 info: [0mGET /services/show/2 [36m304[0m 27.077 ms - -[0m
+2023-04-26 20:53:33 info: [0mOPTIONS /folders/get-medias [32m204[0m 2.129 ms - 0[0m
+2023-04-26 20:53:34 info: [0mPOST /folders/get-medias [32m200[0m 76.764 ms - 298[0m
+2023-04-26 20:53:34 info: [0mGET /folders [36m304[0m 34.656 ms - -[0m
+2023-04-26 20:53:37 info: [0mPOST /medias/create [32m200[0m 70.958 ms - 31[0m
+2023-04-26 20:53:37 info: [0mPOST /folders/get-medias [32m200[0m 7.595 ms - 595[0m
+2023-04-26 20:53:40 info: [0mOPTIONS /services/update/2 [32m204[0m 0.276 ms - 0[0m
+2023-04-26 20:53:40 info: [0mPUT /services/update/2 [32m200[0m 63.953 ms - 16[0m
+2023-04-26 20:53:40 info: [0mGET /services/nav [32m200[0m 35.389 ms - 827[0m
+2023-04-26 20:53:44 info: [0mGET /services/nav [36m304[0m 109.422 ms - -[0m
+2023-04-26 20:53:44 info: [0mGET /services/nav [36m304[0m 40.576 ms - -[0m
+2023-04-26 20:53:44 info: [0mGET /posts/getListFeatured [36m304[0m 179.022 ms - -[0m
