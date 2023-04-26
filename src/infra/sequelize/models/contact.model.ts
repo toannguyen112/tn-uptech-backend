@@ -36,10 +36,6 @@ module.exports = function (sequelize, DataTypes) {
                 type: DataTypes.STRING,
             },
 
-            detail: {
-                type: DataTypes.STRING,
-            },
-
             type: {
                 type: DataTypes.ENUM(['contact', 'recruitment']),
             },

@@ -4,8 +4,10 @@ export class ContactDTO {
         return {
             id: item.id,
             name: item.name || "",
+            email: item.email || "",
+            phone: item.phone || "",
             status: item.status,
-            
+
             createdAt: item.createdAt,
             updatedAt: item.updatedAt,
         }
@@ -15,10 +17,11 @@ export class ContactDTO {
         return {
             id: item.id,
             name: item.name || "",
-            status: item.status,
-            file: item.file,
-            createdAt: item.createdAt,
-            updatedAt: item.updatedAt,
+            email: item.email || "",
+            phone: item.phone || "",
+            note: item.note || "",
+            status: item.status || "",
+            file: item.file || null,
         }
     }
 }

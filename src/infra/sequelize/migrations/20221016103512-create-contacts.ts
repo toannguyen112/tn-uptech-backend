@@ -26,16 +26,13 @@ module.exports = {
         type: Sequelize.STRING,
       },
 
-      detail: {
-        type: Sequelize.STRING,
-      },
-
       type: {
         type: Sequelize.STRING,
       },
 
       status: {
         type: Sequelize.STRING,
+        defaultValue: "new"
       },
 
       file_id: {

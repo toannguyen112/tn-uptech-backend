@@ -2,7 +2,6 @@
 import { ApiFeatures } from "../utils/ApiFeatures";
 import { Op } from "sequelize";
 import { logger } from "../utils/logger";
-
 import models from "../infra/sequelize/models";
 import { ContactDTO } from "../dtos/contact.dtos";
 
@@ -48,7 +47,7 @@ export class ContactService {
                 .includes([
                     {
                         model: models.Media,
-                        as: "image",
+                        as: "file",
                         required: false,
                     },
                 ])
@@ -76,15 +75,29 @@ export class ContactService {
     }
 
     public store = async (body) => {
-        console.log(body);
-        return;
-
+        let data;
         try {
-            const data = await models.Contact.create({ ...body });;
+            if (body.type === 'contact') {
+                data = await models.Contact.create({ ...body });
+            }
+
+            if (body.type === 'recruitment') {
+                const newItem = {
+                    name: body.name,
+                    email: body.email,
+                    type: body.type,
+                    status: body.status,
+                    phone: body.phone,
+                    note: body.note,
+                }
+
+                data = await models.Contact.create(newItem);
+            }
+
+            return data;
         } catch (error) {
             console.log(error);
         }
-
     }
 
     public show = async (id) => {
@@ -94,7 +107,7 @@ export class ContactService {
             include: [
                 {
                     model: models.Media,
-                    as: "image",
+                    as: "file",
                     required: false,
                 },
             ]
