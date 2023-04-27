@@ -7,7 +7,7 @@ export class BannerDTO {
         return {
             id: item.id,
             name: translationData.name || "",
-            status: item.status || 'inactive',
+            status: item.status,
             thumbnail: item.image || null,
             createdAt: item.createdAt,
             updatedAt: item.updatedAt,
@@ -23,6 +23,10 @@ export class BannerDTO {
         return {
             id: item.id,
             name: translationData.name || "",
+            sub_name: translationData.sub_name || "",
+            description: translationData.description || "",
+            thumbnail: item.image || null,
+            status: item.status,
             createdAt: item.createdAt,
             updatedAt: item.updatedAt,
         }

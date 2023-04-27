@@ -2,6 +2,7 @@ import { BannerDTO } from "../dtos/banner.dto";
 import models from "../infra/sequelize/models";
 import { ApiFeatures } from "../utils/ApiFeatures";
 import { Op } from "sequelize";
+import Helper from "../utils/Helper";
 export class BannerService {
 
     public getList = async (query) => {
@@ -124,21 +125,20 @@ export class BannerService {
             const banner = await models.Banner.create({
                 ...body,
                 thumbnail: body.thumbnail ? body.thumbnail.id : null,
-            }, { transaction: t })
-                ;
+            }, { transaction: t });
 
-            const langs = ['vi', 'en', 'ja'];
-
-            langs.forEach(async (lang) => {
+            for (const lang of Helper.langs) {
                 await models.BannerTranslation.create({
                     ...body,
                     banner_id: banner.id,
                     locale: lang
                 }, { transaction: t });
-            });
+            }
 
+            await t.commit();
         } catch (error) {
             console.log(error);
+            await t.rollback();
         }
     }
 

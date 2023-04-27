@@ -149,6 +149,8 @@ export class CeoService {
                         console.log(error);
                         await t.rollback();
                     }
+
+                    await t.commit();
                 }
             }).catch(async (err) => {
                 console.log(err);
