@@ -362,3 +362,35 @@ TSError: ⨯ Unable to compile TypeScript:
     at Module.load (node:internal/modules/cjs/loader:1069:32)
     at Function.Module._load (node:internal/modules/cjs/loader:904:12)
     at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-28 00:49:24 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/services/categories.service.ts[0m:[93m142[0m:[93m17[0m - [91merror[0m[90m TS1308: [0m'await' expressions are only allowed within async functions and at the top levels of modules.
+
+[7m142[0m                 await t.rollback();
+[7m   [0m [91m                ~~~~~[0m
+
+  [96msrc/services/categories.service.ts[0m:[93m140[0m:[93m22[0m
+    [7m140[0m             }).catch((error) => {
+    [7m   [0m [96m                     ~~~~~~~~~~~~[0m
+    Did you mean to mark this function as 'async'?
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/services/categories.service.ts[0m:[93m142[0m:[93m17[0m - [91merror[0m[90m TS1308: [0m'await' expressions are only allowed within async functions and at the top levels of modules.
+
+[7m142[0m                 await t.rollback();
+[7m   [0m [91m                ~~~~~[0m
+
+  [96msrc/services/categories.service.ts[0m:[93m140[0m:[93m22[0m
+    [7m140[0m             }).catch((error) => {
+    [7m   [0m [96m                     ~~~~~~~~~~~~[0m
+    Did you mean to mark this function as 'async'?
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)

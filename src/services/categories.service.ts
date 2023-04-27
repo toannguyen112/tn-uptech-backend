@@ -113,37 +113,33 @@ export class CategoryService {
     }
 
     public store = async (body: any) => {
+
+        const t = await models.sequelize.transaction();
+
         return await models.Category.create({ ...body })
             .then(async (category: any) => {
 
                 if (category) {
-
                     try {
 
-                        const newItem = {
-                            ...body,
-                            slug: Helper.renderSlug(body.slug ? body.slug : body.name),
-                            custom_slug: Helper.renderSlug(body.custom_slug ? body.custom_slug : body.name),
+                        for (const lang of Helper.langs) {
+                            await models.CategoryTranslation.create({
+                                ...body,
+                                category_id: category.id,
+                                locale: lang
+                            }, { transaction: t });
                         }
 
-                        await models.CategoryTranslation.create({
-                            ...newItem, category_id: category.id,
-                            locale: 'vi'
-                        });
-
-                        await models.CategoryTranslation.create({
-                            ...newItem,
-                            slug: Helper.renderSlug(body.slug ? `en-${body.slug}` : `en-${body.name}`),
-                            custom_slug: Helper.renderSlug(body.custom_slug ? `en-${body.custom_slug}` : `en-${body.name}`),
-                            category_id: category.id,
-                            locale: 'en'
-                        });
-
                     } catch (error) {
-                        console.log((error));
-                        logger.error(JSON.stringify(error));
+                        console.log(error);
+                        await t.rollback();
                     }
+
+                    await t.commit();
                 }
+            }).catch(async (error) => {
+                console.log(error);
+                await t.rollback();
             });
     }
 
@@ -164,6 +160,9 @@ export class CategoryService {
     }
 
     public updateById = async (id, body: any) => {
+
+        const t = await models.sequelize.transaction();
+        
         return await models.Category.update({
             ...body
         }, { where: { id } },
@@ -171,11 +170,13 @@ export class CategoryService {
             .then(async (res) => {
                 try {
                     return await models.CategoryTranslation.update({
-                        name: body.name,
-                        description: body.description,
-                        slug: Helper.renderSlug(body.slug ? body.slug : body.name),
-                        custom_slug: Helper.renderSlug(body.custom_slug ? body.custom_slug : body.name),
-                    }, { where: { category_id: id, locale: global.lang } });
+                        ...body,
+                    }, {
+                        where: {
+                            category_id: id,
+                            locale: global.lang
+                        }
+                    });
                 } catch (error) {
                     console.log(error);
                 }
