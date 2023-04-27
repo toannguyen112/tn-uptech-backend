@@ -5,6 +5,9 @@ import models from "../infra/sequelize/models";
 import _ from 'lodash';
 import fs from 'fs-extra'
 export default class Helper {
+
+  public static langs = ['vi', 'en', 'ja'];
+  
   static randomString(length: number): string {
     var result: string = "";
     var characters: string = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";

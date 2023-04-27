@@ -4,6 +4,7 @@ import { Op } from "sequelize";
 import { logger } from "../utils/logger";
 
 import models from "../infra/sequelize/models";
+import Helper from "../utils/Helper";
 
 export class PostService {
 
@@ -106,7 +107,29 @@ export class PostService {
     public getDataOfCategory = async (category_slug: string) => {
         try {
 
-            const postMostView = await models.Post.findOne({});
+            const postMostView = await models.Post.findOne({
+                include: [
+                    {
+                        model: models.PostTranslation,
+                        as: "translations",
+                        required: true,
+                        where: { locale: global.lang }
+                    },
+                    {
+                        model: models.Category,
+                        as: "category",
+                        required: true,
+                        include: {
+                            model: models.CategoryTranslation,
+                            as: "translations",
+                            required: true,
+                            where: {
+                                locale: global.lang
+                            }
+                        }
+                    },
+                ]
+            });
 
             const rows = await models.Post.findAll({
                 where: { status: 'active' },
@@ -143,7 +166,7 @@ export class PostService {
                 listPost: rows.map((item: any) => {
                     return PostDTO.transform(item);
                 }),
-                postMostView
+                postMostView: PostDTO.transform(postMostView)
             }
 
         } catch (error) {
@@ -201,44 +224,26 @@ export class PostService {
 
         try {
             return await models.Post.create({
-                status: body.status,
-                ceo_id: body.ceo_id,
-                category_id: body.category_id,
-                isFeatured: body.isFeatured,
-                related: body.related,
-                images: body.images,
+                ...body,
                 thumbnail: body.thumbnail ? body.thumbnail.id : null,
                 banner: body.banner ? body.banner.id : null,
             }, { individualHooks: true }, { transaction: t }
             )
                 .then(async (post: any) => {
 
-                    if (post) {
-                        const postId = post.id;
-                        try {
-
+                    try {
+                        
+                        for (const lang of Helper.langs) {
                             await models.PostTranslation.create({
                                 ...body,
-                                post_id: postId,
-                                locale: 'vi'
+                                post_id: post.id,
+                                locale: lang
                             }, { transaction: t });
-
-                            await models.PostTranslation.create({
-                                ...body,
-                                post_id: postId,
-                                locale: 'en'
-                            }, { transaction: t });
-
-                            await models.PostTranslation.create({
-                                ...body,
-                                post_id: postId,
-                                locale: 'ja'
-                            }, { transaction: t });
-
-                        } catch (error) {
-                            console.log(error);
-                            logger.error(JSON.stringify(error));
                         }
+
+                    } catch (error) {
+                        console.log(error);
+                        logger.error(JSON.stringify(error));
                     }
 
                     await t.commit();
@@ -303,6 +308,69 @@ export class PostService {
         });
 
         return PostDTO.transformDetail(post);
+    }
+
+    public findByIdClient = async (id) => {
+
+        const post = await models.Post.findOne({
+            where: { id },
+            include: [
+                {
+                    model: models.Media,
+                    as: "banner_image",
+                    required: false,
+                },
+                {
+                    model: models.Ceo,
+                    as: "ceo",
+                    required: false,
+                    include: {
+                        model: models.CeoTranslation,
+                        as: "translations",
+                        required: true,
+                        where: {
+                            locale: global.lang,
+                            ceo_id: id
+                        }
+                    },
+                },
+                {
+                    model: models.PostTranslation,
+                    as: "translations",
+                    required: true,
+                    where: {
+                        locale: global.lang,
+                        post_id: id
+                    }
+                },
+            ]
+        });
+
+        let postRelated = [];
+
+        if (post.related && post.related.length) {
+            postRelated = await models.Post.findAll({
+                where: {
+                    id: {
+                        [Op.in]: post.related
+                    }
+                },
+                include: [
+                    {
+                        model: models.PostTranslation,
+                        as: "translations",
+                        required: true,
+                        where: {
+                            locale: global.lang,
+                            post_id: id
+                        }
+                    },
+                ]
+            });
+        }
+
+
+        return PostDTO.transformDetailClient({ ...post, postRelated });
     }
 
     public updateById = async (id, body) => {

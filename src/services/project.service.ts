@@ -95,32 +95,33 @@ export class ProjectService {
 
     public store = async (body) => {
 
+        const t = await models.sequelize.transaction();
+
         return await models.Project.create({
             ...body,
             thumbnail: body.thumbnail ? body.thumbnail.id : null,
             banner: body.banner ? body.banner.id : null,
-        }, { individualHooks: true }
+        }, { individualHooks: true },
+            { transaction: t }
         )
             .then(async (project: any) => {
 
                 if (project) {
-                    const projectId = project.id;
+                    try {
 
-                    await models.ProjectTranslation.create({
-                        ...body,
-                        slug: Helper.renderSlug(body.slug ? body.slug : body.name),
-                        custom_slug: Helper.renderSlug(body.custom_slug ? body.custom_slug : body.name),
-                        project_id: projectId,
-                        locale: 'vi'
-                    });
+                        for (const lang of Helper.langs) {
+                            await models.ProjectTranslation.create({
+                                ...body,
+                                project_id: project.id,
+                                locale: lang
+                            }, { transaction: t });
+                        }
 
-                    await models.ProjectTranslation.create({
-                        ...body,
-                        slug: Helper.renderSlug(body.slug ? `en-${body.slug}` : `en-${body.name}`),
-                        custom_slug: Helper.renderSlug(body.custom_slug ? `en-${body.custom_slug}` : `en-${body.name}`),
-                        project_id: projectId,
-                        locale: 'en'
-                    });
+                    } catch (error) {
+                        console.log(error);
+                    }
+
+                    await t.commit();
                 }
             });
     }
@@ -186,6 +187,8 @@ export class ProjectService {
 
     public updateById = async (id: string, body) => {
 
+        const t = await models.sequelize.transaction();
+
         return await models.Project.update({
             related: body.related,
             status: body.status,
@@ -206,20 +209,7 @@ export class ProjectService {
     public handleUpdate = async ({ project_id, lang = "vi", body }) => {
 
         try {
-            return await models.ProjectTranslation.update({
-                name: body.name,
-                content: body.content,
-                description: body.description,
-                meta_title: body.meta_title,
-                meta_description: body.meta_description,
-                meta_keyword: body.meta_keyword,
-                meta_robots: body.meta_robots,
-                canonica_link: body.canonica_link,
-                meta_image: body.meta_image,
-                meta_viewport: body.meta_viewport,
-                slug: Helper.renderSlug(body.slug ? body.slug : body.name),
-                custom_slug: Helper.renderSlug(body.custom_slug ? body.custom_slug : body.name),
-            },
+            return await models.ProjectTranslation.update({ ...body },
                 {
                     where: {
                         project_id,

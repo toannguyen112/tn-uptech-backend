@@ -3,7 +3,6 @@ import models from "../infra/sequelize/models";
 import { ApiFeatures } from "../utils/ApiFeatures";
 import { logger } from "../utils/logger";
 
-import Helper from "../utils/Helper";
 import { Op } from "sequelize";
 export class CeoService {
 
@@ -111,7 +110,7 @@ export class CeoService {
                         model: models.CeoTranslation,
                         as: "translations",
                         required: true,
-                        where: {locale: global.lang}
+                        where: { locale: global.lang }
                     },
                 ]
             });
@@ -128,10 +127,12 @@ export class CeoService {
 
     public store = async (body) => {
 
+        const t = await models.sequelize.transaction();
+
         return await models.Ceo.create({
             ...body,
             thumbnail: body.thumbnail ? body.thumbnail.id : null,
-        },)
+        }, { transaction: t })
             .then(async (ceo: any) => {
 
                 if (ceo) {
@@ -139,19 +140,21 @@ export class CeoService {
 
                     await models.CeoTranslation.create({
                         ...body,
-                        slug: Helper.renderSlug(body.slug ? body.slug : body.name),
-                        custom_slug: Helper.renderSlug(body.custom_slug ? body.custom_slug : body.name),
                         ceo_id: ceoId,
                         locale: 'vi'
-                    });
+                    }, { transaction: t });
 
                     await models.CeoTranslation.create({
                         ...body,
-                        slug: Helper.renderSlug(body.slug ? `en-${body.slug}` : `en-${body.name}`),
-                        custom_slug: Helper.renderSlug(body.custom_slug ? `en-${body.custom_slug}` : `en-${body.name}`),
                         ceo_id: ceoId,
                         locale: 'en'
-                    });
+                    }, { transaction: t });
+
+                    await models.CeoTranslation.create({
+                        ...body,
+                        ceo_id: ceoId,
+                        locale: 'ja'
+                    }, { transaction: t });
                 }
             });
     }
@@ -197,18 +200,8 @@ export class CeoService {
 
         try {
             return await models.CeoTranslation.update({
-                name: body.name,
-                detail: body.detail,
-                description: body.description,
-                slug: Helper.renderSlug(body.slug ? body.slug : body.name),
-                custom_slug: Helper.renderSlug(body.custom_slug ? body.custom_slug : body.name),
-            },
-                {
-                    where: {
-                        ceo_id,
-                        locale: lang
-                    }
-                });
+                ...body
+            }, { where: { ceo_id, locale: lang } });
         } catch (error) {
             console.log(error);
         }

@@ -1,2 +1,191 @@
 2023-04-27 21:06:22 error: Incorrect integer value: '' for column 'view' at row 1
 2023-04-27 21:08:38 error: Incorrect integer value: '' for column 'view' at row 1
+2023-04-27 23:06:18 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/services/ceo.service.ts[0m:[93m144[0m:[93m38[0m - [91merror[0m[90m TS2304: [0mCannot find name 't'.
+
+[7m144[0m                     },{ transaction: t });
+[7m   [0m [91m                                     ~[0m
+[96msrc/services/ceo.service.ts[0m:[93m150[0m:[93m38[0m - [91merror[0m[90m TS2304: [0mCannot find name 't'.
+
+[7m150[0m                     },{ transaction: t });
+[7m   [0m [91m                                     ~[0m
+[96msrc/services/ceo.service.ts[0m:[93m156[0m:[93m38[0m - [91merror[0m[90m TS2304: [0mCannot find name 't'.
+
+[7m156[0m                     },{ transaction: t });
+[7m   [0m [91m                                     ~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/services/ceo.service.ts[0m:[93m144[0m:[93m38[0m - [91merror[0m[90m TS2304: [0mCannot find name 't'.
+
+[7m144[0m                     },{ transaction: t });
+[7m   [0m [91m                                     ~[0m
+[96msrc/services/ceo.service.ts[0m:[93m150[0m:[93m38[0m - [91merror[0m[90m TS2304: [0mCannot find name 't'.
+
+[7m150[0m                     },{ transaction: t });
+[7m   [0m [91m                                     ~[0m
+[96msrc/services/ceo.service.ts[0m:[93m156[0m:[93m38[0m - [91merror[0m[90m TS2304: [0mCannot find name 't'.
+
+[7m156[0m                     },{ transaction: t });
+[7m   [0m [91m                                     ~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-27 23:25:05 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/dtos/post.dtos.ts[0m:[93m73[0m:[93m12[0m - [91merror[0m[90m TS2300: [0mDuplicate identifier 'transformDetail'.
+
+[7m73[0m     static transformDetail = (item) => {
+[7m  [0m [91m           ~~~~~~~~~~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/dtos/post.dtos.ts[0m:[93m73[0m:[93m12[0m - [91merror[0m[90m TS2300: [0mDuplicate identifier 'transformDetail'.
+
+[7m73[0m     static transformDetail = (item) => {
+[7m  [0m [91m           ~~~~~~~~~~~~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-27 23:38:07 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/route/post.route.ts[0m:[93m19[0m:[93m68[0m - [91merror[0m[90m TS2339: [0mProperty 'findByIdClient' does not exist on type 'PostController'.
+
+[7m19[0m         this.router.get(`${this.path}/findByIdClient/:id`, this.post.findByIdClient);
+[7m  [0m [91m                                                                   ~~~~~~~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/route/post.route.ts[0m:[93m19[0m:[93m68[0m - [91merror[0m[90m TS2339: [0mProperty 'findByIdClient' does not exist on type 'PostController'.
+
+[7m19[0m         this.router.get(`${this.path}/findByIdClient/:id`, this.post.findByIdClient);
+[7m  [0m [91m                                                                   ~~~~~~~~~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-27 23:38:38 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/modules/controllers/post.controller.ts[0m:[93m66[0m:[93m37[0m - [91merror[0m[90m TS2339: [0mProperty 'findByIdClient' does not exist on type 'PostService'.
+
+[7m66[0m             const data = await post.findByIdClient(req.params.id);
+[7m  [0m [91m                                    ~~~~~~~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/modules/controllers/post.controller.ts[0m:[93m66[0m:[93m37[0m - [91merror[0m[90m TS2339: [0mProperty 'findByIdClient' does not exist on type 'PostService'.
+
+[7m66[0m             const data = await post.findByIdClient(req.params.id);
+[7m  [0m [91m                                    ~~~~~~~~~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-27 23:39:09 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/modules/controllers/post.controller.ts[0m:[93m66[0m:[93m37[0m - [91merror[0m[90m TS2339: [0mProperty 'findByIdClient' does not exist on type 'PostService'.
+
+[7m66[0m             const data = await post.findByIdClient(req.params.id);
+[7m  [0m [91m                                    ~~~~~~~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/modules/controllers/post.controller.ts[0m:[93m66[0m:[93m37[0m - [91merror[0m[90m TS2339: [0mProperty 'findByIdClient' does not exist on type 'PostService'.
+
+[7m66[0m             const data = await post.findByIdClient(req.params.id);
+[7m  [0m [91m                                    ~~~~~~~~~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-27 23:39:40 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/modules/controllers/post.controller.ts[0m:[93m66[0m:[93m37[0m - [91merror[0m[90m TS2339: [0mProperty 'findByIdClient' does not exist on type 'PostService'.
+
+[7m66[0m             const data = await post.findByIdClient(req.params.id);
+[7m  [0m [91m                                    ~~~~~~~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/modules/controllers/post.controller.ts[0m:[93m66[0m:[93m37[0m - [91merror[0m[90m TS2339: [0mProperty 'findByIdClient' does not exist on type 'PostService'.
+
+[7m66[0m             const data = await post.findByIdClient(req.params.id);
+[7m  [0m [91m                                    ~~~~~~~~~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-27 23:44:35 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/services/post.service.ts[0m:[93m346[0m:[93m13[0m - [91merror[0m[90m TS2304: [0mCannot find name 'job'.
+
+[7m346[0m         if (job.related && job.related.length) {
+[7m   [0m [91m            ~~~[0m
+[96msrc/services/post.service.ts[0m:[93m346[0m:[93m28[0m - [91merror[0m[90m TS2304: [0mCannot find name 'job'.
+
+[7m346[0m         if (job.related && job.related.length) {
+[7m   [0m [91m                           ~~~[0m
+[96msrc/services/post.service.ts[0m:[93m350[0m:[93m34[0m - [91merror[0m[90m TS2304: [0mCannot find name 'job'.
+
+[7m350[0m                         [Op.in]: job.related
+[7m   [0m [91m                                 ~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/services/post.service.ts[0m:[93m346[0m:[93m13[0m - [91merror[0m[90m TS2304: [0mCannot find name 'job'.
+
+[7m346[0m         if (job.related && job.related.length) {
+[7m   [0m [91m            ~~~[0m
+[96msrc/services/post.service.ts[0m:[93m346[0m:[93m28[0m - [91merror[0m[90m TS2304: [0mCannot find name 'job'.
+
+[7m346[0m         if (job.related && job.related.length) {
+[7m   [0m [91m                           ~~~[0m
+[96msrc/services/post.service.ts[0m:[93m350[0m:[93m34[0m - [91merror[0m[90m TS2304: [0mCannot find name 'job'.
+
+[7m350[0m                         [Op.in]: job.related
+[7m   [0m [91m                                 ~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-27 23:46:47 error: post_translation is not associated to jobs!
+2023-04-27 23:47:10 error: Cannot read properties of undefined (reading 'map')
+2023-04-27 23:47:11 error: Cannot read properties of undefined (reading 'map')

@@ -61,6 +61,16 @@ export class PostController extends BaseController {
         }
     }
 
+    public async findByIdClient(req: Request, res: Response, next: NextFunction) {
+        try {
+            const data = await post.findByIdClient(req.params.id);
+            res.status(200).send({ message: "ok", data });
+        } catch (error) {
+            logger.error(error);
+            res.status(500).send(error);
+        }
+    }
+
     public async update(req: Request, res: Response, next: NextFunction) {
         try {
             const { id } = req.params;

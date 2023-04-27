@@ -1,3 +1,5 @@
+import Helper from "../utils/Helper";
+
 export class PostDTO {
     static transform = (item) => {
 
@@ -49,23 +51,37 @@ export class PostDTO {
 
             description: translationData.description || "",
             isFeatured: item.isFeatured || false,
+            posted_at: item.posted_at || null,
             status: item.status || 'inactive',
             content: translationData.content || "",
             thumbnail: item.image || null,
             banner: item.banner_image || null,
             related: item.related || [],
 
-            // seo 
+            ...Helper.FieldsSeo(translationData),
 
-            slug: translationData.slug || "",
-            custom_slug: translationData.custom_slug || "",
-            meta_title: translationData.meta_title || "",
-            meta_description: translationData.meta_description || "",
-            meta_keyword: translationData.meta_keyword || "",
-            meta_robots: translationData.meta_robots || "",
-            canonica_link: translationData.canonica_link || "",
-            meta_image: translationData.meta_image || "",
-            meta_viewport: translationData.meta_viewport || "",
+        }
+    }
+
+    static transformDetailClient = (item) => {
+
+        if (!item) return {};
+        const translationData = item.translations[0];
+
+        return {
+            id: item.id,
+            name: translationData.name || "",
+            ceo: item.ceo,
+
+            content: translationData.content || "",
+            banner: item.banner_image || null,
+            posted_at: item.posted_at,
+
+            related: item.postRelated.map((item) => {
+                return this.transform(item)
+            }) || [],
+
+            ...Helper.FieldsSeo(translationData),
 
         }
     }

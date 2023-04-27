@@ -1,0 +1,364 @@
+2023-04-28 00:31:58 error: {"name":"SequelizeDatabaseError","parent":{"code":"ER_TRUNCATED_WRONG_VALUE","errno":1292,"sqlState":"22007","sqlMessage":"Incorrect datetime value: 'Invalid date' for column 'createdAt' at row 1","sql":"UPDATE `categories` SET `type`=?,`status`=?,`id`=?,`createdAt`=?,`updatedAt`=? WHERE `id` = ?","parameters":["post","active",1,"Invalid date","2023-04-27 17:29:12","1"]},"original":{"code":"ER_TRUNCATED_WRONG_VALUE","errno":1292,"sqlState":"22007","sqlMessage":"Incorrect datetime value: 'Invalid date' for column 'createdAt' at row 1","sql":"UPDATE `categories` SET `type`=?,`status`=?,`id`=?,`createdAt`=?,`updatedAt`=? WHERE `id` = ?","parameters":["post","active",1,"Invalid date","2023-04-27 17:29:12","1"]},"sql":"UPDATE `categories` SET `type`=?,`status`=?,`id`=?,`createdAt`=?,`updatedAt`=? WHERE `id` = ?","parameters":["post","active",1,"Invalid date","2023-04-27 17:29:12","1"]}
+2023-04-28 00:32:00 error: {"name":"SequelizeDatabaseError","parent":{"code":"ER_TRUNCATED_WRONG_VALUE","errno":1292,"sqlState":"22007","sqlMessage":"Incorrect datetime value: 'Invalid date' for column 'createdAt' at row 1","sql":"UPDATE `categories` SET `type`=?,`status`=?,`id`=?,`createdAt`=?,`updatedAt`=? WHERE `id` = ?","parameters":["post","active",1,"Invalid date","2023-04-27 17:29:12","1"]},"original":{"code":"ER_TRUNCATED_WRONG_VALUE","errno":1292,"sqlState":"22007","sqlMessage":"Incorrect datetime value: 'Invalid date' for column 'createdAt' at row 1","sql":"UPDATE `categories` SET `type`=?,`status`=?,`id`=?,`createdAt`=?,`updatedAt`=? WHERE `id` = ?","parameters":["post","active",1,"Invalid date","2023-04-27 17:29:12","1"]},"sql":"UPDATE `categories` SET `type`=?,`status`=?,`id`=?,`createdAt`=?,`updatedAt`=? WHERE `id` = ?","parameters":["post","active",1,"Invalid date","2023-04-27 17:29:12","1"]}
+2023-04-28 00:32:03 error: {"name":"SequelizeDatabaseError","parent":{"code":"ER_TRUNCATED_WRONG_VALUE","errno":1292,"sqlState":"22007","sqlMessage":"Incorrect datetime value: 'Invalid date' for column 'createdAt' at row 1","sql":"UPDATE `categories` SET `type`=?,`status`=?,`id`=?,`createdAt`=?,`updatedAt`=? WHERE `id` = ?","parameters":["post","active",2,"Invalid date","2023-04-27 17:29:12","2"]},"original":{"code":"ER_TRUNCATED_WRONG_VALUE","errno":1292,"sqlState":"22007","sqlMessage":"Incorrect datetime value: 'Invalid date' for column 'createdAt' at row 1","sql":"UPDATE `categories` SET `type`=?,`status`=?,`id`=?,`createdAt`=?,`updatedAt`=? WHERE `id` = ?","parameters":["post","active",2,"Invalid date","2023-04-27 17:29:12","2"]},"sql":"UPDATE `categories` SET `type`=?,`status`=?,`id`=?,`createdAt`=?,`updatedAt`=? WHERE `id` = ?","parameters":["post","active",2,"Invalid date","2023-04-27 17:29:12","2"]}
+2023-04-28 00:33:04 error: {}
+2023-04-28 00:33:04 error: {}
+2023-04-28 00:33:05 error: {}
+2023-04-28 00:35:00 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/services/post.service.ts[0m:[93m246[0m:[93m33[0m - [91merror[0m[90m TS1308: [0m'await' expressions are only allowed within async functions and at the top levels of modules.
+
+[7m246[0m                                 await models.PostTranslation.create({
+[7m   [0m [91m                                ~~~~~[0m
+
+  [96msrc/services/post.service.ts[0m:[93m244[0m:[93m42[0m
+    [7m244[0m                             lang.forEach(element => {
+    [7m   [0m [96m                                         ~~~~~~~~~~~~[0m
+    Did you mean to mark this function as 'async'?
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/services/post.service.ts[0m:[93m246[0m:[93m33[0m - [91merror[0m[90m TS1308: [0m'await' expressions are only allowed within async functions and at the top levels of modules.
+
+[7m246[0m                                 await models.PostTranslation.create({
+[7m   [0m [91m                                ~~~~~[0m
+
+  [96msrc/services/post.service.ts[0m:[93m244[0m:[93m42[0m
+    [7m244[0m                             lang.forEach(element => {
+    [7m   [0m [96m                                         ~~~~~~~~~~~~[0m
+    Did you mean to mark this function as 'async'?
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-28 00:35:22 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/services/post.service.ts[0m:[93m245[0m:[93m33[0m - [91merror[0m[90m TS1308: [0m'await' expressions are only allowed within async functions and at the top levels of modules.
+
+[7m245[0m                                 await models.PostTranslation.create({
+[7m   [0m [91m                                ~~~~~[0m
+
+  [96msrc/services/post.service.ts[0m:[93m244[0m:[93m43[0m
+    [7m244[0m                             langs.forEach(lang => {
+    [7m   [0m [96m                                          ~~~~~~~~~[0m
+    Did you mean to mark this function as 'async'?
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/services/post.service.ts[0m:[93m245[0m:[93m33[0m - [91merror[0m[90m TS1308: [0m'await' expressions are only allowed within async functions and at the top levels of modules.
+
+[7m245[0m                                 await models.PostTranslation.create({
+[7m   [0m [91m                                ~~~~~[0m
+
+  [96msrc/services/post.service.ts[0m:[93m244[0m:[93m43[0m
+    [7m244[0m                             langs.forEach(lang => {
+    [7m   [0m [96m                                          ~~~~~~~~~[0m
+    Did you mean to mark this function as 'async'?
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-28 00:35:53 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/services/post.service.ts[0m:[93m244[0m:[93m33[0m - [91merror[0m[90m TS1308: [0m'await' expressions are only allowed within async functions and at the top levels of modules.
+
+[7m244[0m                                 await models.PostTranslation.create({
+[7m   [0m [91m                                ~~~~~[0m
+
+  [96msrc/services/post.service.ts[0m:[93m243[0m:[93m43[0m
+    [7m243[0m                             langs.forEach(lang => {
+    [7m   [0m [96m                                          ~~~~~~~~~[0m
+    Did you mean to mark this function as 'async'?
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/services/post.service.ts[0m:[93m244[0m:[93m33[0m - [91merror[0m[90m TS1308: [0m'await' expressions are only allowed within async functions and at the top levels of modules.
+
+[7m244[0m                                 await models.PostTranslation.create({
+[7m   [0m [91m                                ~~~~~[0m
+
+  [96msrc/services/post.service.ts[0m:[93m243[0m:[93m43[0m
+    [7m243[0m                             langs.forEach(lang => {
+    [7m   [0m [96m                                          ~~~~~~~~~[0m
+    Did you mean to mark this function as 'async'?
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-28 00:36:21 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/services/post.service.ts[0m:[93m243[0m:[93m48[0m - [91merror[0m[90m TS2552: [0mCannot find name 'files'. Did you mean 'file'?
+
+[7m243[0m                             for (const file of files) {
+[7m   [0m [91m                                               ~~~~~[0m
+
+  [96msrc/services/post.service.ts[0m:[93m243[0m:[93m40[0m
+    [7m243[0m                             for (const file of files) {
+    [7m   [0m [96m                                       ~~~~[0m
+    'file' is declared here.
+[96msrc/services/post.service.ts[0m:[93m244[0m:[93m56[0m - [91merror[0m[90m TS2304: [0mCannot find name 'fs'.
+
+[7m244[0m                                 const contents = await fs.readFile(file, 'utf8');
+[7m   [0m [91m                                                       ~~[0m
+[96msrc/services/post.service.ts[0m:[93m249[0m:[93m33[0m - [91merror[0m[90m TS1308: [0m'await' expressions are only allowed within async functions and at the top levels of modules.
+
+[7m249[0m                                 await models.PostTranslation.create({
+[7m   [0m [91m                                ~~~~~[0m
+
+  [96msrc/services/post.service.ts[0m:[93m248[0m:[93m43[0m
+    [7m248[0m                             langs.forEach(lang => {
+    [7m   [0m [96m                                          ~~~~~~~~~[0m
+    Did you mean to mark this function as 'async'?
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/services/post.service.ts[0m:[93m243[0m:[93m48[0m - [91merror[0m[90m TS2552: [0mCannot find name 'files'. Did you mean 'file'?
+
+[7m243[0m                             for (const file of files) {
+[7m   [0m [91m                                               ~~~~~[0m
+
+  [96msrc/services/post.service.ts[0m:[93m243[0m:[93m40[0m
+    [7m243[0m                             for (const file of files) {
+    [7m   [0m [96m                                       ~~~~[0m
+    'file' is declared here.
+[96msrc/services/post.service.ts[0m:[93m244[0m:[93m56[0m - [91merror[0m[90m TS2304: [0mCannot find name 'fs'.
+
+[7m244[0m                                 const contents = await fs.readFile(file, 'utf8');
+[7m   [0m [91m                                                       ~~[0m
+[96msrc/services/post.service.ts[0m:[93m249[0m:[93m33[0m - [91merror[0m[90m TS1308: [0m'await' expressions are only allowed within async functions and at the top levels of modules.
+
+[7m249[0m                                 await models.PostTranslation.create({
+[7m   [0m [91m                                ~~~~~[0m
+
+  [96msrc/services/post.service.ts[0m:[93m248[0m:[93m43[0m
+    [7m248[0m                             langs.forEach(lang => {
+    [7m   [0m [96m                                          ~~~~~~~~~[0m
+    Did you mean to mark this function as 'async'?
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-28 00:40:12 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/services/post.service.ts[0m:[93m227[0m:[93m17[0m - [91merror[0m[90m TS1005: [0m',' expected.
+
+[7m227[0m                 thumbnail: body.thumbnail ? body.thumbnail.id : null,
+[7m   [0m [91m                ~~~~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/services/post.service.ts[0m:[93m227[0m:[93m17[0m - [91merror[0m[90m TS1005: [0m',' expected.
+
+[7m227[0m                 thumbnail: body.thumbnail ? body.thumbnail.id : null,
+[7m   [0m [91m                ~~~~~~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-28 00:42:02 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/services/project.service.ts[0m:[93m131[0m:[93m42[0m - [91merror[0m[90m TS2304: [0mCannot find name 'post'.
+
+[7m131[0m                                 post_id: post.id,
+[7m   [0m [91m                                         ~~~~[0m
+[96msrc/services/project.service.ts[0m:[93m133[0m:[93m47[0m - [91merror[0m[90m TS2304: [0mCannot find name 't'.
+
+[7m133[0m                             }, { transaction: t });
+[7m   [0m [91m                                              ~[0m
+[96msrc/services/project.service.ts[0m:[93m138[0m:[93m25[0m - [91merror[0m[90m TS2304: [0mCannot find name 'logger'.
+
+[7m138[0m                         logger.error(JSON.stringify(error));
+[7m   [0m [91m                        ~~~~~~[0m
+[96msrc/services/project.service.ts[0m:[93m141[0m:[93m27[0m - [91merror[0m[90m TS2304: [0mCannot find name 't'.
+
+[7m141[0m                     await t.commit();
+[7m   [0m [91m                          ~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/services/project.service.ts[0m:[93m131[0m:[93m42[0m - [91merror[0m[90m TS2304: [0mCannot find name 'post'.
+
+[7m131[0m                                 post_id: post.id,
+[7m   [0m [91m                                         ~~~~[0m
+[96msrc/services/project.service.ts[0m:[93m133[0m:[93m47[0m - [91merror[0m[90m TS2304: [0mCannot find name 't'.
+
+[7m133[0m                             }, { transaction: t });
+[7m   [0m [91m                                              ~[0m
+[96msrc/services/project.service.ts[0m:[93m138[0m:[93m25[0m - [91merror[0m[90m TS2304: [0mCannot find name 'logger'.
+
+[7m138[0m                         logger.error(JSON.stringify(error));
+[7m   [0m [91m                        ~~~~~~[0m
+[96msrc/services/project.service.ts[0m:[93m141[0m:[93m27[0m - [91merror[0m[90m TS2304: [0mCannot find name 't'.
+
+[7m141[0m                     await t.commit();
+[7m   [0m [91m                          ~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-28 00:42:11 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/services/project.service.ts[0m:[93m133[0m:[93m47[0m - [91merror[0m[90m TS2304: [0mCannot find name 't'.
+
+[7m133[0m                             }, { transaction: t });
+[7m   [0m [91m                                              ~[0m
+[96msrc/services/project.service.ts[0m:[93m138[0m:[93m25[0m - [91merror[0m[90m TS2304: [0mCannot find name 'logger'.
+
+[7m138[0m                         logger.error(JSON.stringify(error));
+[7m   [0m [91m                        ~~~~~~[0m
+[96msrc/services/project.service.ts[0m:[93m141[0m:[93m27[0m - [91merror[0m[90m TS2304: [0mCannot find name 't'.
+
+[7m141[0m                     await t.commit();
+[7m   [0m [91m                          ~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/services/project.service.ts[0m:[93m133[0m:[93m47[0m - [91merror[0m[90m TS2304: [0mCannot find name 't'.
+
+[7m133[0m                             }, { transaction: t });
+[7m   [0m [91m                                              ~[0m
+[96msrc/services/project.service.ts[0m:[93m138[0m:[93m25[0m - [91merror[0m[90m TS2304: [0mCannot find name 'logger'.
+
+[7m138[0m                         logger.error(JSON.stringify(error));
+[7m   [0m [91m                        ~~~~~~[0m
+[96msrc/services/project.service.ts[0m:[93m141[0m:[93m27[0m - [91merror[0m[90m TS2304: [0mCannot find name 't'.
+
+[7m141[0m                     await t.commit();
+[7m   [0m [91m                          ~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-28 00:42:23 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/services/project.service.ts[0m:[93m141[0m:[93m25[0m - [91merror[0m[90m TS2304: [0mCannot find name 'logger'.
+
+[7m141[0m                         logger.error(JSON.stringify(error));
+[7m   [0m [91m                        ~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/services/project.service.ts[0m:[93m141[0m:[93m25[0m - [91merror[0m[90m TS2304: [0mCannot find name 'logger'.
+
+[7m141[0m                         logger.error(JSON.stringify(error));
+[7m   [0m [91m                        ~~~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-28 00:43:23 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/utils/Helper.ts[0m:[93m9[0m:[93m16[0m - [91merror[0m[90m TS2552: [0mCannot find name 'stirng'. Did you mean 'string'?
+
+[7m9[0m   public langs:stirng[] = ['vi', 'en', 'ja'];
+[7m [0m [91m               ~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/utils/Helper.ts[0m:[93m9[0m:[93m16[0m - [91merror[0m[90m TS2552: [0mCannot find name 'stirng'. Did you mean 'string'?
+
+[7m9[0m   public langs:stirng[] = ['vi', 'en', 'ja'];
+[7m [0m [91m               ~~~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-28 00:43:46 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/services/project.service.ts[0m:[93m130[0m:[93m44[0m - [91merror[0m[90m TS2552: [0mCannot find name 'langs'. Did you mean 'lang'?
+
+[7m130[0m                         for (const lang of langs) {
+[7m   [0m [91m                                           ~~~~~[0m
+
+  [96msrc/services/project.service.ts[0m:[93m130[0m:[93m36[0m
+    [7m130[0m                         for (const lang of langs) {
+    [7m   [0m [96m                                   ~~~~[0m
+    'lang' is declared here.
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/services/project.service.ts[0m:[93m130[0m:[93m44[0m - [91merror[0m[90m TS2552: [0mCannot find name 'langs'. Did you mean 'lang'?
+
+[7m130[0m                         for (const lang of langs) {
+[7m   [0m [91m                                           ~~~~~[0m
+
+  [96msrc/services/project.service.ts[0m:[93m130[0m:[93m36[0m
+    [7m130[0m                         for (const lang of langs) {
+    [7m   [0m [96m                                   ~~~~[0m
+    'lang' is declared here.
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-28 00:43:54 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/services/project.service.ts[0m:[93m130[0m:[93m51[0m - [91merror[0m[90m TS2339: [0mProperty 'langs' does not exist on type 'typeof Helper'.
+
+[7m130[0m                         for (const lang of Helper.langs) {
+[7m   [0m [91m                                                  ~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/services/project.service.ts[0m:[93m130[0m:[93m51[0m - [91merror[0m[90m TS2339: [0mProperty 'langs' does not exist on type 'typeof Helper'.
+
+[7m130[0m                         for (const lang of Helper.langs) {
+[7m   [0m [91m                                                  ~~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
