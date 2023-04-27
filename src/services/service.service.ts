@@ -4,6 +4,7 @@ import { Op } from "sequelize";
 import { logger } from "../utils/logger";
 import models from "../infra/sequelize/models";
 import { ServiceDTO } from "../dtos/service.dtos";
+import Helper from "../utils/Helper";
 export class ServiceService {
 
     public getList = async (query) => {
@@ -137,35 +138,26 @@ export class ServiceService {
                 { ...body },
                 { individualHooks: true },
                 { transaction: t }
-            )
+            );
 
-            const serviceId = service.id;
+            try {
 
-            const newItem = {
-                ...body,
+                for (const lang of Helper.langs) {
+                    await models.ServiceTranslation.create({
+                        ...body,
+                        service_id: service.id,
+                        locale: lang
+                    }, { transaction: t });
+                }
+
+            } catch (error) {
+                console.log(error);
+                await t.rollback();
             }
 
-            await models.ServiceTranslation.create({
-                ...newItem,
-                service_id: serviceId,
-                locale: 'vi'
-            },
-                { transaction: t });
+            await t.commit();
 
-            await models.ServiceTranslation.create({
-                ...newItem,
-                service_id: serviceId,
-                locale: 'en'
-            },
-                { transaction: t });
-
-            await models.ServiceTranslation.create({
-                ...newItem,
-                service_id: serviceId,
-                locale: 'ja'
-            },
-                { transaction: t });
-
+            return service;
         } catch (error) {
             console.log(error);
             await t.rollback();

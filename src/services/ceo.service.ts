@@ -1,6 +1,7 @@
 import { CeoDTO } from "../dtos/ceo.dto";
 import models from "../infra/sequelize/models";
 import { ApiFeatures } from "../utils/ApiFeatures";
+import Helper from "../utils/Helper";
 import { logger } from "../utils/logger";
 
 import { Op } from "sequelize";
@@ -134,28 +135,24 @@ export class CeoService {
             thumbnail: body.thumbnail ? body.thumbnail.id : null,
         }, { transaction: t })
             .then(async (ceo: any) => {
-
                 if (ceo) {
-                    const ceoId = ceo.id;
+                    try {
+                        for (const lang of Helper.langs) {
+                            await models.CeoTranslation.create({
+                                ...body,
+                                ceo_id: ceo.id,
+                                locale: lang
+                            }, { transaction: t });
+                        }
 
-                    await models.CeoTranslation.create({
-                        ...body,
-                        ceo_id: ceoId,
-                        locale: 'vi'
-                    }, { transaction: t });
-
-                    await models.CeoTranslation.create({
-                        ...body,
-                        ceo_id: ceoId,
-                        locale: 'en'
-                    }, { transaction: t });
-
-                    await models.CeoTranslation.create({
-                        ...body,
-                        ceo_id: ceoId,
-                        locale: 'ja'
-                    }, { transaction: t });
+                    } catch (error) {
+                        console.log(error);
+                        await t.rollback();
+                    }
                 }
+            }).catch(async (err) => {
+                console.log(err);
+                await t.rollback();
             });
     }
 
