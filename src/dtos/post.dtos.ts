@@ -27,7 +27,7 @@ export class PostDTO {
             isFeatured: item.isFeatured,
             status: item.status,
             content: translationData.content || "",
-            thumbnail: item.image,
+            thumbnail: item.image || null,
             createdAt: item.createdAt,
             updatedAt: item.updatedAt,
         }

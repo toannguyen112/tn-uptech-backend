@@ -103,6 +103,56 @@ export class PostService {
         }
     }
 
+    public getDataOfCategory = async (category_slug: string) => {
+        try {
+
+            const postMostView = await models.Post.findOne({});
+
+            const rows = await models.Post.findAll({
+                where: {status: 'active'},
+                include: [
+                    {
+                        model: models.Media,
+                        as: "image",
+                        required: false,
+                    },
+                    {
+                        model: models.Category,
+                        as: "category",
+                        required: true,
+                        include: {
+                            model: models.CategoryTranslation,
+                            as: "translations",
+                            required: true,
+                            where: {
+                                slug: category_slug,
+                                locale: global.lang
+                            }
+                        }
+                    },
+                    {
+                        model: models.PostTranslation,
+                        as: "translations",
+                        required: true,
+                        where: { locale: global.lang }
+                    },
+                ]
+            });
+
+            return {
+                listPost: rows.map((item: any) => {
+                    return PostDTO.transform(item);
+                }),
+                postMostView
+            }
+
+        } catch (error) {
+            console.log(error);
+            logger.error(JSON.stringify(error));
+        }
+
+    }
+
     public getListFeatured = async () => {
         try {
 
@@ -159,7 +209,7 @@ export class PostService {
                 images: body.images,
                 thumbnail: body.thumbnail ? body.thumbnail.id : null,
                 banner: body.banner ? body.banner.id : null,
-            }, { individualHooks: true },{ transaction: t }
+            }, { individualHooks: true }, { transaction: t }
             )
                 .then(async (post: any) => {
 
@@ -171,13 +221,13 @@ export class PostService {
                                 ...body,
                                 post_id: postId,
                                 locale: 'vi'
-                            },{ transaction: t });
+                            }, { transaction: t });
 
                             await models.PostTranslation.create({
                                 ...body,
                                 post_id: postId,
                                 locale: 'en'
-                            },{ transaction: t });
+                            }, { transaction: t });
 
                         } catch (error) {
                             console.log(error);

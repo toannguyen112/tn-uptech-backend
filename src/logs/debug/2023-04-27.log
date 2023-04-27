@@ -1,0 +1,7 @@
+2023-04-27 09:04:34 info: [0mOPTIONS /admins/profile [32m204[0m 0.737 ms - 0[0m
+2023-04-27 09:04:35 info: [0mGET /categories? [32m200[0m 1129.514 ms - 356[0m
+2023-04-27 09:04:35 info: [0mGET /posts?page=1&page_size=10 [36m304[0m 224.306 ms - -[0m
+2023-04-27 09:04:35 info: [0mGET /posts? [32m200[0m 394.655 ms - 424[0m
+2023-04-27 09:04:35 info: [0mGET /posts/show/3 [36m304[0m 1479.041 ms - -[0m
+2023-04-27 09:04:35 info: [0mGET /admins/profile [36m304[0m 1236.270 ms - -[0m
+2023-04-27 09:04:35 info: [0mGET /admins/profile [36m304[0m 11.254 ms - -[0m

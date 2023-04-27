@@ -66,10 +66,10 @@ module.exports = function (sequelize, DataTypes) {
                 defaultValue: new Date(),
             },
 
-            // view: {
-            //     type: DataTypes.INTEGER,
-            //     defaultValue: 0
-            // },
+            view: {
+                type: DataTypes.INTEGER,
+                defaultValue: 0
+            },
 
             createdAt: {
                 type: DataTypes.DATE,
