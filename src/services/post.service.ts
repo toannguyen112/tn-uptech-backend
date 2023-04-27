@@ -109,7 +109,7 @@ export class PostService {
             const postMostView = await models.Post.findOne({});
 
             const rows = await models.Post.findAll({
-                where: {status: 'active'},
+                where: { status: 'active' },
                 include: [
                     {
                         model: models.Media,
@@ -227,6 +227,12 @@ export class PostService {
                                 ...body,
                                 post_id: postId,
                                 locale: 'en'
+                            }, { transaction: t });
+
+                            await models.PostTranslation.create({
+                                ...body,
+                                post_id: postId,
+                                locale: 'ja'
                             }, { transaction: t });
 
                         } catch (error) {
