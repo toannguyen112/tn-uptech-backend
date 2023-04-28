@@ -26,18 +26,18 @@ export default class Helper {
     return dayjs(date).format(format);
   }
 
-  // public static getNodesFlatten = (nodes: any) => {
+  public static getNodesFlatten = (nodes: any) => {
 
-  //   let children: any = [];
-  //   nodes.map((m: any) => {
-  //     if (m.children && m.children.length) {
-  //       children = [...children, ...m.children];
-  //     }
-  //     return m;
-  //   });
+    let children: any = [];
+    nodes.map((m: any) => {
+      if (m.children && m.children.length) {
+        children = [...children, ...m.children];
+      }
+      return m;
+    });
 
-  //   return nodes.concat(children.length ? getNodesFlatten(children) : children);
-  // };
+    return nodes.concat(children.length ? Helper.getNodesFlatten(children) : children);
+  };
 
   public static generateToken(model: any, dataObject: any = 'admin') {
 

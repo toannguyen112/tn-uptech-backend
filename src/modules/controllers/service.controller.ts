@@ -19,6 +19,17 @@ export class ServiceController extends BaseController {
         }
     }
 
+    public async getListService(req: Request, res: Response, next: NextFunction) {
+
+        try {
+            const data = await service.getListService();
+            res.status(200).send({ message: "ok", data });
+        } catch (error) {
+            logger.error(error);
+            res.status(500).send(error.message);
+        }
+    }
+
     public async getNav(req: Request, res: Response, next: NextFunction) {
 
         try {

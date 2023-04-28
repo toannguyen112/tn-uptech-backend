@@ -129,6 +129,66 @@ export class ServiceService {
         }
     }
 
+    public getListService = async () => {
+
+        try {
+            const rows = await models.Service.findAll({
+                where: { parent_id: 0 },
+                include: [
+                    {
+                        model: models.ServiceTranslation,
+                        as: "translations",
+                        required: true,
+                        where: {
+                            locale: global.lang,
+                        }
+                    },
+                    {
+                        model: models.Service,
+                        as: "children",
+                        include: [
+                            {
+                                model: models.ServiceTranslation,
+                                as: "translations",
+                                required: true,
+                                where: {
+                                    locale: global.lang,
+                                },
+                            },
+                            {
+                                model: models.Media,
+                                as: "image",
+                                required: false,
+                            },
+                        ]
+                    }
+                ]
+            });
+
+            const data = rows.map((item) => {
+                return {
+                    id: item.id,
+                    name: item.translations[0].name,
+                    slug: item.translations[0].slug,
+                    thumbnail: item.image ? item.image.path : "",
+                    children: item.children.map((item) => {
+                        return {
+                            id: item.id,
+                            thumbnail: item.image ? item.image.path : "",
+                            name: item.translations[0].name,
+                            slug: item.translations[0].slug,
+                        }
+                    })
+                }
+            });
+
+            return Helper.getNodesFlatten(data);
+
+        } catch (error) {
+            console.log(error);
+        }
+    }
+
     public store = async (body) => {
 
         const t = await models.sequelize.transaction();

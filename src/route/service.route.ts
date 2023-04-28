@@ -13,6 +13,7 @@ export class ServiceRoute implements Routes {
 
     private initializeRoutes() {
         this.router.get(`${this.path}`, this.service.index);
+        this.router.get(`${this.path}/getListService`, this.service.getListService);
         this.router.get(`${this.path}/nav`, this.service.getNav);
         this.router.post(`${this.path}/create`, this.service.create);
         this.router.get(`${this.path}/show/:id`, this.service.show);

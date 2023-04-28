@@ -1418,3 +1418,137 @@
 2023-04-28 19:16:35 info: [0mGET /skills/getLists [33m404[0m 15.678 ms - 154[0m
 2023-04-28 19:16:40 info: [0mOPTIONS /skills/getLists [32m204[0m 1.124 ms - 0[0m
 2023-04-28 19:16:40 info: [0mGET /skills/getLists [33m404[0m 5.338 ms - 154[0m
+2023-04-28 19:17:11 info: [0mGET /categories/post [36m304[0m 72.132 ms - -[0m
+2023-04-28 19:17:11 info: [0mGET /posts/getPageAll [36m304[0m 104.789 ms - -[0m
+2023-04-28 19:17:16 info: [0mGET /categories/post [36m304[0m 31.711 ms - -[0m
+2023-04-28 19:17:16 info: [0mGET /posts/getPageAll [36m304[0m 82.278 ms - -[0m
+2023-04-28 19:17:19 info: [0mGET /categories/post [36m304[0m 8.114 ms - -[0m
+2023-04-28 19:17:20 info: [0mGET /posts/getPageAll [36m304[0m 71.486 ms - -[0m
+2023-04-28 19:17:33 info: [0mGET /categories/post [36m304[0m 67.978 ms - -[0m
+2023-04-28 19:17:33 info: [0mGET /posts/getPageAll [36m304[0m 344.983 ms - -[0m
+2023-04-28 19:17:58 info: [0mGET /jobs/getListFeatured [36m304[0m 48.116 ms - -[0m
+2023-04-28 19:18:06 info: [0mGET /categories/post [36m304[0m 38.857 ms - -[0m
+2023-04-28 19:18:06 info: [0mGET /posts/getPageAll [36m304[0m 113.798 ms - -[0m
+2023-04-28 19:18:06 info: [0mGET /branchs/getListBranch [36m304[0m 16.176 ms - -[0m
+2023-04-28 19:18:06 info: [0mGET /projects [36m304[0m 68.086 ms - -[0m
+2023-04-28 19:18:07 info: [0mGET /categories/post [36m304[0m 11.013 ms - -[0m
+2023-04-28 19:18:07 info: [0mGET /posts/getPageAll [36m304[0m 45.058 ms - -[0m
+2023-04-28 19:18:08 info: [0mGET /branchs/getListBranch [36m304[0m 84.896 ms - -[0m
+2023-04-28 19:18:08 info: [0mGET /projects [36m304[0m 63.903 ms - -[0m
+2023-04-28 19:18:16 info: [0mGET /posts/getListFeatured [36m304[0m 73.056 ms - -[0m
+2023-04-28 19:18:16 info: [0mGET /services/nav [36m304[0m 70.843 ms - -[0m
+2023-04-28 19:18:56 info: [0mGET /categories/post [36m304[0m 49.628 ms - -[0m
+2023-04-28 19:18:56 info: [0mGET /posts/getPageAll [36m304[0m 116.762 ms - -[0m
+2023-04-28 19:18:58 info: [0mGET /categories/post [36m304[0m 12.165 ms - -[0m
+2023-04-28 19:18:58 info: [0mGET /posts/category/android [36m304[0m 33.419 ms - -[0m
+2023-04-28 19:18:59 info: [0mGET /posts/category/website [36m304[0m 19.035 ms - -[0m
+2023-04-28 19:18:59 info: [0mGET /categories/post [36m304[0m 8.092 ms - -[0m
+2023-04-28 19:18:59 info: [0mGET /posts/getPageAll [36m304[0m 40.726 ms - -[0m
+2023-04-28 19:19:01 info: [0mGET /branchs/getListBranch [36m304[0m 29.390 ms - -[0m
+2023-04-28 19:19:01 info: [0mGET /projects [36m304[0m 44.750 ms - -[0m
+2023-04-28 19:20:59 info: [0mGET /services/nav [36m304[0m 124.174 ms - -[0m
+2023-04-28 19:20:59 info: [0mGET /branchs/getListBranch [36m304[0m 78.084 ms - -[0m
+2023-04-28 19:20:59 info: [0mGET /projects [36m304[0m 113.380 ms - -[0m
+2023-04-28 19:22:42 info: [0mGET /branchs/getListBranch [36m304[0m 773.069 ms - -[0m
+2023-04-28 19:22:42 info: [0mGET /projects [36m304[0m 916.311 ms - -[0m
+2023-04-28 19:22:46 info: [0mGET /branchs/getListBranch [36m304[0m 31.811 ms - -[0m
+2023-04-28 19:22:46 info: [0mGET /projects [36m304[0m 63.201 ms - -[0m
+2023-04-28 19:23:06 info: [0mGET /branchs/getListBranch [36m304[0m 106.606 ms - -[0m
+2023-04-28 19:23:06 info: [0mGET /projects [36m304[0m 142.282 ms - -[0m
+2023-04-28 19:23:08 info: [0mGET /branchs/getListBranch [36m304[0m 15.378 ms - -[0m
+2023-04-28 19:23:08 info: [0mGET /projects [36m304[0m 30.620 ms - -[0m
+2023-04-28 19:23:39 info: [0mGET /branchs/getListBranch [36m304[0m 63.220 ms - -[0m
+2023-04-28 19:23:39 info: [0mGET /projects [36m304[0m 76.446 ms - -[0m
+2023-04-28 19:26:46 info: [0mGET /categories/post [36m304[0m 47.168 ms - -[0m
+2023-04-28 19:26:46 info: [0mGET /posts/getPageAll [36m304[0m 105.010 ms - -[0m
+2023-04-28 19:26:48 info: [0mGET /branchs/getListBranch [36m304[0m 12.873 ms - -[0m
+2023-04-28 19:26:48 info: [0mGET /projects [36m304[0m 23.246 ms - -[0m
+2023-04-28 19:26:58 info: [0mGET /services/nav [36m304[0m 48.409 ms - -[0m
+2023-04-28 19:27:01 info: [0mGET /services/nav [36m304[0m 21.504 ms - -[0m
+2023-04-28 19:27:02 info: [0mGET /branchs/getListBranch [36m304[0m 75.279 ms - -[0m
+2023-04-28 19:27:02 info: [0mGET /projects [36m304[0m 88.235 ms - -[0m
+2023-04-28 19:27:07 info: [0mOPTIONS /admins/profile [32m204[0m 0.569 ms - 0[0m
+2023-04-28 19:27:07 info: [0mGET /projects? [32m200[0m 28.263 ms - 674[0m
+2023-04-28 19:27:08 info: [0mGET /admins/profile [36m304[0m 88.059 ms - -[0m
+2023-04-28 19:27:08 info: [0mGET /projects?page=1&page_size=10 [36m304[0m 8.750 ms - -[0m
+2023-04-28 19:27:13 info: [0mOPTIONS /admins/profile [32m204[0m 0.358 ms - 0[0m
+2023-04-28 19:27:13 info: [0mGET /admins/profile [36m304[0m 61.028 ms - -[0m
+2023-04-28 19:27:13 info: [0mGET /projects/show/1 [32m200[0m 76.825 ms - 433[0m
+2023-04-28 19:27:13 info: [0mGET /projects?[object%20Object] [36m304[0m 46.659 ms - -[0m
+2023-04-28 19:27:13 info: [0mGET /branchs?[object%20Object] [36m304[0m 46.195 ms - -[0m
+2023-04-28 19:27:13 info: [0mGET /services?[object%20Object] [36m304[0m 47.095 ms - -[0m
+2023-04-28 19:27:14 info: [0mOPTIONS /projects/update/1 [32m204[0m 0.178 ms - 0[0m
+2023-04-28 19:27:14 info: [0mPUT /projects/update/1 [32m200[0m 431.176 ms - 2[0m
+2023-04-28 19:27:14 info: [0mGET /projects/show/1 [32m200[0m 39.330 ms - 433[0m
+2023-04-28 19:27:15 info: [0mGET /projects?[object%20Object] [32m200[0m 42.248 ms - 674[0m
+2023-04-28 19:27:15 info: [0mGET /branchs?[object%20Object] [36m304[0m 47.105 ms - -[0m
+2023-04-28 19:27:15 info: [0mGET /services?[object%20Object] [36m304[0m 49.927 ms - -[0m
+2023-04-28 19:27:16 info: [0mGET /admins/profile [36m304[0m 16.023 ms - -[0m
+2023-04-28 19:27:16 info: [0mGET /projects/show/1 [36m304[0m 36.291 ms - -[0m
+2023-04-28 19:27:16 info: [0mGET /projects?page=1&page_size=10 [32m200[0m 84.726 ms - 674[0m
+2023-04-28 19:27:16 info: [0mGET /projects?page=1&page_size=10 [36m304[0m 20.966 ms - -[0m
+2023-04-28 19:27:17 info: [0mGET /projects/show/2 [32m200[0m 7.405 ms - 433[0m
+2023-04-28 19:27:17 info: [0mGET /admins/profile [36m304[0m 28.618 ms - -[0m
+2023-04-28 19:27:17 info: [0mGET /projects?[object%20Object] [36m304[0m 19.261 ms - -[0m
+2023-04-28 19:27:17 info: [0mGET /branchs?[object%20Object] [36m304[0m 20.680 ms - -[0m
+2023-04-28 19:27:17 info: [0mGET /services?[object%20Object] [36m304[0m 21.260 ms - -[0m
+2023-04-28 19:27:18 info: [0mOPTIONS /projects/update/2 [32m204[0m 0.155 ms - 0[0m
+2023-04-28 19:27:18 info: [0mPUT /projects/update/2 [32m200[0m 89.257 ms - 2[0m
+2023-04-28 19:27:18 info: [0mGET /projects/show/2 [32m200[0m 130.487 ms - 433[0m
+2023-04-28 19:27:18 info: [0mGET /projects/show/1 [36m304[0m 141.922 ms - -[0m
+2023-04-28 19:27:19 info: [0mGET /branchs?[object%20Object] [36m304[0m 33.921 ms - -[0m
+2023-04-28 19:27:19 info: [0mGET /services?[object%20Object] [36m304[0m 44.673 ms - -[0m
+2023-04-28 19:27:19 info: [0mGET /projects?[object%20Object] [32m200[0m 64.150 ms - 674[0m
+2023-04-28 19:27:21 info: [0mGET /branchs/getListBranch [36m304[0m 15.894 ms - -[0m
+2023-04-28 19:27:21 info: [0mGET /projects [32m200[0m 47.447 ms - 674[0m
+2023-04-28 19:27:21 info: [0mGET /services/nav [36m304[0m 111.636 ms - -[0m
+2023-04-28 19:28:51 info: [0mGET /branchs/getListBranch [36m304[0m 200.033 ms - -[0m
+2023-04-28 19:28:51 info: [0mGET /projects [36m304[0m 284.268 ms - -[0m
+2023-04-28 19:29:24 info: [0mGET /services/nav [36m304[0m 61.860 ms - -[0m
+2023-04-28 19:29:24 info: [0mGET /projects [36m304[0m 54.799 ms - -[0m
+2023-04-28 19:29:24 info: [0mGET /branchs/getListBranch [36m304[0m 32.169 ms - -[0m
+2023-04-28 19:31:07 info: [0mGET /branchs/getListBranch [36m304[0m 115.111 ms - -[0m
+2023-04-28 19:31:07 info: [0mGET /projects [36m304[0m 136.500 ms - -[0m
+2023-04-28 19:31:31 info: =================================
+2023-04-28 19:31:31 info: ======= ENV: development =======
+2023-04-28 19:31:31 info: 🚀 App listening on the port 8000
+2023-04-28 19:31:31 info: =================================
+2023-04-28 19:32:35 info: =================================
+2023-04-28 19:32:35 info: ======= ENV: development =======
+2023-04-28 19:32:35 info: 🚀 App listening on the port 8000
+2023-04-28 19:32:35 info: =================================
+2023-04-28 19:32:50 info: =================================
+2023-04-28 19:32:50 info: ======= ENV: development =======
+2023-04-28 19:32:50 info: 🚀 App listening on the port 8000
+2023-04-28 19:32:50 info: =================================
+2023-04-28 19:33:53 info: [0mGET /services/getListService [32m200[0m 223.976 ms - 727[0m
+2023-04-28 19:34:40 info: =================================
+2023-04-28 19:34:40 info: ======= ENV: development =======
+2023-04-28 19:34:40 info: 🚀 App listening on the port 8000
+2023-04-28 19:34:40 info: =================================
+2023-04-28 19:35:19 info: =================================
+2023-04-28 19:35:19 info: ======= ENV: development =======
+2023-04-28 19:35:19 info: 🚀 App listening on the port 8000
+2023-04-28 19:35:19 info: =================================
+2023-04-28 19:35:19 info: [0mGET /services/getListService [32m200[0m 108.153 ms - -[0m
+2023-04-28 19:35:20 info: [0mGET /services/getListService [36m304[0m 104.360 ms - -[0m
+2023-04-28 19:35:44 info: [0mGET /services/getListService [36m304[0m 40.494 ms - -[0m
+2023-04-28 19:36:32 info: [0mGET /branchs/getListBranch [36m304[0m 152.145 ms - -[0m
+2023-04-28 19:36:32 info: [0mGET /projects [36m304[0m 195.920 ms - -[0m
+2023-04-28 19:36:32 info: [0mGET /services/getListService [32m200[0m 151.015 ms - -[0m
+2023-04-28 19:36:46 info: [0mGET /branchs/getListBranch [36m304[0m 98.467 ms - -[0m
+2023-04-28 19:36:46 info: [0mGET /services/nav [36m304[0m 177.812 ms - -[0m
+2023-04-28 19:36:46 info: [0mGET /projects [36m304[0m 206.472 ms - -[0m
+2023-04-28 19:36:46 info: [0mGET /services/getListService [36m304[0m 179.349 ms - -[0m
+2023-04-28 19:37:02 info: [0mGET /branchs/getListBranch [36m304[0m 101.030 ms - -[0m
+2023-04-28 19:37:02 info: [0mGET /services/nav [36m304[0m 183.489 ms - -[0m
+2023-04-28 19:37:02 info: [0mGET /services/getListService [36m304[0m 125.966 ms - -[0m
+2023-04-28 19:37:02 info: [0mGET /projects [36m304[0m 193.791 ms - -[0m
+2023-04-28 19:37:52 info: =================================
+2023-04-28 19:37:52 info: ======= ENV: development =======
+2023-04-28 19:37:52 info: 🚀 App listening on the port 8000
+2023-04-28 19:37:52 info: =================================
+2023-04-28 19:37:54 info: [0mGET /services/nav [36m304[0m 225.613 ms - -[0m
+2023-04-28 19:37:54 info: [0mGET /projects [36m304[0m 165.338 ms - -[0m
+2023-04-28 19:37:54 info: [0mGET /branchs/getListBranch [36m304[0m 159.968 ms - -[0m
+2023-04-28 19:37:54 info: [0mGET /services/getListService [32m200[0m 164.102 ms - -[0m
