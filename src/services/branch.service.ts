@@ -2,6 +2,7 @@ import { BranchDTO } from "../dtos/branch.dto";
 import models from "../infra/sequelize/models";
 import { ApiFeatures } from "../utils/ApiFeatures";
 import { Op } from "sequelize";
+import Helper from "../utils/Helper";
 export class BranchService {
 
     public getList = async (query) => {
@@ -90,14 +91,19 @@ export class BranchService {
         const t = await models.sequelize.transaction();
 
         try {
+            const branch = await models.Branch.create({ ...body },
+                { transaction: t });
 
-            const branch = await models.Branch.create({ ...body }, { transaction: t });
-
-            await models.BranchTranslation.create({ ...body, branch_id: branch.id, locale: "vi" }, { transaction: t });
-            await models.BranchTranslation.create({ ...body, branch_id: branch.id, locale: "en" }, { transaction: t });
-            await models.BranchTranslation.create({ ...body, branch_id: branch.id, locale: "ja" }, { transaction: t });
+            for (const lang of Helper.langs) {
+                await models.BranchTranslation.create({
+                    ...body,
+                    branch_id: branch.id,
+                    locale: lang
+                }, { transaction: t });
+            }
 
             await t.commit();
+
             return branch;
 
         } catch (error) {
@@ -130,28 +136,22 @@ export class BranchService {
 
         const t = await models.sequelize.transaction();
 
-        return await models.Branch.update({
-            status: body.status,
-        }, { where: { id } },
-        )
+        const branch = await models.Branch.update({ status: body.status, }, { where: { id } },{ transaction: t })
             .then(async (res) => {
-                await this.handleUpdate({ branch_id: id, lang: global.lang, body });
+                try {
+                    return await models.BranchTranslation.update({ name: body.name },
+                        {
+                            where: {
+                                branch_id: id,
+                                locale: global.lang
+                            }
+                        });
+                } catch (error) {
+                    console.log(error);
+                }
             });
-    }
 
-    public handleUpdate = async ({ branch_id, lang = "vi", body }) => {
-
-        try {
-            return await models.BranchTranslation.update({ name: body.name },
-                {
-                    where: {
-                        branch_id,
-                        locale: lang
-                    }
-                });
-        } catch (error) {
-            console.log(error);
-        }
+        return branch;
     }
 
     public deleteById = async (id: string) => {
