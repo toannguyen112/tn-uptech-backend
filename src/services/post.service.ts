@@ -180,7 +180,7 @@ export class PostService {
                 postsOfCategory: postsOfCategory.map((item) => {
                     return PostDTO.transform(item);
                 }),
-                postsMore: postsMore.map((item) => {
+                postsMore: postsMore.map((item:any) => {
                     return PostDTO.transform(item);
                 }),
             };
