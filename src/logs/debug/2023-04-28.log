@@ -753,3 +753,77 @@
 2023-04-28 01:10:15 info: [0mGET /services/nav [36m304[0m 110.073 ms - -[0m
 2023-04-28 01:10:17 info: [0mGET /services/nav [36m304[0m 19.701 ms - -[0m
 2023-04-28 01:10:17 info: [0mGET /posts/getListFeatured [36m304[0m 62.948 ms - -[0m
+2023-04-28 01:10:34 info: [0mGET /ceos/getlistCeo [36m304[0m 87.676 ms - -[0m
+2023-04-28 01:10:37 info: [0mGET /branchs/getListBranch [36m304[0m 32.340 ms - -[0m
+2023-04-28 01:10:37 info: [0mGET /projects [32m200[0m 150.489 ms - 674[0m
+2023-04-28 01:10:38 info: [0mGET /categories/post [36m304[0m 38.992 ms - -[0m
+2023-04-28 01:10:39 info: [0mGET /projects [36m304[0m 21.517 ms - -[0m
+2023-04-28 01:10:39 info: [0mGET /branchs/getListBranch [36m304[0m 15.164 ms - -[0m
+2023-04-28 01:11:15 info: [0mGET /branchs/getListBranch [36m304[0m 111.017 ms - -[0m
+2023-04-28 01:11:15 info: [0mGET /projects [36m304[0m 188.380 ms - -[0m
+2023-04-28 01:11:15 info: [0mGET /categories/post [36m304[0m 35.092 ms - -[0m
+2023-04-28 01:11:16 info: [0mGET /jobs/getListFeatured [36m304[0m 17.014 ms - -[0m
+2023-04-28 01:11:16 info: [0mGET /categories/post [36m304[0m 6.541 ms - -[0m
+2023-04-28 01:11:18 info: [0mGET /projects [36m304[0m 12.388 ms - -[0m
+2023-04-28 01:11:18 info: [0mGET /branchs/getListBranch [36m304[0m 6.687 ms - -[0m
+2023-04-28 01:11:19 info: [0mGET /categories/post [36m304[0m 7.176 ms - -[0m
+2023-04-28 01:11:19 info: [0mGET /jobs/getListFeatured [36m304[0m 16.287 ms - -[0m
+2023-04-28 01:11:20 info: [0mGET /categories/post [36m304[0m 8.857 ms - -[0m
+2023-04-28 01:11:21 info: [0mGET /branchs/getListBranch [36m304[0m 32.988 ms - -[0m
+2023-04-28 01:11:21 info: [0mGET /projects [36m304[0m 68.834 ms - -[0m
+2023-04-28 01:11:22 info: [0mGET /ceos/getlistCeo [36m304[0m 9.732 ms - -[0m
+2023-04-28 01:11:23 info: [0mGET /posts/getListFeatured [36m304[0m 57.473 ms - -[0m
+2023-04-28 01:11:23 info: [0mGET /services/nav [36m304[0m 55.877 ms - -[0m
+2023-04-28 01:11:49 info: [0mOPTIONS /contacts/create [32m204[0m 0.934 ms - 0[0m
+2023-04-28 01:11:49 info: [0mPOST /contacts/create [32m200[0m 46.663 ms - 188[0m
+2023-04-28 01:11:57 info: [0mGET /posts/getListFeatured [36m304[0m 65.508 ms - -[0m
+2023-04-28 01:11:57 info: [0mGET /services/nav [36m304[0m 57.253 ms - -[0m
+2023-04-28 09:23:29 info: [0mGET /categories/post [36m304[0m 325.489 ms - -[0m
+2023-04-28 09:23:29 info: [0mGET /ceos/getlistCeo [36m304[0m 917.203 ms - -[0m
+2023-04-28 09:23:29 info: [0mGET /branchs/getListBranch [36m304[0m 682.052 ms - -[0m
+2023-04-28 09:23:29 info: [0mGET /projects [36m304[0m 746.844 ms - -[0m
+2023-04-28 09:23:33 info: [0mGET /categories/post [36m304[0m 81.381 ms - -[0m
+2023-04-28 09:23:33 info: [0mGET /posts/category/android [36m304[0m 136.998 ms - -[0m
+2023-04-28 09:23:34 info: [0mGET /posts/category/website [32m200[0m 109.186 ms - 775[0m
+2023-04-28 09:23:35 info: [0mGET /posts/category/android [36m304[0m 18.803 ms - -[0m
+2023-04-28 09:23:36 info: [0mGET /posts/category/website [36m304[0m 36.987 ms - -[0m
+2023-04-28 09:23:37 info: [0mGET /categories/post [36m304[0m 37.796 ms - -[0m
+2023-04-28 17:47:01 info: =================================
+2023-04-28 17:47:01 info: ======= ENV: development =======
+2023-04-28 17:47:01 info: 🚀 App listening on the port 8000
+2023-04-28 17:47:01 info: =================================
+2023-04-28 17:47:08 info: [0mOPTIONS /admins/login [32m204[0m 3.037 ms - 0[0m
+2023-04-28 17:47:09 info: [0mPOST /admins/login [32m200[0m 705.721 ms - -[0m
+2023-04-28 17:47:10 info: [0mOPTIONS /admins/profile [32m204[0m 0.322 ms - 0[0m
+2023-04-28 17:47:10 info: [0mGET /admins/profile [36m304[0m 346.283 ms - -[0m
+2023-04-28 17:47:13 info: [0mGET /services/nav [36m304[0m 189.458 ms - -[0m
+2023-04-28 17:47:13 info: [0mGET /services/nav [36m304[0m 53.780 ms - -[0m
+2023-04-28 17:47:13 info: [0mGET /posts/getListFeatured [36m304[0m 242.183 ms - -[0m
+2023-04-28 17:47:16 info: [0mGET /categories/post [36m304[0m 61.111 ms - -[0m
+2023-04-28 17:47:22 info: [0mGET /categories/post [36m304[0m 79.248 ms - -[0m
+2023-04-28 17:47:22 info: [0mGET /posts/category/website [36m304[0m 142.560 ms - -[0m
+2023-04-28 17:47:25 info: [0mGET /posts/category/android [36m304[0m 46.158 ms - -[0m
+2023-04-28 17:47:27 info: [0mGET /posts/category/website [36m304[0m 22.819 ms - -[0m
+2023-04-28 17:48:04 info: [0mGET /categories/post [36m304[0m 169.882 ms - -[0m
+2023-04-28 17:48:04 info: [0mGET /posts/category/website [36m304[0m 174.793 ms - -[0m
+2023-04-28 17:52:16 info: [0mGET /posts/category/android [36m304[0m 447.542 ms - -[0m
+2023-04-28 17:52:20 info: [0mGET /posts/category/website [36m304[0m 56.396 ms - -[0m
+2023-04-28 17:52:21 info: [0mGET /posts/category/android [36m304[0m 28.308 ms - -[0m
+2023-04-28 17:52:24 info: [0mGET /posts/category/website [36m304[0m 43.918 ms - -[0m
+2023-04-28 17:52:26 info: [0mGET /categories/post [36m304[0m 52.818 ms - -[0m
+2023-04-28 17:53:03 info: [0mGET /jobs/getListFeatured [36m304[0m 191.254 ms - -[0m
+2023-04-28 17:53:13 info: [0mGET /branchs/getListBranch [36m304[0m 154.987 ms - -[0m
+2023-04-28 17:53:13 info: [0mGET /projects [36m304[0m 340.202 ms - -[0m
+2023-04-28 17:53:25 info: [0mGET /services/nav [0m-[0m - ms - -[0m
+2023-04-28 17:53:27 info: [0mGET /services/nav [32m200[0m 164.705 ms - 1014[0m
+2023-04-28 17:53:27 info: [0mGET /branchs/getListBranch [36m304[0m 281.275 ms - -[0m
+2023-04-28 17:53:27 info: [0mGET /projects [36m304[0m 329.899 ms - -[0m
+2023-04-28 17:53:46 info: [0mGET /categories/post [36m304[0m 107.335 ms - -[0m
+2023-04-28 17:54:41 info: =================================
+2023-04-28 17:54:41 info: ======= ENV: development =======
+2023-04-28 17:54:41 info: 🚀 App listening on the port 8000
+2023-04-28 17:54:41 info: =================================
+2023-04-28 17:56:34 info: =================================
+2023-04-28 17:56:34 info: ======= ENV: development =======
+2023-04-28 17:56:34 info: 🚀 App listening on the port 8000
+2023-04-28 17:56:34 info: =================================

@@ -104,6 +104,15 @@ export class PostService {
         }
     }
 
+    public getPageAll = async () => {
+        try {
+
+        } catch (error) {
+            console.log(error);
+            logger.error(JSON.stringify(error));
+        }
+    }
+
     public getDataOfCategory = async (category_slug: string) => {
         try {
 
@@ -232,7 +241,7 @@ export class PostService {
                 .then(async (post: any) => {
 
                     try {
-                        
+
                         for (const lang of Helper.langs) {
                             await models.PostTranslation.create({
                                 ...body,

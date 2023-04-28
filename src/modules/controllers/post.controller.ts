@@ -18,6 +18,17 @@ export class PostController extends BaseController {
         }
     }
 
+    public async getPageAll(req: Request, res: Response, next: NextFunction) {
+
+        try {
+            const data = await post.getPageAll();
+            res.status(200).send({ message: "ok", data });
+        } catch (error) {
+            logger.error(error);
+            res.status(500).send(error.message);
+        }
+    }
+
     public async getDataOfCategory(req: Request, res: Response, next: NextFunction) {
 
         try {
