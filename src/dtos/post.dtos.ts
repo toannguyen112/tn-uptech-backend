@@ -1,14 +1,13 @@
 import Helper from "../utils/Helper";
 
 export class PostDTO {
-    static transform = (item) => {
+    static transform = (item: any) => {
 
         let category = null;
         let category_name = "";
         let category_slug = "";
 
         if (!item.translations.length) return {};
-
 
         const translationData = item.translations[0];
 

@@ -827,3 +827,452 @@
 2023-04-28 17:56:34 info: ======= ENV: development =======
 2023-04-28 17:56:34 info: 🚀 App listening on the port 8000
 2023-04-28 17:56:34 info: =================================
+2023-04-28 17:59:04 info: [0mGET /categories/post [36m304[0m 901.372 ms - -[0m
+2023-04-28 17:59:20 info: [0mGET /categories/post [36m304[0m 130.273 ms - -[0m
+2023-04-28 17:59:24 info: [0mGET /categories/post [36m304[0m 11.705 ms - -[0m
+2023-04-28 17:59:36 info: [0mGET /categories/post [36m304[0m 217.102 ms - -[0m
+2023-04-28 17:59:42 info: [0mGET /categories/post [36m304[0m 237.306 ms - -[0m
+2023-04-28 17:59:43 info: [0mGET /posts/category/[object%20Object],[object%20Object] [32m200[0m 441.814 ms - 450[0m
+2023-04-28 17:59:50 info: [0mGET /categories/post [36m304[0m 82.517 ms - -[0m
+2023-04-28 17:59:50 info: [0mGET /posts/category/[object%20Object],[object%20Object] [36m304[0m 393.920 ms - -[0m
+2023-04-28 18:00:32 info: [0mGET /posts/getPageAll [32m200[0m 6.376 ms - 16[0m
+2023-04-28 18:00:33 info: [0mGET /categories/post [36m304[0m 865.230 ms - -[0m
+2023-04-28 18:01:31 info: [0mOPTIONS /admins/profile [32m204[0m 1.249 ms - 0[0m
+2023-04-28 18:01:32 info: [0mGET /admins/profile [36m304[0m 312.888 ms - -[0m
+2023-04-28 18:01:38 info: [0mGET /categories/post [36m304[0m 63.523 ms - -[0m
+2023-04-28 18:01:38 info: [0mGET /posts/category/all [32m200[0m 84.707 ms - 450[0m
+2023-04-28 18:01:44 info: [0mGET /posts/getPageAll [36m304[0m 1.699 ms - -[0m
+2023-04-28 18:01:44 info: [0mGET /categories/post [36m304[0m 21.198 ms - -[0m
+2023-04-28 18:01:45 info: [0mGET /categories/post [36m304[0m 33.575 ms - -[0m
+2023-04-28 18:01:45 info: [0mGET /posts/category/all [36m304[0m 44.557 ms - -[0m
+2023-04-28 18:01:45 info: [0mGET /posts/getPageAll [36m304[0m 1.387 ms - -[0m
+2023-04-28 18:01:45 info: [0mGET /categories/post [36m304[0m 9.970 ms - -[0m
+2023-04-28 18:01:46 info: [0mGET /categories/post [36m304[0m 11.637 ms - -[0m
+2023-04-28 18:01:46 info: [0mGET /posts/category/all [36m304[0m 21.851 ms - -[0m
+2023-04-28 18:01:47 info: [0mGET /posts/getPageAll [36m304[0m 0.862 ms - -[0m
+2023-04-28 18:01:47 info: [0mGET /categories/post [36m304[0m 6.689 ms - -[0m
+2023-04-28 18:01:48 info: [0mGET /categories/post [36m304[0m 17.774 ms - -[0m
+2023-04-28 18:01:48 info: [0mGET /posts/category/all [36m304[0m 20.465 ms - -[0m
+2023-04-28 18:01:49 info: [0mGET /posts/getPageAll [36m304[0m 0.943 ms - -[0m
+2023-04-28 18:01:49 info: [0mGET /categories/post [36m304[0m 13.746 ms - -[0m
+2023-04-28 18:01:50 info: [0mGET /categories/post [36m304[0m 47.530 ms - -[0m
+2023-04-28 18:01:50 info: [0mGET /posts/category/all [36m304[0m 17.390 ms - -[0m
+2023-04-28 18:01:50 info: [0mGET /posts/getPageAll [36m304[0m 0.720 ms - -[0m
+2023-04-28 18:01:51 info: [0mGET /categories/post [36m304[0m 3.755 ms - -[0m
+2023-04-28 18:01:51 info: [0mGET /categories/post [36m304[0m 4.194 ms - -[0m
+2023-04-28 18:01:51 info: [0mGET /posts/category/all [36m304[0m 20.104 ms - -[0m
+2023-04-28 18:01:51 info: [0mGET /posts/getPageAll [36m304[0m 0.561 ms - -[0m
+2023-04-28 18:01:51 info: [0mGET /categories/post [36m304[0m 15.236 ms - -[0m
+2023-04-28 18:01:51 info: [0mGET /categories/post [36m304[0m 4.204 ms - -[0m
+2023-04-28 18:01:51 info: [0mGET /posts/category/all [36m304[0m 30.287 ms - -[0m
+2023-04-28 18:01:51 info: [0mGET /posts/getPageAll [36m304[0m 0.583 ms - -[0m
+2023-04-28 18:01:52 info: [0mGET /categories/post [36m304[0m 8.067 ms - -[0m
+2023-04-28 18:01:52 info: [0mGET /categories/post [36m304[0m 7.231 ms - -[0m
+2023-04-28 18:01:52 info: [0mGET /posts/category/all [36m304[0m 19.241 ms - -[0m
+2023-04-28 18:01:52 info: [0mGET /posts/getPageAll [36m304[0m 1.024 ms - -[0m
+2023-04-28 18:01:52 info: [0mGET /categories/post [36m304[0m 61.528 ms - -[0m
+2023-04-28 18:02:07 info: [0mGET /posts/getPageAll [36m304[0m 2.478 ms - -[0m
+2023-04-28 18:02:07 info: [0mGET /categories/post [36m304[0m 264.120 ms - -[0m
+2023-04-28 18:02:11 info: [0mGET /categories/post [36m304[0m 44.275 ms - -[0m
+2023-04-28 18:02:11 info: [0mGET /posts/category/website [36m304[0m 83.484 ms - -[0m
+2023-04-28 18:02:12 info: [0mGET /posts/category/android [36m304[0m 13.940 ms - -[0m
+2023-04-28 18:02:13 info: [0mGET /posts/category/website [36m304[0m 21.125 ms - -[0m
+2023-04-28 18:02:14 info: [0mGET /posts/getPageAll [36m304[0m 1.054 ms - -[0m
+2023-04-28 18:02:14 info: [0mGET /categories/post [36m304[0m 51.472 ms - -[0m
+2023-04-28 18:02:23 info: [0mGET /categories/post [36m304[0m 51.895 ms - -[0m
+2023-04-28 18:02:23 info: [0mGET /posts/category/website [36m304[0m 46.671 ms - -[0m
+2023-04-28 18:02:25 info: [0mGET /posts/category/android [36m304[0m 57.867 ms - -[0m
+2023-04-28 18:02:27 info: [0mGET /posts/category/website [36m304[0m 15.642 ms - -[0m
+2023-04-28 18:02:28 info: [0mGET /posts/getPageAll [36m304[0m 0.643 ms - -[0m
+2023-04-28 18:02:28 info: [0mGET /categories/post [36m304[0m 13.685 ms - -[0m
+2023-04-28 18:03:00 info: [0mGET /posts/getPageAll [36m304[0m 9.721 ms - -[0m
+2023-04-28 18:03:00 info: [0mGET /categories/post [36m304[0m 32.886 ms - -[0m
+2023-04-28 18:03:08 info: [0mGET /posts/getPageAll [36m304[0m 1.839 ms - -[0m
+2023-04-28 18:03:08 info: [0mGET /categories/post [36m304[0m 27.906 ms - -[0m
+2023-04-28 18:03:10 info: [0mGET /posts/getPageAll [36m304[0m 2.089 ms - -[0m
+2023-04-28 18:03:10 info: [0mGET /categories/post [36m304[0m 80.973 ms - -[0m
+2023-04-28 18:04:22 info: =================================
+2023-04-28 18:04:22 info: ======= ENV: development =======
+2023-04-28 18:04:22 info: 🚀 App listening on the port 8000
+2023-04-28 18:04:22 info: =================================
+2023-04-28 18:05:41 info: =================================
+2023-04-28 18:05:41 info: ======= ENV: development =======
+2023-04-28 18:05:41 info: 🚀 App listening on the port 8000
+2023-04-28 18:05:41 info: =================================
+2023-04-28 18:06:49 info: =================================
+2023-04-28 18:06:49 info: ======= ENV: development =======
+2023-04-28 18:06:49 info: 🚀 App listening on the port 8000
+2023-04-28 18:06:49 info: =================================
+2023-04-28 18:07:00 info: =================================
+2023-04-28 18:07:00 info: ======= ENV: development =======
+2023-04-28 18:07:00 info: 🚀 App listening on the port 8000
+2023-04-28 18:07:00 info: =================================
+2023-04-28 18:07:29 info: =================================
+2023-04-28 18:07:29 info: ======= ENV: development =======
+2023-04-28 18:07:29 info: 🚀 App listening on the port 8000
+2023-04-28 18:07:29 info: =================================
+2023-04-28 18:07:31 info: [0mGET /posts/getPageAll [32m200[0m 271.533 ms - 724[0m
+2023-04-28 18:07:34 info: [0mGET /posts/getPageAll [36m304[0m 26.829 ms - -[0m
+2023-04-28 18:11:00 info: [0mGET /posts/getPageAll [36m304[0m 87.504 ms - -[0m
+2023-04-28 18:11:09 info: [0mGET /categories/post [36m304[0m 52.097 ms - -[0m
+2023-04-28 18:11:09 info: [0mGET /posts/category/website [36m304[0m 91.020 ms - -[0m
+2023-04-28 18:11:12 info: [0mGET /posts/category/android [36m304[0m 23.884 ms - -[0m
+2023-04-28 18:11:16 info: [0mGET /posts/category/website [36m304[0m 64.068 ms - -[0m
+2023-04-28 18:11:17 info: [0mGET /posts/getPageAll [32m200[0m 15.891 ms - 724[0m
+2023-04-28 18:11:17 info: [0mGET /categories/post [36m304[0m 5.844 ms - -[0m
+2023-04-28 18:12:33 info: =================================
+2023-04-28 18:12:33 info: ======= ENV: development =======
+2023-04-28 18:12:33 info: 🚀 App listening on the port 8000
+2023-04-28 18:12:33 info: =================================
+2023-04-28 18:12:46 info: =================================
+2023-04-28 18:12:46 info: ======= ENV: development =======
+2023-04-28 18:12:46 info: 🚀 App listening on the port 8000
+2023-04-28 18:12:46 info: =================================
+2023-04-28 18:13:00 info: =================================
+2023-04-28 18:13:00 info: ======= ENV: development =======
+2023-04-28 18:13:00 info: 🚀 App listening on the port 8000
+2023-04-28 18:13:00 info: =================================
+2023-04-28 18:13:03 info: [0mOPTIONS /admins/profile [32m204[0m 19.258 ms - 0[0m
+2023-04-28 18:13:03 info: [0mGET /admins/profile [36m304[0m 316.010 ms - -[0m
+2023-04-28 18:13:05 info: [0mGET /categories?page=1&page_size=10 [36m304[0m 353.828 ms - -[0m
+2023-04-28 18:13:05 info: [0mGET /categories?page=1&page_size=10 [36m304[0m 69.750 ms - -[0m
+2023-04-28 18:13:05 info: [0mGET /admins/profile [36m304[0m 452.588 ms - -[0m
+2023-04-28 18:13:25 info: =================================
+2023-04-28 18:13:25 info: ======= ENV: development =======
+2023-04-28 18:13:25 info: 🚀 App listening on the port 8000
+2023-04-28 18:13:25 info: =================================
+2023-04-28 18:14:45 info: =================================
+2023-04-28 18:14:45 info: ======= ENV: development =======
+2023-04-28 18:14:45 info: 🚀 App listening on the port 8000
+2023-04-28 18:14:45 info: =================================
+2023-04-28 18:14:55 info: =================================
+2023-04-28 18:14:55 info: ======= ENV: development =======
+2023-04-28 18:14:55 info: 🚀 App listening on the port 8000
+2023-04-28 18:14:55 info: =================================
+2023-04-28 18:16:04 info: =================================
+2023-04-28 18:16:04 info: ======= ENV: development =======
+2023-04-28 18:16:04 info: 🚀 App listening on the port 8000
+2023-04-28 18:16:04 info: =================================
+2023-04-28 18:16:17 info: =================================
+2023-04-28 18:16:17 info: ======= ENV: development =======
+2023-04-28 18:16:17 info: 🚀 App listening on the port 8000
+2023-04-28 18:16:17 info: =================================
+2023-04-28 18:16:34 info: =================================
+2023-04-28 18:16:34 info: ======= ENV: development =======
+2023-04-28 18:16:34 info: 🚀 App listening on the port 8000
+2023-04-28 18:16:34 info: =================================
+2023-04-28 18:16:36 info: [0mGET /posts/getPageAll [32m200[0m 137.813 ms - 852[0m
+2023-04-28 18:17:13 info: =================================
+2023-04-28 18:17:13 info: ======= ENV: development =======
+2023-04-28 18:17:13 info: 🚀 App listening on the port 8000
+2023-04-28 18:17:13 info: =================================
+2023-04-28 18:17:15 info: [0mGET /posts/getPageAll [36m304[0m 175.665 ms - -[0m
+2023-04-28 18:17:41 info: =================================
+2023-04-28 18:17:41 info: ======= ENV: development =======
+2023-04-28 18:17:41 info: 🚀 App listening on the port 8000
+2023-04-28 18:17:41 info: =================================
+2023-04-28 18:18:26 info: [0mGET /posts/getPageAll [32m200[0m 117.349 ms - 581[0m
+2023-04-28 18:20:01 info: =================================
+2023-04-28 18:20:01 info: ======= ENV: development =======
+2023-04-28 18:20:01 info: 🚀 App listening on the port 8000
+2023-04-28 18:20:01 info: =================================
+2023-04-28 18:20:01 info: [0mGET /posts/getPageAll [32m200[0m 144.469 ms - -[0m
+2023-04-28 18:20:39 info: [0mOPTIONS /admins/profile [32m204[0m 1.185 ms - 0[0m
+2023-04-28 18:20:39 info: [0mGET /admins/profile [36m304[0m 230.533 ms - -[0m
+2023-04-28 18:20:39 info: [0mGET /posts?page=1&page_size=10 [32m200[0m 88.723 ms - -[0m
+2023-04-28 18:20:39 info: [0mGET /posts? [32m200[0m 159.771 ms - -[0m
+2023-04-28 18:20:41 info: [0mGET /admins/profile [36m304[0m 38.417 ms - -[0m
+2023-04-28 18:20:41 info: [0mGET /posts/show/4 [32m200[0m 62.136 ms - 821[0m
+2023-04-28 18:20:42 info: [0mGET /categories?[object%20Object] [36m304[0m 28.059 ms - -[0m
+2023-04-28 18:20:42 info: [0mGET /posts?[object%20Object] [32m200[0m 27.242 ms - -[0m
+2023-04-28 18:20:42 info: [0mGET /ceos?[object%20Object] [36m304[0m 36.847 ms - -[0m
+2023-04-28 18:21:02 info: [0mOPTIONS /posts/update/4 [32m204[0m 0.408 ms - 0[0m
+2023-04-28 18:21:02 info: [0mPUT /posts/update/4 [32m200[0m 78.299 ms - 16[0m
+2023-04-28 18:21:02 info: [0mGET /posts/show/4 [36m304[0m 23.716 ms - -[0m
+2023-04-28 18:21:03 info: [0mGET /categories?[object%20Object] [36m304[0m 30.472 ms - -[0m
+2023-04-28 18:21:03 info: [0mGET /ceos?[object%20Object] [36m304[0m 46.784 ms - -[0m
+2023-04-28 18:21:03 info: [0mGET /posts?[object%20Object] [32m200[0m 78.831 ms - -[0m
+2023-04-28 18:21:03 info: [0mOPTIONS /admins/profile [32m204[0m 0.463 ms - 0[0m
+2023-04-28 18:21:04 info: [0mGET /posts/show/4 [36m304[0m 27.279 ms - -[0m
+2023-04-28 18:21:04 info: [0mGET /posts?page=1&page_size=10 [32m200[0m 29.286 ms - -[0m
+2023-04-28 18:21:04 info: [0mGET /admins/profile [36m304[0m 98.058 ms - -[0m
+2023-04-28 18:21:04 info: [0mGET /posts?page=1&page_size=10 [32m200[0m 25.496 ms - -[0m
+2023-04-28 18:21:07 info: [0mGET /admins/profile [36m304[0m 17.292 ms - -[0m
+2023-04-28 18:21:07 info: [0mGET /posts?page=1&page_size=10 [36m304[0m 27.832 ms - -[0m
+2023-04-28 18:21:08 info: [0mGET /posts?page=1&page_size=10 [36m304[0m 42.829 ms - -[0m
+2023-04-28 18:21:13 info: [0mGET /posts/getPageAll [32m200[0m 24.085 ms - -[0m
+2023-04-28 18:22:33 info: =================================
+2023-04-28 18:22:33 info: ======= ENV: development =======
+2023-04-28 18:22:33 info: 🚀 App listening on the port 8000
+2023-04-28 18:22:33 info: =================================
+2023-04-28 18:22:33 info: [0mGET /posts/getPageAll [32m200[0m 110.695 ms - -[0m
+2023-04-28 18:23:44 info: =================================
+2023-04-28 18:23:44 info: ======= ENV: development =======
+2023-04-28 18:23:44 info: 🚀 App listening on the port 8000
+2023-04-28 18:23:44 info: =================================
+2023-04-28 18:24:01 info: =================================
+2023-04-28 18:24:01 info: ======= ENV: development =======
+2023-04-28 18:24:01 info: 🚀 App listening on the port 8000
+2023-04-28 18:24:01 info: =================================
+2023-04-28 18:24:44 info: =================================
+2023-04-28 18:24:44 info: ======= ENV: development =======
+2023-04-28 18:24:44 info: 🚀 App listening on the port 8000
+2023-04-28 18:24:44 info: =================================
+2023-04-28 18:25:10 info: =================================
+2023-04-28 18:25:10 info: ======= ENV: development =======
+2023-04-28 18:25:10 info: 🚀 App listening on the port 8000
+2023-04-28 18:25:10 info: =================================
+2023-04-28 18:25:16 info: [0mGET /posts/getPageAll [32m200[0m 158.389 ms - -[0m
+2023-04-28 18:26:04 info: =================================
+2023-04-28 18:26:04 info: ======= ENV: development =======
+2023-04-28 18:26:04 info: 🚀 App listening on the port 8000
+2023-04-28 18:26:04 info: =================================
+2023-04-28 18:26:25 info: =================================
+2023-04-28 18:26:25 info: ======= ENV: development =======
+2023-04-28 18:26:25 info: 🚀 App listening on the port 8000
+2023-04-28 18:26:25 info: =================================
+2023-04-28 18:26:49 info: =================================
+2023-04-28 18:26:49 info: ======= ENV: development =======
+2023-04-28 18:26:49 info: 🚀 App listening on the port 8000
+2023-04-28 18:26:49 info: =================================
+2023-04-28 18:26:50 error: {}
+2023-04-28 18:26:50 info: [0mGET /posts/getPageAll [32m200[0m 208.002 ms - 16[0m
+2023-04-28 18:26:50 error: {}
+2023-04-28 18:26:50 info: [0mGET /posts/getPageAll [36m304[0m 70.299 ms - -[0m
+2023-04-28 18:27:20 info: =================================
+2023-04-28 18:27:20 info: ======= ENV: development =======
+2023-04-28 18:27:20 info: 🚀 App listening on the port 8000
+2023-04-28 18:27:20 info: =================================
+2023-04-28 18:27:30 error: {}
+2023-04-28 18:27:30 info: [0mGET /posts/getPageAll [36m304[0m 209.712 ms - -[0m
+2023-04-28 18:28:04 info: =================================
+2023-04-28 18:28:04 info: ======= ENV: development =======
+2023-04-28 18:28:04 info: 🚀 App listening on the port 8000
+2023-04-28 18:28:04 info: =================================
+2023-04-28 18:28:05 error: {}
+2023-04-28 18:28:05 info: [0mGET /posts/getPageAll [36m304[0m 222.618 ms - -[0m
+2023-04-28 18:28:05 error: {}
+2023-04-28 18:28:05 info: [0mGET /posts/getPageAll [32m200[0m 43.426 ms - 16[0m
+2023-04-28 18:28:05 error: {}
+2023-04-28 18:28:05 info: [0mGET /posts/getPageAll [36m304[0m 62.272 ms - -[0m
+2023-04-28 18:28:07 error: {}
+2023-04-28 18:28:07 info: [0mGET /posts/getPageAll [36m304[0m 37.248 ms - -[0m
+2023-04-28 18:29:35 info: =================================
+2023-04-28 18:29:35 info: ======= ENV: development =======
+2023-04-28 18:29:35 info: 🚀 App listening on the port 8000
+2023-04-28 18:29:35 info: =================================
+2023-04-28 18:30:16 info: =================================
+2023-04-28 18:30:16 info: ======= ENV: development =======
+2023-04-28 18:30:16 info: 🚀 App listening on the port 8000
+2023-04-28 18:30:16 info: =================================
+2023-04-28 18:30:33 info: =================================
+2023-04-28 18:30:33 info: ======= ENV: development =======
+2023-04-28 18:30:33 info: 🚀 App listening on the port 8000
+2023-04-28 18:30:33 info: =================================
+2023-04-28 18:30:34 info: [0mGET /posts/getPageAll [32m200[0m 267.562 ms - -[0m
+2023-04-28 18:30:58 info: =================================
+2023-04-28 18:30:58 info: ======= ENV: development =======
+2023-04-28 18:30:58 info: 🚀 App listening on the port 8000
+2023-04-28 18:30:58 info: =================================
+2023-04-28 18:31:10 info: [0mGET /posts/getPageAll [32m200[0m 96.794 ms - -[0m
+2023-04-28 18:31:58 info: [0mGET /categories/post [36m304[0m 275.535 ms - -[0m
+2023-04-28 18:31:58 info: [0mGET /posts/getPageAll [32m200[0m 500.787 ms - -[0m
+2023-04-28 18:32:40 info: [0mGET /categories/post [36m304[0m 31.302 ms - -[0m
+2023-04-28 18:32:41 info: [0mGET /posts/getPageAll [36m304[0m 155.125 ms - -[0m
+2023-04-28 18:34:11 info: [0mGET /categories/post [36m304[0m 34.885 ms - -[0m
+2023-04-28 18:34:11 info: [0mGET /services/nav [36m304[0m 99.068 ms - -[0m
+2023-04-28 18:34:11 info: [0mGET /posts/getPageAll [36m304[0m 113.395 ms - -[0m
+2023-04-28 18:34:25 info: [0mGET /categories/post [36m304[0m 110.547 ms - -[0m
+2023-04-28 18:34:25 info: [0mGET /services/nav [36m304[0m 165.832 ms - -[0m
+2023-04-28 18:34:25 info: [0mGET /posts/getPageAll [36m304[0m 212.146 ms - -[0m
+2023-04-28 18:34:41 info: [0mGET /categories/post [36m304[0m 31.408 ms - -[0m
+2023-04-28 18:34:41 info: [0mGET /services/nav [36m304[0m 90.636 ms - -[0m
+2023-04-28 18:34:41 info: [0mGET /posts/getPageAll [36m304[0m 205.406 ms - -[0m
+2023-04-28 18:35:16 info: [0mGET /categories/post [36m304[0m 13.483 ms - -[0m
+2023-04-28 18:35:16 info: [0mGET /services/nav [36m304[0m 141.759 ms - -[0m
+2023-04-28 18:35:16 info: [0mGET /posts/getPageAll [36m304[0m 179.931 ms - -[0m
+2023-04-28 18:35:49 info: [0mGET /categories/post [36m304[0m 117.667 ms - -[0m
+2023-04-28 18:35:49 info: [0mGET /services/nav [36m304[0m 207.497 ms - -[0m
+2023-04-28 18:35:50 info: [0mGET /posts/getPageAll [36m304[0m 373.788 ms - -[0m
+2023-04-28 18:35:51 info: [0mGET /posts/getPageAll [32m200[0m 139.767 ms - -[0m
+2023-04-28 18:36:45 info: [0mGET /categories/post [36m304[0m 70.702 ms - -[0m
+2023-04-28 18:36:45 info: [0mGET /services/nav [36m304[0m 170.183 ms - -[0m
+2023-04-28 18:36:45 info: [0mGET /posts/getPageAll [32m200[0m 174.668 ms - -[0m
+2023-04-28 18:37:04 info: [0mGET /categories/post [36m304[0m 64.327 ms - -[0m
+2023-04-28 18:37:04 info: [0mGET /posts/getPageAll [36m304[0m 191.858 ms - -[0m
+2023-04-28 18:37:08 info: [0mGET /categories/post [36m304[0m 12.412 ms - -[0m
+2023-04-28 18:37:09 info: [0mGET /posts/getPageAll [36m304[0m 71.478 ms - -[0m
+2023-04-28 18:37:20 info: [0mGET /categories/post [36m304[0m 47.382 ms - -[0m
+2023-04-28 18:37:20 info: [0mGET /posts/getPageAll [36m304[0m 85.840 ms - -[0m
+2023-04-28 18:37:47 info: [0mGET /categories/post [36m304[0m 45.195 ms - -[0m
+2023-04-28 18:37:47 info: [0mGET /posts/getPageAll [36m304[0m 75.707 ms - -[0m
+2023-04-28 18:37:56 info: [0mGET /categories/post [36m304[0m 27.140 ms - -[0m
+2023-04-28 18:37:56 info: [0mGET /posts/getPageAll [36m304[0m 96.480 ms - -[0m
+2023-04-28 18:38:14 info: [0mGET /categories/post [36m304[0m 45.577 ms - -[0m
+2023-04-28 18:38:14 info: [0mGET /posts/getPageAll [36m304[0m 126.052 ms - -[0m
+2023-04-28 18:39:06 info: [0mGET /categories/post [36m304[0m 148.381 ms - -[0m
+2023-04-28 18:39:06 info: [0mGET /services/nav [36m304[0m 245.505 ms - -[0m
+2023-04-28 18:39:06 info: [0mGET /posts/getPageAll [36m304[0m 239.245 ms - -[0m
+2023-04-28 18:39:54 info: [0mGET /categories/post [36m304[0m 191.080 ms - -[0m
+2023-04-28 18:39:55 info: [0mGET /posts/getPageAll [36m304[0m 434.146 ms - -[0m
+2023-04-28 18:39:58 info: [0mGET /categories/post [36m304[0m 89.706 ms - -[0m
+2023-04-28 18:39:58 info: [0mGET /posts/getPageAll [36m304[0m 420.007 ms - -[0m
+2023-04-28 18:40:17 info: [0mGET /categories/post [36m304[0m 36.158 ms - -[0m
+2023-04-28 18:40:17 info: [0mGET /posts/getPageAll [36m304[0m 81.655 ms - -[0m
+2023-04-28 18:40:20 info: [0mGET /categories/post [36m304[0m 5.927 ms - -[0m
+2023-04-28 18:40:20 info: [0mGET /posts/getPageAll [36m304[0m 85.848 ms - -[0m
+2023-04-28 18:40:23 info: [0mGET /categories/post [36m304[0m 6.748 ms - -[0m
+2023-04-28 18:40:23 info: [0mGET /posts/getPageAll [36m304[0m 156.237 ms - -[0m
+2023-04-28 18:40:36 info: [0mGET /categories/post [36m304[0m 53.529 ms - -[0m
+2023-04-28 18:40:36 info: [0mGET /posts/getPageAll [36m304[0m 147.796 ms - -[0m
+2023-04-28 18:42:25 info: [0mGET /categories/post [36m304[0m 42.546 ms - -[0m
+2023-04-28 18:42:25 info: [0mGET /services/nav [36m304[0m 141.693 ms - -[0m
+2023-04-28 18:42:25 info: [0mGET /posts/getPageAll [36m304[0m 206.153 ms - -[0m
+2023-04-28 18:42:53 info: [0mGET /categories/post [36m304[0m 134.090 ms - -[0m
+2023-04-28 18:42:53 info: [0mGET /services/nav [36m304[0m 170.535 ms - -[0m
+2023-04-28 18:42:53 info: [0mGET /posts/getPageAll [36m304[0m 173.000 ms - -[0m
+2023-04-28 18:43:11 info: [0mGET /categories/post [36m304[0m 183.138 ms - -[0m
+2023-04-28 18:43:11 info: [0mGET /services/nav [36m304[0m 232.786 ms - -[0m
+2023-04-28 18:43:11 info: [0mGET /posts/getPageAll [36m304[0m 280.665 ms - -[0m
+2023-04-28 18:43:16 info: [0mGET /services/nav [36m304[0m 93.470 ms - -[0m
+2023-04-28 18:43:16 info: [0mGET /categories/post [36m304[0m 59.674 ms - -[0m
+2023-04-28 18:43:16 info: [0mGET /posts/getPageAll [36m304[0m 164.995 ms - -[0m
+2023-04-28 18:44:11 info: =================================
+2023-04-28 18:44:11 info: ======= ENV: development =======
+2023-04-28 18:44:11 info: 🚀 App listening on the port 8000
+2023-04-28 18:44:11 info: =================================
+2023-04-28 18:44:11 error: {}
+2023-04-28 18:44:11 info: [0mGET /posts/getPageAll [32m200[0m 149.654 ms - 16[0m
+2023-04-28 18:44:18 error: {}
+2023-04-28 18:44:18 info: [0mGET /posts/getPageAll [36m304[0m 62.407 ms - -[0m
+2023-04-28 18:44:58 info: =================================
+2023-04-28 18:44:58 info: ======= ENV: development =======
+2023-04-28 18:44:58 info: 🚀 App listening on the port 8000
+2023-04-28 18:44:58 info: =================================
+2023-04-28 18:44:59 info: [0mGET /posts/getPageAll [32m200[0m 244.565 ms - -[0m
+2023-04-28 18:45:56 info: =================================
+2023-04-28 18:45:56 info: ======= ENV: development =======
+2023-04-28 18:45:56 info: 🚀 App listening on the port 8000
+2023-04-28 18:45:56 info: =================================
+2023-04-28 18:46:34 info: =================================
+2023-04-28 18:46:34 info: ======= ENV: development =======
+2023-04-28 18:46:34 info: 🚀 App listening on the port 8000
+2023-04-28 18:46:34 info: =================================
+2023-04-28 18:48:29 error: {}
+2023-04-28 18:48:29 info: [0mGET /posts/getPageAll [32m200[0m 210.713 ms - 16[0m
+2023-04-28 18:49:34 info: =================================
+2023-04-28 18:49:34 info: ======= ENV: development =======
+2023-04-28 18:49:34 info: 🚀 App listening on the port 8000
+2023-04-28 18:49:34 info: =================================
+2023-04-28 18:49:52 info: =================================
+2023-04-28 18:49:52 info: ======= ENV: development =======
+2023-04-28 18:49:52 info: 🚀 App listening on the port 8000
+2023-04-28 18:49:52 info: =================================
+2023-04-28 18:49:53 info: [0mGET /posts/getPageAll [32m200[0m 247.332 ms - -[0m
+2023-04-28 18:50:13 info: =================================
+2023-04-28 18:50:13 info: ======= ENV: development =======
+2023-04-28 18:50:13 info: 🚀 App listening on the port 8000
+2023-04-28 18:50:13 info: =================================
+2023-04-28 18:50:27 info: =================================
+2023-04-28 18:50:27 info: ======= ENV: development =======
+2023-04-28 18:50:27 info: 🚀 App listening on the port 8000
+2023-04-28 18:50:27 info: =================================
+2023-04-28 18:50:28 info: [0mGET /posts/getPageAll [32m200[0m 132.461 ms - -[0m
+2023-04-28 18:50:36 info: [0mGET /services/nav [36m304[0m 46.720 ms - -[0m
+2023-04-28 18:50:36 info: [0mGET /categories/post [36m304[0m 26.161 ms - -[0m
+2023-04-28 18:50:36 info: [0mGET /posts/getPageAll [32m200[0m 243.888 ms - -[0m
+2023-04-28 18:50:41 info: [0mGET /services/nav [36m304[0m 38.465 ms - -[0m
+2023-04-28 18:50:41 info: [0mGET /categories/post [36m304[0m 29.937 ms - -[0m
+2023-04-28 18:50:41 info: [0mGET /posts/getPageAll [36m304[0m 171.758 ms - -[0m
+2023-04-28 18:51:27 info: =================================
+2023-04-28 18:51:27 info: ======= ENV: development =======
+2023-04-28 18:51:27 info: 🚀 App listening on the port 8000
+2023-04-28 18:51:27 info: =================================
+2023-04-28 18:51:29 error: {}
+2023-04-28 18:51:29 info: [0mGET /posts/getPageAll [32m200[0m 272.095 ms - 16[0m
+2023-04-28 18:51:43 info: =================================
+2023-04-28 18:51:43 info: ======= ENV: development =======
+2023-04-28 18:51:43 info: 🚀 App listening on the port 8000
+2023-04-28 18:51:43 info: =================================
+2023-04-28 18:51:57 info: =================================
+2023-04-28 18:51:57 info: ======= ENV: development =======
+2023-04-28 18:51:57 info: 🚀 App listening on the port 8000
+2023-04-28 18:51:57 info: =================================
+2023-04-28 18:52:08 error: {}
+2023-04-28 18:52:08 info: [0mGET /posts/getPageAll [36m304[0m 141.615 ms - -[0m
+2023-04-28 18:52:09 error: {}
+2023-04-28 18:52:09 info: [0mGET /posts/getPageAll [36m304[0m 26.189 ms - -[0m
+2023-04-28 18:52:09 error: {}
+2023-04-28 18:52:09 info: [0mGET /posts/getPageAll [36m304[0m 24.440 ms - -[0m
+2023-04-28 18:52:09 error: {}
+2023-04-28 18:52:09 info: [0mGET /posts/getPageAll [36m304[0m 27.933 ms - -[0m
+2023-04-28 18:52:10 error: {}
+2023-04-28 18:52:10 info: [0mGET /posts/getPageAll [36m304[0m 22.176 ms - -[0m
+2023-04-28 18:52:10 error: {}
+2023-04-28 18:52:10 info: [0mGET /posts/getPageAll [36m304[0m 31.059 ms - -[0m
+2023-04-28 18:52:33 info: =================================
+2023-04-28 18:52:33 info: ======= ENV: development =======
+2023-04-28 18:52:33 info: 🚀 App listening on the port 8000
+2023-04-28 18:52:33 info: =================================
+2023-04-28 18:52:37 info: [0mGET /posts/getPageAll [32m200[0m 190.185 ms - -[0m
+2023-04-28 18:52:47 info: [0mGET /services/nav [36m304[0m 56.265 ms - -[0m
+2023-04-28 18:52:47 info: [0mGET /categories/post [36m304[0m 67.595 ms - -[0m
+2023-04-28 18:52:47 info: [0mGET /posts/getPageAll [32m200[0m 209.816 ms - -[0m
+2023-04-28 18:53:38 info: [0mGET /categories/post [36m304[0m 267.071 ms - -[0m
+2023-04-28 18:53:38 info: [0mGET /services/nav [36m304[0m 362.603 ms - -[0m
+2023-04-28 18:53:38 info: [0mGET /posts/getPageAll [36m304[0m 410.708 ms - -[0m
+2023-04-28 18:53:45 info: [0mGET /categories/post [36m304[0m 16.121 ms - -[0m
+2023-04-28 18:53:45 info: [0mGET /posts/category/android [32m200[0m 110.212 ms - 418[0m
+2023-04-28 18:53:47 info: [0mGET /posts/category/website [32m200[0m 23.216 ms - -[0m
+2023-04-28 18:53:50 info: [0mGET /posts/category/android [36m304[0m 14.206 ms - -[0m
+2023-04-28 18:53:51 info: [0mGET /categories/post [36m304[0m 56.746 ms - -[0m
+2023-04-28 18:53:51 info: [0mGET /posts/getPageAll [36m304[0m 125.599 ms - -[0m
+2023-04-28 18:53:53 info: [0mGET /categories/post [36m304[0m 19.900 ms - -[0m
+2023-04-28 18:53:53 info: [0mGET /posts/category/website [36m304[0m 41.853 ms - -[0m
+2023-04-28 18:53:54 info: [0mGET /categories/post [36m304[0m 9.362 ms - -[0m
+2023-04-28 18:53:54 info: [0mGET /posts/getPageAll [36m304[0m 38.624 ms - -[0m
+2023-04-28 18:53:55 info: [0mGET /categories/post [36m304[0m 14.527 ms - -[0m
+2023-04-28 18:53:55 info: [0mGET /posts/category/website [36m304[0m 41.598 ms - -[0m
+2023-04-28 18:53:55 info: [0mGET /posts/category/android [36m304[0m 26.948 ms - -[0m
+2023-04-28 18:53:56 info: [0mGET /categories/post [36m304[0m 10.857 ms - -[0m
+2023-04-28 18:53:56 info: [0mGET /posts/getPageAll [36m304[0m 54.502 ms - -[0m
+2023-04-28 18:54:01 info: [0mGET /categories/post [36m304[0m 15.535 ms - -[0m
+2023-04-28 18:54:01 info: [0mGET /posts/category/website [36m304[0m 27.252 ms - -[0m
+2023-04-28 18:54:02 info: [0mGET /posts/category/android [36m304[0m 14.243 ms - -[0m
+2023-04-28 18:54:03 info: [0mGET /categories/post [36m304[0m 18.302 ms - -[0m
+2023-04-28 18:54:03 info: [0mGET /posts/getPageAll [36m304[0m 166.359 ms - -[0m
+2023-04-28 18:54:50 info: [0mGET /categories/post [36m304[0m 53.525 ms - -[0m
+2023-04-28 18:54:50 info: [0mGET /posts/getPageAll [36m304[0m 104.724 ms - -[0m
+2023-04-28 18:58:11 info: [0mGET /categories/post [36m304[0m 32.986 ms - -[0m
+2023-04-28 18:58:11 info: [0mGET /services/nav [36m304[0m 105.195 ms - -[0m
+2023-04-28 18:58:11 info: [0mGET /posts/getPageAll [36m304[0m 232.435 ms - -[0m
+2023-04-28 18:58:38 info: [0mGET /categories/post [36m304[0m 69.095 ms - -[0m
+2023-04-28 18:58:38 info: [0mGET /posts/category/website [36m304[0m 78.548 ms - -[0m
+2023-04-28 18:58:40 info: [0mGET /posts/category/android [36m304[0m 50.642 ms - -[0m
+2023-04-28 18:58:46 info: [0mGET /posts/category/website [36m304[0m 44.907 ms - -[0m
+2023-04-28 18:58:49 info: [0mGET /categories/post [36m304[0m 109.548 ms - -[0m
+2023-04-28 18:58:49 info: [0mGET /posts/getPageAll [36m304[0m 347.001 ms - -[0m
+2023-04-28 18:58:57 info: [0mGET /posts/findByIdClient/3 [36m304[0m 150.335 ms - -[0m
+2023-04-28 18:58:59 info: [0mGET /categories/post [36m304[0m 14.493 ms - -[0m
+2023-04-28 18:58:59 info: [0mGET /posts/getPageAll [36m304[0m 53.501 ms - -[0m
+2023-04-28 18:59:01 info: [0mGET /posts/findByIdClient/4 [32m200[0m 38.493 ms - 572[0m
+2023-04-28 18:59:02 info: [0mGET /categories/post [36m304[0m 3.522 ms - -[0m
+2023-04-28 18:59:02 info: [0mGET /posts/getPageAll [36m304[0m 31.314 ms - -[0m
+2023-04-28 18:59:04 info: [0mGET /ceos/getlistCeo [36m304[0m 62.642 ms - -[0m
+2023-04-28 18:59:05 info: [0mGET /services/nav [36m304[0m 146.406 ms - -[0m
+2023-04-28 18:59:05 info: [0mGET /posts/getListFeatured [32m200[0m 146.603 ms - -[0m
+2023-04-28 18:59:06 info: [0mGET /categories/post [36m304[0m 19.884 ms - -[0m
+2023-04-28 18:59:06 info: [0mGET /posts/getPageAll [36m304[0m 164.771 ms - -[0m
+2023-04-28 18:59:07 info: [0mGET /jobs/getListFeatured [36m304[0m 23.338 ms - -[0m
+2023-04-28 18:59:08 info: [0mGET /categories/post [36m304[0m 26.324 ms - -[0m
+2023-04-28 18:59:08 info: [0mGET /posts/getPageAll [36m304[0m 49.964 ms - -[0m
+2023-04-28 18:59:09 info: [0mGET /projects [36m304[0m 57.188 ms - -[0m
+2023-04-28 18:59:09 info: [0mGET /branchs/getListBranch [36m304[0m 59.005 ms - -[0m
+2023-04-28 19:00:03 info: [0mOPTIONS /admins/profile [32m204[0m 2.023 ms - 0[0m
+2023-04-28 19:00:04 info: [0mGET /admins/profile [36m304[0m 209.760 ms - -[0m
+2023-04-28 19:00:04 info: [0mGET /posts?page=1&page_size=10 [36m304[0m 270.162 ms - -[0m
+2023-04-28 19:00:05 info: [0mGET /posts?page=1&page_size=10 [36m304[0m 193.543 ms - -[0m
+2023-04-28 19:00:15 info: [0mOPTIONS /admins/profile [32m204[0m 0.678 ms - 0[0m
+2023-04-28 19:00:15 info: [0mGET /categories? [32m200[0m 106.176 ms - 372[0m
+2023-04-28 19:00:15 info: [0mGET /admins/profile [36m304[0m 150.282 ms - -[0m
+2023-04-28 19:00:15 info: [0mGET /categories?page=1&page_size=10 [32m200[0m 39.341 ms - 372[0m

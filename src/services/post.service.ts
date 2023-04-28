@@ -5,6 +5,7 @@ import { logger } from "../utils/logger";
 
 import models from "../infra/sequelize/models";
 import Helper from "../utils/Helper";
+import { CategoryDTO } from "../dtos/category.dtos";
 
 export class PostService {
 
@@ -105,8 +106,84 @@ export class PostService {
     }
 
     public getPageAll = async () => {
+
+        const relation = [
+            {
+                model: models.Media,
+                as: "image",
+                required: false,
+            },
+            {
+                model: models.Category,
+                as: "category",
+                required: true,
+                include: {
+                    model: models.CategoryTranslation,
+                    as: "translations",
+                    required: true,
+                    where: {
+                        locale: global.lang
+                    }
+                }
+            },
+            {
+                model: models.PostTranslation,
+                as: "translations",
+                required: true,
+                where: { locale: global.lang }
+            },
+        ]
         try {
 
+            const post = await models.Post.findOne({
+                where: {
+                    status: 'active',
+                    isFeatured: 'true',
+                },
+                order: [['createdAt', 'DESC']],
+                include: relation
+            });
+
+            const category = await models.Category.findOne({
+                where: {
+                    status: 'active',
+                },
+                include: {
+                    model: models.CategoryTranslation,
+                    as: "translations",
+                    required: true,
+                    where: {
+                        locale: global.lang
+                    }
+                },
+                order: [['createdAt', 'DESC']],
+            });
+
+            const postsOfCategory = await models.Post.findAll({
+                where: {
+                    status: 'active',
+                    category_id: category.id
+                },
+                include: relation
+            });
+
+            const postsMore = await models.Post.findAll({
+                where: {
+                    status: 'active',
+                },
+                include: relation
+            });
+
+            return {
+                post: post ?  PostDTO.transform(post) : null,
+                category: CategoryDTO.transform(category),
+                postsOfCategory: postsOfCategory.map((item) => {
+                    return PostDTO.transform(item);
+                }),
+                postsMore: postsMore.map((item) => {
+                    return PostDTO.transform(item);
+                }),
+            };
         } catch (error) {
             console.log(error);
             logger.error(JSON.stringify(error));

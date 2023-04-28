@@ -704,3 +704,176 @@ TSError: ⨯ Unable to compile TypeScript:
     at Module.load (node:internal/modules/cjs/loader:1069:32)
     at Function.Module._load (node:internal/modules/cjs/loader:904:12)
     at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-28 18:04:50 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/services/post.service.ts[0m:[93m111[0m:[93m44[0m - [91merror[0m[90m TS1117: [0mAn object literal cannot have multiple properties with the same name.
+
+[7m111[0m                 where: { status: 'active', status: 'active' },
+[7m   [0m [91m                                           ~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/services/post.service.ts[0m:[93m111[0m:[93m44[0m - [91merror[0m[90m TS1117: [0mAn object literal cannot have multiple properties with the same name.
+
+[7m111[0m                 where: { status: 'active', status: 'active' },
+[7m   [0m [91m                                           ~~~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-28 18:05:20 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/services/post.service.ts[0m:[93m114[0m:[93m21[0m - [91merror[0m[90m TS1117: [0mAn object literal cannot have multiple properties with the same name.
+
+[7m114[0m                     isFeatured: 'true',
+[7m   [0m [91m                    ~~~~~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/services/post.service.ts[0m:[93m114[0m:[93m21[0m - [91merror[0m[90m TS1117: [0mAn object literal cannot have multiple properties with the same name.
+
+[7m114[0m                     isFeatured: 'true',
+[7m   [0m [91m                    ~~~~~~~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-28 18:14:17 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/services/post.service.ts[0m:[93m144[0m:[93m19[0m - [91merror[0m[90m TS2451: [0mCannot redeclare block-scoped variable 'category'.
+
+[7m144[0m             const category = await models.Category.findOne({
+[7m   [0m [91m                  ~~~~~~~~[0m
+[96msrc/services/post.service.ts[0m:[93m151[0m:[93m19[0m - [91merror[0m[90m TS2451: [0mCannot redeclare block-scoped variable 'category'.
+
+[7m151[0m             const category = await models.Category.findOne({
+[7m   [0m [91m                  ~~~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/services/post.service.ts[0m:[93m144[0m:[93m19[0m - [91merror[0m[90m TS2451: [0mCannot redeclare block-scoped variable 'category'.
+
+[7m144[0m             const category = await models.Category.findOne({
+[7m   [0m [91m                  ~~~~~~~~[0m
+[96msrc/services/post.service.ts[0m:[93m151[0m:[93m19[0m - [91merror[0m[90m TS2451: [0mCannot redeclare block-scoped variable 'category'.
+
+[7m151[0m             const category = await models.Category.findOne({
+[7m   [0m [91m                  ~~~~~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-28 18:14:33 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/services/post.service.ts[0m:[93m144[0m:[93m19[0m - [91merror[0m[90m TS2451: [0mCannot redeclare block-scoped variable 'category'.
+
+[7m144[0m             const category = await models.Category.findOne({
+[7m   [0m [91m                  ~~~~~~~~[0m
+[96msrc/services/post.service.ts[0m:[93m151[0m:[93m19[0m - [91merror[0m[90m TS2451: [0mCannot redeclare block-scoped variable 'category'.
+
+[7m151[0m             const category = await models.Post.findAll({
+[7m   [0m [91m                  ~~~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/services/post.service.ts[0m:[93m144[0m:[93m19[0m - [91merror[0m[90m TS2451: [0mCannot redeclare block-scoped variable 'category'.
+
+[7m144[0m             const category = await models.Category.findOne({
+[7m   [0m [91m                  ~~~~~~~~[0m
+[96msrc/services/post.service.ts[0m:[93m151[0m:[93m19[0m - [91merror[0m[90m TS2451: [0mCannot redeclare block-scoped variable 'category'.
+
+[7m151[0m             const category = await models.Post.findAll({
+[7m   [0m [91m                  ~~~~~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-28 18:15:55 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/services/post.service.ts[0m:[93m155[0m:[93m26[0m - [91merror[0m[90m TS2304: [0mCannot find name 'Sequelize'.
+
+[7m155[0m                         [Sequelize.Op.in]: [1, 2, 3, 4]
+[7m   [0m [91m                         ~~~~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/services/post.service.ts[0m:[93m155[0m:[93m26[0m - [91merror[0m[90m TS2304: [0mCannot find name 'Sequelize'.
+
+[7m155[0m                         [Sequelize.Op.in]: [1, 2, 3, 4]
+[7m   [0m [91m                         ~~~~~~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-28 18:24:33 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/services/post.service.ts[0m:[93m162[0m:[93m19[0m - [91merror[0m[90m TS2451: [0mCannot redeclare block-scoped variable 'postsOfCategory'.
+
+[7m162[0m             const postsOfCategory = await models.Post.findAll({
+[7m   [0m [91m                  ~~~~~~~~~~~~~~~[0m
+[96msrc/services/post.service.ts[0m:[93m170[0m:[93m19[0m - [91merror[0m[90m TS2451: [0mCannot redeclare block-scoped variable 'postsOfCategory'.
+
+[7m170[0m             const postsOfCategory = await models.Post.findAll({
+[7m   [0m [91m                  ~~~~~~~~~~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/services/post.service.ts[0m:[93m162[0m:[93m19[0m - [91merror[0m[90m TS2451: [0mCannot redeclare block-scoped variable 'postsOfCategory'.
+
+[7m162[0m             const postsOfCategory = await models.Post.findAll({
+[7m   [0m [91m                  ~~~~~~~~~~~~~~~[0m
+[96msrc/services/post.service.ts[0m:[93m170[0m:[93m19[0m - [91merror[0m[90m TS2451: [0mCannot redeclare block-scoped variable 'postsOfCategory'.
+
+[7m170[0m             const postsOfCategory = await models.Post.findAll({
+[7m   [0m [91m                  ~~~~~~~~~~~~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-28 18:26:50 error: {}
+2023-04-28 18:26:50 error: {}
+2023-04-28 18:27:30 error: {}
+2023-04-28 18:28:05 error: {}
+2023-04-28 18:28:05 error: {}
+2023-04-28 18:28:05 error: {}
+2023-04-28 18:28:07 error: {}
+2023-04-28 18:44:11 error: {}
+2023-04-28 18:44:18 error: {}
+2023-04-28 18:48:29 error: {}
+2023-04-28 18:51:29 error: {}
+2023-04-28 18:52:08 error: {}
+2023-04-28 18:52:09 error: {}
+2023-04-28 18:52:09 error: {}
+2023-04-28 18:52:09 error: {}
+2023-04-28 18:52:10 error: {}
+2023-04-28 18:52:10 error: {}
