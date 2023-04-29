@@ -43,7 +43,8 @@ export class RoleService {
 
         try {
             await models.Role.create({ ...body }
-                , { transaction: t }).then(async (role) => {
+                , { transaction: t })
+                .then(async (role) => {
                     for (const permission of body.permissions) {
                         try {
                             await models.RolePermission.create({
@@ -51,9 +52,10 @@ export class RoleService {
                                 permission_id: permission.id,
 
                             },
-                            { transaction: t });
+                                { transaction: t });
                         } catch (error) {
                             console.log(error);
+                            await t.rollback();
                         }
                     }
                 });
@@ -94,6 +96,7 @@ export class RoleService {
                     { role_id: id, permission_id: permission.id },
                     { transaction: t });
             }
+            
             await t.commit();
         } catch (error) {
             console.log(error);

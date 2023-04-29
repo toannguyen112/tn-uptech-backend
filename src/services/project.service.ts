@@ -119,10 +119,13 @@ export class ProjectService {
 
                     } catch (error) {
                         console.log(error);
+                        await t.rollback();
                     }
 
                     await t.commit();
                 }
+            }).catch(async (error) => {
+                await t.rollback();
             });
     }
 
@@ -199,26 +202,25 @@ export class ProjectService {
         }, { where: { id } },
         )
             .then(async (res) => {
-
                 if (res) {
-                    await this.handleUpdate({ project_id: id, lang: global.lang, body });
-                }
-            });
-    }
-
-    public handleUpdate = async ({ project_id, lang = "vi", body }) => {
-
-        try {
-            return await models.ProjectTranslation.update({ ...body },
-                {
-                    where: {
-                        project_id,
-                        locale: lang
+                    try {
+                        return await models.ProjectTranslation.update({ ...body },
+                            {
+                                where: {
+                                    project_id: id,
+                                    locale: global.lang
+                                }
+                            });
+                    } catch (error) {
+                        console.log(error);
+                        await t.rollback();
                     }
-                });
-        } catch (error) {
-            console.log(error);
-        }
+
+                    await t.commit();
+                }
+            }).catch(async (error) => {
+                await t.rollback();
+            });;
     }
 
     public deleteById = async (id: string) => {

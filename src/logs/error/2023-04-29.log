@@ -447,3 +447,33 @@ TSError: ⨯ Unable to compile TypeScript:
 2023-04-29 13:56:48 error: Transaction cannot be committed because it has been finished with state: rollback
 2023-04-29 13:56:50 error: {"name":"SequelizeUniqueConstraintError","errors":[{"message":"PRIMARY must be unique","type":"unique violation","path":"PRIMARY","value":"8","origin":"DB","instance":null,"validatorKey":"not_unique","validatorName":null,"validatorArgs":[]}],"parent":{"code":"ER_DUP_ENTRY","errno":1062,"sqlState":"23000","sqlMessage":"Duplicate entry '8' for key 'post_translation.PRIMARY'","sql":"UPDATE `post_translation` SET `name`=?,`id`=?,`slug`=?,`meta_keyword`=?,`meta_viewport`=? WHERE `post_id` = ? AND `locale` = ?","parameters":["Tương lai E-commerce ",8,"tuong-lai-e-commerce","","","8","vi"]},"original":{"code":"ER_DUP_ENTRY","errno":1062,"sqlState":"23000","sqlMessage":"Duplicate entry '8' for key 'post_translation.PRIMARY'","sql":"UPDATE `post_translation` SET `name`=?,`id`=?,`slug`=?,`meta_keyword`=?,`meta_viewport`=? WHERE `post_id` = ? AND `locale` = ?","parameters":["Tương lai E-commerce ",8,"tuong-lai-e-commerce","","","8","vi"]},"fields":{"PRIMARY":"8"},"sql":"UPDATE `post_translation` SET `name`=?,`id`=?,`slug`=?,`meta_keyword`=?,`meta_viewport`=? WHERE `post_id` = ? AND `locale` = ?"}
 2023-04-29 13:56:50 error: Transaction cannot be committed because it has been finished with state: rollback
+2023-04-29 14:00:40 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/services/project.service.ts[0m:[93m213[0m:[93m37[0m - [91merror[0m[90m TS2552: [0mCannot find name 'project_id'. Did you mean 'ProjectDTO'?
+
+[7m213[0m                                     project_id,
+[7m   [0m [91m                                    ~~~~~~~~~~[0m
+[96msrc/services/project.service.ts[0m:[93m214[0m:[93m45[0m - [91merror[0m[90m TS2304: [0mCannot find name 'lang'.
+
+[7m214[0m                                     locale: lang
+[7m   [0m [91m                                            ~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/services/project.service.ts[0m:[93m213[0m:[93m37[0m - [91merror[0m[90m TS2552: [0mCannot find name 'project_id'. Did you mean 'ProjectDTO'?
+
+[7m213[0m                                     project_id,
+[7m   [0m [91m                                    ~~~~~~~~~~[0m
+[96msrc/services/project.service.ts[0m:[93m214[0m:[93m45[0m - [91merror[0m[90m TS2304: [0mCannot find name 'lang'.
+
+[7m214[0m                                     locale: lang
+[7m   [0m [91m                                            ~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
