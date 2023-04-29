@@ -71,20 +71,23 @@ export class PostDTO {
         return {
             id: item.id,
             name: translationData.name || "",
-            ceo: {
+            ceo: item.ceo ? {
                 id: item.ceo.id,
                 name: item.ceo['translations'][0].name || "",
                 description: item.ceo['translations'][0].description || "",
                 slug: item.ceo['translations'][0].slug || "",
                 thumbnail: item.ceo.image ?? null,
-
-            },
+            } : null,
 
             content: translationData.content || "",
             banner: item.banner_image || null,
             posted_at: item.posted_at,
 
             related: item.postRelated.map((item) => {
+                return this.transform(item)
+            }) || [],
+
+            posts: item.posts.map((item) => {
                 return this.transform(item)
             }) || [],
 

@@ -1098,3 +1098,161 @@ TSError: ⨯ Unable to compile TypeScript:
     at Module.load (node:internal/modules/cjs/loader:1069:32)
     at Function.Module._load (node:internal/modules/cjs/loader:904:12)
     at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-29 19:25:39 error: Cannot read properties of null (reading 'id')
+2023-04-29 19:25:54 error: Cannot read properties of null (reading 'id')
+2023-04-29 19:28:54 error: Cannot read properties of null (reading 'related')
+2023-04-29 19:32:54 error: Cannot read properties of null (reading 'id')
+2023-04-29 19:33:01 error: Cannot read properties of null (reading 'id')
+2023-04-29 19:34:09 error: Cannot read properties of null (reading 'related')
+2023-04-29 19:34:11 error: Cannot read properties of null (reading 'id')
+2023-04-29 19:35:07 error: {}
+2023-04-29 19:36:01 error: {}
+2023-04-29 19:38:59 error: {}
+2023-04-29 19:39:38 error: {}
+2023-04-29 19:39:39 error: {}
+2023-04-29 19:40:26 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/services/post.service.ts[0m:[93m512[0m:[93m13[0m - [91merror[0m[90m TS2304: [0mCannot find name 'post'.
+
+[7m512[0m         if (post.related && post.related.length) {
+[7m   [0m [91m            ~~~~[0m
+[96msrc/services/post.service.ts[0m:[93m512[0m:[93m29[0m - [91merror[0m[90m TS2304: [0mCannot find name 'post'.
+
+[7m512[0m         if (post.related && post.related.length) {
+[7m   [0m [91m                            ~~~~[0m
+[96msrc/services/post.service.ts[0m:[93m518[0m:[93m38[0m - [91merror[0m[90m TS2304: [0mCannot find name 'post'.
+
+[7m518[0m                             [Op.in]: post.related
+[7m   [0m [91m                                     ~~~~[0m
+[96msrc/services/post.service.ts[0m:[93m537[0m:[93m51[0m - [91merror[0m[90m TS2304: [0mCannot find name 'post'.
+
+[7m537[0m         return PostDTO.transformDetailClient({ ...post, postRelated });
+[7m   [0m [91m                                                  ~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/services/post.service.ts[0m:[93m512[0m:[93m13[0m - [91merror[0m[90m TS2304: [0mCannot find name 'post'.
+
+[7m512[0m         if (post.related && post.related.length) {
+[7m   [0m [91m            ~~~~[0m
+[96msrc/services/post.service.ts[0m:[93m512[0m:[93m29[0m - [91merror[0m[90m TS2304: [0mCannot find name 'post'.
+
+[7m512[0m         if (post.related && post.related.length) {
+[7m   [0m [91m                            ~~~~[0m
+[96msrc/services/post.service.ts[0m:[93m518[0m:[93m38[0m - [91merror[0m[90m TS2304: [0mCannot find name 'post'.
+
+[7m518[0m                             [Op.in]: post.related
+[7m   [0m [91m                                     ~~~~[0m
+[96msrc/services/post.service.ts[0m:[93m537[0m:[93m51[0m - [91merror[0m[90m TS2304: [0mCannot find name 'post'.
+
+[7m537[0m         return PostDTO.transformDetailClient({ ...post, postRelated });
+[7m   [0m [91m                                                  ~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-29 19:40:49 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/services/post.service.ts[0m:[93m536[0m:[93m51[0m - [91merror[0m[90m TS2304: [0mCannot find name 'post'.
+
+[7m536[0m         return PostDTO.transformDetailClient({ ...post, postRelated });
+[7m   [0m [91m                                                  ~~~~[0m
+[96msrc/services/post.service.ts[0m:[93m536[0m:[93m57[0m - [91merror[0m[90m TS18004: [0mNo value exists in scope for the shorthand property 'postRelated'. Either declare one or provide an initializer.
+
+[7m536[0m         return PostDTO.transformDetailClient({ ...post, postRelated });
+[7m   [0m [91m                                                        ~~~~~~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/services/post.service.ts[0m:[93m536[0m:[93m51[0m - [91merror[0m[90m TS2304: [0mCannot find name 'post'.
+
+[7m536[0m         return PostDTO.transformDetailClient({ ...post, postRelated });
+[7m   [0m [91m                                                  ~~~~[0m
+[96msrc/services/post.service.ts[0m:[93m536[0m:[93m57[0m - [91merror[0m[90m TS18004: [0mNo value exists in scope for the shorthand property 'postRelated'. Either declare one or provide an initializer.
+
+[7m536[0m         return PostDTO.transformDetailClient({ ...post, postRelated });
+[7m   [0m [91m                                                        ~~~~~~~~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-29 19:41:49 error: {}
+2023-04-29 19:41:50 error: {}
+2023-04-29 19:45:42 error: {}
+2023-04-29 19:46:04 error: {}
+2023-04-29 19:46:21 error: {}
+2023-04-29 19:46:32 error: {}
+2023-04-29 19:48:16 error: {}
+2023-04-29 19:48:28 error: {}
+2023-04-29 19:55:47 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/modules/controllers/post.controller.ts[0m:[93m100[0m:[93m37[0m - [91merror[0m[90m TS2339: [0mProperty 'updateById' does not exist on type 'PostService'.
+
+[7m100[0m             const data = await post.updateById(id, req.body);
+[7m   [0m [91m                                    ~~~~~~~~~~[0m
+[96msrc/modules/controllers/post.controller.ts[0m:[93m110[0m:[93m37[0m - [91merror[0m[90m TS2339: [0mProperty 'deleteById' does not exist on type 'PostService'.
+
+[7m110[0m             const data = await post.deleteById(req.params.id);
+[7m   [0m [91m                                    ~~~~~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/modules/controllers/post.controller.ts[0m:[93m100[0m:[93m37[0m - [91merror[0m[90m TS2339: [0mProperty 'updateById' does not exist on type 'PostService'.
+
+[7m100[0m             const data = await post.updateById(id, req.body);
+[7m   [0m [91m                                    ~~~~~~~~~~[0m
+[96msrc/modules/controllers/post.controller.ts[0m:[93m110[0m:[93m37[0m - [91merror[0m[90m TS2339: [0mProperty 'deleteById' does not exist on type 'PostService'.
+
+[7m110[0m             const data = await post.deleteById(req.params.id);
+[7m   [0m [91m                                    ~~~~~~~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-29 19:55:59 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/services/post.service.ts[0m:[93m526[0m:[93m74[0m - [91merror[0m[90m TS2552: [0mCannot find name 'posts'. Did you mean 'post'?
+
+[7m526[0m             return PostDTO.transformDetailClient({ ...post, postRelated, posts });
+[7m   [0m [91m                                                                         ~~~~~[0m
+
+  [96msrc/services/post.service.ts[0m:[93m466[0m:[93m19[0m
+    [7m466[0m             const post = await models.Post.findOne({
+    [7m   [0m [96m                  ~~~~[0m
+    'post' is declared here.
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/services/post.service.ts[0m:[93m526[0m:[93m74[0m - [91merror[0m[90m TS2552: [0mCannot find name 'posts'. Did you mean 'post'?
+
+[7m526[0m             return PostDTO.transformDetailClient({ ...post, postRelated, posts });
+[7m   [0m [91m                                                                         ~~~~~[0m
+
+  [96msrc/services/post.service.ts[0m:[93m466[0m:[93m19[0m
+    [7m466[0m             const post = await models.Post.findOne({
+    [7m   [0m [96m                  ~~~~[0m
+    'post' is declared here.
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)

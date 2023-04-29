@@ -86,10 +86,16 @@ module.exports = function (sequelize, DataTypes) {
                     return Helper.formatDayJs(this.getDataValue('updatedAt'));
                 }
             },
+
+            deletedAt: {
+                type: DataTypes.DATE
+            },
         },
         {
             timestamps: true,
             tableName: "posts",
+            paranoid: true,
+            deletedAt: 'deletedAt',
         },
     );
 
@@ -107,7 +113,6 @@ module.exports = function (sequelize, DataTypes) {
         Post.belongsTo(models.Ceo, {
             as: 'ceo',
             foreignKey: "ceo_id",
-            onDelete: 'set null'
         });
 
         Post.hasMany(models.PostTranslation, {

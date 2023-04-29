@@ -41,6 +41,10 @@ module.exports = function (sequelize, DataTypes) {
                     return Helper.formatDayJs(this.getDataValue('updatedAt'));
                 }
             },
+
+            deletedAt: {
+                type: DataTypes.DATE
+            },
         },
         {
             timestamps: true,
@@ -58,7 +62,6 @@ module.exports = function (sequelize, DataTypes) {
 
         Ceo.hasMany(models.Post, {
             foreignKey: "id",
-            onDelete: 'set null'
         });
 
         Ceo.hasMany(models.CeoTranslation, {

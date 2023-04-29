@@ -366,7 +366,6 @@ export class PostService {
         }
     }
 
-
     public store = async (body) => {
 
         const t = await models.sequelize.transaction();
@@ -463,49 +462,47 @@ export class PostService {
 
     public findByIdClient = async (id) => {
 
-        const post = await models.Post.findOne({
-            where: { id },
-            include: [
-                {
-                    model: models.Media,
-                    as: "banner_image",
-                    required: false,
-                },
-                {
-                    model: models.Ceo,
-                    as: "ceo",
-                    required: false,
-                    include: [
-                        {
-                            model: models.Media,
-                            as: "image",
-                            required: false,
-                        },
-                        {
-                            model: models.CeoTranslation,
-                            as: "translations",
-                            required: true,
-                            where: {
-                                locale: global.lang,
-                            }
-                        },
-                    ]
-                },
-                {
-                    model: models.PostTranslation,
-                    as: "translations",
-                    required: true,
-                    where: {
-                        locale: global.lang,
-                    }
-                },
-            ]
-        });
+        try {
+            const post = await models.Post.findOne({
+                where: { id },
+                include: [
+                    {
+                        model: models.Media,
+                        as: "banner_image",
+                        required: false,
+                    },
+                    {
+                        model: models.Ceo,
+                        as: "ceo",
+                        required: false,
+                        include: [
+                            {
+                                model: models.Media,
+                                as: "image",
+                                required: false,
+                            },
+                            {
+                                model: models.CeoTranslation,
+                                as: "translations",
+                                required: true,
+                                where: {
+                                    locale: global.lang,
+                                }
+                            },
+                        ]
+                    },
+                    {
+                        model: models.PostTranslation,
+                        as: "translations",
+                        required: true,
+                        where: { locale: global.lang }
+                    },
+                ]
+            });
 
-        let postRelated = [];
+            let postRelated = [];
 
-        if (post.related && post.related.length) {
-            try {
+            if (post.related && post.related.length) {
                 postRelated = await models.Post.findAll({
                     where: {
                         status: 'active',
@@ -524,12 +521,35 @@ export class PostService {
                         },
                     ]
                 });
-            } catch (error) {
-                logger.error(JSON.stringify(error));
             }
+
+            const posts = await models.Post.findAll({
+                where: {
+                    status: 'active',
+                    category_id: post.category_id
+                },
+                include: [
+                    {
+                        model: models.Media,
+                        as: "banner_image",
+                        required: false,
+                    },
+                    {
+                        model: models.PostTranslation,
+                        as: "translations",
+                        required: true,
+                        where: { locale: global.lang }
+                    },
+                ]
+            });
+
+            return PostDTO.transformDetailClient({ ...post, postRelated, posts });
+
+        } catch (error) {
+            console.log(error);
+            logger.error(JSON.stringify(error));
         }
 
-        return PostDTO.transformDetailClient({ ...post, postRelated });
     }
 
     public updateById = async (id, body) => {

@@ -87,6 +87,11 @@ module.exports = {
         type: Sequelize.DATE,
         defaultValue: new Date(),
       },
+
+      deletedAt: {
+        type: Sequelize.DATE,
+        allowNull: true,
+      },
     }),
 
   down: (queryInterface) => queryInterface.dropTable("posts"),
