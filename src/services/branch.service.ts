@@ -134,20 +134,28 @@ export class BranchService {
 
     public updateById = async (id: string, body) => {
 
+        delete body.id;
+
         const t = await models.sequelize.transaction();
 
-        const branch = await models.Branch.update({ status: body.status, }, { where: { id } },{ transaction: t })
+        const branch = await models.Branch.update(
+            { status: body.status, },
+            { where: { id } }, { transaction: t })
             .then(async (res) => {
                 try {
-                    return await models.BranchTranslation.update({ name: body.name },
+                    await models.BranchTranslation.update(
+                        { name: body.name },
                         {
                             where: {
                                 branch_id: id,
                                 locale: global.lang
                             }
                         });
+
+                    await t.commit();
                 } catch (error) {
                     console.log(error);
+                    await t.rollback();
                 }
             });
 

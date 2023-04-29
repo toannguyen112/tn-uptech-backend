@@ -476,15 +476,21 @@ export class PostService {
                     model: models.Ceo,
                     as: "ceo",
                     required: false,
-                    include: {
-                        model: models.CeoTranslation,
-                        as: "translations",
-                        required: true,
-                        where: {
-                            locale: global.lang,
-                            ceo_id: id
-                        }
-                    },
+                    include: [
+                        {
+                            model: models.Media,
+                            as: "image",
+                            required: false,
+                        },
+                        {
+                            model: models.CeoTranslation,
+                            as: "translations",
+                            required: true,
+                            where: {
+                                locale: global.lang,
+                            }
+                        },
+                    ]
                 },
                 {
                     model: models.PostTranslation,
@@ -492,7 +498,6 @@ export class PostService {
                     required: true,
                     where: {
                         locale: global.lang,
-                        post_id: id
                     }
                 },
             ]

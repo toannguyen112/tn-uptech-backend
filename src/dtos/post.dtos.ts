@@ -1,4 +1,5 @@
 import Helper from "../utils/Helper";
+import { CeoDTO } from "./ceo.dto";
 
 export class PostDTO {
     static transform = (item: any) => {
@@ -70,7 +71,14 @@ export class PostDTO {
         return {
             id: item.id,
             name: translationData.name || "",
-            ceo: item.ceo ?? null,
+            ceo: {
+                id: item.ceo.id,
+                name: item.ceo['translations'][0].name || "",
+                description: item.ceo['translations'][0].description || "",
+                slug: item.ceo['translations'][0].slug || "",
+                thumbnail: item.ceo.image ?? null,
+
+            },
 
             content: translationData.content || "",
             banner: item.banner_image || null,

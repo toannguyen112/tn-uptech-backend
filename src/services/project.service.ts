@@ -220,7 +220,7 @@ export class ProjectService {
                 }
             }).catch(async (error) => {
                 await t.rollback();
-            });;
+            });
     }
 
     public deleteById = async (id: string) => {

@@ -196,8 +196,9 @@ export class CeoService {
         )
             .then(async (res) => {
                 try {
-                    await models.CeoTranslation.update({...body},
-                        { where: { ceo_id: id, locale: global.lang } });
+                    await models.CeoTranslation.update({ ...body },
+                        { where: { ceo_id: id, locale: global.lang } },
+                        { individualHooks: true },);
                 } catch (error) {
                     console.log(error);
                     await t.rollback();
