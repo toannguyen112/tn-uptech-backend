@@ -29,7 +29,6 @@ module.exports = {
         allowNull: true,
       },
 
-
       createdAt: {
         type: Sequelize.DATE,
         defaultValue: new Date(),
@@ -38,6 +37,10 @@ module.exports = {
       updatedAt: {
         type: Sequelize.DATE,
         defaultValue: new Date(),
+      },
+
+      deletedAt: {
+        type: Sequelize.DATE,
       },
 
     }),

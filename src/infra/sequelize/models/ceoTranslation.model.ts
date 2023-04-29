@@ -85,7 +85,6 @@ module.exports = function (sequelize, DataTypes) {
             slug: {
                 type: DataTypes.STRING,
                 unique: true,
-                allowNull: true,
             },
 
             custom_slug: {
@@ -139,6 +138,7 @@ module.exports = function (sequelize, DataTypes) {
         CeoTranslation.belongsTo(models.Ceo, {
             as: "ceo",
             foreignKey: "ceo_id",
+            onDelete: 'CASCADE', onUpdate: 'CASCADE'
         });
     }
 

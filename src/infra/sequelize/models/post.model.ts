@@ -106,7 +106,8 @@ module.exports = function (sequelize, DataTypes) {
 
         Post.belongsTo(models.Ceo, {
             as: 'ceo',
-            foreignKey: "ceo_id"
+            foreignKey: "ceo_id",
+            onDelete: 'set null'
         });
 
         Post.hasMany(models.PostTranslation, {

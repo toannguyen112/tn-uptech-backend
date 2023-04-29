@@ -44,6 +44,8 @@ module.exports = function (sequelize, DataTypes) {
         },
         {
             timestamps: true,
+            paranoid: true,
+            deletedAt: 'deletedAt',
             tableName: "ceos",
         },
     );
@@ -54,9 +56,14 @@ module.exports = function (sequelize, DataTypes) {
             foreignKey: "thumbnail"
         });
 
+        Ceo.hasMany(models.Post, {
+            foreignKey: "id",
+            onDelete: 'set null'
+        });
+
         Ceo.hasMany(models.CeoTranslation, {
             as: "translations",
-            foreignKey: "ceo_id"
+            foreignKey: "ceo_id",
         });
     };
 

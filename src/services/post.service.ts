@@ -210,8 +210,8 @@ export class PostService {
                 },
                 ).then(post => {
                     postMostView = post;
-                }).catch((err) => {
-                    console.log(err);
+                }).catch((error) => {
+                    logger.error(JSON.stringify(error));
                 });
             });
 
@@ -276,8 +276,8 @@ export class PostService {
                 },
                 ).then(post => {
                     postMostView = post;
-                }).catch((err) => {
-                    console.log(err);
+                }).catch((error) => {
+                    logger.error(JSON.stringify(error));
                 });
             });
 
@@ -453,7 +453,6 @@ export class PostService {
                     required: true,
                     where: {
                         locale: global.lang,
-                        post_id: id
                     }
                 },
             ]

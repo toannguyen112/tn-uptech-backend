@@ -36,6 +36,10 @@ module.exports = {
         type: Sequelize.DATE,
         defaultValue: new Date(),
       },
+
+      deletedAt: {
+        type: Sequelize.DATE,
+      },
     }),
 
   down: (queryInterface) => queryInterface.dropTable("banners"),

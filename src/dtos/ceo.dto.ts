@@ -1,3 +1,5 @@
+import Helper from "../utils/Helper";
+
 export class CeoDTO {
     static transform = (item) => {
 
@@ -58,6 +60,8 @@ export class CeoDTO {
 
             createdAt: item.createdAt,
             updatedAt: item.updatedAt,
+
+            ...Helper.FieldsSeo(translationData),
         }
     }
 }
