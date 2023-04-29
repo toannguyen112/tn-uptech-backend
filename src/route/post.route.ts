@@ -12,6 +12,7 @@ export class PostRoute implements Routes {
 
     private initializeRoutes() {
         this.router.get(`${this.path}`, this.post.index);
+        this.router.post(`${this.path}/increaseView`, this.post.increaseView);
         this.router.get(`${this.path}/getPageAll`, this.post.getPageAll);
         this.router.get(`${this.path}/category/:category_slug`, this.post.getDataOfCategory);
         this.router.get(`${this.path}/getListFeatured`, this.post.getListFeatured);
