@@ -135,11 +135,9 @@ export class PostService {
         ]
         try {
 
-            const post = await models.Post.findOne({
-                where: {
-                    status: 'active',
-                    isFeatured: 'true',
-                },
+            const postLatest = await models.Post.findOne({
+                where: { status: 'active', },
+                limit: 1,
                 order: [['createdAt', 'DESC']],
                 include: relation
             });
@@ -168,19 +166,63 @@ export class PostService {
             });
 
             const postsMore = await models.Post.findAll({
-                where: {
-                    status: 'active',
-                },
+                where: { status: 'active' },
                 include: relation
             });
 
+            let postMostView;
+
+            await models.Post.findOne({
+                attributes: [
+                    [models.sequelize.fn('max', models.sequelize.col('view')), 'max_views']
+                ],
+                raw: true
+            }).then(async (result) => {
+                const maxViews = result.max_views;
+                await models.Post.findOne({
+                    where: { view: maxViews },
+                    include: [
+                        {
+                            model: models.PostTranslation,
+                            as: "translations",
+                            required: true,
+                            where: { locale: global.lang }
+                        },
+                        {
+                            model: models.Media,
+                            as: "image",
+                            required: false,
+                        },
+                        {
+                            model: models.Category,
+                            as: "category",
+                            required: true,
+                            include: {
+                                model: models.CategoryTranslation,
+                                as: "translations",
+                                required: true,
+                                where: {
+                                    locale: global.lang,
+                                }
+                            }
+                        },
+                    ]
+                },
+                ).then(post => {
+                    postMostView = post;
+                }).catch((err) => {
+                    console.log(err);
+                });
+            });
+
             return {
-                post: post ?  PostDTO.transform(post) : null,
-                category: CategoryDTO.transform(category),
+                postLatest: postLatest ? PostDTO.transform(postLatest) : null,
+                category: category ? CategoryDTO.transform(category) : null,
+                postMostView: postMostView ? PostDTO.transform(postMostView) : null,
                 postsOfCategory: postsOfCategory.map((item) => {
                     return PostDTO.transform(item);
                 }),
-                postsMore: postsMore.map((item:any) => {
+                postsMore: postsMore.map((item: any) => {
                     return PostDTO.transform(item);
                 }),
             };
@@ -193,28 +235,50 @@ export class PostService {
     public getDataOfCategory = async (category_slug: string) => {
         try {
 
-            const postMostView = await models.Post.findOne({
-                include: [
-                    {
-                        model: models.PostTranslation,
-                        as: "translations",
-                        required: true,
-                        where: { locale: global.lang }
-                    },
-                    {
-                        model: models.Category,
-                        as: "category",
-                        required: true,
-                        include: {
-                            model: models.CategoryTranslation,
+            let postMostView;
+
+            await models.Post.findOne({
+                attributes: [
+                    [models.sequelize.fn('max', models.sequelize.col('view')), 'max_views']
+                ],
+                raw: true
+            }).then(async (result) => {
+                const maxViews = result.max_views;
+                await models.Post.findOne({
+                    where: { view: maxViews },
+                    include: [
+                        {
+                            model: models.PostTranslation,
                             as: "translations",
                             required: true,
-                            where: {
-                                locale: global.lang
+                            where: { locale: global.lang }
+                        },
+                        {
+                            model: models.Media,
+                            as: "image",
+                            required: false,
+                        },
+                        {
+                            model: models.Category,
+                            as: "category",
+                            required: true,
+                            include: {
+                                model: models.CategoryTranslation,
+                                as: "translations",
+                                required: true,
+                                where: {
+                                    locale: global.lang,
+                                    slug: category_slug
+                                }
                             }
-                        }
-                    },
-                ]
+                        },
+                    ]
+                },
+                ).then(post => {
+                    postMostView = post;
+                }).catch((err) => {
+                    console.log(err);
+                });
             });
 
             const rows = await models.Post.findAll({
@@ -249,17 +313,16 @@ export class PostService {
             });
 
             return {
+                postMostView: postMostView ? PostDTO.transform(postMostView) : null,
                 listPost: rows.map((item: any) => {
                     return PostDTO.transform(item);
-                }),
-                postMostView: PostDTO.transform(postMostView)
+                }) ?? [],
             }
 
         } catch (error) {
             console.log(error);
             logger.error(JSON.stringify(error));
         }
-
     }
 
     public getListFeatured = async () => {
@@ -313,7 +376,9 @@ export class PostService {
                 ...body,
                 thumbnail: body.thumbnail ? body.thumbnail.id : null,
                 banner: body.banner ? body.banner.id : null,
-            }, { individualHooks: true }, { transaction: t }
+            },
+                { individualHooks: true },
+                { transaction: t }
             )
                 .then(async (post: any) => {
 
@@ -435,24 +500,28 @@ export class PostService {
         let postRelated = [];
 
         if (post.related && post.related.length) {
-            postRelated = await models.Post.findAll({
-                where: {
-                    id: {
-                        [Op.in]: post.related
-                    }
-                },
-                include: [
-                    {
-                        model: models.PostTranslation,
-                        as: "translations",
-                        required: true,
-                        where: {
-                            locale: global.lang,
-                            post_id: id
+            try {
+                postRelated = await models.Post.findAll({
+                    where: {
+                        id: {
+                            [Op.in]: post.related
                         }
                     },
-                ]
-            });
+                    include: [
+                        {
+                            model: models.PostTranslation,
+                            as: "translations",
+                            required: true,
+                            where: {
+                                locale: global.lang,
+                                post_id: id
+                            }
+                        },
+                    ]
+                });
+            } catch (error) {
+                logger.error(JSON.stringify(error));
+            }
         }
 
 
@@ -461,35 +530,27 @@ export class PostService {
 
     public updateById = async (id, body) => {
 
+        const t = await models.sequelize.transaction();
+
         return await models.Post.update({
             ...body,
+            view: Number(body.view),
             thumbnail: body.thumbnail ? body.thumbnail.id : null,
             banner: body.banner ? body.banner.id : null,
-        }, { where: { id }, individualHooks: true },
+        }, { where: { id }, individualHooks: true }, { transaction: t }
         )
             .then(async (res: any) => {
-                await this.handleUpdate({ post_id: id, lang: global.lang, body });
+                try {
+                    return await models.PostTranslation.update({ ...body },
+                        {
+                            where: { post_id: id, locale: global.lang },
+                            individualHooks: true,
+                        },
+                        { transaction: t });
+                } catch (error) {
+                    logger.error(JSON.stringify(error));
+                }
             });
-    }
-
-    public handleUpdate = async ({ post_id, lang = "vi", body }) => {
-        try {
-            return await models.PostTranslation.update({
-                name: body.name,
-                content: body.content,
-                description: body.description,
-                meta_title: body.meta_title,
-                meta_description: body.meta_description,
-                meta_keyword: body.meta_keyword,
-                meta_robots: body.meta_robots,
-                canonica_link: body.canonica_link,
-                meta_image: body.meta_image,
-                meta_viewport: body.meta_viewport,
-            },
-                { where: { post_id, locale: lang }, individualHooks: true });
-        } catch (error) {
-            logger.error(JSON.stringify(error));
-        }
     }
 
     public deleteById = async (id) => {
