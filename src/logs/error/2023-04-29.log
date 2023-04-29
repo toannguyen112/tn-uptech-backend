@@ -767,3 +767,129 @@ TSError: ⨯ Unable to compile TypeScript:
     at Module.load (node:internal/modules/cjs/loader:1069:32)
     at Function.Module._load (node:internal/modules/cjs/loader:904:12)
     at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-29 14:42:26 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/modules/controllers/banner.controller.ts[0m:[93m58[0m:[93m39[0m - [91merror[0m[90m TS2339: [0mProperty 'deleteById' does not exist on type 'BannerService'.
+
+[7m58[0m             const data = await banner.deleteById(req.params.id);
+[7m  [0m [91m                                      ~~~~~~~~~~[0m
+[96msrc/modules/controllers/banner.controller.ts[0m:[93m68[0m:[93m39[0m - [91merror[0m[90m TS2339: [0mProperty 'deleteMultipleIds' does not exist on type 'BannerService'.
+
+[7m68[0m             const data = await banner.deleteMultipleIds(ids);
+[7m  [0m [91m                                      ~~~~~~~~~~~~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/modules/controllers/banner.controller.ts[0m:[93m58[0m:[93m39[0m - [91merror[0m[90m TS2339: [0mProperty 'deleteById' does not exist on type 'BannerService'.
+
+[7m58[0m             const data = await banner.deleteById(req.params.id);
+[7m  [0m [91m                                      ~~~~~~~~~~[0m
+[96msrc/modules/controllers/banner.controller.ts[0m:[93m68[0m:[93m39[0m - [91merror[0m[90m TS2339: [0mProperty 'deleteMultipleIds' does not exist on type 'BannerService'.
+
+[7m68[0m             const data = await banner.deleteMultipleIds(ids);
+[7m  [0m [91m                                      ~~~~~~~~~~~~~~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-29 14:42:35 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/services/banner.service.ts[0m:[93m188[0m:[93m33[0m - [91merror[0m[90m TS18004: [0mNo value exists in scope for the shorthand property 'banner_id'. Either declare one or provide an initializer.
+
+[7m188[0m                                 banner_id,
+[7m   [0m [91m                                ~~~~~~~~~[0m
+[96msrc/services/banner.service.ts[0m:[93m189[0m:[93m41[0m - [91merror[0m[90m TS2304: [0mCannot find name 'lang'.
+
+[7m189[0m                                 locale: lang
+[7m   [0m [91m                                        ~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/services/banner.service.ts[0m:[93m188[0m:[93m33[0m - [91merror[0m[90m TS18004: [0mNo value exists in scope for the shorthand property 'banner_id'. Either declare one or provide an initializer.
+
+[7m188[0m                                 banner_id,
+[7m   [0m [91m                                ~~~~~~~~~[0m
+[96msrc/services/banner.service.ts[0m:[93m189[0m:[93m41[0m - [91merror[0m[90m TS2304: [0mCannot find name 'lang'.
+
+[7m189[0m                                 locale: lang
+[7m   [0m [91m                                        ~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-29 14:42:55 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/services/banner.service.ts[0m:[93m178[0m:[93m28[0m - [91merror[0m[90m TS2339: [0mProperty 'handleUpdate' does not exist on type 'BannerService'.
+
+[7m178[0m                 await this.handleUpdate({ banner_id: id, lang: global.lang, body });
+[7m   [0m [91m                           ~~~~~~~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/services/banner.service.ts[0m:[93m178[0m:[93m28[0m - [91merror[0m[90m TS2339: [0mProperty 'handleUpdate' does not exist on type 'BannerService'.
+
+[7m178[0m                 await this.handleUpdate({ banner_id: id, lang: global.lang, body });
+[7m   [0m [91m                           ~~~~~~~~~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-29 14:43:06 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/services/banner.service.ts[0m:[93m180[0m:[93m28[0m - [91merror[0m[90m TS2339: [0mProperty 'handleUpdate' does not exist on type 'BannerService'.
+
+[7m180[0m                 await this.handleUpdate({ banner_id: id, lang: global.lang, body });
+[7m   [0m [91m                           ~~~~~~~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/services/banner.service.ts[0m:[93m180[0m:[93m28[0m - [91merror[0m[90m TS2339: [0mProperty 'handleUpdate' does not exist on type 'BannerService'.
+
+[7m180[0m                 await this.handleUpdate({ banner_id: id, lang: global.lang, body });
+[7m   [0m [91m                           ~~~~~~~~~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-29 14:43:12 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/services/banner.service.ts[0m:[93m182[0m:[93m28[0m - [91merror[0m[90m TS2339: [0mProperty 'handleUpdate' does not exist on type 'BannerService'.
+
+[7m182[0m                 await this.handleUpdate({ banner_id: id, lang: global.lang, body });
+[7m   [0m [91m                           ~~~~~~~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/services/banner.service.ts[0m:[93m182[0m:[93m28[0m - [91merror[0m[90m TS2339: [0mProperty 'handleUpdate' does not exist on type 'BannerService'.
+
+[7m182[0m                 await this.handleUpdate({ banner_id: id, lang: global.lang, body });
+[7m   [0m [91m                           ~~~~~~~~~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)

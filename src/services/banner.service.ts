@@ -169,34 +169,36 @@ export class BannerService {
 
     public updateById = async (id: string, body) => {
 
+        delete body.id;
+
+        const t = await models.sequelize.transaction();
+
         return await models.Banner.update({
             status: body.status,
             thumbnail: body.thumbnail ? body.thumbnail.id : null,
         }, { where: { id } },
         )
             .then(async (res) => {
-                await this.handleUpdate({ banner_id: id, lang: global.lang, body });
+                try {
+                    return await models.BannerTranslation.update({...body},
+                        {
+                            where: {
+                                banner_id: id,
+                                locale: global.lang
+                            }
+                        });
+                } catch (error) {
+                    console.log(error);
+                    await t.rollback();
+                }
+
+                await t.commit();
+
+            }).catch(async (error) => {
+                await t.rollback();
             });
     }
 
-    public handleUpdate = async ({ banner_id, lang = "vi", body }) => {
-
-        try {
-            return await models.BannerTranslation.update({
-                name: body.name,
-                description: body.description,
-                sub_name: body.sub_name,
-            },
-                {
-                    where: {
-                        banner_id,
-                        locale: lang
-                    }
-                });
-        } catch (error) {
-            console.log(error);
-        }
-    }
 
     public deleteById = async (id: string) => {
         return await models.Banner.destroy({ where: { id } });
