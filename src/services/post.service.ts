@@ -395,6 +395,7 @@ export class PostService {
                     } catch (error) {
                         console.log(error);
                         logger.error(JSON.stringify(error));
+                        await t.rollback();
                     }
 
                     await t.commit();
@@ -540,6 +541,7 @@ export class PostService {
         }, { where: { id }, individualHooks: true }, { transaction: t }
         )
             .then(async (res: any) => {
+
                 try {
                     return await models.PostTranslation.update({ ...body },
                         {
@@ -548,8 +550,12 @@ export class PostService {
                         },
                         { transaction: t });
                 } catch (error) {
+                    await t.rollback();
                     logger.error(JSON.stringify(error));
                 }
+
+                await t.commit();
+
             });
     }
 
