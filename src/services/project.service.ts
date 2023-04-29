@@ -95,6 +95,9 @@ export class ProjectService {
 
     public store = async (body) => {
 
+        // console.log(body);
+        // return;
+
         const t = await models.sequelize.transaction();
 
         return await models.Project.create({
@@ -108,6 +111,22 @@ export class ProjectService {
 
                 if (project) {
                     try {
+
+                        for (const branchId of body.branchs) {
+                            console.log(branchId);
+
+                            await models.ProjectBranch.create({
+                                project_id: project.id,
+                                branch_id: branchId
+                            }, { transaction: t });
+                        }
+
+                        for (const serviceId of body.services) {
+                            await models.ProjectService.create({
+                                project_id: project.id,
+                                service_id: serviceId
+                            }, { transaction: t });
+                        }
 
                         for (const lang of Helper.langs) {
                             await models.ProjectTranslation.create({
@@ -190,34 +209,59 @@ export class ProjectService {
 
     public updateById = async (id: string, body) => {
 
+        delete body.id;
+
+        console.log(body);
+
         const t = await models.sequelize.transaction();
 
         return await models.Project.update({
-            related: body.related,
-            status: body.status,
-            images: body.images,
-            isFeatured: body.isFeatured,
+            ...body,
             thumbnail: body.thumbnail ? body.thumbnail.id : null,
             banner: body.banner ? body.banner.id : null,
-        }, { where: { id } },
+        }, { where: { id } }, { transaction: t }
         )
             .then(async (res) => {
-                if (res) {
-                    try {
-                        return await models.ProjectTranslation.update({ ...body },
-                            {
-                                where: {
-                                    project_id: id,
-                                    locale: global.lang
-                                }
-                            });
-                    } catch (error) {
-                        console.log(error);
-                        await t.rollback();
+
+                try {
+                    if (body.branchs.length > 0) {
+                        await models.ProjectBranch.destroy({ where: { project_id: id } }, { transaction: t });
+                        for (const branchId of body.branchs) {
+
+                            await models.ProjectBranch.create({
+                                project_id: id,
+                                branch_id: branchId
+                            }, { transaction: t });
+                        }
+
                     }
 
-                    await t.commit();
+                    if (body.services.length > 0) {
+                        await models.ProjectService.destroy({ where: { project_id: id } }, { transaction: t });
+
+                        for (const serviceId of body.services) {
+                            await models.ProjectService.create({
+                                project_id: id,
+                                service_id: serviceId
+                            }, { transaction: t });
+                        }
+                    }
+
+                    await models.ProjectTranslation.update({ ...body },
+                        {
+                            where: {
+                                project_id: id,
+                                locale: global.lang
+                            },
+                            individualHooks: true,
+                        }, { transaction: t }
+                    );
+                } catch (error) {
+                    console.log(error);
+                    await t.rollback();
                 }
+
+                await t.commit();
             }).catch(async (error) => {
                 await t.rollback();
             });

@@ -1,6 +1,4 @@
 import Helper from "../utils/Helper";
-import { CeoDTO } from "./ceo.dto";
-
 export class PostDTO {
     static transform = (item: any) => {
 

@@ -39,16 +39,38 @@ module.exports = function (sequelize, DataTypes) {
                 allowNull: true,
             },
 
+            section_1: {
+                type: DataTypes.TEXT('long'),
+                allowNull: true,
+            },
+
+            section_2: {
+                type: DataTypes.TEXT('long'),
+                allowNull: true,
+            },
+
+            section_3: {
+                type: DataTypes.TEXT('long'),
+                allowNull: true,
+            },
+
+            section_4: {
+                type: DataTypes.TEXT('long'),
+                allowNull: true,
+            },
+
+            section_5: {
+                type: DataTypes.TEXT('long'),
+                allowNull: true,
+            },
 
             slug: {
                 type: DataTypes.STRING,
-                unique: true,
                 allowNull: true,
             },
 
             custom_slug: {
                 type: DataTypes.STRING,
-                unique: true,
                 allowNull: true,
             },
 

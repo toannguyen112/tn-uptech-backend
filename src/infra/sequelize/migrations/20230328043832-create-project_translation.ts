@@ -40,6 +40,31 @@ module.exports = {
         allowNull: true,
       },
 
+      section_1: {
+        type: Sequelize.TEXT('long'),
+        allowNull: true,
+      },
+
+      section_2: {
+        type: Sequelize.TEXT('long'),
+        allowNull: true,
+      },
+
+      section_3: {
+        type: Sequelize.TEXT('long'),
+        allowNull: true,
+      },
+
+      section_4: {
+        type: Sequelize.TEXT('long'),
+        allowNull: true,
+      },
+
+      section_5: {
+        type: Sequelize.TEXT('long'),
+        allowNull: true,
+      },
+
       // seo
 
       slug: {

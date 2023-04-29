@@ -1,3 +1,5 @@
+import Helper from "../utils/Helper";
+
 export class ProjectDTO {
     static transform = (item) => {
 
@@ -8,7 +10,7 @@ export class ProjectDTO {
         return {
             id: item.id,
             name: translationData.name || "",
-            slug: item.slug || "",
+            slug: translationData.slug || "",
             description: translationData.description || "",
             isFeatured: item.isFeatured ? "Hoạt động" : "Ẩn",
             status: item.status,
@@ -36,28 +38,22 @@ export class ProjectDTO {
             banner: item.banner_image || null,
             related: item.related || [],
 
-            branchs: item.branchs.map((item)=>{
+            section_1: translationData.section_1 || "",
+            section_2: translationData.section_2 || "",
+            section_3: translationData.section_3 || "",
+            section_4: translationData.section_4 || "",
+            section_5: translationData.section_5 || "",
+
+            branchs: item.branchs.map((item) => {
                 return item.id
             }) || [],
 
-            services: item.services.map((item)=>{
+            services: item.services.map((item) => {
                 return item.id
             }) || [],
 
-            // seo 
+            ...Helper.FieldsSeo(translationData),
 
-            slug: translationData.slug || "",
-            custom_slug: translationData.custom_slug || "",
-            meta_title: translationData.meta_title || "",
-            meta_description: translationData.meta_description || "",
-            meta_keyword: translationData.meta_keyword || "",
-            meta_robots: translationData.meta_robots || "",
-            canonica_link: translationData.canonica_link || "",
-            meta_image: translationData.meta_image || "",
-            meta_viewport: translationData.meta_viewport || "",
-
-            createdAt: item.createdAt,
-            updatedAt: item.updatedAt,
         }
     }
 }
