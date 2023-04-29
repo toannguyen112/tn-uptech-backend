@@ -185,25 +185,26 @@ export class CeoService {
 
     public updateById = async (id: string, body) => {
 
+        delete body.id;
+
+        const t = await models.sequelize.transaction();
+
         return await models.Ceo.update({
             status: body.status,
             thumbnail: body.thumbnail ? body.thumbnail.id : null,
         }, { where: { id } },
         )
             .then(async (res) => {
-                await this.handleUpdate({ ceo_id: id, lang: global.lang, body });
+                try {
+                    await models.CeoTranslation.update({...body},
+                        { where: { ceo_id: id, locale: global.lang } });
+                } catch (error) {
+                    console.log(error);
+                    await t.rollback();
+                }
+
+                await t.commit();
             });
-    }
-
-    public handleUpdate = async ({ ceo_id, lang = "vi", body }) => {
-
-        try {
-            return await models.CeoTranslation.update({
-                ...body
-            }, { where: { ceo_id, locale: lang } });
-        } catch (error) {
-            console.log(error);
-        }
     }
 
     public deleteById = async (id: string) => {

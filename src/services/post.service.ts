@@ -407,7 +407,7 @@ export class PostService {
         }
     }
 
-    public findById = async (id) => {
+    public show = async (id) => {
 
         const post = await models.Post.findOne({
             where: { id },
@@ -504,6 +504,7 @@ export class PostService {
             try {
                 postRelated = await models.Post.findAll({
                     where: {
+                        status: 'active',
                         id: {
                             [Op.in]: post.related
                         }
@@ -515,7 +516,6 @@ export class PostService {
                             required: true,
                             where: {
                                 locale: global.lang,
-                                post_id: id
                             }
                         },
                     ]
@@ -544,7 +544,7 @@ export class PostService {
             .then(async (res: any) => {
 
                 try {
-                     await models.PostTranslation.update({ ...body },
+                    await models.PostTranslation.update({ ...body },
                         {
                             where: { post_id: id, locale: global.lang },
                             individualHooks: true,
@@ -557,7 +557,7 @@ export class PostService {
 
                 await t.commit();
 
-            }).catch(async (error)=>{
+            }).catch(async (error) => {
                 await t.rollback();
             });
     }

@@ -251,38 +251,41 @@ export class ServiceService {
 
     public updateById = async (id, body) => {
 
+        delete body.id;
+
         const t = await models.sequelize.transaction();
 
         return await models.Service.update({
             ...body,
             thumbnail: body.thumbnail ? body.thumbnail.id : null,
         },
-            { where: { id }, individualHooks: true },
+            {
+                where: { id },
+                individualHooks: true
+            },
         )
             .then(async (res: any) => {
-                await this.handleUpdate({ service_id: id, lang: global.lang, body });
+
+                try {
+                    return await models.ServiceTranslation.update({
+                        ...body
+                    },
+                        {
+                            where: {
+                                service_id: id,
+                                locale: global.lang
+                            },
+                            individualHooks: true
+                        });
+                } catch (error) {
+                    logger.error(JSON.stringify(error));
+                    await t.rollback();
+                }
+
+                await t.commit();
+            }).catch(async (error) => {
+                await t.rollback();
             });
-    }
-
-    public handleUpdate = async ({ service_id, lang = "vi", body }) => {
-
-        try {
-            return await models.ServiceTranslation.update({
-                name: body.name,
-
-                meta_title: body.meta_title,
-                custom_slug: body.custom_slug,
-                meta_description: body.meta_description,
-                meta_keyword: body.meta_keyword,
-                meta_robots: body.meta_robots,
-                canonica_link: body.canonica_link,
-                meta_image: body.meta_image,
-                meta_viewport: body.meta_viewport,
-            },
-                { where: { service_id, locale: lang }, individualHooks: true });
-        } catch (error) {
-            logger.error(JSON.stringify(error));
-        }
     }
 
     public deleteById = async (id) => {

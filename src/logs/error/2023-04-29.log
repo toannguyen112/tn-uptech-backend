@@ -605,3 +605,165 @@ TSError: ⨯ Unable to compile TypeScript:
     at Module.load (node:internal/modules/cjs/loader:1069:32)
     at Function.Module._load (node:internal/modules/cjs/loader:904:12)
     at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-29 14:21:58 error: Unknown column '1' in 'field list'
+2023-04-29 14:22:01 error: Unknown column '1' in 'field list'
+2023-04-29 14:24:21 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/services/ceo.service.ts[0m:[93m194[0m:[93m28[0m - [91merror[0m[90m TS2339: [0mProperty 'handleUpdate' does not exist on type 'CeoService'.
+
+[7m194[0m                 await this.handleUpdate({ ceo_id: id, lang: global.lang, body });
+[7m   [0m [91m                           ~~~~~~~~~~~~[0m
+[96msrc/services/ceo.service.ts[0m:[93m199[0m:[93m35[0m - [91merror[0m[90m TS18004: [0mNo value exists in scope for the shorthand property 'ceo_id'. Either declare one or provide an initializer.
+
+[7m199[0m                     }, { where: { ceo_id, locale: lang } });
+[7m   [0m [91m                                  ~~~~~~[0m
+[96msrc/services/ceo.service.ts[0m:[93m199[0m:[93m51[0m - [91merror[0m[90m TS2304: [0mCannot find name 'lang'.
+
+[7m199[0m                     }, { where: { ceo_id, locale: lang } });
+[7m   [0m [91m                                                  ~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/services/ceo.service.ts[0m:[93m194[0m:[93m28[0m - [91merror[0m[90m TS2339: [0mProperty 'handleUpdate' does not exist on type 'CeoService'.
+
+[7m194[0m                 await this.handleUpdate({ ceo_id: id, lang: global.lang, body });
+[7m   [0m [91m                           ~~~~~~~~~~~~[0m
+[96msrc/services/ceo.service.ts[0m:[93m199[0m:[93m35[0m - [91merror[0m[90m TS18004: [0mNo value exists in scope for the shorthand property 'ceo_id'. Either declare one or provide an initializer.
+
+[7m199[0m                     }, { where: { ceo_id, locale: lang } });
+[7m   [0m [91m                                  ~~~~~~[0m
+[96msrc/services/ceo.service.ts[0m:[93m199[0m:[93m51[0m - [91merror[0m[90m TS2304: [0mCannot find name 'lang'.
+
+[7m199[0m                     }, { where: { ceo_id, locale: lang } });
+[7m   [0m [91m                                                  ~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-29 14:24:58 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/services/ceo.service.ts[0m:[93m202[0m:[93m27[0m - [91merror[0m[90m TS2304: [0mCannot find name 't'.
+
+[7m202[0m                     await t.rollback();
+[7m   [0m [91m                          ~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/services/ceo.service.ts[0m:[93m202[0m:[93m27[0m - [91merror[0m[90m TS2304: [0mCannot find name 't'.
+
+[7m202[0m                     await t.rollback();
+[7m   [0m [91m                          ~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-29 14:25:06 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/services/ceo.service.ts[0m:[93m202[0m:[93m27[0m - [91merror[0m[90m TS2304: [0mCannot find name 't'.
+
+[7m202[0m                     await t.rollback();
+[7m   [0m [91m                          ~[0m
+[96msrc/services/ceo.service.ts[0m:[93m205[0m:[93m23[0m - [91merror[0m[90m TS2304: [0mCannot find name 't'.
+
+[7m205[0m                 await t.commit();
+[7m   [0m [91m                      ~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/services/ceo.service.ts[0m:[93m202[0m:[93m27[0m - [91merror[0m[90m TS2304: [0mCannot find name 't'.
+
+[7m202[0m                     await t.rollback();
+[7m   [0m [91m                          ~[0m
+[96msrc/services/ceo.service.ts[0m:[93m205[0m:[93m23[0m - [91merror[0m[90m TS2304: [0mCannot find name 't'.
+
+[7m205[0m                 await t.commit();
+[7m   [0m [91m                      ~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-29 14:26:26 error: Unknown column '1' in 'field list'
+2023-04-29 14:29:39 error: Unknown column '1' in 'field list'
+2023-04-29 14:36:14 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/modules/controllers/categories.controller.ts[0m:[93m65[0m:[93m41[0m - [91merror[0m[90m TS2339: [0mProperty 'deleteById' does not exist on type 'CategoryService'.
+
+[7m65[0m             const data = await category.deleteById(req.params.id);
+[7m  [0m [91m                                        ~~~~~~~~~~[0m
+[96msrc/modules/controllers/categories.controller.ts[0m:[93m76[0m:[93m41[0m - [91merror[0m[90m TS2339: [0mProperty 'deleteMultipleIds' does not exist on type 'CategoryService'.
+
+[7m76[0m             const data = await category.deleteMultipleIds(ids);
+[7m  [0m [91m                                        ~~~~~~~~~~~~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/modules/controllers/categories.controller.ts[0m:[93m65[0m:[93m41[0m - [91merror[0m[90m TS2339: [0mProperty 'deleteById' does not exist on type 'CategoryService'.
+
+[7m65[0m             const data = await category.deleteById(req.params.id);
+[7m  [0m [91m                                        ~~~~~~~~~~[0m
+[96msrc/modules/controllers/categories.controller.ts[0m:[93m76[0m:[93m41[0m - [91merror[0m[90m TS2339: [0mProperty 'deleteMultipleIds' does not exist on type 'CategoryService'.
+
+[7m76[0m             const data = await category.deleteMultipleIds(ids);
+[7m  [0m [91m                                        ~~~~~~~~~~~~~~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-29 14:38:37 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/services/service.service.ts[0m:[93m265[0m:[93m28[0m - [91merror[0m[90m TS2339: [0mProperty 'handleUpdate' does not exist on type 'ServiceService'.
+
+[7m265[0m                 await this.handleUpdate({ service_id: id, lang: global.lang, body });
+[7m   [0m [91m                           ~~~~~~~~~~~~[0m
+[96msrc/services/service.service.ts[0m:[93m280[0m:[93m36[0m - [91merror[0m[90m TS2552: [0mCannot find name 'service_id'. Did you mean 'ServiceDTO'?
+
+[7m280[0m                         { where: { service_id, locale: lang }, individualHooks: true });
+[7m   [0m [91m                                   ~~~~~~~~~~[0m
+[96msrc/services/service.service.ts[0m:[93m280[0m:[93m56[0m - [91merror[0m[90m TS2304: [0mCannot find name 'lang'.
+
+[7m280[0m                         { where: { service_id, locale: lang }, individualHooks: true });
+[7m   [0m [91m                                                       ~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/services/service.service.ts[0m:[93m265[0m:[93m28[0m - [91merror[0m[90m TS2339: [0mProperty 'handleUpdate' does not exist on type 'ServiceService'.
+
+[7m265[0m                 await this.handleUpdate({ service_id: id, lang: global.lang, body });
+[7m   [0m [91m                           ~~~~~~~~~~~~[0m
+[96msrc/services/service.service.ts[0m:[93m280[0m:[93m36[0m - [91merror[0m[90m TS2552: [0mCannot find name 'service_id'. Did you mean 'ServiceDTO'?
+
+[7m280[0m                         { where: { service_id, locale: lang }, individualHooks: true });
+[7m   [0m [91m                                   ~~~~~~~~~~[0m
+[96msrc/services/service.service.ts[0m:[93m280[0m:[93m56[0m - [91merror[0m[90m TS2304: [0mCannot find name 'lang'.
+
+[7m280[0m                         { where: { service_id, locale: lang }, individualHooks: true });
+[7m   [0m [91m                                                       ~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)

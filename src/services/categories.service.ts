@@ -161,8 +161,10 @@ export class CategoryService {
 
     public updateById = async (id, body: any) => {
 
+        delete body.id;
+
         const t = await models.sequelize.transaction();
-        
+
         return await models.Category.update({
             ...body
         }, { where: { id } },
@@ -176,10 +178,14 @@ export class CategoryService {
                             category_id: id,
                             locale: global.lang
                         }
-                    });
+                    },
+                        { transaction: t });
                 } catch (error) {
-                    console.log(error);
+                    logger.error(JSON.stringify(error));
+                    await t.rollback();
                 }
+            }).catch(async (error) => {
+                await t.rollback();
             });
     }
 

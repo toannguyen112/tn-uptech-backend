@@ -1678,3 +1678,177 @@
 2023-04-29 14:20:58 info: ======= ENV: development =======
 2023-04-29 14:20:58 info: 🚀 App listening on the port 8000
 2023-04-29 14:20:58 info: =================================
+2023-04-29 14:21:58 info: [0mOPTIONS /posts/increaseView [32m204[0m 9.921 ms - 0[0m
+2023-04-29 14:21:58 error: Unknown column '1' in 'field list'
+2023-04-29 14:21:58 info: [0mPOST /posts/increaseView [31m500[0m 235.856 ms - 34[0m
+2023-04-29 14:21:58 info: [0mGET /posts/findByIdClient/9 [32m200[0m 213.869 ms - 370[0m
+2023-04-29 14:21:58 info: [0mGET /services/nav [32m200[0m 478.837 ms - 855[0m
+2023-04-29 14:22:01 info: [0mGET /services/nav [32m200[0m 133.357 ms - 1014[0m
+2023-04-29 14:22:01 error: Unknown column '1' in 'field list'
+2023-04-29 14:22:01 info: [0mPOST /posts/increaseView [31m500[0m 20.181 ms - 34[0m
+2023-04-29 14:22:01 info: [0mGET /posts/findByIdClient/9 [32m200[0m 27.756 ms - -[0m
+2023-04-29 14:22:23 info: [0mGET /ceos/getlistCeo [36m304[0m 120.832 ms - -[0m
+2023-04-29 14:23:46 info: [0mGET /services/nav [36m304[0m 243.487 ms - -[0m
+2023-04-29 14:23:50 info: [0mGET /services/nav [36m304[0m 72.039 ms - -[0m
+2023-04-29 14:23:50 info: [0mGET /ceos/getlistCeo [36m304[0m 74.115 ms - -[0m
+2023-04-29 14:24:39 info: =================================
+2023-04-29 14:24:39 info: ======= ENV: development =======
+2023-04-29 14:24:39 info: 🚀 App listening on the port 8000
+2023-04-29 14:24:39 info: =================================
+2023-04-29 14:25:19 info: =================================
+2023-04-29 14:25:19 info: ======= ENV: development =======
+2023-04-29 14:25:19 info: 🚀 App listening on the port 8000
+2023-04-29 14:25:19 info: =================================
+2023-04-29 14:25:38 info: =================================
+2023-04-29 14:25:38 info: ======= ENV: development =======
+2023-04-29 14:25:38 info: 🚀 App listening on the port 8000
+2023-04-29 14:25:38 info: =================================
+2023-04-29 14:25:45 info: [0mGET /branchs/getListBranch [36m304[0m 190.208 ms - -[0m
+2023-04-29 14:25:45 info: [0mGET /services/getListService [36m304[0m 222.687 ms - -[0m
+2023-04-29 14:25:45 info: [0mGET /projects [36m304[0m 330.199 ms - -[0m
+2023-04-29 14:26:05 info: [0mGET /categories/post [36m304[0m 52.117 ms - -[0m
+2023-04-29 14:26:05 info: [0mGET /posts/getPageAll [32m200[0m 144.787 ms - -[0m
+2023-04-29 14:26:09 info: [0mGET /categories/post [36m304[0m 68.148 ms - -[0m
+2023-04-29 14:26:09 info: [0mGET /posts/category/website [32m200[0m 87.580 ms - -[0m
+2023-04-29 14:26:13 info: [0mGET /posts/category/android [32m200[0m 35.014 ms - -[0m
+2023-04-29 14:26:16 info: [0mGET /posts/category/website [36m304[0m 23.259 ms - -[0m
+2023-04-29 14:26:17 info: [0mGET /categories/post [36m304[0m 8.811 ms - -[0m
+2023-04-29 14:26:17 info: [0mGET /posts/getPageAll [36m304[0m 98.646 ms - -[0m
+2023-04-29 14:26:18 info: [0mGET /categories/post [36m304[0m 5.512 ms - -[0m
+2023-04-29 14:26:19 info: [0mGET /posts/category/android [36m304[0m 29.966 ms - -[0m
+2023-04-29 14:26:19 info: [0mGET /posts/category/website [36m304[0m 23.407 ms - -[0m
+2023-04-29 14:26:26 info: [0mOPTIONS /posts/increaseView [32m204[0m 2.458 ms - 0[0m
+2023-04-29 14:26:26 error: Unknown column '1' in 'field list'
+2023-04-29 14:26:27 info: [0mPOST /posts/increaseView [31m500[0m 313.489 ms - 34[0m
+2023-04-29 14:26:27 info: [0mGET /posts/findByIdClient/9 [36m304[0m 273.154 ms - -[0m
+2023-04-29 14:26:29 info: [0mOPTIONS /admins/profile [32m204[0m 0.969 ms - 0[0m
+2023-04-29 14:26:29 info: [0mGET /categories?[object%20Object] [36m304[0m 84.837 ms - -[0m
+2023-04-29 14:26:29 info: [0mGET /ceos?[object%20Object] [36m304[0m 89.850 ms - -[0m
+2023-04-29 14:26:29 info: [0mGET /posts?[object%20Object] [36m304[0m 111.048 ms - -[0m
+2023-04-29 14:26:29 info: [0mGET /admins/profile [36m304[0m 210.682 ms - -[0m
+2023-04-29 14:26:30 info: [0mGET /posts/show/9 [36m304[0m 49.971 ms - -[0m
+2023-04-29 14:26:31 info: [0mGET /categories?[object%20Object] [36m304[0m 34.330 ms - -[0m
+2023-04-29 14:26:31 info: [0mGET /ceos?[object%20Object] [36m304[0m 38.267 ms - -[0m
+2023-04-29 14:26:31 info: [0mGET /posts?[object%20Object] [36m304[0m 41.236 ms - -[0m
+2023-04-29 14:28:13 info: =================================
+2023-04-29 14:28:13 info: ======= ENV: development =======
+2023-04-29 14:28:13 info: 🚀 App listening on the port 8000
+2023-04-29 14:28:13 info: =================================
+2023-04-29 14:28:47 info: =================================
+2023-04-29 14:28:47 info: ======= ENV: development =======
+2023-04-29 14:28:47 info: 🚀 App listening on the port 8000
+2023-04-29 14:28:47 info: =================================
+2023-04-29 14:28:59 info: =================================
+2023-04-29 14:28:59 info: ======= ENV: development =======
+2023-04-29 14:28:59 info: 🚀 App listening on the port 8000
+2023-04-29 14:28:59 info: =================================
+2023-04-29 14:29:29 info: [0mGET /categories/post [36m304[0m 152.738 ms - -[0m
+2023-04-29 14:29:29 info: [0mGET /posts/getPageAll [36m304[0m 341.308 ms - -[0m
+2023-04-29 14:29:38 info: [0mOPTIONS /posts/increaseView [32m204[0m 1.445 ms - 0[0m
+2023-04-29 14:29:38 info: [0mGET /posts/findByIdClient/10 [32m200[0m 61.350 ms - 462[0m
+2023-04-29 14:29:39 error: Unknown column '1' in 'field list'
+2023-04-29 14:29:39 info: [0mPOST /posts/increaseView [31m500[0m 315.417 ms - 34[0m
+2023-04-29 14:30:04 info: [0mOPTIONS /admins/profile [32m204[0m 0.574 ms - 0[0m
+2023-04-29 14:30:05 info: [0mGET /categories?[object%20Object] [32m200[0m 173.080 ms - 372[0m
+2023-04-29 14:30:05 info: [0mGET /ceos?[object%20Object] [32m200[0m 162.744 ms - 390[0m
+2023-04-29 14:30:05 info: [0mGET /admins/profile [36m304[0m 280.916 ms - -[0m
+2023-04-29 14:30:05 info: [0mGET /posts?[object%20Object] [32m200[0m 172.976 ms - -[0m
+2023-04-29 14:30:05 info: [0mGET /posts/show/9 [32m200[0m 78.336 ms - -[0m
+2023-04-29 14:30:06 info: [0mGET /categories?[object%20Object] [36m304[0m 32.446 ms - -[0m
+2023-04-29 14:30:06 info: [0mGET /posts?[object%20Object] [36m304[0m 47.368 ms - -[0m
+2023-04-29 14:30:06 info: [0mGET /ceos?[object%20Object] [36m304[0m 62.569 ms - -[0m
+2023-04-29 14:35:02 info: [0mOPTIONS /admins/profile [32m204[0m 0.767 ms - 0[0m
+2023-04-29 14:35:02 info: [0mGET /categories? [32m200[0m 272.912 ms - 356[0m
+2023-04-29 14:35:02 info: [0mGET /categories?page=1&page_size=10 [36m304[0m 66.895 ms - -[0m
+2023-04-29 14:35:02 info: [0mGET /posts/show/9 [32m200[0m 400.056 ms - 673[0m
+2023-04-29 14:35:02 info: [0mGET /admins/profile [36m304[0m 300.632 ms - -[0m
+2023-04-29 14:35:04 info: [0mGET /admins/profile [36m304[0m 16.112 ms - -[0m
+2023-04-29 14:35:54 info: =================================
+2023-04-29 14:35:54 info: ======= ENV: development =======
+2023-04-29 14:35:54 info: 🚀 App listening on the port 8000
+2023-04-29 14:35:54 info: =================================
+2023-04-29 14:36:27 info: =================================
+2023-04-29 14:36:27 info: ======= ENV: development =======
+2023-04-29 14:36:27 info: 🚀 App listening on the port 8000
+2023-04-29 14:36:27 info: =================================
+2023-04-29 14:36:59 info: [0mOPTIONS /admins/profile [32m204[0m 10.893 ms - 0[0m
+2023-04-29 14:36:59 info: [0mGET /jobs?page=1&page_size=10 [36m304[0m 328.299 ms - -[0m
+2023-04-29 14:36:59 info: [0mGET /jobs? [36m304[0m 353.496 ms - -[0m
+2023-04-29 14:36:59 info: [0mGET /admins/profile [36m304[0m 456.100 ms - -[0m
+2023-04-29 14:37:02 info: [0mGET /jobs/show/1 [32m200[0m 50.755 ms - 1006[0m
+2023-04-29 14:37:02 info: [0mGET /admins/profile [36m304[0m 52.974 ms - -[0m
+2023-04-29 14:37:03 info: [0mGET /jobs?[object%20Object] [32m200[0m 16.381 ms - 996[0m
+2023-04-29 14:37:15 info: [0mOPTIONS /admins/profile [32m204[0m 0.680 ms - 0[0m
+2023-04-29 14:37:15 info: [0mGET /jobs/show/1 [36m304[0m 177.510 ms - -[0m
+2023-04-29 14:37:15 info: [0mGET /admins/profile [36m304[0m 146.222 ms - -[0m
+2023-04-29 14:37:15 info: [0mGET /banners? [32m200[0m 193.366 ms - 420[0m
+2023-04-29 14:37:15 info: [0mGET /banners?page=1&page_size=10 [36m304[0m 46.673 ms - -[0m
+2023-04-29 14:37:18 info: [0mGET /admins/profile [36m304[0m 39.234 ms - -[0m
+2023-04-29 14:37:18 info: [0mGET /services/nav [36m304[0m 57.326 ms - -[0m
+2023-04-29 14:37:22 info: [0mGET /services/show/4 [36m304[0m 13.734 ms - -[0m
+2023-04-29 14:37:22 info: [0mGET /services/show/5 [36m304[0m 4.147 ms - -[0m
+2023-04-29 14:37:23 info: [0mGET /services/show/2 [36m304[0m 5.800 ms - -[0m
+2023-04-29 14:37:24 info: [0mGET /services/show/7 [36m304[0m 19.883 ms - -[0m
+2023-04-29 14:37:25 info: [0mGET /services/show/2 [36m304[0m 95.079 ms - -[0m
+2023-04-29 14:37:26 info: [0mGET /services/show/5 [36m304[0m 3.722 ms - -[0m
+2023-04-29 14:37:29 info: [0mGET /services/show/3 [36m304[0m 28.658 ms - -[0m
+2023-04-29 14:37:30 info: [0mGET /services/show/10 [36m304[0m 21.129 ms - -[0m
+2023-04-29 14:37:32 info: [0mGET /services/show/17 [32m200[0m 10.512 ms - 222[0m
+2023-04-29 14:38:17 info: =================================
+2023-04-29 14:38:17 info: ======= ENV: development =======
+2023-04-29 14:38:17 info: 🚀 App listening on the port 8000
+2023-04-29 14:38:17 info: =================================
+2023-04-29 14:39:12 info: =================================
+2023-04-29 14:39:12 info: ======= ENV: development =======
+2023-04-29 14:39:12 info: 🚀 App listening on the port 8000
+2023-04-29 14:39:12 info: =================================
+2023-04-29 14:39:33 info: =================================
+2023-04-29 14:39:33 info: ======= ENV: development =======
+2023-04-29 14:39:33 info: 🚀 App listening on the port 8000
+2023-04-29 14:39:33 info: =================================
+2023-04-29 14:39:48 info: =================================
+2023-04-29 14:39:48 info: ======= ENV: development =======
+2023-04-29 14:39:48 info: 🚀 App listening on the port 8000
+2023-04-29 14:39:48 info: =================================
+2023-04-29 14:40:01 info: [0mOPTIONS /admins/profile [32m204[0m 2.328 ms - 0[0m
+2023-04-29 14:40:01 info: [0mGET /services/nav [36m304[0m 135.389 ms - -[0m
+2023-04-29 14:40:01 info: [0mGET /admins/profile [36m304[0m 227.748 ms - -[0m
+2023-04-29 14:40:03 info: [0mGET /services/show/16 [36m304[0m 28.001 ms - -[0m
+2023-04-29 14:40:11 info: [0mOPTIONS /services/update/16 [32m204[0m 0.600 ms - 0[0m
+2023-04-29 14:40:11 info: [0mPUT /services/update/16 [32m200[0m 90.346 ms - 239[0m
+2023-04-29 14:40:11 info: [0mGET /services/nav [32m200[0m 12.524 ms - 1016[0m
+2023-04-29 14:40:21 info: [0mGET /services/show/17 [36m304[0m 15.227 ms - -[0m
+2023-04-29 14:40:26 info: [0mOPTIONS /services/update/17 [32m204[0m 0.523 ms - 0[0m
+2023-04-29 14:40:26 info: [0mPUT /services/update/17 [32m200[0m 49.303 ms - 237[0m
+2023-04-29 14:40:26 info: [0mGET /services/nav [32m200[0m 11.345 ms - 1012[0m
+2023-04-29 14:40:31 info: [0mOPTIONS /folders/get-medias [32m204[0m 0.331 ms - 0[0m
+2023-04-29 14:40:31 info: [0mPOST /folders/get-medias [32m200[0m 21.508 ms - 595[0m
+2023-04-29 14:40:31 info: [0mGET /folders [36m304[0m 51.488 ms - -[0m
+2023-04-29 14:40:39 info: [0mOPTIONS /services/update/17 [32m204[0m 0.389 ms - 0[0m
+2023-04-29 14:40:39 info: [0mPUT /services/update/17 [32m200[0m 49.532 ms - 249[0m
+2023-04-29 14:40:40 info: [0mGET /services/nav [32m200[0m 30.019 ms - -[0m
+2023-04-29 14:40:43 info: [0mOPTIONS /admins/profile [32m204[0m 0.549 ms - 0[0m
+2023-04-29 14:40:43 info: [0mGET /services/nav [36m304[0m 79.224 ms - -[0m
+2023-04-29 14:40:43 info: [0mGET /admins/profile [36m304[0m 106.791 ms - -[0m
+2023-04-29 14:40:45 info: [0mGET /services/show/17 [32m200[0m 19.429 ms - 493[0m
+2023-04-29 14:40:51 info: [0mGET /services/show/16 [32m200[0m 10.616 ms - 220[0m
+2023-04-29 14:40:54 info: [0mOPTIONS /folders/get-medias [32m204[0m 1.946 ms - 0[0m
+2023-04-29 14:40:54 info: [0mPOST /folders/get-medias [32m200[0m 27.494 ms - 595[0m
+2023-04-29 14:40:54 info: [0mGET /folders [36m304[0m 42.933 ms - -[0m
+2023-04-29 14:40:56 info: [0mOPTIONS /services/update/16 [32m204[0m 0.236 ms - 0[0m
+2023-04-29 14:40:56 info: [0mPUT /services/update/16 [32m200[0m 15.889 ms - 239[0m
+2023-04-29 14:40:56 info: [0mGET /services/nav [32m200[0m 10.800 ms - -[0m
+2023-04-29 14:41:03 info: [0mOPTIONS /services/update/16 [32m204[0m 0.471 ms - 0[0m
+2023-04-29 14:41:03 info: [0mPUT /services/update/16 [32m200[0m 138.885 ms - 257[0m
+2023-04-29 14:41:03 info: [0mGET /services/nav [36m304[0m 22.370 ms - -[0m
+2023-04-29 14:41:08 info: [0mGET /services/show/3 [36m304[0m 8.404 ms - -[0m
+2023-04-29 14:41:12 info: [0mGET /services/show/16 [32m200[0m 5.355 ms - 530[0m
+2023-04-29 14:41:15 info: [0mGET /services/show/3 [36m304[0m 9.638 ms - -[0m
+2023-04-29 14:41:16 info: [0mGET /services/show/2 [36m304[0m 4.359 ms - -[0m
+2023-04-29 14:41:16 info: [0mGET /services/show/1 [36m304[0m 3.970 ms - -[0m
+2023-04-29 14:41:17 info: [0mGET /services/show/2 [36m304[0m 21.860 ms - -[0m
+2023-04-29 14:41:18 info: [0mGET /services/show/3 [36m304[0m 9.193 ms - -[0m
+2023-04-29 14:41:18 info: [0mGET /services/show/16 [36m304[0m 9.282 ms - -[0m
+2023-04-29 14:41:19 info: [0mGET /services/show/17 [36m304[0m 6.685 ms - -[0m
+2023-04-29 14:41:19 info: [0mGET /services/show/3 [36m304[0m 11.329 ms - -[0m
+2023-04-29 14:41:19 info: [0mGET /services/show/2 [36m304[0m 4.529 ms - -[0m
