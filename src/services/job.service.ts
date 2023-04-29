@@ -2,6 +2,7 @@ import { JobDTO } from "../dtos/job.dtos";
 import models from "../infra/sequelize/models";
 import { ApiFeatures } from "../utils/ApiFeatures";
 import { Op } from "sequelize";
+import Helper from "../utils/Helper";
 
 export class JobService {
 
@@ -114,23 +115,22 @@ export class JobService {
 
             return await models.Job.create({ ...newItem }, { transaction: t })
                 .then(async (job: any) => {
-
                     if (job) {
-                        const jobId = job.id;
+                        try {
 
-                        await models.JobTranslation.create({
-                            ...newItem,
-                            job_id: jobId,
-                            locale: 'vi'
-                        },
-                            { transaction: t });
+                            for (const lang of Helper.langs) {
+                                await models.JobTranslation.create({
+                                    ...body,
+                                    job_id: job.id,
+                                    locale: lang
+                                },
+                                    { transaction: t });
+                            }
 
-                        await models.JobTranslation.create({
-                            ...newItem,
-                            job_id: jobId,
-                            locale: 'en'
-                        },
-                            { transaction: t });
+                        } catch (error) {
+                            console.log(error);
+                            await t.rollback();
+                        }
                     }
 
                     await t.commit();
@@ -206,6 +206,8 @@ export class JobService {
 
     public update = async (id, body) => {
 
+        delete body.id;
+
         const newItem = JobDTO.transformSave(body);
 
         const t = await models.sequelize.transaction();
@@ -221,8 +223,18 @@ export class JobService {
 
                 { transaction: t })
                 .then(async (res) => {
-                    if (res) {
-                        await this.handleUpdate(id, global.lang, newItem);
+                    try {
+                        return await models.JobTranslation.update({
+                            ...body,
+                        },
+                            {
+                                where: { job_id: id, locale: global.lang },
+                                individualHooks: true,
+                            },
+                        );
+                    } catch (error) {
+                        console.log(error);
+                        await t.rollback();
                     }
 
                     await t.commit();
@@ -236,19 +248,7 @@ export class JobService {
 
     public handleUpdate = async (job_id, lang = "vi", body) => {
 
-        try {
-            return await models.JobTranslation.update({
-                ...body,
-            },
 
-                {
-                    where: { job_id, locale: lang },
-                    individualHooks: true,
-                },
-            );
-        } catch (error) {
-            console.log(error);
-        }
     }
 
     public deleteById = async (id: string) => {

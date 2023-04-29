@@ -70,7 +70,7 @@ export class PostDTO {
         return {
             id: item.id,
             name: translationData.name || "",
-            ceo: item.ceo,
+            ceo: item.ceo ?? null,
 
             content: translationData.content || "",
             banner: item.banner_image || null,

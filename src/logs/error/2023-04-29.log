@@ -477,3 +477,131 @@ TSError: ⨯ Unable to compile TypeScript:
     at Module.load (node:internal/modules/cjs/loader:1069:32)
     at Function.Module._load (node:internal/modules/cjs/loader:904:12)
     at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-29 14:05:03 error: {"name":"SequelizeUniqueConstraintError","errors":[{"message":"PRIMARY must be unique","type":"unique violation","path":"PRIMARY","value":"6","origin":"DB","instance":null,"validatorKey":"not_unique","validatorName":null,"validatorArgs":[]}],"parent":{"code":"ER_DUP_ENTRY","errno":1062,"sqlState":"23000","sqlMessage":"Duplicate entry '6' for key 'post_translation.PRIMARY'","sql":"UPDATE `post_translation` SET `description`=?,`content`=?,`id`=?,`meta_keyword`=?,`meta_viewport`=? WHERE `post_id` = ? AND `locale` = ?","parameters":["Tương lai E-commerce cho các mặt hàng sản xuất tiêu dùng","<p>Tương lai E-commerce cho c&aacute;c mặt h&agrave;ng sản xuất ti&ecirc;u d&ugrave;ng</p>",6,"","","6","vi"]},"original":{"code":"ER_DUP_ENTRY","errno":1062,"sqlState":"23000","sqlMessage":"Duplicate entry '6' for key 'post_translation.PRIMARY'","sql":"UPDATE `post_translation` SET `description`=?,`content`=?,`id`=?,`meta_keyword`=?,`meta_viewport`=? WHERE `post_id` = ? AND `locale` = ?","parameters":["Tương lai E-commerce cho các mặt hàng sản xuất tiêu dùng","<p>Tương lai E-commerce cho c&aacute;c mặt h&agrave;ng sản xuất ti&ecirc;u d&ugrave;ng</p>",6,"","","6","vi"]},"fields":{"PRIMARY":"6"},"sql":"UPDATE `post_translation` SET `description`=?,`content`=?,`id`=?,`meta_keyword`=?,`meta_viewport`=? WHERE `post_id` = ? AND `locale` = ?"}
+2023-04-29 14:05:03 error: Transaction cannot be committed because it has been finished with state: rollback
+2023-04-29 14:05:10 error: {"name":"SequelizeUniqueConstraintError","errors":[{"message":"PRIMARY must be unique","type":"unique violation","path":"PRIMARY","value":"6","origin":"DB","instance":null,"validatorKey":"not_unique","validatorName":null,"validatorArgs":[]}],"parent":{"code":"ER_DUP_ENTRY","errno":1062,"sqlState":"23000","sqlMessage":"Duplicate entry '6' for key 'post_translation.PRIMARY'","sql":"UPDATE `post_translation` SET `description`=?,`content`=?,`id`=?,`meta_keyword`=?,`meta_viewport`=? WHERE `post_id` = ? AND `locale` = ?","parameters":["Tương lai E-commerce cho các mặt hàng sản xuất tiêu dùng","<p>Tương lai E-commerce cho c&aacute;c mặt h&agrave;ng sản xuất ti&ecirc;u d&ugrave;ng</p>",6,"","","6","vi"]},"original":{"code":"ER_DUP_ENTRY","errno":1062,"sqlState":"23000","sqlMessage":"Duplicate entry '6' for key 'post_translation.PRIMARY'","sql":"UPDATE `post_translation` SET `description`=?,`content`=?,`id`=?,`meta_keyword`=?,`meta_viewport`=? WHERE `post_id` = ? AND `locale` = ?","parameters":["Tương lai E-commerce cho các mặt hàng sản xuất tiêu dùng","<p>Tương lai E-commerce cho c&aacute;c mặt h&agrave;ng sản xuất ti&ecirc;u d&ugrave;ng</p>",6,"","","6","vi"]},"fields":{"PRIMARY":"6"},"sql":"UPDATE `post_translation` SET `description`=?,`content`=?,`id`=?,`meta_keyword`=?,`meta_viewport`=? WHERE `post_id` = ? AND `locale` = ?"}
+2023-04-29 14:05:10 error: Transaction cannot be committed because it has been finished with state: rollback
+2023-04-29 14:06:13 error: Unknown column '1' in 'field list'
+2023-04-29 14:06:39 error: Unknown column '1' in 'field list'
+2023-04-29 14:09:46 error: {"name":"SequelizeUniqueConstraintError","errors":[{"message":"PRIMARY must be unique","type":"unique violation","path":"PRIMARY","value":"9","origin":"DB","instance":null,"validatorKey":"not_unique","validatorName":null,"validatorArgs":[]}],"parent":{"code":"ER_DUP_ENTRY","errno":1062,"sqlState":"23000","sqlMessage":"Duplicate entry '9' for key 'post_translation.PRIMARY'","sql":"UPDATE `post_translation` SET `name`=?,`id`=?,`slug`=?,`meta_keyword`=?,`meta_viewport`=? WHERE `post_id` = ? AND `locale` = ?","parameters":["Tương lai E-commerce cho các mặt hàng sản xuất tiêu dùng ja",9,"tuong-lai-e-commerce-cho-cac-mat-hang-san-xuat-tieu-dung-ja","","","9","ja"]},"original":{"code":"ER_DUP_ENTRY","errno":1062,"sqlState":"23000","sqlMessage":"Duplicate entry '9' for key 'post_translation.PRIMARY'","sql":"UPDATE `post_translation` SET `name`=?,`id`=?,`slug`=?,`meta_keyword`=?,`meta_viewport`=? WHERE `post_id` = ? AND `locale` = ?","parameters":["Tương lai E-commerce cho các mặt hàng sản xuất tiêu dùng ja",9,"tuong-lai-e-commerce-cho-cac-mat-hang-san-xuat-tieu-dung-ja","","","9","ja"]},"fields":{"PRIMARY":"9"},"sql":"UPDATE `post_translation` SET `name`=?,`id`=?,`slug`=?,`meta_keyword`=?,`meta_viewport`=? WHERE `post_id` = ? AND `locale` = ?"}
+2023-04-29 14:09:46 error: Transaction cannot be committed because it has been finished with state: rollback
+2023-04-29 14:09:59 error: {"name":"SequelizeUniqueConstraintError","errors":[{"message":"PRIMARY must be unique","type":"unique violation","path":"PRIMARY","value":"9","origin":"DB","instance":null,"validatorKey":"not_unique","validatorName":null,"validatorArgs":[]}],"parent":{"code":"ER_DUP_ENTRY","errno":1062,"sqlState":"23000","sqlMessage":"Duplicate entry '9' for key 'post_translation.PRIMARY'","sql":"UPDATE `post_translation` SET `name`=?,`id`=?,`slug`=?,`meta_keyword`=?,`meta_viewport`=? WHERE `post_id` = ? AND `locale` = ?","parameters":["ja",9,"ja","","","9","ja"]},"original":{"code":"ER_DUP_ENTRY","errno":1062,"sqlState":"23000","sqlMessage":"Duplicate entry '9' for key 'post_translation.PRIMARY'","sql":"UPDATE `post_translation` SET `name`=?,`id`=?,`slug`=?,`meta_keyword`=?,`meta_viewport`=? WHERE `post_id` = ? AND `locale` = ?","parameters":["ja",9,"ja","","","9","ja"]},"fields":{"PRIMARY":"9"},"sql":"UPDATE `post_translation` SET `name`=?,`id`=?,`slug`=?,`meta_keyword`=?,`meta_viewport`=? WHERE `post_id` = ? AND `locale` = ?"}
+2023-04-29 14:09:59 error: Transaction cannot be committed because it has been finished with state: rollback
+2023-04-29 14:10:29 error: {"name":"SequelizeUniqueConstraintError","errors":[{"message":"PRIMARY must be unique","type":"unique violation","path":"PRIMARY","value":"9","origin":"DB","instance":null,"validatorKey":"not_unique","validatorName":null,"validatorArgs":[]}],"parent":{"code":"ER_DUP_ENTRY","errno":1062,"sqlState":"23000","sqlMessage":"Duplicate entry '9' for key 'post_translation.PRIMARY'","sql":"UPDATE `post_translation` SET `name`=?,`id`=?,`slug`=?,`meta_keyword`=?,`meta_viewport`=? WHERE `post_id` = ? AND `locale` = ?","parameters":["Tương lai E-commerce cho các mặt hàng sản xuất tiêu dùng en",9,"tuong-lai-e-commerce-cho-cac-mat-hang-san-xuat-tieu-dung-en","","","9","en"]},"original":{"code":"ER_DUP_ENTRY","errno":1062,"sqlState":"23000","sqlMessage":"Duplicate entry '9' for key 'post_translation.PRIMARY'","sql":"UPDATE `post_translation` SET `name`=?,`id`=?,`slug`=?,`meta_keyword`=?,`meta_viewport`=? WHERE `post_id` = ? AND `locale` = ?","parameters":["Tương lai E-commerce cho các mặt hàng sản xuất tiêu dùng en",9,"tuong-lai-e-commerce-cho-cac-mat-hang-san-xuat-tieu-dung-en","","","9","en"]},"fields":{"PRIMARY":"9"},"sql":"UPDATE `post_translation` SET `name`=?,`id`=?,`slug`=?,`meta_keyword`=?,`meta_viewport`=? WHERE `post_id` = ? AND `locale` = ?"}
+2023-04-29 14:10:29 error: Transaction cannot be committed because it has been finished with state: rollback
+2023-04-29 14:12:17 error: {"name":"SequelizeUniqueConstraintError","errors":[{"message":"PRIMARY must be unique","type":"unique violation","path":"PRIMARY","value":"9","origin":"DB","instance":null,"validatorKey":"not_unique","validatorName":null,"validatorArgs":[]}],"parent":{"code":"ER_DUP_ENTRY","errno":1062,"sqlState":"23000","sqlMessage":"Duplicate entry '9' for key 'post_translation.PRIMARY'","sql":"UPDATE `post_translation` SET `name`=?,`id`=?,`slug`=?,`meta_keyword`=?,`meta_viewport`=? WHERE `post_id` = ? AND `locale` = ?","parameters":["Tương lai E-commerce cho các mặt hàng sản xuất tiêu dùng en",9,"tuong-lai-e-commerce-cho-cac-mat-hang-san-xuat-tieu-dung-en","","","9","en"]},"original":{"code":"ER_DUP_ENTRY","errno":1062,"sqlState":"23000","sqlMessage":"Duplicate entry '9' for key 'post_translation.PRIMARY'","sql":"UPDATE `post_translation` SET `name`=?,`id`=?,`slug`=?,`meta_keyword`=?,`meta_viewport`=? WHERE `post_id` = ? AND `locale` = ?","parameters":["Tương lai E-commerce cho các mặt hàng sản xuất tiêu dùng en",9,"tuong-lai-e-commerce-cho-cac-mat-hang-san-xuat-tieu-dung-en","","","9","en"]},"fields":{"PRIMARY":"9"},"sql":"UPDATE `post_translation` SET `name`=?,`id`=?,`slug`=?,`meta_keyword`=?,`meta_viewport`=? WHERE `post_id` = ? AND `locale` = ?"}
+2023-04-29 14:12:17 error: Transaction cannot be rolled back because it has been finished with state: rollback
+2023-04-29 14:16:25 error: Unknown column '1' in 'field list'
+2023-04-29 14:16:32 error: Unknown column '1' in 'field list'
+2023-04-29 14:18:52 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/services/job.service.ts[0m:[93m253[0m:[93m19[0m - [91merror[0m[90m TS2304: [0mCannot find name 't'.
+
+[7m253[0m             await t.rollback();
+[7m   [0m [91m                  ~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/services/job.service.ts[0m:[93m253[0m:[93m19[0m - [91merror[0m[90m TS2304: [0mCannot find name 't'.
+
+[7m253[0m             await t.rollback();
+[7m   [0m [91m                  ~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-29 14:19:05 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/services/job.service.ts[0m:[93m235[0m:[93m30[0m - [91merror[0m[90m TS18004: [0mNo value exists in scope for the shorthand property 'job_id'. Either declare one or provide an initializer.
+
+[7m235[0m                     where: { job_id, locale: lang },
+[7m   [0m [91m                             ~~~~~~[0m
+[96msrc/services/job.service.ts[0m:[93m235[0m:[93m46[0m - [91merror[0m[90m TS2304: [0mCannot find name 'lang'.
+
+[7m235[0m                     where: { job_id, locale: lang },
+[7m   [0m [91m                                             ~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/services/job.service.ts[0m:[93m235[0m:[93m30[0m - [91merror[0m[90m TS18004: [0mNo value exists in scope for the shorthand property 'job_id'. Either declare one or provide an initializer.
+
+[7m235[0m                     where: { job_id, locale: lang },
+[7m   [0m [91m                             ~~~~~~[0m
+[96msrc/services/job.service.ts[0m:[93m235[0m:[93m46[0m - [91merror[0m[90m TS2304: [0mCannot find name 'lang'.
+
+[7m235[0m                     where: { job_id, locale: lang },
+[7m   [0m [91m                                             ~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-29 14:20:05 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/services/job.service.ts[0m:[93m136[0m:[93m25[0m - [91merror[0m[90m TS2304: [0mCannot find name 'project'.
+
+[7m136[0m                     if (project) {
+[7m   [0m [91m                        ~~~~~~~[0m
+[96msrc/services/job.service.ts[0m:[93m139[0m:[93m48[0m - [91merror[0m[90m TS2304: [0mCannot find name 'Helper'.
+
+[7m139[0m                             for (const lang of Helper.langs) {
+[7m   [0m [91m                                               ~~~~~~[0m
+[96msrc/services/job.service.ts[0m:[93m142[0m:[93m49[0m - [91merror[0m[90m TS2304: [0mCannot find name 'project'.
+
+[7m142[0m                                     project_id: project.id,
+[7m   [0m [91m                                                ~~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/services/job.service.ts[0m:[93m136[0m:[93m25[0m - [91merror[0m[90m TS2304: [0mCannot find name 'project'.
+
+[7m136[0m                     if (project) {
+[7m   [0m [91m                        ~~~~~~~[0m
+[96msrc/services/job.service.ts[0m:[93m139[0m:[93m48[0m - [91merror[0m[90m TS2304: [0mCannot find name 'Helper'.
+
+[7m139[0m                             for (const lang of Helper.langs) {
+[7m   [0m [91m                                               ~~~~~~[0m
+[96msrc/services/job.service.ts[0m:[93m142[0m:[93m49[0m - [91merror[0m[90m TS2304: [0mCannot find name 'project'.
+
+[7m142[0m                                     project_id: project.id,
+[7m   [0m [91m                                                ~~~~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-04-29 14:20:25 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/services/job.service.ts[0m:[93m143[0m:[93m45[0m - [91merror[0m[90m TS2304: [0mCannot find name 'jobId'.
+
+[7m143[0m                                     job_id: jobId,
+[7m   [0m [91m                                            ~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/services/job.service.ts[0m:[93m143[0m:[93m45[0m - [91merror[0m[90m TS2304: [0mCannot find name 'jobId'.
+
+[7m143[0m                                     job_id: jobId,
+[7m   [0m [91m                                            ~~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)

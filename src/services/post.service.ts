@@ -525,11 +525,12 @@ export class PostService {
             }
         }
 
-
         return PostDTO.transformDetailClient({ ...post, postRelated });
     }
 
     public updateById = async (id, body) => {
+
+        delete body.id;
 
         const t = await models.sequelize.transaction();
 
@@ -543,19 +544,21 @@ export class PostService {
             .then(async (res: any) => {
 
                 try {
-                    return await models.PostTranslation.update({ ...body },
+                     await models.PostTranslation.update({ ...body },
                         {
                             where: { post_id: id, locale: global.lang },
                             individualHooks: true,
                         },
                         { transaction: t });
                 } catch (error) {
-                    await t.rollback();
                     logger.error(JSON.stringify(error));
+                    await t.rollback();
                 }
 
                 await t.commit();
 
+            }).catch(async (error)=>{
+                await t.rollback();
             });
     }
 
