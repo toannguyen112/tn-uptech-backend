@@ -93,10 +93,51 @@ export class ProjectService {
         }
     }
 
-    public store = async (body) => {
+    public getListProject = async (query) => {
 
-        // console.log(body);
-        // return;
+        try {
+
+            const queryObject = {
+                status: query.status,
+                search: query.search,
+            };
+
+            const arrQueryObject = Object.entries(queryObject).map((item) => {
+                return {
+                    key: item[0],
+                    value: item[1],
+                };
+            });
+
+            const objQuery = new ApiFeatures(query)
+                .filter()
+                .includes([
+                    {
+                        model: models.Media,
+                        as: "image",
+                        required: false,
+                    },
+                    {
+                        model: models.ProjectTranslation,
+                        as: "translations",
+                        required: true,
+                    },
+                ])
+                .sort(query.sort_field || "createdAt", query.sort_order || "DESC")
+                .paginate()
+                .paranoid()
+                .getObjQuery();
+
+            const { count, rows }: any = await models.Project.findAndCountAll(objQuery);
+
+            return rows.map((item) => ProjectDTO.transform(item));
+
+        } catch (error) {
+            console.log(error);
+        }
+    }
+
+    public store = async (body) => {
 
         const t = await models.sequelize.transaction();
 
@@ -113,7 +154,6 @@ export class ProjectService {
                     try {
 
                         for (const branchId of body.branchs) {
-                            console.log(branchId);
 
                             await models.ProjectBranch.create({
                                 project_id: project.id,
@@ -233,7 +273,6 @@ export class ProjectService {
                                 branch_id: branchId
                             }, { transaction: t });
                         }
-
                     }
 
                     if (body.services.length > 0) {
