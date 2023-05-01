@@ -247,6 +247,124 @@ export class ProjectService {
         return ProjectDTO.transformDetail(project);
     }
 
+    public findByIdClient = async (id: string | number) => {
+
+        const project = await models.Project.findOne({
+            where: { id },
+            include: [
+                {
+                    model: models.Media,
+                    as: "image",
+                    required: false,
+                },
+                {
+                    model: models.Branch,
+                    as: "branchs",
+                    required: false,
+                    include: [
+                        {
+                            model: models.BranchTranslation,
+                            as: "translations",
+                            required: true,
+                            where: {
+                                locale: global.lang,
+                            }
+                        }
+                    ]
+                },
+                {
+                    model: models.Service,
+                    as: "services",
+                    required: false,
+                    include: [
+                        {
+                            model: models.ServiceTranslation,
+                            as: "translations",
+                            required: true,
+                            where: {
+                                locale: global.lang,
+                            }
+                        }
+                    ]
+                },
+                {
+                    model: models.Media,
+                    as: "banner_image",
+                    required: false,
+                },
+                {
+                    model: models.ProjectTranslation,
+                    as: "translations",
+                    required: true,
+                    where: {
+                        locale: global.lang,
+                    }
+                },
+            ]
+        });
+
+        let related = [];
+
+        if (project.related && project.related.length) {
+            related = await models.Project.findAll({
+                where: {
+                    status: 'active',
+                    id: {
+                        [Op.in]: project.related
+                    }
+                },
+                include: [
+                    {
+                        model: models.Media,
+                        as: "banner_image",
+                        required: false,
+                    },
+                    {
+                        model: models.Branch,
+                        as: "branchs",
+                        required: false,
+                        include: [
+                            {
+                                model: models.BranchTranslation,
+                                as: "translations",
+                                required: true,
+                                where: {
+                                    locale: global.lang,
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        model: models.Service,
+                        as: "services",
+                        required: false,
+                        include: [
+                            {
+                                model: models.ServiceTranslation,
+                                as: "translations",
+                                required: true,
+                                where: {
+                                    locale: global.lang,
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        model: models.ProjectTranslation,
+                        as: "translations",
+                        required: true,
+                        where: {
+                            locale: global.lang,
+                        }
+                    },
+                ]
+            });
+        }
+
+
+        return ProjectDTO.transformDetailClient({ ...project, related });
+    }
+
     public updateById = async (id: string, body) => {
 
         delete body.id;

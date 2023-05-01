@@ -89,3 +89,315 @@ TSError: ⨯ Unable to compile TypeScript:
     at Module.load (node:internal/modules/cjs/loader:1069:32)
     at Function.Module._load (node:internal/modules/cjs/loader:904:12)
     at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-05-01 19:14:37 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/route/project.route.ts[0m:[93m18[0m:[93m73[0m - [91merror[0m[90m TS2339: [0mProperty 'findById' does not exist on type 'ProjectController'.
+
+[7m18[0m         this.router.get(`${this.path}/findById/:id(\\d+)`, this.project.findById);
+[7m  [0m [91m                                                                        ~~~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/route/project.route.ts[0m:[93m18[0m:[93m73[0m - [91merror[0m[90m TS2339: [0mProperty 'findById' does not exist on type 'ProjectController'.
+
+[7m18[0m         this.router.get(`${this.path}/findById/:id(\\d+)`, this.project.findById);
+[7m  [0m [91m                                                                        ~~~~~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-05-01 19:15:39 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/route/project.route.ts[0m:[93m18[0m:[93m73[0m - [91merror[0m[90m TS2339: [0mProperty 'findById' does not exist on type 'ProjectController'.
+
+[7m18[0m         this.router.get(`${this.path}/findById/:id(\\d+)`, this.project.findById);
+[7m  [0m [91m                                                                        ~~~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/route/project.route.ts[0m:[93m18[0m:[93m73[0m - [91merror[0m[90m TS2339: [0mProperty 'findById' does not exist on type 'ProjectController'.
+
+[7m18[0m         this.router.get(`${this.path}/findById/:id(\\d+)`, this.project.findById);
+[7m  [0m [91m                                                                        ~~~~~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-05-01 19:15:57 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/modules/controllers/project.controller.ts[0m:[93m28[0m:[93m40[0m - [91merror[0m[90m TS2339: [0mProperty 'findByIdClient' does not exist on type 'ProjectService'.
+
+[7m28[0m             const data = await project.findByIdClient(id);
+[7m  [0m [91m                                       ~~~~~~~~~~~~~~[0m
+[96msrc/modules/controllers/project.controller.ts[0m:[93m28[0m:[93m55[0m - [91merror[0m[90m TS2304: [0mCannot find name 'id'.
+
+[7m28[0m             const data = await project.findByIdClient(id);
+[7m  [0m [91m                                                      ~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/modules/controllers/project.controller.ts[0m:[93m28[0m:[93m40[0m - [91merror[0m[90m TS2339: [0mProperty 'findByIdClient' does not exist on type 'ProjectService'.
+
+[7m28[0m             const data = await project.findByIdClient(id);
+[7m  [0m [91m                                       ~~~~~~~~~~~~~~[0m
+[96msrc/modules/controllers/project.controller.ts[0m:[93m28[0m:[93m55[0m - [91merror[0m[90m TS2304: [0mCannot find name 'id'.
+
+[7m28[0m             const data = await project.findByIdClient(id);
+[7m  [0m [91m                                                      ~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-05-01 19:16:30 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/modules/controllers/project.controller.ts[0m:[93m28[0m:[93m55[0m - [91merror[0m[90m TS2304: [0mCannot find name 'id'.
+
+[7m28[0m             const data = await project.findByIdClient(id);
+[7m  [0m [91m                                                      ~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/modules/controllers/project.controller.ts[0m:[93m28[0m:[93m55[0m - [91merror[0m[90m TS2304: [0mCannot find name 'id'.
+
+[7m28[0m             const data = await project.findByIdClient(id);
+[7m  [0m [91m                                                      ~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-05-01 19:17:15 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/modules/controllers/project.controller.ts[0m:[93m28[0m:[93m55[0m - [91merror[0m[90m TS2304: [0mCannot find name 'id'.
+
+[7m28[0m             const data = await project.findByIdClient(id);
+[7m  [0m [91m                                                      ~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/modules/controllers/project.controller.ts[0m:[93m28[0m:[93m55[0m - [91merror[0m[90m TS2304: [0mCannot find name 'id'.
+
+[7m28[0m             const data = await project.findByIdClient(id);
+[7m  [0m [91m                                                      ~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-05-01 19:17:31 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/modules/controllers/project.controller.ts[0m:[93m28[0m:[93m55[0m - [91merror[0m[90m TS2304: [0mCannot find name 'id'.
+
+[7m28[0m             const data = await project.findByIdClient(id);
+[7m  [0m [91m                                                      ~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/modules/controllers/project.controller.ts[0m:[93m28[0m:[93m55[0m - [91merror[0m[90m TS2304: [0mCannot find name 'id'.
+
+[7m28[0m             const data = await project.findByIdClient(id);
+[7m  [0m [91m                                                      ~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-05-01 19:17:50 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/modules/controllers/project.controller.ts[0m:[93m28[0m:[93m55[0m - [91merror[0m[90m TS2304: [0mCannot find name 'id'.
+
+[7m28[0m             const data = await project.findByIdClient(id);
+[7m  [0m [91m                                                      ~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/modules/controllers/project.controller.ts[0m:[93m28[0m:[93m55[0m - [91merror[0m[90m TS2304: [0mCannot find name 'id'.
+
+[7m28[0m             const data = await project.findByIdClient(id);
+[7m  [0m [91m                                                      ~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-05-01 19:18:30 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/modules/controllers/project.controller.ts[0m:[93m28[0m:[93m55[0m - [91merror[0m[90m TS2304: [0mCannot find name 'id'.
+
+[7m28[0m             const data = await project.findByIdClient(id);
+[7m  [0m [91m                                                      ~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/modules/controllers/project.controller.ts[0m:[93m28[0m:[93m55[0m - [91merror[0m[90m TS2304: [0mCannot find name 'id'.
+
+[7m28[0m             const data = await project.findByIdClient(id);
+[7m  [0m [91m                                                      ~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-05-01 19:18:48 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/modules/controllers/project.controller.ts[0m:[93m28[0m:[93m55[0m - [91merror[0m[90m TS2304: [0mCannot find name 'id'.
+
+[7m28[0m             const data = await project.findByIdClient(id);
+[7m  [0m [91m                                                      ~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/modules/controllers/project.controller.ts[0m:[93m28[0m:[93m55[0m - [91merror[0m[90m TS2304: [0mCannot find name 'id'.
+
+[7m28[0m             const data = await project.findByIdClient(id);
+[7m  [0m [91m                                                      ~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-05-01 19:19:10 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/modules/controllers/project.controller.ts[0m:[93m28[0m:[93m55[0m - [91merror[0m[90m TS2304: [0mCannot find name 'id'.
+
+[7m28[0m             const data = await project.findByIdClient(id);
+[7m  [0m [91m                                                      ~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/modules/controllers/project.controller.ts[0m:[93m28[0m:[93m55[0m - [91merror[0m[90m TS2304: [0mCannot find name 'id'.
+
+[7m28[0m             const data = await project.findByIdClient(id);
+[7m  [0m [91m                                                      ~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-05-01 19:25:55 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/dtos/project.dto.ts[0m:[93m78[0m:[93m17[0m - [91merror[0m[90m TS1109: [0mExpression expected.
+
+[7m78[0m                 return item.translationData[0].slug,
+[7m  [0m [91m                ~~~~~~[0m
+[96msrc/dtos/project.dto.ts[0m:[93m79[0m:[93m13[0m - [91merror[0m[90m TS1109: [0mExpression expected.
+
+[7m79[0m             }) || [],
+[7m  [0m [91m            ~[0m
+[96msrc/dtos/project.dto.ts[0m:[93m83[0m:[93m17[0m - [91merror[0m[90m TS1109: [0mExpression expected.
+
+[7m83[0m                 return item.translationData[0].slug,
+[7m  [0m [91m                ~~~~~~[0m
+[96msrc/dtos/project.dto.ts[0m:[93m84[0m:[93m13[0m - [91merror[0m[90m TS1109: [0mExpression expected.
+
+[7m84[0m             }) || [],
+[7m  [0m [91m            ~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/dtos/project.dto.ts[0m:[93m78[0m:[93m17[0m - [91merror[0m[90m TS1109: [0mExpression expected.
+
+[7m78[0m                 return item.translationData[0].slug,
+[7m  [0m [91m                ~~~~~~[0m
+[96msrc/dtos/project.dto.ts[0m:[93m79[0m:[93m13[0m - [91merror[0m[90m TS1109: [0mExpression expected.
+
+[7m79[0m             }) || [],
+[7m  [0m [91m            ~[0m
+[96msrc/dtos/project.dto.ts[0m:[93m83[0m:[93m17[0m - [91merror[0m[90m TS1109: [0mExpression expected.
+
+[7m83[0m                 return item.translationData[0].slug,
+[7m  [0m [91m                ~~~~~~[0m
+[96msrc/dtos/project.dto.ts[0m:[93m84[0m:[93m13[0m - [91merror[0m[90m TS1109: [0mExpression expected.
+
+[7m84[0m             }) || [],
+[7m  [0m [91m            ~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-05-01 19:26:17 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/dtos/project.dto.ts[0m:[93m78[0m:[93m25[0m - [91merror[0m[90m TS1005: [0m',' expected.
+
+[7m78[0m                     item.translationData[0].name,
+[7m  [0m [91m                        ~[0m
+[96msrc/dtos/project.dto.ts[0m:[93m79[0m:[93m25[0m - [91merror[0m[90m TS1005: [0m',' expected.
+
+[7m79[0m                     item.translationData[0].slug,
+[7m  [0m [91m                        ~[0m
+[96msrc/dtos/project.dto.ts[0m:[93m86[0m:[93m13[0m - [91merror[0m[90m TS1109: [0mExpression expected.
+
+[7m86[0m             }) || [],
+[7m  [0m [91m            ~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/dtos/project.dto.ts[0m:[93m78[0m:[93m25[0m - [91merror[0m[90m TS1005: [0m',' expected.
+
+[7m78[0m                     item.translationData[0].name,
+[7m  [0m [91m                        ~[0m
+[96msrc/dtos/project.dto.ts[0m:[93m79[0m:[93m25[0m - [91merror[0m[90m TS1005: [0m',' expected.
+
+[7m79[0m                     item.translationData[0].slug,
+[7m  [0m [91m                        ~[0m
+[96msrc/dtos/project.dto.ts[0m:[93m86[0m:[93m13[0m - [91merror[0m[90m TS1109: [0mExpression expected.
+
+[7m86[0m             }) || [],
+[7m  [0m [91m            ~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)

@@ -56,4 +56,42 @@ export class ProjectDTO {
 
         }
     }
+
+    static transformDetailClient = (item) => {
+
+        if (!item) return {};
+        const translationData = item.translations[0];
+
+        return {
+            name: translationData.name || "",
+            thumbnail: item.image || null,
+            banner: item.banner_image || null,
+
+            section_1: translationData.section_1 || "",
+            section_2: translationData.section_2 || "",
+            section_3: translationData.section_3 || "",
+            section_4: translationData.section_4 || "",
+            section_5: translationData.section_5 || "",
+
+            branchs: item.branchs.map((item) => {
+                return {
+                    name: item.translations[0].name,
+                }
+            }) || [],
+
+            services: item.services.map((item) => {
+                return {
+                    name: item.translations[0].name,
+                    slug: item.translations[0].slug,
+                }
+            }) || [],
+
+            related: item.related.map((item) => {
+                return ProjectDTO.transform(item);
+            }) || [],
+
+            ...Helper.FieldsSeo(translationData),
+
+        }
+    }
 }
