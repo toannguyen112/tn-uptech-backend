@@ -14,7 +14,7 @@ export class ProjectRoute implements Routes {
 
     private initializeRoutes() {
         this.router.get(`${this.path}`, this.project.index);
-        this.router.get(`${this.path}/getListProject`, this.project.getListProject);
+        this.router.get(`${this.path}/getProjectsClient`, this.project.getProjectsClient);
         this.router.get(`${this.path}/findByIdClient/:id(\\d+)`, this.project.findByIdClient);
         this.router.get(`${this.path}/show/:id(\\d+)`, this.project.show);
         this.router.post(`${this.path}/create`, this.project.create);

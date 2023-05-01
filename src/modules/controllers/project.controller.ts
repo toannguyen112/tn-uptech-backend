@@ -15,9 +15,9 @@ export class ProjectController extends BaseController {
         }
     }
 
-    public getListProject = async (req: any, res: Response, next: NextFunction) => {
+    public getProjectsClient = async (req: any, res: Response, next: NextFunction) => {
         try {
-            const data = await project.getListProject(req.query);
+            const data = await project.getProjectsClient(req.query);
             return this.success(res, data);
         } catch (error) {
             console.log(error);

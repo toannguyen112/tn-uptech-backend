@@ -132,7 +132,8 @@ export class PostService {
                 required: true,
                 where: { locale: global.lang }
             },
-        ]
+        ];
+
         try {
 
             const postLatest = await models.Post.findOne({

@@ -93,7 +93,7 @@ export class ProjectService {
         }
     }
 
-    public getListProject = async (query) => {
+    public getProjectClient = async (query) => {
 
         try {
 
@@ -245,6 +245,75 @@ export class ProjectService {
         });
 
         return ProjectDTO.transformDetail(project);
+    }
+
+    public getProjectsClient = async (query) => {
+        try {
+            const conditions = {};
+            const queryObject = {
+                status: query.status,
+                search: query.search,
+            };
+
+            const excludedFields = ["page", "page_size", "sort_field", "sort_order", "fields"];
+            excludedFields.forEach((field) => delete queryObject[field]);
+
+            const arrQueryObject = Object.entries(queryObject).map((item) => {
+                return {
+                    key: item[0],
+                    value: item[1],
+                };
+            });
+
+            for (let index = 0; index < arrQueryObject.length; index++) {
+                switch (arrQueryObject[index].key) {
+                    case "status":
+                        const status = typeof arrQueryObject[index].value === "string" ?
+                            [arrQueryObject[index].value] : arrQueryObject[index].value;
+                        if (Array.isArray(status)) {
+                            conditions["status"] = {
+                                [Op.in]: ""
+                            };
+                        }
+                        break;
+
+                    default:
+                        break;
+                }
+            }
+
+            let queryTranslation = {};
+
+            const objQuery = new ApiFeatures(query)
+                .filter(conditions)
+                .includes([
+                    {
+                        model: models.Media,
+                        as: "image",
+                        required: false,
+                    },
+                    {
+                        model: models.ProjectTranslation,
+                        as: "translations",
+                        required: true,
+                        where: queryTranslation
+                    },
+                ])
+                .sort(query.sort_field || "createdAt", query.sort_order || "DESC")
+                .paranoid()
+                .getObjQuery();
+
+            const { count, rows }: any = await models.Project.findAndCountAll(objQuery);
+
+            const result = {
+                data: rows.map((item: any) => ProjectDTO.transform(item))
+            };
+
+            return result;
+
+        } catch (error) {
+            console.log(error);
+        }
     }
 
     public findByIdClient = async (id: string | number) => {
