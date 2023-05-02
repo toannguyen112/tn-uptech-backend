@@ -93,50 +93,6 @@ export class ProjectService {
         }
     }
 
-    public getProjectClient = async (query) => {
-
-        try {
-
-            const queryObject = {
-                status: query.status,
-                search: query.search,
-            };
-
-            const arrQueryObject = Object.entries(queryObject).map((item) => {
-                return {
-                    key: item[0],
-                    value: item[1],
-                };
-            });
-
-            const objQuery = new ApiFeatures(query)
-                .filter()
-                .includes([
-                    {
-                        model: models.Media,
-                        as: "image",
-                        required: false,
-                    },
-                    {
-                        model: models.ProjectTranslation,
-                        as: "translations",
-                        required: true,
-                    },
-                ])
-                .sort(query.sort_field || "createdAt", query.sort_order || "DESC")
-                .paginate()
-                .paranoid()
-                .getObjQuery();
-
-            const { count, rows }: any = await models.Project.findAndCountAll(objQuery);
-
-            return rows.map((item) => ProjectDTO.transform(item));
-
-        } catch (error) {
-            console.log(error);
-        }
-    }
-
     public store = async (body) => {
 
         const t = await models.sequelize.transaction();
@@ -248,62 +204,59 @@ export class ProjectService {
     }
 
     public getProjectsClient = async (query) => {
-        try {
-            const conditions = {};
-            const queryObject = {
-                status: query.status,
-                search: query.search,
-            };
 
-            const excludedFields = ["page", "page_size", "sort_field", "sort_order", "fields"];
-            excludedFields.forEach((field) => delete queryObject[field]);
 
-            const arrQueryObject = Object.entries(queryObject).map((item) => {
-                return {
-                    key: item[0],
-                    value: item[1],
-                };
-            });
+        let include = [
+            {
+                model: models.Media,
+                as: "image",
+                required: false,
+            },
+            {
+                model: models.ProjectTranslation,
+                as: "translations",
+                required: true,
+            },
 
-            for (let index = 0; index < arrQueryObject.length; index++) {
-                switch (arrQueryObject[index].key) {
-                    case "status":
-                        const status = typeof arrQueryObject[index].value === "string" ?
-                            [arrQueryObject[index].value] : arrQueryObject[index].value;
-                        if (Array.isArray(status)) {
-                            conditions["status"] = {
-                                [Op.in]: ""
-                            };
-                        }
-                        break;
+        ]
 
-                    default:
-                        break;
-                }
+        const queryService = {
+            model: models.Service,
+            as: "services",
+            required: false,
+            where: {
+                id: query.service_id
             }
+        };
 
-            let queryTranslation = {};
+        const queryBranch = {
+            model: models.Branch,
+            as: "branchs",
+            required: false,
+            where: {
+                id: query.branch_id
+            }
+        };
 
-            const objQuery = new ApiFeatures(query)
-                .filter(conditions)
-                .includes([
-                    {
-                        model: models.Media,
-                        as: "image",
-                        required: false,
-                    },
-                    {
-                        model: models.ProjectTranslation,
-                        as: "translations",
-                        required: true,
-                        where: queryTranslation
-                    },
-                ])
-                .sort(query.sort_field || "createdAt", query.sort_order || "DESC")
-                .paranoid()
-                .getObjQuery();
+        if (query.service_id) {
+            include = [
+                ...include,
+                queryService
+            ]
+        }
 
-            const { count, rows }: any = await models.Project.findAndCountAll(objQuery);
+        if (query.branch_id) {
+            include = [
+                ...include,
+                queryBranch
+            ]
+        }
+
+        try {
+
+            console.log(include);
+
+            const rows = await models.Project.findAll({ where: {}, include });
 
             const result = {
                 data: rows.map((item: any) => ProjectDTO.transform(item))
@@ -451,8 +404,7 @@ export class ProjectService {
             .then(async (res) => {
 
                 try {
-                    if (body.branchs.length > 0) {
-                        await models.ProjectBranch.destroy({ where: { project_id: id } }, { transaction: t });
+                    await models.ProjectBranch.destroy({ where: { project_id: id } }, { transaction: t });
                         for (const branchId of body.branchs) {
 
                             await models.ProjectBranch.create({
@@ -460,17 +412,14 @@ export class ProjectService {
                                 branch_id: branchId
                             }, { transaction: t });
                         }
-                    }
 
-                    if (body.services.length > 0) {
-                        await models.ProjectService.destroy({ where: { project_id: id } }, { transaction: t });
+                    await models.ProjectService.destroy({ where: { project_id: id } }, { transaction: t });
 
-                        for (const serviceId of body.services) {
-                            await models.ProjectService.create({
-                                project_id: id,
-                                service_id: serviceId
-                            }, { transaction: t });
-                        }
+                    for (const serviceId of body.services) {
+                        await models.ProjectService.create({
+                            project_id: id,
+                            service_id: serviceId
+                        }, { transaction: t });
                     }
 
                     await models.ProjectTranslation.update({ ...body },
