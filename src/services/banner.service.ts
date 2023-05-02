@@ -99,6 +99,11 @@ export class BannerService {
             const rows = await models.Banner.findAll({
                 include: [
                     {
+                        model: models.Media,
+                        as: "image",
+                        required: false,
+                    },
+                    {
                         model: models.BannerTranslation,
                         as: "translations",
                         required: true,
@@ -180,7 +185,7 @@ export class BannerService {
         )
             .then(async (res) => {
                 try {
-                    return await models.BannerTranslation.update({...body},
+                    return await models.BannerTranslation.update({ ...body },
                         {
                             where: {
                                 banner_id: id,

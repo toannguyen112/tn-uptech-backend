@@ -28,6 +28,10 @@ module.exports = function (sequelize, DataTypes) {
                 type: DataTypes.STRING,
             },
 
+            type: {
+                type: DataTypes.STRING,
+            },
+
             description: {
                 type: DataTypes.TEXT('long'),
             },
