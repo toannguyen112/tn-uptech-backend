@@ -29,6 +29,12 @@ module.exports = function (sequelize, DataTypes) {
                 allowNull: false,
             },
 
+            work_item: {
+                type: DataTypes.JSON,
+                allowNull: true,
+                defaultValue: []
+            },
+
             description: {
                 type: DataTypes.TEXT('long'),
                 allowNull: true,

@@ -30,7 +30,10 @@ export class ProjectDTO {
         return {
             id: item.id,
             name: translationData.name || "",
+
             description: translationData.description || "",
+            work_item: translationData.work_item || "",
+
             isFeatured: item.isFeatured || false,
             status: item.status || 'inactive',
             content: translationData.content || "",
@@ -66,6 +69,7 @@ export class ProjectDTO {
             name: translationData.name || "",
             thumbnail: item.image || null,
             banner: item.banner_image || null,
+            work_item: translationData.work_item || "",
 
             section_1: translationData.section_1 || "",
             section_2: translationData.section_2 || "",
