@@ -217,52 +217,45 @@ export class ProjectService {
                 as: "translations",
                 required: true,
             },
+            {
+                model: models.Service,
+                as: "services",
+                required: true,
+                include: [
+                    {
+                        model: models.ServiceTranslation,
+                        as: "translations",
+                        required: true,
+                        where: {
+                            locale: global.lang,
+                        },
+
+                    }
+                ],
+                through: query.service_id ? {
+                    where: {
+                        service_id: { [models.Sequelize.Op.eq]: query.service_id }
+                    }
+                } : null
+            },
+            {
+                model: models.Branch,
+                as: "branchs",
+                required: true,
+                through: query.branch_id ? {
+                    where: {
+                        branch_id: { [models.Sequelize.Op.eq]: query.branch_id }
+                    }
+                } : null
+            }
         ]
 
-        const queryService = {
-            model: models.Service,
-            as: "services",
-            required: true,
-            through: {
-                where: {
-                    service_id: { [models.Sequelize.Op.eq]: query.service_id }
-                }
-            }
-        };
-
-        const queryBranch = {
-            model: models.Branch,
-            as: "branchs",
-            required: true,
-            through: {
-                where: {
-                    branch_id: { [models.Sequelize.Op.eq]: query.branch_id }
-                }
-            }
-        };
-
-        if (query.service_id) {
-            include = [
-                ...include,
-                queryService
-            ]
-        }
-
-        if (query.branch_id) {
-            include = [
-                ...include,
-                queryBranch
-            ]
-        }
-
         try {
-
-            console.log(include);
 
             const rows = await models.Project.findAll({ where: {}, include });
 
             const result = {
-                data: rows.map((item: any) => ProjectDTO.transform(item))
+                data: rows.map((item: any) => ProjectDTO.transformClient(item))
             };
 
             return result;

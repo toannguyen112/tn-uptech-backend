@@ -698,3 +698,363 @@ TSError: ⨯ Unable to compile TypeScript:
     at Module.load (node:internal/modules/cjs/loader:1069:32)
     at Function.Module._load (node:internal/modules/cjs/loader:904:12)
     at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-05-02 15:07:38 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/dtos/project.dto.ts[0m:[93m101[0m:[93m12[0m - [91merror[0m[90m TS2300: [0mDuplicate identifier 'transformDetailClient'.
+
+[7m101[0m     static transformDetailClient = (item) => {
+[7m   [0m [91m           ~~~~~~~~~~~~~~~~~~~~~[0m
+[96msrc/dtos/project.dto.ts[0m:[93m63[0m:[93m5[0m - [91merror[0m[90m TS1128: [0mDeclaration or statement expected.
+
+[7m63[0m     static transformDetail = (item) => {
+[7m  [0m [91m    ~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/dtos/project.dto.ts[0m:[93m101[0m:[93m12[0m - [91merror[0m[90m TS2300: [0mDuplicate identifier 'transformDetailClient'.
+
+[7m101[0m     static transformDetailClient = (item) => {
+[7m   [0m [91m           ~~~~~~~~~~~~~~~~~~~~~[0m
+[96msrc/dtos/project.dto.ts[0m:[93m63[0m:[93m5[0m - [91merror[0m[90m TS1128: [0mDeclaration or statement expected.
+
+[7m63[0m     static transformDetail = (item) => {
+[7m  [0m [91m    ~~~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-05-02 15:07:58 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/dtos/project.dto.ts[0m:[93m55[0m:[93m5[0m - [91merror[0m[90m TS1128: [0mDeclaration or statement expected.
+
+[7m55[0m     static transformDetail = (item) => {
+[7m  [0m [91m    ~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/dtos/project.dto.ts[0m:[93m55[0m:[93m5[0m - [91merror[0m[90m TS1128: [0mDeclaration or statement expected.
+
+[7m55[0m     static transformDetail = (item) => {
+[7m  [0m [91m    ~~~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-05-02 15:08:07 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/dtos/project.dto.ts[0m:[93m49[0m:[93m5[0m - [91merror[0m[90m TS1128: [0mDeclaration or statement expected.
+
+[7m49[0m     static transformDetail = (item) => {
+[7m  [0m [91m    ~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/dtos/project.dto.ts[0m:[93m49[0m:[93m5[0m - [91merror[0m[90m TS1128: [0mDeclaration or statement expected.
+
+[7m49[0m     static transformDetail = (item) => {
+[7m  [0m [91m    ~~~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-05-02 15:16:54 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/services/project.service.ts[0m:[93m236[0m:[93m32[0m - [91merror[0m[90m TS2304: [0mCannot find name 'through'.
+
+[7m236[0m             query.service_id ? through : {
+[7m   [0m [91m                               ~~~~~~~[0m
+[96msrc/services/project.service.ts[0m:[93m236[0m:[93m18[0m - [91merror[0m[90m TS1005: [0m',' expected.
+
+[7m236[0m             query.service_id ? through : {
+[7m   [0m [91m                 ~[0m
+[96msrc/services/project.service.ts[0m:[93m240[0m:[93m15[0m - [91merror[0m[90m TS1005: [0m',' expected.
+
+[7m240[0m             } : null
+[7m   [0m [91m              ~[0m
+[96msrc/services/project.service.ts[0m:[93m241[0m:[93m9[0m - [91merror[0m[90m TS1005: [0m':' expected.
+
+[7m241[0m         };
+[7m   [0m [91m        ~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/services/project.service.ts[0m:[93m236[0m:[93m32[0m - [91merror[0m[90m TS2304: [0mCannot find name 'through'.
+
+[7m236[0m             query.service_id ? through : {
+[7m   [0m [91m                               ~~~~~~~[0m
+[96msrc/services/project.service.ts[0m:[93m236[0m:[93m18[0m - [91merror[0m[90m TS1005: [0m',' expected.
+
+[7m236[0m             query.service_id ? through : {
+[7m   [0m [91m                 ~[0m
+[96msrc/services/project.service.ts[0m:[93m240[0m:[93m15[0m - [91merror[0m[90m TS1005: [0m',' expected.
+
+[7m240[0m             } : null
+[7m   [0m [91m              ~[0m
+[96msrc/services/project.service.ts[0m:[93m241[0m:[93m9[0m - [91merror[0m[90m TS1005: [0m':' expected.
+
+[7m241[0m         };
+[7m   [0m [91m        ~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-05-02 15:19:30 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/services/project.service.ts[0m:[93m281[0m:[93m17[0m - [91merror[0m[90m TS2322: [0mType '{ model: any; as: string; required: boolean; include?: undefined; through?: undefined; } | { model: any; as: string; required: boolean; include: { model: any; as: string; required: boolean; where: { locale: any; }; }[]; through?: undefined; } | { ...; } | { ...; }' is not assignable to type '{ model: any; as: string; required: boolean; include?: undefined; through?: undefined; } | { model: any; as: string; required: boolean; include: { model: any; as: string; required: boolean; where: { locale: any; }; }[]; through?: undefined; } | { ...; }'.
+  Type '{ model: any; as: string; required: boolean; include: { model: any; as: string; required: boolean; where: { locale: any; }; }[]; through: { where: { service_id: { [x: number]: any; }; }; }; }' is not assignable to type '{ model: any; as: string; required: boolean; include?: undefined; through?: undefined; } | { model: any; as: string; required: boolean; include: { model: any; as: string; required: boolean; where: { locale: any; }; }[]; through?: undefined; } | { ...; }'.
+    Type '{ model: any; as: string; required: boolean; include: { model: any; as: string; required: boolean; where: { locale: any; }; }[]; through: { where: { service_id: { [x: number]: any; }; }; }; }' is not assignable to type '{ model: any; as: string; required: boolean; through: { where: { branch_id: { [x: number]: any; }; }; }; include?: undefined; }'.
+      The types of 'through.where' are incompatible between these types.
+        Property 'branch_id' is missing in type '{ service_id: { [x: number]: any; }; }' but required in type '{ branch_id: { [x: number]: any; }; }'.
+
+[7m281[0m                 ...include,
+[7m   [0m [91m                ~~~~~~~~~~[0m
+
+  [96msrc/services/project.service.ts[0m:[93m241[0m:[93m25[0m
+    [7m241[0m                         branch_id: { [models.Sequelize.Op.eq]: query.branch_id }
+    [7m   [0m [96m                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+    'branch_id' is declared here.
+[96msrc/services/project.service.ts[0m:[93m282[0m:[93m17[0m - [91merror[0m[90m TS2322: [0mType '{ model: any; as: string; required: boolean; include: { model: any; as: string; required: boolean; where: { locale: any; }; }[]; through: { where: { service_id: { [x: number]: any; }; }; }; }' is not assignable to type '{ model: any; as: string; required: boolean; include?: undefined; through?: undefined; } | { model: any; as: string; required: boolean; include: { model: any; as: string; required: boolean; where: { locale: any; }; }[]; through?: undefined; } | { ...; }'.
+
+[7m282[0m                 queryService
+[7m   [0m [91m                ~~~~~~~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/services/project.service.ts[0m:[93m281[0m:[93m17[0m - [91merror[0m[90m TS2322: [0mType '{ model: any; as: string; required: boolean; include?: undefined; through?: undefined; } | { model: any; as: string; required: boolean; include: { model: any; as: string; required: boolean; where: { locale: any; }; }[]; through?: undefined; } | { ...; } | { ...; }' is not assignable to type '{ model: any; as: string; required: boolean; include?: undefined; through?: undefined; } | { model: any; as: string; required: boolean; include: { model: any; as: string; required: boolean; where: { locale: any; }; }[]; through?: undefined; } | { ...; }'.
+  Type '{ model: any; as: string; required: boolean; include: { model: any; as: string; required: boolean; where: { locale: any; }; }[]; through: { where: { service_id: { [x: number]: any; }; }; }; }' is not assignable to type '{ model: any; as: string; required: boolean; include?: undefined; through?: undefined; } | { model: any; as: string; required: boolean; include: { model: any; as: string; required: boolean; where: { locale: any; }; }[]; through?: undefined; } | { ...; }'.
+    Type '{ model: any; as: string; required: boolean; include: { model: any; as: string; required: boolean; where: { locale: any; }; }[]; through: { where: { service_id: { [x: number]: any; }; }; }; }' is not assignable to type '{ model: any; as: string; required: boolean; through: { where: { branch_id: { [x: number]: any; }; }; }; include?: undefined; }'.
+      The types of 'through.where' are incompatible between these types.
+        Property 'branch_id' is missing in type '{ service_id: { [x: number]: any; }; }' but required in type '{ branch_id: { [x: number]: any; }; }'.
+
+[7m281[0m                 ...include,
+[7m   [0m [91m                ~~~~~~~~~~[0m
+
+  [96msrc/services/project.service.ts[0m:[93m241[0m:[93m25[0m
+    [7m241[0m                         branch_id: { [models.Sequelize.Op.eq]: query.branch_id }
+    [7m   [0m [96m                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+    'branch_id' is declared here.
+[96msrc/services/project.service.ts[0m:[93m282[0m:[93m17[0m - [91merror[0m[90m TS2322: [0mType '{ model: any; as: string; required: boolean; include: { model: any; as: string; required: boolean; where: { locale: any; }; }[]; through: { where: { service_id: { [x: number]: any; }; }; }; }' is not assignable to type '{ model: any; as: string; required: boolean; include?: undefined; through?: undefined; } | { model: any; as: string; required: boolean; include: { model: any; as: string; required: boolean; where: { locale: any; }; }[]; through?: undefined; } | { ...; }'.
+
+[7m282[0m                 queryService
+[7m   [0m [91m                ~~~~~~~~~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-05-02 15:20:58 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/services/project.service.ts[0m:[93m281[0m:[93m17[0m - [91merror[0m[90m TS2322: [0mType '{ model: any; as: string; required: boolean; include?: undefined; through?: undefined; } | { model: any; as: string; required: boolean; include: { model: any; as: string; required: boolean; where: { locale: any; }; }[]; through?: undefined; } | { ...; } | { ...; }' is not assignable to type '{ model: any; as: string; required: boolean; include?: undefined; through?: undefined; } | { model: any; as: string; required: boolean; include: { model: any; as: string; required: boolean; where: { locale: any; }; }[]; through?: undefined; } | { ...; }'.
+  Type '{ model: any; as: string; required: boolean; include: { model: any; as: string; required: boolean; where: { locale: any; }; }[]; through: { where: { service_id: { [x: number]: any; }; }; }; }' is not assignable to type '{ model: any; as: string; required: boolean; include?: undefined; through?: undefined; } | { model: any; as: string; required: boolean; include: { model: any; as: string; required: boolean; where: { locale: any; }; }[]; through?: undefined; } | { ...; }'.
+    Type '{ model: any; as: string; required: boolean; include: { model: any; as: string; required: boolean; where: { locale: any; }; }[]; through: { where: { service_id: { [x: number]: any; }; }; }; }' is not assignable to type '{ model: any; as: string; required: boolean; through: { where: { branch_id: { [x: number]: any; }; }; }; include?: undefined; }'.
+      The types of 'through.where' are incompatible between these types.
+        Property 'branch_id' is missing in type '{ service_id: { [x: number]: any; }; }' but required in type '{ branch_id: { [x: number]: any; }; }'.
+
+[7m281[0m                 ...include,
+[7m   [0m [91m                ~~~~~~~~~~[0m
+
+  [96msrc/services/project.service.ts[0m:[93m241[0m:[93m25[0m
+    [7m241[0m                         branch_id: { [models.Sequelize.Op.eq]: query.branch_id }
+    [7m   [0m [96m                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+    'branch_id' is declared here.
+[96msrc/services/project.service.ts[0m:[93m282[0m:[93m17[0m - [91merror[0m[90m TS2322: [0mType '{ model: any; as: string; required: boolean; include: { model: any; as: string; required: boolean; where: { locale: any; }; }[]; through: { where: { service_id: { [x: number]: any; }; }; }; }' is not assignable to type '{ model: any; as: string; required: boolean; include?: undefined; through?: undefined; } | { model: any; as: string; required: boolean; include: { model: any; as: string; required: boolean; where: { locale: any; }; }[]; through?: undefined; } | { ...; }'.
+
+[7m282[0m                 queryService
+[7m   [0m [91m                ~~~~~~~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/services/project.service.ts[0m:[93m281[0m:[93m17[0m - [91merror[0m[90m TS2322: [0mType '{ model: any; as: string; required: boolean; include?: undefined; through?: undefined; } | { model: any; as: string; required: boolean; include: { model: any; as: string; required: boolean; where: { locale: any; }; }[]; through?: undefined; } | { ...; } | { ...; }' is not assignable to type '{ model: any; as: string; required: boolean; include?: undefined; through?: undefined; } | { model: any; as: string; required: boolean; include: { model: any; as: string; required: boolean; where: { locale: any; }; }[]; through?: undefined; } | { ...; }'.
+  Type '{ model: any; as: string; required: boolean; include: { model: any; as: string; required: boolean; where: { locale: any; }; }[]; through: { where: { service_id: { [x: number]: any; }; }; }; }' is not assignable to type '{ model: any; as: string; required: boolean; include?: undefined; through?: undefined; } | { model: any; as: string; required: boolean; include: { model: any; as: string; required: boolean; where: { locale: any; }; }[]; through?: undefined; } | { ...; }'.
+    Type '{ model: any; as: string; required: boolean; include: { model: any; as: string; required: boolean; where: { locale: any; }; }[]; through: { where: { service_id: { [x: number]: any; }; }; }; }' is not assignable to type '{ model: any; as: string; required: boolean; through: { where: { branch_id: { [x: number]: any; }; }; }; include?: undefined; }'.
+      The types of 'through.where' are incompatible between these types.
+        Property 'branch_id' is missing in type '{ service_id: { [x: number]: any; }; }' but required in type '{ branch_id: { [x: number]: any; }; }'.
+
+[7m281[0m                 ...include,
+[7m   [0m [91m                ~~~~~~~~~~[0m
+
+  [96msrc/services/project.service.ts[0m:[93m241[0m:[93m25[0m
+    [7m241[0m                         branch_id: { [models.Sequelize.Op.eq]: query.branch_id }
+    [7m   [0m [96m                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+    'branch_id' is declared here.
+[96msrc/services/project.service.ts[0m:[93m282[0m:[93m17[0m - [91merror[0m[90m TS2322: [0mType '{ model: any; as: string; required: boolean; include: { model: any; as: string; required: boolean; where: { locale: any; }; }[]; through: { where: { service_id: { [x: number]: any; }; }; }; }' is not assignable to type '{ model: any; as: string; required: boolean; include?: undefined; through?: undefined; } | { model: any; as: string; required: boolean; include: { model: any; as: string; required: boolean; where: { locale: any; }; }[]; through?: undefined; } | { ...; }'.
+
+[7m282[0m                 queryService
+[7m   [0m [91m                ~~~~~~~~~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-05-02 15:21:18 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/services/project.service.ts[0m:[93m281[0m:[93m17[0m - [91merror[0m[90m TS2322: [0mType '{ model: any; as: string; required: boolean; include?: undefined; through?: undefined; } | { model: any; as: string; required: boolean; include: { model: any; as: string; required: boolean; where: { locale: any; }; }[]; through?: undefined; } | { ...; } | { ...; }' is not assignable to type '{ model: any; as: string; required: boolean; include?: undefined; through?: undefined; } | { model: any; as: string; required: boolean; include: { model: any; as: string; required: boolean; where: { locale: any; }; }[]; through?: undefined; } | { ...; }'.
+  Type '{ model: any; as: string; required: boolean; include: { model: any; as: string; required: boolean; where: { locale: any; }; }[]; through: { where: { service_id: { [x: number]: any; }; }; }; }' is not assignable to type '{ model: any; as: string; required: boolean; include?: undefined; through?: undefined; } | { model: any; as: string; required: boolean; include: { model: any; as: string; required: boolean; where: { locale: any; }; }[]; through?: undefined; } | { ...; }'.
+    Type '{ model: any; as: string; required: boolean; include: { model: any; as: string; required: boolean; where: { locale: any; }; }[]; through: { where: { service_id: { [x: number]: any; }; }; }; }' is not assignable to type '{ model: any; as: string; required: boolean; through: { where: { branch_id: { [x: number]: any; }; }; }; include?: undefined; }'.
+      The types of 'through.where' are incompatible between these types.
+        Property 'branch_id' is missing in type '{ service_id: { [x: number]: any; }; }' but required in type '{ branch_id: { [x: number]: any; }; }'.
+
+[7m281[0m                 ...include,
+[7m   [0m [91m                ~~~~~~~~~~[0m
+
+  [96msrc/services/project.service.ts[0m:[93m241[0m:[93m25[0m
+    [7m241[0m                         branch_id: { [models.Sequelize.Op.eq]: query.branch_id }
+    [7m   [0m [96m                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+    'branch_id' is declared here.
+[96msrc/services/project.service.ts[0m:[93m282[0m:[93m17[0m - [91merror[0m[90m TS2322: [0mType '{ model: any; as: string; required: boolean; include: { model: any; as: string; required: boolean; where: { locale: any; }; }[]; through: { where: { service_id: { [x: number]: any; }; }; }; }' is not assignable to type '{ model: any; as: string; required: boolean; include?: undefined; through?: undefined; } | { model: any; as: string; required: boolean; include: { model: any; as: string; required: boolean; where: { locale: any; }; }[]; through?: undefined; } | { ...; }'.
+
+[7m282[0m                 queryService
+[7m   [0m [91m                ~~~~~~~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/services/project.service.ts[0m:[93m281[0m:[93m17[0m - [91merror[0m[90m TS2322: [0mType '{ model: any; as: string; required: boolean; include?: undefined; through?: undefined; } | { model: any; as: string; required: boolean; include: { model: any; as: string; required: boolean; where: { locale: any; }; }[]; through?: undefined; } | { ...; } | { ...; }' is not assignable to type '{ model: any; as: string; required: boolean; include?: undefined; through?: undefined; } | { model: any; as: string; required: boolean; include: { model: any; as: string; required: boolean; where: { locale: any; }; }[]; through?: undefined; } | { ...; }'.
+  Type '{ model: any; as: string; required: boolean; include: { model: any; as: string; required: boolean; where: { locale: any; }; }[]; through: { where: { service_id: { [x: number]: any; }; }; }; }' is not assignable to type '{ model: any; as: string; required: boolean; include?: undefined; through?: undefined; } | { model: any; as: string; required: boolean; include: { model: any; as: string; required: boolean; where: { locale: any; }; }[]; through?: undefined; } | { ...; }'.
+    Type '{ model: any; as: string; required: boolean; include: { model: any; as: string; required: boolean; where: { locale: any; }; }[]; through: { where: { service_id: { [x: number]: any; }; }; }; }' is not assignable to type '{ model: any; as: string; required: boolean; through: { where: { branch_id: { [x: number]: any; }; }; }; include?: undefined; }'.
+      The types of 'through.where' are incompatible between these types.
+        Property 'branch_id' is missing in type '{ service_id: { [x: number]: any; }; }' but required in type '{ branch_id: { [x: number]: any; }; }'.
+
+[7m281[0m                 ...include,
+[7m   [0m [91m                ~~~~~~~~~~[0m
+
+  [96msrc/services/project.service.ts[0m:[93m241[0m:[93m25[0m
+    [7m241[0m                         branch_id: { [models.Sequelize.Op.eq]: query.branch_id }
+    [7m   [0m [96m                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+    'branch_id' is declared here.
+[96msrc/services/project.service.ts[0m:[93m282[0m:[93m17[0m - [91merror[0m[90m TS2322: [0mType '{ model: any; as: string; required: boolean; include: { model: any; as: string; required: boolean; where: { locale: any; }; }[]; through: { where: { service_id: { [x: number]: any; }; }; }; }' is not assignable to type '{ model: any; as: string; required: boolean; include?: undefined; through?: undefined; } | { model: any; as: string; required: boolean; include: { model: any; as: string; required: boolean; where: { locale: any; }; }[]; through?: undefined; } | { ...; }'.
+
+[7m282[0m                 queryService
+[7m   [0m [91m                ~~~~~~~~~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-05-02 15:21:27 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/services/project.service.ts[0m:[93m286[0m:[93m17[0m - [91merror[0m[90m TS2322: [0mType '{ model: any; as: string; required: boolean; include?: undefined; through?: undefined; } | { model: any; as: string; required: boolean; include: { model: any; as: string; required: boolean; where: { locale: any; }; through: { ...; }; }[]; through?: undefined; } | { ...; } | { ...; }' is not assignable to type '{ model: any; as: string; required: boolean; include?: undefined; through?: undefined; } | { model: any; as: string; required: boolean; include: { model: any; as: string; required: boolean; where: { locale: any; }; through: { ...; }; }[]; through?: undefined; } | { ...; }'.
+  Type '{ model: any; as: string; required: boolean; include: { model: any; as: string; required: boolean; where: { locale: any; }; }[]; through: { where: { service_id: { [x: number]: any; }; }; }; }' is not assignable to type '{ model: any; as: string; required: boolean; include?: undefined; through?: undefined; } | { model: any; as: string; required: boolean; include: { model: any; as: string; required: boolean; where: { locale: any; }; through: { ...; }; }[]; through?: undefined; } | { ...; }'.
+    Type '{ model: any; as: string; required: boolean; include: { model: any; as: string; required: boolean; where: { locale: any; }; }[]; through: { where: { service_id: { [x: number]: any; }; }; }; }' is not assignable to type '{ model: any; as: string; required: boolean; through: { where: { branch_id: { [x: number]: any; }; }; }; include?: undefined; }'.
+      The types of 'through.where' are incompatible between these types.
+        Property 'branch_id' is missing in type '{ service_id: { [x: number]: any; }; }' but required in type '{ branch_id: { [x: number]: any; }; }'.
+
+[7m286[0m                 ...include,
+[7m   [0m [91m                ~~~~~~~~~~[0m
+
+  [96msrc/services/project.service.ts[0m:[93m246[0m:[93m25[0m
+    [7m246[0m                         branch_id: { [models.Sequelize.Op.eq]: query.branch_id }
+    [7m   [0m [96m                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+    'branch_id' is declared here.
+[96msrc/services/project.service.ts[0m:[93m287[0m:[93m17[0m - [91merror[0m[90m TS2322: [0mType '{ model: any; as: string; required: boolean; include: { model: any; as: string; required: boolean; where: { locale: any; }; }[]; through: { where: { service_id: { [x: number]: any; }; }; }; }' is not assignable to type '{ model: any; as: string; required: boolean; include?: undefined; through?: undefined; } | { model: any; as: string; required: boolean; include: { model: any; as: string; required: boolean; where: { locale: any; }; through: { ...; }; }[]; through?: undefined; } | { ...; }'.
+
+[7m287[0m                 queryService
+[7m   [0m [91m                ~~~~~~~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/services/project.service.ts[0m:[93m286[0m:[93m17[0m - [91merror[0m[90m TS2322: [0mType '{ model: any; as: string; required: boolean; include?: undefined; through?: undefined; } | { model: any; as: string; required: boolean; include: { model: any; as: string; required: boolean; where: { locale: any; }; through: { ...; }; }[]; through?: undefined; } | { ...; } | { ...; }' is not assignable to type '{ model: any; as: string; required: boolean; include?: undefined; through?: undefined; } | { model: any; as: string; required: boolean; include: { model: any; as: string; required: boolean; where: { locale: any; }; through: { ...; }; }[]; through?: undefined; } | { ...; }'.
+  Type '{ model: any; as: string; required: boolean; include: { model: any; as: string; required: boolean; where: { locale: any; }; }[]; through: { where: { service_id: { [x: number]: any; }; }; }; }' is not assignable to type '{ model: any; as: string; required: boolean; include?: undefined; through?: undefined; } | { model: any; as: string; required: boolean; include: { model: any; as: string; required: boolean; where: { locale: any; }; through: { ...; }; }[]; through?: undefined; } | { ...; }'.
+    Type '{ model: any; as: string; required: boolean; include: { model: any; as: string; required: boolean; where: { locale: any; }; }[]; through: { where: { service_id: { [x: number]: any; }; }; }; }' is not assignable to type '{ model: any; as: string; required: boolean; through: { where: { branch_id: { [x: number]: any; }; }; }; include?: undefined; }'.
+      The types of 'through.where' are incompatible between these types.
+        Property 'branch_id' is missing in type '{ service_id: { [x: number]: any; }; }' but required in type '{ branch_id: { [x: number]: any; }; }'.
+
+[7m286[0m                 ...include,
+[7m   [0m [91m                ~~~~~~~~~~[0m
+
+  [96msrc/services/project.service.ts[0m:[93m246[0m:[93m25[0m
+    [7m246[0m                         branch_id: { [models.Sequelize.Op.eq]: query.branch_id }
+    [7m   [0m [96m                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+    'branch_id' is declared here.
+[96msrc/services/project.service.ts[0m:[93m287[0m:[93m17[0m - [91merror[0m[90m TS2322: [0mType '{ model: any; as: string; required: boolean; include: { model: any; as: string; required: boolean; where: { locale: any; }; }[]; through: { where: { service_id: { [x: number]: any; }; }; }; }' is not assignable to type '{ model: any; as: string; required: boolean; include?: undefined; through?: undefined; } | { model: any; as: string; required: boolean; include: { model: any; as: string; required: boolean; where: { locale: any; }; through: { ...; }; }[]; through?: undefined; } | { ...; }'.
+
+[7m287[0m                 queryService
+[7m   [0m [91m                ~~~~~~~~~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-05-02 15:21:34 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/services/project.service.ts[0m:[93m286[0m:[93m17[0m - [91merror[0m[90m TS2322: [0mType '{ model: any; as: string; required: boolean; include?: undefined; through?: undefined; } | { model: any; as: string; required: boolean; include: { model: any; as: string; required: boolean; where: { locale: any; }; through: { ...; }; }[]; through?: undefined; } | { ...; } | { ...; }' is not assignable to type '{ model: any; as: string; required: boolean; include?: undefined; through?: undefined; } | { model: any; as: string; required: boolean; include: { model: any; as: string; required: boolean; where: { locale: any; }; through: { ...; }; }[]; through?: undefined; } | { ...; }'.
+  Type '{ model: any; as: string; required: boolean; include: { model: any; as: string; required: boolean; where: { locale: any; }; }[]; through: { where: { service_id: { [x: number]: any; }; }; }; }' is not assignable to type '{ model: any; as: string; required: boolean; include?: undefined; through?: undefined; } | { model: any; as: string; required: boolean; include: { model: any; as: string; required: boolean; where: { locale: any; }; through: { ...; }; }[]; through?: undefined; } | { ...; }'.
+    Type '{ model: any; as: string; required: boolean; include: { model: any; as: string; required: boolean; where: { locale: any; }; }[]; through: { where: { service_id: { [x: number]: any; }; }; }; }' is not assignable to type '{ model: any; as: string; required: boolean; through: { where: { branch_id: { [x: number]: any; }; }; }; include?: undefined; }'.
+      The types of 'through.where' are incompatible between these types.
+        Property 'branch_id' is missing in type '{ service_id: { [x: number]: any; }; }' but required in type '{ branch_id: { [x: number]: any; }; }'.
+
+[7m286[0m                 ...include,
+[7m   [0m [91m                ~~~~~~~~~~[0m
+
+  [96msrc/services/project.service.ts[0m:[93m246[0m:[93m25[0m
+    [7m246[0m                         branch_id: { [models.Sequelize.Op.eq]: query.branch_id }
+    [7m   [0m [96m                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+    'branch_id' is declared here.
+[96msrc/services/project.service.ts[0m:[93m287[0m:[93m17[0m - [91merror[0m[90m TS2322: [0mType '{ model: any; as: string; required: boolean; include: { model: any; as: string; required: boolean; where: { locale: any; }; }[]; through: { where: { service_id: { [x: number]: any; }; }; }; }' is not assignable to type '{ model: any; as: string; required: boolean; include?: undefined; through?: undefined; } | { model: any; as: string; required: boolean; include: { model: any; as: string; required: boolean; where: { locale: any; }; through: { ...; }; }[]; through?: undefined; } | { ...; }'.
+
+[7m287[0m                 queryService
+[7m   [0m [91m                ~~~~~~~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/services/project.service.ts[0m:[93m286[0m:[93m17[0m - [91merror[0m[90m TS2322: [0mType '{ model: any; as: string; required: boolean; include?: undefined; through?: undefined; } | { model: any; as: string; required: boolean; include: { model: any; as: string; required: boolean; where: { locale: any; }; through: { ...; }; }[]; through?: undefined; } | { ...; } | { ...; }' is not assignable to type '{ model: any; as: string; required: boolean; include?: undefined; through?: undefined; } | { model: any; as: string; required: boolean; include: { model: any; as: string; required: boolean; where: { locale: any; }; through: { ...; }; }[]; through?: undefined; } | { ...; }'.
+  Type '{ model: any; as: string; required: boolean; include: { model: any; as: string; required: boolean; where: { locale: any; }; }[]; through: { where: { service_id: { [x: number]: any; }; }; }; }' is not assignable to type '{ model: any; as: string; required: boolean; include?: undefined; through?: undefined; } | { model: any; as: string; required: boolean; include: { model: any; as: string; required: boolean; where: { locale: any; }; through: { ...; }; }[]; through?: undefined; } | { ...; }'.
+    Type '{ model: any; as: string; required: boolean; include: { model: any; as: string; required: boolean; where: { locale: any; }; }[]; through: { where: { service_id: { [x: number]: any; }; }; }; }' is not assignable to type '{ model: any; as: string; required: boolean; through: { where: { branch_id: { [x: number]: any; }; }; }; include?: undefined; }'.
+      The types of 'through.where' are incompatible between these types.
+        Property 'branch_id' is missing in type '{ service_id: { [x: number]: any; }; }' but required in type '{ branch_id: { [x: number]: any; }; }'.
+
+[7m286[0m                 ...include,
+[7m   [0m [91m                ~~~~~~~~~~[0m
+
+  [96msrc/services/project.service.ts[0m:[93m246[0m:[93m25[0m
+    [7m246[0m                         branch_id: { [models.Sequelize.Op.eq]: query.branch_id }
+    [7m   [0m [96m                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+    'branch_id' is declared here.
+[96msrc/services/project.service.ts[0m:[93m287[0m:[93m17[0m - [91merror[0m[90m TS2322: [0mType '{ model: any; as: string; required: boolean; include: { model: any; as: string; required: boolean; where: { locale: any; }; }[]; through: { where: { service_id: { [x: number]: any; }; }; }; }' is not assignable to type '{ model: any; as: string; required: boolean; include?: undefined; through?: undefined; } | { model: any; as: string; required: boolean; include: { model: any; as: string; required: boolean; where: { locale: any; }; through: { ...; }; }[]; through?: undefined; } | { ...; }'.
+
+[7m287[0m                 queryService
+[7m   [0m [91m                ~~~~~~~~~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)

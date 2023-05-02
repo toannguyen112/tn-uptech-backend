@@ -22,6 +22,26 @@ export class ProjectDTO {
 
     }
 
+    static transformClient = (item) => {
+
+        if (!item) return {};
+        const translationData = item.translations[0];
+
+        return {
+            name: translationData.name || "",
+            slug: translationData.slug || "",
+            thumbnail: item.image || null,
+
+            services: item.services ? item.services.map((service) => {
+                return {
+                    name: service.translations[0].name,
+                    slug: service.translations[0].slug,
+                }
+            }) : [],
+
+        }
+    }
+
     static transformDetail = (item) => {
 
         if (!item) return {};
