@@ -24,6 +24,8 @@ export class ServiceDTO {
         return {
             id: item.id,
             name: translationData.name || "",
+            isFeatured: item.isFeatured || "",
+            description: translationData.description || "",
             thumbnail: item.image,
 
             ...Helper.FieldsSeo(translationData)

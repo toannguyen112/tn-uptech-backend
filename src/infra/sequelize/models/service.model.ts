@@ -15,6 +15,11 @@ module.exports = function (sequelize, DataTypes) {
                 defaultValue: 0
             },
 
+            isFeatured: {
+                type: DataTypes.BOOLEAN,
+                defaultValue: false
+            },
+
             thumbnail: {
                 type: DataTypes.INTEGER,
                 references: {

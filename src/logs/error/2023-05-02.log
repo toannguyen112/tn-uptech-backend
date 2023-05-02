@@ -1058,3 +1058,203 @@ TSError: ⨯ Unable to compile TypeScript:
     at Module.load (node:internal/modules/cjs/loader:1069:32)
     at Function.Module._load (node:internal/modules/cjs/loader:904:12)
     at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-05-02 20:43:12 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/dtos/service.dtos.ts[0m:[93m27[0m:[93m13[0m - [91merror[0m[90m TS1117: [0mAn object literal cannot have multiple properties with the same name.
+
+[7m27[0m             name: translationData.name || "",
+[7m  [0m [91m            ~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/dtos/service.dtos.ts[0m:[93m27[0m:[93m13[0m - [91merror[0m[90m TS1117: [0mAn object literal cannot have multiple properties with the same name.
+
+[7m27[0m             name: translationData.name || "",
+[7m  [0m [91m            ~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-05-02 20:44:16 error: Unknown column 'services.isFeatured' in 'field list'
+2023-05-02 20:46:17 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/route/service.route.ts[0m:[93m17[0m:[93m62[0m - [91merror[0m[90m TS2339: [0mProperty 'post' does not exist on type 'ServiceRoute'.
+
+[7m17[0m         this.router.get(`${this.path}/getListFeatured`, this.post.getListFeatured);
+[7m  [0m [91m                                                             ~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/route/service.route.ts[0m:[93m17[0m:[93m62[0m - [91merror[0m[90m TS2339: [0mProperty 'post' does not exist on type 'ServiceRoute'.
+
+[7m17[0m         this.router.get(`${this.path}/getListFeatured`, this.post.getListFeatured);
+[7m  [0m [91m                                                             ~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-05-02 20:46:43 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/route/service.route.ts[0m:[93m17[0m:[93m62[0m - [91merror[0m[90m TS2339: [0mProperty 'post' does not exist on type 'ServiceRoute'.
+
+[7m17[0m         this.router.get(`${this.path}/getListFeatured`, this.post.getListFeatured);
+[7m  [0m [91m                                                             ~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/route/service.route.ts[0m:[93m17[0m:[93m62[0m - [91merror[0m[90m TS2339: [0mProperty 'post' does not exist on type 'ServiceRoute'.
+
+[7m17[0m         this.router.get(`${this.path}/getListFeatured`, this.post.getListFeatured);
+[7m  [0m [91m                                                             ~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-05-02 20:47:18 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/route/service.route.ts[0m:[93m17[0m:[93m62[0m - [91merror[0m[90m TS2339: [0mProperty 'post' does not exist on type 'ServiceRoute'.
+
+[7m17[0m         this.router.get(`${this.path}/getListFeatured`, this.post.getListFeatured);
+[7m  [0m [91m                                                             ~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/route/service.route.ts[0m:[93m17[0m:[93m62[0m - [91merror[0m[90m TS2339: [0mProperty 'post' does not exist on type 'ServiceRoute'.
+
+[7m17[0m         this.router.get(`${this.path}/getListFeatured`, this.post.getListFeatured);
+[7m  [0m [91m                                                             ~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-05-02 20:47:30 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/route/service.route.ts[0m:[93m17[0m:[93m62[0m - [91merror[0m[90m TS2339: [0mProperty 'post' does not exist on type 'ServiceRoute'.
+
+[7m17[0m         this.router.get(`${this.path}/getListFeatured`, this.post.getListFeatured);
+[7m  [0m [91m                                                             ~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/route/service.route.ts[0m:[93m17[0m:[93m62[0m - [91merror[0m[90m TS2339: [0mProperty 'post' does not exist on type 'ServiceRoute'.
+
+[7m17[0m         this.router.get(`${this.path}/getListFeatured`, this.post.getListFeatured);
+[7m  [0m [91m                                                             ~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-05-02 20:47:38 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/route/service.route.ts[0m:[93m17[0m:[93m62[0m - [91merror[0m[90m TS2339: [0mProperty 'post' does not exist on type 'ServiceRoute'.
+
+[7m17[0m         this.router.get(`${this.path}/getListFeatured`, this.post.getListFeatured);
+[7m  [0m [91m                                                             ~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/route/service.route.ts[0m:[93m17[0m:[93m62[0m - [91merror[0m[90m TS2339: [0mProperty 'post' does not exist on type 'ServiceRoute'.
+
+[7m17[0m         this.router.get(`${this.path}/getListFeatured`, this.post.getListFeatured);
+[7m  [0m [91m                                                             ~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-05-02 20:48:11 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/route/service.route.ts[0m:[93m17[0m:[93m62[0m - [91merror[0m[90m TS2339: [0mProperty 'post' does not exist on type 'ServiceRoute'.
+
+[7m17[0m         this.router.get(`${this.path}/getListFeatured`, this.post.getListFeatured);
+[7m  [0m [91m                                                             ~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/route/service.route.ts[0m:[93m17[0m:[93m62[0m - [91merror[0m[90m TS2339: [0mProperty 'post' does not exist on type 'ServiceRoute'.
+
+[7m17[0m         this.router.get(`${this.path}/getListFeatured`, this.post.getListFeatured);
+[7m  [0m [91m                                                             ~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-05-02 20:48:39 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/route/service.route.ts[0m:[93m17[0m:[93m62[0m - [91merror[0m[90m TS2339: [0mProperty 'post' does not exist on type 'ServiceRoute'.
+
+[7m17[0m         this.router.get(`${this.path}/getListFeatured`, this.post.getListFeatured);
+[7m  [0m [91m                                                             ~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/route/service.route.ts[0m:[93m17[0m:[93m62[0m - [91merror[0m[90m TS2339: [0mProperty 'post' does not exist on type 'ServiceRoute'.
+
+[7m17[0m         this.router.get(`${this.path}/getListFeatured`, this.post.getListFeatured);
+[7m  [0m [91m                                                             ~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-05-02 20:48:47 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/route/service.route.ts[0m:[93m17[0m:[93m62[0m - [91merror[0m[90m TS2339: [0mProperty 'post' does not exist on type 'ServiceRoute'.
+
+[7m17[0m         this.router.get(`${this.path}/getListFeatured`, this.post.getListFeatured);
+[7m  [0m [91m                                                             ~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/route/service.route.ts[0m:[93m17[0m:[93m62[0m - [91merror[0m[90m TS2339: [0mProperty 'post' does not exist on type 'ServiceRoute'.
+
+[7m17[0m         this.router.get(`${this.path}/getListFeatured`, this.post.getListFeatured);
+[7m  [0m [91m                                                             ~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-05-02 20:50:22 error: {"name":"SequelizeDatabaseError","parent":{"code":"ER_BAD_FIELD_ERROR","errno":1054,"sqlState":"42S22","sqlMessage":"Unknown column 'services.status' in 'where clause'","sql":"SELECT `services`.`id`, `services`.`parent_id`, `services`.`isFeatured`, `services`.`thumbnail`, `services`.`createdAt`, `services`.`updatedAt`, `translations`.`id` AS `translations.id`, `translations`.`service_id` AS `translations.service_id`, `translations`.`name` AS `translations.name`, `translations`.`description` AS `translations.description`, `translations`.`locale` AS `translations.locale`, `translations`.`slug` AS `translations.slug`, `translations`.`custom_slug` AS `translations.custom_slug`, `translations`.`meta_title` AS `translations.meta_title`, `translations`.`meta_description` AS `translations.meta_description`, `translations`.`meta_keyword` AS `translations.meta_keyword`, `translations`.`meta_robots` AS `translations.meta_robots`, `translations`.`canonica_link` AS `translations.canonica_link`, `translations`.`meta_image` AS `translations.meta_image`, `translations`.`meta_viewport` AS `translations.meta_viewport`, `image`.`id` AS `image.id`, `image`.`filename` AS `image.filename`, `image`.`disk` AS `image.disk`, `image`.`folder_id` AS `image.folder_id`, `image`.`path` AS `image.path`, `image`.`extension` AS `image.extension`, `image`.`mime` AS `image.mime`, `image`.`size` AS `image.size`, `image`.`width` AS `image.width`, `image`.`height` AS `image.height`, `image`.`alt` AS `image.alt`, `image`.`creator` AS `image.creator`, `image`.`editor` AS `image.editor`, `image`.`createdAt` AS `image.createdAt`, `image`.`updatedAt` AS `image.updatedAt` FROM `services` AS `services` INNER JOIN `service_translation` AS `translations` ON `services`.`id` = `translations`.`service_id` AND `translations`.`locale` = 'en' LEFT OUTER JOIN `medias` AS `image` ON `services`.`thumbnail` = `image`.`id` WHERE `services`.`isFeatured` = true AND `services`.`status` = 'active';"},"original":{"code":"ER_BAD_FIELD_ERROR","errno":1054,"sqlState":"42S22","sqlMessage":"Unknown column 'services.status' in 'where clause'","sql":"SELECT `services`.`id`, `services`.`parent_id`, `services`.`isFeatured`, `services`.`thumbnail`, `services`.`createdAt`, `services`.`updatedAt`, `translations`.`id` AS `translations.id`, `translations`.`service_id` AS `translations.service_id`, `translations`.`name` AS `translations.name`, `translations`.`description` AS `translations.description`, `translations`.`locale` AS `translations.locale`, `translations`.`slug` AS `translations.slug`, `translations`.`custom_slug` AS `translations.custom_slug`, `translations`.`meta_title` AS `translations.meta_title`, `translations`.`meta_description` AS `translations.meta_description`, `translations`.`meta_keyword` AS `translations.meta_keyword`, `translations`.`meta_robots` AS `translations.meta_robots`, `translations`.`canonica_link` AS `translations.canonica_link`, `translations`.`meta_image` AS `translations.meta_image`, `translations`.`meta_viewport` AS `translations.meta_viewport`, `image`.`id` AS `image.id`, `image`.`filename` AS `image.filename`, `image`.`disk` AS `image.disk`, `image`.`folder_id` AS `image.folder_id`, `image`.`path` AS `image.path`, `image`.`extension` AS `image.extension`, `image`.`mime` AS `image.mime`, `image`.`size` AS `image.size`, `image`.`width` AS `image.width`, `image`.`height` AS `image.height`, `image`.`alt` AS `image.alt`, `image`.`creator` AS `image.creator`, `image`.`editor` AS `image.editor`, `image`.`createdAt` AS `image.createdAt`, `image`.`updatedAt` AS `image.updatedAt` FROM `services` AS `services` INNER JOIN `service_translation` AS `translations` ON `services`.`id` = `translations`.`service_id` AND `translations`.`locale` = 'en' LEFT OUTER JOIN `medias` AS `image` ON `services`.`thumbnail` = `image`.`id` WHERE `services`.`isFeatured` = true AND `services`.`status` = 'active';"},"sql":"SELECT `services`.`id`, `services`.`parent_id`, `services`.`isFeatured`, `services`.`thumbnail`, `services`.`createdAt`, `services`.`updatedAt`, `translations`.`id` AS `translations.id`, `translations`.`service_id` AS `translations.service_id`, `translations`.`name` AS `translations.name`, `translations`.`description` AS `translations.description`, `translations`.`locale` AS `translations.locale`, `translations`.`slug` AS `translations.slug`, `translations`.`custom_slug` AS `translations.custom_slug`, `translations`.`meta_title` AS `translations.meta_title`, `translations`.`meta_description` AS `translations.meta_description`, `translations`.`meta_keyword` AS `translations.meta_keyword`, `translations`.`meta_robots` AS `translations.meta_robots`, `translations`.`canonica_link` AS `translations.canonica_link`, `translations`.`meta_image` AS `translations.meta_image`, `translations`.`meta_viewport` AS `translations.meta_viewport`, `image`.`id` AS `image.id`, `image`.`filename` AS `image.filename`, `image`.`disk` AS `image.disk`, `image`.`folder_id` AS `image.folder_id`, `image`.`path` AS `image.path`, `image`.`extension` AS `image.extension`, `image`.`mime` AS `image.mime`, `image`.`size` AS `image.size`, `image`.`width` AS `image.width`, `image`.`height` AS `image.height`, `image`.`alt` AS `image.alt`, `image`.`creator` AS `image.creator`, `image`.`editor` AS `image.editor`, `image`.`createdAt` AS `image.createdAt`, `image`.`updatedAt` AS `image.updatedAt` FROM `services` AS `services` INNER JOIN `service_translation` AS `translations` ON `services`.`id` = `translations`.`service_id` AND `translations`.`locale` = 'en' LEFT OUTER JOIN `medias` AS `image` ON `services`.`thumbnail` = `image`.`id` WHERE `services`.`isFeatured` = true AND `services`.`status` = 'active';","parameters":{}}

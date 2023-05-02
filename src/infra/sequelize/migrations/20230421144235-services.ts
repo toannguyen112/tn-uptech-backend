@@ -24,6 +24,11 @@ module.exports = {
         defaultValue: 0
       },
 
+      isFeatured: {
+        type: Sequelize.BOOLEAN,
+        defaultValue: false
+      },
+
       createdAt: {
         type: Sequelize.DATE,
         defaultValue: new Date(),

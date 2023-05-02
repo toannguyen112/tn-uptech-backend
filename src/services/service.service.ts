@@ -129,6 +129,38 @@ export class ServiceService {
         }
     }
 
+    public getListFeatured = async () => {
+        try {
+
+            const rows = await models.Service.findAll({
+                where: { isFeatured: true,},
+                include: [
+                    {
+                        model: models.ServiceTranslation,
+                        as: "translations",
+                        required: true,
+                        where: {
+                            locale: global.lang,
+                        }
+                    },
+                    {
+                        model: models.Media,
+                        as: "image",
+                        required: false,
+                    },
+                ]
+            });
+
+            return rows.map((item: any) => {
+                return ServiceDTO.transform(item);
+            });
+
+        } catch (error) {
+            console.log(error);
+            logger.error(JSON.stringify(error));
+        }
+    }
+
     public getListService = async () => {
 
         try {

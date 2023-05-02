@@ -22,6 +22,11 @@ module.exports = function (sequelize, DataTypes) {
                 type: DataTypes.STRING,
             },
 
+            description: {
+                type: DataTypes.TEXT('long'),
+                allowNull: true,
+            },
+
             locale: {
                 type: DataTypes.STRING,
                 defaultValue: "vi",
