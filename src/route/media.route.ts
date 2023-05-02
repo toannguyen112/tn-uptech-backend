@@ -13,13 +13,27 @@ var storage = multer.diskStorage({
         cb(null, pathFolder);
     },
     filename: function (req, file, cb) {
-        cb(null, `${file.originalname}`);
-
-        if (!fs.existsSync(path.join(pathFolder, file.originalname))) cb(null, file.originalname);
+        cb(null, file.fieldname + '-' + Date.now() + path.extname(file.originalname));
     },
 });
 
-const upload = multer({ storage: storage });
+//file filter for extention
+let fileFilter = function (req, file, cb) {
+    console.log(file.mimetype)
+    const allowedMimes = ['image/jpeg', 'image/jpg', 'image/png', 'image/gif'];
+
+    if (allowedMimes.includes(file.mimetype)) {
+        cb(null, true);
+    } else {
+        cb(null, false);
+    }
+};
+
+const upload = multer({
+    storage: storage,
+    limits: { fileSize: 10 ** 7 },
+    fileFilter: fileFilter
+});
 export class MediaRoute implements Routes {
     public path = '/medias';
     public router = Router();
