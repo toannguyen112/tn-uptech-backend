@@ -10,9 +10,7 @@ export class ServiceDTO {
             id: item.id,
             name: translationData.name || "",
             slug: translationData.slug || "",
-
-            createdAt: item.createdAt,
-            updatedAt: item.updatedAt,
+            description: translationData.description || "",
         }
     }
 

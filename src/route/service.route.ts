@@ -18,6 +18,7 @@ export class ServiceRoute implements Routes {
         this.router.get(`${this.path}/nav`, this.service.getNav);
         this.router.post(`${this.path}/create`, this.service.create);
         this.router.get(`${this.path}/show/:id`, this.service.show);
+        this.router.get(`${this.path}/findByIdClient/:id`, this.service.findByIdClient);
         this.router.put(`${this.path}/update/:id`, this.service.update);
         this.router.delete(`${this.path}/delete/:id(\\d+)`, this.service.delete);
     }

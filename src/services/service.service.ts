@@ -126,14 +126,38 @@ export class ServiceService {
 
         } catch (error) {
             console.log(error);
+            logger.error(JSON.stringify(error));
         }
+    }
+
+    public findByIdClient = async (id) => {
+
+        try {
+            const service = await models.Service.findOne({
+                where: { id },
+                include: [
+                    {
+                        model: models.ServiceTranslation,
+                        as: "translations",
+                        required: true,
+                        where: { locale: global.lang }
+                    },
+                ]
+            });
+
+            return service;
+
+        } catch (error) {
+            console.log(error);
+            logger.error(JSON.stringify(error));
+        }
+
     }
 
     public getListFeatured = async () => {
         try {
 
             const rows = await models.Service.findAll({
-                where: { isFeatured: true,},
                 include: [
                     {
                         model: models.ServiceTranslation,
@@ -148,7 +172,9 @@ export class ServiceService {
                         as: "image",
                         required: false,
                     },
-                ]
+                ],
+                order: [['isFeatured', 'DESC'], ['createdAt', 'DESC']],
+                limit: 3
             });
 
             return rows.map((item: any) => {
