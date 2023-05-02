@@ -614,3 +614,87 @@ TSError: ⨯ Unable to compile TypeScript:
     at Module.load (node:internal/modules/cjs/loader:1069:32)
     at Function.Module._load (node:internal/modules/cjs/loader:904:12)
     at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-05-02 13:06:37 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/modules/controllers/project.controller.ts[0m:[93m30[0m:[93m40[0m - [91merror[0m[90m TS2339: [0mProperty 'findByIdClient' does not exist on type 'ProjectService'.
+
+[7m30[0m             const data = await project.findByIdClient(id);
+[7m  [0m [91m                                       ~~~~~~~~~~~~~~[0m
+[96msrc/modules/controllers/project.controller.ts[0m:[93m65[0m:[93m40[0m - [91merror[0m[90m TS2339: [0mProperty 'updateById' does not exist on type 'ProjectService'.
+
+[7m65[0m             const data = await project.updateById(id, req.body);
+[7m  [0m [91m                                       ~~~~~~~~~~[0m
+[96msrc/modules/controllers/project.controller.ts[0m:[93m75[0m:[93m40[0m - [91merror[0m[90m TS2339: [0mProperty 'deleteMultipleIds' does not exist on type 'ProjectService'.
+
+[7m75[0m             const data = await project.deleteMultipleIds(ids);
+[7m  [0m [91m                                       ~~~~~~~~~~~~~~~~~[0m
+[96msrc/modules/controllers/project.controller.ts[0m:[93m84[0m:[93m40[0m - [91merror[0m[90m TS2339: [0mProperty 'deleteById' does not exist on type 'ProjectService'.
+
+[7m84[0m             const data = await project.deleteById(req.params.id);
+[7m  [0m [91m                                       ~~~~~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/modules/controllers/project.controller.ts[0m:[93m30[0m:[93m40[0m - [91merror[0m[90m TS2339: [0mProperty 'findByIdClient' does not exist on type 'ProjectService'.
+
+[7m30[0m             const data = await project.findByIdClient(id);
+[7m  [0m [91m                                       ~~~~~~~~~~~~~~[0m
+[96msrc/modules/controllers/project.controller.ts[0m:[93m65[0m:[93m40[0m - [91merror[0m[90m TS2339: [0mProperty 'updateById' does not exist on type 'ProjectService'.
+
+[7m65[0m             const data = await project.updateById(id, req.body);
+[7m  [0m [91m                                       ~~~~~~~~~~[0m
+[96msrc/modules/controllers/project.controller.ts[0m:[93m75[0m:[93m40[0m - [91merror[0m[90m TS2339: [0mProperty 'deleteMultipleIds' does not exist on type 'ProjectService'.
+
+[7m75[0m             const data = await project.deleteMultipleIds(ids);
+[7m  [0m [91m                                       ~~~~~~~~~~~~~~~~~[0m
+[96msrc/modules/controllers/project.controller.ts[0m:[93m84[0m:[93m40[0m - [91merror[0m[90m TS2339: [0mProperty 'deleteById' does not exist on type 'ProjectService'.
+
+[7m84[0m             const data = await project.deleteById(req.params.id);
+[7m  [0m [91m                                       ~~~~~~~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-05-02 13:06:55 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/services/project.service.ts[0m:[93m237[0m:[93m30[0m - [91merror[0m[90m TS2304: [0mCannot find name 'Sequelize'.
+
+[7m237[0m                     BarId: {[Sequelize.Op.eq]: wineBar.id }
+[7m   [0m [91m                             ~~~~~~~~~[0m
+[96msrc/services/project.service.ts[0m:[93m237[0m:[93m48[0m - [91merror[0m[90m TS2304: [0mCannot find name 'wineBar'.
+
+[7m237[0m                     BarId: {[Sequelize.Op.eq]: wineBar.id }
+[7m   [0m [91m                                               ~~~~~~~[0m
+[96msrc/services/project.service.ts[0m:[93m240[0m:[93m13[0m - [91merror[0m[90m TS1005: [0m',' expected.
+
+[7m240[0m             where: {
+[7m   [0m [91m            ~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/services/project.service.ts[0m:[93m237[0m:[93m30[0m - [91merror[0m[90m TS2304: [0mCannot find name 'Sequelize'.
+
+[7m237[0m                     BarId: {[Sequelize.Op.eq]: wineBar.id }
+[7m   [0m [91m                             ~~~~~~~~~[0m
+[96msrc/services/project.service.ts[0m:[93m237[0m:[93m48[0m - [91merror[0m[90m TS2304: [0mCannot find name 'wineBar'.
+
+[7m237[0m                     BarId: {[Sequelize.Op.eq]: wineBar.id }
+[7m   [0m [91m                                               ~~~~~~~[0m
+[96msrc/services/project.service.ts[0m:[93m240[0m:[93m13[0m - [91merror[0m[90m TS1005: [0m',' expected.
+
+[7m240[0m             where: {
+[7m   [0m [91m            ~~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)

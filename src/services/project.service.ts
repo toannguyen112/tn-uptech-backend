@@ -217,24 +217,27 @@ export class ProjectService {
                 as: "translations",
                 required: true,
             },
-
         ]
 
         const queryService = {
             model: models.Service,
             as: "services",
-            required: false,
-            where: {
-                id: query.service_id
+            required: true,
+            through: {
+                where: {
+                    service_id: { [models.Sequelize.Op.eq]: query.service_id }
+                }
             }
         };
 
         const queryBranch = {
             model: models.Branch,
             as: "branchs",
-            required: false,
-            where: {
-                id: query.branch_id
+            required: true,
+            through: {
+                where: {
+                    branch_id: { [models.Sequelize.Op.eq]: query.branch_id }
+                }
             }
         };
 
@@ -405,13 +408,13 @@ export class ProjectService {
 
                 try {
                     await models.ProjectBranch.destroy({ where: { project_id: id } }, { transaction: t });
-                        for (const branchId of body.branchs) {
+                    for (const branchId of body.branchs) {
 
-                            await models.ProjectBranch.create({
-                                project_id: id,
-                                branch_id: branchId
-                            }, { transaction: t });
-                        }
+                        await models.ProjectBranch.create({
+                            project_id: id,
+                            branch_id: branchId
+                        }, { transaction: t });
+                    }
 
                     await models.ProjectService.destroy({ where: { project_id: id } }, { transaction: t });
 
