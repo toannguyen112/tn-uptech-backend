@@ -63,7 +63,6 @@ module.exports = {
       {
         id: 1,
         name: `Thiết kế & phát triển sản phẩm số`,
-        // slug: Helper.renderSlug(`Thiết kế & phát triển sản phẩm số`),
         service_id: 1,
         locale: `vi`,
       },

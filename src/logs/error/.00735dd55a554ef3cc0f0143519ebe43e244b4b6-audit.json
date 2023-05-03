@@ -6,11 +6,6 @@
     "auditLog": "/Users/toannguyen/Documents/Source/tn-uptech-backend/src/logs/error/.00735dd55a554ef3cc0f0143519ebe43e244b4b6-audit.json",
     "files": [
         {
-            "date": 1680195603836,
-            "name": "/Users/toannguyen/Documents/Source/tn-uptech-backend/src/logs/error/2023-03-31.log",
-            "hash": "2b9e6b6e18ef014d9b7a742941d7062cb742576527f4deb772e38199d0c181e2"
-        },
-        {
             "date": 1680289371279,
             "name": "/Users/toannguyen/Documents/Source/tn-uptech-backend/src/logs/error/2023-04-01.log",
             "hash": "dff4751cee05edb2d9fe0716eae2e142bba1bd55850d792608cc71e6434cb8e6"
@@ -154,6 +149,11 @@
             "date": 1683003500765,
             "name": "/Users/toannguyen/Documents/Source/tn-uptech-backend/src/logs/error/2023-05-02.log",
             "hash": "d504d5ebcf1e8bc6a6ffa707802e11c01f432b18381a3c88d861f5915efeefb8"
+        },
+        {
+            "date": 1683096796661,
+            "name": "/Users/toannguyen/Documents/Source/tn-uptech-backend/src/logs/error/2023-05-03.log",
+            "hash": "d29c1b030f63d8c991d9a51bca429d666f1abcb81e97cab23f0ba4e34e133733"
         }
     ],
     "hashType": "sha256"

@@ -14,7 +14,7 @@
     "migration": "sequelize-cli db:migrate",
     "un_migration": "sequelize-cli db:migrate:undo",
     "seed": "sequelize-cli db:seed:all",
-    "reset": "sequelize-cli db:migrate && sequelize-cli db:seed:all",
+    "reset": "sequelize db:migrate:undo:all && sequelize-cli db:migrate && sequelize-cli db:seed:all",
     "migrate:dev": "yarn run build && cross-env NODE_ENV=development dotenv -e .env sequelize db:migrate",
     "migrate:prod": "yarn run build && cross-env NODE_ENV=production dotenv -e .env sequelize db:migrate --env production"
   },

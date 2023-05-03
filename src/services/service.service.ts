@@ -173,7 +173,9 @@ export class ServiceService {
                         required: false,
                     },
                 ],
-                order: [['isFeatured', 'DESC'], ['createdAt', 'DESC']],
+                order: [
+                    ['isFeatured', 'DESC'],
+                    ['createdAt', 'DESC']],
                 limit: 3
             });
 
