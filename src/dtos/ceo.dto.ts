@@ -29,7 +29,7 @@ export class CeoDTO {
         return {
             id: item.id,
             name: translationData.name || "",
-            slug: item.slug || "",
+            slug: translationData.slug || "",
         }
 
     }

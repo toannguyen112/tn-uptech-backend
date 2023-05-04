@@ -10,11 +10,6 @@ module.exports = {
         type: Sequelize.INTEGER,
       },
 
-      slug: {
-        allowNull: true,
-        type: Sequelize.STRING,
-      },
-
       status: {
         type: Sequelize.STRING,
         defaultValue: "active"
