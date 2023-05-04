@@ -27,6 +27,36 @@ module.exports = function (sequelize, DataTypes) {
                 allowNull: true,
             },
 
+            section_1: {
+                allowNull: true,
+                type: DataTypes.JSON,
+                defaultValue: {}
+            },
+
+            section_2: {
+                allowNull: true,
+                type: DataTypes.JSON,
+                defaultValue: {}
+            },
+
+            section_3: {
+                allowNull: true,
+                type: DataTypes.JSON,
+                defaultValue: {}
+            },
+
+            section_4: {
+                allowNull: true,
+                type: DataTypes.JSON,
+                defaultValue: {}
+            },
+
+            section_5: {
+                allowNull: true,
+                type: DataTypes.JSON,
+                defaultValue: {}
+            },
+
             locale: {
                 type: DataTypes.STRING,
                 defaultValue: "vi",

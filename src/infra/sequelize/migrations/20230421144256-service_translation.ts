@@ -35,6 +35,36 @@ module.exports = {
         allowNull: true,
       },
 
+      section_1: {
+        allowNull: true,
+        type: Sequelize.JSON,
+        defaultValue: {}
+      },
+
+      section_2: {
+        allowNull: true,
+        type: Sequelize.JSON,
+        defaultValue: {}
+      },
+
+      section_3: {
+        allowNull: true,
+        type: Sequelize.JSON,
+        defaultValue: {}
+      },
+
+      section_4: {
+        allowNull: true,
+        type: Sequelize.JSON,
+        defaultValue: {}
+      },
+
+      section_5: {
+        allowNull: true,
+        type: Sequelize.JSON,
+        defaultValue: {}
+      },
+
       // seo
 
       slug: {
