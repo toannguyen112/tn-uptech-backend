@@ -20,6 +20,11 @@ module.exports = function (sequelize, DataTypes) {
                 defaultValue: false
             },
 
+            layout_number: {
+                type: DataTypes.INTEGER,
+                defaultValue: 1
+            },
+
             thumbnail: {
                 type: DataTypes.INTEGER,
                 references: {

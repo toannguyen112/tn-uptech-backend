@@ -22,6 +22,7 @@ export class ServiceDTO {
         return {
             id: item.id,
             name: translationData.name || "",
+            layout_number: item.layout_number || 3,
             description: translationData.description || "",
 
             isFeatured: item.isFeatured || false,

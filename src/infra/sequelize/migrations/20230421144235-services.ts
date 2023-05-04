@@ -24,6 +24,11 @@ module.exports = {
         defaultValue: 0
       },
 
+      layout_number: {
+        type: Sequelize.INTEGER,
+        defaultValue: 1
+      },
+
       isFeatured: {
         type: Sequelize.BOOLEAN,
         defaultValue: false
