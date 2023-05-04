@@ -251,9 +251,6 @@ export class ServiceService {
 
     public store = async (body) => {
 
-        console.log(body);
-        return;
-
         const t = await models.sequelize.transaction();
 
         try {
@@ -320,7 +317,6 @@ export class ServiceService {
 
         return await models.Service.update({
             ...body,
-            isFeatured: 1,
             thumbnail: body.thumbnail ? body.thumbnail.id : null,
         },
             {

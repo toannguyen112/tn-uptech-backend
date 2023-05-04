@@ -24,13 +24,13 @@ export class ServiceDTO {
             name: translationData.name || "",
             description: translationData.description || "",
 
-            isFeatured: item.isFeatured || "",
+            isFeatured: item.isFeatured || false,
             thumbnail: item.image,
 
-            section_1: translationData.section_1 || "",
-            section_2: translationData.section_2 || "",
-            section_3: translationData.section_3 || "",
-            section_4: translationData.section_4 || "",
+            section_1: translationData.section_1 || null,
+            section_2: translationData.section_2 || null,
+            section_3: translationData.section_3 || null,
+            section_4: translationData.section_4 || null,
 
             ...Helper.FieldsSeo(translationData)
         }
