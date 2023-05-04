@@ -251,6 +251,9 @@ export class ServiceService {
 
     public store = async (body) => {
 
+        console.log(body);
+        return;
+
         const t = await models.sequelize.transaction();
 
         try {
@@ -317,6 +320,7 @@ export class ServiceService {
 
         return await models.Service.update({
             ...body,
+            isFeatured: 1,
             thumbnail: body.thumbnail ? body.thumbnail.id : null,
         },
             {
@@ -328,7 +332,8 @@ export class ServiceService {
 
                 try {
                     return await models.ServiceTranslation.update({
-                        ...body
+                        ...body,
+
                     },
                         {
                             where: {
@@ -338,12 +343,14 @@ export class ServiceService {
                             individualHooks: true
                         });
                 } catch (error) {
+                    console.log(error);
                     logger.error(JSON.stringify(error));
                     await t.rollback();
                 }
 
                 await t.commit();
             }).catch(async (error) => {
+                console.log(error);
                 await t.rollback();
             });
     }
