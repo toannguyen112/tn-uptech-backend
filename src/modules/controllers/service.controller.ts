@@ -89,7 +89,7 @@ export class ServiceController extends BaseController {
             const data = await service.updateById(id, req.body);
             res.status(200).send({ message: "ok", data });
         } catch (error) {
-            logger.error(error);
+            console.log(error);
             res.status(500).send(error.message);
         }
     }

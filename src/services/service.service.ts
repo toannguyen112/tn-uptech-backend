@@ -323,6 +323,7 @@ export class ServiceService {
                 where: { id },
                 individualHooks: true
             },
+            { transaction: t }
         )
             .then(async (res: any) => {
 
@@ -337,7 +338,7 @@ export class ServiceService {
                                 locale: global.lang
                             },
                             individualHooks: true
-                        });
+                        }, { transaction: t });
                 } catch (error) {
                     console.log(error);
                     logger.error(JSON.stringify(error));

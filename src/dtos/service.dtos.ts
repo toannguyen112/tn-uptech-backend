@@ -32,6 +32,7 @@ export class ServiceDTO {
             section_2: translationData.section_2 || null,
             section_3: translationData.section_3 || null,
             section_4: translationData.section_4 || null,
+            section_5: translationData.section_5 || null,
 
             ...Helper.FieldsSeo(translationData)
         }
