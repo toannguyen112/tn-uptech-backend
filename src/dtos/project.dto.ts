@@ -28,6 +28,7 @@ export class ProjectDTO {
         const translationData = item.translations[0];
 
         return {
+            id: item.id,
             name: translationData.name || "",
             slug: translationData.slug || "",
             thumbnail: item.image || null,
@@ -52,7 +53,7 @@ export class ProjectDTO {
             name: translationData.name || "",
 
             description: translationData.description || "",
-            work_item: translationData.work_item || "",
+            work_item: translationData.work_item || [],
 
             isFeatured: item.isFeatured || false,
             status: item.status || 'inactive',
@@ -110,9 +111,14 @@ export class ProjectDTO {
                 }
             }) || [],
 
-            related: item.related.map((item) => {
-                return ProjectDTO.transform(item);
-            }) || [],
+            related: item.related.length ? item.related.map((item) => {
+                return {
+                    id: item.id,
+                    name: item.translations[0].name,
+                    slug: item.translations[0].slug,
+                    thumbnail: item.image,
+                }
+            }) : [],
 
             ...Helper.FieldsSeo(translationData),
 

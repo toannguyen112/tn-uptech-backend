@@ -1,6 +1,4 @@
 
-import { ApiFeatures } from "../utils/ApiFeatures";
-import { Op } from "sequelize";
 import { logger } from "../utils/logger";
 import models from "../infra/sequelize/models";
 import { ServiceDTO } from "../dtos/service.dtos";
@@ -9,54 +7,11 @@ export class ServiceService {
 
     public getList = async (query) => {
         try {
-            const conditions = {
-                parent_id: 0
-            };
-
-            const queryObject = {
-                status: query.status,
-                search: query.search,
-            };
-
-            const excludedFields = ["page", "page_size", "sort_field", "sort_order", "fields"];
-            excludedFields.forEach((field) => delete queryObject[field]);
-
-            let queryTranslation = {};
-
-            if (query.search) {
-                queryTranslation = {
-                    name: { [Op.like]: `%${query.search}%` },
-                    locale: global.lang
-                }
-            }
-            else {
-                queryTranslation = { locale: global.lang }
-            }
-
-            const objQuery = new ApiFeatures(query)
-                .filter(conditions)
-                .includes([
-                    {
-                        model: models.ServiceTranslation,
-                        as: "translations",
-                        required: true,
-                        where: queryTranslation
-                    },
-                ])
-                .sort(query.sort_field || "createdAt", query.sort_order || "DESC")
-                .paginate()
-                .paranoid()
-                .getObjQuery();
-
-            const { count, rows }: any = await models.Service.findAndCountAll(objQuery);
+            const res = await this.getListService();
 
             const result = {
-                page: Number(query?.page) * 1,
-                pageSize: Number(query?.page_size) * 1,
-                pageCount: Math.ceil(count / Number(query?.page_size) * 1),
-                totalItems: count || 0,
-                data: rows.map((item: any) => ServiceDTO.transform(item)),
-            };
+                data: res
+            }
 
             return result;
 
@@ -242,7 +197,13 @@ export class ServiceService {
                 }
             });
 
-            return Helper.getNodesFlatten(data);
+            let newData = [];
+
+            data.forEach(element => {
+                newData = [...newData, ...element.children];
+            });
+
+            return newData
 
         } catch (error) {
             console.log(error);

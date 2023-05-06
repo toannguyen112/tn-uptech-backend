@@ -1,0 +1,106 @@
+2023-05-07 00:02:14 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/services/service.service.ts[0m:[93m201[0m:[93m17[0m - [91merror[0m[90m TS2588: [0mCannot assign to 'newData' because it is a constant.
+
+[7m201[0m                 newData = [...newData, element.children];
+[7m   [0m [91m                ~~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/services/service.service.ts[0m:[93m201[0m:[93m17[0m - [91merror[0m[90m TS2588: [0mCannot assign to 'newData' because it is a constant.
+
+[7m201[0m                 newData = [...newData, element.children];
+[7m   [0m [91m                ~~~~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-05-07 00:04:49 error: {}
+2023-05-07 00:04:50 error: {}
+2023-05-07 00:04:56 error: {}
+2023-05-07 00:04:57 error: {}
+2023-05-07 00:06:15 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/modules/controllers/service.controller.ts[0m:[93m25[0m:[93m40[0m - [91merror[0m[90m TS2339: [0mProperty 'getListService' does not exist on type 'ServiceService'.
+
+[7m25[0m             const data = await service.getListService();
+[7m  [0m [91m                                       ~~~~~~~~~~~~~~[0m
+[96msrc/modules/controllers/service.controller.ts[0m:[93m36[0m:[93m40[0m - [91merror[0m[90m TS2339: [0mProperty 'getListFeatured' does not exist on type 'ServiceService'.
+
+[7m36[0m             const data = await service.getListFeatured();
+[7m  [0m [91m                                       ~~~~~~~~~~~~~~~[0m
+[96msrc/modules/controllers/service.controller.ts[0m:[93m47[0m:[93m40[0m - [91merror[0m[90m TS2339: [0mProperty 'getNav' does not exist on type 'ServiceService'.
+
+[7m47[0m             const data = await service.getNav();
+[7m  [0m [91m                                       ~~~~~~[0m
+[96msrc/modules/controllers/service.controller.ts[0m:[93m58[0m:[93m46[0m - [91merror[0m[90m TS2339: [0mProperty 'store' does not exist on type 'ServiceService'.
+
+[7m58[0m             const data = await await service.store(req.body);
+[7m  [0m [91m                                             ~~~~~[0m
+[96msrc/modules/controllers/service.controller.ts[0m:[93m68[0m:[93m40[0m - [91merror[0m[90m TS2339: [0mProperty 'findById' does not exist on type 'ServiceService'.
+
+[7m68[0m             const data = await service.findById(req.params.id);
+[7m  [0m [91m                                       ~~~~~~~~[0m
+[96msrc/modules/controllers/service.controller.ts[0m:[93m78[0m:[93m40[0m - [91merror[0m[90m TS2339: [0mProperty 'findByIdClient' does not exist on type 'ServiceService'.
+
+[7m78[0m             const data = await service.findByIdClient(req.params.id);
+[7m  [0m [91m                                       ~~~~~~~~~~~~~~[0m
+[96msrc/modules/controllers/service.controller.ts[0m:[93m89[0m:[93m40[0m - [91merror[0m[90m TS2339: [0mProperty 'updateById' does not exist on type 'ServiceService'.
+
+[7m89[0m             const data = await service.updateById(id, req.body);
+[7m  [0m [91m                                       ~~~~~~~~~~[0m
+[96msrc/modules/controllers/service.controller.ts[0m:[93m99[0m:[93m40[0m - [91merror[0m[90m TS2339: [0mProperty 'deleteById' does not exist on type 'ServiceService'.
+
+[7m99[0m             const data = await service.deleteById(req.params.id);
+[7m  [0m [91m                                       ~~~~~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/modules/controllers/service.controller.ts[0m:[93m25[0m:[93m40[0m - [91merror[0m[90m TS2339: [0mProperty 'getListService' does not exist on type 'ServiceService'.
+
+[7m25[0m             const data = await service.getListService();
+[7m  [0m [91m                                       ~~~~~~~~~~~~~~[0m
+[96msrc/modules/controllers/service.controller.ts[0m:[93m36[0m:[93m40[0m - [91merror[0m[90m TS2339: [0mProperty 'getListFeatured' does not exist on type 'ServiceService'.
+
+[7m36[0m             const data = await service.getListFeatured();
+[7m  [0m [91m                                       ~~~~~~~~~~~~~~~[0m
+[96msrc/modules/controllers/service.controller.ts[0m:[93m47[0m:[93m40[0m - [91merror[0m[90m TS2339: [0mProperty 'getNav' does not exist on type 'ServiceService'.
+
+[7m47[0m             const data = await service.getNav();
+[7m  [0m [91m                                       ~~~~~~[0m
+[96msrc/modules/controllers/service.controller.ts[0m:[93m58[0m:[93m46[0m - [91merror[0m[90m TS2339: [0mProperty 'store' does not exist on type 'ServiceService'.
+
+[7m58[0m             const data = await await service.store(req.body);
+[7m  [0m [91m                                             ~~~~~[0m
+[96msrc/modules/controllers/service.controller.ts[0m:[93m68[0m:[93m40[0m - [91merror[0m[90m TS2339: [0mProperty 'findById' does not exist on type 'ServiceService'.
+
+[7m68[0m             const data = await service.findById(req.params.id);
+[7m  [0m [91m                                       ~~~~~~~~[0m
+[96msrc/modules/controllers/service.controller.ts[0m:[93m78[0m:[93m40[0m - [91merror[0m[90m TS2339: [0mProperty 'findByIdClient' does not exist on type 'ServiceService'.
+
+[7m78[0m             const data = await service.findByIdClient(req.params.id);
+[7m  [0m [91m                                       ~~~~~~~~~~~~~~[0m
+[96msrc/modules/controllers/service.controller.ts[0m:[93m89[0m:[93m40[0m - [91merror[0m[90m TS2339: [0mProperty 'updateById' does not exist on type 'ServiceService'.
+
+[7m89[0m             const data = await service.updateById(id, req.body);
+[7m  [0m [91m                                       ~~~~~~~~~~[0m
+[96msrc/modules/controllers/service.controller.ts[0m:[93m99[0m:[93m40[0m - [91merror[0m[90m TS2339: [0mProperty 'deleteById' does not exist on type 'ServiceService'.
+
+[7m99[0m             const data = await service.deleteById(req.params.id);
+[7m  [0m [91m                                       ~~~~~~~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-05-07 00:06:27 error: {}
+2023-05-07 00:06:29 error: {}

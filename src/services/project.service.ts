@@ -216,6 +216,9 @@ export class ProjectService {
                 model: models.ProjectTranslation,
                 as: "translations",
                 required: true,
+                where: {
+                    locale: global.lang,
+                },
             },
             {
                 model: models.Service,
@@ -334,7 +337,7 @@ export class ProjectService {
                 include: [
                     {
                         model: models.Media,
-                        as: "banner_image",
+                        as: "image",
                         required: false,
                     },
                     {
