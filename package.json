@@ -15,7 +15,7 @@
     "un_migration": "sequelize-cli db:migrate:undo",
     "seed": "sequelize-cli db:seed:all",
     "reset": "sequelize db:migrate:undo:all && sequelize-cli db:migrate && sequelize-cli db:seed:all",
-    "migrate_reset": "sequelize db:migrate:undo:all && sequelize-cli db:migrate",
+    "migrate_reset": "sequelize db:migrate:undo:all && sequelize-cli db:migrate && sequelize db:seed --seed 20220802094529-admins.ts && sequelize db:seed --seed 20230407090949-permission.ts && sequelize db:seed --seed 20230405111818-role.ts && sequelize db:seed --seed 20230411163434-role_permission.ts && sequelize db:seed --seed 20230411163231-admin_role.ts",
     "migrate:dev": "yarn run build && cross-env NODE_ENV=development dotenv -e .env sequelize db:migrate",
     "migrate:prod": "yarn run build && cross-env NODE_ENV=production dotenv -e .env sequelize db:migrate --env production"
   },

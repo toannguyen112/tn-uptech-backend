@@ -82,11 +82,23 @@ export class PostDTO {
             posted_at: item.posted_at,
 
             related: item.postRelated.map((item) => {
-                return this.transform(item)
+                return {
+                    id: item.id,
+                    name: item.translations[0].name,
+                    category_slug: item.category ? item.category.translations[0].slug : "",
+                    slug: item.translations[0].slug,
+                    thumbnail: item.image ?? null,
+                }
             }) || [],
 
             posts: item.posts.map((item) => {
-                return this.transform(item)
+                return {
+                    id: item.id,
+                    name: item.translations[0].name,
+                    category_slug: item.category ? item.category.translations[0].slug : "",
+                    slug: item.translations[0].slug,
+                    thumbnail: item.image ?? null,
+                }
             }) || [],
 
             ...Helper.FieldsSeo(translationData),

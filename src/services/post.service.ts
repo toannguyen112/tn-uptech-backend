@@ -473,6 +473,15 @@ export class PostService {
                         required: false,
                     },
                     {
+                        model: models.Category,
+                        as: "category",
+                        include: {
+                            model: models.CategoryTranslation,
+                            as: "translations",
+                            where: { locale: global.lang }
+                        }
+                    },
+                    {
                         model: models.Ceo,
                         as: "ceo",
                         required: false,
@@ -520,6 +529,21 @@ export class PostService {
                                 locale: global.lang,
                             }
                         },
+                        {
+                            model: models.Media,
+                            as: "image",
+                            required: false,
+                        },
+                        {
+                            model: models.Category,
+                            as: "category",
+                            include: {
+                                model: models.CategoryTranslation,
+                                as: "translations",
+                                required: true,
+                                where: { locale: global.lang }
+                            }
+                        },
                     ]
                 });
             }
@@ -532,8 +556,19 @@ export class PostService {
                 include: [
                     {
                         model: models.Media,
-                        as: "banner_image",
+                        as: "image",
                         required: false,
+                    },
+                    {
+                        model: models.Category,
+                        as: "category",
+                        required: false,
+                        include: {
+                            model: models.CategoryTranslation,
+                            as: "translations",
+                            required: true,
+                            where: { locale: global.lang }
+                        }
                     },
                     {
                         model: models.PostTranslation,
