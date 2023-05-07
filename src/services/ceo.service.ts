@@ -193,12 +193,14 @@ export class CeoService {
             status: body.status,
             thumbnail: body.thumbnail ? body.thumbnail.id : null,
         }, { where: { id } },
+            { transaction: t }
         )
             .then(async (res) => {
                 try {
                     await models.CeoTranslation.update({ ...body },
                         { where: { ceo_id: id, locale: global.lang } },
-                        { individualHooks: true },);
+                        { individualHooks: true },
+                        { transaction: t });
                 } catch (error) {
                     console.log(error);
                     await t.rollback();

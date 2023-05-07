@@ -56,10 +56,7 @@ export class CeoDTO {
             education: translationData.education || "",
 
             status: item.status || 'inactive',
-            thumbnail: item.image || null,
-
-            createdAt: item.createdAt,
-            updatedAt: item.updatedAt,
+            thumbnail: item.image ? item.image : null,
 
             ...Helper.FieldsSeo(translationData),
         }
