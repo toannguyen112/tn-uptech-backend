@@ -10,7 +10,6 @@ export class CategoryDTO {
             name: translationData.name || "",
             description: translationData.description || "",
             slug: item.slug || "",
-            type: item.type || "",
             status: item.status,
             createdAt: item.createdAt,
             updatedAt: item.updatedAt,

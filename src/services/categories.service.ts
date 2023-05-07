@@ -86,9 +86,10 @@ export class CategoryService {
         return result;
     }
 
-    public getListType = async (type: string) => {
+    public getListCategories = async () => {
         const rows = await models.Category.findAll({
-            where: { type }, include: {
+            where: { status: "active" },
+            include: {
                 model: models.CategoryTranslation,
                 as: "translations",
                 require: true,

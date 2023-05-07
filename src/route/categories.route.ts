@@ -13,7 +13,7 @@ export class CategoryRoute implements Routes {
 
     private initializeRoutes() {
         this.router.get(`${this.path}`, this.category.index);
-        this.router.get(`${this.path}/:type`, this.category.getCategoryType);
+        this.router.get(`${this.path}/getListCategories`, this.category.getListCategories);
         this.router.post(`${this.path}/create`, this.category.create);
         this.router.get(`${this.path}/show/:id`, this.category.show);
         this.router.put(`${this.path}/update/:id`, this.category.update);

@@ -17,10 +17,10 @@ export class CategoryController {
         }
     }
 
-    public async getCategoryType(req: Request, res: Response, next: NextFunction) {
+    public async getListCategories(req: Request, res: Response, next: NextFunction) {
 
         try {
-            const data = await category.getListType(req.params.type);
+            const data = await category.getListCategories();
             res.status(200).send({ message: "ok", data });
         } catch (error) {
             res.status(500).send(error.message);
