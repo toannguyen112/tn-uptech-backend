@@ -229,3 +229,175 @@ TSError: ⨯ Unable to compile TypeScript:
     at Module.load (node:internal/modules/cjs/loader:1069:32)
     at Function.Module._load (node:internal/modules/cjs/loader:904:12)
     at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-05-07 14:22:18 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/services/project.service.ts[0m:[93m228[0m:[93m20[0m - [91merror[0m[90m TS2488: [0mType '{ model: any; as: string; required: boolean; include: { model: any; as: string; required: boolean; where: { locale: any; }; }[]; through: { where: { service_id: { [x: number]: any; }; }; }; }' must have a '[Symbol.iterator]()' method that returns an iterator.
+
+[7m228[0m                 ...{
+[7m   [0m [91m                   ~[0m
+[7m229[0m                     model: models.Service,
+[7m   [0m [91m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+[7m...[0m 
+[7m247[0m                     } : null
+[7m   [0m [91m~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+[7m248[0m                 },
+[7m   [0m [91m~~~~~~~~~~~~~~~~~[0m
+[96msrc/services/project.service.ts[0m:[93m225[0m:[93m13[0m - [91merror[0m[90m TS1109: [0mExpression expected.
+
+[7m225[0m         if () {
+[7m   [0m [91m            ~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/services/project.service.ts[0m:[93m228[0m:[93m20[0m - [91merror[0m[90m TS2488: [0mType '{ model: any; as: string; required: boolean; include: { model: any; as: string; required: boolean; where: { locale: any; }; }[]; through: { where: { service_id: { [x: number]: any; }; }; }; }' must have a '[Symbol.iterator]()' method that returns an iterator.
+
+[7m228[0m                 ...{
+[7m   [0m [91m                   ~[0m
+[7m229[0m                     model: models.Service,
+[7m   [0m [91m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+[7m...[0m 
+[7m247[0m                     } : null
+[7m   [0m [91m~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+[7m248[0m                 },
+[7m   [0m [91m~~~~~~~~~~~~~~~~~[0m
+[96msrc/services/project.service.ts[0m:[93m225[0m:[93m13[0m - [91merror[0m[90m TS1109: [0mExpression expected.
+
+[7m225[0m         if () {
+[7m   [0m [91m            ~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-05-07 14:22:33 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/services/project.service.ts[0m:[93m232[0m:[93m21[0m - [91merror[0m[90m TS2322: [0mType '{ model: any; as: string; required: boolean; where?: undefined; } | { model: any; as: string; required: boolean; where: { locale: any; }; } | { model: any; as: string; required: false; include: { model: any; as: string; required: boolean; where: { ...; }; }[]; through: { ...; }; }' is not assignable to type '{ model: any; as: string; required: boolean; where?: undefined; } | { model: any; as: string; required: boolean; where: { locale: any; }; }'.
+  Type '{ model: any; as: string; required: false; include: { model: any; as: string; required: boolean; where: { locale: any; }; }[]; through: { where: { service_id: { [x: number]: any; }; }; }; }' is not assignable to type '{ model: any; as: string; required: boolean; where?: undefined; } | { model: any; as: string; required: boolean; where: { locale: any; }; }'.
+    Object literal may only specify known properties, and 'include' does not exist in type '{ model: any; as: string; required: boolean; where?: undefined; } | { model: any; as: string; required: boolean; where: { locale: any; }; }'.
+
+[7m232[0m                     include: [
+[7m   [0m [91m                    ~~~~~~~~~~[0m
+[7m233[0m                         {
+[7m   [0m [91m~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+[7m...[0m 
+[7m241[0m                         }
+[7m   [0m [91m~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+[7m242[0m                     ],
+[7m   [0m [91m~~~~~~~~~~~~~~~~~~~~~[0m
+[96msrc/services/project.service.ts[0m:[93m232[0m:[93m21[0m - [91merror[0m[90m TS2322: [0mType '{ model: any; as: string; required: false; include: { model: any; as: string; required: true; where: { locale: any; }; }[]; through: { where: { service_id: { [x: number]: any; }; }; }; }' is not assignable to type '{ model: any; as: string; required: boolean; where?: undefined; } | { model: any; as: string; required: boolean; where: { locale: any; }; }'.
+  Object literal may only specify known properties, and 'include' does not exist in type '{ model: any; as: string; required: boolean; where?: undefined; } | { model: any; as: string; required: boolean; where: { locale: any; }; }'.
+
+[7m232[0m                     include: [
+[7m   [0m [91m                    ~~~~~~~~~~[0m
+[7m233[0m                         {
+[7m   [0m [91m~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+[7m...[0m 
+[7m241[0m                         }
+[7m   [0m [91m~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+[7m242[0m                     ],
+[7m   [0m [91m~~~~~~~~~~~~~~~~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/services/project.service.ts[0m:[93m232[0m:[93m21[0m - [91merror[0m[90m TS2322: [0mType '{ model: any; as: string; required: boolean; where?: undefined; } | { model: any; as: string; required: boolean; where: { locale: any; }; } | { model: any; as: string; required: false; include: { model: any; as: string; required: boolean; where: { ...; }; }[]; through: { ...; }; }' is not assignable to type '{ model: any; as: string; required: boolean; where?: undefined; } | { model: any; as: string; required: boolean; where: { locale: any; }; }'.
+  Type '{ model: any; as: string; required: false; include: { model: any; as: string; required: boolean; where: { locale: any; }; }[]; through: { where: { service_id: { [x: number]: any; }; }; }; }' is not assignable to type '{ model: any; as: string; required: boolean; where?: undefined; } | { model: any; as: string; required: boolean; where: { locale: any; }; }'.
+    Object literal may only specify known properties, and 'include' does not exist in type '{ model: any; as: string; required: boolean; where?: undefined; } | { model: any; as: string; required: boolean; where: { locale: any; }; }'.
+
+[7m232[0m                     include: [
+[7m   [0m [91m                    ~~~~~~~~~~[0m
+[7m233[0m                         {
+[7m   [0m [91m~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+[7m...[0m 
+[7m241[0m                         }
+[7m   [0m [91m~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+[7m242[0m                     ],
+[7m   [0m [91m~~~~~~~~~~~~~~~~~~~~~[0m
+[96msrc/services/project.service.ts[0m:[93m232[0m:[93m21[0m - [91merror[0m[90m TS2322: [0mType '{ model: any; as: string; required: false; include: { model: any; as: string; required: true; where: { locale: any; }; }[]; through: { where: { service_id: { [x: number]: any; }; }; }; }' is not assignable to type '{ model: any; as: string; required: boolean; where?: undefined; } | { model: any; as: string; required: boolean; where: { locale: any; }; }'.
+  Object literal may only specify known properties, and 'include' does not exist in type '{ model: any; as: string; required: boolean; where?: undefined; } | { model: any; as: string; required: boolean; where: { locale: any; }; }'.
+
+[7m232[0m                     include: [
+[7m   [0m [91m                    ~~~~~~~~~~[0m
+[7m233[0m                         {
+[7m   [0m [91m~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+[7m...[0m 
+[7m241[0m                         }
+[7m   [0m [91m~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+[7m242[0m                     ],
+[7m   [0m [91m~~~~~~~~~~~~~~~~~~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+2023-05-07 14:23:16 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/services/project.service.ts[0m:[93m254[0m:[93m21[0m - [91merror[0m[90m TS2322: [0mType '{ model: any; as: string; required: boolean; where?: undefined; } | { model: any; as: string; required: boolean; where: { locale: any; }; } | { model: any; as: string; required: false; include: { model: any; as: string; required: boolean; where: { ...; }; }[]; through: { ...; }; }' is not assignable to type '{ model: any; as: string; required: boolean; where?: undefined; } | { model: any; as: string; required: boolean; where: { locale: any; }; }'.
+  Type '{ model: any; as: string; required: false; include: { model: any; as: string; required: boolean; where: { locale: any; }; }[]; through: { where: { service_id: { [x: number]: any; }; }; }; }' is not assignable to type '{ model: any; as: string; required: boolean; where?: undefined; } | { model: any; as: string; required: boolean; where: { locale: any; }; }'.
+    Object literal may only specify known properties, and 'include' does not exist in type '{ model: any; as: string; required: boolean; where?: undefined; } | { model: any; as: string; required: boolean; where: { locale: any; }; }'.
+
+[7m254[0m                     include: [
+[7m   [0m [91m                    ~~~~~~~~~~[0m
+[7m255[0m                         {
+[7m   [0m [91m~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+[7m...[0m 
+[7m263[0m                         }
+[7m   [0m [91m~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+[7m264[0m                     ],
+[7m   [0m [91m~~~~~~~~~~~~~~~~~~~~~[0m
+[96msrc/services/project.service.ts[0m:[93m254[0m:[93m21[0m - [91merror[0m[90m TS2322: [0mType '{ model: any; as: string; required: false; include: { model: any; as: string; required: true; where: { locale: any; }; }[]; through: { where: { service_id: { [x: number]: any; }; }; }; }' is not assignable to type '{ model: any; as: string; required: boolean; where?: undefined; } | { model: any; as: string; required: boolean; where: { locale: any; }; }'.
+  Object literal may only specify known properties, and 'include' does not exist in type '{ model: any; as: string; required: boolean; where?: undefined; } | { model: any; as: string; required: boolean; where: { locale: any; }; }'.
+
+[7m254[0m                     include: [
+[7m   [0m [91m                    ~~~~~~~~~~[0m
+[7m255[0m                         {
+[7m   [0m [91m~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+[7m...[0m 
+[7m263[0m                         }
+[7m   [0m [91m~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+[7m264[0m                     ],
+[7m   [0m [91m~~~~~~~~~~~~~~~~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/services/project.service.ts[0m:[93m254[0m:[93m21[0m - [91merror[0m[90m TS2322: [0mType '{ model: any; as: string; required: boolean; where?: undefined; } | { model: any; as: string; required: boolean; where: { locale: any; }; } | { model: any; as: string; required: false; include: { model: any; as: string; required: boolean; where: { ...; }; }[]; through: { ...; }; }' is not assignable to type '{ model: any; as: string; required: boolean; where?: undefined; } | { model: any; as: string; required: boolean; where: { locale: any; }; }'.
+  Type '{ model: any; as: string; required: false; include: { model: any; as: string; required: boolean; where: { locale: any; }; }[]; through: { where: { service_id: { [x: number]: any; }; }; }; }' is not assignable to type '{ model: any; as: string; required: boolean; where?: undefined; } | { model: any; as: string; required: boolean; where: { locale: any; }; }'.
+    Object literal may only specify known properties, and 'include' does not exist in type '{ model: any; as: string; required: boolean; where?: undefined; } | { model: any; as: string; required: boolean; where: { locale: any; }; }'.
+
+[7m254[0m                     include: [
+[7m   [0m [91m                    ~~~~~~~~~~[0m
+[7m255[0m                         {
+[7m   [0m [91m~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+[7m...[0m 
+[7m263[0m                         }
+[7m   [0m [91m~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+[7m264[0m                     ],
+[7m   [0m [91m~~~~~~~~~~~~~~~~~~~~~[0m
+[96msrc/services/project.service.ts[0m:[93m254[0m:[93m21[0m - [91merror[0m[90m TS2322: [0mType '{ model: any; as: string; required: false; include: { model: any; as: string; required: true; where: { locale: any; }; }[]; through: { where: { service_id: { [x: number]: any; }; }; }; }' is not assignable to type '{ model: any; as: string; required: boolean; where?: undefined; } | { model: any; as: string; required: boolean; where: { locale: any; }; }'.
+  Object literal may only specify known properties, and 'include' does not exist in type '{ model: any; as: string; required: boolean; where?: undefined; } | { model: any; as: string; required: boolean; where: { locale: any; }; }'.
+
+[7m254[0m                     include: [
+[7m   [0m [91m                    ~~~~~~~~~~[0m
+[7m255[0m                         {
+[7m   [0m [91m~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+[7m...[0m 
+[7m263[0m                         }
+[7m   [0m [91m~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+[7m264[0m                     ],
+[7m   [0m [91m~~~~~~~~~~~~~~~~~~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/Source/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)

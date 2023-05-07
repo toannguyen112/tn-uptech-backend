@@ -219,38 +219,57 @@ export class ProjectService {
                     locale: global.lang,
                 },
             },
-            {
-                model: models.Service,
-                as: "services",
-                required: false,
-                include: [
-                    {
-                        model: models.ServiceTranslation,
-                        as: "translations",
-                        required: true,
-                        where: {
-                            locale: global.lang,
-                        },
 
-                    }
-                ],
-                through: query.service_id ? {
-                    where: {
-                        service_id: { [models.Sequelize.Op.eq]: query.service_id }
-                    }
-                } : null
-            },
-            {
-                model: models.Branch,
-                as: "branchs",
-                required: false,
-                through: query.branch_id ? {
-                    where: {
-                        branch_id: { [models.Sequelize.Op.eq]: query.branch_id }
-                    }
-                } : null
-            }
         ]
+
+        const queryBranch = {
+            model: models.Branch,
+            as: "branchs",
+            required: true,
+            through: query.branch_id ? {
+                where: {
+                    branch_id: { [models.Sequelize.Op.eq]: query.branch_id }
+                }
+            } : null
+        }
+
+        const queryService = {
+            model: models.Service,
+            as: "services",
+            required: true,
+            include: [
+                {
+                    model: models.ServiceTranslation,
+                    as: "translations",
+                    required: true,
+                    where: {
+                        locale: global.lang,
+                    },
+
+                }
+            ],
+            through: query.service_id ? {
+                where: {
+                    service_id: { [models.Sequelize.Op.eq]: query.service_id }
+                }
+            } : null
+        }
+
+        if (query.service_id) {
+            include = [
+                ...include,
+                queryService
+
+            ]
+        }
+
+        if (query.branch_id) {
+            include = [
+                ...include,
+                queryBranch
+
+            ]
+        }
 
         try {
 

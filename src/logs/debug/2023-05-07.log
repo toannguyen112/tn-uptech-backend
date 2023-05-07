@@ -1509,3 +1509,98 @@
 2023-05-07 14:15:12 info: [0mGET /posts/category/website [36m304[0m 32.663 ms - -[0m
 2023-05-07 14:15:13 info: [0mGET /categories/getListCategories [36m304[0m 5.697 ms - -[0m
 2023-05-07 14:15:13 info: [0mGET /posts/getPageAll [36m304[0m 59.378 ms - -[0m
+2023-05-07 14:15:55 info: [0mGET /jobs/getListFeatured [36m304[0m 100.355 ms - -[0m
+2023-05-07 14:16:01 info: [0mGET /categories/getListCategories [36m304[0m 13.486 ms - -[0m
+2023-05-07 14:16:01 info: [0mGET /posts/getPageAll [36m304[0m 94.001 ms - -[0m
+2023-05-07 14:16:05 info: [0mGET /posts/getListFeatured [32m200[0m 122.535 ms - 695[0m
+2023-05-07 14:16:05 info: [0mGET /banners/getListBanner [36m304[0m 144.862 ms - -[0m
+2023-05-07 14:16:05 info: [0mGET /services/nav [36m304[0m 196.726 ms - -[0m
+2023-05-07 14:16:07 info: [0mGET /services/show/3 [36m304[0m 52.311 ms - -[0m
+2023-05-07 14:16:13 info: [0mGET /services/show/4 [36m304[0m 41.156 ms - -[0m
+2023-05-07 14:16:15 info: [0mGET /banners/getListBanner [36m304[0m 24.785 ms - -[0m
+2023-05-07 14:16:15 info: [0mGET /posts/getListFeatured [36m304[0m 26.505 ms - -[0m
+2023-05-07 14:16:15 info: [0mGET /services/nav [36m304[0m 29.231 ms - -[0m
+2023-05-07 14:17:11 info: [0mGET /banners/getListBanner [36m304[0m 160.930 ms - -[0m
+2023-05-07 14:17:12 info: [0mGET /ceos/getlistCeo [36m304[0m 213.864 ms - -[0m
+2023-05-07 14:17:13 info: [0mGET /categories/getListCategories [36m304[0m 88.036 ms - -[0m
+2023-05-07 14:17:13 info: [0mGET /posts/getPageAll [36m304[0m 259.664 ms - -[0m
+2023-05-07 14:17:13 info: [0mGET /branchs/getListBranch [36m304[0m 60.196 ms - -[0m
+2023-05-07 14:17:13 info: [0mGET /services/getListService [36m304[0m 69.302 ms - -[0m
+2023-05-07 14:17:14 info: [0mGET /projects/getProjectsClient [36m304[0m 137.461 ms - -[0m
+2023-05-07 14:17:14 info: [0mGET /projects/getProjectsClient [36m304[0m 27.548 ms - -[0m
+2023-05-07 14:17:15 info: [0mGET /categories/getListCategories [36m304[0m 22.813 ms - -[0m
+2023-05-07 14:17:15 info: [0mGET /posts/getPageAll [36m304[0m 73.318 ms - -[0m
+2023-05-07 14:17:16 info: [0mGET /branchs/getListBranch [36m304[0m 10.377 ms - -[0m
+2023-05-07 14:17:16 info: [0mGET /services/getListService [36m304[0m 19.184 ms - -[0m
+2023-05-07 14:17:16 info: [0mGET /projects/getProjectsClient [36m304[0m 44.193 ms - -[0m
+2023-05-07 14:17:18 info: [0mGET /projects/getProjectsClient?service_id=3 [36m304[0m 25.803 ms - -[0m
+2023-05-07 14:17:21 info: [0mGET /projects/getProjectsClient?service_id=4 [36m304[0m 11.832 ms - -[0m
+2023-05-07 14:19:02 info: [0mOPTIONS /admins/profile [32m204[0m 0.798 ms - 0[0m
+2023-05-07 14:19:02 info: [0mGET /admins/profile [36m304[0m 91.390 ms - -[0m
+2023-05-07 14:19:03 info: [0mGET /categories/show/1 [36m304[0m 73.573 ms - -[0m
+2023-05-07 14:19:10 info: [0mOPTIONS /admins/profile [32m204[0m 0.273 ms - 0[0m
+2023-05-07 14:19:10 info: [0mGET /categories/show/1 [36m304[0m 9.926 ms - -[0m
+2023-05-07 14:19:10 info: [0mGET /jobs? [32m200[0m 124.032 ms - 87[0m
+2023-05-07 14:19:10 info: [0mGET /admins/profile [36m304[0m 123.435 ms - -[0m
+2023-05-07 14:19:11 info: [0mGET /jobs?page=1&page_size=10 [32m200[0m 39.761 ms - 87[0m
+2023-05-07 14:20:28 info: [0mGET /projects/getProjectsClient [36m304[0m 60.669 ms - -[0m
+2023-05-07 14:20:31 info: [0mGET /projects/getProjectsClient?service_id=4 [36m304[0m 29.819 ms - -[0m
+2023-05-07 14:20:32 info: [0mGET /projects/getProjectsClient?service_id=3 [36m304[0m 10.132 ms - -[0m
+2023-05-07 14:20:37 info: [0mGET /banners/getListBanner [36m304[0m 29.704 ms - -[0m
+2023-05-07 14:20:37 info: [0mGET /services/nav [36m304[0m 22.276 ms - -[0m
+2023-05-07 14:20:37 info: [0mGET /posts/getListFeatured [36m304[0m 38.186 ms - -[0m
+2023-05-07 14:20:38 info: [0mGET /jobs/getListFeatured [36m304[0m 15.119 ms - -[0m
+2023-05-07 14:20:40 info: [0mGET /categories/getListCategories [36m304[0m 13.274 ms - -[0m
+2023-05-07 14:20:40 info: [0mGET /posts/getPageAll [36m304[0m 103.167 ms - -[0m
+2023-05-07 14:20:54 info: [0mGET /banners/getListBanner [36m304[0m 68.806 ms - -[0m
+2023-05-07 14:20:54 info: [0mGET /posts/getListFeatured [36m304[0m 65.789 ms - -[0m
+2023-05-07 14:20:54 info: [0mGET /services/nav [36m304[0m 69.382 ms - -[0m
+2023-05-07 14:21:02 info: [0mGET /branchs/getListBranch [36m304[0m 28.092 ms - -[0m
+2023-05-07 14:21:02 info: [0mGET /services/getListService [36m304[0m 30.460 ms - -[0m
+2023-05-07 14:21:02 info: [0mGET /projects/getProjectsClient [36m304[0m 48.453 ms - -[0m
+2023-05-07 14:21:51 info: =================================
+2023-05-07 14:21:51 info: ======= ENV: development =======
+2023-05-07 14:21:51 info: 🚀 App listening on the port 8000
+2023-05-07 14:21:51 info: =================================
+2023-05-07 14:23:44 info: =================================
+2023-05-07 14:23:44 info: ======= ENV: development =======
+2023-05-07 14:23:44 info: 🚀 App listening on the port 8000
+2023-05-07 14:23:44 info: =================================
+2023-05-07 14:23:45 info: [0mGET /branchs/getListBranch [36m304[0m 180.314 ms - -[0m
+2023-05-07 14:23:45 info: [0mGET /projects/getProjectsClient [32m200[0m 188.669 ms - 779[0m
+2023-05-07 14:23:45 info: [0mGET /services/nav [36m304[0m 267.284 ms - -[0m
+2023-05-07 14:23:45 info: [0mGET /services/getListService [36m304[0m 223.732 ms - -[0m
+2023-05-07 14:23:47 info: [0mGET /projects/getProjectsClient?service_id=4 [36m304[0m 52.411 ms - -[0m
+2023-05-07 14:23:48 info: [0mGET /projects/getProjectsClient?service_id=3 [36m304[0m 14.974 ms - -[0m
+2023-05-07 14:23:51 info: [0mGET /categories/post [33m404[0m 6.051 ms - 154[0m
+2023-05-07 14:23:53 info: [0mGET /categories/post [33m404[0m 3.716 ms - 154[0m
+2023-05-07 14:24:12 info: =================================
+2023-05-07 14:24:12 info: ======= ENV: development =======
+2023-05-07 14:24:12 info: 🚀 App listening on the port 8000
+2023-05-07 14:24:12 info: =================================
+2023-05-07 14:24:17 info: [0mGET /branchs/getListBranch [36m304[0m 156.167 ms - -[0m
+2023-05-07 14:24:17 info: [0mGET /services/getListService [36m304[0m 168.904 ms - -[0m
+2023-05-07 14:24:17 info: [0mGET /services/nav [36m304[0m 239.139 ms - -[0m
+2023-05-07 14:24:17 info: [0mGET /projects/getProjectsClient [36m304[0m 175.144 ms - -[0m
+2023-05-07 14:24:17 info: [0mGET /projects/getProjectsClient?service_id=3 [36m304[0m 107.869 ms - -[0m
+2023-05-07 14:24:19 info: [0mGET /projects/getProjectsClient [36m304[0m 23.721 ms - -[0m
+2023-05-07 14:24:21 info: [0mGET /projects/getProjectsClient?service_id=3 [36m304[0m 69.524 ms - -[0m
+2023-05-07 14:24:23 info: [0mGET /projects/getProjectsClient?service_id=4 [36m304[0m 15.988 ms - -[0m
+2023-05-07 14:24:24 info: [0mGET /projects/getProjectsClient?service_id=3 [36m304[0m 9.522 ms - -[0m
+2023-05-07 14:24:41 info: =================================
+2023-05-07 14:24:41 info: ======= ENV: development =======
+2023-05-07 14:24:41 info: 🚀 App listening on the port 8000
+2023-05-07 14:24:41 info: =================================
+2023-05-07 14:24:43 info: [0mGET /branchs/getListBranch [36m304[0m 135.935 ms - -[0m
+2023-05-07 14:24:43 info: [0mGET /projects/getProjectsClient?service_id=4 [32m200[0m 46.947 ms - 468[0m
+2023-05-07 14:24:43 info: [0mGET /services/getListService [36m304[0m 167.377 ms - -[0m
+2023-05-07 14:24:43 info: [0mGET /services/nav [36m304[0m 224.384 ms - -[0m
+2023-05-07 14:24:43 info: [0mGET /projects/getProjectsClient [36m304[0m 182.290 ms - -[0m
+2023-05-07 14:24:47 info: [0mGET /projects/getProjectsClient?service_id=3 [32m200[0m 21.441 ms - 444[0m
+2023-05-07 14:24:49 info: [0mGET /projects/getProjectsClient?service_id=4 [36m304[0m 10.406 ms - -[0m
+2023-05-07 14:24:51 info: [0mGET /projects/getProjectsClient?service_id=3 [36m304[0m 11.960 ms - -[0m
+2023-05-07 14:24:53 info: [0mGET /projects/getProjectsClient?service_id=4 [36m304[0m 15.243 ms - -[0m
+2023-05-07 14:24:53 info: [0mGET /projects/getProjectsClient?service_id=3 [36m304[0m 12.153 ms - -[0m
+2023-05-07 14:24:54 info: [0mGET /projects/getProjectsClient [36m304[0m 16.590 ms - -[0m
+2023-05-07 14:25:02 info: [0mGET /projects/getProjectsClient?service_id=4 [36m304[0m 26.032 ms - -[0m
+2023-05-07 14:25:02 info: [0mGET /projects/getProjectsClient?service_id=3 [36m304[0m 20.122 ms - -[0m
