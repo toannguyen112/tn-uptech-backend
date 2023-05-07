@@ -35,6 +35,7 @@ module.exports = function (sequelize, DataTypes) {
                     key: "id",
                 },
                 allowNull: true,
+                onDelete: 'SET NULL',
             },
 
             related: {
@@ -113,6 +114,8 @@ module.exports = function (sequelize, DataTypes) {
         Post.belongsTo(models.Ceo, {
             as: 'ceo',
             foreignKey: "ceo_id",
+            onDelete: 'CASCADE',
+            hooks: true
         });
 
         Post.hasMany(models.PostTranslation, {

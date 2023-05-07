@@ -17,6 +17,7 @@ module.exports = {
           key: "id",
         },
         allowNull: true,
+        onDelete: 'SET NULL',
       },
 
       banner: {
@@ -26,6 +27,7 @@ module.exports = {
           key: "id",
         },
         allowNull: true,
+        onDelete: 'SET NULL',
       },
 
       related: {

@@ -48,7 +48,7 @@ module.exports = function (sequelize, DataTypes) {
         },
         {
             timestamps: true,
-            paranoid: true,
+            paranoid: false,
             deletedAt: 'deletedAt',
             tableName: "ceos",
         },

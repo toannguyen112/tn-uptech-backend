@@ -17,6 +17,7 @@ module.exports = {
 
       thumbnail: {
         type: Sequelize.INTEGER,
+        onDelete: 'SET NULL',
         references: {
           model: "medias",
           key: "id",

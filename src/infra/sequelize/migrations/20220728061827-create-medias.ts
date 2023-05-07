@@ -20,7 +20,7 @@ module.exports = {
 
       folder_id: {
         type: Sequelize.INTEGER,
-        onDelete: 'CASCADE',
+        onDelete: 'SET NULL',
         references: {
           model: "folders",
           key: "id",

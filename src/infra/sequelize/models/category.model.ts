@@ -15,12 +15,6 @@ module.exports = function (sequelize, DataTypes) {
                 defaultValue: 'active'
             },
 
-            type: {
-                allowNull: true,
-                type: DataTypes.STRING,
-                defaultValue: 'post',
-            },
-
             createdAt: {
                 type: DataTypes.DATE,
                 defaultValue: new Date(),

@@ -5,6 +5,7 @@ module.exports = {
     queryInterface.createTable("post_categories", {
       post_id: {
         type: Sequelize.INTEGER,
+        onDelete: 'CASCADE',
         references: {
           model: "posts",
           key: "id",
@@ -13,6 +14,7 @@ module.exports = {
 
       category_id: {
         type: Sequelize.INTEGER,
+        onDelete: 'CASCADE',
         references: {
           model: "categories",
           key: "id",

@@ -17,6 +17,7 @@ module.exports = {
           key: "id",
         },
         allowNull: true,
+        onDelete: 'SET NULL',
       },
 
       ceo_id: {
@@ -26,6 +27,7 @@ module.exports = {
           key: "id",
         },
         allowNull: true,
+        onDelete: 'SET NULL',
       },
 
       category_id: {
@@ -35,6 +37,7 @@ module.exports = {
           key: "id",
         },
         allowNull: true,
+        onDelete: 'SET NULL',
       },
 
       related: {
@@ -50,6 +53,7 @@ module.exports = {
           key: "id",
         },
         allowNull: true,
+        onDelete: 'SET NULL',
       },
 
       images: {
