@@ -31,7 +31,7 @@ export class ProjectDTO {
             id: item.id,
             name: translationData.name || "",
             slug: translationData.slug || "",
-            thumbnail: item.image || null,
+            thumbnail: item.image ? item.image : null,
 
             services: item.services ? item.services.map((service) => {
                 return {

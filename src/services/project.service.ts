@@ -205,7 +205,6 @@ export class ProjectService {
 
     public getProjectsClient = async (query) => {
 
-
         let include = [
             {
                 model: models.Media,
@@ -223,7 +222,7 @@ export class ProjectService {
             {
                 model: models.Service,
                 as: "services",
-                required: true,
+                required: false,
                 include: [
                     {
                         model: models.ServiceTranslation,
@@ -244,7 +243,7 @@ export class ProjectService {
             {
                 model: models.Branch,
                 as: "branchs",
-                required: true,
+                required: false,
                 through: query.branch_id ? {
                     where: {
                         branch_id: { [models.Sequelize.Op.eq]: query.branch_id }
