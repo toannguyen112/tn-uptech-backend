@@ -1,0 +1,14 @@
+2023-05-08 01:50:03 info: =================================
+2023-05-08 01:50:03 info: ======= ENV: development =======
+2023-05-08 01:50:03 info: 🚀 App listening on the port 8000
+2023-05-08 01:50:03 info: =================================
+2023-05-08 01:50:22 info: [0mGET / [33m404[0m 5.653 ms - 139[0m
+2023-05-08 01:50:40 info: [0mGET / [33m404[0m 18.111 ms - 139[0m
+2023-05-08 01:51:47 info: [0mGET /posts [32m200[0m 366.970 ms - 580[0m
+2023-05-08 01:51:50 info: [0mGET /posts [36m304[0m 15.816 ms - -[0m
+2023-05-08 02:53:42 info: [0mGET /branchs/getListBranch [36m304[0m 149.481 ms - -[0m
+2023-05-08 02:53:42 info: [0mGET /projects/getProjectsClient [36m304[0m 196.022 ms - -[0m
+2023-05-08 02:53:43 info: [0mGET /services/getListService [36m304[0m 320.291 ms - -[0m
+2023-05-08 02:53:43 info: [0mGET /categories/getListCategories [36m304[0m 249.501 ms - -[0m
+2023-05-08 02:53:43 info: [0mGET /jobs/getListFeatured [36m304[0m 123.014 ms - -[0m
+2023-05-08 02:53:43 info: [0mGET /posts/getPageAll [36m304[0m 548.131 ms - -[0m
