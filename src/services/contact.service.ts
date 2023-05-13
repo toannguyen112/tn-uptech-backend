@@ -15,6 +15,8 @@ export class ContactService {
                 search: query.search,
             };
 
+            console.log(queryObject);
+
             const excludedFields = ["page", "page_size", "sort_field", "sort_order", "fields"];
             excludedFields.forEach((field) => delete queryObject[field]);
 
