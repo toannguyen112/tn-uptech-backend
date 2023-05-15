@@ -1,0 +1,15 @@
+{
+    "keep": {
+        "days": false,
+        "amount": 30
+    },
+    "auditLog": "/Users/toannguyen/Documents/tn-uptech-backend/src/logs/debug/.e3777454502d473392b4d28c17515f1beebd1aec-audit.json",
+    "files": [
+        {
+            "date": 1684133196058,
+            "name": "/Users/toannguyen/Documents/tn-uptech-backend/src/logs/debug/2023-05-15.log",
+            "hash": "40ecc6fe952eb8e7f6d9dc41a90c980999bcd73d2ef6dee739f799fd0adfdba3"
+        }
+    ],
+    "hashType": "sha256"
+}
