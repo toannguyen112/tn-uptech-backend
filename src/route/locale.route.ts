@@ -16,7 +16,7 @@ export class LocaleRoute implements Routes {
     }
 
     private initializeRoutes() {
-        this.router.get(`${this.path}`, (req: LanguageRequest, res: Response, next: NextFunction) => {
+        this.router.get(`${this.path}`, (req: any, res: Response, next: NextFunction) => {
 
             const lang = req.acceptsLanguages('vi', 'en');
 
