@@ -4,3 +4,25 @@
 2023-05-17 02:00:04 error: {"name":"SequelizeAccessDeniedError","parent":{"code":"ER_ACCESS_DENIED_ERROR","errno":1045,"sqlState":"28000","sqlMessage":"Access denied for user 'toannguyen112'@'localhost' (using password: YES)"},"original":{"code":"ER_ACCESS_DENIED_ERROR","errno":1045,"sqlState":"28000","sqlMessage":"Access denied for user 'toannguyen112'@'localhost' (using password: YES)"}}
 2023-05-17 02:00:06 error: {"name":"SequelizeAccessDeniedError","parent":{"code":"ER_ACCESS_DENIED_ERROR","errno":1045,"sqlState":"28000","sqlMessage":"Access denied for user 'toannguyen112'@'localhost' (using password: YES)"},"original":{"code":"ER_ACCESS_DENIED_ERROR","errno":1045,"sqlState":"28000","sqlMessage":"Access denied for user 'toannguyen112'@'localhost' (using password: YES)"}}
 2023-05-17 02:00:07 error: {"name":"SequelizeAccessDeniedError","parent":{"code":"ER_ACCESS_DENIED_ERROR","errno":1045,"sqlState":"28000","sqlMessage":"Access denied for user 'toannguyen112'@'localhost' (using password: YES)"},"original":{"code":"ER_ACCESS_DENIED_ERROR","errno":1045,"sqlState":"28000","sqlMessage":"Access denied for user 'toannguyen112'@'localhost' (using password: YES)"}}
+2023-05-17 02:19:51 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/modules/controllers/post.controller.ts[0m:[93m15[0m:[93m51[0m - [91merror[0m[90m TS18004: [0mNo value exists in scope for the shorthand property 'data'. Either declare one or provide an initializer.
+
+[7m15[0m             res.status(200).send({ message: "ok", data });
+[7m  [0m [91m                                                  ~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/modules/controllers/post.controller.ts[0m:[93m15[0m:[93m51[0m - [91merror[0m[90m TS18004: [0mNo value exists in scope for the shorthand property 'data'. Either declare one or provide an initializer.
+
+[7m15[0m             res.status(200).send({ message: "ok", data });
+[7m  [0m [91m                                                  ~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
