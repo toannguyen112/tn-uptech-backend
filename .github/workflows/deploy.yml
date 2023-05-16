@@ -14,4 +14,4 @@ jobs:
         server: ftp.uptech.vn
         username: uptech@uptech.vn
         password: toannguyen112
-        server-dir: /tn-uptech-backend
+        server-dir: /tn-uptech-backend/
