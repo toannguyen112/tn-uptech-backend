@@ -1,0 +1,2 @@
+2023-05-17 01:37:23 error: {"name":"SequelizeAccessDeniedError","parent":{"code":"ER_ACCESS_DENIED_ERROR","errno":1045,"sqlState":"28000","sqlMessage":"Access denied for user 'toannguyen112'@'localhost' (using password: YES)"},"original":{"code":"ER_ACCESS_DENIED_ERROR","errno":1045,"sqlState":"28000","sqlMessage":"Access denied for user 'toannguyen112'@'localhost' (using password: YES)"}}
+2023-05-17 01:37:27 error: Access denied for user 'toannguyen112'@'localhost' (using password: YES)

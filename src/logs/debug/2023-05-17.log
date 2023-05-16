@@ -11,3 +11,9 @@
 2023-05-17 01:22:56 info: ======= ENV: development =======
 2023-05-17 01:22:56 info: 🚀 App listening on the port 8000
 2023-05-17 01:22:56 info: =================================
+2023-05-17 01:37:18 info: [0mGET / [36m304[0m 15.995 ms - -[0m
+2023-05-17 01:37:19 info: [0mGET /favicon.ico [33m404[0m 7.521 ms - 150[0m
+2023-05-17 01:37:23 error: {"name":"SequelizeAccessDeniedError","parent":{"code":"ER_ACCESS_DENIED_ERROR","errno":1045,"sqlState":"28000","sqlMessage":"Access denied for user 'toannguyen112'@'localhost' (using password: YES)"},"original":{"code":"ER_ACCESS_DENIED_ERROR","errno":1045,"sqlState":"28000","sqlMessage":"Access denied for user 'toannguyen112'@'localhost' (using password: YES)"}}
+2023-05-17 01:37:23 info: [0mGET /posts [36m304[0m 167.113 ms - -[0m
+2023-05-17 01:37:27 error: Access denied for user 'toannguyen112'@'localhost' (using password: YES)
+2023-05-17 01:37:27 info: [0mGET /posts/show/1 [31m500[0m 31.659 ms - 415[0m
