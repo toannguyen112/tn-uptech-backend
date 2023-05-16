@@ -9,21 +9,19 @@ import { FolderRoute } from './route/folder.route';
 import { JobRoute } from './route/job.route';
 import { RoleRoute } from './route/role.route';
 import { CategoryRoute } from './route/categories.route';
-import { CommontRoute } from './route/common.route';
 import { AdminRoute } from './route/admin.route';
 import { PermissionRoute } from './route/permission.route';
 import { BranchRoute } from './route/branch.route';
 import { ServiceRoute } from './route/service.route';
-import { LogsRoute } from './route/logs.route';
 import { ContactRoute } from './route/contact.route ';
+import { CommontRoute } from './route/common.route';
 
 const routers = [
-    new LogsRoute(),
+    new CommontRoute(),
     new AdminRoute(),
     new ServiceRoute(),
     new BranchRoute(),
     new PermissionRoute(),
-    new CommontRoute(),
     new FolderRoute(),
     new MediaRoute(),
     new ProjectRoute(),
