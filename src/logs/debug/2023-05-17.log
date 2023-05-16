@@ -17,3 +17,24 @@
 2023-05-17 01:37:23 info: [0mGET /posts [36m304[0m 167.113 ms - -[0m
 2023-05-17 01:37:27 error: Access denied for user 'toannguyen112'@'localhost' (using password: YES)
 2023-05-17 01:37:27 info: [0mGET /posts/show/1 [31m500[0m 31.659 ms - 415[0m
+2023-05-17 01:59:08 info: =================================
+2023-05-17 01:59:08 info: ======= ENV: development =======
+2023-05-17 01:59:08 info: 🚀 App listening on the port 8000
+2023-05-17 01:59:08 info: =================================
+2023-05-17 01:59:18 error: {"name":"SequelizeAccessDeniedError","parent":{"code":"ER_ACCESS_DENIED_ERROR","errno":1045,"sqlState":"28000","sqlMessage":"Access denied for user 'toannguyen112'@'localhost' (using password: YES)"},"original":{"code":"ER_ACCESS_DENIED_ERROR","errno":1045,"sqlState":"28000","sqlMessage":"Access denied for user 'toannguyen112'@'localhost' (using password: YES)"}}
+2023-05-17 01:59:18 info: [0mGET /posts [36m304[0m 320.397 ms - -[0m
+2023-05-17 01:59:59 info: =================================
+2023-05-17 01:59:59 info: ======= ENV: development =======
+2023-05-17 01:59:59 info: 🚀 App listening on the port 8000
+2023-05-17 01:59:59 info: =================================
+2023-05-17 02:00:04 error: {"name":"SequelizeAccessDeniedError","parent":{"code":"ER_ACCESS_DENIED_ERROR","errno":1045,"sqlState":"28000","sqlMessage":"Access denied for user 'toannguyen112'@'localhost' (using password: YES)"},"original":{"code":"ER_ACCESS_DENIED_ERROR","errno":1045,"sqlState":"28000","sqlMessage":"Access denied for user 'toannguyen112'@'localhost' (using password: YES)"}}
+2023-05-17 02:00:04 info: [0mGET /posts [36m304[0m 248.336 ms - -[0m
+2023-05-17 02:00:06 error: {"name":"SequelizeAccessDeniedError","parent":{"code":"ER_ACCESS_DENIED_ERROR","errno":1045,"sqlState":"28000","sqlMessage":"Access denied for user 'toannguyen112'@'localhost' (using password: YES)"},"original":{"code":"ER_ACCESS_DENIED_ERROR","errno":1045,"sqlState":"28000","sqlMessage":"Access denied for user 'toannguyen112'@'localhost' (using password: YES)"}}
+2023-05-17 02:00:06 info: [0mGET /posts [36m304[0m 30.831 ms - -[0m
+2023-05-17 02:00:07 error: {"name":"SequelizeAccessDeniedError","parent":{"code":"ER_ACCESS_DENIED_ERROR","errno":1045,"sqlState":"28000","sqlMessage":"Access denied for user 'toannguyen112'@'localhost' (using password: YES)"},"original":{"code":"ER_ACCESS_DENIED_ERROR","errno":1045,"sqlState":"28000","sqlMessage":"Access denied for user 'toannguyen112'@'localhost' (using password: YES)"}}
+2023-05-17 02:00:07 info: [0mGET /posts [36m304[0m 23.233 ms - -[0m
+2023-05-17 02:10:29 info: =================================
+2023-05-17 02:10:29 info: ======= ENV: development =======
+2023-05-17 02:10:29 info: 🚀 App listening on the port 8000
+2023-05-17 02:10:29 info: =================================
+2023-05-17 02:10:36 info: [0mGET / [36m304[0m 9.345 ms - -[0m
