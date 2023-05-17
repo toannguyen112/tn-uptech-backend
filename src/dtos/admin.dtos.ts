@@ -22,6 +22,7 @@ export class AdminDTO {
     static transformProfile = (item) => {
         const permissions = item.roles.map((item) => item.permissions.map((permission) => permission.value)) || [];
         const newArrayPer = Array.prototype.concat.apply([], permissions);
+
         let unique = [...new Set(newArrayPer)];
 
         return {
