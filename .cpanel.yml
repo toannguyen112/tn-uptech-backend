@@ -2,4 +2,4 @@
 deployment:
   tasks:
     - export DEPLOYPATH=/home/uptechvn/public_html/
-    - /bin/cp -r /home/uptechvn/tn-uptech-backend/public/ $DEPLOYPATH
+    - /bin/cp -r * $DEPLOYPATH
