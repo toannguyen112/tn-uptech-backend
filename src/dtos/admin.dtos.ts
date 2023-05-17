@@ -25,6 +25,7 @@ export class AdminDTO {
 
         let unique = [...new Set(newArrayPer)];
 
+
         return {
             id: item.id,
             name: item.name || "",
