@@ -1,0 +1,12 @@
+2023-05-20 13:11:51 error: uncaughtException: listen EADDRINUSE: address already in use :::8000
+Error: listen EADDRINUSE: address already in use :::8000
+    at Server.setupListenHandle [as _listen2] (node:net:1463:16)
+    at listenInCluster (node:net:1511:12)
+    at Server.listen (node:net:1599:7)
+    at Function.listen (/Users/toannguyen/Documents/tn-uptech-backend/node_modules/express/lib/application.js:635:24)
+    at App.listen (/Users/toannguyen/Documents/tn-uptech-backend/src/infra/express/app.ts:36:18)
+    at Object.<anonymous> (/Users/toannguyen/Documents/tn-uptech-backend/server.ts:38:5)
+    at Module._compile (node:internal/modules/cjs/loader:1196:14)
+    at Module.m._compile (/Users/toannguyen/Documents/tn-uptech-backend/node_modules/ts-node/src/index.ts:1618:23)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1250:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
