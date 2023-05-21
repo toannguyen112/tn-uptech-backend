@@ -36,3 +36,35 @@
 2023-05-21 18:33:40 info: 🚀 App listening on the port 8000
 2023-05-21 18:33:40 info: =================================
 2023-05-21 18:33:50 info: [0mGET /posts [36m304[0m 223.663 ms - -[0m
+2023-05-21 18:52:34 info: =================================
+2023-05-21 18:52:34 info: ======= ENV: development =======
+2023-05-21 18:52:34 info: 🚀 App listening on the port 8000
+2023-05-21 18:52:34 info: =================================
+2023-05-21 18:52:49 info: [0mGET /posts/getListFeatured [32m200[0m 414.903 ms - 519[0m
+2023-05-21 18:52:49 info: [0mGET /services/nav [36m304[0m 606.184 ms - -[0m
+2023-05-21 18:52:49 info: [0mGET /banners/getListBanner [32m200[0m 493.519 ms - 902[0m
+2023-05-21 18:52:50 info: [0mGET /services/nav [36m304[0m 76.442 ms - -[0m
+2023-05-21 18:52:59 info: [0mOPTIONS /admins/login [32m204[0m 4.586 ms - 0[0m
+2023-05-21 18:52:59 info: [0mPOST /admins/login [32m200[0m 309.619 ms - 560[0m
+2023-05-21 18:53:02 info: [0mOPTIONS /admins/profile [32m204[0m 0.757 ms - 0[0m
+2023-05-21 18:53:02 info: [0mGET /admins/profile [32m200[0m 150.895 ms - 268[0m
+2023-05-21 18:53:05 info: [0mOPTIONS /folders/get-medias [32m204[0m 0.992 ms - 0[0m
+2023-05-21 18:53:05 info: [0mGET /folders [32m200[0m 67.565 ms - 291[0m
+2023-05-21 18:53:05 info: [0mPOST /folders/get-medias [32m200[0m 61.469 ms - 31[0m
+2023-05-21 18:53:05 info: [0mGET /admins/profile [36m304[0m 89.077 ms - -[0m
+2023-05-21 18:53:11 error: [POST] /medias/create >> StatusCode:: 500, Message:: ENOENT: no such file or directory, open 'storage/uploads/files-1684669991364.jpg'
+2023-05-21 18:53:11 info: [0mPOST /medias/create [31m500[0m 47.434 ms - 95[0m
+2023-05-21 18:54:11 info: [0mOPTIONS /admins/profile [32m204[0m 2.445 ms - 0[0m
+2023-05-21 18:54:11 info: [0mOPTIONS /folders/get-medias [32m204[0m 0.179 ms - 0[0m
+2023-05-21 18:54:11 info: [0mGET /folders [36m304[0m 357.248 ms - -[0m
+2023-05-21 18:54:11 info: [0mPOST /folders/get-medias [32m200[0m 394.395 ms - 31[0m
+2023-05-21 18:54:12 info: [0mGET /admins/profile [36m304[0m 678.298 ms - -[0m
+2023-05-21 18:54:15 info: [0mPOST /medias/create [32m200[0m 175.689 ms - 31[0m
+2023-05-21 18:54:15 info: [0mPOST /folders/get-medias [32m200[0m 25.123 ms - 350[0m
+2023-05-21 18:54:22 info: [0mPOST /medias/create [32m200[0m 61.927 ms - 31[0m
+2023-05-21 18:54:22 info: [0mOPTIONS /folders/get-medias [32m204[0m 0.296 ms - 0[0m
+2023-05-21 18:54:23 info: [0mPOST /folders/get-medias [32m200[0m 42.969 ms - 673[0m
+2023-05-21 18:54:26 info: [0mOPTIONS /admins/profile [32m204[0m 4.184 ms - 0[0m
+2023-05-21 18:54:26 info: [0mPOST /folders/get-medias [32m200[0m 191.932 ms - 673[0m
+2023-05-21 18:54:26 info: [0mGET /folders [36m304[0m 189.547 ms - -[0m
+2023-05-21 18:54:26 info: [0mGET /admins/profile [36m304[0m 270.208 ms - -[0m
