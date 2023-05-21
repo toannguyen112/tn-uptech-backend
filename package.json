@@ -8,7 +8,7 @@
   "scripts": {
     "dev": "nodemon server.ts",
     "build": "tsc -b",
-    "start": "node --max-old-space-size=2048 dist/server.ts",
+    "start": "node --max-old-space-size=2048 dist/server.js",
     "test": "jest",
     "seeder": "ts-node src/assets/import/index.ts",
     "migration": "sequelize-cli db:migrate",

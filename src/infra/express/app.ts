@@ -11,7 +11,6 @@ import { NODE_ENV, PORT, LOG_FORMAT } from '../../config';
 import { logger, stream } from "../../utils/logger";
 import { Routes } from "../../interface/routes.interface";
 import { LangMiddleware } from '../../middlewares/lang.middleware';
-
 export class App {
     public app: express.Application;
     public env: string;
@@ -19,10 +18,6 @@ export class App {
 
     constructor(routes: Routes[]) {
         this.app = express();
-
-        this.app.get('/', function (req, res) {
-            res.send("Uptech");
-        });
 
         this.env = NODE_ENV || 'development';
         this.port = PORT || 8000;
