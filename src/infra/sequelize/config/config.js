@@ -51,5 +51,5 @@ if (process.env.NODE_ENV === "development" || process.env.NODE_ENV === "producti
     };
 }
 
-module.exports.connection = new Sequelize(database, username, password, options);
+module.exports.connection = new Sequelize(DB_NAME, DB_USER, DB_PASS, options);
 
