@@ -11,6 +11,13 @@ const databaseCredentials = {
         host: DB_HOST,
         dialect: "mysql",
     },
+    test: {
+        username: DB_USER,
+        password: DB_PASS,
+        database: DB_NAME,
+        host: DB_HOST,
+        dialect: "mysql",
+    },
     production: {
         username: DB_USER,
         password: DB_PASS,
@@ -24,12 +31,13 @@ const { username, password, database, host, dialect } = databaseCredentials.deve
 module.exports = databaseCredentials;
 
 const options = {
-    host: DB_HOST,
+    host,
     dialect,
     port: 3306,
     dialectOptions: {
         multipleStatements: true,
         connectTimeout: 220000,
+        requestTimeout: 300000
     },
     pool: {
         max: 8,
@@ -51,5 +59,5 @@ if (process.env.NODE_ENV === "development" || process.env.NODE_ENV === "producti
     };
 }
 
-module.exports.connection = new Sequelize(DB_NAME, DB_USER, DB_PASS, options);
+module.exports.connection = new Sequelize(database, username, password, options);
 
