@@ -24,7 +24,7 @@ const { username, password, database, host, dialect } = databaseCredentials.deve
 module.exports = databaseCredentials;
 
 const options = {
-    host,
+    host: DB_HOST,
     dialect,
     port: 3306,
     dialectOptions: {
