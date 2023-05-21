@@ -11,8 +11,8 @@ export class PostController extends BaseController {
     public async index(req: Request, res: Response, next: NextFunction) {
 
         try {
-            // const data = await post.getList(req.query);
-            res.status(200).send({ message: "ok", data: "Test ne" });
+            const data = await post.getList(req.query);
+            res.status(200).send({ message: "ok", data });
         } catch (error) {
             logger.error(error);
             res.status(500).send(error.message);

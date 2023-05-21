@@ -1,15 +1,14 @@
 {
   "name": "tn-uptech",
   "version": "1.0.0",
-  "main": "app.ts",
+  "main": "server.ts",
   "repository": "https://github.com/toannguyen112",
   "author": "toannguyen112",
   "license": "MIT",
   "scripts": {
-    "dev": "nodemon src/app.ts",
-    "up": "node app.js",
+    "dev": "nodemon server.ts",
     "build": "tsc -b",
-    "start": "node --max-old-space-size=2048 dist/app.ts",
+    "start": "node --max-old-space-size=2048 dist/server.ts",
     "test": "jest",
     "seeder": "ts-node src/assets/import/index.ts",
     "migration": "sequelize-cli db:migrate",

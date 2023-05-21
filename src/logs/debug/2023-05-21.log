@@ -1,0 +1,20 @@
+2023-05-21 13:20:31 info: =================================
+2023-05-21 13:20:31 info: ======= ENV: development =======
+2023-05-21 13:20:31 info: 🚀 App listening on the port 8000
+2023-05-21 13:20:31 info: =================================
+2023-05-21 13:20:33 info: [0mGET /favicon.ico [33m404[0m 13.046 ms - 150[0m
+2023-05-21 13:20:43 info: [0mGET /posts [32m200[0m 5.721 ms - 33[0m
+2023-05-21 13:21:47 info: =================================
+2023-05-21 13:21:47 info: ======= ENV: development =======
+2023-05-21 13:21:47 info: 🚀 App listening on the port 8000
+2023-05-21 13:21:47 info: =================================
+2023-05-21 13:22:04 info: =================================
+2023-05-21 13:22:04 info: ======= ENV: development =======
+2023-05-21 13:22:04 info: 🚀 App listening on the port 8000
+2023-05-21 13:22:04 info: =================================
+2023-05-21 13:22:06 error: {"name":"SequelizeAccessDeniedError","parent":{"code":"ER_ACCESS_DENIED_ERROR","errno":1045,"sqlState":"28000","sqlMessage":"Access denied for user 'toannguyen112'@'localhost' (using password: YES)"},"original":{"code":"ER_ACCESS_DENIED_ERROR","errno":1045,"sqlState":"28000","sqlMessage":"Access denied for user 'toannguyen112'@'localhost' (using password: YES)"}}
+2023-05-21 13:22:06 info: [0mGET /posts [32m200[0m 143.279 ms - 16[0m
+2023-05-21 13:22:07 error: {"name":"SequelizeAccessDeniedError","parent":{"code":"ER_ACCESS_DENIED_ERROR","errno":1045,"sqlState":"28000","sqlMessage":"Access denied for user 'toannguyen112'@'localhost' (using password: YES)"},"original":{"code":"ER_ACCESS_DENIED_ERROR","errno":1045,"sqlState":"28000","sqlMessage":"Access denied for user 'toannguyen112'@'localhost' (using password: YES)"}}
+2023-05-21 13:22:07 info: [0mGET /posts [36m304[0m 40.965 ms - -[0m
+2023-05-21 13:29:24 error: {"name":"SequelizeAccessDeniedError","parent":{"code":"ER_ACCESS_DENIED_ERROR","errno":1045,"sqlState":"28000","sqlMessage":"Access denied for user 'toannguyen112'@'localhost' (using password: YES)"},"original":{"code":"ER_ACCESS_DENIED_ERROR","errno":1045,"sqlState":"28000","sqlMessage":"Access denied for user 'toannguyen112'@'localhost' (using password: YES)"}}
+2023-05-21 13:29:24 info: [0mGET /posts [36m304[0m 80.878 ms - -[0m
