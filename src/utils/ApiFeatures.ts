@@ -12,6 +12,7 @@ export class ApiFeatures {
 
     }
 
+
     filter(where = {}) {
         this.objQuery["where"] = where;
         return this;

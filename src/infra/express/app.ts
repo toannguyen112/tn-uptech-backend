@@ -44,14 +44,13 @@ export class App {
         return this.app;
     }
 
+
     private initializeMiddlewares() {
         this.app.use(LangMiddleware);
         this.app.use(express.static("storage"));
         this.app.use("/uploads", express.static("uploads"));
         this.app.use(morgan(LOG_FORMAT, { stream }));
-        this.app.use(cors({
-            origin: '*'
-        }));
+        this.app.use(cors());
         this.app.use(hpp());
         this.app.use(helmet());
         this.app.use(compression());

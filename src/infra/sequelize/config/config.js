@@ -24,7 +24,7 @@ const { username, password, database, host, dialect } = databaseCredentials.deve
 module.exports = databaseCredentials;
 
 const options = {
-    host,
+    host: DB_HOST,
     dialect,
     port: 3306,
     dialectOptions: {
@@ -51,5 +51,5 @@ if (process.env.NODE_ENV === "development" || process.env.NODE_ENV === "producti
     };
 }
 
-module.exports.connection = new Sequelize(database, username, password, options);
+module.exports.connection = new Sequelize(DB_NAME, DB_USER, DB_PASS, options);
 
