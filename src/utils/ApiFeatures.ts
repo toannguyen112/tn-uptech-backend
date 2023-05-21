@@ -9,6 +9,7 @@ export class ApiFeatures {
         if (!this.query["page_size"]) {
             this.query.page_size = 10;
         }
+
     }
 
     filter(where = {}) {
