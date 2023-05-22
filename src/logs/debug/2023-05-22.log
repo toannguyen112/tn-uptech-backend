@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 2023-05-22 08:42:14 info: [0mOPTIONS /folders/get-medias [32m204[0m 6.027 ms - 0[0m
 2023-05-22 08:42:15 info: [0mPOST /folders/get-medias [32m200[0m 264.053 ms - 31[0m
 2023-05-22 08:42:15 info: [0mPOST /folders/get-medias [32m200[0m 470.372 ms - 31[0m
@@ -15,3 +16,9 @@
 2023-05-22 08:52:59 info: ======= ENV: development =======
 2023-05-22 08:52:59 info: 🚀 App listening on the port 8000
 2023-05-22 08:52:59 info: =================================
+=======
+2023-05-22 08:53:34 info: =================================
+2023-05-22 08:53:34 info: ======= ENV: development =======
+2023-05-22 08:53:34 info: 🚀 App listening on the port 8000
+2023-05-22 08:53:34 info: =================================
+>>>>>>> development

@@ -36,9 +36,15 @@
             "hash": "33d2ed7b1a675fcb072e476572478b207f8bb0518d736a4fb4a68db51d97bbea"
         },
         {
+<<<<<<< HEAD
             "date": 1684719734997,
             "name": "/Users/toannguyen/Documents/tn-uptech-backend/src/logs/debug/2023-05-22.log",
             "hash": "9f6e34a1cfa8edfb29a6553fbe2c0928d59f856acb1820703f5acc93b96b105e"
+=======
+            "date": 1684720407803,
+            "name": "/Users/toannguyen/Documents/tn-uptech-backend/src/logs/debug/2023-05-22.log",
+            "hash": "43a421c13ee427144048152c02cf4a5698d1f922cea468cc042c542bf5ef4332"
+>>>>>>> development
         }
     ],
     "hashType": "sha256"
