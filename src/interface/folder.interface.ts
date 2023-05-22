@@ -4,4 +4,5 @@ export interface Folder {
     label: string;
     icon: string;
     path: string;
+
 }

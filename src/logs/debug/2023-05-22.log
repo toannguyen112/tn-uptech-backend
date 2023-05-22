@@ -1,0 +1,17 @@
+2023-05-22 08:42:14 info: [0mOPTIONS /folders/get-medias [32m204[0m 6.027 ms - 0[0m
+2023-05-22 08:42:15 info: [0mPOST /folders/get-medias [32m200[0m 264.053 ms - 31[0m
+2023-05-22 08:42:15 info: [0mPOST /folders/get-medias [32m200[0m 470.372 ms - 31[0m
+2023-05-22 08:42:15 info: [0mPOST /folders/get-medias [32m200[0m 4.249 ms - 31[0m
+2023-05-22 08:42:16 info: [0mPOST /folders/get-medias [32m200[0m 7.931 ms - 31[0m
+2023-05-22 08:42:16 info: [0mPOST /folders/get-medias [32m200[0m 6.224 ms - 31[0m
+2023-05-22 08:42:16 info: [0mPOST /folders/get-medias [32m200[0m 4.785 ms - 31[0m
+2023-05-22 08:42:17 info: [0mPOST /folders/get-medias [32m200[0m 4.039 ms - 31[0m
+2023-05-22 08:42:18 info: [0mPOST /folders/get-medias [32m200[0m 67.921 ms - 31[0m
+2023-05-22 08:51:44 info: =================================
+2023-05-22 08:51:44 info: ======= ENV: development =======
+2023-05-22 08:51:44 info: 🚀 App listening on the port 8000
+2023-05-22 08:51:44 info: =================================
+2023-05-22 08:52:59 info: =================================
+2023-05-22 08:52:59 info: ======= ENV: development =======
+2023-05-22 08:52:59 info: 🚀 App listening on the port 8000
+2023-05-22 08:52:59 info: =================================
