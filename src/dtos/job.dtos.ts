@@ -32,6 +32,7 @@ export class JobDTO {
             slug: translationData.slug || "",
             expried_date: item.expried_date ? Helper.formatDayJs(item.expried_date, "YYYY/MM/DD") : null,
             description: translationData.description || "",
+            address_work: translationData.address_work || "",
             status: item.status,
             location: translationData.location,
             required: translationData.required || "",
@@ -81,7 +82,7 @@ export class JobDTO {
             status: item.status || 'inactive',
             expried_date: item.expried_date ? Helper.formatDayJs(item.expried_date, "YYYY/MM/DD") : null,
             benefit: translationData.benefit || "",
-            
+
             related: item.jobRelated.map((item) => {
                 return this.transformClient(item)
             }) || [],
