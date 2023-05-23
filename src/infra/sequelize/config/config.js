@@ -40,7 +40,7 @@ const options = {
         requestTimeout: 300000
     },
     pool: {
-        max: 15,
+        max: 30,
         min: 0,
         idle: 200000,
         acquire: 1000000,
