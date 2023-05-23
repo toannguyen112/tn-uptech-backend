@@ -1,7 +1,6 @@
 const jwt = require("jsonwebtoken");
 import bcrypt from "bcrypt";
 import dayjs from "dayjs";
-import models from "../infra/sequelize/models";
 import _ from 'lodash';
 import fs from 'fs-extra'
 export default class Helper {
