@@ -16,6 +16,7 @@ export class MediaController extends BaseController {
   }
 
   public create = async (req: Request, res: Response, next: NextFunction) => {
+
     try {
       const images = req["files"];
 

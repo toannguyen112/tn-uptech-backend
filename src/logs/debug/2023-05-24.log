@@ -1,0 +1,143 @@
+2023-05-24 13:06:11 info: =================================
+2023-05-24 13:06:11 info: ======= ENV: development =======
+2023-05-24 13:06:11 info: 🚀 App listening on the port 8000
+2023-05-24 13:06:11 info: =================================
+2023-05-24 13:06:31 info: [0mOPTIONS /admins/login [32m204[0m 2.357 ms - 0[0m
+2023-05-24 13:06:32 info: [0mPOST /admins/login [32m200[0m 877.125 ms - -[0m
+2023-05-24 13:06:33 info: [0mOPTIONS /admins/profile [32m204[0m 0.667 ms - 0[0m
+2023-05-24 13:06:33 info: [0mGET /admins/profile [32m200[0m 103.418 ms - 268[0m
+2023-05-24 13:06:35 info: [0mOPTIONS /folders/get-medias [32m204[0m 0.206 ms - 0[0m
+2023-05-24 13:06:35 info: [0mPOST /folders/get-medias [32m200[0m 88.177 ms - 629[0m
+2023-05-24 13:06:35 info: [0mGET /admins/profile [36m304[0m 111.383 ms - -[0m
+2023-05-24 13:06:35 info: [0mGET /folders [32m200[0m 101.642 ms - 291[0m
+2023-05-24 13:06:35 info: [0mGET /uploads/files-1684855815034.jpg [33m404[0m 5.444 ms - 170[0m
+2023-05-24 13:06:35 info: [0mGET /uploads/files-1684855816243.png [33m404[0m 6.724 ms - 170[0m
+2023-05-24 13:07:10 info: [0mOPTIONS /medias/delete/2 [32m204[0m 0.703 ms - 0[0m
+2023-05-24 13:07:10 info: [0mDELETE /medias/delete/2 [32m200[0m 48.695 ms - 30[0m
+2023-05-24 13:07:10 info: [0mOPTIONS /folders/get-medias [32m204[0m 0.159 ms - 0[0m
+2023-05-24 13:07:10 info: [0mPOST /folders/get-medias [32m200[0m 4.925 ms - 330[0m
+2023-05-24 13:07:11 info: [0mOPTIONS /medias/delete/1 [32m204[0m 0.266 ms - 0[0m
+2023-05-24 13:07:11 info: [0mDELETE /medias/delete/1 [32m200[0m 21.985 ms - 30[0m
+2023-05-24 13:07:11 info: [0mPOST /folders/get-medias [32m200[0m 4.250 ms - 31[0m
+2023-05-24 13:08:19 info: =================================
+2023-05-24 13:08:19 info: ======= ENV: development =======
+2023-05-24 13:08:19 info: 🚀 App listening on the port 8000
+2023-05-24 13:08:19 info: =================================
+2023-05-24 13:08:30 info: [0mOPTIONS /admins/profile [32m204[0m 2.760 ms - 0[0m
+2023-05-24 13:08:30 info: [0mOPTIONS /folders/get-medias [32m204[0m 0.406 ms - 0[0m
+2023-05-24 13:08:31 info: [0mPOST /folders/get-medias [32m200[0m 544.883 ms - 31[0m
+2023-05-24 13:08:31 info: [0mGET /folders [36m304[0m 507.883 ms - -[0m
+2023-05-24 13:08:31 info: [0mGET /admins/profile [36m304[0m 621.466 ms - -[0m
+2023-05-24 13:09:04 info: [0mOPTIONS /folders/get-medias [32m204[0m 0.231 ms - 0[0m
+2023-05-24 13:09:04 info: [0mPOST /folders/get-medias [32m200[0m 122.060 ms - 31[0m
+2023-05-24 13:09:05 info: [0mPOST /medias/create [0m-[0m - ms - -[0m
+2023-05-24 13:09:07 info: [0mOPTIONS /admins/profile [32m204[0m 0.329 ms - 0[0m
+2023-05-24 13:09:08 info: [0mGET /folders [36m304[0m 170.622 ms - -[0m
+2023-05-24 13:09:08 info: [0mPOST /folders/get-medias [32m200[0m 139.565 ms - 31[0m
+2023-05-24 13:09:08 info: [0mGET /admins/profile [36m304[0m 145.511 ms - -[0m
+2023-05-24 13:09:53 info: =================================
+2023-05-24 13:09:53 info: ======= ENV: development =======
+2023-05-24 13:09:53 info: 🚀 App listening on the port 8000
+2023-05-24 13:09:53 info: =================================
+2023-05-24 13:09:56 info: [0mOPTIONS /admins/profile [32m204[0m 2.752 ms - 0[0m
+2023-05-24 13:09:56 info: [0mOPTIONS /folders/get-medias [32m204[0m 0.349 ms - 0[0m
+2023-05-24 13:09:57 info: [0mPOST /folders/get-medias [32m200[0m 321.055 ms - 31[0m
+2023-05-24 13:09:57 info: [0mGET /folders [36m304[0m 477.752 ms - -[0m
+2023-05-24 13:09:57 info: [0mGET /admins/profile [36m304[0m 596.370 ms - -[0m
+2023-05-24 13:10:23 info: =================================
+2023-05-24 13:10:23 info: ======= ENV: development =======
+2023-05-24 13:10:23 info: 🚀 App listening on the port 8000
+2023-05-24 13:10:23 info: =================================
+2023-05-24 13:11:56 info: =================================
+2023-05-24 13:11:56 info: ======= ENV: development =======
+2023-05-24 13:11:56 info: 🚀 App listening on the port 8000
+2023-05-24 13:11:56 info: =================================
+2023-05-24 13:13:06 info: [0mPOST /medias/create [32m200[0m 6139.783 ms - 491[0m
+2023-05-24 13:13:06 info: [0mOPTIONS /folders/get-medias [32m204[0m 0.621 ms - 0[0m
+2023-05-24 13:13:07 info: [0mPOST /folders/get-medias [32m200[0m 411.373 ms - 31[0m
+2023-05-24 13:14:31 info: =================================
+2023-05-24 13:14:31 info: ======= ENV: development =======
+2023-05-24 13:14:31 info: 🚀 App listening on the port 8000
+2023-05-24 13:14:31 info: =================================
+2023-05-24 13:14:46 info: =================================
+2023-05-24 13:14:46 info: ======= ENV: development =======
+2023-05-24 13:14:46 info: 🚀 App listening on the port 8000
+2023-05-24 13:14:46 info: =================================
+2023-05-24 13:15:24 info: =================================
+2023-05-24 13:15:24 info: ======= ENV: development =======
+2023-05-24 13:15:24 info: 🚀 App listening on the port 8000
+2023-05-24 13:15:24 info: =================================
+2023-05-24 13:15:27 info: [0mOPTIONS /admins/profile [32m204[0m 2.794 ms - 0[0m
+2023-05-24 13:15:27 info: [0mOPTIONS /folders/get-medias [32m204[0m 0.383 ms - 0[0m
+2023-05-24 13:15:28 info: [0mPOST /folders/get-medias [32m200[0m 266.286 ms - 31[0m
+2023-05-24 13:15:28 info: [0mGET /admins/profile [36m304[0m 341.869 ms - -[0m
+2023-05-24 13:15:28 info: [0mGET /folders [36m304[0m 247.321 ms - -[0m
+2023-05-24 13:15:34 info: [0mOPTIONS /folders/get-medias [32m204[0m 0.131 ms - 0[0m
+2023-05-24 13:15:34 info: [0mPOST /folders/get-medias [32m200[0m 8.104 ms - 31[0m
+2023-05-24 13:15:34 info: [0mPOST /folders/get-medias [32m200[0m 2.809 ms - 31[0m
+2023-05-24 13:15:36 info: [0mOPTIONS /admins/profile [32m204[0m 5.121 ms - 0[0m
+2023-05-24 13:15:36 info: [0mPOST /folders/get-medias [32m200[0m 31.394 ms - 31[0m
+2023-05-24 13:15:36 info: [0mGET /folders [36m304[0m 80.909 ms - -[0m
+2023-05-24 13:15:36 info: [0mGET /admins/profile [36m304[0m 153.144 ms - -[0m
+2023-05-24 13:15:41 info: [0mPOST /medias/create [32m200[0m 2125.807 ms - 31[0m
+2023-05-24 13:15:41 info: [0mOPTIONS /folders/get-medias [32m204[0m 0.148 ms - 0[0m
+2023-05-24 13:15:41 info: [0mPOST /folders/get-medias [32m200[0m 14.575 ms - 358[0m
+2023-05-24 13:16:01 info: [0mOPTIONS /admins/profile [32m204[0m 1.536 ms - 0[0m
+2023-05-24 13:16:01 info: [0mGET /admins/profile [36m304[0m 170.330 ms - -[0m
+2023-05-24 13:16:01 info: [0mGET /banners? [32m200[0m 212.080 ms - -[0m
+2023-05-24 13:16:01 info: [0mGET /banners?page=1&page_size=10 [32m200[0m 51.893 ms - -[0m
+2023-05-24 13:16:04 info: [0mGET /banners/show/2 [32m200[0m 9.250 ms - 461[0m
+2023-05-24 13:16:04 info: [0mGET /admins/profile [36m304[0m 21.219 ms - -[0m
+2023-05-24 13:16:05 info: [0mOPTIONS /folders/get-medias [32m204[0m 0.330 ms - 0[0m
+2023-05-24 13:16:05 info: [0mPOST /folders/get-medias [32m200[0m 28.639 ms - 358[0m
+2023-05-24 13:16:05 info: [0mGET /folders [36m304[0m 36.614 ms - -[0m
+2023-05-24 13:16:07 info: [0mOPTIONS /banners/update/2 [32m204[0m 1.435 ms - 0[0m
+2023-05-24 13:16:07 info: [0mPUT /banners/update/2 [32m200[0m 21.663 ms - 27[0m
+2023-05-24 13:16:07 info: [0mGET /banners/show/2 [32m200[0m 27.144 ms - 784[0m
+2023-05-24 13:16:34 info: =================================
+2023-05-24 13:16:34 info: ======= ENV: development =======
+2023-05-24 13:16:34 info: 🚀 App listening on the port 8000
+2023-05-24 13:16:34 info: =================================
+2023-05-24 13:18:50 info: =================================
+2023-05-24 13:18:50 info: ======= ENV: development =======
+2023-05-24 13:18:50 info: 🚀 App listening on the port 8000
+2023-05-24 13:18:50 info: =================================
+2023-05-24 13:19:18 info: =================================
+2023-05-24 13:19:18 info: ======= ENV: development =======
+2023-05-24 13:19:18 info: 🚀 App listening on the port 8000
+2023-05-24 13:19:18 info: =================================
+2023-05-24 13:19:30 info: [0mOPTIONS /admins/profile [32m204[0m 2.539 ms - 0[0m
+2023-05-24 13:19:31 info: [0mGET /banners/show/2 [36m304[0m 208.415 ms - -[0m
+2023-05-24 13:19:31 info: [0mGET /admins/profile [36m304[0m 313.588 ms - -[0m
+2023-05-24 13:19:36 info: [0mOPTIONS /folders/get-medias [32m204[0m 0.310 ms - 0[0m
+2023-05-24 13:19:36 info: [0mOPTIONS /admins/profile [32m204[0m 0.166 ms - 0[0m
+2023-05-24 13:19:36 info: [0mGET /banners/show/2 [36m304[0m 158.494 ms - -[0m
+2023-05-24 13:19:36 info: [0mPOST /folders/get-medias [32m200[0m 104.292 ms - 358[0m
+2023-05-24 13:19:36 info: [0mGET /folders [36m304[0m 64.167 ms - -[0m
+2023-05-24 13:19:36 info: [0mGET /admins/profile [36m304[0m 74.170 ms - -[0m
+2023-05-24 13:19:45 info: [0mPOST /medias/create [32m200[0m 5933.585 ms - 31[0m
+2023-05-24 13:19:45 info: [0mOPTIONS /folders/get-medias [32m204[0m 0.122 ms - 0[0m
+2023-05-24 13:19:45 info: [0mPOST /folders/get-medias [32m200[0m 17.797 ms - -[0m
+2023-05-24 13:20:49 info: =================================
+2023-05-24 13:20:49 info: ======= ENV: development =======
+2023-05-24 13:20:49 info: 🚀 App listening on the port 8000
+2023-05-24 13:20:49 info: =================================
+2023-05-24 13:21:16 info: [0mOPTIONS /admins/profile [32m204[0m 3.753 ms - 0[0m
+2023-05-24 13:21:16 info: [0mOPTIONS /folders/get-medias [32m204[0m 0.494 ms - 0[0m
+2023-05-24 13:21:16 info: [0mGET /folders [36m304[0m 119.051 ms - -[0m
+2023-05-24 13:21:16 info: [0mPOST /folders/get-medias [32m200[0m 446.257 ms - -[0m
+2023-05-24 13:21:17 info: [0mGET /admins/profile [36m304[0m 187.148 ms - -[0m
+2023-05-24 13:21:23 info: [0mOPTIONS /folders/get-medias [32m204[0m 0.378 ms - 0[0m
+2023-05-24 13:21:24 info: [0mPOST /folders/get-medias [32m200[0m 9.345 ms - 31[0m
+2023-05-24 13:21:25 info: [0mPOST /folders/get-medias [32m200[0m 8.809 ms - -[0m
+2023-05-24 13:21:33 info: [0mPOST /medias/create [32m200[0m 2911.675 ms - 31[0m
+2023-05-24 13:21:33 info: [0mOPTIONS /folders/get-medias [32m204[0m 0.114 ms - 0[0m
+2023-05-24 13:21:33 info: [0mPOST /folders/get-medias [32m200[0m 24.015 ms - -[0m
+2023-05-24 13:22:33 info: =================================
+2023-05-24 13:22:33 info: ======= ENV: development =======
+2023-05-24 13:22:33 info: 🚀 App listening on the port 8000
+2023-05-24 13:22:33 info: =================================
+2023-05-24 13:22:53 info: =================================
+2023-05-24 13:22:53 info: ======= ENV: development =======
+2023-05-24 13:22:53 info: 🚀 App listening on the port 8000
+2023-05-24 13:22:53 info: =================================

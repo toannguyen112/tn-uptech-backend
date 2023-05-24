@@ -1,7 +1,7 @@
 import models from "../infra/sequelize/models";
 import { Media } from "../interface/media.interface";
-
 export class MediaService {
+
     public async getList(): Promise<Media[]> {
         return await models.Media.findAll({})
     }
@@ -12,7 +12,8 @@ export class MediaService {
         uploads: string = "uploads",
         disk: string = "storage",
     ): Promise<Media> {
-        const path = `/${uploads}/${image.filename}`;
+
+        const path = image.path;
         const diskPath = disk;
 
         const file = {

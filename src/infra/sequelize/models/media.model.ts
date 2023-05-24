@@ -28,9 +28,6 @@ module.exports = function (sequelize, DataTypes) {
 
             path: {
                 type: DataTypes.STRING,
-                get() {
-                    return Helper.staticUrl(this.getDataValue('path'));
-                }
             },
 
             extension: {
