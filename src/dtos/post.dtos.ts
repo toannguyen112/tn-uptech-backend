@@ -49,7 +49,7 @@ export class PostDTO {
 
             description: translationData.description || "",
             isFeatured: item.isFeatured || false,
-            posted_at: item.posted_at || null,
+            posted_at: Helper.formatDayJs(item.posted_at) || null,
             status: item.status || 'inactive',
             content: translationData.content || "",
             thumbnail: item.image || null,
@@ -79,7 +79,7 @@ export class PostDTO {
 
             content: translationData.content || "",
             banner: item.banner_image || null,
-            posted_at: item.posted_at,
+            posted_at: Helper.formatDayJs(item.posted_at) || null,
 
             related: item.postRelated.map((item) => {
                 return {

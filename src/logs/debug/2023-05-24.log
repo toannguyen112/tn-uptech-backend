@@ -141,3 +141,25 @@
 2023-05-24 13:22:53 info: ======= ENV: development =======
 2023-05-24 13:22:53 info: 🚀 App listening on the port 8000
 2023-05-24 13:22:53 info: =================================
+2023-05-24 18:33:11 info: =================================
+2023-05-24 18:33:11 info: ======= ENV: development =======
+2023-05-24 18:33:11 info: 🚀 App listening on the port 8000
+2023-05-24 18:33:11 info: =================================
+2023-05-24 18:33:14 info: [0mGET /ceos/getlistCeo [36m304[0m 418.794 ms - -[0m
+2023-05-24 18:34:24 info: [0mGET /services/nav [36m304[0m 203.442 ms - -[0m
+2023-05-24 18:34:24 info: [0mGET /posts/getListFeatured [36m304[0m 230.108 ms - -[0m
+2023-05-24 18:34:24 info: [0mGET /banners/getListBanner [32m200[0m 217.898 ms - -[0m
+2023-05-24 18:35:28 info: [0mGET /branchs/getListBranch [36m304[0m 47.032 ms - -[0m
+2023-05-24 18:35:28 info: [0mGET /services/getListService [36m304[0m 192.574 ms - -[0m
+2023-05-24 18:35:28 info: [0mGET /projects/getProjectsClient [36m304[0m 201.347 ms - -[0m
+2023-05-24 18:35:37 info: [0mGET /branchs/getListBranch [36m304[0m 351.087 ms - -[0m
+2023-05-24 18:35:37 info: [0mGET /projects/getProjectsClient [36m304[0m 384.595 ms - -[0m
+2023-05-24 18:35:37 info: [0mGET /services/getListService [36m304[0m 412.935 ms - -[0m
+2023-05-24 18:35:37 info: [0mGET /services/nav [36m304[0m 470.526 ms - -[0m
+2023-05-24 18:37:52 info: [0mGET /services/getListService [36m304[0m 190.501 ms - -[0m
+2023-05-24 18:37:52 info: [0mGET /projects/getProjectsClient [36m304[0m 185.977 ms - -[0m
+2023-05-24 18:37:52 info: [0mGET /services/nav [36m304[0m 248.891 ms - -[0m
+2023-05-24 18:37:52 info: [0mGET /branchs/getListBranch [36m304[0m 237.109 ms - -[0m
+2023-05-24 18:38:04 info: [0mGET /services/nav [36m304[0m 50.325 ms - -[0m
+2023-05-24 18:38:04 info: [0mGET /posts/getListFeatured [36m304[0m 166.058 ms - -[0m
+2023-05-24 18:38:04 info: [0mGET /banners/getListBanner [36m304[0m 209.142 ms - -[0m
