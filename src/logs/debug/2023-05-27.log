@@ -361,3 +361,11 @@
 2023-05-27 23:48:04 info: [0mGET /banners/getListBanner [36m304[0m 130.143 ms - -[0m
 2023-05-27 23:48:04 info: [0mGET /services/nav [36m304[0m 42.697 ms - -[0m
 2023-05-27 23:48:04 info: [0mGET /posts/getListFeatured [36m304[0m 150.153 ms - -[0m
+2023-05-27 23:52:33 info: [0mGET /posts/getListFeatured [36m304[0m 320.700 ms - -[0m
+2023-05-27 23:52:33 info: [0mGET /services/nav [36m304[0m 265.335 ms - -[0m
+2023-05-27 23:52:33 info: [0mGET /posts/getListFeatured [36m304[0m 87.818 ms - -[0m
+2023-05-27 23:52:33 info: [0mGET /services/nav [36m304[0m 91.078 ms - -[0m
+2023-05-27 23:53:05 info: [0mGET /services/nav [36m304[0m 46.145 ms - -[0m
+2023-05-27 23:53:05 info: [0mGET /posts/getListFeatured [36m304[0m 72.763 ms - -[0m
+2023-05-27 23:53:06 info: [0mGET /posts/getListFeatured [36m304[0m 78.174 ms - -[0m
+2023-05-27 23:53:06 info: [0mGET /services/nav [36m304[0m 187.683 ms - -[0m
