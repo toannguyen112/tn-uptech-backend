@@ -255,13 +255,11 @@ export class ProjectService {
             } : null
         }
 
-        if (query.service_id) {
-            include = [
+        include = [
                 ...include,
                 queryService
 
             ]
-        }
 
         if (query.branch_id) {
             include = [
