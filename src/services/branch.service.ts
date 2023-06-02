@@ -3,6 +3,7 @@ import models from "../infra/sequelize/models";
 import { ApiFeatures } from "../utils/ApiFeatures";
 import { Op } from "sequelize";
 import Helper from "../utils/Helper";
+import { logger } from "../utils/logger";
 export class BranchService {
 
     public getList = async (query) => {
@@ -60,7 +61,7 @@ export class BranchService {
 
             return result;
         } catch (error) {
-            console.log(error);
+            logger.error(JSON.stringify(error));
         }
     }
 
@@ -82,7 +83,7 @@ export class BranchService {
             });
 
         } catch (error) {
-            console.log(error);
+            logger.error(JSON.stringify(error));
         }
     }
 
@@ -91,23 +92,22 @@ export class BranchService {
         const t = await models.sequelize.transaction();
 
         try {
-            const branch = await models.Branch.create({ ...body },
-                { transaction: t });
-
-            for (const lang of Helper.langs) {
-                await models.BranchTranslation.create({
-                    ...body,
-                    branch_id: branch.id,
-                    locale: lang
-                }, { transaction: t });
-            }
-
-            await t.commit();
-
-            return branch;
+            models.Branch.create({ ...body },
+                { transaction: t })
+                .then(async (branch: any) => {
+                    for (const lang of Helper.langs) {
+                        
+                        await models.BranchTranslation.create({
+                            ...body,
+                            branch_id: branch.id,
+                            locale: lang
+                        }, { transaction: t });
+                    }
+                    await t.commit();
+                });
 
         } catch (error) {
-            console.log(error);
+            logger.error(JSON.stringify(error));
             await t.rollback();
         }
     }
@@ -132,7 +132,7 @@ export class BranchService {
         return BranchDTO.transformDetail(branch);
     }
 
-    public updateById = async (id: string, body) => {
+    public updateById = async (id: string | number, body) => {
 
         delete body.id;
 
@@ -154,7 +154,7 @@ export class BranchService {
 
                     await t.commit();
                 } catch (error) {
-                    console.log(error);
+                    logger.error(JSON.stringify(error));
                     await t.rollback();
                 }
             });
@@ -162,7 +162,7 @@ export class BranchService {
         return branch;
     }
 
-    public deleteById = async (id: string) => {
+    public deleteById = async (id: string | number) => {
         return await models.Branch.destroy({ where: { id } });
     }
 

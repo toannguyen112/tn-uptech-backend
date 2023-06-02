@@ -1,0 +1,132 @@
+2023-06-02 12:14:09 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/services/branch.service.ts[0m:[93m95[0m:[93m42[0m - [91merror[0m[90m TS2304: [0mCannot find name 'async'.
+
+[7m95[0m                 { transaction: t }).then(async (res))=>{
+[7m  [0m [91m                                         ~~~~~[0m
+[96msrc/services/branch.service.ts[0m:[93m95[0m:[93m49[0m - [91merror[0m[90m TS2304: [0mCannot find name 'res'.
+
+[7m95[0m                 { transaction: t }).then(async (res))=>{
+[7m  [0m [91m                                                ~~~[0m
+[96msrc/services/branch.service.ts[0m:[93m95[0m:[93m54[0m - [91merror[0m[90m TS1005: [0m';' expected.
+
+[7m95[0m                 { transaction: t }).then(async (res))=>{
+[7m  [0m [91m                                                     ~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/services/branch.service.ts[0m:[93m95[0m:[93m42[0m - [91merror[0m[90m TS2304: [0mCannot find name 'async'.
+
+[7m95[0m                 { transaction: t }).then(async (res))=>{
+[7m  [0m [91m                                         ~~~~~[0m
+[96msrc/services/branch.service.ts[0m:[93m95[0m:[93m49[0m - [91merror[0m[90m TS2304: [0mCannot find name 'res'.
+
+[7m95[0m                 { transaction: t }).then(async (res))=>{
+[7m  [0m [91m                                                ~~~[0m
+[96msrc/services/branch.service.ts[0m:[93m95[0m:[93m54[0m - [91merror[0m[90m TS1005: [0m';' expected.
+
+[7m95[0m                 { transaction: t }).then(async (res))=>{
+[7m  [0m [91m                                                     ~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1250:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1074:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:909:12)
+    at Module.require (node:internal/modules/cjs/loader:1098:19)
+2023-06-02 12:14:42 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/services/branch.service.ts[0m:[93m97[0m:[93m17[0m - [91merror[0m[90m TS1308: [0m'await' expressions are only allowed within async functions and at the top levels of modules.
+
+[7m97[0m                 await models.BranchTranslation.create({
+[7m  [0m [91m                ~~~~~[0m
+
+  [96msrc/services/branch.service.ts[0m:[93m95[0m:[93m42[0m
+    [7m95[0m                 { transaction: t }).then((res)=>{
+    [7m  [0m [96m                                         ~~~~~~~~[0m
+    Did you mean to mark this function as 'async'?
+[96msrc/services/branch.service.ts[0m:[93m104[0m:[93m13[0m - [91merror[0m[90m TS1308: [0m'await' expressions are only allowed within async functions and at the top levels of modules.
+
+[7m104[0m             await t.commit();
+[7m   [0m [91m            ~~~~~[0m
+
+  [96msrc/services/branch.service.ts[0m:[93m95[0m:[93m42[0m
+    [7m95[0m                 { transaction: t }).then((res)=>{
+    [7m  [0m [96m                                         ~~~~~~~~[0m
+    Did you mean to mark this function as 'async'?
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/services/branch.service.ts[0m:[93m97[0m:[93m17[0m - [91merror[0m[90m TS1308: [0m'await' expressions are only allowed within async functions and at the top levels of modules.
+
+[7m97[0m                 await models.BranchTranslation.create({
+[7m  [0m [91m                ~~~~~[0m
+
+  [96msrc/services/branch.service.ts[0m:[93m95[0m:[93m42[0m
+    [7m95[0m                 { transaction: t }).then((res)=>{
+    [7m  [0m [96m                                         ~~~~~~~~[0m
+    Did you mean to mark this function as 'async'?
+[96msrc/services/branch.service.ts[0m:[93m104[0m:[93m13[0m - [91merror[0m[90m TS1308: [0m'await' expressions are only allowed within async functions and at the top levels of modules.
+
+[7m104[0m             await t.commit();
+[7m   [0m [91m            ~~~~~[0m
+
+  [96msrc/services/branch.service.ts[0m:[93m95[0m:[93m42[0m
+    [7m95[0m                 { transaction: t }).then((res)=>{
+    [7m  [0m [96m                                         ~~~~~~~~[0m
+    Did you mean to mark this function as 'async'?
+
+    at createTSError (/Users/toannguyen/Documents/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1250:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1074:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:909:12)
+    at Module.require (node:internal/modules/cjs/loader:1098:19)
+2023-06-02 12:16:05 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/services/branch.service.ts[0m:[93m101[0m:[93m40[0m - [91merror[0m[90m TS2304: [0mCannot find name 'branch'.
+
+[7m101[0m                             branch_id: branch.id,
+[7m   [0m [91m                                       ~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/services/branch.service.ts[0m:[93m101[0m:[93m40[0m - [91merror[0m[90m TS2304: [0mCannot find name 'branch'.
+
+[7m101[0m                             branch_id: branch.id,
+[7m   [0m [91m                                       ~~~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1250:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1074:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:909:12)
+    at Module.require (node:internal/modules/cjs/loader:1098:19)
+2023-06-02 12:17:30 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/services/branch.service.ts[0m:[93m101[0m:[93m40[0m - [91merror[0m[90m TS2304: [0mCannot find name 'branch'.
+
+[7m101[0m                             branch_id: branch.id,
+[7m   [0m [91m                                       ~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/services/branch.service.ts[0m:[93m101[0m:[93m40[0m - [91merror[0m[90m TS2304: [0mCannot find name 'branch'.
+
+[7m101[0m                             branch_id: branch.id,
+[7m   [0m [91m                                       ~~~~~~[0m
+
+    at createTSError (/Users/toannguyen/Documents/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Documents/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Documents/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Documents/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Documents/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1250:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Documents/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1074:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:909:12)
+    at Module.require (node:internal/modules/cjs/loader:1098:19)

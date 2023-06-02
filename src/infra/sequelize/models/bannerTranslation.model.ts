@@ -20,7 +20,6 @@ module.exports = function (sequelize, DataTypes) {
 
             locale: {
                 type: DataTypes.STRING,
-                defaultValue: "vi",
                 allowNull: false,
             },
 

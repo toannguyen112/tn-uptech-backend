@@ -1,8 +1,0 @@
-2023-06-01 09:51:02 info: =================================
-2023-06-01 09:51:02 info: ======= ENV: development =======
-2023-06-01 09:51:02 info: 🚀 App listening on the port 8000
-2023-06-01 09:51:02 info: =================================
-2023-06-01 09:51:15 info: [0mGET /banners/getListBanner [36m304[0m 500.731 ms - -[0m
-2023-06-01 09:51:15 info: [0mGET /posts/getListFeatured [36m304[0m 498.880 ms - -[0m
-2023-06-01 09:51:15 info: [0mGET /services/nav [36m304[0m 579.294 ms - -[0m
-2023-06-01 09:51:15 info: [0mGET /services/nav [36m304[0m 48.317 ms - -[0m
