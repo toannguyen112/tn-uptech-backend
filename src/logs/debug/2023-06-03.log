@@ -1,0 +1,43 @@
+2023-06-03 02:30:18 info: =================================
+2023-06-03 02:30:18 info: ======= ENV: development =======
+2023-06-03 02:30:18 info: 🚀 App listening on the port 8000
+2023-06-03 02:30:18 info: =================================
+2023-06-03 02:31:02 info: [0mOPTIONS /admins/login [32m204[0m 1.701 ms - 0[0m
+2023-06-03 02:31:02 info: [0mPOST /admins/login [32m200[0m 228.185 ms - -[0m
+2023-06-03 02:31:03 info: [0mOPTIONS /admins/profile [32m204[0m 0.577 ms - 0[0m
+2023-06-03 02:31:03 info: [0mGET /admins/profile [36m304[0m 318.407 ms - -[0m
+2023-06-03 02:33:47 info: [0mOPTIONS /admins/profile [32m204[0m 27.435 ms - 0[0m
+2023-06-03 02:33:48 info: [0mGET /admins/profile [36m304[0m 528.655 ms - -[0m
+2023-06-03 02:33:58 info: [0mOPTIONS /admins/profile [32m204[0m 0.989 ms - 0[0m
+2023-06-03 02:33:58 info: [0mGET /admins/profile [36m304[0m 158.592 ms - -[0m
+2023-06-03 02:34:51 info: [0mOPTIONS /admins/profile [32m204[0m 10.835 ms - 0[0m
+2023-06-03 02:34:51 info: [0mGET /admins/profile [36m304[0m 105.527 ms - -[0m
+2023-06-03 02:35:36 info: [0mOPTIONS /admins/profile [32m204[0m 0.894 ms - 0[0m
+2023-06-03 02:35:37 info: [0mGET /admins/profile [36m304[0m 230.486 ms - -[0m
+2023-06-03 02:37:39 info: [0mOPTIONS /admins/profile [32m204[0m 2.092 ms - 0[0m
+2023-06-03 02:37:39 info: [0mGET /admins/profile [36m304[0m 94.457 ms - -[0m
+2023-06-03 02:37:45 info: [0mOPTIONS /admins/profile [32m204[0m 1.555 ms - 0[0m
+2023-06-03 02:37:46 info: [0mGET /admins/profile [36m304[0m 116.254 ms - -[0m
+2023-06-03 02:38:01 info: [0mOPTIONS /admins/profile [32m204[0m 2.313 ms - 0[0m
+2023-06-03 02:38:01 info: [0mGET /admins/profile [36m304[0m 51.179 ms - -[0m
+2023-06-03 02:38:23 info: [0mOPTIONS /admins/profile [32m204[0m 5.648 ms - 0[0m
+2023-06-03 02:38:24 info: [0mGET /admins/profile [36m304[0m 221.923 ms - -[0m
+2023-06-03 02:38:26 info: [0mGET /admins/profile [36m304[0m 73.268 ms - -[0m
+2023-06-03 02:41:14 info: [0mOPTIONS /admins/profile [32m204[0m 1.655 ms - 0[0m
+2023-06-03 02:41:14 info: [0mGET /admins/profile [36m304[0m 346.608 ms - -[0m
+2023-06-03 02:43:38 info: [0mOPTIONS /admins/profile [32m204[0m 2.350 ms - 0[0m
+2023-06-03 02:43:38 info: [0mGET /admins/profile [36m304[0m 136.861 ms - -[0m
+2023-06-03 02:44:22 info: [0mOPTIONS /admins/profile [32m204[0m 0.889 ms - 0[0m
+2023-06-03 02:44:22 info: [0mGET /admins/profile [36m304[0m 52.644 ms - -[0m
+2023-06-03 02:56:19 info: [0mOPTIONS /admins/profile [32m204[0m 5.084 ms - 0[0m
+2023-06-03 02:56:20 info: [0mGET /admins/profile [36m304[0m 261.552 ms - -[0m
+2023-06-03 02:56:35 info: [0mOPTIONS /admins/profile [32m204[0m 1.394 ms - 0[0m
+2023-06-03 02:56:35 info: [0mGET /admins/profile [36m304[0m 84.119 ms - -[0m
+2023-06-03 02:56:44 info: [0mOPTIONS /admins/profile [32m204[0m 0.921 ms - 0[0m
+2023-06-03 02:56:44 info: [0mGET /admins/profile [36m304[0m 58.058 ms - -[0m
+2023-06-03 03:05:00 info: [0mOPTIONS /admins/profile [32m204[0m 4.581 ms - 0[0m
+2023-06-03 03:05:01 info: [0mGET /admins/profile [36m304[0m 624.101 ms - -[0m
+2023-06-03 03:05:17 info: [0mOPTIONS /admins/profile [32m204[0m 8.890 ms - 0[0m
+2023-06-03 03:05:17 info: [0mGET /admins/profile [36m304[0m 162.922 ms - -[0m
+2023-06-03 03:07:57 info: [0mOPTIONS /admins/profile [32m204[0m 2.112 ms - 0[0m
+2023-06-03 03:07:57 info: [0mGET /admins/profile [36m304[0m 440.156 ms - -[0m

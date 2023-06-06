@@ -180,3 +180,13 @@
 2023-06-02 12:27:55 info: [0mGET /admins/profile [36m304[0m 237.492 ms - -[0m
 2023-06-02 12:27:56 info: [0mGET /branchs?page=1&page_size=10 [36m304[0m 158.081 ms - -[0m
 2023-06-02 12:27:56 info: [0mGET /branchs?page=1&page_size=10 [36m304[0m 36.530 ms - -[0m
+2023-06-02 12:43:34 info: =================================
+2023-06-02 12:43:34 info: ======= ENV: development =======
+2023-06-02 12:43:34 info: 🚀 App listening on the port 8000
+2023-06-02 12:43:34 info: =================================
+2023-06-02 12:43:52 info: [0mGET /banners/getListBanner [36m304[0m 543.284 ms - -[0m
+2023-06-02 12:43:52 info: [0mGET /posts/getListFeatured [36m304[0m 549.861 ms - -[0m
+2023-06-02 12:43:52 info: [0mGET /services/nav [36m304[0m 629.926 ms - -[0m
+2023-06-02 12:43:52 info: [0mGET /services/nav [36m304[0m 57.316 ms - -[0m
+2023-06-02 12:49:31 info: [0mOPTIONS /admins/profile [32m204[0m 2.450 ms - 0[0m
+2023-06-02 12:49:31 info: [0mGET /admins/profile [36m304[0m 221.766 ms - -[0m
