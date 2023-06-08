@@ -14,6 +14,11 @@ module.exports = function (sequelize, DataTypes) {
                 type: DataTypes.STRING,
             },
 
+            status: {
+                type: String,
+                default: "active",
+            },
+
             createdAt: {
                 type: DataTypes.DATE,
                 defaultValue: new Date(),

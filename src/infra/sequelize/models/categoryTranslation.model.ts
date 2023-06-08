@@ -56,5 +56,9 @@ module.exports = function (sequelize, DataTypes) {
         category.slug = Helper.renderSlug(category.name);
     });
 
+    CategoryTranslation.afterSave(async (category, options) => {
+        category.slug = Helper.renderSlug(category.name);
+    });
+
     return CategoryTranslation;
 };
