@@ -104,6 +104,11 @@ export class BannerService {
                         required: false,
                     },
                     {
+                        model: models.Media,
+                        as: "image_mobile",
+                        required: false,
+                    },
+                    {
                         model: models.BannerTranslation,
                         as: "translations",
                         required: true,
@@ -130,6 +135,7 @@ export class BannerService {
             const banner = await models.Banner.create({
                 ...body,
                 thumbnail: body.thumbnail ? body.thumbnail.id : null,
+                thumbnail_mobile: body.thumbnail_mobile ? body.thumbnail_mobile.id : null,
             }, { transaction: t });
 
             for (const lang of Helper.langs) {
@@ -158,6 +164,11 @@ export class BannerService {
                     required: false,
                 },
                 {
+                    model: models.Media,
+                    as: "image_mobile",
+                    required: false,
+                },
+                {
                     model: models.BannerTranslation,
                     as: "translations",
                     required: true,
@@ -181,6 +192,7 @@ export class BannerService {
         return await models.Banner.update({
             status: body.status,
             thumbnail: body.thumbnail ? body.thumbnail.id : null,
+            thumbnail_mobile: body.thumbnail_mobile ? body.thumbnail_mobile.id : null,
         }, { where: { id } },
         )
             .then(async (res) => {

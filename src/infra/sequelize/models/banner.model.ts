@@ -19,6 +19,14 @@ module.exports = function (sequelize, DataTypes) {
                 },
             },
 
+            thumbnail_mobile: {
+                type: DataTypes.INTEGER,
+                references: {
+                    model: "medias",
+                    key: "id",
+                },
+            },
+
             status: {
                 type: DataTypes.STRING,
                 allowNull: true,
@@ -53,9 +61,15 @@ module.exports = function (sequelize, DataTypes) {
     );
 
     Banner.associate = function (models) {
+
         Banner.belongsTo(models.Media, {
             as: 'image',
             foreignKey: "thumbnail"
+        });
+
+        Banner.belongsTo(models.Media, {
+            as: 'image_mobile',
+            foreignKey: "thumbnail_mobile"
         });
 
         Banner.hasMany(models.BannerTranslation, {

@@ -12,10 +12,10 @@ export class BannerDTO {
             type: translationData.type || "",
             description: translationData.description || "",
             thumbnail: item.image || null,
+            thumbnail_mobile: item.image_mobile || null,
             createdAt: item.createdAt,
             updatedAt: item.updatedAt,
         }
-
     }
 
     static transformDetail = (item) => {
@@ -29,8 +29,9 @@ export class BannerDTO {
             sub_name: translationData.sub_name || "",
             type: translationData.type || "",
             description: translationData.description || "",
-            
+
             thumbnail: item.image || null,
+            thumbnail_mobile: item.image_mobile || null,
             status: item.status,
             createdAt: item.createdAt,
             updatedAt: item.updatedAt,
