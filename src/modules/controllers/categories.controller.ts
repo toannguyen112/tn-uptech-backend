@@ -39,7 +39,7 @@ export class CategoryController {
 
     public async show(req: Request, res: Response, next: NextFunction) {
         try {
-            const data = await category.findById(req.params.id);
+            const data = await category.show(req.params.id);
             res.status(200).send({ message: "ok", data });
         } catch (error) {
             console.log(error);

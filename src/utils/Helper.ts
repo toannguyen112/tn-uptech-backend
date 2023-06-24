@@ -96,7 +96,7 @@ export default class Helper {
 
   static FieldsSeo(item: ISEO) {
     return {
-      slug: item.slug || "",
+      slug: item.slug ? item.slug : item.custom_slug,
       custom_slug: item.custom_slug || "",
       meta_title: item.meta_title || "",
       meta_description: item.meta_description || "",

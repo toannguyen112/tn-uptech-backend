@@ -144,7 +144,7 @@ export class CategoryService {
             });
     }
 
-    public findById = async (id) => {
+    public show = async (id) => {
         const res = await models.Category.findOne({
             where: { id },
             include: [
@@ -157,7 +157,7 @@ export class CategoryService {
             ]
         });
 
-        return CategoryDTO.transform(res);
+        return CategoryDTO.transformDetails(res);
     }
 
     public updateById = async (id, body: any) => {
@@ -186,6 +186,7 @@ export class CategoryService {
                     await t.rollback();
                 }
             }).catch(async (error) => {
+                console.log(error);
                 await t.rollback();
             });
     }
