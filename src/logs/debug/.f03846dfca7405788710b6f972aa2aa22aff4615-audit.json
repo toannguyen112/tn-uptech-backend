@@ -1,0 +1,15 @@
+{
+    "keep": {
+        "days": false,
+        "amount": 30
+    },
+    "auditLog": "/Users/toannguyen/Library/Mobile Documents/com~apple~CloudDocs/.Trash/Documents/tn-uptech-backend/src/logs/debug/.f03846dfca7405788710b6f972aa2aa22aff4615-audit.json",
+    "files": [
+        {
+            "date": 1687590434914,
+            "name": "/Users/toannguyen/Library/Mobile Documents/com~apple~CloudDocs/.Trash/Documents/tn-uptech-backend/src/logs/debug/2023-06-24.log",
+            "hash": "5f31dd1e39b94fecfb390954cb01d7390222baf1e6ab6b83149814754ace3930"
+        }
+    ],
+    "hashType": "sha256"
+}

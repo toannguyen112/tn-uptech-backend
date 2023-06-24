@@ -591,6 +591,7 @@ export class PostService {
     public updateById = async (id, body) => {
 
         delete body.id;
+        delete body.posted_at;
 
         const t = await models.sequelize.transaction();
 
@@ -618,6 +619,7 @@ export class PostService {
                 await t.commit();
 
             }).catch(async (error) => {
+                console.log(error);
                 await t.rollback();
             });
     }

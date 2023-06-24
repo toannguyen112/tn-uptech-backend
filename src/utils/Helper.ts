@@ -1,12 +1,24 @@
 const jwt = require("jsonwebtoken");
+import slugify from 'slugify';
 import bcrypt from "bcrypt";
 import dayjs from "dayjs";
 import _ from 'lodash';
 import fs from 'fs-extra'
+interface ISEO {
+  slug: string
+  custom_slug: string
+  meta_title: string
+  meta_description: string
+  meta_keyword: string
+  meta_robots: string
+  canonica_link: string
+  meta_image: string
+  meta_viewport: string
+}
 export default class Helper {
 
   public static langs = ['vi', 'en', 'ja'];
-  
+
   static randomString(length: number): string {
     var result: string = "";
     var characters: string = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
@@ -67,22 +79,22 @@ export default class Helper {
     return `<div>${data}</div>`;
   }
 
-  static renderSlug(slug: string) {
-    return slug.toString()
-      .normalize('NFD')
-      .replace(/[\u0300-\u036f]/g, '')
-      .toLowerCase()
-      .trim()
-      .replace(/\s+/g, '-')
-      .replace(/[^\w-]+/g, '')
-      .replace(/--+/g, '-')
+  static renderSlug(slug: string, options?: any) {
+    return slugify(slug, {
+      replacement: '-',  // replace spaces with replacement character, defaults to `-`
+      remove: undefined, // remove characters that match regex, defaults to `undefined`
+      lower: true,      // convert to lower case, defaults to `false`
+      strict: false,     // strip special characters except replacement, defaults to `false`
+      locale: 'vi',      // language code of the locale to use
+      trim: true         // trim leading and trailing replacement chars, defaults to `true`
+    });
   }
 
   static async hashPassword(password: string = "123", number: number = 8) {
     return await bcrypt.hash(password, number);
   }
 
-  static FieldsSeo(item) {
+  static FieldsSeo(item: ISEO) {
     return {
       slug: item.slug || "",
       custom_slug: item.custom_slug || "",
