@@ -14,7 +14,7 @@ const storage = new CloudinaryStorage({
         folder: (req, file) => {
             return '/Uptech'
         },
-        allowedFormats: ['jpeg', 'png', 'jpg'],
+        allowedFormats: ['jpeg', 'png', 'jpg', 'webp'],
     }
 });
 
