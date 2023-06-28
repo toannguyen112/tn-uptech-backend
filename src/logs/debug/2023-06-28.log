@@ -173,3 +173,54 @@
 2023-06-28 21:20:19 info: 🚀 App listening on the port 8000
 2023-06-28 21:20:19 info: =================================
 2023-06-28 21:20:30 info: [0mGET /posts [32m200[0m 634.001 ms - -[0m
+2023-06-28 21:26:56 info: [0mOPTIONS /banners/get-list [32m204[0m 9.339 ms - 0[0m
+2023-06-28 21:26:56 info: [0mOPTIONS /products/getProductByType/isGift [32m204[0m 1.509 ms - 0[0m
+2023-06-28 21:26:57 info: [0mOPTIONS /categories/nav [32m204[0m 2.475 ms - 0[0m
+2023-06-28 21:26:57 info: [0mOPTIONS /products/getProductByType/isSale [32m204[0m 0.162 ms - 0[0m
+2023-06-28 21:26:57 info: [0mOPTIONS /brands/get-list-featured [32m204[0m 0.156 ms - 0[0m
+2023-06-28 21:26:57 info: [0mGET /brands/get-list-featured [33m404[0m 15.095 ms - 163[0m
+2023-06-28 21:26:57 info: [0mOPTIONS /products/getProductByType/isNew [32m204[0m 1.183 ms - 0[0m
+2023-06-28 21:26:57 info: [0mOPTIONS /products/getProductByType/isTopSearch [32m204[0m 0.211 ms - 0[0m
+2023-06-28 21:26:57 info: [0mGET /products/getProductByType/isNew [33m404[0m 12.160 ms - 170[0m
+2023-06-28 21:26:57 info: [0mGET /banners/get-list [33m404[0m 4.075 ms - 155[0m
+2023-06-28 21:26:57 info: [0mGET /categories/nav [33m404[0m 7.324 ms - 153[0m
+2023-06-28 21:26:57 info: [0mGET /products/getProductByType/isGift [33m404[0m 3.768 ms - 171[0m
+2023-06-28 21:26:57 info: [0mGET /products/getProductByType/isTopSearch [33m404[0m 3.712 ms - 176[0m
+2023-06-28 21:26:57 info: [0mGET /products/getProductByType/isSale [33m404[0m 19.125 ms - 171[0m
+2023-06-28 21:26:58 info: [0mOPTIONS /brands/get-list-featured [32m204[0m 0.503 ms - 0[0m
+2023-06-28 21:26:58 info: [0mOPTIONS /products/getProductByType/isNew [32m204[0m 0.171 ms - 0[0m
+2023-06-28 21:26:58 info: [0mOPTIONS /categories/nav [32m204[0m 1.633 ms - 0[0m
+2023-06-28 21:26:58 info: [0mGET /brands/get-list-featured [33m404[0m 5.344 ms - 163[0m
+2023-06-28 21:26:58 info: [0mGET /banners/get-list [33m404[0m 8.696 ms - 155[0m
+2023-06-28 21:26:58 info: [0mOPTIONS /products/getProductByType/isSale [32m204[0m 0.143 ms - 0[0m
+2023-06-28 21:26:58 info: [0mOPTIONS /products/getProductByType/isTopSearch [32m204[0m 0.345 ms - 0[0m
+2023-06-28 21:26:58 info: [0mGET /products/getProductByType/isGift [33m404[0m 3.369 ms - 171[0m
+2023-06-28 21:26:58 info: [0mGET /categories/nav [33m404[0m 4.997 ms - 153[0m
+2023-06-28 21:26:58 info: [0mGET /products/getProductByType/isNew [33m404[0m 6.392 ms - 170[0m
+2023-06-28 21:26:58 info: [0mGET /products/getProductByType/isSale [33m404[0m 39.997 ms - 171[0m
+2023-06-28 21:26:58 info: [0mGET /products/getProductByType/isTopSearch [33m404[0m 12.401 ms - 176[0m
+2023-06-28 21:27:00 info: [0mGET /brands/get-list-featured [33m404[0m 2.041 ms - 163[0m
+2023-06-28 21:27:00 info: [0mGET /banners/get-list [33m404[0m 1.576 ms - 155[0m
+2023-06-28 21:27:00 info: [0mGET /products/getProductByType/isGift [33m404[0m 2.433 ms - 171[0m
+2023-06-28 21:27:00 info: [0mGET /categories/nav [33m404[0m 26.592 ms - 153[0m
+2023-06-28 21:27:00 info: [0mGET /products/getProductByType/isNew [33m404[0m 27.629 ms - 170[0m
+2023-06-28 21:27:00 info: [0mGET /products/getProductByType/isSale [33m404[0m 25.815 ms - 171[0m
+2023-06-28 21:27:00 info: [0mGET /products/getProductByType/isTopSearch [33m404[0m 4.243 ms - 176[0m
+2023-06-28 21:27:14 info: [0mOPTIONS /products/getProductByType/isNew [32m204[0m 2.137 ms - 0[0m
+2023-06-28 21:27:14 info: [0mOPTIONS /products/getProductByType/isGift [32m204[0m 0.206 ms - 0[0m
+2023-06-28 21:27:14 info: [0mOPTIONS /categories/nav [32m204[0m 0.206 ms - 0[0m
+2023-06-28 21:27:14 info: [0mOPTIONS /banners/get-list [32m204[0m 0.146 ms - 0[0m
+2023-06-28 21:27:14 info: [0mOPTIONS /brands/get-list-featured [32m204[0m 0.134 ms - 0[0m
+2023-06-28 21:27:14 info: [0mOPTIONS /products/getProductByType/isTopSearch [32m204[0m 0.466 ms - 0[0m
+2023-06-28 21:27:14 info: [0mOPTIONS /products/getProductByType/isSale [32m204[0m 13.979 ms - 0[0m
+2023-06-28 21:27:14 info: [0mGET /products/getProductByType/isNew [33m404[0m 14.729 ms - 170[0m
+2023-06-28 21:27:14 info: [0mGET /products/getProductByType/isGift [33m404[0m 6.789 ms - 171[0m
+2023-06-28 21:27:14 info: [0mGET /categories/nav [33m404[0m 7.495 ms - 153[0m
+2023-06-28 21:27:14 info: [0mGET /banners/get-list [33m404[0m 11.615 ms - 155[0m
+2023-06-28 21:27:14 info: [0mGET /brands/get-list-featured [33m404[0m 12.202 ms - 163[0m
+2023-06-28 21:27:14 info: [0mGET /products/getProductByType/isTopSearch [33m404[0m 1.826 ms - 176[0m
+2023-06-28 21:27:14 info: [0mGET /products/getProductByType/isSale [33m404[0m 0.748 ms - 171[0m
+2023-06-28 21:28:21 info: =================================
+2023-06-28 21:28:21 info: ======= ENV: development =======
+2023-06-28 21:28:21 info: 🚀 App listening on the port 8000
+2023-06-28 21:28:21 info: =================================
