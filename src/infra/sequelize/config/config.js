@@ -18,10 +18,10 @@ const databaseCredentials = {
         dialect: "mysql",
     },
     production: {
-        username: DB_USER,
-        password: DB_PASS,
-        database: DB_NAME,
-        host: DB_HOST,
+        username: "subhdkdm",
+        password: "Pham18051987!!@#",
+        database: "subhdkdm",
+        host: 3306,
         dialect: "mysql",
     },
 };
@@ -64,5 +64,5 @@ console.log(database);
 console.log(username);
 console.log(password);
 
-module.exports.connection = new Sequelize(database, username, password, options);
+module.exports.connection = new Sequelize("subhdkdm", "subhdkdm", "Pham18051987!!@#", options);
 
