@@ -1,17 +1,9 @@
 require("dotenv").config();
 const Sequelize = require("sequelize");
-// const Logger = require("../../../utils/logger");
 
 const { DB_USER, DB_PASS, DB_HOST, DB_NAME } = process.env;
 const databaseCredentials = {
     development: {
-        username: DB_USER,
-        password: DB_PASS,
-        database: DB_NAME,
-        host: DB_HOST,
-        dialect: "mysql",
-    },
-    test: {
         username: DB_USER,
         password: DB_PASS,
         database: DB_NAME,
