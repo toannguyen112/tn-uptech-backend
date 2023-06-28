@@ -3,12 +3,6 @@ const Sequelize = require("sequelize");
 
 const { NODE_ENV, DB_USER, DB_PASS, DB_HOST, DB_NAME } = process.env;
 
-// console.log(NODE_ENV);
-// console.log(DB_NAME);
-// console.log(DB_USER);
-// console.log(DB_PASS);
-// console.log(DB_HOST);
-
 const databaseCredentials = {
     development: {
         username: DB_USER,
@@ -28,8 +22,6 @@ const databaseCredentials = {
 const { username, password, database, host, dialect } = NODE_ENV === 'production'
     ? databaseCredentials.production
     : databaseCredentials.development;
-
-module.exports = databaseCredentials;
 
 const options = {
     host,
@@ -59,6 +51,10 @@ if (process.env.NODE_ENV === "development" || process.env.NODE_ENV === "producti
         rejectUnauthorized: false,
     };
 }
+
+console.log(database);
+console.log(username);
+console.log(password);
 
 module.exports.connection = new Sequelize(database, username, password, options);
 

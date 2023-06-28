@@ -84,3 +84,27 @@ TSError: ⨯ Unable to compile TypeScript:
     at Module.load (node:internal/modules/cjs/loader:1076:32)
     at Function.Module._load (node:internal/modules/cjs/loader:911:12)
     at Module.require (node:internal/modules/cjs/loader:1100:19)
+2023-06-28 19:06:59 error: uncaughtException: host is not defined
+ReferenceError: host is not defined
+    at Object.<anonymous> (/Users/toannguyen/Desktop/tn-uptech-backend/src/infra/sequelize/config/config.js:25:5)
+    at Module._compile (node:internal/modules/cjs/loader:1198:14)
+    at Module.m._compile (/Users/toannguyen/Desktop/tn-uptech-backend/node_modules/ts-node/src/index.ts:1618:23)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1252:10)
+    at Object.require.extensions.<computed> [as .js] (/Users/toannguyen/Desktop/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1076:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:911:12)
+    at Module.require (node:internal/modules/cjs/loader:1100:19)
+    at require (node:internal/modules/cjs/helpers:108:18)
+    at Object.<anonymous> (/Users/toannguyen/Desktop/tn-uptech-backend/src/infra/sequelize/models/index.ts:5:1)
+2023-06-28 19:07:42 error: uncaughtException: dialect is not defined
+ReferenceError: dialect is not defined
+    at Object.<anonymous> (/Users/toannguyen/Desktop/tn-uptech-backend/src/infra/sequelize/config/config.js:26:5)
+    at Module._compile (node:internal/modules/cjs/loader:1198:14)
+    at Module.m._compile (/Users/toannguyen/Desktop/tn-uptech-backend/node_modules/ts-node/src/index.ts:1618:23)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1252:10)
+    at Object.require.extensions.<computed> [as .js] (/Users/toannguyen/Desktop/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1076:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:911:12)
+    at Module.require (node:internal/modules/cjs/loader:1100:19)
+    at require (node:internal/modules/cjs/helpers:108:18)
+    at Object.<anonymous> (/Users/toannguyen/Desktop/tn-uptech-backend/src/infra/sequelize/models/index.ts:5:1)
