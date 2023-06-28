@@ -60,9 +60,5 @@ if (process.env.NODE_ENV === "development" || process.env.NODE_ENV === "producti
     };
 }
 
-console.log(database);
-console.log(username);
-console.log(password);
-
-module.exports.connection = new Sequelize("subhdkdm", "subhdkdm", "Pham18051987!!@#", options);
+module.exports.connection = new Sequelize(database, username, password, options);
 
