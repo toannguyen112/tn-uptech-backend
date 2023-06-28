@@ -3,11 +3,11 @@ const Sequelize = require("sequelize");
 
 const { NODE_ENV, DB_USER, DB_PASS, DB_HOST, DB_NAME } = process.env;
 
-console.log(NODE_ENV);
-console.log(DB_NAME);
-console.log(DB_USER);
-console.log(DB_PASS);
-console.log(DB_HOST);
+// console.log(NODE_ENV);
+// console.log(DB_NAME);
+// console.log(DB_USER);
+// console.log(DB_PASS);
+// console.log(DB_HOST);
 
 const databaseCredentials = {
     development: {
@@ -25,7 +25,9 @@ const databaseCredentials = {
         dialect: "mysql",
     },
 };
-const { username, password, database, host, dialect } = databaseCredentials.development;
+const { username, password, database, host, dialect } = NODE_ENV === 'production'
+    ? databaseCredentials.production
+    : databaseCredentials.development;
 
 module.exports = databaseCredentials;
 
