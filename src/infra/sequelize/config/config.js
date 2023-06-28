@@ -19,6 +19,7 @@ const databaseCredentials = {
         dialect: "mysql",
     },
 };
+
 const { username, password, database, host, dialect } = databaseCredentials.development;
 
 module.exports = databaseCredentials;

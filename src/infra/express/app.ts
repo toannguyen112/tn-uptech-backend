@@ -1,3 +1,5 @@
+require("dotenv").config();
+
 import 'reflect-metadata';
 import { ErrorMiddleware } from "../../middlewares/error.middleware";
 import compression from 'compression';
