@@ -18,10 +18,10 @@ const databaseCredentials = {
         dialect: "mysql",
     },
     production: {
-        username: DB_USER,
-        password: DB_PASS,
-        database: DB_NAME,
-        host: DB_HOST,
+        username: "subhdkdm",
+        password: "Pham18051987!!@#",
+        database: "subhdkdm",
+        host: 3306,
         dialect: "mysql",
     },
 };
