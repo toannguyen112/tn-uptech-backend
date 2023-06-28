@@ -5,6 +5,8 @@ import winstonDaily from 'winston-daily-rotate-file';
 // import { LOG_DIR } from '../config';
 import 'dotenv/config'
 
+console.log(process.env.LOG_DIR);
+
 const logDir: string = join(__dirname, process.env.LOG_DIR);
 
 if (!existsSync(logDir)) {
