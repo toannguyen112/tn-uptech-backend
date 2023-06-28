@@ -1,32 +1,11 @@
 require("dotenv").config();
 const Sequelize = require("sequelize");
 
-const { NODE_ENV, DB_USER, DB_PASS, DB_HOST, DB_NAME } = process.env;
-
-const databaseCredentials = {
-    development: {
-        username: DB_USER,
-        password: DB_PASS,
-        database: DB_NAME,
-        host: DB_HOST,
-        dialect: "mysql",
-    },
-    production: {
-        username: DB_USER,
-        password: DB_PASS,
-        database: DB_NAME,
-        host: DB_HOST,
-        dialect: "mysql",
-    },
-};
-
-const { username, password, database, host, dialect } = databaseCredentials.development;
-
-module.exports = databaseCredentials;
+const { DB_USER, DB_PASS, DB_HOST, DB_NAME } = process.env;
 
 const options = {
-    host,
-    dialect,
+    host: DB_HOST,
+    dialect: "mysql",
     port: 3306,
     dialectOptions: {
         multipleStatements: true,
@@ -53,5 +32,9 @@ if (process.env.NODE_ENV === "development" || process.env.NODE_ENV === "producti
     };
 }
 
-module.exports.connection = new Sequelize(database, username, password, options);
+module.exports.connection = new Sequelize(
+    DB_NAME,
+    DB_USER,
+    DB_PASS,
+    options);
 

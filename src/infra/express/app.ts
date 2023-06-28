@@ -49,7 +49,6 @@ export class App {
         return this.app;
     }
 
-
     private initializeMiddlewares() {
         this.app.use(LangMiddleware);
         this.app.use(express.static("storage"));
