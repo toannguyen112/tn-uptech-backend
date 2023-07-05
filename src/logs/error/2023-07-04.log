@@ -1,0 +1,24 @@
+2023-07-04 17:53:01 error: uncaughtException: listen EADDRINUSE: address already in use :::8000
+Error: listen EADDRINUSE: address already in use :::8000
+    at Server.setupListenHandle [as _listen2] (node:net:1463:16)
+    at listenInCluster (node:net:1511:12)
+    at Server.listen (node:net:1599:7)
+    at Function.listen (/Users/toannguyen/Desktop/tn-uptech-backend/node_modules/express/lib/application.js:635:24)
+    at App.listen (/Users/toannguyen/Desktop/tn-uptech-backend/src/infra/express/app.ts:39:33)
+    at Object.<anonymous> (/Users/toannguyen/Desktop/tn-uptech-backend/src/server.ts:37:5)
+    at Module._compile (node:internal/modules/cjs/loader:1198:14)
+    at Module.m._compile (/Users/toannguyen/Desktop/tn-uptech-backend/node_modules/ts-node/src/index.ts:1618:23)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1252:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Desktop/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+2023-07-04 17:53:46 error: uncaughtException: listen EADDRINUSE: address already in use :::8000
+Error: listen EADDRINUSE: address already in use :::8000
+    at Server.setupListenHandle [as _listen2] (node:net:1463:16)
+    at listenInCluster (node:net:1511:12)
+    at Server.listen (node:net:1599:7)
+    at Function.listen (/Users/toannguyen/Desktop/tn-uptech-backend/node_modules/express/lib/application.js:635:24)
+    at App.listen (/Users/toannguyen/Desktop/tn-uptech-backend/src/infra/express/app.ts:39:33)
+    at Object.<anonymous> (/Users/toannguyen/Desktop/tn-uptech-backend/src/server.ts:37:5)
+    at Module._compile (node:internal/modules/cjs/loader:1198:14)
+    at Module.m._compile (/Users/toannguyen/Desktop/tn-uptech-backend/node_modules/ts-node/src/index.ts:1618:23)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1252:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Desktop/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)

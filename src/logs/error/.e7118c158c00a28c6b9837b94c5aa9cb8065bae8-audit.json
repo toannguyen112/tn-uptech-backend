@@ -14,6 +14,21 @@
             "date": 1687938534728,
             "name": "/Users/toannguyen/Desktop/tn-uptech-backend/src/logs/error/2023-06-28.log",
             "hash": "2e6192fb5999697dc2ecd8b807c97fa5569722996bcfc254eebbe53c80341250"
+        },
+        {
+            "date": 1687973995758,
+            "name": "/Users/toannguyen/Desktop/tn-uptech-backend/src/logs/error/2023-06-29.log",
+            "hash": "c581d9404b064a57c762241b06ec41d6f1e69fea8c6bea21c9e6eed3d35fd016"
+        },
+        {
+            "date": 1688198954367,
+            "name": "/Users/toannguyen/Desktop/tn-uptech-backend/src/logs/error/2023-07-01.log",
+            "hash": "ef3b03b4239ad108ac2eed5c8d3184e3c44209a0d79164bb7f5659ac7b616716"
+        },
+        {
+            "date": 1688467977488,
+            "name": "/Users/toannguyen/Desktop/tn-uptech-backend/src/logs/error/2023-07-04.log",
+            "hash": "ba66e398fc1bedf484964a68b6572ec6813b6dbb9f33adaefcb62e68fc78b152"
         }
     ],
     "hashType": "sha256"
