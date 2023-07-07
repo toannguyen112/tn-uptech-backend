@@ -88,7 +88,7 @@ export class JobService {
     public getListFeatured = async () => {
         try {
             const rows = await models.Job.findAll({
-                where: { isFeatured: true },
+                where: { status: 'active' },
                 include: {
                     model: models.JobTranslation,
                     as: "translations",
