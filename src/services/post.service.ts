@@ -220,12 +220,12 @@ export class PostService {
                 postLatest: postLatest ? PostDTO.transform(postLatest) : null,
                 category: category ? CategoryDTO.transform(category) : null,
                 postMostView: postMostView ? PostDTO.transform(postMostView) : null,
-                postsOfCategory: postsOfCategory.map((item) => {
+                postsOfCategory: postsOfCategory ? postsOfCategory.map((item) => {
                     return PostDTO.transform(item);
-                }),
-                postsMore: postsMore.map((item: any) => {
+                }) : null,
+                postsMore: postsMore ? postsMore.map((item: any) => {
                     return PostDTO.transform(item);
-                }),
+                }) : null,
             };
         } catch (error) {
             console.log(error);

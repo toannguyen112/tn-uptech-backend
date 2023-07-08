@@ -1,0 +1,30 @@
+2023-07-07 17:06:02 info: =================================
+2023-07-07 17:06:02 info: ======= ENV: development =======
+2023-07-07 17:06:02 info: 🚀 App listening on the port 8000
+2023-07-07 17:06:02 info: =================================
+2023-07-07 17:06:24 info: [0mGET /posts/getListFeatured [32m200[0m 504.075 ms - 843[0m
+2023-07-07 17:06:24 info: [0mGET /banners/getListBanner [32m200[0m 542.641 ms - -[0m
+2023-07-07 17:06:24 info: [0mGET /services/nav [32m200[0m 515.696 ms - -[0m
+2023-07-07 17:06:27 info: [0mGET /services/nav [32m200[0m 129.741 ms - -[0m
+2023-07-07 17:06:40 info: [0mGET /posts/getListFeatured [32m200[0m 20.556 ms - 843[0m
+2023-07-07 17:06:40 info: [0mGET /banners/getListBanner [32m200[0m 52.906 ms - -[0m
+2023-07-07 17:06:40 info: [0mGET /services/nav [32m200[0m 34.901 ms - -[0m
+2023-07-07 17:06:41 info: [0mGET /services/nav [36m304[0m 21.589 ms - -[0m
+2023-07-07 17:07:49 info: [0mGET /services/nav [36m304[0m 208.162 ms - -[0m
+2023-07-07 17:08:05 info: [0mGET /services/nav [36m304[0m 448.339 ms - -[0m
+2023-07-07 17:08:24 info: [0mGET /services/nav [36m304[0m 42.117 ms - -[0m
+2023-07-07 17:08:26 info: [0mGET /banners/getListBanner [32m200[0m 39.574 ms - -[0m
+2023-07-07 17:08:26 info: [0mGET /posts/getListFeatured [32m200[0m 83.526 ms - 843[0m
+2023-07-07 17:08:26 info: [0mGET /services/nav [32m200[0m 94.065 ms - -[0m
+2023-07-07 17:08:29 info: [0mGET /services/nav [36m304[0m 43.467 ms - -[0m
+2023-07-07 17:08:48 info: [0mGET /services/nav [36m304[0m 42.550 ms - -[0m
+2023-07-07 17:08:56 info: [0mGET /posts/getListFeatured [32m200[0m 19.814 ms - 843[0m
+2023-07-07 17:08:56 info: [0mGET /banners/getListBanner [32m200[0m 22.764 ms - -[0m
+2023-07-07 17:08:56 info: [0mGET /services/nav [32m200[0m 25.831 ms - -[0m
+2023-07-07 17:08:58 info: [0mGET /services/nav [36m304[0m 38.479 ms - -[0m
+2023-07-07 17:09:35 info: [0mGET /banners/getListBanner [32m200[0m 41.226 ms - -[0m
+2023-07-07 17:09:35 info: [0mGET /posts/getListFeatured [32m200[0m 68.332 ms - 843[0m
+2023-07-07 17:09:35 info: [0mGET /services/nav [32m200[0m 61.025 ms - -[0m
+2023-07-07 17:09:39 info: [0mGET /services/nav [36m304[0m 81.718 ms - -[0m
+2023-07-07 17:10:44 info: [0mGET /services/nav [36m304[0m 462.195 ms - -[0m
+2023-07-07 17:10:49 info: [0mGET /services/nav [36m304[0m 173.301 ms - -[0m
