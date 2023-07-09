@@ -1,4 +1,5 @@
 import Helper from "../utils/Helper";
+import { MediaDTO } from "./media.dtos";
 export class PostDTO {
     static transform = (item: any) => {
 
@@ -26,7 +27,7 @@ export class PostDTO {
             description: translationData.description || "",
             isFeatured: item.isFeatured,
             status: item.status,
-            thumbnail: item.image || null,
+            thumbnail: MediaDTO.transform(item.image) || null,
             createdAt: item.createdAt,
             updatedAt: item.updatedAt,
         }
@@ -51,7 +52,7 @@ export class PostDTO {
             posted_at: Helper.formatDayJs(item.posted_at) || null,
             status: item.status || 'inactive',
             content: translationData.content || "",
-            thumbnail: item.image || null,
+            thumbnail: MediaDTO.transform(item.image) || null,
             banner: item.banner_image || null,
             related: item.related || [],
 
@@ -86,7 +87,7 @@ export class PostDTO {
                     name: item.translations[0].name,
                     category_slug: item.category ? item.category.translations[0].slug : "",
                     slug: item.translations[0].slug,
-                    thumbnail: item.image ?? null,
+                    thumbnail: MediaDTO.transform(item.image) ?? null,
                 }
             }) || [],
 
@@ -96,7 +97,7 @@ export class PostDTO {
                     name: item.translations[0].name,
                     category_slug: item.category ? item.category.translations[0].slug : "",
                     slug: item.translations[0].slug,
-                    thumbnail: item.image ?? null,
+                    thumbnail: MediaDTO.transform(item.image) ?? null,
                 }
             }) || [],
 
