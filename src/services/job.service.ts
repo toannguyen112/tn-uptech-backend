@@ -231,6 +231,7 @@ export class JobService {
                                 where: { job_id: id, locale: global.lang },
                                 individualHooks: true,
                             },
+                            { transaction: t }
                         );
                     } catch (error) {
                         console.log(error);
@@ -244,11 +245,6 @@ export class JobService {
             console.log(error);
             await t.rollback();
         }
-    }
-
-    public handleUpdate = async (job_id, lang = "vi", body) => {
-
-
     }
 
     public deleteById = async (id: string) => {

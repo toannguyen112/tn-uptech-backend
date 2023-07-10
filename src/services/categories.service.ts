@@ -178,7 +178,8 @@ export class CategoryService {
                         where: {
                             category_id: id,
                             locale: global.lang
-                        }
+                        },
+                        individualHooks: true
                     },
                         { transaction: t });
                 } catch (error) {

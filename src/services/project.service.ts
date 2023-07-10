@@ -256,10 +256,10 @@ export class ProjectService {
         }
 
         include = [
-                ...include,
-                queryService
+            ...include,
+            queryService
 
-            ]
+        ]
 
         if (query.branch_id) {
             include = [
@@ -405,8 +405,6 @@ export class ProjectService {
     public updateById = async (id: string, body) => {
 
         delete body.id;
-
-        console.log(body);
 
         const t = await models.sequelize.transaction();
 

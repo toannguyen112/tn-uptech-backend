@@ -100,10 +100,6 @@ module.exports = function (sequelize, DataTypes) {
         });
     }
 
-    PostTranslation.beforeSave(async (post, options) => {
-        post.slug = Helper.renderSlug(post.name);
-    });
-
     PostTranslation.afterSave(async (post, options) => {
         post.slug = Helper.renderSlug(post.name);
     });

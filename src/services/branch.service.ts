@@ -96,7 +96,7 @@ export class BranchService {
                 { transaction: t })
                 .then(async (branch: any) => {
                     for (const lang of Helper.langs) {
-                        
+
                         await models.BranchTranslation.create({
                             ...body,
                             branch_id: branch.id,
@@ -149,8 +149,11 @@ export class BranchService {
                             where: {
                                 branch_id: id,
                                 locale: global.lang
-                            }
-                        });
+                            },
+                            individualHooks: true
+                        },
+                        { transaction: t }
+                    );
 
                     await t.commit();
                 } catch (error) {
