@@ -1,0 +1,36 @@
+2023-07-11 00:27:36 info: [0mGET /services/show/5 [32m200[0m 1127.758 ms - -[0m
+2023-07-11 00:27:48 info: [0mGET /services/nav [32m200[0m 288.496 ms - -[0m
+2023-07-11 00:27:48 info: [0mGET /services/show/undefined [36m304[0m 408.820 ms - -[0m
+2023-07-11 00:36:45 info: [0mGET /banners/getListBanner [32m200[0m 280.322 ms - 2634[0m
+2023-07-11 00:36:45 info: [0mGET /services/nav [32m200[0m 174.979 ms - 1883[0m
+2023-07-11 00:36:45 info: [0mGET /posts/getListFeatured [32m200[0m 373.998 ms - 2730[0m
+2023-07-11 00:36:57 info: [0mGET /services/show/5 [32m200[0m 137.498 ms - 380[0m
+2023-07-11 00:37:57 info: [0mGET /services/show/11 [32m200[0m 80.582 ms - 422[0m
+2023-07-11 00:37:59 info: [0mGET /services/show/5 [36m304[0m 55.094 ms - -[0m
+2023-07-11 00:38:04 info: [0mGET /services/show/11 [36m304[0m 76.157 ms - -[0m
+2023-07-11 01:08:08 info: =================================
+2023-07-11 01:08:08 info: ======= ENV: development =======
+2023-07-11 01:08:08 info: 🚀 App listening on the port 8000
+2023-07-11 01:08:08 info: =================================
+2023-07-11 01:08:11 info: [0mGET /banners/getListBanner [32m200[0m 383.127 ms - 3100[0m
+2023-07-11 01:08:11 info: [0mGET /services/nav [32m200[0m 402.257 ms - 1882[0m
+2023-07-11 01:08:11 info: [0mGET /posts/getListFeatured [32m200[0m 498.200 ms - 4011[0m
+2023-07-11 01:08:13 info: [0mGET /services/nav [32m200[0m 40.642 ms - -[0m
+2023-07-11 01:08:20 info: [0mGET /services/show/15 [32m200[0m 83.218 ms - -[0m
+2023-07-11 01:08:57 info: [0mGET /services/nav [36m304[0m 35.191 ms - -[0m
+2023-07-11 01:08:57 info: [0mGET /services/show/undefined [36m304[0m 33.623 ms - -[0m
+2023-07-11 01:09:00 info: [0mGET /services/show/15 [36m304[0m 11.873 ms - -[0m
+2023-07-11 01:09:24 info: [0mGET /services/show/undefined [36m304[0m 11.861 ms - -[0m
+2023-07-11 01:09:24 info: [0mGET /services/nav [36m304[0m 70.770 ms - -[0m
+2023-07-11 01:09:26 info: [0mGET /services/show/15 [36m304[0m 11.322 ms - -[0m
+2023-07-11 01:10:36 info: [0mGET /services/nav [36m304[0m 47.531 ms - -[0m
+2023-07-11 01:10:36 info: [0mGET /services/show/undefined [36m304[0m 31.850 ms - -[0m
+2023-07-11 01:10:37 info: [0mGET /services/show/15 [36m304[0m 7.291 ms - -[0m
+2023-07-11 01:11:14 info: [0mGET /services/show/undefined [36m304[0m 13.711 ms - -[0m
+2023-07-11 01:11:14 info: [0mGET /services/nav [36m304[0m 98.784 ms - -[0m
+2023-07-11 01:11:16 info: [0mGET /services/show/15 [36m304[0m 45.947 ms - -[0m
+2023-07-11 01:11:16 info: [0mGET /services/getListService [36m304[0m 75.480 ms - -[0m
+2023-07-11 01:34:31 info: =================================
+2023-07-11 01:34:31 info: ======= ENV: development =======
+2023-07-11 01:34:31 info: 🚀 App listening on the port 8000
+2023-07-11 01:34:31 info: =================================
