@@ -30,7 +30,7 @@ export class JobDTO {
             id: item.id,
             name: translationData.name || "",
             slug: translationData.slug || "",
-            expried_date: item.expried_date ? Helper.formatDayJs(item.expried_date, "YYYY/MM/DD") : null,
+            expried_date: item.expried_date ? Helper.formatDayJs(item.expried_date) : null,
             description: translationData.description || "",
             address_work: translationData.address_work || "",
             status: item.status,
@@ -56,7 +56,7 @@ export class JobDTO {
             location: translationData.location || "",
             view: item.view || 0,
             status: item.status || 'inactive',
-            expried_date: item.expried_date ? Helper.formatDayJs(item.expried_date, "YYYY/MM/DD") : null,
+            expried_date: item.expried_date ? Helper.formatDayJs(item.expried_date) : null,
             benefit: translationData.benefit || "",
             related: item.related || [],
 
