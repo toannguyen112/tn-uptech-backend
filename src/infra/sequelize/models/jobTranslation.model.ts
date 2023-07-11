@@ -112,7 +112,7 @@ module.exports = function (sequelize, DataTypes) {
         });
     }
 
-    JobTranslation.beforeSave(async (job, options) => {
+    JobTranslation.afterSave(async (job, options) => {
         job.slug = Helper.renderSlug(job.name);
     });
 

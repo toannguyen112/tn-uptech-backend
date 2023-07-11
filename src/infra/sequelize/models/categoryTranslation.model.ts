@@ -52,10 +52,6 @@ module.exports = function (sequelize, DataTypes) {
         });
     }
 
-    CategoryTranslation.beforeSave(async (category, options) => {
-        category.slug = Helper.renderSlug(category.name);
-    });
-
     CategoryTranslation.afterSave(async (category, options) => {
         category.slug = Helper.renderSlug(category.name);
     });

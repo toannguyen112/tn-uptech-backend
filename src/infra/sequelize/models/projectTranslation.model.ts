@@ -128,7 +128,7 @@ module.exports = function (sequelize, DataTypes) {
         });
     }
 
-    ProjectTranslation.beforeSave(async (project, options) => {
+    ProjectTranslation.afterSave(async (project, options) => {
         project.slug = Helper.renderSlug(project.name);
     });
 
