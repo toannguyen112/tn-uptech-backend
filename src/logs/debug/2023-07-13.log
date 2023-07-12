@@ -382,3 +382,20 @@
 2023-07-13 01:58:03 info: ======= ENV: development =======
 2023-07-13 01:58:03 info: 🚀 App listening on the port 8000
 2023-07-13 01:58:03 info: =================================
+2023-07-13 01:58:33 info: [0mGET /services/nav [36m304[0m 466.654 ms - -[0m
+2023-07-13 01:58:34 info: [0mGET /categories/getListCategories [32m200[0m 53.381 ms - 430[0m
+2023-07-13 01:58:35 info: [0mGET /posts/getPageAll [32m200[0m 514.405 ms - 7879[0m
+2023-07-13 01:58:38 error: {}
+2023-07-13 01:58:38 info: [0mGET /posts/findByIdClient/13 [32m200[0m 127.220 ms - 16[0m
+2023-07-13 01:58:44 info: [0mGET /categories/getListCategories [32m200[0m 28.194 ms - 430[0m
+2023-07-13 01:58:44 info: [0mGET /posts/getPageAll [32m200[0m 134.744 ms - 7879[0m
+2023-07-13 01:58:48 error: {}
+2023-07-13 01:58:48 info: [0mGET /posts/findByIdClient/13 [36m304[0m 81.074 ms - -[0m
+2023-07-13 01:58:56 info: [0mGET /categories/getListCategories [32m200[0m 27.422 ms - 430[0m
+2023-07-13 01:58:56 info: [0mGET /posts/getPageAll [32m200[0m 383.052 ms - 7879[0m
+2023-07-13 01:59:08 error: {}
+2023-07-13 01:59:08 info: [0mGET /posts/findByIdClient/13 [36m304[0m 117.888 ms - -[0m
+2023-07-13 01:59:47 info: =================================
+2023-07-13 01:59:47 info: ======= ENV: development =======
+2023-07-13 01:59:47 info: 🚀 App listening on the port 8000
+2023-07-13 01:59:47 info: =================================
