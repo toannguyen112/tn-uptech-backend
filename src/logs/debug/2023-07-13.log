@@ -864,3 +864,20 @@
 2023-07-13 03:16:26 info: ======= ENV: development =======
 2023-07-13 03:16:26 info: 🚀 App listening on the port 8000
 2023-07-13 03:16:26 info: =================================
+2023-07-13 03:24:14 info: [0mGET /jobs/getListFeatured [36m304[0m 1833.100 ms - -[0m
+2023-07-13 03:24:20 info: [0mGET /jobs/find/5 [32m200[0m 186.783 ms - -[0m
+2023-07-13 03:24:29 info: [0mGET /banners/getListBanner [32m200[0m 90.280 ms - 3100[0m
+2023-07-13 03:24:29 info: [0mGET /services/nav [32m200[0m 113.444 ms - 1882[0m
+2023-07-13 03:24:29 info: [0mGET /posts/getListFeatured [32m200[0m 441.285 ms - 4011[0m
+2023-07-13 03:24:31 info: [0mGET /banners/getListBanner [32m200[0m 41.138 ms - 2804[0m
+2023-07-13 03:24:31 info: [0mGET /services/nav [32m200[0m 52.702 ms - 1835[0m
+2023-07-13 03:24:31 info: [0mGET /posts/getListFeatured [32m200[0m 89.203 ms - 3775[0m
+2023-07-13 03:24:34 info: [0mGET /services/nav [32m200[0m 84.944 ms - -[0m
+2023-07-13 03:24:36 info: [0mGET /jobs/getListFeatured [32m200[0m 84.857 ms - -[0m
+2023-07-13 03:24:40 info: [0mGET /jobs/find/3 [32m200[0m 16.659 ms - -[0m
+2023-07-13 03:25:36 info: [0mGET /jobs/getListFeatured [36m304[0m 130.143 ms - -[0m
+2023-07-13 03:26:11 info: [0mGET /jobs/getListFeatured [32m200[0m 377.263 ms - -[0m
+2023-07-13 03:26:11 info: [0mGET /services/nav [32m200[0m 571.698 ms - -[0m
+2023-07-13 03:27:15 info: [0mGET /jobs/find/3 [32m200[0m 1152.507 ms - -[0m
+2023-07-13 03:27:27 info: [0mGET /jobs/find/3 [36m304[0m 85.030 ms - -[0m
+2023-07-13 03:27:33 info: [0mGET /services/nav [32m200[0m 619.187 ms - -[0m
