@@ -494,7 +494,6 @@ export class PostService {
                             {
                                 model: models.CeoTranslation,
                                 as: "translations",
-                                required: true,
                                 where: {
                                     locale: global.lang,
                                 }
@@ -510,6 +509,8 @@ export class PostService {
             });
 
             let postRelated = [];
+
+            console.log(post);
 
             if (post.related && post.related.length) {
                 postRelated = await models.Post.findAll({
