@@ -95,7 +95,8 @@ export class PostDTO {
                 return {
                     id: item.id,
                     name: item.translations[0].name,
-                    description: item.translationData[0].description || '',
+                    description: item.translationData && item.translationData[0].description
+                        ? item.translationData[0].description : "",
                     category_slug: item.category ? item.category.translations[0].slug : "",
                     slug: item.translations[0].slug,
                     thumbnail: MediaDTO.transform(item.image) ?? null,
