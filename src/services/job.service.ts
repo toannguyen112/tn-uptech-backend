@@ -76,7 +76,7 @@ export class JobService {
                 pageSize: Number(query?.page_size) * 1,
                 pageCount: Math.ceil(count / Number(query?.page_size) * 1),
                 totalItems: count || 0,
-                data: rows.map((item: any) => JobDTO.transform(item)),
+                data: rows.map((item: any) => item),
             };
 
             return result;
@@ -181,8 +181,10 @@ export class JobService {
         let jobRelated = [];
 
         if (job.related && job.related.length) {
+
             jobRelated = await models.Job.findAll({
                 where: {
+                    status: 'active',
                     id: {
                         [Op.in]: job.related
                     }
@@ -191,10 +193,8 @@ export class JobService {
                     {
                         model: models.JobTranslation,
                         as: "translations",
-                        required: true,
                         where: {
                             locale: global.lang,
-                            job_id: id
                         }
                     },
                 ]

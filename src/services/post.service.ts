@@ -524,7 +524,6 @@ export class PostService {
                         {
                             model: models.PostTranslation,
                             as: "translations",
-                            required: true,
                             where: {
                                 locale: global.lang,
                             }
@@ -540,7 +539,6 @@ export class PostService {
                             include: {
                                 model: models.CategoryTranslation,
                                 as: "translations",
-                                required: true,
                                 where: { locale: global.lang }
                             }
                         },

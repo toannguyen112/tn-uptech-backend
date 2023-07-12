@@ -11,8 +11,6 @@ export class JobDTO {
             name: translationData.name || "",
             slug: translationData.slug || "",
             expried_date: item.expried_date ? Helper.formatDayJs(item.expried_date) : null,
-            description: translationData.description || "",
-            isFeatured: item.isFeatured,
             status: item.status,
 
             createdAt: item.createdAt,
