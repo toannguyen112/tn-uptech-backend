@@ -93,13 +93,10 @@ export class PostDTO {
 
             posts: item.posts.map((item) => {
 
-                console.log(item.translations[0]);
-
                 return {
                     id: item.id,
                     name: item.translations[0].name,
-                    description: item.translationData && item.translationData[0] ? item.translationData[0].description
-                        : "",
+                    description: item.translations[0] && item.translations[0].description ? item.translations[0].description : "",
                     category_slug: item.category ? item.category.translations[0].slug : "",
                     slug: item.translations[0].slug,
                     thumbnail: MediaDTO.transform(item.image) ?? null,

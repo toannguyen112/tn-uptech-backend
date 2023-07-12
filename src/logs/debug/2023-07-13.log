@@ -652,3 +652,57 @@
 2023-07-13 02:25:36 error: {}
 2023-07-13 02:25:36 info: [0mGET /posts/findByIdClient/9 [36m304[0m 227.431 ms - -[0m
 2023-07-13 02:26:00 info: [0mGET /posts/findByIdClient/9 [32m200[0m 343.449 ms - -[0m
+2023-07-13 02:26:59 info: [0mGET /categories/getListCategories [32m200[0m 204.692 ms - 441[0m
+2023-07-13 02:26:59 info: [0mGET /posts/getPageAll [32m200[0m 927.168 ms - 10136[0m
+2023-07-13 02:27:00 info: [0mGET /posts/findByIdClient/9 [32m200[0m 390.998 ms - -[0m
+2023-07-13 02:27:07 info: [0mGET /posts/findByIdClient/13 [36m304[0m 252.738 ms - -[0m
+2023-07-13 02:27:36 info: =================================
+2023-07-13 02:27:36 info: ======= ENV: development =======
+2023-07-13 02:27:36 info: 🚀 App listening on the port 8000
+2023-07-13 02:27:36 info: =================================
+2023-07-13 02:27:46 info: [0mGET /posts/findByIdClient/9 [32m200[0m 570.703 ms - -[0m
+2023-07-13 02:28:08 info: =================================
+2023-07-13 02:28:08 info: ======= ENV: development =======
+2023-07-13 02:28:08 info: 🚀 App listening on the port 8000
+2023-07-13 02:28:08 info: =================================
+2023-07-13 02:28:12 info: [0mGET /posts/findByIdClient/9 [36m304[0m 625.782 ms - -[0m
+2023-07-13 02:28:34 info: =================================
+2023-07-13 02:28:34 info: ======= ENV: development =======
+2023-07-13 02:28:34 info: 🚀 App listening on the port 8000
+2023-07-13 02:28:34 info: =================================
+2023-07-13 02:28:49 info: [0mGET /posts/findByIdClient/9 [32m200[0m 389.898 ms - -[0m
+2023-07-13 02:29:07 info: =================================
+2023-07-13 02:29:07 info: ======= ENV: development =======
+2023-07-13 02:29:07 info: 🚀 App listening on the port 8000
+2023-07-13 02:29:07 info: =================================
+2023-07-13 02:29:07 info: [0mGET /posts/findByIdClient/9 [0m-[0m - ms - -[0m
+2023-07-13 02:29:08 info: [0mGET /posts/findByIdClient/9 [32m200[0m 209.506 ms - -[0m
+2023-07-13 02:29:15 info: [0mGET /services/nav [36m304[0m 467.066 ms - -[0m
+2023-07-13 02:29:18 info: [0mGET /banners/getListBanner [32m200[0m 49.291 ms - 3100[0m
+2023-07-13 02:29:18 info: [0mGET /services/nav [32m200[0m 137.428 ms - 1882[0m
+2023-07-13 02:29:18 info: [0mGET /posts/getListFeatured [32m200[0m 324.529 ms - 4011[0m
+2023-07-13 02:29:20 info: [0mGET /categories/getListCategories [32m200[0m 29.023 ms - 441[0m
+2023-07-13 02:29:20 info: [0mGET /posts/getPageAll [32m200[0m 230.911 ms - 10136[0m
+2023-07-13 02:29:23 info: [0mGET /posts/findByIdClient/9 [32m200[0m 110.988 ms - -[0m
+2023-07-13 02:30:04 info: =================================
+2023-07-13 02:30:04 info: ======= ENV: development =======
+2023-07-13 02:30:04 info: 🚀 App listening on the port 8000
+2023-07-13 02:30:04 info: =================================
+2023-07-13 02:30:06 info: [0mGET /banners/getListBanner [32m200[0m 301.332 ms - 3100[0m
+2023-07-13 02:30:06 info: [0mGET /services/nav [32m200[0m 273.954 ms - 1882[0m
+2023-07-13 02:30:06 info: [0mGET /posts/getListFeatured [32m200[0m 369.637 ms - 4011[0m
+2023-07-13 02:30:08 info: [0mGET /services/nav [36m304[0m 88.568 ms - -[0m
+2023-07-13 02:30:09 info: [0mGET /categories/getListCategories [32m200[0m 25.954 ms - 441[0m
+2023-07-13 02:30:10 info: [0mGET /posts/getPageAll [32m200[0m 555.623 ms - 10136[0m
+2023-07-13 02:30:13 info: [0mGET /posts/findByIdClient/5 [32m200[0m 132.616 ms - -[0m
+2023-07-13 02:30:24 info: [0mOPTIONS /admins/profile [32m204[0m 0.423 ms - 0[0m
+2023-07-13 02:30:24 info: [0mGET /posts/show/9 [36m304[0m 378.672 ms - -[0m
+2023-07-13 02:30:25 info: [0mGET /admins/profile [36m304[0m 611.445 ms - -[0m
+2023-07-13 02:30:25 info: [0mGET /posts? [32m200[0m 755.734 ms - -[0m
+2023-07-13 02:30:25 info: [0mGET /posts?page=1&page_size=10 [32m200[0m 295.154 ms - -[0m
+2023-07-13 02:30:31 info: [0mOPTIONS /admins/profile [32m204[0m 4.249 ms - 0[0m
+2023-07-13 02:30:31 info: [0mGET /posts/show/5 [32m200[0m 108.449 ms - -[0m
+2023-07-13 02:30:31 info: [0mGET /admins/profile [36m304[0m 462.365 ms - -[0m
+2023-07-13 02:30:31 info: [0mGET /categories?[object%20Object] [36m304[0m 125.030 ms - -[0m
+2023-07-13 02:30:32 info: [0mGET /ceos?[object%20Object] [36m304[0m 223.130 ms - -[0m
+2023-07-13 02:30:32 info: [0mGET /posts?[object%20Object] [32m200[0m 437.505 ms - -[0m

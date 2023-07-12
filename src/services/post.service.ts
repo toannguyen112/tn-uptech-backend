@@ -510,8 +510,6 @@ export class PostService {
 
             let postRelated = [];
 
-            console.log(post);
-
             if (post.related && post.related.length) {
                 postRelated = await models.Post.findAll({
                     where: {
