@@ -504,7 +504,6 @@ export class PostService {
                     {
                         model: models.PostTranslation,
                         as: "translations",
-                        required: true,
                         where: { locale: global.lang }
                     },
                 ]

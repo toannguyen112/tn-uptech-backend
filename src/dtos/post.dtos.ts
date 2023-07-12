@@ -81,7 +81,7 @@ export class PostDTO {
             banner: item.banner_image || null,
             posted_at: Helper.formatDayJs(item.posted_at) || null,
 
-            related: item.postRelated.map((item) => {
+            related: item.postRelated ? item.postRelated.map((item) => {
                 return {
                     id: item.id,
                     name: item.translations[0].name,
@@ -89,14 +89,17 @@ export class PostDTO {
                     slug: item.translations[0].slug,
                     thumbnail: MediaDTO.transform(item.image) ?? null,
                 }
-            }) || [],
+            }) : [],
 
             posts: item.posts.map((item) => {
+
+                console.log(item.translations[0]);
+
                 return {
                     id: item.id,
                     name: item.translations[0].name,
-                    description: item.translationData && item.translationData[0].description
-                        ? item.translationData[0].description : "",
+                    description: item.translationData && item.translationData[0] ? item.translationData[0].description
+                        : "",
                     category_slug: item.category ? item.category.translations[0].slug : "",
                     slug: item.translations[0].slug,
                     thumbnail: MediaDTO.transform(item.image) ?? null,
