@@ -76,7 +76,7 @@ export class JobService {
                 pageSize: Number(query?.page_size) * 1,
                 pageCount: Math.ceil(count / Number(query?.page_size) * 1),
                 totalItems: count || 0,
-                data: rows.map((item: any) => item),
+                data: rows.map((item: any) => JobDTO.transform(item)),
             };
 
             return result;
