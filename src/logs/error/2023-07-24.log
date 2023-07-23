@@ -152,3 +152,461 @@ TSError: ⨯ Unable to compile TypeScript:
     at Module.load (node:internal/modules/cjs/loader:1076:32)
     at Function.Module._load (node:internal/modules/cjs/loader:911:12)
     at Module.require (node:internal/modules/cjs/loader:1100:19)
+2023-07-24 00:49:34 error: {}
+2023-07-24 00:49:34 error: {}
+2023-07-24 00:49:34 error: {}
+2023-07-24 00:50:08 error: {}
+2023-07-24 00:50:08 error: {}
+2023-07-24 00:50:19 error: {}
+2023-07-24 00:50:19 error: {}
+2023-07-24 01:38:50 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/route/media.route.ts[0m:[93m20[0m:[93m89[0m - [91merror[0m[90m TS2339: [0mProperty 'uploadCv' does not exist on type 'MediaController'.
+
+[7m20[0m         this.router.post(`${this.path}/uploadCv`, uploadCloud.array("file"), this.media.uploadCv);
+[7m  [0m [91m                                                                                        ~~~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/route/media.route.ts[0m:[93m20[0m:[93m89[0m - [91merror[0m[90m TS2339: [0mProperty 'uploadCv' does not exist on type 'MediaController'.
+
+[7m20[0m         this.router.post(`${this.path}/uploadCv`, uploadCloud.array("file"), this.media.uploadCv);
+[7m  [0m [91m                                                                                        ~~~~~~~~[0m
+
+    at createTSError (/Users/toannguyen/Desktop/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Desktop/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Desktop/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Desktop/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Desktop/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1252:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Desktop/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1076:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:911:12)
+    at Module.require (node:internal/modules/cjs/loader:1100:19)
+2023-07-24 01:39:52 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/modules/controllers/media.controller.ts[0m:[93m38[0m:[93m27[0m - [91merror[0m[90m TS2345: [0mArgument of type 'Media' is not assignable to parameter of type 'Response<any, Record<string, any>>'.
+  Type 'Media' is missing the following properties from type 'Response<any, Record<string, any>>': status, sendStatus, links, send, and 86 more.
+
+[7m38[0m       return this.success(res, "success");
+[7m  [0m [91m                          ~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/modules/controllers/media.controller.ts[0m:[93m38[0m:[93m27[0m - [91merror[0m[90m TS2345: [0mArgument of type 'Media' is not assignable to parameter of type 'Response<any, Record<string, any>>'.
+  Type 'Media' is missing the following properties from type 'Response<any, Record<string, any>>': status, sendStatus, links, send, and 86 more.
+
+[7m38[0m       return this.success(res, "success");
+[7m  [0m [91m                          ~~~[0m
+
+    at createTSError (/Users/toannguyen/Desktop/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Desktop/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Desktop/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Desktop/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Desktop/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1252:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Desktop/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1076:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:911:12)
+    at Module.require (node:internal/modules/cjs/loader:1100:19)
+2023-07-24 01:48:41 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/services/media.service.ts[0m:[93m38[0m:[93m9[0m - [91merror[0m[90m TS2300: [0mDuplicate identifier 'path'.
+
+[7m38[0m         path: "",
+[7m  [0m [91m        ~~~~[0m
+[96msrc/services/media.service.ts[0m:[93m41[0m:[93m15[0m - [91merror[0m[90m TS2300: [0mDuplicate identifier 'path'.
+
+[7m41[0m         const path = image.path;
+[7m  [0m [91m              ~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/services/media.service.ts[0m:[93m38[0m:[93m9[0m - [91merror[0m[90m TS2300: [0mDuplicate identifier 'path'.
+
+[7m38[0m         path: "",
+[7m  [0m [91m        ~~~~[0m
+[96msrc/services/media.service.ts[0m:[93m41[0m:[93m15[0m - [91merror[0m[90m TS2300: [0mDuplicate identifier 'path'.
+
+[7m41[0m         const path = image.path;
+[7m  [0m [91m              ~~~~[0m
+
+    at createTSError (/Users/toannguyen/Desktop/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Desktop/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Desktop/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Desktop/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Desktop/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1252:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Desktop/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1076:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:911:12)
+    at Module.require (node:internal/modules/cjs/loader:1100:19)
+2023-07-24 01:49:20 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/modules/controllers/media.controller.ts[0m:[93m39[0m:[93m32[0m - [91merror[0m[90m TS2554: [0mExpected 4 arguments, but got 1.
+
+[7m39[0m       const data = await media.storeCv(image)
+[7m  [0m [91m                               ~~~~~~~~~~~~~~[0m
+
+  [96msrc/services/media.service.ts[0m:[93m36[0m:[93m9[0m
+    [7m36[0m         uploads: string = "uploads",
+    [7m  [0m [96m        ~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+    An argument for 'uploads' was not provided.
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/modules/controllers/media.controller.ts[0m:[93m39[0m:[93m32[0m - [91merror[0m[90m TS2554: [0mExpected 4 arguments, but got 1.
+
+[7m39[0m       const data = await media.storeCv(image)
+[7m  [0m [91m                               ~~~~~~~~~~~~~~[0m
+
+  [96msrc/services/media.service.ts[0m:[93m36[0m:[93m9[0m
+    [7m36[0m         uploads: string = "uploads",
+    [7m  [0m [96m        ~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+    An argument for 'uploads' was not provided.
+
+    at createTSError (/Users/toannguyen/Desktop/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Desktop/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Desktop/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Desktop/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Desktop/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1252:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Desktop/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1076:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:911:12)
+    at Module.require (node:internal/modules/cjs/loader:1100:19)
+2023-07-24 01:58:22 error: [POST] /medias/uploadCv >> StatusCode:: 500, Message:: Unexpected field
+2023-07-24 01:59:39 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/modules/controllers/media.controller.ts[0m:[93m39[0m:[93m32[0m - [91merror[0m[90m TS2554: [0mExpected 4 arguments, but got 1.
+
+[7m39[0m       const data = await media.storeCv(image)
+[7m  [0m [91m                               ~~~~~~~~~~~~~~[0m
+
+  [96msrc/services/media.service.ts[0m:[93m36[0m:[93m9[0m
+    [7m36[0m         uploads: string = "uploads",
+    [7m  [0m [96m        ~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+    An argument for 'uploads' was not provided.
+[96msrc/modules/controllers/media.controller.ts[0m:[93m39[0m:[93m40[0m - [91merror[0m[90m TS2552: [0mCannot find name 'image'. Did you mean 'images'?
+
+[7m39[0m       const data = await media.storeCv(image)
+[7m  [0m [91m                                       ~~~~~[0m
+
+  [96msrc/modules/controllers/media.controller.ts[0m:[93m35[0m:[93m13[0m
+    [7m35[0m       const images = req["files"];
+    [7m  [0m [96m            ~~~~~~[0m
+    'images' is declared here.
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/modules/controllers/media.controller.ts[0m:[93m39[0m:[93m32[0m - [91merror[0m[90m TS2554: [0mExpected 4 arguments, but got 1.
+
+[7m39[0m       const data = await media.storeCv(image)
+[7m  [0m [91m                               ~~~~~~~~~~~~~~[0m
+
+  [96msrc/services/media.service.ts[0m:[93m36[0m:[93m9[0m
+    [7m36[0m         uploads: string = "uploads",
+    [7m  [0m [96m        ~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+    An argument for 'uploads' was not provided.
+[96msrc/modules/controllers/media.controller.ts[0m:[93m39[0m:[93m40[0m - [91merror[0m[90m TS2552: [0mCannot find name 'image'. Did you mean 'images'?
+
+[7m39[0m       const data = await media.storeCv(image)
+[7m  [0m [91m                                       ~~~~~[0m
+
+  [96msrc/modules/controllers/media.controller.ts[0m:[93m35[0m:[93m13[0m
+    [7m35[0m       const images = req["files"];
+    [7m  [0m [96m            ~~~~~~[0m
+    'images' is declared here.
+
+    at createTSError (/Users/toannguyen/Desktop/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Desktop/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Desktop/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Desktop/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Desktop/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1252:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Desktop/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1076:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:911:12)
+    at Module.require (node:internal/modules/cjs/loader:1100:19)
+2023-07-24 01:59:48 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/modules/controllers/media.controller.ts[0m:[93m40[0m:[93m34[0m - [91merror[0m[90m TS2554: [0mExpected 4 arguments, but got 1.
+
+[7m40[0m         const data = await media.storeCv(image)
+[7m  [0m [91m                                 ~~~~~~~~~~~~~~[0m
+
+  [96msrc/services/media.service.ts[0m:[93m36[0m:[93m9[0m
+    [7m36[0m         uploads: string = "uploads",
+    [7m  [0m [96m        ~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+    An argument for 'uploads' was not provided.
+[96msrc/modules/controllers/media.controller.ts[0m:[93m43[0m:[93m32[0m - [91merror[0m[90m TS2304: [0mCannot find name 'data'.
+
+[7m43[0m       return this.success(res, data, "success");
+[7m  [0m [91m                               ~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/modules/controllers/media.controller.ts[0m:[93m40[0m:[93m34[0m - [91merror[0m[90m TS2554: [0mExpected 4 arguments, but got 1.
+
+[7m40[0m         const data = await media.storeCv(image)
+[7m  [0m [91m                                 ~~~~~~~~~~~~~~[0m
+
+  [96msrc/services/media.service.ts[0m:[93m36[0m:[93m9[0m
+    [7m36[0m         uploads: string = "uploads",
+    [7m  [0m [96m        ~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+    An argument for 'uploads' was not provided.
+[96msrc/modules/controllers/media.controller.ts[0m:[93m43[0m:[93m32[0m - [91merror[0m[90m TS2304: [0mCannot find name 'data'.
+
+[7m43[0m       return this.success(res, data, "success");
+[7m  [0m [91m                               ~~~~[0m
+
+    at createTSError (/Users/toannguyen/Desktop/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Desktop/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Desktop/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Desktop/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Desktop/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1252:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Desktop/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1076:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:911:12)
+    at Module.require (node:internal/modules/cjs/loader:1100:19)
+2023-07-24 02:00:28 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/modules/controllers/media.controller.ts[0m:[93m40[0m:[93m34[0m - [91merror[0m[90m TS2554: [0mExpected 4 arguments, but got 1.
+
+[7m40[0m         const data = await media.storeCv(images)
+[7m  [0m [91m                                 ~~~~~~~~~~~~~~~[0m
+
+  [96msrc/services/media.service.ts[0m:[93m36[0m:[93m9[0m
+    [7m36[0m         uploads: string = "uploads",
+    [7m  [0m [96m        ~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+    An argument for 'uploads' was not provided.
+[96msrc/modules/controllers/media.controller.ts[0m:[93m43[0m:[93m32[0m - [91merror[0m[90m TS2304: [0mCannot find name 'data'.
+
+[7m43[0m       return this.success(res, data, "success");
+[7m  [0m [91m                               ~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/modules/controllers/media.controller.ts[0m:[93m40[0m:[93m34[0m - [91merror[0m[90m TS2554: [0mExpected 4 arguments, but got 1.
+
+[7m40[0m         const data = await media.storeCv(images)
+[7m  [0m [91m                                 ~~~~~~~~~~~~~~~[0m
+
+  [96msrc/services/media.service.ts[0m:[93m36[0m:[93m9[0m
+    [7m36[0m         uploads: string = "uploads",
+    [7m  [0m [96m        ~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+    An argument for 'uploads' was not provided.
+[96msrc/modules/controllers/media.controller.ts[0m:[93m43[0m:[93m32[0m - [91merror[0m[90m TS2304: [0mCannot find name 'data'.
+
+[7m43[0m       return this.success(res, data, "success");
+[7m  [0m [91m                               ~~~~[0m
+
+    at createTSError (/Users/toannguyen/Desktop/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Desktop/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Desktop/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Desktop/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Desktop/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1252:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Desktop/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1076:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:911:12)
+    at Module.require (node:internal/modules/cjs/loader:1100:19)
+2023-07-24 02:01:27 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/modules/controllers/media.controller.ts[0m:[93m40[0m:[93m23[0m - [91merror[0m[90m TS2552: [0mCannot find name 'image'. Did you mean 'images'?
+
+[7m40[0m             filename: image.filename,
+[7m  [0m [91m                      ~~~~~[0m
+
+  [96msrc/modules/controllers/media.controller.ts[0m:[93m35[0m:[93m13[0m
+    [7m35[0m       const images = req["files"];
+    [7m  [0m [96m            ~~~~~~[0m
+    'images' is declared here.
+[96msrc/modules/controllers/media.controller.ts[0m:[93m41[0m:[93m19[0m - [91merror[0m[90m TS2304: [0mCannot find name 'diskPath'.
+
+[7m41[0m             disk: diskPath,
+[7m  [0m [91m                  ~~~~~~~~[0m
+[96msrc/modules/controllers/media.controller.ts[0m:[93m42[0m:[93m13[0m - [91merror[0m[90m TS18004: [0mNo value exists in scope for the shorthand property 'path'. Either declare one or provide an initializer.
+
+[7m42[0m             path,
+[7m  [0m [91m            ~~~~[0m
+[96msrc/modules/controllers/media.controller.ts[0m:[93m44[0m:[93m19[0m - [91merror[0m[90m TS2552: [0mCannot find name 'image'. Did you mean 'images'?
+
+[7m44[0m             mime: image.mimetype,
+[7m  [0m [91m                  ~~~~~[0m
+
+  [96msrc/modules/controllers/media.controller.ts[0m:[93m35[0m:[93m13[0m
+    [7m35[0m       const images = req["files"];
+    [7m  [0m [96m            ~~~~~~[0m
+    'images' is declared here.
+[96msrc/modules/controllers/media.controller.ts[0m:[93m47[0m:[93m19[0m - [91merror[0m[90m TS2552: [0mCannot find name 'image'. Did you mean 'images'?
+
+[7m47[0m             size: image.size,
+[7m  [0m [91m                  ~~~~~[0m
+
+  [96msrc/modules/controllers/media.controller.ts[0m:[93m35[0m:[93m13[0m
+    [7m35[0m       const images = req["files"];
+    [7m  [0m [96m            ~~~~~~[0m
+    'images' is declared here.
+[96msrc/modules/controllers/media.controller.ts[0m:[93m50[0m:[93m22[0m - [91merror[0m[90m TS2304: [0mCannot find name 'models'.
+
+[7m50[0m         return await models.Media.create(file);
+[7m  [0m [91m                     ~~~~~~[0m
+[96msrc/modules/controllers/media.controller.ts[0m:[93m52[0m:[93m32[0m - [91merror[0m[90m TS2304: [0mCannot find name 'data'.
+
+[7m52[0m       return this.success(res, data, "success");
+[7m  [0m [91m                               ~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/modules/controllers/media.controller.ts[0m:[93m40[0m:[93m23[0m - [91merror[0m[90m TS2552: [0mCannot find name 'image'. Did you mean 'images'?
+
+[7m40[0m             filename: image.filename,
+[7m  [0m [91m                      ~~~~~[0m
+
+  [96msrc/modules/controllers/media.controller.ts[0m:[93m35[0m:[93m13[0m
+    [7m35[0m       const images = req["files"];
+    [7m  [0m [96m            ~~~~~~[0m
+    'images' is declared here.
+[96msrc/modules/controllers/media.controller.ts[0m:[93m41[0m:[93m19[0m - [91merror[0m[90m TS2304: [0mCannot find name 'diskPath'.
+
+[7m41[0m             disk: diskPath,
+[7m  [0m [91m                  ~~~~~~~~[0m
+[96msrc/modules/controllers/media.controller.ts[0m:[93m42[0m:[93m13[0m - [91merror[0m[90m TS18004: [0mNo value exists in scope for the shorthand property 'path'. Either declare one or provide an initializer.
+
+[7m42[0m             path,
+[7m  [0m [91m            ~~~~[0m
+[96msrc/modules/controllers/media.controller.ts[0m:[93m44[0m:[93m19[0m - [91merror[0m[90m TS2552: [0mCannot find name 'image'. Did you mean 'images'?
+
+[7m44[0m             mime: image.mimetype,
+[7m  [0m [91m                  ~~~~~[0m
+
+  [96msrc/modules/controllers/media.controller.ts[0m:[93m35[0m:[93m13[0m
+    [7m35[0m       const images = req["files"];
+    [7m  [0m [96m            ~~~~~~[0m
+    'images' is declared here.
+[96msrc/modules/controllers/media.controller.ts[0m:[93m47[0m:[93m19[0m - [91merror[0m[90m TS2552: [0mCannot find name 'image'. Did you mean 'images'?
+
+[7m47[0m             size: image.size,
+[7m  [0m [91m                  ~~~~~[0m
+
+  [96msrc/modules/controllers/media.controller.ts[0m:[93m35[0m:[93m13[0m
+    [7m35[0m       const images = req["files"];
+    [7m  [0m [96m            ~~~~~~[0m
+    'images' is declared here.
+[96msrc/modules/controllers/media.controller.ts[0m:[93m50[0m:[93m22[0m - [91merror[0m[90m TS2304: [0mCannot find name 'models'.
+
+[7m50[0m         return await models.Media.create(file);
+[7m  [0m [91m                     ~~~~~~[0m
+[96msrc/modules/controllers/media.controller.ts[0m:[93m52[0m:[93m32[0m - [91merror[0m[90m TS2304: [0mCannot find name 'data'.
+
+[7m52[0m       return this.success(res, data, "success");
+[7m  [0m [91m                               ~~~~[0m
+
+    at createTSError (/Users/toannguyen/Desktop/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Desktop/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Desktop/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Desktop/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Desktop/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1252:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Desktop/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1076:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:911:12)
+    at Module.require (node:internal/modules/cjs/loader:1100:19)
+2023-07-24 02:01:52 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/modules/controllers/media.controller.ts[0m:[93m41[0m:[93m15[0m - [91merror[0m[90m TS2304: [0mCannot find name 'diskPath'.
+
+[7m41[0m         disk: diskPath,
+[7m  [0m [91m              ~~~~~~~~[0m
+[96msrc/modules/controllers/media.controller.ts[0m:[93m42[0m:[93m9[0m - [91merror[0m[90m TS18004: [0mNo value exists in scope for the shorthand property 'path'. Either declare one or provide an initializer.
+
+[7m42[0m         path,
+[7m  [0m [91m        ~~~~[0m
+[96msrc/modules/controllers/media.controller.ts[0m:[93m50[0m:[93m20[0m - [91merror[0m[90m TS2304: [0mCannot find name 'models'.
+
+[7m50[0m       return await models.Media.create(file);
+[7m  [0m [91m                   ~~~~~~[0m
+[96msrc/modules/controllers/media.controller.ts[0m:[93m52[0m:[93m32[0m - [91merror[0m[90m TS2304: [0mCannot find name 'data'.
+
+[7m52[0m       return this.success(res, data, "success");
+[7m  [0m [91m                               ~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/modules/controllers/media.controller.ts[0m:[93m41[0m:[93m15[0m - [91merror[0m[90m TS2304: [0mCannot find name 'diskPath'.
+
+[7m41[0m         disk: diskPath,
+[7m  [0m [91m              ~~~~~~~~[0m
+[96msrc/modules/controllers/media.controller.ts[0m:[93m42[0m:[93m9[0m - [91merror[0m[90m TS18004: [0mNo value exists in scope for the shorthand property 'path'. Either declare one or provide an initializer.
+
+[7m42[0m         path,
+[7m  [0m [91m        ~~~~[0m
+[96msrc/modules/controllers/media.controller.ts[0m:[93m50[0m:[93m20[0m - [91merror[0m[90m TS2304: [0mCannot find name 'models'.
+
+[7m50[0m       return await models.Media.create(file);
+[7m  [0m [91m                   ~~~~~~[0m
+[96msrc/modules/controllers/media.controller.ts[0m:[93m52[0m:[93m32[0m - [91merror[0m[90m TS2304: [0mCannot find name 'data'.
+
+[7m52[0m       return this.success(res, data, "success");
+[7m  [0m [91m                               ~~~~[0m
+
+    at createTSError (/Users/toannguyen/Desktop/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Desktop/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Desktop/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Desktop/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Desktop/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1252:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Desktop/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1076:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:911:12)
+    at Module.require (node:internal/modules/cjs/loader:1100:19)
+2023-07-24 02:02:34 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/modules/controllers/media.controller.ts[0m:[93m53[0m:[93m32[0m - [91merror[0m[90m TS2304: [0mCannot find name 'data'.
+
+[7m53[0m       return this.success(res, data, "success");
+[7m  [0m [91m                               ~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/modules/controllers/media.controller.ts[0m:[93m53[0m:[93m32[0m - [91merror[0m[90m TS2304: [0mCannot find name 'data'.
+
+[7m53[0m       return this.success(res, data, "success");
+[7m  [0m [91m                               ~~~~[0m
+
+    at createTSError (/Users/toannguyen/Desktop/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Desktop/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Desktop/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Desktop/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Desktop/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1252:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Desktop/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1076:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:911:12)
+    at Module.require (node:internal/modules/cjs/loader:1100:19)
+2023-07-24 02:30:48 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/modules/controllers/media.controller.ts[0m:[93m54[0m:[93m32[0m - [91merror[0m[90m TS2339: [0mProperty 'create' does not exist on type 'MediaService'.
+
+[7m54[0m       const data = await media.create(file);
+[7m  [0m [91m                               ~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/modules/controllers/media.controller.ts[0m:[93m54[0m:[93m32[0m - [91merror[0m[90m TS2339: [0mProperty 'create' does not exist on type 'MediaService'.
+
+[7m54[0m       const data = await media.create(file);
+[7m  [0m [91m                               ~~~~~~[0m
+
+    at createTSError (/Users/toannguyen/Desktop/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Desktop/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Desktop/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Desktop/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Desktop/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1252:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Desktop/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1076:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:911:12)
+    at Module.require (node:internal/modules/cjs/loader:1100:19)
+2023-07-24 02:31:27 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/modules/controllers/media.controller.ts[0m:[93m54[0m:[93m32[0m - [91merror[0m[90m TS2339: [0mProperty 'create' does not exist on type 'MediaService'.
+
+[7m54[0m       const data = await media.create(file);
+[7m  [0m [91m                               ~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/modules/controllers/media.controller.ts[0m:[93m54[0m:[93m32[0m - [91merror[0m[90m TS2339: [0mProperty 'create' does not exist on type 'MediaService'.
+
+[7m54[0m       const data = await media.create(file);
+[7m  [0m [91m                               ~~~~~~[0m
+
+    at createTSError (/Users/toannguyen/Desktop/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Desktop/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Desktop/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Desktop/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Desktop/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1252:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Desktop/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1076:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:911:12)
+    at Module.require (node:internal/modules/cjs/loader:1100:19)

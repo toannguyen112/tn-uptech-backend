@@ -65,6 +65,9 @@ module.exports = function (sequelize, DataTypes) {
             posted_at: {
                 type: DataTypes.DATE,
                 defaultValue: new Date(),
+                get() {
+                    return Helper.formatDayJs(this.getDataValue('posted_at'));
+                }
             },
 
             view: {

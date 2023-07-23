@@ -126,6 +126,7 @@ export class CategoryService {
                         for (const lang of Helper.langs) {
                             await models.CategoryTranslation.create({
                                 ...body,
+                                slug: Helper.renderSlug(body.name, global.lang),
                                 category_id: category.id,
                                 locale: lang
                             }, { transaction: t });
@@ -174,6 +175,7 @@ export class CategoryService {
                 try {
                     return await models.CategoryTranslation.update({
                         ...body,
+                        slug: Helper.renderSlug(body.name, global.lang),
                     }, {
                         where: {
                             category_id: id,

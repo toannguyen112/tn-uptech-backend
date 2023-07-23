@@ -78,7 +78,7 @@ export class JobDTO {
             location: translationData.location || "",
             view: item.view,
             status: item.status || 'inactive',
-            expried_date: item.expried_date ? Helper.formatDayJs(item.expried_date, "YYYY/MM/DD") : null,
+            expried_date: Helper.formatDayJs(item.expried_date, "YYYY/MM/DD"),
             benefit: translationData.benefit || "",
 
             related: item.jobRelated.map((item) => {

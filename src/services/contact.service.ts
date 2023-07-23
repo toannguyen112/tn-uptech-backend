@@ -86,6 +86,7 @@ export class ContactService {
             if (body.type === 'recruitment') {
                 const newItem = {
                     name: body.name,
+                    file_id: body.file_id ? body.file_id : null,
                     email: body.email,
                     type: body.type,
                     status: body.status,

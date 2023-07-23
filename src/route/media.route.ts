@@ -17,6 +17,7 @@ export class MediaRoute implements Routes {
     private initializeRoutes() {
         this.router.get(`${this.path}`, this.media.index);
         this.router.post(`${this.path}/create`, uploadCloud.array("files"), this.media.create);
+        this.router.post(`${this.path}/uploadCv`, uploadCloud.array("files"), this.media.uploadCv);
         this.router.delete(`${this.path}/delete/:id(\\d+)`, this.media.delete);
     }
 }

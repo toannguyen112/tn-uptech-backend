@@ -10,11 +10,16 @@ cloudinary.config({
 
 const storage = new CloudinaryStorage({
     cloudinary: cloudinary,
+    format: async (req, file) => {
+        console.log(file);
+        return 'pdf';
+    },
     params: {
+
         folder: (req, file) => {
             return '/Uptech'
         },
-        allowedFormats: ['jpeg', 'png', 'jpg', 'webp'],
+        allowedFormats: ['jpeg', 'png', 'jpg', 'webp', 'pdf'],
     }
 });
 

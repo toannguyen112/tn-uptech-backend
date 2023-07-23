@@ -24,6 +24,7 @@ module.exports = function (sequelize, DataTypes) {
                     model: "folders",
                     key: "id",
                 },
+                allowNull: true,
             },
 
             path: {
@@ -83,8 +84,6 @@ module.exports = function (sequelize, DataTypes) {
             tableName: "medias",
         },
     );
-
-    Media.associate = function (models) {};
 
     return Media;
 };
