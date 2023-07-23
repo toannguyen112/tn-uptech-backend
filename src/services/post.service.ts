@@ -181,7 +181,7 @@ export class PostService {
             }).then(async (result) => {
                 const maxViews = result.max_views;
                 await models.Post.findOne({
-                    where: { view: maxViews },
+                    where: { view: maxViews, status: 'active' },
                     include: [
                         {
                             model: models.PostTranslation,
@@ -246,7 +246,7 @@ export class PostService {
             }).then(async (result) => {
                 const maxViews = result.max_views;
                 await models.Post.findOne({
-                    where: { view: maxViews },
+                    where: { view: maxViews, status: 'active' },
                     include: [
                         {
                             model: models.PostTranslation,

@@ -536,3 +536,5 @@
 2023-07-21 01:51:26 info: [0mGET /services/nav [36m304[0m 43.415 ms - -[0m
 2023-07-21 01:51:27 info: [0mGET /services/show/18 [36m304[0m 4.431 ms - -[0m
 2023-07-21 01:51:28 info: [0mGET /services/show/28 [32m200[0m 4.076 ms - 618[0m
+2023-07-21 14:18:50 info: [0mPOST /individuals/synchronized [33m404[0m 197.535 ms - 164[0m
+2023-07-21 14:18:52 info: [0mPOST /individuals/synchronized [33m404[0m 5.280 ms - 164[0m
