@@ -132,3 +132,10 @@
 2023-07-23 20:09:58 info: [0mGET /posts/category/seo [32m200[0m 48.641 ms - 59[0m
 2023-07-23 20:09:58 info: [0mGET /posts/category/digital-marketing [32m200[0m 10.741 ms - 59[0m
 2023-07-23 20:09:58 info: [0mGET /posts/category/uptech's-sharing [32m200[0m 12.719 ms - 59[0m
+2023-07-23 20:10:13 info: [0mGET /posts/getListFeatured [32m200[0m 16.213 ms - 26[0m
+2023-07-23 20:10:13 info: [0mGET /banners/getListBanner [32m200[0m 33.365 ms - 3100[0m
+2023-07-23 20:10:13 info: [0mGET /services/nav [32m200[0m 27.935 ms - 1882[0m
+2023-07-23 20:10:57 info: [0mGET /jobs/getListFeatured [32m200[0m 526.645 ms - 26[0m
+2023-07-23 20:11:10 info: [0mGET /posts/getListFeatured [32m200[0m 30.122 ms - 26[0m
+2023-07-23 20:11:10 info: [0mGET /banners/getListBanner [32m200[0m 33.246 ms - 3100[0m
+2023-07-23 20:11:10 info: [0mGET /services/nav [32m200[0m 27.031 ms - 1882[0m
