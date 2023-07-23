@@ -18,6 +18,7 @@ module.exports = function (sequelize, DataTypes) {
                     key: "id",
                 },
                 allowNull: true,
+                onDelete: 'SET NULL',
             },
 
             name: {

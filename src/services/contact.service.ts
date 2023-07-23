@@ -124,7 +124,11 @@ export class ContactService {
     }
 
     public deleteById = async (id) => {
-        return await models.Contact.destroy({ where: { id } });
+        try {
+            return await models.Contact.destroy({ where: { id } });
+        } catch (error) {
+            console.log(error);
+        }
     }
 
     public deleteMultipleIds = async (ids) => {

@@ -142,7 +142,8 @@ export class BannerService {
                 await models.BannerTranslation.create({
                     ...body,
                     banner_id: banner.id,
-                    locale: lang
+                    locale: lang,
+                    slug: Helper.renderSlug(body.name, global.lang),
                 }, { transaction: t });
             }
 
@@ -197,7 +198,10 @@ export class BannerService {
         )
             .then(async (res) => {
                 try {
-                    return await models.BannerTranslation.update({ ...body },
+                    return await models.BannerTranslation.update({
+                        ...body,
+                        slug: Helper.renderSlug(body.name, global.lang),
+                    },
                         {
                             where: {
                                 banner_id: id,

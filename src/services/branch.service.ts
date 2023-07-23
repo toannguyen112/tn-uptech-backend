@@ -100,6 +100,7 @@ export class BranchService {
                         await models.BranchTranslation.create({
                             ...body,
                             branch_id: branch.id,
+                            slug: Helper.renderSlug(body.name, global.lang),
                             locale: lang
                         }, { transaction: t });
                     }
@@ -144,7 +145,10 @@ export class BranchService {
             .then(async (res) => {
                 try {
                     await models.BranchTranslation.update(
-                        { name: body.name },
+                        {
+                            name: body.name,
+                            slug: Helper.renderSlug(body.name, global.lang),
+                        },
                         {
                             where: {
                                 branch_id: id,
