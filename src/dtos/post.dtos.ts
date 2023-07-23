@@ -27,7 +27,7 @@ export class PostDTO {
             description: translationData.description || "",
             isFeatured: item.isFeatured,
             status: item.status,
-            thumbnail: MediaDTO.transform(item.image) || null,
+            thumbnail: item.image ? MediaDTO.transform(item.image) : null,
             createdAt: item.createdAt,
             updatedAt: item.updatedAt,
         }
@@ -99,7 +99,7 @@ export class PostDTO {
                     description: item.translations[0].description,
                     category_slug: item.category ? item.category.translations[0].slug : "",
                     slug: item.translations[0].slug,
-                    thumbnail: MediaDTO.transform(item.image) ?? null,
+                    thumbnail: item.image ? MediaDTO.transform(item.image) : null,
                 }
             }) || [],
 

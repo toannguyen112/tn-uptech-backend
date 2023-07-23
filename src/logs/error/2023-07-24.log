@@ -610,3 +610,43 @@ TSError: ⨯ Unable to compile TypeScript:
     at Module.load (node:internal/modules/cjs/loader:1076:32)
     at Function.Module._load (node:internal/modules/cjs/loader:911:12)
     at Module.require (node:internal/modules/cjs/loader:1100:19)
+2023-07-24 03:11:33 error: {}
+2023-07-24 03:11:45 error: {}
+2023-07-24 03:12:27 error: {}
+2023-07-24 03:12:28 error: {}
+2023-07-24 03:12:28 error: {}
+2023-07-24 03:13:01 error: {}
+2023-07-24 03:13:01 error: {}
+2023-07-24 03:13:49 error: {}
+2023-07-24 03:15:04 error: {}
+2023-07-24 03:15:17 error: {}
+2023-07-24 03:15:58 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/dtos/post.dtos.ts[0m:[93m30[0m:[93m69[0m - [91merror[0m[90m TS1005: [0m':' expected.
+
+[7m30[0m             thumbnail: item.image ? MediaDTO.transform(item.image)  null,
+[7m  [0m [91m                                                                    ~~~~[0m
+[96msrc/dtos/post.dtos.ts[0m:[93m30[0m:[93m73[0m - [91merror[0m[90m TS1005: [0m':' expected.
+
+[7m30[0m             thumbnail: item.image ? MediaDTO.transform(item.image)  null,
+[7m  [0m [91m                                                                        ~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/dtos/post.dtos.ts[0m:[93m30[0m:[93m69[0m - [91merror[0m[90m TS1005: [0m':' expected.
+
+[7m30[0m             thumbnail: item.image ? MediaDTO.transform(item.image)  null,
+[7m  [0m [91m                                                                    ~~~~[0m
+[96msrc/dtos/post.dtos.ts[0m:[93m30[0m:[93m73[0m - [91merror[0m[90m TS1005: [0m':' expected.
+
+[7m30[0m             thumbnail: item.image ? MediaDTO.transform(item.image)  null,
+[7m  [0m [91m                                                                        ~[0m
+
+    at createTSError (/Users/toannguyen/Desktop/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Desktop/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Desktop/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Desktop/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Desktop/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1252:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Desktop/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1076:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:911:12)
+    at Module.require (node:internal/modules/cjs/loader:1100:19)

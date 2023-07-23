@@ -10,10 +10,6 @@ cloudinary.config({
 
 const storage = new CloudinaryStorage({
     cloudinary: cloudinary,
-    format: async (req, file) => {
-        console.log(file);
-        return 'pdf';
-    },
     params: {
 
         folder: (req, file) => {
