@@ -271,7 +271,7 @@ export class ProjectService {
 
         try {
 
-            const rows = await models.Project.findAll({ where: {}, include });
+            const rows = await models.Project.findAll({ where: { status: 'active' }, include });
 
             const result = {
                 data: rows.map((item: any) => ProjectDTO.transformClient(item))
@@ -284,72 +284,19 @@ export class ProjectService {
         }
     }
 
-    public findByIdClient = async (id: string | number) => {
+    public findBySlug = async (slug: string) => {
 
-        const project = await models.Project.findOne({
-            where: { id },
-            include: [
-                {
-                    model: models.Media,
-                    as: "image",
-                    required: false,
-                },
-                {
-                    model: models.Branch,
-                    as: "branchs",
-                    required: false,
-                    include: [
-                        {
-                            model: models.BranchTranslation,
-                            as: "translations",
-                            required: true,
-                            where: {
-                                locale: global.lang,
-                            }
-                        }
-                    ]
-                },
-                {
-                    model: models.Service,
-                    as: "services",
-                    required: false,
-                    include: [
-                        {
-                            model: models.ServiceTranslation,
-                            as: "translations",
-                            required: true,
-                            where: {
-                                locale: global.lang,
-                            }
-                        }
-                    ]
-                },
-                {
-                    model: models.Media,
-                    as: "banner_image",
-                    required: false,
-                },
-                {
-                    model: models.ProjectTranslation,
-                    as: "translations",
-                    required: true,
-                    where: {
-                        locale: global.lang,
-                    }
-                },
-            ]
-        });
+        try {
 
-        let related = [];
-
-        if (project.related && project.related.length) {
-            related = await models.Project.findAll({
+            const projectTran = await models.ProjectTranslation.findOne({
                 where: {
-                    status: 'active',
-                    id: {
-                        [Op.in]: project.related
-                    }
-                },
+                    locale: global.lang,
+                    slug
+                }
+            });
+
+            const project = await models.Project.findOne({
+                where: { id: projectTran.project_id },
                 include: [
                     {
                         model: models.Media,
@@ -387,6 +334,11 @@ export class ProjectService {
                         ]
                     },
                     {
+                        model: models.Media,
+                        as: "banner_image",
+                        required: false,
+                    },
+                    {
                         model: models.ProjectTranslation,
                         as: "translations",
                         required: true,
@@ -396,10 +348,71 @@ export class ProjectService {
                     },
                 ]
             });
+
+            let related = [];
+
+            if (project.related && project.related.length) {
+                related = await models.Project.findAll({
+                    where: {
+                        status: 'active',
+                        id: {
+                            [Op.in]: project.related
+                        }
+                    },
+                    include: [
+                        {
+                            model: models.Media,
+                            as: "image",
+                            required: false,
+                        },
+                        {
+                            model: models.Branch,
+                            as: "branchs",
+                            required: false,
+                            include: [
+                                {
+                                    model: models.BranchTranslation,
+                                    as: "translations",
+                                    required: true,
+                                    where: {
+                                        locale: global.lang,
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            model: models.Service,
+                            as: "services",
+                            required: false,
+                            include: [
+                                {
+                                    model: models.ServiceTranslation,
+                                    as: "translations",
+                                    required: true,
+                                    where: {
+                                        locale: global.lang,
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            model: models.ProjectTranslation,
+                            as: "translations",
+                            required: true,
+                            where: {
+                                locale: global.lang,
+                            }
+                        },
+                    ]
+                });
+            }
+
+            return ProjectDTO.transformDetailClient({ ...project, related });
+
+        } catch (error) {
+            console.log(error);
+            throw new Error(error);
         }
-
-
-        return ProjectDTO.transformDetailClient({ ...project, related });
     }
 
     public updateById = async (id: string, body) => {

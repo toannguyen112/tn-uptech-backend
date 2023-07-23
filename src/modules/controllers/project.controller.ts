@@ -23,14 +23,15 @@ export class ProjectController extends BaseController {
             console.log(error);
         }
     }
-    public findByIdClient = async (req: Request, res: Response, next: NextFunction) => {
+
+    public async findBySlug(req: Request, res: Response, next: NextFunction) {
         try {
-            const { id } = req.params;
-            
-            const data = await project.findByIdClient(id);
-            return this.success(res, data);
+            const slug: string = req.params.slug;
+
+            const data = await project.findBySlug(slug);
+
+            res.status(200).send({ message: "ok", data });
         } catch (error) {
-            console.log(error);
             res.status(500).send(error);
         }
     }

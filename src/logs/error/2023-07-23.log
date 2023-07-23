@@ -211,3 +211,135 @@ TSError: ⨯ Unable to compile TypeScript:
 2023-07-23 21:53:46 error: Transaction cannot be rolled back because it has been finished with state: rollback
 2023-07-23 21:53:48 error: {}
 2023-07-23 21:53:48 error: Transaction cannot be rolled back because it has been finished with state: rollback
+2023-07-23 23:11:07 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/services/project.service.ts[0m:[93m439[0m:[93m20[0m - [91merror[0m[90m TS2304: [0mCannot find name 'CeoDTO'.
+
+[7m439[0m             return CeoDTO.transformDetail(ceo);
+[7m   [0m [91m                   ~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/services/project.service.ts[0m:[93m439[0m:[93m20[0m - [91merror[0m[90m TS2304: [0mCannot find name 'CeoDTO'.
+
+[7m439[0m             return CeoDTO.transformDetail(ceo);
+[7m   [0m [91m                   ~~~~~~[0m
+
+    at createTSError (/Users/toannguyen/Desktop/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Desktop/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Desktop/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Desktop/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Desktop/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1252:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Desktop/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1076:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:911:12)
+    at Module.require (node:internal/modules/cjs/loader:1100:19)
+2023-07-23 23:11:33 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/services/project.service.ts[0m:[93m438[0m:[93m20[0m - [91merror[0m[90m TS2304: [0mCannot find name 'CeoDTO'.
+
+[7m438[0m             return CeoDTO.transformDetail(ceo);
+[7m   [0m [91m                   ~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/services/project.service.ts[0m:[93m438[0m:[93m20[0m - [91merror[0m[90m TS2304: [0mCannot find name 'CeoDTO'.
+
+[7m438[0m             return CeoDTO.transformDetail(ceo);
+[7m   [0m [91m                   ~~~~~~[0m
+
+    at createTSError (/Users/toannguyen/Desktop/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Desktop/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Desktop/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Desktop/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Desktop/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1252:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Desktop/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1076:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:911:12)
+    at Module.require (node:internal/modules/cjs/loader:1100:19)
+2023-07-23 23:11:51 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/services/project.service.ts[0m:[93m416[0m:[93m26[0m - [91merror[0m[90m TS18004: [0mNo value exists in scope for the shorthand property 'id'. Either declare one or provide an initializer.
+
+[7m416[0m                 where: { id },
+[7m   [0m [91m                         ~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/services/project.service.ts[0m:[93m416[0m:[93m26[0m - [91merror[0m[90m TS18004: [0mNo value exists in scope for the shorthand property 'id'. Either declare one or provide an initializer.
+
+[7m416[0m                 where: { id },
+[7m   [0m [91m                         ~~[0m
+
+    at createTSError (/Users/toannguyen/Desktop/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Desktop/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Desktop/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Desktop/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Desktop/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1252:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Desktop/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1076:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:911:12)
+    at Module.require (node:internal/modules/cjs/loader:1100:19)
+2023-07-23 23:13:06 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/route/project.route.ts[0m:[93m19[0m:[93m71[0m - [91merror[0m[90m TS2339: [0mProperty 'findBySlug' does not exist on type 'ProjectController'.
+
+[7m19[0m         this.router.get(`${this.path}/findBySlug/:slug`, this.project.findBySlug);
+[7m  [0m [91m                                                                      ~~~~~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/route/project.route.ts[0m:[93m19[0m:[93m71[0m - [91merror[0m[90m TS2339: [0mProperty 'findBySlug' does not exist on type 'ProjectController'.
+
+[7m19[0m         this.router.get(`${this.path}/findBySlug/:slug`, this.project.findBySlug);
+[7m  [0m [91m                                                                      ~~~~~~~~~~[0m
+
+    at createTSError (/Users/toannguyen/Desktop/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Desktop/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Desktop/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Desktop/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Desktop/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1252:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Desktop/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1076:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:911:12)
+    at Module.require (node:internal/modules/cjs/loader:1100:19)
+2023-07-23 23:20:37 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/modules/controllers/project.controller.ts[0m:[93m30[0m:[93m40[0m - [91merror[0m[90m TS2339: [0mProperty 'findByIdClient' does not exist on type 'ProjectService'.
+
+[7m30[0m             const data = await project.findByIdClient(id);
+[7m  [0m [91m                                       ~~~~~~~~~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/modules/controllers/project.controller.ts[0m:[93m30[0m:[93m40[0m - [91merror[0m[90m TS2339: [0mProperty 'findByIdClient' does not exist on type 'ProjectService'.
+
+[7m30[0m             const data = await project.findByIdClient(id);
+[7m  [0m [91m                                       ~~~~~~~~~~~~~~[0m
+
+    at createTSError (/Users/toannguyen/Desktop/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Desktop/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Desktop/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Desktop/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Desktop/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1252:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Desktop/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1076:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:911:12)
+    at Module.require (node:internal/modules/cjs/loader:1100:19)
+2023-07-23 23:22:16 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/modules/controllers/project.controller.ts[0m:[93m30[0m:[93m40[0m - [91merror[0m[90m TS2339: [0mProperty 'findByIdClient' does not exist on type 'ProjectService'.
+
+[7m30[0m             const data = await project.findByIdClient(id);
+[7m  [0m [91m                                       ~~~~~~~~~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/modules/controllers/project.controller.ts[0m:[93m30[0m:[93m40[0m - [91merror[0m[90m TS2339: [0mProperty 'findByIdClient' does not exist on type 'ProjectService'.
+
+[7m30[0m             const data = await project.findByIdClient(id);
+[7m  [0m [91m                                       ~~~~~~~~~~~~~~[0m
+
+    at createTSError (/Users/toannguyen/Desktop/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Desktop/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Desktop/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Desktop/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Desktop/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1252:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Desktop/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1076:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:911:12)
+    at Module.require (node:internal/modules/cjs/loader:1100:19)
