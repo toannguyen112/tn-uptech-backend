@@ -462,11 +462,19 @@ export class PostService {
         return PostDTO.transformDetail(post);
     }
 
-    public findByIdClient = async (id) => {
+    public findBySlug = async (slug: string) => {
 
         try {
+
+            const postTran = await models.PostTranslation.findOne({
+                where: {
+                    locale: global.lang,
+                    slug
+                }
+            });
+
             const post = await models.Post.findOne({
-                where: { id },
+                where: { id: postTran['post_id'] },
                 include: [
                     {
                         model: models.Media,

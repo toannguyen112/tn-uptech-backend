@@ -228,6 +228,8 @@ export class JobService {
 
         try {
 
+            console.log(newItem);
+
             return await models.Job.update({
                 ...newItem,
                 slug: Helper.renderSlug(newItem.name, global.lang)

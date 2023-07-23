@@ -18,7 +18,7 @@ export class PostRoute implements Routes {
         this.router.get(`${this.path}/getListFeatured`, this.post.getListFeatured);
         this.router.post(`${this.path}/create`, this.post.create);
         this.router.get(`${this.path}/show/:id`, this.post.show);
-        this.router.get(`${this.path}/findByIdClient/:id`, this.post.findByIdClient);
+        this.router.get(`${this.path}/findBySlug/:slug`, this.post.findBySlug);
         this.router.put(`${this.path}/update/:id`, this.post.update);
         this.router.delete(`${this.path}/delete/:id(\\d+)`, this.post.delete);
     }
