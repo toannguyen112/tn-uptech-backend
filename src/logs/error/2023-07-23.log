@@ -343,3 +343,179 @@ TSError: ⨯ Unable to compile TypeScript:
     at Module.load (node:internal/modules/cjs/loader:1076:32)
     at Function.Module._load (node:internal/modules/cjs/loader:911:12)
     at Module.require (node:internal/modules/cjs/loader:1100:19)
+2023-07-23 23:27:05 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/route/job.route.ts[0m:[93m18[0m:[93m67[0m - [91merror[0m[90m TS2339: [0mProperty 'findBySlug' does not exist on type 'JobController'.
+
+[7m18[0m         this.router.get(`${this.path}/findBySlug/:slug`, this.job.findBySlug);
+[7m  [0m [91m                                                                  ~~~~~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/route/job.route.ts[0m:[93m18[0m:[93m67[0m - [91merror[0m[90m TS2339: [0mProperty 'findBySlug' does not exist on type 'JobController'.
+
+[7m18[0m         this.router.get(`${this.path}/findBySlug/:slug`, this.job.findBySlug);
+[7m  [0m [91m                                                                  ~~~~~~~~~~[0m
+
+    at createTSError (/Users/toannguyen/Desktop/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Desktop/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Desktop/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Desktop/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Desktop/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1252:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Desktop/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1076:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:911:12)
+    at Module.require (node:internal/modules/cjs/loader:1100:19)
+2023-07-23 23:27:35 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/modules/controllers/job.controller.ts[0m:[93m33[0m:[93m36[0m - [91merror[0m[90m TS2339: [0mProperty 'findBySlug' does not exist on type 'JobService'.
+
+[7m33[0m             const data = await job.findBySlug(slug);
+[7m  [0m [91m                                   ~~~~~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/modules/controllers/job.controller.ts[0m:[93m33[0m:[93m36[0m - [91merror[0m[90m TS2339: [0mProperty 'findBySlug' does not exist on type 'JobService'.
+
+[7m33[0m             const data = await job.findBySlug(slug);
+[7m  [0m [91m                                   ~~~~~~~~~~[0m
+
+    at createTSError (/Users/toannguyen/Desktop/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Desktop/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Desktop/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Desktop/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Desktop/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1252:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Desktop/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1076:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:911:12)
+    at Module.require (node:internal/modules/cjs/loader:1100:19)
+2023-07-23 23:28:10 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/services/job.service.ts[0m:[93m241[0m:[93m20[0m - [91merror[0m[90m TS2304: [0mCannot find name 'CeoDTO'.
+
+[7m241[0m             return CeoDTO.transformDetail(ceo);
+[7m   [0m [91m                   ~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/services/job.service.ts[0m:[93m241[0m:[93m20[0m - [91merror[0m[90m TS2304: [0mCannot find name 'CeoDTO'.
+
+[7m241[0m             return CeoDTO.transformDetail(ceo);
+[7m   [0m [91m                   ~~~~~~[0m
+
+    at createTSError (/Users/toannguyen/Desktop/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Desktop/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Desktop/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Desktop/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Desktop/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1252:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Desktop/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1076:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:911:12)
+    at Module.require (node:internal/modules/cjs/loader:1100:19)
+2023-07-23 23:28:38 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/modules/controllers/job.controller.ts[0m:[93m64[0m:[93m36[0m - [91merror[0m[90m TS2339: [0mProperty 'findByIdClient' does not exist on type 'JobService'.
+
+[7m64[0m             const data = await job.findByIdClient(req.params.id);
+[7m  [0m [91m                                   ~~~~~~~~~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/modules/controllers/job.controller.ts[0m:[93m64[0m:[93m36[0m - [91merror[0m[90m TS2339: [0mProperty 'findByIdClient' does not exist on type 'JobService'.
+
+[7m64[0m             const data = await job.findByIdClient(req.params.id);
+[7m  [0m [91m                                   ~~~~~~~~~~~~~~[0m
+
+    at createTSError (/Users/toannguyen/Desktop/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Desktop/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Desktop/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Desktop/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Desktop/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1252:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Desktop/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1076:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:911:12)
+    at Module.require (node:internal/modules/cjs/loader:1100:19)
+2023-07-23 23:29:03 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/modules/controllers/job.controller.ts[0m:[93m64[0m:[93m36[0m - [91merror[0m[90m TS2339: [0mProperty 'findByIdClient' does not exist on type 'JobService'.
+
+[7m64[0m             const data = await job.findByIdClient(req.params.id);
+[7m  [0m [91m                                   ~~~~~~~~~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/modules/controllers/job.controller.ts[0m:[93m64[0m:[93m36[0m - [91merror[0m[90m TS2339: [0mProperty 'findByIdClient' does not exist on type 'JobService'.
+
+[7m64[0m             const data = await job.findByIdClient(req.params.id);
+[7m  [0m [91m                                   ~~~~~~~~~~~~~~[0m
+
+    at createTSError (/Users/toannguyen/Desktop/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Desktop/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Desktop/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Desktop/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Desktop/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1252:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Desktop/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1076:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:911:12)
+    at Module.require (node:internal/modules/cjs/loader:1100:19)
+2023-07-23 23:29:16 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/modules/controllers/job.controller.ts[0m:[93m64[0m:[93m36[0m - [91merror[0m[90m TS2339: [0mProperty 'findByIdClient' does not exist on type 'JobService'.
+
+[7m64[0m             const data = await job.findByIdClient(req.params.id);
+[7m  [0m [91m                                   ~~~~~~~~~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/modules/controllers/job.controller.ts[0m:[93m64[0m:[93m36[0m - [91merror[0m[90m TS2339: [0mProperty 'findByIdClient' does not exist on type 'JobService'.
+
+[7m64[0m             const data = await job.findByIdClient(req.params.id);
+[7m  [0m [91m                                   ~~~~~~~~~~~~~~[0m
+
+    at createTSError (/Users/toannguyen/Desktop/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Desktop/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Desktop/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Desktop/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Desktop/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1252:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Desktop/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1076:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:911:12)
+    at Module.require (node:internal/modules/cjs/loader:1100:19)
+2023-07-23 23:29:27 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/route/job.route.ts[0m:[93m20[0m:[93m59[0m - [91merror[0m[90m TS2339: [0mProperty 'findByIdClient' does not exist on type 'JobController'.
+
+[7m20[0m         this.router.get(`${this.path}/find/:id`, this.job.findByIdClient);
+[7m  [0m [91m                                                          ~~~~~~~~~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/route/job.route.ts[0m:[93m20[0m:[93m59[0m - [91merror[0m[90m TS2339: [0mProperty 'findByIdClient' does not exist on type 'JobController'.
+
+[7m20[0m         this.router.get(`${this.path}/find/:id`, this.job.findByIdClient);
+[7m  [0m [91m                                                          ~~~~~~~~~~~~~~[0m
+
+    at createTSError (/Users/toannguyen/Desktop/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Desktop/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Desktop/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Desktop/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Desktop/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1252:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Desktop/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1076:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:911:12)
+    at Module.require (node:internal/modules/cjs/loader:1100:19)
+2023-07-23 23:42:19 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/modules/controllers/job.controller.ts[0m:[93m54[0m:[93m36[0m - [91merror[0m[90m TS2339: [0mProperty 'findById' does not exist on type 'JobService'.
+
+[7m54[0m             const data = await job.findById(req.params.id);
+[7m  [0m [91m                                   ~~~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/modules/controllers/job.controller.ts[0m:[93m54[0m:[93m36[0m - [91merror[0m[90m TS2339: [0mProperty 'findById' does not exist on type 'JobService'.
+
+[7m54[0m             const data = await job.findById(req.params.id);
+[7m  [0m [91m                                   ~~~~~~~~[0m
+
+    at createTSError (/Users/toannguyen/Desktop/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Desktop/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Desktop/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Desktop/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Desktop/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1252:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Desktop/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1076:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:911:12)
+    at Module.require (node:internal/modules/cjs/loader:1100:19)

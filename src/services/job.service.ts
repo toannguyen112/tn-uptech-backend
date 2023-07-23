@@ -113,7 +113,10 @@ export class JobService {
 
         try {
 
-            return await models.Job.create({ ...newItem }, { transaction: t })
+            return await models.Job.create({
+                ...newItem,
+                slug: Helper.renderSlug(newItem.name, global.lang)
+            }, { transaction: t })
                 .then(async (job: any) => {
                     if (job) {
                         try {
@@ -141,7 +144,7 @@ export class JobService {
         }
     }
 
-    public findById = async (id) => {
+    public show = async (id) => {
 
         const job = await models.Job.findOne({
             where: { id },
@@ -161,34 +164,18 @@ export class JobService {
         return JobDTO.transformDetail(job);
     }
 
-    public findByIdClient = async (id) => {
+    public findBySlug = async (slug: string) => {
 
-        const job = await models.Job.findOne({
-            where: { id },
-            include: [
-                {
-                    model: models.JobTranslation,
-                    as: "translations",
-                    required: true,
-                    where: {
-                        locale: global.lang,
-                        job_id: id
-                    }
-                },
-            ]
-        });
-
-        let jobRelated = [];
-
-        if (job.related && job.related.length) {
-
-            jobRelated = await models.Job.findAll({
+        try {
+            const jobTran = await models.JobTranslation.findOne({
                 where: {
-                    status: 'active',
-                    id: {
-                        [Op.in]: job.related
-                    }
-                },
+                    locale: global.lang,
+                    slug
+                }
+            });
+
+            const job = await models.Job.findOne({
+                where: { id: jobTran.job_id },
                 include: [
                     {
                         model: models.JobTranslation,
@@ -199,9 +186,36 @@ export class JobService {
                     },
                 ]
             });
-        }
 
-        return JobDTO.transformDetailClient({ ...job, jobRelated });
+            let jobRelated = [];
+
+            if (job.related && job.related.length) {
+
+                jobRelated = await models.Job.findAll({
+                    where: {
+                        status: 'active',
+                        id: {
+                            [Op.in]: job.related
+                        }
+                    },
+                    include: [
+                        {
+                            model: models.JobTranslation,
+                            as: "translations",
+                            where: {
+                                locale: global.lang,
+                            }
+                        },
+                    ]
+                });
+            }
+
+            return JobDTO.transformDetailClient({ ...job, jobRelated });
+
+        } catch (error) {
+            console.log(error);
+            throw new Error(error);
+        }
     }
 
     public update = async (id, body) => {
@@ -216,6 +230,7 @@ export class JobService {
 
             return await models.Job.update({
                 ...newItem,
+                slug: Helper.renderSlug(newItem.name, global.lang)
             }, {
                 where: { id },
                 individualHooks: true

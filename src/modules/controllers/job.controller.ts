@@ -26,6 +26,18 @@ export class JobController {
         }
     }
 
+    public async findBySlug(req: Request, res: Response, next: NextFunction) {
+        try {
+            const slug: string = req.params.slug;
+
+            const data = await job.findBySlug(slug);
+
+            res.status(200).send({ message: "ok", data });
+        } catch (error) {
+            res.status(500).send(error);
+        }
+    }
+
     public async getListFeatured(req: Request, res: Response, next: NextFunction) {
 
         try {
@@ -39,17 +51,7 @@ export class JobController {
 
     public async show(req: Request, res: Response, next: NextFunction) {
         try {
-            const data = await job.findById(req.params.id);
-            res.status(200).send({ message: "ok", data });
-        } catch (error) {
-            console.log(error.message);
-            res.status(500).send(error.message);
-        }
-    }
-
-    public async findByIdClient(req: Request, res: Response, next: NextFunction) {
-        try {
-            const data = await job.findByIdClient(req.params.id);
+            const data = await job.show(req.params.id);
             res.status(200).send({ message: "ok", data });
         } catch (error) {
             console.log(error.message);

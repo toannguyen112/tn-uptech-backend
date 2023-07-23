@@ -111,10 +111,5 @@ module.exports = function (sequelize, DataTypes) {
             foreignKey: "job_id",
         });
     }
-
-    JobTranslation.afterSave(async (job, options) => {
-        job.slug = Helper.renderSlug(job.name);
-    });
-
     return JobTranslation;
 };
