@@ -3,7 +3,6 @@ import slugify from 'slugify';
 import bcrypt from "bcrypt";
 import dayjs from "dayjs";
 import _ from 'lodash';
-import fs from 'fs-extra'
 interface ISEO {
   slug: string
   custom_slug: string
@@ -66,26 +65,31 @@ export default class Helper {
     return token;
   }
 
-  public static async emptyDirSync() {
-    try {
-      await fs.emptyDirSync('./storage/uploads');
-      console.log('success!');
-    } catch (err) {
-      console.error(err)
-    }
-  }
-
   static transformRichText(data: string) {
     return `<div>${data}</div>`;
   }
 
-  static renderSlug(slug: string, options?: any) {
+  static renderSlug(slug: string, locale: string = 'vi', options?: any) {
+
+    let lang = 'vi'
+    if (locale == "vi") {
+      lang = 'vi'
+    }
+
+    if (locale == "en") {
+      lang = 'en'
+    }
+
+    if (locale == "ja") {
+      lang = 'ja'
+    }
+
     return slugify(slug, {
       replacement: '-',  // replace spaces with replacement character, defaults to `-`
       remove: undefined, // remove characters that match regex, defaults to `undefined`
       lower: true,      // convert to lower case, defaults to `false`
       strict: false,     // strip special characters except replacement, defaults to `false`
-      locale: 'vi',      // language code of the locale to use
+      locale: lang,      // language code of the locale to use
       trim: true         // trim leading and trailing replacement chars, defaults to `true`
     });
   }

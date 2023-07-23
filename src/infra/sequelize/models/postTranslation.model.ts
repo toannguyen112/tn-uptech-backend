@@ -101,7 +101,7 @@ module.exports = function (sequelize, DataTypes) {
     }
 
     PostTranslation.afterSave(async (post, options) => {
-        post.slug = Helper.renderSlug(post.name);
+        post.slug = Helper.renderSlug(post.name, post.locale);
     });
 
     return PostTranslation;

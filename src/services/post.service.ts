@@ -387,6 +387,7 @@ export class PostService {
                         for (const lang of Helper.langs) {
                             await models.PostTranslation.create({
                                 ...body,
+                                slug: Helper.renderSlug(body.name, global.lang),
                                 post_id: post.id,
                                 locale: lang
                             }, { transaction: t });
@@ -596,21 +597,23 @@ export class PostService {
             view: Number(body.view),
             thumbnail: body.thumbnail ? body.thumbnail.id : null,
             banner: body.banner ? body.banner.id : null,
-        }, { where: { id }, individualHooks: true }, { transaction: t }
+        }, {
+            where: { id }
+        },
+            { transaction: t }
         )
             .then(async (res: any) => {
 
-                try {
-                    await models.PostTranslation.update({ ...body },
-                        {
-                            where: { post_id: id, locale: global.lang },
-                            individualHooks: true,
-                        },
-                        { transaction: t });
-                } catch (error) {
-                    logger.error(JSON.stringify(error));
-                    await t.rollback();
-                }
+                await models.PostTranslation.update({
+                    ...body, slug:
+                        Helper.renderSlug(body.name, global.lang)
+                },
+                    {
+                        where: { post_id: id, locale: global.lang },
+                        individualHooks: true,
+                        plain: true
+                    },
+                    { transaction: t });
 
                 await t.commit();
 

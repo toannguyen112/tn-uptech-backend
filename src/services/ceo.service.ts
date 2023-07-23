@@ -140,6 +140,7 @@ export class CeoService {
                         for (const lang of Helper.langs) {
                             await models.CeoTranslation.create({
                                 ...body,
+                                slug: Helper.renderSlug(body.name, global.lang),
                                 ceo_id: ceo.id,
                                 locale: lang
                             }, { transaction: t });
@@ -183,6 +184,48 @@ export class CeoService {
         return CeoDTO.transformDetail(ceo);
     }
 
+    public findBySlug = async (slug: string) => {
+
+        try {
+
+            const ceoTran = await models.CeoTranslation.findOne({
+                where: {
+                    locale: global.lang,
+                    slug
+                }
+            });
+
+            const ceo = await models.Ceo.findOne({
+                where: {
+                    id: ceoTran['ceo_id'],
+                },
+                include: [
+                    {
+                        model: models.Media,
+                        as: "image",
+                    },
+                    {
+                        model: models.CeoTranslation,
+                        as: "translations",
+                        where: {
+                            locale: global.lang,
+                        }
+                    },
+                ]
+            });
+
+            if (!ceo) {
+                throw new Error("Not Found");
+            }
+
+            return CeoDTO.transformDetail(ceo);
+
+        } catch (error) {
+            console.log(error);
+            throw new Error(error);
+        }
+    }
+
     public updateById = async (id: string, body) => {
 
         delete body.id;
@@ -196,17 +239,17 @@ export class CeoService {
             { transaction: t }
         )
             .then(async (res) => {
-                try {
-                    await models.CeoTranslation.update({ ...body },
-                        { where: { ceo_id: id, locale: global.lang } },
-                        { individualHooks: true },
-                        { transaction: t });
-                } catch (error) {
-                    console.log(error);
-                    await t.rollback();
-                }
+                await models.CeoTranslation.update({ ...body, slug: Helper.renderSlug(body.name, global.lang), },
+                    {
+                        where: { ceo_id: id, locale: global.lang },
+                        individualHooks: true
+                    },
+                    { transaction: t });
 
                 await t.commit();
+            }).catch(async (error) => {
+                console.log(error);
+                await t.rollback();
             });
     }
 

@@ -1,0 +1,213 @@
+2023-07-23 21:02:01 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/route/ceo.route.ts[0m:[93m18[0m:[93m61[0m - [91merror[0m[90m TS2339: [0mProperty 'findBySlug' does not exist on type 'CeoController'.
+
+[7m18[0m         this.router.get(`${this.path}/findBySlug`, this.ceo.findBySlug);
+[7m  [0m [91m                                                            ~~~~~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/route/ceo.route.ts[0m:[93m18[0m:[93m61[0m - [91merror[0m[90m TS2339: [0mProperty 'findBySlug' does not exist on type 'CeoController'.
+
+[7m18[0m         this.router.get(`${this.path}/findBySlug`, this.ceo.findBySlug);
+[7m  [0m [91m                                                            ~~~~~~~~~~[0m
+
+    at createTSError (/Users/toannguyen/Desktop/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Desktop/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Desktop/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Desktop/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Desktop/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1252:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Desktop/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1076:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:911:12)
+    at Module.require (node:internal/modules/cjs/loader:1100:19)
+2023-07-23 21:12:31 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/services/ceo.service.ts[0m:[93m201[0m:[93m33[0m - [91merror[0m[90m TS2304: [0mCannot find name 'id'.
+
+[7m201[0m                         ceo_id: id,
+[7m   [0m [91m                                ~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/services/ceo.service.ts[0m:[93m201[0m:[93m33[0m - [91merror[0m[90m TS2304: [0mCannot find name 'id'.
+
+[7m201[0m                         ceo_id: id,
+[7m   [0m [91m                                ~~[0m
+
+    at createTSError (/Users/toannguyen/Desktop/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Desktop/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Desktop/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Desktop/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Desktop/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1252:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Desktop/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1076:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:911:12)
+    at Module.require (node:internal/modules/cjs/loader:1100:19)
+2023-07-23 21:16:47 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/utils/Helper.ts[0m:[93m86[0m:[93m7[0m - [91merror[0m[90m TS2588: [0mCannot assign to 'lang' because it is a constant.
+
+[7m86[0m       lang = 'vi'
+[7m  [0m [91m      ~~~~[0m
+[96msrc/utils/Helper.ts[0m:[93m90[0m:[93m7[0m - [91merror[0m[90m TS2588: [0mCannot assign to 'lang' because it is a constant.
+
+[7m90[0m       lang = 'en'
+[7m  [0m [91m      ~~~~[0m
+[96msrc/utils/Helper.ts[0m:[93m94[0m:[93m7[0m - [91merror[0m[90m TS2588: [0mCannot assign to 'lang' because it is a constant.
+
+[7m94[0m       lang = 'ja'
+[7m  [0m [91m      ~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/utils/Helper.ts[0m:[93m86[0m:[93m7[0m - [91merror[0m[90m TS2588: [0mCannot assign to 'lang' because it is a constant.
+
+[7m86[0m       lang = 'vi'
+[7m  [0m [91m      ~~~~[0m
+[96msrc/utils/Helper.ts[0m:[93m90[0m:[93m7[0m - [91merror[0m[90m TS2588: [0mCannot assign to 'lang' because it is a constant.
+
+[7m90[0m       lang = 'en'
+[7m  [0m [91m      ~~~~[0m
+[96msrc/utils/Helper.ts[0m:[93m94[0m:[93m7[0m - [91merror[0m[90m TS2588: [0mCannot assign to 'lang' because it is a constant.
+
+[7m94[0m       lang = 'ja'
+[7m  [0m [91m      ~~~~[0m
+
+    at createTSError (/Users/toannguyen/Desktop/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Desktop/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Desktop/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Desktop/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Desktop/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1252:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Desktop/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1076:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:911:12)
+    at Module.require (node:internal/modules/cjs/loader:1100:19)
+2023-07-23 21:16:53 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/infra/sequelize/models/categoryTranslation.model.ts[0m:[93m56[0m:[93m32[0m - [91merror[0m[90m TS2554: [0mExpected 2-3 arguments, but got 1.
+
+[7m56[0m         category.slug = Helper.renderSlug(category.name);
+[7m  [0m [91m                               ~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+  [96msrc/utils/Helper.ts[0m:[93m82[0m:[93m35[0m
+    [7m82[0m   static renderSlug(slug: string, locale: string, options?: any) {
+    [7m  [0m [96m                                  ~~~~~~~~~~~~~~[0m
+    An argument for 'locale' was not provided.
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/infra/sequelize/models/categoryTranslation.model.ts[0m:[93m56[0m:[93m32[0m - [91merror[0m[90m TS2554: [0mExpected 2-3 arguments, but got 1.
+
+[7m56[0m         category.slug = Helper.renderSlug(category.name);
+[7m  [0m [91m                               ~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+  [96msrc/utils/Helper.ts[0m:[93m82[0m:[93m35[0m
+    [7m82[0m   static renderSlug(slug: string, locale: string, options?: any) {
+    [7m  [0m [96m                                  ~~~~~~~~~~~~~~[0m
+    An argument for 'locale' was not provided.
+
+    at createTSError (/Users/toannguyen/Desktop/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Desktop/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Desktop/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Desktop/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Desktop/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1252:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Desktop/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1076:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:911:12)
+    at Module.require (node:internal/modules/cjs/loader:1100:19)
+2023-07-23 21:17:11 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/infra/sequelize/models/categoryTranslation.model.ts[0m:[93m56[0m:[93m32[0m - [91merror[0m[90m TS2554: [0mExpected 2-3 arguments, but got 1.
+
+[7m56[0m         category.slug = Helper.renderSlug(category.name);
+[7m  [0m [91m                               ~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+  [96msrc/utils/Helper.ts[0m:[93m82[0m:[93m35[0m
+    [7m82[0m   static renderSlug(slug: string, locale: string, options?: any) {
+    [7m  [0m [96m                                  ~~~~~~~~~~~~~~[0m
+    An argument for 'locale' was not provided.
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/infra/sequelize/models/categoryTranslation.model.ts[0m:[93m56[0m:[93m32[0m - [91merror[0m[90m TS2554: [0mExpected 2-3 arguments, but got 1.
+
+[7m56[0m         category.slug = Helper.renderSlug(category.name);
+[7m  [0m [91m                               ~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+  [96msrc/utils/Helper.ts[0m:[93m82[0m:[93m35[0m
+    [7m82[0m   static renderSlug(slug: string, locale: string, options?: any) {
+    [7m  [0m [96m                                  ~~~~~~~~~~~~~~[0m
+    An argument for 'locale' was not provided.
+
+    at createTSError (/Users/toannguyen/Desktop/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Desktop/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Desktop/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Desktop/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Desktop/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1252:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Desktop/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1076:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:911:12)
+    at Module.require (node:internal/modules/cjs/loader:1100:19)
+2023-07-23 21:21:05 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/infra/sequelize/models/ceoTranslation.model.ts[0m:[93m147[0m:[93m5[0m - [91merror[0m[90m TS2304: [0mCannot find name 'ceo'.
+
+[7m147[0m     ceo.slug = Helper.renderSlug(ceo.name, ceo.locale);
+[7m   [0m [91m    ~~~[0m
+[96msrc/infra/sequelize/models/ceoTranslation.model.ts[0m:[93m147[0m:[93m34[0m - [91merror[0m[90m TS2304: [0mCannot find name 'ceo'.
+
+[7m147[0m     ceo.slug = Helper.renderSlug(ceo.name, ceo.locale);
+[7m   [0m [91m                                 ~~~[0m
+[96msrc/infra/sequelize/models/ceoTranslation.model.ts[0m:[93m147[0m:[93m44[0m - [91merror[0m[90m TS2304: [0mCannot find name 'ceo'.
+
+[7m147[0m     ceo.slug = Helper.renderSlug(ceo.name, ceo.locale);
+[7m   [0m [91m                                           ~~~[0m
+[96msrc/infra/sequelize/models/ceoTranslation.model.ts[0m:[93m145[0m:[93m32[0m - [91merror[0m[90m TS1005: [0m';' expected.
+
+[7m145[0m         console.log(ceo.locale));
+[7m   [0m [91m                               ~[0m
+[96msrc/infra/sequelize/models/ceoTranslation.model.ts[0m:[93m148[0m:[93m2[0m - [91merror[0m[90m TS1005: [0m';' expected.
+
+[7m148[0m });
+[7m   [0m [91m ~[0m
+[96msrc/infra/sequelize/models/ceoTranslation.model.ts[0m:[93m151[0m:[93m1[0m - [91merror[0m[90m TS1128: [0mDeclaration or statement expected.
+
+[7m151[0m };
+[7m   [0m [91m~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/infra/sequelize/models/ceoTranslation.model.ts[0m:[93m147[0m:[93m5[0m - [91merror[0m[90m TS2304: [0mCannot find name 'ceo'.
+
+[7m147[0m     ceo.slug = Helper.renderSlug(ceo.name, ceo.locale);
+[7m   [0m [91m    ~~~[0m
+[96msrc/infra/sequelize/models/ceoTranslation.model.ts[0m:[93m147[0m:[93m34[0m - [91merror[0m[90m TS2304: [0mCannot find name 'ceo'.
+
+[7m147[0m     ceo.slug = Helper.renderSlug(ceo.name, ceo.locale);
+[7m   [0m [91m                                 ~~~[0m
+[96msrc/infra/sequelize/models/ceoTranslation.model.ts[0m:[93m147[0m:[93m44[0m - [91merror[0m[90m TS2304: [0mCannot find name 'ceo'.
+
+[7m147[0m     ceo.slug = Helper.renderSlug(ceo.name, ceo.locale);
+[7m   [0m [91m                                           ~~~[0m
+[96msrc/infra/sequelize/models/ceoTranslation.model.ts[0m:[93m145[0m:[93m32[0m - [91merror[0m[90m TS1005: [0m';' expected.
+
+[7m145[0m         console.log(ceo.locale));
+[7m   [0m [91m                               ~[0m
+[96msrc/infra/sequelize/models/ceoTranslation.model.ts[0m:[93m148[0m:[93m2[0m - [91merror[0m[90m TS1005: [0m';' expected.
+
+[7m148[0m });
+[7m   [0m [91m ~[0m
+[96msrc/infra/sequelize/models/ceoTranslation.model.ts[0m:[93m151[0m:[93m1[0m - [91merror[0m[90m TS1128: [0mDeclaration or statement expected.
+
+[7m151[0m };
+[7m   [0m [91m~[0m
+
+    at createTSError (/Users/toannguyen/Desktop/tn-uptech-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/toannguyen/Desktop/tn-uptech-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/toannguyen/Desktop/tn-uptech-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/toannguyen/Desktop/tn-uptech-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/toannguyen/Desktop/tn-uptech-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1252:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/toannguyen/Desktop/tn-uptech-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1076:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:911:12)
+    at Module.require (node:internal/modules/cjs/loader:1100:19)
+2023-07-23 21:49:04 error: {}
+2023-07-23 21:53:46 error: {}
+2023-07-23 21:53:46 error: Transaction cannot be rolled back because it has been finished with state: rollback
+2023-07-23 21:53:48 error: {}
+2023-07-23 21:53:48 error: Transaction cannot be rolled back because it has been finished with state: rollback

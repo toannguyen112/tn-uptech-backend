@@ -34,6 +34,18 @@ export class CeoController extends BaseController {
         }
     }
 
+    public async findBySlug(req: Request, res: Response, next: NextFunction) {
+        try {
+            const slug: string = req.params.slug;
+
+            const data = await ceo.findBySlug(slug);
+
+            res.status(200).send({ message: "ok", data });
+        } catch (error) {
+            res.status(500).send(error);
+        }
+    }
+
     public async getListCeo(req: Request, res: Response, next: NextFunction) {
 
         try {

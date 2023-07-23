@@ -140,9 +140,5 @@ module.exports = function (sequelize, DataTypes) {
         });
     }
 
-    CeoTranslation.beforeSave(async (ceo, options) => {
-        ceo.slug = Helper.renderSlug(ceo.name);
-    });
-
     return CeoTranslation;
 };

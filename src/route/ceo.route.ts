@@ -15,6 +15,7 @@ export class CeoRoute implements Routes {
     private initializeRoutes() {
         this.router.get(`${this.path}`, this.ceo.index);
         this.router.get(`${this.path}/getListCeo`, this.ceo.getListCeo);
+        this.router.get(`${this.path}/findBySlug/:slug`, this.ceo.findBySlug);
         this.router.post(`${this.path}/create`, this.ceo.create);
         this.router.get(`${this.path}/show/:id`, this.ceo.show);
         this.router.put(`${this.path}/update/:id`, this.ceo.update);
