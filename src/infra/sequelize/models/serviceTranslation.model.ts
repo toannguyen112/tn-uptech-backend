@@ -124,9 +124,5 @@ module.exports = function (sequelize, DataTypes) {
         });
     }
 
-    ServiceTranslation.afterSave(async (service, options) => {
-        service.slug = Helper.renderSlug(service.name);
-    });
-
     return ServiceTranslation;
 };

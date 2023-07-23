@@ -239,7 +239,10 @@ export class CeoService {
             { transaction: t }
         )
             .then(async (res) => {
-                await models.CeoTranslation.update({ ...body, slug: Helper.renderSlug(body.name, global.lang), },
+                await models.CeoTranslation.update({
+                    ...body,
+                    slug: Helper.renderSlug(body.name, global.lang),
+                },
                     {
                         where: { ceo_id: id, locale: global.lang },
                         individualHooks: true

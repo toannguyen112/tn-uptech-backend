@@ -1,0 +1,182 @@
+2023-07-24 00:00:01 info: [0mGET /projects/getProjectsClient?branch_id=6 [32m200[0m 99.694 ms - 40[0m
+2023-07-24 00:00:05 info: [0mGET /jobs/getListFeatured [36m304[0m 146.731 ms - -[0m
+2023-07-24 00:00:17 info: [0mGET /banners/getListBanner [32m200[0m 11.774 ms - 3100[0m
+2023-07-24 00:00:17 info: [0mGET /posts/getListFeatured [32m200[0m 29.699 ms - 855[0m
+2023-07-24 00:00:17 info: [0mGET /services/nav [32m200[0m 28.330 ms - 1882[0m
+2023-07-24 00:04:58 info: =================================
+2023-07-24 00:04:58 info: ======= ENV: development =======
+2023-07-24 00:04:58 info: 🚀 App listening on the port 8000
+2023-07-24 00:04:58 info: =================================
+2023-07-24 00:05:04 info: [0mGET /banners/getListBanner [32m200[0m 451.691 ms - 3100[0m
+2023-07-24 00:05:04 info: [0mGET /services/nav [32m200[0m 426.394 ms - 1882[0m
+2023-07-24 00:05:04 info: [0mGET /posts/getListFeatured [32m200[0m 452.765 ms - 855[0m
+2023-07-24 00:05:06 info: [0mGET /services/nav [36m304[0m 43.468 ms - -[0m
+2023-07-24 00:05:09 info: [0mGET /branchs/getListBranch [36m304[0m 59.492 ms - -[0m
+2023-07-24 00:05:09 info: [0mGET /services/getListService [36m304[0m 69.440 ms - -[0m
+2023-07-24 00:05:09 info: [0mGET /projects/getProjectsClient [36m304[0m 117.536 ms - -[0m
+2023-07-24 00:05:12 info: [0mGET /projects/findBySlug/he-thong-quan-tri-muc-tieu-okrs [32m200[0m 278.481 ms - 3952[0m
+2023-07-24 00:06:59 info: [0mGET /services/findBySlug/website [33m404[0m 25.503 ms - 166[0m
+2023-07-24 00:06:59 info: [0mGET /services/findBySlug/website [33m404[0m 11.608 ms - 166[0m
+2023-07-24 00:07:04 info: [0mGET /projects/findBySlug/he-thong-quan-tri-muc-tieu-okrs [32m200[0m 123.303 ms - 3952[0m
+2023-07-24 00:07:25 info: [0mGET /services/nav [32m200[0m 236.576 ms - 1882[0m
+2023-07-24 00:07:25 info: [0mGET /banners/getListBanner [32m200[0m 346.114 ms - 3100[0m
+2023-07-24 00:07:25 info: [0mGET /posts/getListFeatured [32m200[0m 445.462 ms - 855[0m
+2023-07-24 00:07:33 info: [0mGET /services/findBySlug/website [33m404[0m 17.819 ms - 166[0m
+2023-07-24 00:07:33 info: [0mGET /services/findBySlug/website [33m404[0m 1.424 ms - 166[0m
+2023-07-24 00:08:14 info: [0mGET /services/findBySlug/website [33m404[0m 17.404 ms - 166[0m
+2023-07-24 00:08:14 info: [0mGET /banners/getListBanner [32m200[0m 428.740 ms - 3100[0m
+2023-07-24 00:08:15 info: [0mGET /services/nav [32m200[0m 338.238 ms - 1882[0m
+2023-07-24 00:08:15 info: [0mGET /posts/getListFeatured [32m200[0m 456.208 ms - 855[0m
+2023-07-24 00:08:15 info: [0mGET /services/findBySlug/website [33m404[0m 5.135 ms - 166[0m
+2023-07-24 00:08:16 info: [0mGET /services/findBySlug/website [33m404[0m 3.062 ms - 166[0m
+2023-07-24 00:08:35 info: [0mGET /services/findBySlug/website [33m404[0m 3.475 ms - 166[0m
+2023-07-24 00:08:47 info: [0mGET /services/findBySlug/website [33m404[0m 87.469 ms - 166[0m
+2023-07-24 00:08:47 info: [0mGET /services/findBySlug/website [33m404[0m 3.904 ms - 166[0m
+2023-07-24 00:08:57 info: [0mGET /services/findBySlug/website [33m404[0m 4.004 ms - 166[0m
+2023-07-24 00:09:13 info: [0mGET /services/findBySlug/website [33m404[0m 3.798 ms - 166[0m
+2023-07-24 00:10:09 info: =================================
+2023-07-24 00:10:09 info: ======= ENV: development =======
+2023-07-24 00:10:09 info: 🚀 App listening on the port 8000
+2023-07-24 00:10:09 info: =================================
+2023-07-24 00:10:09 info: [0mGET /services/findBySlug/website [33m404[0m 9.295 ms - 166[0m
+2023-07-24 00:10:15 info: [0mGET /services/findBySlug/website [33m404[0m 12.706 ms - 166[0m
+2023-07-24 00:10:55 info: =================================
+2023-07-24 00:10:55 info: ======= ENV: development =======
+2023-07-24 00:10:55 info: 🚀 App listening on the port 8000
+2023-07-24 00:10:55 info: =================================
+2023-07-24 00:11:08 info: [0mGET /services/findBySlug/website [33m404[0m 11.350 ms - 166[0m
+2023-07-24 00:11:51 info: =================================
+2023-07-24 00:11:51 info: ======= ENV: development =======
+2023-07-24 00:11:51 info: 🚀 App listening on the port 8000
+2023-07-24 00:11:51 info: =================================
+2023-07-24 00:12:01 info: =================================
+2023-07-24 00:12:01 info: ======= ENV: development =======
+2023-07-24 00:12:01 info: 🚀 App listening on the port 8000
+2023-07-24 00:12:01 info: =================================
+2023-07-24 00:12:03 info: [0mGET /services/findBySlug/website [33m404[0m 30.464 ms - 166[0m
+2023-07-24 00:12:33 info: [0mGET /services/findBySlug/website [33m404[0m 138.753 ms - 166[0m
+2023-07-24 00:12:35 info: [0mGET /services/findBySlug/website [33m404[0m 4.099 ms - 166[0m
+2023-07-24 00:12:36 info: [0mGET /services/findBySlug/website [33m404[0m 20.225 ms - 166[0m
+2023-07-24 00:14:20 info: =================================
+2023-07-24 00:14:20 info: ======= ENV: development =======
+2023-07-24 00:14:20 info: 🚀 App listening on the port 8000
+2023-07-24 00:14:20 info: =================================
+2023-07-24 00:14:22 info: [0mGET /services/findBySlug/website [32m200[0m 321.684 ms - 4120[0m
+2023-07-24 00:14:33 info: [0mGET /banners/getListBanner [32m200[0m 352.085 ms - 3100[0m
+2023-07-24 00:14:34 info: [0mGET /posts/getListFeatured [32m200[0m 258.625 ms - 855[0m
+2023-07-24 00:14:34 info: [0mGET /services/nav [32m200[0m 347.042 ms - 1882[0m
+2023-07-24 00:14:41 info: [0mGET /services/findBySlug/website [32m200[0m 122.410 ms - 4120[0m
+2023-07-24 00:14:42 info: [0mGET /services/findBySlug/website [32m200[0m 95.364 ms - 4120[0m
+2023-07-24 00:16:16 info: [0mGET /services/findBySlug/website [32m200[0m 350.575 ms - 4120[0m
+2023-07-24 00:16:16 info: [0mGET /services/findBySlug/website [32m200[0m 113.506 ms - 4120[0m
+2023-07-24 00:16:24 info: [0mGET /banners/getListBanner [32m200[0m 127.449 ms - 3100[0m
+2023-07-24 00:16:24 info: [0mGET /services/nav [32m200[0m 217.128 ms - 1882[0m
+2023-07-24 00:16:24 info: [0mGET /posts/getListFeatured [32m200[0m 284.155 ms - 855[0m
+2023-07-24 00:16:29 info: [0mGET /services/nav [36m304[0m 318.414 ms - -[0m
+2023-07-24 00:16:32 info: [0mGET /services/findBySlug/website [32m200[0m 68.632 ms - 4120[0m
+2023-07-24 00:16:32 info: [0mGET /services/findBySlug/website [32m200[0m 47.656 ms - 4120[0m
+2023-07-24 00:17:25 info: [0mGET /services/findBySlug/website [32m200[0m 117.449 ms - 4120[0m
+2023-07-24 00:17:25 info: [0mGET /services/findBySlug/website [32m200[0m 113.102 ms - 4120[0m
+2023-07-24 00:17:25 info: [0mGET /services/findBySlug/website [32m200[0m 17.013 ms - 4120[0m
+2023-07-24 00:17:31 info: [0mGET /banners/getListBanner [32m200[0m 330.128 ms - 3100[0m
+2023-07-24 00:17:31 info: [0mGET /services/nav [32m200[0m 287.715 ms - 1882[0m
+2023-07-24 00:17:31 info: [0mGET /posts/getListFeatured [32m200[0m 337.800 ms - 855[0m
+2023-07-24 00:17:35 info: [0mGET /services/nav [36m304[0m 226.367 ms - -[0m
+2023-07-24 00:17:38 info: [0mGET /services/findBySlug/website [32m200[0m 40.809 ms - 4120[0m
+2023-07-24 00:17:42 info: [0mGET /posts/getListFeatured [32m200[0m 57.076 ms - 855[0m
+2023-07-24 00:17:42 info: [0mGET /services/nav [32m200[0m 59.944 ms - 1882[0m
+2023-07-24 00:17:42 info: [0mGET /banners/getListBanner [32m200[0m 74.265 ms - 3100[0m
+2023-07-24 00:17:44 info: [0mGET /banners/getListBanner [32m200[0m 37.737 ms - 3100[0m
+2023-07-24 00:17:44 info: [0mGET /posts/getListFeatured [32m200[0m 63.682 ms - 855[0m
+2023-07-24 00:17:44 info: [0mGET /services/nav [32m200[0m 78.790 ms - 1882[0m
+2023-07-24 00:17:46 info: [0mGET /services/nav [36m304[0m 38.854 ms - -[0m
+2023-07-24 00:17:48 info: [0mGET /services/findBySlug/ung-dung-di-ong [32m200[0m 63.848 ms - 5219[0m
+2023-07-24 00:19:47 info: [0mGET /services/findBySlug/ung-dung-di-ong [32m200[0m 330.036 ms - 5219[0m
+2023-07-24 00:21:04 info: =================================
+2023-07-24 00:21:04 info: ======= ENV: development =======
+2023-07-24 00:21:04 info: 🚀 App listening on the port 8000
+2023-07-24 00:21:04 info: =================================
+2023-07-24 00:21:09 info: [0mGET /services/findBySlug/ung-dung-di-ong [32m200[0m 260.812 ms - 90[0m
+2023-07-24 00:21:12 info: [0mGET /services/nav [36m304[0m 78.047 ms - -[0m
+2023-07-24 00:21:16 info: [0mGET /services/findBySlug/website [32m200[0m 46.082 ms - 66[0m
+2023-07-24 00:21:19 info: [0mGET /services/findBySlug/ung-dung-di-ong [32m200[0m 27.523 ms - 90[0m
+2023-07-24 00:21:21 info: [0mGET /banners/getListBanner [32m200[0m 161.150 ms - 3100[0m
+2023-07-24 00:21:21 info: [0mGET /posts/getListFeatured [32m200[0m 195.874 ms - 855[0m
+2023-07-24 00:21:22 info: [0mGET /services/nav [32m200[0m 228.626 ms - 1882[0m
+2023-07-24 00:21:24 info: [0mGET /services/findBySlug/mo-hinh-chien-luoc-chuyen-oi-so [32m200[0m 19.980 ms - 132[0m
+2023-07-24 00:22:05 info: [0mGET /services/findBySlug/website [32m200[0m 26.756 ms - 66[0m
+2023-07-24 00:22:20 info: [0mGET /banners/getListBanner [32m200[0m 53.402 ms - 3100[0m
+2023-07-24 00:22:20 info: [0mGET /services/nav [32m200[0m 27.153 ms - 1882[0m
+2023-07-24 00:22:20 info: [0mGET /posts/getListFeatured [32m200[0m 61.953 ms - 855[0m
+2023-07-24 00:22:30 info: [0mGET /services/findBySlug/ung-dung-di-ong [32m200[0m 150.525 ms - 90[0m
+2023-07-24 00:24:04 info: =================================
+2023-07-24 00:24:04 info: ======= ENV: development =======
+2023-07-24 00:24:04 info: 🚀 App listening on the port 8000
+2023-07-24 00:24:04 info: =================================
+2023-07-24 00:24:26 info: =================================
+2023-07-24 00:24:26 info: ======= ENV: development =======
+2023-07-24 00:24:26 info: 🚀 App listening on the port 8000
+2023-07-24 00:24:26 info: =================================
+2023-07-24 00:24:47 info: =================================
+2023-07-24 00:24:47 info: ======= ENV: development =======
+2023-07-24 00:24:47 info: 🚀 App listening on the port 8000
+2023-07-24 00:24:47 info: =================================
+2023-07-24 00:25:07 info: =================================
+2023-07-24 00:25:07 info: ======= ENV: development =======
+2023-07-24 00:25:07 info: 🚀 App listening on the port 8000
+2023-07-24 00:25:07 info: =================================
+2023-07-24 00:25:58 info: =================================
+2023-07-24 00:25:58 info: ======= ENV: development =======
+2023-07-24 00:25:58 info: 🚀 App listening on the port 8000
+2023-07-24 00:25:58 info: =================================
+2023-07-24 00:26:22 info: =================================
+2023-07-24 00:26:22 info: ======= ENV: development =======
+2023-07-24 00:26:22 info: 🚀 App listening on the port 8000
+2023-07-24 00:26:22 info: =================================
+2023-07-24 00:26:33 info: [0mOPTIONS /admins/profile [32m204[0m 2.935 ms - 0[0m
+2023-07-24 00:26:35 info: [0mGET /admins/profile [36m304[0m 1657.387 ms - -[0m
+2023-07-24 00:26:39 info: [0mGET /services/findBySlug/website [32m200[0m 236.515 ms - 4120[0m
+2023-07-24 00:26:40 info: [0mOPTIONS /admins/profile [32m204[0m 2.169 ms - 0[0m
+2023-07-24 00:26:41 info: [0mGET /admins/profile [36m304[0m 870.315 ms - -[0m
+2023-07-24 00:26:41 info: [0mGET /branchs?page=1&page_size=10 [36m304[0m 1231.070 ms - -[0m
+2023-07-24 00:26:41 info: [0mGET /branchs?page=1&page_size=10 [36m304[0m 202.030 ms - -[0m
+2023-07-24 00:26:46 info: [0mGET /banners/getListBanner [32m200[0m 177.557 ms - 3100[0m
+2023-07-24 00:26:46 info: [0mGET /services/nav [32m200[0m 195.022 ms - 1882[0m
+2023-07-24 00:26:46 info: [0mGET /posts/getListFeatured [32m200[0m 197.572 ms - 855[0m
+2023-07-24 00:26:50 info: [0mGET /services/findBySlug/cho-thue-nhan-su-it [32m200[0m 75.942 ms - 3630[0m
+2023-07-24 00:26:50 info: [0mGET /services/getListService [36m304[0m 120.296 ms - -[0m
+2023-07-24 00:26:57 info: [0mGET /banners/getListBanner [32m200[0m 45.741 ms - 3100[0m
+2023-07-24 00:26:57 info: [0mGET /posts/getListFeatured [32m200[0m 44.875 ms - 855[0m
+2023-07-24 00:26:57 info: [0mGET /services/nav [32m200[0m 46.656 ms - 1882[0m
+2023-07-24 00:27:57 info: [0mGET /services/findBySlug/mo-hinh-chien-luoc-chuyen-oi-so [32m200[0m 19.134 ms - 3534[0m
+2023-07-24 00:28:01 info: [0mGET /banners/getListBanner [32m200[0m 11.189 ms - 3100[0m
+2023-07-24 00:28:01 info: [0mGET /posts/getListFeatured [32m200[0m 13.325 ms - 855[0m
+2023-07-24 00:28:01 info: [0mGET /services/nav [32m200[0m 19.799 ms - 1882[0m
+2023-07-24 00:28:07 info: [0mGET /services/findBySlug/website [32m200[0m 15.240 ms - 4120[0m
+2023-07-24 00:29:12 info: =================================
+2023-07-24 00:29:12 info: ======= ENV: development =======
+2023-07-24 00:29:12 info: 🚀 App listening on the port 8000
+2023-07-24 00:29:12 info: =================================
+2023-07-24 00:29:17 info: [0mGET /services/findBySlug/website [32m200[0m 169.866 ms - 3983[0m
+2023-07-24 00:29:22 info: [0mGET /services/findBySlug/website [32m200[0m 140.151 ms - 3983[0m
+2023-07-24 00:29:26 info: [0mGET /banners/getListBanner [32m200[0m 119.869 ms - 3100[0m
+2023-07-24 00:29:26 info: [0mGET /posts/getListFeatured [32m200[0m 110.817 ms - 855[0m
+2023-07-24 00:29:26 info: [0mGET /services/nav [32m200[0m 156.460 ms - 1882[0m
+2023-07-24 00:29:26 info: [0mGET /banners/getListBanner [32m200[0m 47.222 ms - 3100[0m
+2023-07-24 00:29:26 info: [0mGET /services/nav [32m200[0m 53.183 ms - 1882[0m
+2023-07-24 00:29:26 info: [0mGET /posts/getListFeatured [32m200[0m 74.721 ms - 855[0m
+2023-07-24 00:29:29 info: [0mGET /services/nav [36m304[0m 92.138 ms - -[0m
+2023-07-24 00:29:32 info: [0mGET /services/findBySlug/mo-hinh-chien-luoc-chuyen-oi-so [32m200[0m 25.093 ms - 3396[0m
+2023-07-24 00:29:37 info: [0mGET /services/findBySlug/website [32m200[0m 14.027 ms - 3983[0m
+2023-07-24 00:29:43 info: [0mGET /services/findBySlug/cho-thue-nhan-su-it [32m200[0m 30.075 ms - 3492[0m
+2023-07-24 00:29:44 info: [0mGET /services/getListService [36m304[0m 50.072 ms - -[0m
+2023-07-24 00:29:49 info: [0mGET /services/findBySlug/thiet-ke-uiux [32m200[0m 13.300 ms - 2865[0m
+2023-07-24 00:29:53 info: [0mGET /services/findBySlug/thiet-ke-uiux [32m200[0m 19.015 ms - 2865[0m
+2023-07-24 00:30:35 info: [0mGET /services/findBySlug/thiet-ke-uiux [32m200[0m 39.766 ms - 2865[0m
+2023-07-24 00:30:35 info: [0mGET /services/findBySlug/thiet-ke-uiux [32m200[0m 35.508 ms - 2865[0m
+2023-07-24 00:31:02 info: [0mGET /services/findBySlug/thiet-ke-uiux [32m200[0m 49.982 ms - 2865[0m
+2023-07-24 00:31:03 info: [0mGET /services/findBySlug/thiet-ke-uiux [32m200[0m 26.352 ms - 2865[0m
+2023-07-24 00:31:21 info: [0mGET /services/findBySlug/thiet-ke-uiux [32m200[0m 98.265 ms - 2865[0m
+2023-07-24 00:31:21 info: [0mGET /services/findBySlug/thiet-ke-uiux [32m200[0m 34.983 ms - 2865[0m
+2023-07-24 00:31:31 info: [0mGET /services/findBySlug/thiet-ke-uiux [32m200[0m 66.920 ms - 2865[0m
+2023-07-24 00:31:35 info: [0mGET /services/findBySlug/thiet-ke-uiux [32m200[0m 54.545 ms - 2865[0m

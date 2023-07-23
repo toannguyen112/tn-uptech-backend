@@ -73,9 +73,9 @@ export class ServiceController extends BaseController {
         }
     }
 
-    public async findByIdClient(req: Request, res: Response, next: NextFunction) {
+    public async findBySlug(req: Request, res: Response, next: NextFunction) {
         try {
-            const data = await service.findByIdClient(req.params.id);
+            const data = await service.findBySlug(req.params.slug);
             res.status(200).send({ message: "ok", data });
         } catch (error) {
             logger.error(error);

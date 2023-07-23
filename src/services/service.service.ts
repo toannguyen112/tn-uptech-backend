@@ -85,11 +85,19 @@ export class ServiceService {
         }
     }
 
-    public findByIdClient = async (id) => {
+    public findBySlug = async (slug: string) => {
 
         try {
+
+            const serviceTran = await models.ServiceTranslation.findOne({
+                where: {
+                    locale: global.lang,
+                    slug: slug
+                }
+            });
+
             const service = await models.Service.findOne({
-                where: { id },
+                where: { id: serviceTran.service_id },
                 include: [
                     {
                         model: models.ServiceTranslation,
@@ -100,7 +108,7 @@ export class ServiceService {
                 ]
             });
 
-            return service;
+            return ServiceDTO.transformDetail(service);
 
         } catch (error) {
             console.log(error);
@@ -226,6 +234,7 @@ export class ServiceService {
                 for (const lang of Helper.langs) {
                     await models.ServiceTranslation.create({
                         ...body,
+                        slug: Helper.renderSlug(body.name, global.lang),
                         service_id: service.id,
                         locale: lang
                     }, { transaction: t });
@@ -282,7 +291,6 @@ export class ServiceService {
         },
             {
                 where: { id },
-                individualHooks: true
             },
             { transaction: t }
         )
@@ -291,14 +299,13 @@ export class ServiceService {
                 try {
                     return await models.ServiceTranslation.update({
                         ...body,
-
+                        slug: Helper.renderSlug(body.name, global.lang),
                     },
                         {
                             where: {
                                 service_id: id,
                                 locale: global.lang
                             },
-                            individualHooks: true
                         }, { transaction: t });
                 } catch (error) {
                     console.log(error);
