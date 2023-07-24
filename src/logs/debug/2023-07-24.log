@@ -907,3 +907,40 @@
 2023-07-24 03:32:28 info: ======= ENV: development =======
 2023-07-24 03:32:28 info: 🚀 App listening on the port 8000
 2023-07-24 03:32:28 info: =================================
+2023-07-24 10:42:13 info: =================================
+2023-07-24 10:42:13 info: ======= ENV: development =======
+2023-07-24 10:42:13 info: 🚀 App listening on the port 8000
+2023-07-24 10:42:13 info: =================================
+2023-07-24 10:43:10 info: [0mGET /banners/getListBanner [32m200[0m 427.306 ms - 1404[0m
+2023-07-24 10:43:10 info: [0mGET /posts/getListFeatured [32m200[0m 399.396 ms - 642[0m
+2023-07-24 10:43:10 info: [0mGET /services/nav [32m200[0m 395.198 ms - 1603[0m
+2023-07-24 10:43:13 info: [0mGET /services/nav [36m304[0m 91.877 ms - -[0m
+2023-07-24 10:43:18 info: [0mGET /posts/getListFeatured [32m200[0m 59.218 ms - 642[0m
+2023-07-24 10:43:18 info: [0mGET /banners/getListBanner [32m200[0m 82.459 ms - 1404[0m
+2023-07-24 10:43:18 info: [0mGET /services/nav [32m200[0m 225.159 ms - 1603[0m
+2023-07-24 10:43:21 info: [0mGET /services/nav [36m304[0m 100.833 ms - -[0m
+2023-07-24 10:43:52 info: [0mGET /ceos/getlistCeo [32m200[0m 448.504 ms - 342[0m
+2023-07-24 10:43:53 info: [0mGET /banners/getListBanner [32m200[0m 14.651 ms - 1404[0m
+2023-07-24 10:43:53 info: [0mGET /posts/getListFeatured [32m200[0m 48.507 ms - 642[0m
+2023-07-24 10:43:53 info: [0mGET /services/nav [32m200[0m 49.363 ms - 1603[0m
+2023-07-24 10:43:57 info: [0mGET /branchs/getListBranch [32m200[0m 123.936 ms - 717[0m
+2023-07-24 10:43:57 info: [0mGET /services/getListService [32m200[0m 75.143 ms - -[0m
+2023-07-24 10:43:57 info: [0mGET /projects/getProjectsClient [32m200[0m 48.780 ms - 239[0m
+2023-07-24 10:43:57 info: [0mGET /projects/getProjectsClient [36m304[0m 18.143 ms - -[0m
+2023-07-24 10:44:11 info: [0mGET /projects/findBySlug/he-thong-quan-tri-muc-tieu-okrs [32m200[0m 185.897 ms - 2935[0m
+2023-07-24 10:44:16 info: [0mGET /ceos/getlistCeo [36m304[0m 19.230 ms - -[0m
+2023-07-24 10:44:17 info: [0mGET /banners/getListBanner [32m200[0m 17.321 ms - 1404[0m
+2023-07-24 10:44:17 info: [0mGET /posts/getListFeatured [32m200[0m 17.585 ms - 642[0m
+2023-07-24 10:44:17 info: [0mGET /services/nav [32m200[0m 25.074 ms - 1603[0m
+2023-07-24 10:44:21 info: [0mGET /ceos/getlistCeo [36m304[0m 51.759 ms - -[0m
+2023-07-24 10:44:33 info: [0mGET /posts/getListFeatured [32m200[0m 39.446 ms - 642[0m
+2023-07-24 10:44:33 info: [0mGET /banners/getListBanner [32m200[0m 36.014 ms - 1404[0m
+2023-07-24 10:44:33 info: [0mGET /services/nav [32m200[0m 21.440 ms - 1603[0m
+2023-07-24 10:46:31 info: [0mGET /posts/getListFeatured [32m200[0m 86.009 ms - 642[0m
+2023-07-24 10:46:31 info: [0mGET /banners/getListBanner [32m200[0m 191.877 ms - 1404[0m
+2023-07-24 10:46:31 info: [0mGET /services/nav [32m200[0m 169.592 ms - 1603[0m
+2023-07-24 10:54:06 info: [0mGET /services/nav [36m304[0m 1066.762 ms - -[0m
+2023-07-24 11:30:16 info: =================================
+2023-07-24 11:30:16 info: ======= ENV: development =======
+2023-07-24 11:30:16 info: 🚀 App listening on the port 8000
+2023-07-24 11:30:16 info: =================================

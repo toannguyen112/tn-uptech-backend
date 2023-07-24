@@ -13,9 +13,9 @@ const options = {
         requestTimeout: 300000
     },
     pool: {
-        max: 100,
+        max: 5,
         min: 0,
-        idle: 200000,
+        idle: 10000,
         acquire: 1000000,
     },
     logging: (query, time) => {
