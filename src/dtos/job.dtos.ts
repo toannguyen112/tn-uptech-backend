@@ -56,7 +56,8 @@ export class JobDTO {
             location: translationData.location || "",
             view: item.view || 0,
             status: item.status || 'inactive',
-            expried_date: item.expried_date,
+            expried_date: item.expried_date ?
+                Helper.formatDayJs(item.expried_date, "YYYY-MM-DD") : "",
             benefit: translationData.benefit || "",
             related: item.related || [],
 
