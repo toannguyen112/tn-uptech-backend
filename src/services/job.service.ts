@@ -233,10 +233,10 @@ export class JobService {
             return await models.Job.update({
                 ...newItem,
                 slug: Helper.renderSlug(newItem.name, global.lang)
-            }, {
-                where: { id },
-                individualHooks: true
             },
+                {
+                    where: { id },
+                },
 
                 { transaction: t })
                 .then(async (res) => {
@@ -246,7 +246,6 @@ export class JobService {
                         },
                             {
                                 where: { job_id: id, locale: global.lang },
-                                individualHooks: true,
                             },
                             { transaction: t }
                         );
@@ -265,10 +264,21 @@ export class JobService {
     }
 
     public deleteById = async (id: string) => {
-        return await models.Job.destroy({ where: { id } });
+        try {
+            return await models.Job.destroy({ where: { id } });
+        } catch (error) {
+            console.log(error);
+            throw new Error(error);
+        }
     }
 
     public deleteMultipleIds = async (ids: []) => {
-        return await models.Job.destroy({ where: { id: ids } })
+        try {
+            return await models.Job.destroy({ where: { id: ids } })
+        } catch (error) {
+            console.log(error);
+            throw new Error(error);
+        }
+
     }
 }

@@ -1,5 +1,5 @@
 import Helper from "../utils/Helper";
-
+import dayjs from "dayjs";
 export class JobDTO {
     static transform = (item) => {
 
@@ -10,7 +10,8 @@ export class JobDTO {
             id: item.id,
             name: translationData.name || "",
             slug: translationData.slug || "",
-            expried_date: item.expried_date ? Helper.formatDayJs(item.expried_date) : null,
+            expried_date: item.expried_date ?
+                Helper.formatDayJs(item.expried_date, "DD/MM/YYYY") : "",
             status: item.status,
 
             createdAt: item.createdAt,
@@ -28,7 +29,8 @@ export class JobDTO {
             id: item.id,
             name: translationData.name || "",
             slug: translationData.slug || "",
-            expried_date: item.expried_date ? Helper.formatDayJs(item.expried_date) : null,
+            expried_date: item.expried_date ?
+                Helper.formatDayJs(item.expried_date, "DD/MM/YYYY") : "",
             description: translationData.description || "",
             address_work: translationData.address_work || "",
             status: item.status,
@@ -54,7 +56,7 @@ export class JobDTO {
             location: translationData.location || "",
             view: item.view || 0,
             status: item.status || 'inactive',
-            expried_date: item.expried_date ? Helper.formatDayJs(item.expried_date) : null,
+            expried_date: item.expried_date,
             benefit: translationData.benefit || "",
             related: item.related || [],
 
@@ -104,7 +106,7 @@ export class JobDTO {
             location: translationData.location || "",
             view: item.view || 0,
             status: item.status || 'inactive',
-            expried_date: item.expried_date ? Helper.formatDayJs(item.expried_date, "YYYY/MM/DD") : null,
+            expried_date: item.expried_date,
             benefit: translationData.benefit || "",
 
             ...Helper.FieldsSeo(translationData)

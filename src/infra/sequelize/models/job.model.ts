@@ -33,9 +33,7 @@ module.exports = function (sequelize, DataTypes) {
 
             expried_date: {
                 type: DataTypes.DATE,
-                get() {
-                    return Helper.formatDayJs(this.getDataValue('expried_date', "DD/MM/YYYY"));
-                }
+                defaultValue: null,
             },
 
             createdAt: {
