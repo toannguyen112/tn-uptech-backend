@@ -1,0 +1,249 @@
+2023-08-01 18:07:10 info: =================================
+2023-08-01 18:07:10 info: ======= ENV: development =======
+2023-08-01 18:07:10 info: 🚀 App listening on the port 8000
+2023-08-01 18:07:10 info: =================================
+2023-08-01 18:07:33 info: [0mGET /banners/getListBanner [32m200[0m 530.577 ms - 1404[0m
+2023-08-01 18:07:33 info: [0mGET /posts/getListFeatured [32m200[0m 510.147 ms - 642[0m
+2023-08-01 18:07:33 info: [0mGET /services/nav [32m200[0m 521.465 ms - 1603[0m
+2023-08-01 18:07:35 info: [0mGET /services/nav [32m200[0m 148.641 ms - -[0m
+2023-08-01 18:40:48 info: [0mGET /jobs/getListFeatured [32m200[0m 817.169 ms - -[0m
+2023-08-01 18:45:09 info: [0mGET /services/nav [0m-[0m - ms - -[0m
+2023-08-01 20:07:34 info: =================================
+2023-08-01 20:07:34 info: ======= ENV: development =======
+2023-08-01 20:07:34 info: 🚀 App listening on the port 8000
+2023-08-01 20:07:34 info: =================================
+2023-08-01 20:07:51 info: =================================
+2023-08-01 20:07:51 info: ======= ENV: development =======
+2023-08-01 20:07:51 info: 🚀 App listening on the port 8000
+2023-08-01 20:07:51 info: =================================
+2023-08-01 20:11:31 info: [0mOPTIONS /admins/login [32m204[0m 5.869 ms - 0[0m
+2023-08-01 20:11:31 info: [0mPOST /admins/login [32m200[0m 377.196 ms - -[0m
+2023-08-01 20:11:33 info: [0mOPTIONS /admins/profile [32m204[0m 0.692 ms - 0[0m
+2023-08-01 20:11:34 info: [0mGET /admins/profile [32m200[0m 278.774 ms - 268[0m
+2023-08-01 20:11:34 info: [0mGET /banners? [32m200[0m 190.318 ms - -[0m
+2023-08-01 20:11:34 info: [0mGET /banners?page=1&page_size=10 [32m200[0m 27.707 ms - -[0m
+2023-08-01 20:11:39 info: [0mOPTIONS /admins/profile [32m204[0m 3.937 ms - 0[0m
+2023-08-01 20:11:39 error: {"name":"SequelizeDatabaseError","parent":{"code":"ER_BAD_FIELD_ERROR","errno":1054,"sqlState":"42S22","sqlMessage":"Unknown column 'posts.ldJson' in 'field list'","sql":"SELECT `posts`.*, `image`.`id` AS `image.id`, `image`.`filename` AS `image.filename`, `image`.`disk` AS `image.disk`, `image`.`folder_id` AS `image.folder_id`, `image`.`path` AS `image.path`, `image`.`extension` AS `image.extension`, `image`.`mime` AS `image.mime`, `image`.`size` AS `image.size`, `image`.`width` AS `image.width`, `image`.`height` AS `image.height`, `image`.`alt` AS `image.alt`, `image`.`creator` AS `image.creator`, `image`.`editor` AS `image.editor`, `image`.`createdAt` AS `image.createdAt`, `image`.`updatedAt` AS `image.updatedAt`, `category`.`id` AS `category.id`, `category`.`status` AS `category.status`, `category`.`createdAt` AS `category.createdAt`, `category`.`updatedAt` AS `category.updatedAt`, `category->translations`.`id` AS `category.translations.id`, `category->translations`.`slug` AS `category.translations.slug`, `category->translations`.`category_id` AS `category.translations.category_id`, `category->translations`.`locale` AS `category.translations.locale`, `category->translations`.`name` AS `category.translations.name`, `category->translations`.`description` AS `category.translations.description`, `translations`.`id` AS `translations.id`, `translations`.`post_id` AS `translations.post_id`, `translations`.`locale` AS `translations.locale`, `translations`.`name` AS `translations.name`, `translations`.`content` AS `translations.content`, `translations`.`description` AS `translations.description`, `translations`.`slug` AS `translations.slug`, `translations`.`custom_slug` AS `translations.custom_slug`, `translations`.`meta_title` AS `translations.meta_title`, `translations`.`meta_description` AS `translations.meta_description`, `translations`.`meta_keyword` AS `translations.meta_keyword`, `translations`.`meta_robots` AS `translations.meta_robots`, `translations`.`canonica_link` AS `translations.canonica_link`, `translations`.`meta_image` AS `translations.meta_image`, `translations`.`meta_viewport` AS `translations.meta_viewport` FROM (SELECT `posts`.`id`, `posts`.`thumbnail`, `posts`.`category_id`, `posts`.`ceo_id`, `posts`.`related`, `posts`.`banner`, `posts`.`isFeatured`, `posts`.`status`, `posts`.`posted_at`, `posts`.`view`, `posts`.`ldJson`, `posts`.`createdAt`, `posts`.`updatedAt`, `posts`.`deletedAt` FROM `posts` AS `posts` WHERE ( SELECT `post_id` FROM `post_translation` AS `translations` WHERE (`translations`.`locale` = 'vi' AND `translations`.`post_id` = `posts`.`id`) LIMIT 1 ) IS NOT NULL ORDER BY `posts`.`createdAt` DESC LIMIT 0, 10) AS `posts` LEFT OUTER JOIN `medias` AS `image` ON `posts`.`thumbnail` = `image`.`id` LEFT OUTER JOIN `categories` AS `category` ON `posts`.`category_id` = `category`.`id` LEFT OUTER JOIN `category_translation` AS `category->translations` ON `category`.`id` = `category->translations`.`category_id` AND `category->translations`.`locale` = 'vi' INNER JOIN `post_translation` AS `translations` ON `posts`.`id` = `translations`.`post_id` AND `translations`.`locale` = 'vi' ORDER BY `posts`.`createdAt` DESC;"},"original":{"code":"ER_BAD_FIELD_ERROR","errno":1054,"sqlState":"42S22","sqlMessage":"Unknown column 'posts.ldJson' in 'field list'","sql":"SELECT `posts`.*, `image`.`id` AS `image.id`, `image`.`filename` AS `image.filename`, `image`.`disk` AS `image.disk`, `image`.`folder_id` AS `image.folder_id`, `image`.`path` AS `image.path`, `image`.`extension` AS `image.extension`, `image`.`mime` AS `image.mime`, `image`.`size` AS `image.size`, `image`.`width` AS `image.width`, `image`.`height` AS `image.height`, `image`.`alt` AS `image.alt`, `image`.`creator` AS `image.creator`, `image`.`editor` AS `image.editor`, `image`.`createdAt` AS `image.createdAt`, `image`.`updatedAt` AS `image.updatedAt`, `category`.`id` AS `category.id`, `category`.`status` AS `category.status`, `category`.`createdAt` AS `category.createdAt`, `category`.`updatedAt` AS `category.updatedAt`, `category->translations`.`id` AS `category.translations.id`, `category->translations`.`slug` AS `category.translations.slug`, `category->translations`.`category_id` AS `category.translations.category_id`, `category->translations`.`locale` AS `category.translations.locale`, `category->translations`.`name` AS `category.translations.name`, `category->translations`.`description` AS `category.translations.description`, `translations`.`id` AS `translations.id`, `translations`.`post_id` AS `translations.post_id`, `translations`.`locale` AS `translations.locale`, `translations`.`name` AS `translations.name`, `translations`.`content` AS `translations.content`, `translations`.`description` AS `translations.description`, `translations`.`slug` AS `translations.slug`, `translations`.`custom_slug` AS `translations.custom_slug`, `translations`.`meta_title` AS `translations.meta_title`, `translations`.`meta_description` AS `translations.meta_description`, `translations`.`meta_keyword` AS `translations.meta_keyword`, `translations`.`meta_robots` AS `translations.meta_robots`, `translations`.`canonica_link` AS `translations.canonica_link`, `translations`.`meta_image` AS `translations.meta_image`, `translations`.`meta_viewport` AS `translations.meta_viewport` FROM (SELECT `posts`.`id`, `posts`.`thumbnail`, `posts`.`category_id`, `posts`.`ceo_id`, `posts`.`related`, `posts`.`banner`, `posts`.`isFeatured`, `posts`.`status`, `posts`.`posted_at`, `posts`.`view`, `posts`.`ldJson`, `posts`.`createdAt`, `posts`.`updatedAt`, `posts`.`deletedAt` FROM `posts` AS `posts` WHERE ( SELECT `post_id` FROM `post_translation` AS `translations` WHERE (`translations`.`locale` = 'vi' AND `translations`.`post_id` = `posts`.`id`) LIMIT 1 ) IS NOT NULL ORDER BY `posts`.`createdAt` DESC LIMIT 0, 10) AS `posts` LEFT OUTER JOIN `medias` AS `image` ON `posts`.`thumbnail` = `image`.`id` LEFT OUTER JOIN `categories` AS `category` ON `posts`.`category_id` = `category`.`id` LEFT OUTER JOIN `category_translation` AS `category->translations` ON `category`.`id` = `category->translations`.`category_id` AND `category->translations`.`locale` = 'vi' INNER JOIN `post_translation` AS `translations` ON `posts`.`id` = `translations`.`post_id` AND `translations`.`locale` = 'vi' ORDER BY `posts`.`createdAt` DESC;"},"sql":"SELECT `posts`.*, `image`.`id` AS `image.id`, `image`.`filename` AS `image.filename`, `image`.`disk` AS `image.disk`, `image`.`folder_id` AS `image.folder_id`, `image`.`path` AS `image.path`, `image`.`extension` AS `image.extension`, `image`.`mime` AS `image.mime`, `image`.`size` AS `image.size`, `image`.`width` AS `image.width`, `image`.`height` AS `image.height`, `image`.`alt` AS `image.alt`, `image`.`creator` AS `image.creator`, `image`.`editor` AS `image.editor`, `image`.`createdAt` AS `image.createdAt`, `image`.`updatedAt` AS `image.updatedAt`, `category`.`id` AS `category.id`, `category`.`status` AS `category.status`, `category`.`createdAt` AS `category.createdAt`, `category`.`updatedAt` AS `category.updatedAt`, `category->translations`.`id` AS `category.translations.id`, `category->translations`.`slug` AS `category.translations.slug`, `category->translations`.`category_id` AS `category.translations.category_id`, `category->translations`.`locale` AS `category.translations.locale`, `category->translations`.`name` AS `category.translations.name`, `category->translations`.`description` AS `category.translations.description`, `translations`.`id` AS `translations.id`, `translations`.`post_id` AS `translations.post_id`, `translations`.`locale` AS `translations.locale`, `translations`.`name` AS `translations.name`, `translations`.`content` AS `translations.content`, `translations`.`description` AS `translations.description`, `translations`.`slug` AS `translations.slug`, `translations`.`custom_slug` AS `translations.custom_slug`, `translations`.`meta_title` AS `translations.meta_title`, `translations`.`meta_description` AS `translations.meta_description`, `translations`.`meta_keyword` AS `translations.meta_keyword`, `translations`.`meta_robots` AS `translations.meta_robots`, `translations`.`canonica_link` AS `translations.canonica_link`, `translations`.`meta_image` AS `translations.meta_image`, `translations`.`meta_viewport` AS `translations.meta_viewport` FROM (SELECT `posts`.`id`, `posts`.`thumbnail`, `posts`.`category_id`, `posts`.`ceo_id`, `posts`.`related`, `posts`.`banner`, `posts`.`isFeatured`, `posts`.`status`, `posts`.`posted_at`, `posts`.`view`, `posts`.`ldJson`, `posts`.`createdAt`, `posts`.`updatedAt`, `posts`.`deletedAt` FROM `posts` AS `posts` WHERE ( SELECT `post_id` FROM `post_translation` AS `translations` WHERE (`translations`.`locale` = 'vi' AND `translations`.`post_id` = `posts`.`id`) LIMIT 1 ) IS NOT NULL ORDER BY `posts`.`createdAt` DESC LIMIT 0, 10) AS `posts` LEFT OUTER JOIN `medias` AS `image` ON `posts`.`thumbnail` = `image`.`id` LEFT OUTER JOIN `categories` AS `category` ON `posts`.`category_id` = `category`.`id` LEFT OUTER JOIN `category_translation` AS `category->translations` ON `category`.`id` = `category->translations`.`category_id` AND `category->translations`.`locale` = 'vi' INNER JOIN `post_translation` AS `translations` ON `posts`.`id` = `translations`.`post_id` AND `translations`.`locale` = 'vi' ORDER BY `posts`.`createdAt` DESC;","parameters":{}}
+2023-08-01 20:11:39 info: [0mGET /posts? [32m200[0m 414.031 ms - 16[0m
+2023-08-01 20:11:39 info: [0mGET /admins/profile [36m304[0m 487.609 ms - -[0m
+2023-08-01 20:11:41 error: {"name":"SequelizeDatabaseError","parent":{"code":"ER_BAD_FIELD_ERROR","errno":1054,"sqlState":"42S22","sqlMessage":"Unknown column 'posts.ldJson' in 'field list'","sql":"SELECT `posts`.*, `image`.`id` AS `image.id`, `image`.`filename` AS `image.filename`, `image`.`disk` AS `image.disk`, `image`.`folder_id` AS `image.folder_id`, `image`.`path` AS `image.path`, `image`.`extension` AS `image.extension`, `image`.`mime` AS `image.mime`, `image`.`size` AS `image.size`, `image`.`width` AS `image.width`, `image`.`height` AS `image.height`, `image`.`alt` AS `image.alt`, `image`.`creator` AS `image.creator`, `image`.`editor` AS `image.editor`, `image`.`createdAt` AS `image.createdAt`, `image`.`updatedAt` AS `image.updatedAt`, `category`.`id` AS `category.id`, `category`.`status` AS `category.status`, `category`.`createdAt` AS `category.createdAt`, `category`.`updatedAt` AS `category.updatedAt`, `category->translations`.`id` AS `category.translations.id`, `category->translations`.`slug` AS `category.translations.slug`, `category->translations`.`category_id` AS `category.translations.category_id`, `category->translations`.`locale` AS `category.translations.locale`, `category->translations`.`name` AS `category.translations.name`, `category->translations`.`description` AS `category.translations.description`, `translations`.`id` AS `translations.id`, `translations`.`post_id` AS `translations.post_id`, `translations`.`locale` AS `translations.locale`, `translations`.`name` AS `translations.name`, `translations`.`content` AS `translations.content`, `translations`.`description` AS `translations.description`, `translations`.`slug` AS `translations.slug`, `translations`.`custom_slug` AS `translations.custom_slug`, `translations`.`meta_title` AS `translations.meta_title`, `translations`.`meta_description` AS `translations.meta_description`, `translations`.`meta_keyword` AS `translations.meta_keyword`, `translations`.`meta_robots` AS `translations.meta_robots`, `translations`.`canonica_link` AS `translations.canonica_link`, `translations`.`meta_image` AS `translations.meta_image`, `translations`.`meta_viewport` AS `translations.meta_viewport` FROM (SELECT `posts`.`id`, `posts`.`thumbnail`, `posts`.`category_id`, `posts`.`ceo_id`, `posts`.`related`, `posts`.`banner`, `posts`.`isFeatured`, `posts`.`status`, `posts`.`posted_at`, `posts`.`view`, `posts`.`ldJson`, `posts`.`createdAt`, `posts`.`updatedAt`, `posts`.`deletedAt` FROM `posts` AS `posts` WHERE ( SELECT `post_id` FROM `post_translation` AS `translations` WHERE (`translations`.`locale` = 'vi' AND `translations`.`post_id` = `posts`.`id`) LIMIT 1 ) IS NOT NULL ORDER BY `posts`.`createdAt` DESC LIMIT 0, 10) AS `posts` LEFT OUTER JOIN `medias` AS `image` ON `posts`.`thumbnail` = `image`.`id` LEFT OUTER JOIN `categories` AS `category` ON `posts`.`category_id` = `category`.`id` LEFT OUTER JOIN `category_translation` AS `category->translations` ON `category`.`id` = `category->translations`.`category_id` AND `category->translations`.`locale` = 'vi' INNER JOIN `post_translation` AS `translations` ON `posts`.`id` = `translations`.`post_id` AND `translations`.`locale` = 'vi' ORDER BY `posts`.`createdAt` DESC;"},"original":{"code":"ER_BAD_FIELD_ERROR","errno":1054,"sqlState":"42S22","sqlMessage":"Unknown column 'posts.ldJson' in 'field list'","sql":"SELECT `posts`.*, `image`.`id` AS `image.id`, `image`.`filename` AS `image.filename`, `image`.`disk` AS `image.disk`, `image`.`folder_id` AS `image.folder_id`, `image`.`path` AS `image.path`, `image`.`extension` AS `image.extension`, `image`.`mime` AS `image.mime`, `image`.`size` AS `image.size`, `image`.`width` AS `image.width`, `image`.`height` AS `image.height`, `image`.`alt` AS `image.alt`, `image`.`creator` AS `image.creator`, `image`.`editor` AS `image.editor`, `image`.`createdAt` AS `image.createdAt`, `image`.`updatedAt` AS `image.updatedAt`, `category`.`id` AS `category.id`, `category`.`status` AS `category.status`, `category`.`createdAt` AS `category.createdAt`, `category`.`updatedAt` AS `category.updatedAt`, `category->translations`.`id` AS `category.translations.id`, `category->translations`.`slug` AS `category.translations.slug`, `category->translations`.`category_id` AS `category.translations.category_id`, `category->translations`.`locale` AS `category.translations.locale`, `category->translations`.`name` AS `category.translations.name`, `category->translations`.`description` AS `category.translations.description`, `translations`.`id` AS `translations.id`, `translations`.`post_id` AS `translations.post_id`, `translations`.`locale` AS `translations.locale`, `translations`.`name` AS `translations.name`, `translations`.`content` AS `translations.content`, `translations`.`description` AS `translations.description`, `translations`.`slug` AS `translations.slug`, `translations`.`custom_slug` AS `translations.custom_slug`, `translations`.`meta_title` AS `translations.meta_title`, `translations`.`meta_description` AS `translations.meta_description`, `translations`.`meta_keyword` AS `translations.meta_keyword`, `translations`.`meta_robots` AS `translations.meta_robots`, `translations`.`canonica_link` AS `translations.canonica_link`, `translations`.`meta_image` AS `translations.meta_image`, `translations`.`meta_viewport` AS `translations.meta_viewport` FROM (SELECT `posts`.`id`, `posts`.`thumbnail`, `posts`.`category_id`, `posts`.`ceo_id`, `posts`.`related`, `posts`.`banner`, `posts`.`isFeatured`, `posts`.`status`, `posts`.`posted_at`, `posts`.`view`, `posts`.`ldJson`, `posts`.`createdAt`, `posts`.`updatedAt`, `posts`.`deletedAt` FROM `posts` AS `posts` WHERE ( SELECT `post_id` FROM `post_translation` AS `translations` WHERE (`translations`.`locale` = 'vi' AND `translations`.`post_id` = `posts`.`id`) LIMIT 1 ) IS NOT NULL ORDER BY `posts`.`createdAt` DESC LIMIT 0, 10) AS `posts` LEFT OUTER JOIN `medias` AS `image` ON `posts`.`thumbnail` = `image`.`id` LEFT OUTER JOIN `categories` AS `category` ON `posts`.`category_id` = `category`.`id` LEFT OUTER JOIN `category_translation` AS `category->translations` ON `category`.`id` = `category->translations`.`category_id` AND `category->translations`.`locale` = 'vi' INNER JOIN `post_translation` AS `translations` ON `posts`.`id` = `translations`.`post_id` AND `translations`.`locale` = 'vi' ORDER BY `posts`.`createdAt` DESC;"},"sql":"SELECT `posts`.*, `image`.`id` AS `image.id`, `image`.`filename` AS `image.filename`, `image`.`disk` AS `image.disk`, `image`.`folder_id` AS `image.folder_id`, `image`.`path` AS `image.path`, `image`.`extension` AS `image.extension`, `image`.`mime` AS `image.mime`, `image`.`size` AS `image.size`, `image`.`width` AS `image.width`, `image`.`height` AS `image.height`, `image`.`alt` AS `image.alt`, `image`.`creator` AS `image.creator`, `image`.`editor` AS `image.editor`, `image`.`createdAt` AS `image.createdAt`, `image`.`updatedAt` AS `image.updatedAt`, `category`.`id` AS `category.id`, `category`.`status` AS `category.status`, `category`.`createdAt` AS `category.createdAt`, `category`.`updatedAt` AS `category.updatedAt`, `category->translations`.`id` AS `category.translations.id`, `category->translations`.`slug` AS `category.translations.slug`, `category->translations`.`category_id` AS `category.translations.category_id`, `category->translations`.`locale` AS `category.translations.locale`, `category->translations`.`name` AS `category.translations.name`, `category->translations`.`description` AS `category.translations.description`, `translations`.`id` AS `translations.id`, `translations`.`post_id` AS `translations.post_id`, `translations`.`locale` AS `translations.locale`, `translations`.`name` AS `translations.name`, `translations`.`content` AS `translations.content`, `translations`.`description` AS `translations.description`, `translations`.`slug` AS `translations.slug`, `translations`.`custom_slug` AS `translations.custom_slug`, `translations`.`meta_title` AS `translations.meta_title`, `translations`.`meta_description` AS `translations.meta_description`, `translations`.`meta_keyword` AS `translations.meta_keyword`, `translations`.`meta_robots` AS `translations.meta_robots`, `translations`.`canonica_link` AS `translations.canonica_link`, `translations`.`meta_image` AS `translations.meta_image`, `translations`.`meta_viewport` AS `translations.meta_viewport` FROM (SELECT `posts`.`id`, `posts`.`thumbnail`, `posts`.`category_id`, `posts`.`ceo_id`, `posts`.`related`, `posts`.`banner`, `posts`.`isFeatured`, `posts`.`status`, `posts`.`posted_at`, `posts`.`view`, `posts`.`ldJson`, `posts`.`createdAt`, `posts`.`updatedAt`, `posts`.`deletedAt` FROM `posts` AS `posts` WHERE ( SELECT `post_id` FROM `post_translation` AS `translations` WHERE (`translations`.`locale` = 'vi' AND `translations`.`post_id` = `posts`.`id`) LIMIT 1 ) IS NOT NULL ORDER BY `posts`.`createdAt` DESC LIMIT 0, 10) AS `posts` LEFT OUTER JOIN `medias` AS `image` ON `posts`.`thumbnail` = `image`.`id` LEFT OUTER JOIN `categories` AS `category` ON `posts`.`category_id` = `category`.`id` LEFT OUTER JOIN `category_translation` AS `category->translations` ON `category`.`id` = `category->translations`.`category_id` AND `category->translations`.`locale` = 'vi' INNER JOIN `post_translation` AS `translations` ON `posts`.`id` = `translations`.`post_id` AND `translations`.`locale` = 'vi' ORDER BY `posts`.`createdAt` DESC;","parameters":{}}
+2023-08-01 20:11:41 info: [0mGET /posts?page=1&page_size=10 [32m200[0m 87.616 ms - 16[0m
+2023-08-01 20:15:58 info: =================================
+2023-08-01 20:15:58 info: ======= ENV: development =======
+2023-08-01 20:15:58 info: 🚀 App listening on the port 8000
+2023-08-01 20:15:58 info: =================================
+2023-08-01 20:16:38 info: =================================
+2023-08-01 20:16:38 info: ======= ENV: development =======
+2023-08-01 20:16:38 info: 🚀 App listening on the port 8000
+2023-08-01 20:16:38 info: =================================
+2023-08-01 20:16:50 error: {"name":"SequelizeDatabaseError","parent":{"code":"ER_BAD_FIELD_ERROR","errno":1054,"sqlState":"42S22","sqlMessage":"Unknown column 'posts.ldJson' in 'field list'","sql":"SELECT `posts`.`id`, `posts`.`thumbnail`, `posts`.`category_id`, `posts`.`ceo_id`, `posts`.`related`, `posts`.`banner`, `posts`.`isFeatured`, `posts`.`status`, `posts`.`posted_at`, `posts`.`view`, `posts`.`ldJson`, `posts`.`createdAt`, `posts`.`updatedAt`, `posts`.`deletedAt`, `image`.`id` AS `image.id`, `image`.`filename` AS `image.filename`, `image`.`disk` AS `image.disk`, `image`.`folder_id` AS `image.folder_id`, `image`.`path` AS `image.path`, `image`.`extension` AS `image.extension`, `image`.`mime` AS `image.mime`, `image`.`size` AS `image.size`, `image`.`width` AS `image.width`, `image`.`height` AS `image.height`, `image`.`alt` AS `image.alt`, `image`.`creator` AS `image.creator`, `image`.`editor` AS `image.editor`, `image`.`createdAt` AS `image.createdAt`, `image`.`updatedAt` AS `image.updatedAt`, `category`.`id` AS `category.id`, `category`.`status` AS `category.status`, `category`.`createdAt` AS `category.createdAt`, `category`.`updatedAt` AS `category.updatedAt`, `category->translations`.`id` AS `category.translations.id`, `category->translations`.`slug` AS `category.translations.slug`, `category->translations`.`category_id` AS `category.translations.category_id`, `category->translations`.`locale` AS `category.translations.locale`, `category->translations`.`name` AS `category.translations.name`, `category->translations`.`description` AS `category.translations.description`, `translations`.`id` AS `translations.id`, `translations`.`post_id` AS `translations.post_id`, `translations`.`locale` AS `translations.locale`, `translations`.`name` AS `translations.name`, `translations`.`content` AS `translations.content`, `translations`.`description` AS `translations.description`, `translations`.`slug` AS `translations.slug`, `translations`.`custom_slug` AS `translations.custom_slug`, `translations`.`meta_title` AS `translations.meta_title`, `translations`.`meta_description` AS `translations.meta_description`, `translations`.`meta_keyword` AS `translations.meta_keyword`, `translations`.`meta_robots` AS `translations.meta_robots`, `translations`.`canonica_link` AS `translations.canonica_link`, `translations`.`meta_image` AS `translations.meta_image`, `translations`.`meta_viewport` AS `translations.meta_viewport` FROM `posts` AS `posts` LEFT OUTER JOIN `medias` AS `image` ON `posts`.`thumbnail` = `image`.`id` LEFT OUTER JOIN ( `categories` AS `category` INNER JOIN `category_translation` AS `category->translations` ON `category`.`id` = `category->translations`.`category_id` AND `category->translations`.`locale` = 'vi' ) ON `posts`.`category_id` = `category`.`id` INNER JOIN `post_translation` AS `translations` ON `posts`.`id` = `translations`.`post_id` AND `translations`.`locale` = 'vi' WHERE `posts`.`isFeatured` = true AND `posts`.`status` = 'active';"},"original":{"code":"ER_BAD_FIELD_ERROR","errno":1054,"sqlState":"42S22","sqlMessage":"Unknown column 'posts.ldJson' in 'field list'","sql":"SELECT `posts`.`id`, `posts`.`thumbnail`, `posts`.`category_id`, `posts`.`ceo_id`, `posts`.`related`, `posts`.`banner`, `posts`.`isFeatured`, `posts`.`status`, `posts`.`posted_at`, `posts`.`view`, `posts`.`ldJson`, `posts`.`createdAt`, `posts`.`updatedAt`, `posts`.`deletedAt`, `image`.`id` AS `image.id`, `image`.`filename` AS `image.filename`, `image`.`disk` AS `image.disk`, `image`.`folder_id` AS `image.folder_id`, `image`.`path` AS `image.path`, `image`.`extension` AS `image.extension`, `image`.`mime` AS `image.mime`, `image`.`size` AS `image.size`, `image`.`width` AS `image.width`, `image`.`height` AS `image.height`, `image`.`alt` AS `image.alt`, `image`.`creator` AS `image.creator`, `image`.`editor` AS `image.editor`, `image`.`createdAt` AS `image.createdAt`, `image`.`updatedAt` AS `image.updatedAt`, `category`.`id` AS `category.id`, `category`.`status` AS `category.status`, `category`.`createdAt` AS `category.createdAt`, `category`.`updatedAt` AS `category.updatedAt`, `category->translations`.`id` AS `category.translations.id`, `category->translations`.`slug` AS `category.translations.slug`, `category->translations`.`category_id` AS `category.translations.category_id`, `category->translations`.`locale` AS `category.translations.locale`, `category->translations`.`name` AS `category.translations.name`, `category->translations`.`description` AS `category.translations.description`, `translations`.`id` AS `translations.id`, `translations`.`post_id` AS `translations.post_id`, `translations`.`locale` AS `translations.locale`, `translations`.`name` AS `translations.name`, `translations`.`content` AS `translations.content`, `translations`.`description` AS `translations.description`, `translations`.`slug` AS `translations.slug`, `translations`.`custom_slug` AS `translations.custom_slug`, `translations`.`meta_title` AS `translations.meta_title`, `translations`.`meta_description` AS `translations.meta_description`, `translations`.`meta_keyword` AS `translations.meta_keyword`, `translations`.`meta_robots` AS `translations.meta_robots`, `translations`.`canonica_link` AS `translations.canonica_link`, `translations`.`meta_image` AS `translations.meta_image`, `translations`.`meta_viewport` AS `translations.meta_viewport` FROM `posts` AS `posts` LEFT OUTER JOIN `medias` AS `image` ON `posts`.`thumbnail` = `image`.`id` LEFT OUTER JOIN ( `categories` AS `category` INNER JOIN `category_translation` AS `category->translations` ON `category`.`id` = `category->translations`.`category_id` AND `category->translations`.`locale` = 'vi' ) ON `posts`.`category_id` = `category`.`id` INNER JOIN `post_translation` AS `translations` ON `posts`.`id` = `translations`.`post_id` AND `translations`.`locale` = 'vi' WHERE `posts`.`isFeatured` = true AND `posts`.`status` = 'active';"},"sql":"SELECT `posts`.`id`, `posts`.`thumbnail`, `posts`.`category_id`, `posts`.`ceo_id`, `posts`.`related`, `posts`.`banner`, `posts`.`isFeatured`, `posts`.`status`, `posts`.`posted_at`, `posts`.`view`, `posts`.`ldJson`, `posts`.`createdAt`, `posts`.`updatedAt`, `posts`.`deletedAt`, `image`.`id` AS `image.id`, `image`.`filename` AS `image.filename`, `image`.`disk` AS `image.disk`, `image`.`folder_id` AS `image.folder_id`, `image`.`path` AS `image.path`, `image`.`extension` AS `image.extension`, `image`.`mime` AS `image.mime`, `image`.`size` AS `image.size`, `image`.`width` AS `image.width`, `image`.`height` AS `image.height`, `image`.`alt` AS `image.alt`, `image`.`creator` AS `image.creator`, `image`.`editor` AS `image.editor`, `image`.`createdAt` AS `image.createdAt`, `image`.`updatedAt` AS `image.updatedAt`, `category`.`id` AS `category.id`, `category`.`status` AS `category.status`, `category`.`createdAt` AS `category.createdAt`, `category`.`updatedAt` AS `category.updatedAt`, `category->translations`.`id` AS `category.translations.id`, `category->translations`.`slug` AS `category.translations.slug`, `category->translations`.`category_id` AS `category.translations.category_id`, `category->translations`.`locale` AS `category.translations.locale`, `category->translations`.`name` AS `category.translations.name`, `category->translations`.`description` AS `category.translations.description`, `translations`.`id` AS `translations.id`, `translations`.`post_id` AS `translations.post_id`, `translations`.`locale` AS `translations.locale`, `translations`.`name` AS `translations.name`, `translations`.`content` AS `translations.content`, `translations`.`description` AS `translations.description`, `translations`.`slug` AS `translations.slug`, `translations`.`custom_slug` AS `translations.custom_slug`, `translations`.`meta_title` AS `translations.meta_title`, `translations`.`meta_description` AS `translations.meta_description`, `translations`.`meta_keyword` AS `translations.meta_keyword`, `translations`.`meta_robots` AS `translations.meta_robots`, `translations`.`canonica_link` AS `translations.canonica_link`, `translations`.`meta_image` AS `translations.meta_image`, `translations`.`meta_viewport` AS `translations.meta_viewport` FROM `posts` AS `posts` LEFT OUTER JOIN `medias` AS `image` ON `posts`.`thumbnail` = `image`.`id` LEFT OUTER JOIN ( `categories` AS `category` INNER JOIN `category_translation` AS `category->translations` ON `category`.`id` = `category->translations`.`category_id` AND `category->translations`.`locale` = 'vi' ) ON `posts`.`category_id` = `category`.`id` INNER JOIN `post_translation` AS `translations` ON `posts`.`id` = `translations`.`post_id` AND `translations`.`locale` = 'vi' WHERE `posts`.`isFeatured` = true AND `posts`.`status` = 'active';","parameters":{}}
+2023-08-01 20:16:50 info: [0mGET /posts/getListFeatured [32m200[0m 321.969 ms - 16[0m
+2023-08-01 20:16:50 info: [0mGET /banners/getListBanner [32m200[0m 404.236 ms - 1404[0m
+2023-08-01 20:16:50 info: [0mGET /services/nav [32m200[0m 389.479 ms - 1603[0m
+2023-08-01 20:17:48 info: =================================
+2023-08-01 20:17:48 info: ======= ENV: development =======
+2023-08-01 20:17:48 info: 🚀 App listening on the port 8000
+2023-08-01 20:17:48 info: =================================
+2023-08-01 20:18:24 info: =================================
+2023-08-01 20:18:24 info: ======= ENV: development =======
+2023-08-01 20:18:24 info: 🚀 App listening on the port 8000
+2023-08-01 20:18:24 info: =================================
+2023-08-01 20:29:27 info: =================================
+2023-08-01 20:29:27 info: ======= ENV: development =======
+2023-08-01 20:29:27 info: 🚀 App listening on the port 8000
+2023-08-01 20:29:27 info: =================================
+2023-08-01 20:36:59 info: =================================
+2023-08-01 20:36:59 info: ======= ENV: development =======
+2023-08-01 20:36:59 info: 🚀 App listening on the port 8000
+2023-08-01 20:36:59 info: =================================
+2023-08-01 20:37:21 info: =================================
+2023-08-01 20:37:21 info: ======= ENV: development =======
+2023-08-01 20:37:21 info: 🚀 App listening on the port 8000
+2023-08-01 20:37:21 info: =================================
+2023-08-01 20:37:49 info: =================================
+2023-08-01 20:37:49 info: ======= ENV: development =======
+2023-08-01 20:37:49 info: 🚀 App listening on the port 8000
+2023-08-01 20:37:49 info: =================================
+2023-08-01 20:39:50 info: =================================
+2023-08-01 20:39:50 info: ======= ENV: development =======
+2023-08-01 20:39:50 info: 🚀 App listening on the port 8000
+2023-08-01 20:39:50 info: =================================
+2023-08-01 20:40:21 info: =================================
+2023-08-01 20:40:21 info: ======= ENV: development =======
+2023-08-01 20:40:21 info: 🚀 App listening on the port 8000
+2023-08-01 20:40:21 info: =================================
+2023-08-01 20:40:24 info: [0mGET /banners/getListBanner [32m200[0m 1198.238 ms - 1404[0m
+2023-08-01 20:40:24 info: [0mGET /banners/getListBanner [32m200[0m 476.513 ms - 1404[0m
+2023-08-01 20:40:25 info: [0mGET /posts/getListFeatured [32m200[0m 609.963 ms - 642[0m
+2023-08-01 20:40:25 info: [0mGET /posts/getListFeatured [32m200[0m 833.653 ms - 642[0m
+2023-08-01 20:40:25 info: [0mGET /services/nav [32m200[0m 1018.541 ms - 1603[0m
+2023-08-01 20:40:25 info: [0mGET /services/nav [32m200[0m 674.449 ms - 1603[0m
+2023-08-01 20:40:26 info: [0mOPTIONS /admins/profile [32m204[0m 53.742 ms - 0[0m
+2023-08-01 20:40:27 info: [0mGET /admins/profile [36m304[0m 458.546 ms - -[0m
+2023-08-01 20:40:29 info: [0mGET /posts?page=1&page_size=10 [32m200[0m 1187.706 ms - -[0m
+2023-08-01 20:40:29 info: [0mGET /posts?page=1&page_size=10 [36m304[0m 352.105 ms - -[0m
+2023-08-01 20:40:43 info: [0mOPTIONS /admins/profile [32m204[0m 1.199 ms - 0[0m
+2023-08-01 20:40:43 info: [0mGET /admins/profile [36m304[0m 685.826 ms - -[0m
+2023-08-01 20:40:43 error: Cannot read properties of null (reading 'id')
+2023-08-01 20:40:43 info: [0mGET /posts/show/13 [31m500[0m 642.424 ms - 51[0m
+2023-08-01 20:40:44 info: [0mGET /ceos?[object%20Object] [32m200[0m 440.456 ms - 403[0m
+2023-08-01 20:40:44 info: [0mGET /categories?[object%20Object] [32m200[0m 417.583 ms - -[0m
+2023-08-01 20:40:44 info: [0mGET /posts?[object%20Object] [32m200[0m 447.976 ms - -[0m
+2023-08-01 20:41:24 error: Cannot read properties of null (reading 'id')
+2023-08-01 20:41:24 info: [0mGET /posts/show/13 [31m500[0m 407.762 ms - 51[0m
+2023-08-01 20:41:24 error: Cannot read properties of null (reading 'id')
+2023-08-01 20:41:24 info: [0mGET /posts/show/13 [31m500[0m 483.057 ms - 51[0m
+2023-08-01 20:41:24 info: [0mGET /categories?[object%20Object] [36m304[0m 128.743 ms - -[0m
+2023-08-01 20:41:25 info: [0mGET /ceos?[object%20Object] [36m304[0m 444.210 ms - -[0m
+2023-08-01 20:41:25 info: [0mGET /posts?[object%20Object] [36m304[0m 881.877 ms - -[0m
+2023-08-01 20:41:33 info: [0mGET /banners/getListBanner [32m200[0m 723.574 ms - 1404[0m
+2023-08-01 20:41:33 info: [0mGET /services/nav [32m200[0m 647.775 ms - 1603[0m
+2023-08-01 20:41:33 info: [0mGET /posts/getListFeatured [32m200[0m 705.153 ms - 642[0m
+2023-08-01 20:41:34 error: Cannot read properties of null (reading 'id')
+2023-08-01 20:41:34 info: [0mGET /posts/show/13 [31m500[0m 360.179 ms - 51[0m
+2023-08-01 20:41:34 error: Cannot read properties of null (reading 'id')
+2023-08-01 20:41:34 info: [0mGET /posts/show/13 [31m500[0m 70.093 ms - 51[0m
+2023-08-01 20:41:34 info: [0mGET /categories?[object%20Object] [36m304[0m 144.378 ms - -[0m
+2023-08-01 20:41:34 info: [0mGET /ceos?[object%20Object] [36m304[0m 685.011 ms - -[0m
+2023-08-01 20:41:35 info: [0mGET /posts?[object%20Object] [36m304[0m 982.191 ms - -[0m
+2023-08-01 20:41:52 error: Cannot read properties of null (reading 'id')
+2023-08-01 20:41:52 info: [0mGET /posts/show/13 [31m500[0m 661.524 ms - 51[0m
+2023-08-01 20:41:52 error: Cannot read properties of null (reading 'id')
+2023-08-01 20:41:52 info: [0mGET /posts/show/13 [31m500[0m 55.787 ms - 51[0m
+2023-08-01 20:41:52 info: [0mGET /categories?[object%20Object] [36m304[0m 302.381 ms - -[0m
+2023-08-01 20:41:52 info: [0mGET /ceos?[object%20Object] [36m304[0m 298.896 ms - -[0m
+2023-08-01 20:41:53 info: [0mGET /posts?[object%20Object] [36m304[0m 541.392 ms - -[0m
+2023-08-01 20:41:54 info: [0mOPTIONS /admins/profile [32m204[0m 3.346 ms - 0[0m
+2023-08-01 20:41:54 error: Cannot read properties of null (reading 'id')
+2023-08-01 20:41:54 info: [0mGET /posts/show/13 [31m500[0m 232.239 ms - 51[0m
+2023-08-01 20:41:54 info: [0mGET /admins/profile [36m304[0m 292.704 ms - -[0m
+2023-08-01 20:41:54 info: [0mGET /posts?page=1&page_size=10 [32m200[0m 264.795 ms - -[0m
+2023-08-01 20:41:54 info: [0mGET /posts?page=1&page_size=10 [32m200[0m 77.588 ms - -[0m
+2023-08-01 20:41:57 info: [0mGET /admins/profile [36m304[0m 50.637 ms - -[0m
+2023-08-01 20:41:57 error: Cannot read properties of null (reading 'id')
+2023-08-01 20:41:57 info: [0mGET /posts/show/14 [31m500[0m 99.109 ms - 51[0m
+2023-08-01 20:41:57 info: [0mGET /ceos?[object%20Object] [36m304[0m 43.129 ms - -[0m
+2023-08-01 20:41:57 info: [0mGET /categories?[object%20Object] [36m304[0m 135.913 ms - -[0m
+2023-08-01 20:41:57 info: [0mGET /posts?[object%20Object] [36m304[0m 181.294 ms - -[0m
+2023-08-01 20:42:14 info: [0mOPTIONS /admins/profile [32m204[0m 0.428 ms - 0[0m
+2023-08-01 20:42:15 info: [0mGET /admins/profile [36m304[0m 604.586 ms - -[0m
+2023-08-01 20:42:15 error: Cannot read properties of null (reading 'id')
+2023-08-01 20:42:15 info: [0mGET /posts/show/14 [31m500[0m 945.484 ms - 51[0m
+2023-08-01 20:42:15 info: [0mGET /posts?page=1&page_size=10 [36m304[0m 727.529 ms - -[0m
+2023-08-01 20:42:15 info: [0mGET /posts?page=1&page_size=10 [36m304[0m 270.727 ms - -[0m
+2023-08-01 20:42:26 info: [0mOPTIONS /admins/profile [32m204[0m 2.320 ms - 0[0m
+2023-08-01 20:42:26 info: [0mGET /admins/profile [36m304[0m 132.955 ms - -[0m
+2023-08-01 20:42:26 error: Cannot read properties of null (reading 'id')
+2023-08-01 20:42:26 info: [0mGET /posts/show/13 [31m500[0m 143.095 ms - 51[0m
+2023-08-01 20:42:26 info: [0mGET /categories?[object%20Object] [36m304[0m 91.864 ms - -[0m
+2023-08-01 20:42:26 info: [0mGET /ceos?[object%20Object] [36m304[0m 97.315 ms - -[0m
+2023-08-01 20:42:27 info: [0mGET /posts?[object%20Object] [36m304[0m 351.712 ms - -[0m
+2023-08-01 20:43:26 info: =================================
+2023-08-01 20:43:26 info: ======= ENV: development =======
+2023-08-01 20:43:26 info: 🚀 App listening on the port 8000
+2023-08-01 20:43:26 info: =================================
+2023-08-01 20:43:30 info: [0mOPTIONS /admins/profile [32m204[0m 10.090 ms - 0[0m
+2023-08-01 20:43:32 info: [0mGET /categories?[object%20Object] [36m304[0m 1568.011 ms - -[0m
+2023-08-01 20:43:32 info: [0mGET /ceos?[object%20Object] [36m304[0m 1512.048 ms - -[0m
+2023-08-01 20:43:32 error: Cannot read properties of null (reading 'id')
+2023-08-01 20:43:32 info: [0mGET /posts/show/13 [31m500[0m 1111.343 ms - 51[0m
+2023-08-01 20:43:32 info: [0mGET /admins/profile [36m304[0m 1921.073 ms - -[0m
+2023-08-01 20:43:32 info: [0mGET /ceos?[object%20Object] [36m304[0m 58.942 ms - -[0m
+2023-08-01 20:43:33 info: [0mGET /categories?[object%20Object] [36m304[0m 189.309 ms - -[0m
+2023-08-01 20:43:33 info: [0mGET /posts?[object%20Object] [36m304[0m 1776.170 ms - -[0m
+2023-08-01 20:43:33 info: [0mGET /posts?[object%20Object] [36m304[0m 130.399 ms - -[0m
+2023-08-01 20:43:34 error: Cannot read properties of null (reading 'id')
+2023-08-01 20:43:34 info: [0mGET /posts/show/13 [31m500[0m 106.112 ms - 51[0m
+2023-08-01 20:43:34 info: [0mGET /admins/profile [36m304[0m 150.104 ms - -[0m
+2023-08-01 20:43:34 info: [0mGET /posts?page=1&page_size=10 [36m304[0m 304.791 ms - -[0m
+2023-08-01 20:43:35 info: [0mGET /posts?page=1&page_size=10 [36m304[0m 301.634 ms - -[0m
+2023-08-01 20:43:36 info: [0mOPTIONS /admins/profile [32m204[0m 0.980 ms - 0[0m
+2023-08-01 20:43:36 info: [0mGET /admins/profile [36m304[0m 139.060 ms - -[0m
+2023-08-01 20:43:36 error: Cannot read properties of null (reading 'id')
+2023-08-01 20:43:36 info: [0mGET /posts/show/14 [31m500[0m 213.884 ms - 51[0m
+2023-08-01 20:43:36 info: [0mGET /categories?[object%20Object] [36m304[0m 22.948 ms - -[0m
+2023-08-01 20:43:36 info: [0mGET /ceos?[object%20Object] [36m304[0m 78.759 ms - -[0m
+2023-08-01 20:43:36 info: [0mGET /posts?[object%20Object] [36m304[0m 251.665 ms - -[0m
+2023-08-01 20:44:03 info: =================================
+2023-08-01 20:44:03 info: ======= ENV: development =======
+2023-08-01 20:44:03 info: 🚀 App listening on the port 8000
+2023-08-01 20:44:03 info: =================================
+2023-08-01 20:44:07 info: [0mOPTIONS /admins/profile [32m204[0m 6.898 ms - 0[0m
+2023-08-01 20:44:08 info: [0mGET /categories?[object%20Object] [36m304[0m 531.841 ms - -[0m
+2023-08-01 20:44:08 info: [0mGET /ceos?[object%20Object] [36m304[0m 529.843 ms - -[0m
+2023-08-01 20:44:08 info: [0mGET /admins/profile [36m304[0m 861.816 ms - -[0m
+2023-08-01 20:44:08 error: Cannot read properties of null (reading 'id')
+2023-08-01 20:44:08 info: [0mGET /posts/show/14 [31m500[0m 505.289 ms - 51[0m
+2023-08-01 20:44:08 info: [0mGET /posts?[object%20Object] [36m304[0m 1082.107 ms - -[0m
+2023-08-01 20:44:08 info: [0mGET /categories?[object%20Object] [36m304[0m 39.888 ms - -[0m
+2023-08-01 20:44:08 info: [0mGET /ceos?[object%20Object] [36m304[0m 54.806 ms - -[0m
+2023-08-01 20:44:08 info: [0mGET /posts?[object%20Object] [36m304[0m 124.616 ms - -[0m
+2023-08-01 20:44:20 error: Cannot read properties of null (reading 'id')
+2023-08-01 20:44:20 info: [0mGET /posts/show/6 [31m500[0m 304.100 ms - 51[0m
+2023-08-01 20:44:24 error: Cannot read properties of null (reading 'id')
+2023-08-01 20:44:24 info: [0mGET /posts/show/1 [31m500[0m 50.117 ms - 51[0m
+2023-08-01 20:44:48 info: =================================
+2023-08-01 20:44:48 info: ======= ENV: development =======
+2023-08-01 20:44:48 info: 🚀 App listening on the port 8000
+2023-08-01 20:44:48 info: =================================
+2023-08-01 20:45:10 info: =================================
+2023-08-01 20:45:10 info: ======= ENV: development =======
+2023-08-01 20:45:10 info: 🚀 App listening on the port 8000
+2023-08-01 20:45:10 info: =================================
+2023-08-01 20:45:14 error: Cannot read properties of null (reading 'id')
+2023-08-01 20:45:14 info: [0mGET /posts/show/1 [31m500[0m 697.047 ms - 51[0m
+2023-08-01 20:45:38 info: =================================
+2023-08-01 20:45:38 info: ======= ENV: development =======
+2023-08-01 20:45:38 info: 🚀 App listening on the port 8000
+2023-08-01 20:45:38 info: =================================
+2023-08-01 20:45:40 info: [0mGET /posts/show/1 [32m200[0m 505.392 ms - 16[0m
+2023-08-01 20:46:30 info: =================================
+2023-08-01 20:46:30 info: ======= ENV: development =======
+2023-08-01 20:46:30 info: 🚀 App listening on the port 8000
+2023-08-01 20:46:30 info: =================================
+2023-08-01 20:46:33 info: [0mGET /posts/show/1 [32m200[0m 647.180 ms - 579[0m
+2023-08-01 20:46:40 info: [0mOPTIONS /admins/profile [32m204[0m 1.019 ms - 0[0m
+2023-08-01 20:46:41 info: [0mGET /categories?[object%20Object] [36m304[0m 469.856 ms - -[0m
+2023-08-01 20:46:41 info: [0mGET /ceos?[object%20Object] [36m304[0m 450.931 ms - -[0m
+2023-08-01 20:46:41 info: [0mGET /admins/profile [36m304[0m 740.471 ms - -[0m
+2023-08-01 20:46:41 info: [0mGET /posts?[object%20Object] [36m304[0m 1045.302 ms - -[0m
+2023-08-01 20:46:43 info: [0mGET /posts/show/14 [32m200[0m 781.763 ms - -[0m
+2023-08-01 20:46:45 info: [0mGET /ceos?[object%20Object] [36m304[0m 44.889 ms - -[0m
+2023-08-01 20:46:45 info: [0mGET /categories?[object%20Object] [36m304[0m 70.689 ms - -[0m
+2023-08-01 20:46:46 info: [0mGET /posts?[object%20Object] [36m304[0m 360.353 ms - -[0m
+2023-08-01 20:46:53 info: [0mOPTIONS /posts/update/14 [32m204[0m 0.715 ms - 0[0m
+2023-08-01 20:46:54 info: [0mPUT /posts/update/14 [32m200[0m 479.785 ms - 16[0m
+2023-08-01 20:46:54 info: [0mGET /posts/show/14 [36m304[0m 201.607 ms - -[0m
+2023-08-01 20:46:57 info: [0mGET /categories?[object%20Object] [36m304[0m 173.464 ms - -[0m
+2023-08-01 20:46:57 info: [0mGET /ceos?[object%20Object] [36m304[0m 254.318 ms - -[0m
+2023-08-01 20:46:57 info: [0mGET /posts?[object%20Object] [32m200[0m 393.458 ms - -[0m
+2023-08-01 20:47:38 info: [0mGET /posts/show/14 [36m304[0m 355.282 ms - -[0m
+2023-08-01 20:47:38 info: [0mGET /posts/show/14 [36m304[0m 358.673 ms - -[0m
+2023-08-01 20:47:40 info: [0mGET /banners/getListBanner [32m200[0m 77.592 ms - 1404[0m
+2023-08-01 20:47:40 info: [0mGET /posts/getListFeatured [32m200[0m 46.120 ms - 642[0m
+2023-08-01 20:47:40 info: [0mGET /services/nav [32m200[0m 94.926 ms - 1603[0m
+2023-08-01 20:47:41 info: [0mGET /categories?[object%20Object] [36m304[0m 261.459 ms - -[0m
+2023-08-01 20:47:41 info: [0mGET /ceos?[object%20Object] [36m304[0m 295.976 ms - -[0m
+2023-08-01 20:47:42 info: [0mGET /posts?[object%20Object] [36m304[0m 975.703 ms - -[0m
+2023-08-01 20:47:53 info: [0mGET /posts/show/14 [36m304[0m 381.110 ms - -[0m
+2023-08-01 20:47:53 info: [0mGET /posts/show/14 [36m304[0m 302.557 ms - -[0m
+2023-08-01 20:47:56 info: [0mGET /categories?[object%20Object] [36m304[0m 543.959 ms - -[0m
+2023-08-01 20:47:56 info: [0mGET /ceos?[object%20Object] [36m304[0m 237.962 ms - -[0m
+2023-08-01 20:47:57 info: [0mGET /posts?[object%20Object] [36m304[0m 1080.805 ms - -[0m
+2023-08-01 20:49:03 info: [0mGET /services/nav [32m200[0m 403.044 ms - -[0m
+2023-08-01 20:49:11 info: [0mOPTIONS /posts/update/14 [32m204[0m 1.039 ms - 0[0m
+2023-08-01 20:49:11 info: [0mPUT /posts/update/14 [32m200[0m 462.250 ms - 16[0m
+2023-08-01 20:49:12 info: [0mGET /posts/show/14 [36m304[0m 260.536 ms - -[0m
+2023-08-01 20:49:12 info: [0mGET /posts/show/14 [36m304[0m 92.456 ms - -[0m
+2023-08-01 20:49:12 info: [0mGET /posts/show/14 [32m200[0m 311.334 ms - -[0m
+2023-08-01 20:49:15 info: [0mGET /categories?[object%20Object] [36m304[0m 285.899 ms - -[0m
+2023-08-01 20:49:15 info: [0mGET /ceos?[object%20Object] [36m304[0m 305.741 ms - -[0m
+2023-08-01 20:49:15 info: [0mGET /posts?[object%20Object] [36m304[0m 434.709 ms - -[0m
+2023-08-01 20:49:26 info: [0mOPTIONS /posts/update/14 [32m204[0m 0.744 ms - 0[0m
+2023-08-01 20:49:26 info: [0mPUT /posts/update/14 [32m200[0m 246.716 ms - 16[0m
+2023-08-01 20:49:26 info: [0mGET /posts/show/14 [36m304[0m 100.029 ms - -[0m
+2023-08-01 20:49:26 info: [0mGET /posts/show/14 [36m304[0m 87.664 ms - -[0m
+2023-08-01 20:49:27 info: [0mGET /posts/show/14 [32m200[0m 129.551 ms - -[0m
+2023-08-01 20:49:29 info: [0mGET /categories?[object%20Object] [36m304[0m 31.149 ms - -[0m
+2023-08-01 20:49:29 info: [0mGET /ceos?[object%20Object] [36m304[0m 78.987 ms - -[0m
+2023-08-01 20:49:29 info: [0mGET /posts?[object%20Object] [32m200[0m 226.484 ms - -[0m

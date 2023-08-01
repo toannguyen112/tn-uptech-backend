@@ -48,13 +48,15 @@ export class PostDTO {
             category,
 
             description: translationData.description || "",
+
             isFeatured: item.isFeatured || false,
             posted_at: Helper.formatDayJs(item.posted_at) || null,
             status: item.status || 'inactive',
             content: translationData.content || "",
-            thumbnail: MediaDTO.transform(item.image) || null,
+            thumbnail: item.image ? MediaDTO.transform(item.image) : null,
             banner: item.banner_image || null,
             related: item.related || [],
+            ldjson: item.ldjson,
 
             ...Helper.FieldsSeo(translationData),
 
@@ -92,7 +94,6 @@ export class PostDTO {
             }) : [],
 
             posts: item.posts.map((item) => {
-
                 return {
                     id: item.id,
                     name: item.translations[0].name,

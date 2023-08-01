@@ -410,56 +410,60 @@ export class PostService {
 
     public show = async (id) => {
 
-        const post = await models.Post.findOne({
-            where: { id },
-            include: [
-                {
-                    model: models.Media,
-                    as: "image",
-                    required: false,
-                },
-                {
-                    model: models.Category,
-                    as: "category",
-                    required: false,
-                    include: {
-                        model: models.CategoryTranslation,
-                        as: "translations",
-                        required: true,
-                        where: { locale: global.lang }
-                    }
-                },
-                {
-                    model: models.Ceo,
-                    as: "ceo",
-                    required: false,
-                    include: {
-                        model: models.CeoTranslation,
+        try {
+            const post = await models.Post.findOne({
+                where: { id },
+                include: [
+                    {
+                        model: models.Media,
+                        as: "image",
+                        required: false,
+                    },
+                    {
+                        model: models.Category,
+                        as: "category",
+                        required: false,
+                        include: {
+                            model: models.CategoryTranslation,
+                            as: "translations",
+                            required: true,
+                            where: { locale: global.lang }
+                        }
+                    },
+                    {
+                        model: models.Ceo,
+                        as: "ceo",
+                        required: false,
+                        include: {
+                            model: models.CeoTranslation,
+                            as: "translations",
+                            required: true,
+                            where: {
+                                locale: global.lang,
+                                ceo_id: id
+                            }
+                        },
+                    },
+                    {
+                        model: models.Media,
+                        as: "banner_image",
+                        required: false,
+                    },
+                    {
+                        model: models.PostTranslation,
                         as: "translations",
                         required: true,
                         where: {
                             locale: global.lang,
-                            ceo_id: id
                         }
                     },
-                },
-                {
-                    model: models.Media,
-                    as: "banner_image",
-                    required: false,
-                },
-                {
-                    model: models.PostTranslation,
-                    as: "translations",
-                    required: true,
-                    where: {
-                        locale: global.lang,
-                    }
-                },
-            ]
-        });
+                ]
+            });
 
-        return PostDTO.transformDetail(post);
+            return PostDTO.transformDetail(post);
+        } catch (error) {
+            console.log(error);
+        }
     }
 
     public findBySlug = async (slug: string) => {
