@@ -80,6 +80,7 @@ export class PostDTO {
             } : null,
 
             content: translationData.content || "",
+            ldjson: item.ldjson,
             banner: item.banner_image || null,
             posted_at: Helper.formatDayJs(item.posted_at) || null,
 

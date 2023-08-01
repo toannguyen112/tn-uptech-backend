@@ -47,6 +47,10 @@ module.exports = function (sequelize, DataTypes) {
                 defaultValue: 'active'
             },
 
+            ldjson: {
+                type: DataTypes.JSON,
+            },
+
             createdAt: {
                 type: DataTypes.DATE,
                 defaultValue: new Date(),

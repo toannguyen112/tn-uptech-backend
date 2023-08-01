@@ -76,6 +76,8 @@ export class ProjectDTO {
                 return item.id
             }) || [],
 
+            ldjson: item.ldjson || "",
+
             ...Helper.FieldsSeo(translationData),
 
         }
@@ -111,6 +113,7 @@ export class ProjectDTO {
                 }
             }) || [],
 
+            ldjson: item.ldjson || "",
             related: item.related.length ? item.related.map((item) => {
                 return {
                     id: item.id,

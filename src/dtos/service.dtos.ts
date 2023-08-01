@@ -33,6 +33,8 @@ export class ServiceDTO {
             section_4: translationData.section_4 || null,
             section_5: translationData.section_5 || null,
 
+            ldjson: item.ldjson || null,
+
             ...Helper.FieldsSeo(translationData)
         }
     }

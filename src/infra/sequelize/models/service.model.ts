@@ -34,6 +34,10 @@ module.exports = function (sequelize, DataTypes) {
                 allowNull: true,
             },
 
+            ldjson: {
+                type: DataTypes.JSON,
+            },
+
             createdAt: {
                 type: DataTypes.DATE,
                 defaultValue: new Date(),
