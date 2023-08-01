@@ -95,6 +95,26 @@ module.exports = function (sequelize, DataTypes) {
                 }
             },
 
+            fb: {
+                type: DataTypes.STRING
+            },
+
+            linkedIn: {
+                type: DataTypes.STRING
+            },
+
+            twitter: {
+                type: DataTypes.STRING
+            },
+
+            dribbble: {
+                type: DataTypes.STRING
+            },
+
+            orther_link: {
+                type: DataTypes.STRING
+            },
+
             deletedAt: {
                 type: DataTypes.DATE
             },

@@ -1,0 +1,167 @@
+2023-08-02 00:03:09 info: [0mGET /banners/getListBanner [32m200[0m 609.522 ms - 1404[0m
+2023-08-02 00:03:09 info: [0mGET /services/nav [32m200[0m 440.680 ms - 1603[0m
+2023-08-02 00:03:09 info: [0mGET /posts/getListFeatured [32m200[0m 458.963 ms - 1616[0m
+2023-08-02 00:03:29 info: [0mGET /banners/getListBanner [32m200[0m 127.629 ms - 1404[0m
+2023-08-02 00:03:29 info: [0mGET /services/nav [32m200[0m 101.319 ms - 1603[0m
+2023-08-02 00:03:29 info: [0mGET /posts/getListFeatured [32m200[0m 164.924 ms - 1616[0m
+2023-08-02 00:03:45 info: [0mGET /banners/getListBanner [32m200[0m 174.070 ms - 1404[0m
+2023-08-02 00:03:45 info: [0mGET /services/nav [32m200[0m 199.444 ms - 1603[0m
+2023-08-02 00:03:45 info: [0mGET /posts/getListFeatured [32m200[0m 306.796 ms - 1616[0m
+2023-08-02 00:05:15 info: [0mGET /banners/getListBanner [32m200[0m 161.723 ms - 1404[0m
+2023-08-02 00:05:15 info: [0mGET /banners/getListBanner [32m200[0m 449.839 ms - 1404[0m
+2023-08-02 00:05:15 info: [0mGET /services/nav [32m200[0m 386.680 ms - 1603[0m
+2023-08-02 00:05:15 info: [0mGET /services/nav [32m200[0m 362.800 ms - 1603[0m
+2023-08-02 00:05:15 info: [0mGET /posts/getListFeatured [32m200[0m 520.191 ms - 1616[0m
+2023-08-02 00:05:15 info: [0mGET /posts/getListFeatured [32m200[0m 479.077 ms - 1616[0m
+2023-08-02 00:05:17 info: [0mGET /services/nav [32m200[0m 53.892 ms - 1603[0m
+2023-08-02 00:05:17 info: [0mGET /posts/getListFeatured [32m200[0m 124.156 ms - 1616[0m
+2023-08-02 00:05:17 info: [0mGET /banners/getListBanner [32m200[0m 153.510 ms - 1404[0m
+2023-08-02 00:09:24 info: [0mGET /banners/getListBanner [32m200[0m 422.077 ms - 1404[0m
+2023-08-02 00:09:24 info: [0mGET /services/nav [32m200[0m 298.272 ms - 1603[0m
+2023-08-02 00:09:24 info: [0mGET /posts/getListFeatured [32m200[0m 575.173 ms - 1616[0m
+2023-08-02 00:09:29 info: [0mGET /services/nav [36m304[0m 221.849 ms - -[0m
+2023-08-02 00:09:59 info: [0mGET /banners/getListBanner [32m200[0m 540.562 ms - 1404[0m
+2023-08-02 00:09:59 info: [0mGET /banners/getListBanner [32m200[0m 413.987 ms - 1404[0m
+2023-08-02 00:09:59 info: [0mGET /services/nav [32m200[0m 475.456 ms - 1603[0m
+2023-08-02 00:09:59 info: [0mGET /services/nav [32m200[0m 480.291 ms - 1603[0m
+2023-08-02 00:09:59 info: [0mGET /posts/getListFeatured [32m200[0m 691.934 ms - 1616[0m
+2023-08-02 00:09:59 info: [0mGET /posts/getListFeatured [32m200[0m 670.362 ms - 1616[0m
+2023-08-02 00:10:26 info: [0mGET /banners/getListBanner [32m200[0m 238.698 ms - 1404[0m
+2023-08-02 00:10:26 info: [0mGET /banners/getListBanner [32m200[0m 329.741 ms - 1404[0m
+2023-08-02 00:10:26 info: [0mGET /services/nav [32m200[0m 305.419 ms - 1603[0m
+2023-08-02 00:10:26 info: [0mGET /services/nav [32m200[0m 258.837 ms - 1603[0m
+2023-08-02 00:10:27 info: [0mGET /banners/getListBanner [32m200[0m 266.270 ms - 1404[0m
+2023-08-02 00:10:27 info: [0mGET /services/nav [32m200[0m 264.832 ms - 1603[0m
+2023-08-02 00:10:27 info: [0mGET /posts/getListFeatured [32m200[0m 916.015 ms - 1616[0m
+2023-08-02 00:10:27 info: [0mGET /posts/getListFeatured [32m200[0m 938.180 ms - 1616[0m
+2023-08-02 00:10:27 info: [0mGET /posts/getListFeatured [32m200[0m 906.507 ms - 1616[0m
+2023-08-02 00:11:39 info: [0mGET /banners/getListBanner [32m200[0m 386.632 ms - 1404[0m
+2023-08-02 00:11:39 info: [0mGET /banners/getListBanner [32m200[0m 312.788 ms - 1404[0m
+2023-08-02 00:11:39 info: [0mGET /services/nav [32m200[0m 339.235 ms - 1603[0m
+2023-08-02 00:11:39 info: [0mGET /services/nav [32m200[0m 475.148 ms - 1603[0m
+2023-08-02 00:11:40 info: [0mGET /posts/getListFeatured [32m200[0m 859.546 ms - 1616[0m
+2023-08-02 00:11:40 info: [0mGET /posts/getListFeatured [32m200[0m 892.905 ms - 1616[0m
+2023-08-02 00:11:45 info: [0mGET /services/nav [36m304[0m 352.898 ms - -[0m
+2023-08-02 00:14:26 info: [0mOPTIONS /admins/login [32m204[0m 9.909 ms - 0[0m
+2023-08-02 00:14:26 info: [0mPOST /admins/login [32m200[0m 355.381 ms - -[0m
+2023-08-02 00:14:34 info: [0mGET /banners/getListBanner [32m200[0m 169.691 ms - 1404[0m
+2023-08-02 00:14:35 info: [0mGET /services/nav [32m200[0m 404.471 ms - 1603[0m
+2023-08-02 00:14:35 info: [0mOPTIONS /admins/profile [32m204[0m 12.730 ms - 0[0m
+2023-08-02 00:14:35 info: [0mGET /posts/getListFeatured [32m200[0m 918.577 ms - 1616[0m
+2023-08-02 00:14:35 info: [0mGET /banners? [36m304[0m 291.494 ms - -[0m
+2023-08-02 00:14:35 info: [0mGET /admins/profile [36m304[0m 377.748 ms - -[0m
+2023-08-02 00:14:36 info: [0mGET /banners?page=1&page_size=10 [36m304[0m 87.462 ms - -[0m
+2023-08-02 00:14:40 info: [0mGET /services/nav [36m304[0m 155.405 ms - -[0m
+2023-08-02 00:15:03 info: [0mGET /jobs/getListFeatured [36m304[0m 919.118 ms - -[0m
+2023-08-02 00:15:12 info: [0mGET /categories/getListCategories [32m200[0m 35.763 ms - 441[0m
+2023-08-02 00:15:12 info: [0mGET /posts/getPageAll [32m200[0m 381.462 ms - 4020[0m
+2023-08-02 00:15:18 info: [0mGET /posts/findBySlug/business-analytics-la-gi-5-loi-ich-cua-business-analytics-voi-doanh-nghiep [32m200[0m 513.136 ms - 2520392[0m
+2023-08-02 00:15:20 info: [0mGET /posts/findBySlug/business-analytics-la-gi-5-loi-ich-cua-business-analytics-voi-doanh-nghiep [32m200[0m 685.785 ms - 2520392[0m
+2023-08-02 00:21:14 info: =================================
+2023-08-02 00:21:14 info: ======= ENV: development =======
+2023-08-02 00:21:14 info: 🚀 App listening on the port 8000
+2023-08-02 00:21:14 info: =================================
+2023-08-02 00:21:27 info: =================================
+2023-08-02 00:21:27 info: ======= ENV: development =======
+2023-08-02 00:21:27 info: 🚀 App listening on the port 8000
+2023-08-02 00:21:27 info: =================================
+2023-08-02 00:21:58 info: =================================
+2023-08-02 00:21:58 info: ======= ENV: development =======
+2023-08-02 00:21:58 info: 🚀 App listening on the port 8000
+2023-08-02 00:21:58 info: =================================
+2023-08-02 00:22:24 info: =================================
+2023-08-02 00:22:24 info: ======= ENV: development =======
+2023-08-02 00:22:24 info: 🚀 App listening on the port 8000
+2023-08-02 00:22:24 info: =================================
+2023-08-02 00:23:36 info: =================================
+2023-08-02 00:23:36 info: ======= ENV: development =======
+2023-08-02 00:23:36 info: 🚀 App listening on the port 8000
+2023-08-02 00:23:36 info: =================================
+2023-08-02 00:24:38 info: =================================
+2023-08-02 00:24:38 info: ======= ENV: development =======
+2023-08-02 00:24:38 info: 🚀 App listening on the port 8000
+2023-08-02 00:24:38 info: =================================
+2023-08-02 00:25:47 info: =================================
+2023-08-02 00:25:47 info: ======= ENV: development =======
+2023-08-02 00:25:47 info: 🚀 App listening on the port 8000
+2023-08-02 00:25:47 info: =================================
+2023-08-02 00:27:01 info: [0mGET /banners/getListBanner [32m200[0m 257.834 ms - 1404[0m
+2023-08-02 00:27:01 info: [0mGET /services/nav [32m200[0m 219.227 ms - 1603[0m
+2023-08-02 00:27:01 info: [0mGET /posts/getListFeatured [32m200[0m 320.713 ms - 1616[0m
+2023-08-02 00:27:03 info: [0mGET /services/nav [36m304[0m 133.495 ms - -[0m
+2023-08-02 00:27:14 info: [0mOPTIONS /admins/login [32m204[0m 2.167 ms - 0[0m
+2023-08-02 00:27:14 info: [0mPOST /admins/login [32m200[0m 188.814 ms - -[0m
+2023-08-02 00:27:15 info: [0mOPTIONS /admins/profile [32m204[0m 1.061 ms - 0[0m
+2023-08-02 00:27:16 info: [0mGET /banners? [36m304[0m 244.320 ms - -[0m
+2023-08-02 00:27:16 info: [0mGET /admins/profile [36m304[0m 399.269 ms - -[0m
+2023-08-02 00:27:16 info: [0mGET /banners?page=1&page_size=10 [36m304[0m 22.580 ms - -[0m
+2023-08-02 00:27:21 info: [0mOPTIONS /admins/profile [32m204[0m 1.362 ms - 0[0m
+2023-08-02 00:27:21 info: [0mGET /services/nav [36m304[0m 154.974 ms - -[0m
+2023-08-02 00:27:21 info: [0mGET /admins/profile [36m304[0m 221.683 ms - -[0m
+2023-08-02 00:27:26 info: [0mGET /branchs? [32m200[0m 115.877 ms - 778[0m
+2023-08-02 00:27:26 info: [0mGET /admins/profile [36m304[0m 460.558 ms - -[0m
+2023-08-02 00:27:29 info: [0mGET /branchs?page=1&page_size=10 [32m200[0m 72.451 ms - 778[0m
+2023-08-02 00:27:32 info: [0mOPTIONS /admins/profile [32m204[0m 9.249 ms - 0[0m
+2023-08-02 00:27:32 info: [0mGET /projects? [36m304[0m 91.179 ms - -[0m
+2023-08-02 00:27:33 info: [0mGET /admins/profile [36m304[0m 228.287 ms - -[0m
+2023-08-02 00:27:33 info: [0mGET /projects?page=1&page_size=10 [36m304[0m 21.659 ms - -[0m
+2023-08-02 00:27:47 info: [0mGET /posts/findBySlug/business-analytics-la-gi-5-loi-ich-cua-business-analytics-voi-doanh-nghiep [32m200[0m 1295.643 ms - 2520392[0m
+2023-08-02 00:27:54 info: [0mOPTIONS /admins/profile [32m204[0m 1.388 ms - 0[0m
+2023-08-02 00:27:54 info: [0mGET /admins/profile [36m304[0m 290.754 ms - -[0m
+2023-08-02 00:27:54 info: [0mGET /projects/show/3 [32m200[0m 246.870 ms - -[0m
+2023-08-02 00:27:56 info: [0mGET /branchs?[object%20Object] [32m200[0m 211.388 ms - 778[0m
+2023-08-02 00:27:56 info: [0mGET /projects?[object%20Object] [32m200[0m 204.390 ms - -[0m
+2023-08-02 00:27:56 info: [0mGET /services?[object%20Object] [32m200[0m 260.712 ms - -[0m
+2023-08-02 00:29:56 info: =================================
+2023-08-02 00:29:56 info: ======= ENV: development =======
+2023-08-02 00:29:56 info: 🚀 App listening on the port 8000
+2023-08-02 00:29:56 info: =================================
+2023-08-02 00:30:23 info: =================================
+2023-08-02 00:30:23 info: ======= ENV: development =======
+2023-08-02 00:30:23 info: 🚀 App listening on the port 8000
+2023-08-02 00:30:23 info: =================================
+2023-08-02 00:30:56 info: [0mGET /posts/findBySlug/business-analytics-la-gi-5-loi-ich-cua-business-analytics-voi-doanh-nghiep [32m200[0m 1584.186 ms - 2520392[0m
+2023-08-02 00:31:59 info: [0mGET /posts/findBySlug/business-analytics-la-gi-5-loi-ich-cua-business-analytics-voi-doanh-nghiep [32m200[0m 2138.439 ms - 2520392[0m
+2023-08-02 00:32:41 info: [0mGET /posts/findBySlug/business-analytics-la-gi-5-loi-ich-cua-business-analytics-voi-doanh-nghiep [32m200[0m 1232.363 ms - 2520392[0m
+2023-08-02 00:33:33 info: [0mOPTIONS /admins/profile [32m204[0m 4.950 ms - 0[0m
+2023-08-02 00:33:33 info: [0mGET /admins/profile [36m304[0m 292.698 ms - -[0m
+2023-08-02 00:33:33 info: [0mGET /projects/show/3 [32m200[0m 305.538 ms - -[0m
+2023-08-02 00:33:34 info: [0mGET /posts?page=1&page_size=10 [32m200[0m 479.671 ms - -[0m
+2023-08-02 00:33:34 info: [0mGET /posts? [32m200[0m 552.583 ms - -[0m
+2023-08-02 00:33:41 info: [0mOPTIONS /admins/profile [32m204[0m 1.424 ms - 0[0m
+2023-08-02 00:33:41 info: [0mGET /admins/profile [36m304[0m 191.880 ms - -[0m
+2023-08-02 00:33:41 info: [0mGET /posts/show/13 [32m200[0m 172.975 ms - -[0m
+2023-08-02 00:33:42 info: [0mGET /categories?[object%20Object] [36m304[0m 135.777 ms - -[0m
+2023-08-02 00:33:43 info: [0mGET /ceos?[object%20Object] [36m304[0m 295.669 ms - -[0m
+2023-08-02 00:33:43 info: [0mGET /posts?[object%20Object] [36m304[0m 387.259 ms - -[0m
+2023-08-02 00:34:11 info: [0mOPTIONS /posts/update/13 [32m204[0m 1.145 ms - 0[0m
+2023-08-02 00:34:11 info: [0mPUT /posts/update/13 [32m200[0m 222.581 ms - 16[0m
+2023-08-02 00:34:11 info: [0mGET /projects/show/3 [32m200[0m 154.642 ms - -[0m
+2023-08-02 00:34:11 info: [0mGET /posts/show/13 [32m200[0m 146.208 ms - -[0m
+2023-08-02 00:34:13 info: [0mGET /categories?[object%20Object] [36m304[0m 116.174 ms - -[0m
+2023-08-02 00:34:13 info: [0mGET /ceos?[object%20Object] [36m304[0m 173.932 ms - -[0m
+2023-08-02 00:34:13 info: [0mGET /posts?[object%20Object] [32m200[0m 323.051 ms - -[0m
+2023-08-02 00:34:32 info: [0mOPTIONS /posts/update/13 [32m204[0m 0.705 ms - 0[0m
+2023-08-02 00:34:32 info: [0mPUT /posts/update/13 [32m200[0m 113.012 ms - 16[0m
+2023-08-02 00:34:32 info: [0mGET /projects/show/3 [36m304[0m 61.697 ms - -[0m
+2023-08-02 00:34:32 info: [0mGET /posts/show/13 [32m200[0m 84.851 ms - -[0m
+2023-08-02 00:34:33 info: [0mGET /categories?[object%20Object] [36m304[0m 28.951 ms - -[0m
+2023-08-02 00:34:33 info: [0mGET /ceos?[object%20Object] [36m304[0m 37.734 ms - -[0m
+2023-08-02 00:34:33 info: [0mGET /posts?[object%20Object] [32m200[0m 133.222 ms - -[0m
+2023-08-02 00:34:55 info: [0mGET /posts/show/13 [36m304[0m 374.037 ms - -[0m
+2023-08-02 00:34:56 info: [0mGET /posts/show/13 [36m304[0m 326.799 ms - -[0m
+2023-08-02 00:34:57 info: [0mGET /categories?[object%20Object] [36m304[0m 483.599 ms - -[0m
+2023-08-02 00:34:57 info: [0mGET /ceos?[object%20Object] [36m304[0m 283.748 ms - -[0m
+2023-08-02 00:34:58 info: [0mGET /posts?[object%20Object] [36m304[0m 755.376 ms - -[0m
+2023-08-02 00:35:05 info: [0mGET /posts/show/13 [36m304[0m 645.754 ms - -[0m
+2023-08-02 00:35:05 info: [0mGET /posts/show/13 [36m304[0m 156.451 ms - -[0m
+2023-08-02 00:35:06 info: [0mGET /categories?[object%20Object] [36m304[0m 229.773 ms - -[0m
+2023-08-02 00:35:06 info: [0mGET /ceos?[object%20Object] [36m304[0m 472.861 ms - -[0m
+2023-08-02 00:35:07 info: [0mGET /posts?[object%20Object] [36m304[0m 1100.502 ms - -[0m
+2023-08-02 00:35:28 info: =================================
+2023-08-02 00:35:28 info: ======= ENV: development =======
+2023-08-02 00:35:28 info: 🚀 App listening on the port 8000
+2023-08-02 00:35:28 info: =================================
+2023-08-02 00:35:52 info: [0mGET /services/nav [36m304[0m 458.174 ms - -[0m
+2023-08-02 00:36:01 info: [0mGET /posts/findBySlug/business-analytics-la-gi-5-loi-ich-cua-business-analytics-voi-doanh-nghiep [32m200[0m 1158.909 ms - 2520392[0m
+2023-08-02 00:36:09 info: [0mGET /posts/findBySlug/business-analytics-la-gi-5-loi-ich-cua-business-analytics-voi-doanh-nghiep [32m200[0m 934.083 ms - 2520392[0m

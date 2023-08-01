@@ -58,6 +58,12 @@ export class PostDTO {
             related: item.related || [],
             ldjson: item.ldjson,
 
+            fb: item.fb,
+            linkedIn: item.linkedIn,
+            twitter: item.twitter,
+            dribbble: item.dribbble,
+            orther_link: item.orther_link,
+
             ...Helper.FieldsSeo(translationData),
 
         }
@@ -104,6 +110,12 @@ export class PostDTO {
                     thumbnail: item.image ? MediaDTO.transform(item.image) : null,
                 }
             }) || [],
+
+            fb: item.fb,
+            linkedIn: item.linkedIn,
+            twitter: item.twitter,
+            dribbble: item.dribbble,
+            orther_link: item.orther_link,
 
             ...Helper.FieldsSeo(translationData),
 
