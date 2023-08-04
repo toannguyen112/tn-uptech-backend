@@ -1,0 +1,47 @@
+2023-08-04 00:04:35 info: [0mGET /services/findBySlug/vrar [32m200[0m 264.313 ms - 4033[0m
+2023-08-04 00:04:43 info: [0mGET /banners/getListBanner [32m200[0m 93.418 ms - 1404[0m
+2023-08-04 00:04:43 info: [0mGET /services/nav [32m200[0m 101.318 ms - 1603[0m
+2023-08-04 00:04:43 info: [0mGET /posts/getListFeatured [32m200[0m 204.191 ms - 2380[0m
+2023-08-04 00:04:46 info: [0mGET /services/findBySlug/mo-hinh-chien-luoc-chuyen-oi-so [32m200[0m 8.696 ms - 3410[0m
+2023-08-04 00:04:50 info: [0mGET /services/findBySlug/erp [32m200[0m 12.676 ms - 4901[0m
+2023-08-04 00:04:51 info: [0mGET /services/getListService [36m304[0m 66.991 ms - -[0m
+2023-08-04 00:04:51 info: [0mGET /branchs/getListBranch [36m304[0m 212.943 ms - -[0m
+2023-08-04 00:04:51 info: [0mGET /projects/getProjectsClient [36m304[0m 304.766 ms - -[0m
+2023-08-04 00:04:52 info: [0mGET /categories/getListCategories [32m200[0m 14.212 ms - 441[0m
+2023-08-04 00:04:53 info: [0mGET /jobs/getListFeatured [32m200[0m 85.285 ms - -[0m
+2023-08-04 00:04:53 info: [0mGET /posts/getPageAll [32m200[0m 305.591 ms - 5338[0m
+2023-08-04 00:04:54 info: [0mGET /banners/getListBanner [32m200[0m 14.460 ms - 1404[0m
+2023-08-04 00:04:54 info: [0mGET /services/nav [32m200[0m 45.990 ms - 1603[0m
+2023-08-04 00:04:54 info: [0mGET /posts/getListFeatured [32m200[0m 75.018 ms - 2380[0m
+2023-08-04 23:21:52 info: =================================
+2023-08-04 23:21:52 info: ======= ENV: development =======
+2023-08-04 23:21:52 info: 🚀 App listening on the port 8000
+2023-08-04 23:21:52 info: =================================
+2023-08-04 23:22:00 error: {}
+2023-08-04 23:22:00 info: [0mGET /posts/findBySlug/tuong-lai-e-commerce-cho-cac-mat-hang-san-xuat-tieu-dung [32m200[0m 161.496 ms - 16[0m
+2023-08-04 23:22:04 error: {}
+2023-08-04 23:22:04 info: [0mGET /posts/findBySlug/tuong-lai-e-commerce-cho-cac-mat-hang-san-xuat-tieu-dung [36m304[0m 28.998 ms - -[0m
+2023-08-04 23:22:05 error: {}
+2023-08-04 23:22:05 info: [0mGET /posts/findBySlug/tuong-lai-e-commerce-cho-cac-mat-hang-san-xuat-tieu-dung [36m304[0m 31.370 ms - -[0m
+2023-08-04 23:22:05 error: {}
+2023-08-04 23:22:05 info: [0mGET /posts/findBySlug/tuong-lai-e-commerce-cho-cac-mat-hang-san-xuat-tieu-dung [36m304[0m 8.719 ms - -[0m
+2023-08-04 23:22:05 error: {}
+2023-08-04 23:22:05 info: [0mGET /posts/findBySlug/tuong-lai-e-commerce-cho-cac-mat-hang-san-xuat-tieu-dung [36m304[0m 7.127 ms - -[0m
+2023-08-04 23:22:06 error: {}
+2023-08-04 23:22:06 info: [0mGET /posts/findBySlug/tuong-lai-e-commerce-cho-cac-mat-hang-san-xuat-tieu-dung [36m304[0m 11.761 ms - -[0m
+2023-08-04 23:22:31 info: [0mGET /posts/findBySlug/sup-do-ngan-hang-toan-cau-anh-huong-den-5-yeu-to-cua-thi-truong-bat-dong-san [32m200[0m 263.668 ms - -[0m
+2023-08-04 23:23:55 info: =================================
+2023-08-04 23:23:55 info: ======= ENV: development =======
+2023-08-04 23:23:55 info: 🚀 App listening on the port 8000
+2023-08-04 23:23:55 info: =================================
+2023-08-04 23:24:04 info: =================================
+2023-08-04 23:24:04 info: ======= ENV: development =======
+2023-08-04 23:24:04 info: 🚀 App listening on the port 8000
+2023-08-04 23:24:04 info: =================================
+2023-08-04 23:24:05 info: [0mGET /posts/findBySlug/sup-do-ngan-hang-toan-cau-anh-huong-den-5-yeu-to-cua-thi-truong-bat-dong-san [36m304[0m 192.860 ms - -[0m
+2023-08-04 23:24:15 info: [0mGET /posts/findBySlug/sup-do-ngan-hang-toan-cau-anh-huong-den-5-yeu-to-cua-thi-truong-bat-dong-san [36m304[0m 65.610 ms - -[0m
+2023-08-04 23:24:34 info: =================================
+2023-08-04 23:24:34 info: ======= ENV: development =======
+2023-08-04 23:24:34 info: 🚀 App listening on the port 8000
+2023-08-04 23:24:34 info: =================================
+2023-08-04 23:24:45 info: [0mGET /posts/findBySlug/sup-do-ngan-hang-toan-cau-anh-huong-den-5-yeu-to-cua-thi-truong-bat-dong-san [32m200[0m 197.550 ms - -[0m

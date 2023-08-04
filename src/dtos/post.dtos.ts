@@ -51,6 +51,7 @@ export class PostDTO {
 
             isFeatured: item.isFeatured || false,
             posted_at: Helper.formatDayJs(item.posted_at) || null,
+            update_at: Helper.formatDayJs(item.updatedAt) || null,
             status: item.status || 'inactive',
             content: translationData.content || "",
             thumbnail: item.image ? MediaDTO.transform(item.image) : null,
@@ -89,6 +90,7 @@ export class PostDTO {
             ldjson: item.ldjson,
             banner: item.banner_image || null,
             posted_at: Helper.formatDayJs(item.posted_at) || null,
+            update_at: Helper.formatDayJs(item.updatedAt) || null,
 
             related: item.postRelated ? item.postRelated.map((item) => {
                 return {

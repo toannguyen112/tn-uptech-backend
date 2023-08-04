@@ -129,6 +129,16 @@
             "date": 1690909389215,
             "name": "/Users/toannguyen/Desktop/tn-uptech-backend/src/logs/debug/2023-08-02.log",
             "hash": "d6025f8406c552ff470bc96e16b4dfb1fd5f3e86302d1b7868d0cd714a6e07c3"
+        },
+        {
+            "date": 1691079933765,
+            "name": "/Users/toannguyen/Desktop/tn-uptech-backend/src/logs/debug/2023-08-03.log",
+            "hash": "2156449964862a30aa8c3a486f9bb57044cb9614ebaae7dc0f566473672e9e90"
+        },
+        {
+            "date": 1691082275487,
+            "name": "/Users/toannguyen/Desktop/tn-uptech-backend/src/logs/debug/2023-08-04.log",
+            "hash": "9e6d16a1a3fd2d8babf51d19108ac51986055426a7778b79ac20c6140cb41d05"
         }
     ],
     "hashType": "sha256"
