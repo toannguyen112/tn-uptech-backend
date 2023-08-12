@@ -23,8 +23,6 @@ const transactionSchema = new Schema(
     },
 );
 
-transactionSchema.pre("save", function () { });
-
 const TransactionModels = mongoose.model("Transaction", transactionSchema);
 
 export default TransactionModels;

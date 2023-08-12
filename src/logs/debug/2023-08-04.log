@@ -45,3 +45,9 @@
 2023-08-04 23:24:34 info: 🚀 App listening on the port 8000
 2023-08-04 23:24:34 info: =================================
 2023-08-04 23:24:45 info: [0mGET /posts/findBySlug/sup-do-ngan-hang-toan-cau-anh-huong-den-5-yeu-to-cua-thi-truong-bat-dong-san [32m200[0m 197.550 ms - -[0m
+2023-08-04 23:44:08 info: [0mGET /banners/getListBanner [32m200[0m 237.114 ms - 1404[0m
+2023-08-04 23:44:08 info: [0mGET /services/nav [32m200[0m 189.445 ms - 1603[0m
+2023-08-04 23:44:09 info: [0mGET /posts/getListFeatured [32m200[0m 387.706 ms - 2380[0m
+2023-08-04 23:44:11 info: [0mGET /services/nav [36m304[0m 50.623 ms - -[0m
+2023-08-04 23:44:38 info: [0mGET /ceos/getlistCeo [32m200[0m 149.456 ms - 342[0m
+2023-08-04 23:44:48 info: [0mGET /services/findBySlug/website [32m200[0m 59.023 ms - 3997[0m

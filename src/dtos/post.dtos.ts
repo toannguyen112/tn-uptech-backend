@@ -70,14 +70,14 @@ export class PostDTO {
         }
     }
 
-    static transformDetailClient = (item) => {
+    static transformDetailClient = (item: any) => {
 
         if (!item) return {};
         const translationData = item.translations[0];
-
         return {
-            id: item.id,
+            id: item.dataValues.id || '',
             name: translationData.name || "",
+            description: translationData.description || "",
             ceo: item.ceo ? {
                 id: item.ceo.id,
                 name: item.ceo['translations'][0].name || "",

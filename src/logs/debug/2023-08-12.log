@@ -1,0 +1,149 @@
+2023-08-12 19:53:34 info: =================================
+2023-08-12 19:53:34 info: ======= ENV: development =======
+2023-08-12 19:53:34 info: 🚀 App listening on the port 8000
+2023-08-12 19:53:34 info: =================================
+2023-08-12 19:54:51 info: [0mGET /banners/getListBanner [32m200[0m 1300.277 ms - 1404[0m
+2023-08-12 19:54:51 info: [0mGET /services/nav [32m200[0m 1197.409 ms - 1603[0m
+2023-08-12 19:54:52 info: [0mGET /posts/getListFeatured [32m200[0m 2549.143 ms - 2380[0m
+2023-08-12 19:55:01 info: [0mGET /banners/getListBanner [32m200[0m 2698.817 ms - 1404[0m
+2023-08-12 19:55:01 info: [0mGET /services/nav [32m200[0m 2675.747 ms - 1603[0m
+2023-08-12 19:55:02 info: [0mGET /posts/getListFeatured [32m200[0m 3332.840 ms - 2380[0m
+2023-08-12 19:55:08 info: [0mGET /services/nav [32m200[0m 1004.325 ms - -[0m
+2023-08-12 19:55:21 info: [0mGET /categories/getListCategories [32m200[0m 702.467 ms - 441[0m
+2023-08-12 19:55:22 info: [0mGET /posts/getPageAll [32m200[0m 1207.260 ms - 5338[0m
+2023-08-12 19:55:29 error: {}
+2023-08-12 19:55:29 info: [0mGET /posts/findBySlug/tuong-lai-e-commerce-cho-cac-mat-hang-san-xuat-tieu-dung [32m200[0m 1151.919 ms - 16[0m
+2023-08-12 19:55:31 error: {}
+2023-08-12 19:55:31 info: [0mGET /posts/findBySlug/tuong-lai-e-commerce-cho-cac-mat-hang-san-xuat-tieu-dung [32m200[0m 143.543 ms - 16[0m
+2023-08-12 19:56:30 info: [0mGET /posts/findByIdClient/9 [33m404[0m 42.407 ms - 161[0m
+2023-08-12 19:58:24 info: =================================
+2023-08-12 19:58:24 info: ======= ENV: development =======
+2023-08-12 19:58:24 info: 🚀 App listening on the port 8000
+2023-08-12 19:58:24 info: =================================
+2023-08-12 19:59:08 error: {}
+2023-08-12 19:59:08 info: [0mGET /posts/findBySlug/tuong-lai-e-commerce-cho-cac-mat-hang-san-xuat-tieu-dung [32m200[0m 15756.674 ms - 16[0m
+2023-08-12 19:59:08 error: {}
+2023-08-12 19:59:08 info: [0mGET /posts/findBySlug/tuong-lai-e-commerce-cho-cac-mat-hang-san-xuat-tieu-dung [32m200[0m 35146.437 ms - 16[0m
+2023-08-12 19:59:08 error: {}
+2023-08-12 19:59:08 info: [0mGET /posts/findBySlug/tuong-lai-e-commerce-cho-cac-mat-hang-san-xuat-tieu-dung [32m200[0m 22881.895 ms - 16[0m
+2023-08-12 20:04:06 info: =================================
+2023-08-12 20:04:06 info: ======= ENV: development =======
+2023-08-12 20:04:06 info: 🚀 App listening on the port 8000
+2023-08-12 20:04:06 info: =================================
+2023-08-12 20:04:07 info: [0mGET /services/nav [32m200[0m 237.420 ms - 1603[0m
+2023-08-12 20:04:07 info: [0mGET /banners/getListBanner [32m200[0m 298.349 ms - 1404[0m
+2023-08-12 20:04:07 info: [0mGET /posts/getListFeatured [32m200[0m 306.916 ms - 2380[0m
+2023-08-12 20:04:08 info: [0mGET /posts [32m200[0m 238.970 ms - -[0m
+2023-08-12 20:04:09 info: [0mGET /favicon.ico [33m404[0m 8.382 ms - 150[0m
+2023-08-12 20:07:59 info: [0mGET /services/nav [32m200[0m 272.333 ms - 1603[0m
+2023-08-12 20:07:59 info: [0mGET /banners/getListBanner [32m200[0m 305.521 ms - 1404[0m
+2023-08-12 20:07:59 info: [0mGET /posts/getListFeatured [32m200[0m 336.178 ms - 2380[0m
+2023-08-12 20:08:28 info: [0mGET /banners/getListBanner [32m200[0m 198.392 ms - 1404[0m
+2023-08-12 20:08:28 info: [0mGET /services/nav [32m200[0m 194.339 ms - 1603[0m
+2023-08-12 20:08:28 info: [0mGET /posts/getListFeatured [32m200[0m 344.707 ms - 2380[0m
+2023-08-12 20:08:39 info: [0mGET /services/nav [36m304[0m 57.601 ms - -[0m
+2023-08-12 20:08:41 info: [0mGET /categories/getListCategories [32m200[0m 13.531 ms - 441[0m
+2023-08-12 20:08:41 info: [0mGET /posts/getPageAll [32m200[0m 99.973 ms - 5338[0m
+2023-08-12 20:08:45 info: [0mGET /posts/findBySlug/cach-cac-ceo-chau-a-thai-binh-duong-dua-cong-ty-dan-dau-trong-boi-canh-kinh-te-hien-nay [32m200[0m 86.353 ms - 586889[0m
+2023-08-12 20:22:55 info: [0mGET /posts/findBySlug/cach-cac-ceo-chau-a-thai-binh-duong-dua-cong-ty-dan-dau-trong-boi-canh-kinh-te-hien-nay [32m200[0m 187.673 ms - 586889[0m
+2023-08-12 20:23:14 info: [0mGET /posts/findBySlug/cach-cac-ceo-chau-a-thai-binh-duong-dua-cong-ty-dan-dau-trong-boi-canh-kinh-te-hien-nay [32m200[0m 278.789 ms - 586889[0m
+2023-08-12 20:23:14 info: [0mGET /posts/findBySlug/cach-cac-ceo-chau-a-thai-binh-duong-dua-cong-ty-dan-dau-trong-boi-canh-kinh-te-hien-nay [32m200[0m 158.108 ms - 586889[0m
+2023-08-12 20:23:25 info: [0mGET /posts/findBySlug/cach-cac-ceo-chau-a-thai-binh-duong-dua-cong-ty-dan-dau-trong-boi-canh-kinh-te-hien-nay [32m200[0m 143.937 ms - 586889[0m
+2023-08-12 20:26:18 info: [0mGET /posts/findBySlug/cach-cac-ceo-chau-a-thai-binh-duong-dua-cong-ty-dan-dau-trong-boi-canh-kinh-te-hien-nay [32m200[0m 147.831 ms - 586889[0m
+2023-08-12 20:26:18 info: [0mGET /posts/findBySlug/cach-cac-ceo-chau-a-thai-binh-duong-dua-cong-ty-dan-dau-trong-boi-canh-kinh-te-hien-nay [32m200[0m 150.921 ms - 586889[0m
+2023-08-12 20:26:46 info: [0mGET /posts/findBySlug/cach-cac-ceo-chau-a-thai-binh-duong-dua-cong-ty-dan-dau-trong-boi-canh-kinh-te-hien-nay [32m200[0m 77.146 ms - 586889[0m
+2023-08-12 20:26:48 info: [0mGET /services/nav [36m304[0m 17.006 ms - -[0m
+2023-08-12 20:27:23 info: [0mGET /posts/findBySlug/cach-cac-ceo-chau-a-thai-binh-duong-dua-cong-ty-dan-dau-trong-boi-canh-kinh-te-hien-nay [32m200[0m 221.692 ms - 586889[0m
+2023-08-12 20:27:23 info: [0mGET /posts/findBySlug/cach-cac-ceo-chau-a-thai-binh-duong-dua-cong-ty-dan-dau-trong-boi-canh-kinh-te-hien-nay [32m200[0m 189.345 ms - 586889[0m
+2023-08-12 20:27:25 info: [0mGET /services/nav [36m304[0m 22.869 ms - -[0m
+2023-08-12 20:27:59 info: [0mGET /services/nav [36m304[0m 62.272 ms - -[0m
+2023-08-12 20:28:04 info: [0mGET /posts/findBySlug/cach-cac-ceo-chau-a-thai-binh-duong-dua-cong-ty-dan-dau-trong-boi-canh-kinh-te-hien-nay [32m200[0m 264.944 ms - 586889[0m
+2023-08-12 20:28:04 info: [0mGET /posts/findBySlug/cach-cac-ceo-chau-a-thai-binh-duong-dua-cong-ty-dan-dau-trong-boi-canh-kinh-te-hien-nay [32m200[0m 295.482 ms - 586889[0m
+2023-08-12 20:28:07 info: [0mGET /services/nav [36m304[0m 56.552 ms - -[0m
+2023-08-12 20:28:29 info: [0mGET /posts/findBySlug/cach-cac-ceo-chau-a-thai-binh-duong-dua-cong-ty-dan-dau-trong-boi-canh-kinh-te-hien-nay [32m200[0m 148.159 ms - 586889[0m
+2023-08-12 20:28:31 info: [0mGET /services/nav [36m304[0m 20.890 ms - -[0m
+2023-08-12 20:28:40 info: [0mGET /posts/findBySlug/cach-cac-ceo-chau-a-thai-binh-duong-dua-cong-ty-dan-dau-trong-boi-canh-kinh-te-hien-nay [32m200[0m 61.371 ms - 586889[0m
+2023-08-12 20:28:42 info: [0mGET /services/nav [36m304[0m 43.822 ms - -[0m
+2023-08-12 20:28:43 info: [0mGET /posts/findBySlug/cach-cac-ceo-chau-a-thai-binh-duong-dua-cong-ty-dan-dau-trong-boi-canh-kinh-te-hien-nay [32m200[0m 142.214 ms - 586889[0m
+2023-08-12 20:28:45 info: [0mGET /services/nav [36m304[0m 41.988 ms - -[0m
+2023-08-12 20:29:10 info: [0mGET /posts/findBySlug/cach-cac-ceo-chau-a-thai-binh-duong-dua-cong-ty-dan-dau-trong-boi-canh-kinh-te-hien-nay [32m200[0m 155.818 ms - 586889[0m
+2023-08-12 20:29:10 info: [0mGET /posts/findBySlug/cach-cac-ceo-chau-a-thai-binh-duong-dua-cong-ty-dan-dau-trong-boi-canh-kinh-te-hien-nay [32m200[0m 261.256 ms - 586889[0m
+2023-08-12 20:29:10 info: [0mGET /posts/findBySlug/cach-cac-ceo-chau-a-thai-binh-duong-dua-cong-ty-dan-dau-trong-boi-canh-kinh-te-hien-nay [32m200[0m 312.604 ms - 586889[0m
+2023-08-12 20:29:13 info: [0mGET /services/nav [36m304[0m 41.391 ms - -[0m
+2023-08-12 20:29:34 info: [0mGET /posts/findBySlug/cach-cac-ceo-chau-a-thai-binh-duong-dua-cong-ty-dan-dau-trong-boi-canh-kinh-te-hien-nay [32m200[0m 112.459 ms - 586889[0m
+2023-08-12 20:29:34 info: [0mGET /posts/findBySlug/cach-cac-ceo-chau-a-thai-binh-duong-dua-cong-ty-dan-dau-trong-boi-canh-kinh-te-hien-nay [32m200[0m 156.209 ms - 586889[0m
+2023-08-12 20:29:36 info: [0mGET /services/nav [36m304[0m 15.228 ms - -[0m
+2023-08-12 20:30:55 info: [0mGET /posts/findBySlug/cach-cac-ceo-chau-a-thai-binh-duong-dua-cong-ty-dan-dau-trong-boi-canh-kinh-te-hien-nay [32m200[0m 188.122 ms - 586889[0m
+2023-08-12 20:30:55 info: [0mGET /posts/findBySlug/cach-cac-ceo-chau-a-thai-binh-duong-dua-cong-ty-dan-dau-trong-boi-canh-kinh-te-hien-nay [32m200[0m 240.456 ms - 586889[0m
+2023-08-12 20:30:58 info: [0mGET /services/nav [36m304[0m 29.652 ms - -[0m
+2023-08-12 20:32:05 info: =================================
+2023-08-12 20:32:05 info: ======= ENV: development =======
+2023-08-12 20:32:05 info: 🚀 App listening on the port 8000
+2023-08-12 20:32:05 info: =================================
+2023-08-12 20:33:15 info: [0mOPTIONS /admins/login [32m204[0m 2.594 ms - 0[0m
+2023-08-12 20:33:15 info: [0mPOST /admins/login [32m200[0m 533.804 ms - -[0m
+2023-08-12 20:33:17 info: [0mOPTIONS /admins/profile [32m204[0m 0.473 ms - 0[0m
+2023-08-12 20:33:17 info: [0mGET /banners? [32m200[0m 141.308 ms - -[0m
+2023-08-12 20:33:17 info: [0mGET /admins/profile [32m200[0m 222.750 ms - 268[0m
+2023-08-12 20:33:17 info: [0mGET /banners?page=1&page_size=10 [32m200[0m 64.263 ms - -[0m
+2023-08-12 20:33:22 info: [0mGET /admins/profile [36m304[0m 193.601 ms - -[0m
+2023-08-12 20:33:22 info: [0mGET /posts? [32m200[0m 439.218 ms - -[0m
+2023-08-12 20:33:22 info: [0mGET /posts?page=1&page_size=10 [32m200[0m 300.454 ms - -[0m
+2023-08-12 20:34:20 info: [0mGET /posts/findBySlug/cach-cac-ceo-chau-a-thai-binh-duong-dua-cong-ty-dan-dau-trong-boi-canh-kinh-te-hien-nay [32m200[0m 91.265 ms - -[0m
+2023-08-12 20:35:17 info: =================================
+2023-08-12 20:35:17 info: ======= ENV: development =======
+2023-08-12 20:35:17 info: 🚀 App listening on the port 8000
+2023-08-12 20:35:17 info: =================================
+2023-08-12 20:35:24 info: [0mGET /posts/findBySlug/cach-cac-ceo-chau-a-thai-binh-duong-dua-cong-ty-dan-dau-trong-boi-canh-kinh-te-hien-nay [36m304[0m 334.588 ms - -[0m
+2023-08-12 20:35:41 info: [0mGET /posts/findBySlug/cach-cac-ceo-chau-a-thai-binh-duong-dua-cong-ty-dan-dau-trong-boi-canh-kinh-te-hien-nay [36m304[0m 96.277 ms - -[0m
+2023-08-12 20:35:45 info: [0mGET /posts/findBySlug/cach-cac-ceo-chau-a-thai-binh-duong-dua-cong-ty-dan-dau-trong-boi-canh-kinh-te-hien-nay [36m304[0m 79.889 ms - -[0m
+2023-08-12 20:36:13 info: =================================
+2023-08-12 20:36:13 info: ======= ENV: development =======
+2023-08-12 20:36:13 info: 🚀 App listening on the port 8000
+2023-08-12 20:36:13 info: =================================
+2023-08-12 20:36:17 info: [0mGET /posts/findBySlug/cach-cac-ceo-chau-a-thai-binh-duong-dua-cong-ty-dan-dau-trong-boi-canh-kinh-te-hien-nay [36m304[0m 206.980 ms - -[0m
+2023-08-12 20:36:52 info: =================================
+2023-08-12 20:36:52 info: ======= ENV: development =======
+2023-08-12 20:36:52 info: 🚀 App listening on the port 8000
+2023-08-12 20:36:52 info: =================================
+2023-08-12 20:36:53 error: {}
+2023-08-12 20:36:53 info: [0mGET /posts/findBySlug/cach-cac-ceo-chau-a-thai-binh-duong-dua-cong-ty-dan-dau-trong-boi-canh-kinh-te-hien-nay [32m200[0m 334.365 ms - 16[0m
+2023-08-12 20:37:23 info: =================================
+2023-08-12 20:37:23 info: ======= ENV: development =======
+2023-08-12 20:37:23 info: 🚀 App listening on the port 8000
+2023-08-12 20:37:23 info: =================================
+2023-08-12 20:37:23 info: [0mGET /posts/findBySlug/cach-cac-ceo-chau-a-thai-binh-duong-dua-cong-ty-dan-dau-trong-boi-canh-kinh-te-hien-nay [32m200[0m 223.260 ms - -[0m
+2023-08-12 20:38:16 info: =================================
+2023-08-12 20:38:16 info: ======= ENV: development =======
+2023-08-12 20:38:16 info: 🚀 App listening on the port 8000
+2023-08-12 20:38:16 info: =================================
+2023-08-12 20:38:19 info: [0mGET /posts/findBySlug/cach-cac-ceo-chau-a-thai-binh-duong-dua-cong-ty-dan-dau-trong-boi-canh-kinh-te-hien-nay [36m304[0m 199.372 ms - -[0m
+2023-08-12 20:38:34 info: =================================
+2023-08-12 20:38:34 info: ======= ENV: development =======
+2023-08-12 20:38:34 info: 🚀 App listening on the port 8000
+2023-08-12 20:38:34 info: =================================
+2023-08-12 20:38:34 info: [0mGET /posts/findBySlug/cach-cac-ceo-chau-a-thai-binh-duong-dua-cong-ty-dan-dau-trong-boi-canh-kinh-te-hien-nay [36m304[0m 201.592 ms - -[0m
+2023-08-12 20:38:57 info: =================================
+2023-08-12 20:38:57 info: ======= ENV: development =======
+2023-08-12 20:38:57 info: 🚀 App listening on the port 8000
+2023-08-12 20:38:57 info: =================================
+2023-08-12 20:38:59 info: [0mGET /posts/findBySlug/cach-cac-ceo-chau-a-thai-binh-duong-dua-cong-ty-dan-dau-trong-boi-canh-kinh-te-hien-nay [36m304[0m 215.281 ms - -[0m
+2023-08-12 20:39:12 info: =================================
+2023-08-12 20:39:12 info: ======= ENV: development =======
+2023-08-12 20:39:12 info: 🚀 App listening on the port 8000
+2023-08-12 20:39:12 info: =================================
+2023-08-12 20:39:13 info: [0mGET /posts/findBySlug/cach-cac-ceo-chau-a-thai-binh-duong-dua-cong-ty-dan-dau-trong-boi-canh-kinh-te-hien-nay [36m304[0m 214.104 ms - -[0m
+2023-08-12 20:39:42 info: =================================
+2023-08-12 20:39:42 info: ======= ENV: development =======
+2023-08-12 20:39:42 info: 🚀 App listening on the port 8000
+2023-08-12 20:39:42 info: =================================
+2023-08-12 20:39:45 info: [0mGET /posts/findBySlug/cach-cac-ceo-chau-a-thai-binh-duong-dua-cong-ty-dan-dau-trong-boi-canh-kinh-te-hien-nay [32m200[0m 212.075 ms - -[0m
+2023-08-12 20:39:58 info: =================================
+2023-08-12 20:39:58 info: ======= ENV: development =======
+2023-08-12 20:39:58 info: 🚀 App listening on the port 8000
+2023-08-12 20:39:58 info: =================================
+2023-08-12 20:40:00 info: [0mGET /posts/findBySlug/cach-cac-ceo-chau-a-thai-binh-duong-dua-cong-ty-dan-dau-trong-boi-canh-kinh-te-hien-nay [36m304[0m 209.538 ms - -[0m
+2023-08-12 20:40:18 info: =================================
+2023-08-12 20:40:18 info: ======= ENV: development =======
+2023-08-12 20:40:18 info: 🚀 App listening on the port 8000
+2023-08-12 20:40:18 info: =================================

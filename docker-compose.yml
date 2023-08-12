@@ -1,0 +1,58 @@
+version: "3.3"
+
+services:
+  mongodb:
+    image: mongo:5.0.2
+    restart: unless-stopped
+    container_name: mongo
+    ports:
+      - "27017:27017"
+    volumes:
+      - db:/data/db
+      
+  server:
+    depends_on:
+      - mongodb
+    build: ./server
+    restart: unless-stopped
+    container_name: server
+    env_file: ./.env
+    environment:
+      - MONGO_URI=mongodb://103.166.182.214:27017/perfume_dev
+    stdin_open: true
+    tty: true
+    networks:
+      - app-network
+
+  webserver:
+    image: nginx
+    container_name: webserver
+    restart: unless-stopped
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./nginx/nginx.conf:/etc/nginx/nginx.conf
+      - ./certbot/conf:/etc/letsencrypt
+      - ./certbot/www:/var/www/certbot
+    depends_on:
+      - server
+    networks:
+      - app-network 
+  
+  certbot:
+    image: certbot/certbot
+    container_name: certbot
+    volumes: 
+       - ./certbot/conf:/etc/letsencrypt
+       - ./certbot/www:/var/www/certbot
+    depends_on:
+       - webserver      
+    command: certonly --webroot -w /var/www/certbot --force-renewal --email nguyencongtoana1nhvt@gmail.com -d be.theworldperfume.com --agree-tos
+
+volumes:
+  db:
+
+networks:
+  app-network:
+    driver: bridge

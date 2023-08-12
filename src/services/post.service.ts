@@ -408,7 +408,7 @@ export class PostService {
         }
     }
 
-    public show = async (id) => {
+    public show = async (id: string | number) => {
 
         try {
             const post = await models.Post.findOne({
