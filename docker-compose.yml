@@ -1,12 +1,13 @@
 version: "3.3"
 
 services:
-  mongodb:
-    image: mongo:5.0.2
-    restart: unless-stopped
-    container_name: mongo
+  mysql:
+    image: mysql:latest
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: root
     ports:
-      - "27017:27017"
+      - "3306:3306"
     volumes:
       - db:/data/db
       
@@ -16,9 +17,6 @@ services:
     build: ./server
     restart: unless-stopped
     container_name: server
-    env_file: ./.env
-    environment:
-      - MONGO_URI=mongodb://103.166.182.214:27017/perfume_dev
     stdin_open: true
     tty: true
     networks:
@@ -48,7 +46,7 @@ services:
        - ./certbot/www:/var/www/certbot
     depends_on:
        - webserver      
-    command: certonly --webroot -w /var/www/certbot --force-renewal --email nguyencongtoana1nhvt@gmail.com -d be.theworldperfume.com --agree-tos
+    command: certonly --webroot -w /var/www/certbot --force-renewal --email nguyencongtoana1nhvt@gmail.com -d be.uptech.com --agree-tos
 
 volumes:
   db:
