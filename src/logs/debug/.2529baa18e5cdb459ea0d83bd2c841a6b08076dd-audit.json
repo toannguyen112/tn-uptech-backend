@@ -6,21 +6,6 @@
     "auditLog": "/Users/toannguyen/Desktop/tn-uptech-backend/src/logs/debug/.2529baa18e5cdb459ea0d83bd2c841a6b08076dd-audit.json",
     "files": [
         {
-            "date": 1687594975147,
-            "name": "/Users/toannguyen/Desktop/tn-uptech-backend/src/logs/debug/2023-06-24.log",
-            "hash": "9988a6b7207dab75dc30ac63c801bdb8c97dc6f30bbf3ed0b27fc00f251bea1a"
-        },
-        {
-            "date": 1687938534724,
-            "name": "/Users/toannguyen/Desktop/tn-uptech-backend/src/logs/debug/2023-06-28.log",
-            "hash": "a8adf3e6081b175ea72511e50f7040d9a3df4f8742c2ec3a7626dcac9b188904"
-        },
-        {
-            "date": 1687971919784,
-            "name": "/Users/toannguyen/Desktop/tn-uptech-backend/src/logs/debug/2023-06-29.log",
-            "hash": "083715f299ef61531ea55cde4ffcafea266af90f5437ef10f14242b8d4c2f2c4"
-        },
-        {
             "date": 1688198954362,
             "name": "/Users/toannguyen/Desktop/tn-uptech-backend/src/logs/debug/2023-07-01.log",
             "hash": "fc5f4cbffab74d709235325937c17ba909ed9d46151a7a56c4160d9c4ef2ff2d"
@@ -154,6 +139,21 @@
             "date": 1691844807153,
             "name": "/Users/toannguyen/Desktop/tn-uptech-backend/src/logs/debug/2023-08-12.log",
             "hash": "a7fe69684634924c686f6a3c028a66af43222e1a5a87f4e1800e4b68c5c65a95"
+        },
+        {
+            "date": 1692516822678,
+            "name": "/Users/toannguyen/Desktop/tn-uptech-backend/src/logs/debug/2023-08-20.log",
+            "hash": "86191188c08ec22b7682836db2a3dd8d042a51b760f129b4917f1eb2a62541ef"
+        },
+        {
+            "date": 1692813255272,
+            "name": "/Users/toannguyen/Desktop/tn-uptech-backend/src/logs/debug/2023-08-24.log",
+            "hash": "dc6e7d8e90b1166b3a483c1158b2e8aa73cccd297da88c94b69e33dca3eddfe7"
+        },
+        {
+            "date": 1693115223666,
+            "name": "/Users/toannguyen/Desktop/tn-uptech-backend/src/logs/debug/2023-08-27.log",
+            "hash": "d0ffd2780bdda6d0b44203eb94114a756071819bd598de0d2a50c5c8f4e5d0e8"
         }
     ],
     "hashType": "sha256"

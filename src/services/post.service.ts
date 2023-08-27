@@ -163,6 +163,7 @@ export class PostService {
                     status: 'active',
                     category_id: category.id
                 },
+                order: [['createdAt', 'DESC']],
                 include: relation
             });
 
@@ -331,6 +332,7 @@ export class PostService {
 
             const rows = await models.Post.findAll({
                 where: { isFeatured: true, status: 'active' },
+                order: [['createdAt', 'DESC']],
                 include: [
                     {
                         model: models.Media,

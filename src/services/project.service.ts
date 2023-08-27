@@ -271,7 +271,10 @@ export class ProjectService {
 
         try {
 
-            const rows = await models.Project.findAll({ where: { status: 'active' }, include });
+            const rows = await models.Project.findAll({ 
+                where: { status: 'active' },
+                order: [['createdAt', 'DESC']],
+                 include });
 
             const result = {
                 data: rows.map((item: any) => ProjectDTO.transformClient(item))
