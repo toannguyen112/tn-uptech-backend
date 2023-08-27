@@ -619,8 +619,8 @@ export class PostService {
             .then(async (res: any) => {
 
                 await models.PostTranslation.update({
-                    ...body, slug:
-                        Helper.renderSlug(body.name, global.lang)
+                    ...body,
+                    slug: Helper.renderSlug(body.name, global.lang)
                 },
                     {
                         where: { post_id: id, locale: global.lang },

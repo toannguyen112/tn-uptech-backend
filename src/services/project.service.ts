@@ -120,7 +120,7 @@ export class ProjectService {
                         for (const serviceId of body.services) {
                             await models.ProjectService.create({
                                 project_id: project.id,
-                                service_id: serviceId
+                                service_id: serviceId,
                             }, { transaction: t });
                         }
 
@@ -128,7 +128,8 @@ export class ProjectService {
                             await models.ProjectTranslation.create({
                                 ...body,
                                 project_id: project.id,
-                                locale: lang
+                                locale: lang,
+                                slug: Helper.renderSlug(body.name, global.lang)
                             }, { transaction: t });
                         }
 
@@ -451,7 +452,10 @@ export class ProjectService {
                         }, { transaction: t });
                     }
 
-                    await models.ProjectTranslation.update({ ...body },
+                    await models.ProjectTranslation.update({ 
+                        ...body,
+                    slug: Helper.renderSlug(body.name, global.lang)
+                     },
                         {
                             where: {
                                 project_id: id,

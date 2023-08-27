@@ -129,7 +129,7 @@ module.exports = function (sequelize, DataTypes) {
     }
 
     ProjectTranslation.afterSave(async (project, options) => {
-        project.slug = Helper.renderSlug(project.name);
+        project.slug = Helper.renderSlug(project.name, project.locale);
     });
 
     return ProjectTranslation;
